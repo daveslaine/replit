@@ -15,6 +15,7 @@ import {
   AlertCircle,
   BookOpen,
   CalendarClock,
+  PlaneTakeoff,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
@@ -85,56 +86,96 @@ export function HomePage() {
       </Helmet>
 
       {/* ── Hero ──────────────────────────────────────────────── */}
-      <section className="relative w-full bg-primary text-white py-20 lg:py-32 overflow-hidden">
+      <section className="relative w-full min-h-[92vh] flex flex-col bg-primary text-white overflow-hidden">
+        {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero.png"
-            alt="Aircraft flying over Southern California"
-            className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+            alt="Aircraft at Van Nuys Airport with San Gabriel Mountains"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40" />
+          {/* Dark gradient — stronger on left so text is readable, fades right so plane shows */}
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/92 via-primary/70 to-primary/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/20" />
         </div>
-        <div className="container mx-auto px-4 relative z-10 flex flex-col items-start max-w-4xl">
-          <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
-            data-testid="text-hero-heading"
-          >
-            Structured and Affordable Flight Training at Van Nuys
-          </h1>
-          <p
-            className="text-lg md:text-xl text-primary-foreground/90 leading-relaxed mb-8 max-w-3xl"
-            data-testid="text-hero-subheading"
-          >
-            Learn to fly with one of the most transparent and affordable flight schools in
-            California. We explain the entire training process from day one — what you're
-            training for, how the FAA <AviationTerm term="Checkride" /> works, what
-            realistic costs look like, and how to progress efficiently.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Link href="/contact" className="w-full sm:w-auto" data-testid="link-hero-start">
-              <Button size="lg" variant="secondary" className="w-full font-bold text-base h-12 px-8">
-                Start Flight Training
-              </Button>
-            </Link>
-            <Link href="/pricing" className="w-full sm:w-auto" data-testid="link-hero-pricing">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full font-bold text-base h-12 px-8 border-primary-foreground/30 hover:bg-primary-foreground/10 text-white"
-              >
-                View Pricing
-              </Button>
-            </Link>
-            <a href="tel:818-469-1414" className="w-full sm:w-auto" data-testid="link-hero-call">
-              <Button
-                size="lg"
-                variant="outline"
-                className="w-full font-bold text-base h-12 px-8 border-primary-foreground/30 hover:bg-primary-foreground/10 text-white gap-2"
-              >
-                <Phone className="w-4 h-4" />
-                Call or Text
-              </Button>
+
+        {/* Main hero content */}
+        <div className="relative z-10 flex-1 flex flex-col justify-center">
+          <div className="container mx-auto px-4 max-w-5xl pt-12 pb-6">
+            {/* Airport badge */}
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-8 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-green-400 inline-block shrink-0" />
+              Van Nuys Airport (KVNY)
+            </div>
+
+            <h1
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-xl"
+              data-testid="text-hero-heading"
+            >
+              Structured and Affordable Flight Training at Van Nuys
+            </h1>
+            <p
+              className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-lg"
+              data-testid="text-hero-subheading"
+            >
+              Learn to fly with one of the most transparent and affordable flight schools in
+              California. We explain the entire training process from day one so students
+              understand exactly what they are training for, how the FAA checkride works,
+              what realistic costs look like, and how to progress efficiently.
+            </p>
+
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-5">
+              <Link href="/contact" data-testid="link-hero-start">
+                <Button size="lg" className="font-bold text-base h-12 px-7 bg-secondary hover:bg-secondary/90 text-white gap-2">
+                  Start Flight Training
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+              <Link href="/discovery-flight" data-testid="link-hero-discovery">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="font-bold text-base h-12 px-7 border-white/40 hover:bg-white/10 text-white gap-2"
+                >
+                  <PlaneTakeoff className="w-4 h-4" />
+                  Discovery Flight — $190
+                </Button>
+              </Link>
+            </div>
+
+            {/* Phone */}
+            <a
+              href="tel:818-469-1414"
+              className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors"
+              data-testid="link-hero-phone"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              818-469-1414
             </a>
+          </div>
+        </div>
+
+        {/* Stat bar — pinned to bottom of hero */}
+        <div className="relative z-10 w-full">
+          <div className="container mx-auto px-4 max-w-5xl pb-8">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-lg">
+              {[
+                { label: "AIRCRAFT RATE", value: "$160/hr wet" },
+                { label: "INSTRUCTOR FROM", value: "$35/hr" },
+                { label: "COMBINED DUAL", value: "$195/hr" },
+              ].map((stat) => (
+                <div
+                  key={stat.label}
+                  className="bg-white/10 border border-white/15 backdrop-blur-sm rounded-xl px-4 py-3 flex-1"
+                >
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mb-0.5">
+                    {stat.label}
+                  </p>
+                  <p className="text-lg font-bold text-white">{stat.value}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
