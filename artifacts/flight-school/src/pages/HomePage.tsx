@@ -101,7 +101,7 @@ export function HomePage() {
 
         {/* Main hero content */}
         <div className="relative z-10 flex-1 flex flex-col justify-center">
-          <div className="container mx-auto px-4 max-w-5xl pt-12 pb-6">
+          <div className="container mx-auto px-4 max-w-5xl pt-24 md:pt-28 pb-6">
             {/* Airport badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-8 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-green-400 inline-block shrink-0" />

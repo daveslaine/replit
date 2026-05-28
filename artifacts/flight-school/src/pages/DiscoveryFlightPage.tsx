@@ -26,7 +26,7 @@ export function DiscoveryFlightPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/30" />
         </div>
-        <div className="container mx-auto px-4 py-20 md:py-28 relative z-10 max-w-4xl">
+        <div className="container mx-auto px-4 pt-24 md:pt-32 pb-16 relative z-10 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-sm font-medium mb-6">
             <span className="w-2 h-2 rounded-full bg-green-400 inline-block" />
             Van Nuys Airport (KVNY)
