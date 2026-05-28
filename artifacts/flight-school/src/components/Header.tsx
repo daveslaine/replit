@@ -18,17 +18,22 @@ const trainingLinks = [
 ];
 
 const topNavLinks = [
-  { href: "/pricing", label: "Pricing" },
-  { href: "/our-aircraft", label: "Aircraft" },
-  { href: "/instructors", label: "Instructors" },
-  { href: "/contact", label: "Contact" },
+  { href: "/van-nuys-accelerated-flight-school-pricing", label: "Pricing" },
+  { href: "/van-nuys-accelerated-flight-school-deals-coupons", label: "Deals" },
+  { href: "/van-nuys-accelerated-flight-school-aircraft", label: "Aircraft" },
+  { href: "/van-nuys-accelerated-flight-school-instructors", label: "Instructors" },
+  { href: "/van-nuys-accelerated-flight-school-contact", label: "Contact" },
 ];
 
 const mobileAllLinks = [
   { href: "/", label: "Home" },
   { href: "/discovery-flight", label: "Discovery Flight" },
   ...trainingLinks,
-  ...topNavLinks,
+  { href: "/van-nuys-accelerated-flight-school-pricing", label: "Pricing" },
+  { href: "/van-nuys-accelerated-flight-school-deals-coupons", label: "Deals & Coupons" },
+  { href: "/van-nuys-accelerated-flight-school-aircraft", label: "Aircraft" },
+  { href: "/van-nuys-accelerated-flight-school-instructors", label: "Instructors" },
+  { href: "/van-nuys-accelerated-flight-school-contact", label: "Contact" },
 ];
 
 export function Header() {

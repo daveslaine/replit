@@ -21,36 +21,51 @@ import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 import { StudentPromise } from "@/components/StudentPromise";
 
-const programs = [
+const pilotGoals = [
   {
-    icon: Plane,
-    title: "Private Pilot",
-    href: "/private-pilot-van-nuys",
-    desc: "Your foundational pilot certificate to fly single-engine aircraft for personal travel, recreation, and carrying passengers.",
+    goal: "I want to fly for fun, be able to say I am a pilot, purchase and fly my own plane, and carry friends or family with me as a pilot.",
+    programs: [
+      {
+        icon: Plane,
+        title: "Private Pilot",
+        href: "/private-pilot-van-nuys",
+        desc: "Your foundational pilot certificate to fly single-engine aircraft for personal travel, recreation, and carrying passengers.",
+      },
+      {
+        icon: CloudRain,
+        title: "Instrument Rating Addon",
+        href: "/instrument-rating-van-nuys",
+        desc: "An add-on rating that lets you fly using only aircraft instruments in challenging weather — low visibility, fog, low cloud ceilings, and precipitation. It sharpens and hones your skills as a pilot, and ensures you are never stuck unable to fly to a destination or return home due to weather.",
+      },
+    ],
   },
   {
-    icon: CloudRain,
-    title: "Instrument Rating",
-    href: "/instrument-rating-van-nuys",
-    desc: "Learn to fly with more flexibility by using aircraft instruments and air traffic control guidance during lower visibility weather.",
+    goal: "I want to fly as a career.",
+    programs: [
+      {
+        icon: Briefcase,
+        title: "Commercial Pilot",
+        href: "/commercial-pilot-training",
+        desc: "The pilot certificate that allows you to be paid for certain legal flying operations.",
+      },
+      {
+        icon: GraduationCap,
+        title: "Certified Flight Instructor (CFI)",
+        href: "/cfi-training",
+        desc: "Become an instructor, teach students, earn money flying, and build professional flight hours.",
+      },
+    ],
   },
   {
-    icon: Briefcase,
-    title: "Commercial Pilot",
-    href: "/commercial-pilot-training",
-    desc: "The pilot certificate that allows you to be paid for certain legal flying operations.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Certified Flight Instructor",
-    href: "/cfi-training",
-    desc: "Become an instructor, teach students, earn money flying, and build professional flight hours.",
-  },
-  {
-    icon: Building2,
-    title: "Airline Pilot Path",
-    href: "/airline-pilot-path",
-    desc: "A structured path from zero experience toward the certificates and flight time usually needed for airline eligibility.",
+    goal: "I want to fly as a career in the airlines.",
+    programs: [
+      {
+        icon: Building2,
+        title: "Airline Transport Pilot",
+        href: "/airline-pilot-path",
+        desc: "A structured path from zero experience toward the certificates and flight time needed for airline eligibility — from Private Pilot all the way to the ATP certificate.",
+      },
+    ],
   },
 ];
 
@@ -180,35 +195,50 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* ── Training Programs ─────────────────────────────────── */}
+      {/* ── What Kind of Pilot? ────────────────────────────────── */}
       <section className="py-16 bg-white border-b border-slate-100">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-100 border border-slate-100 rounded-2xl overflow-hidden shadow-sm">
-            {programs.map((p, i) => {
-              const Icon = p.icon;
-              return (
-                <div
-                  key={p.title}
-                  className={`bg-white px-8 py-8 flex flex-col gap-3 ${
-                    i === programs.length - 1 && programs.length % 3 !== 0
-                      ? "lg:col-span-1"
-                      : ""
-                  }`}
-                  data-testid={`card-program-${i}`}
-                >
-                  <Icon className="w-7 h-7 text-secondary mb-1" />
-                  <h3 className="text-lg font-bold text-primary">{p.title}</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed flex-1">{p.desc}</p>
-                  <Link
-                    href={p.href}
-                    className="inline-flex items-center gap-1 text-sm font-bold text-secondary hover:underline mt-1"
-                    data-testid={`link-program-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
-                  >
-                    Learn More <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-3">Training Programs</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">What Kind of Pilot Do You Want to Become?</h2>
+          </div>
+
+          <div className="space-y-10">
+            {pilotGoals.map((group, gi) => (
+              <div key={gi} className="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                {/* Goal header */}
+                <div className="bg-primary/5 border-b border-slate-200 px-6 py-4 flex items-start gap-3">
+                  <span className="bg-primary text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                    {gi + 1}
+                  </span>
+                  <p className="font-semibold text-primary text-base leading-snug">{group.goal}</p>
                 </div>
-              );
-            })}
+                {/* Program cards */}
+                <div className={`grid gap-px bg-slate-100 ${group.programs.length === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
+                  {group.programs.map((p) => {
+                    const Icon = p.icon;
+                    return (
+                      <div
+                        key={p.title}
+                        className="bg-white px-7 py-6 flex flex-col gap-3"
+                        data-testid={`card-program-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                      >
+                        <Icon className="w-6 h-6 text-secondary mb-0.5" />
+                        <h3 className="text-base font-bold text-primary">{p.title}</h3>
+                        <p className="text-sm text-slate-600 leading-relaxed flex-1">{p.desc}</p>
+                        <Link
+                          href={p.href}
+                          className="inline-flex items-center gap-1 text-sm font-bold text-secondary hover:underline mt-1"
+                          data-testid={`link-program-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+                        >
+                          Learn More <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
