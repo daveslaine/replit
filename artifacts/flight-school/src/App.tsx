@@ -22,6 +22,7 @@ import { OurAircraftPage } from "@/pages/OurAircraftPage";
 import { InstructorsPage } from "@/pages/InstructorsPage";
 import { PricingPage } from "@/pages/PricingPage";
 import { ContactPage } from "@/pages/ContactPage";
+import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +52,7 @@ function Router() {
       <Route path="/instructors" component={InstructorsPage} />
       <Route path="/pricing" component={PricingPage} />
       <Route path="/contact" component={ContactPage} />
+      <Route path="/discovery-flight" component={DiscoveryFlightPage} />
       <Route component={NotFound} />
     </Switch>
   );

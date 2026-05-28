@@ -26,6 +26,7 @@ const topNavLinks = [
 
 const mobileAllLinks = [
   { href: "/", label: "Home" },
+  { href: "/discovery-flight", label: "Discovery Flight" },
   ...trainingLinks,
   ...topNavLinks,
 ];
@@ -48,11 +49,12 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 shrink-0" data-testid="link-home">
-          <Plane className="h-5 w-5 text-primary" />
+          <div className="bg-primary text-white rounded-md w-8 h-8 flex items-center justify-center font-bold text-sm shrink-0">
+            AF
+          </div>
           <span className="font-bold text-base text-primary hidden sm:inline-block leading-tight">
             Accelerated Flight School
           </span>
-          <span className="font-bold text-base text-primary sm:hidden">AFS</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -83,6 +85,14 @@ export function Header() {
               </div>
             )}
           </div>
+
+          {/* Discovery Flight — highlighted pill */}
+          <Link href="/discovery-flight" data-testid="link-discovery-flight-nav">
+            <span className="inline-flex items-center gap-1.5 bg-secondary text-white text-sm font-bold px-3.5 py-1.5 rounded-full hover:bg-secondary/90 transition-colors">
+              <Plane className="w-3.5 h-3.5" />
+              Discovery Flight
+            </span>
+          </Link>
 
           {topNavLinks.map((link) => (
             <Link
@@ -115,11 +125,18 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[360px]">
               <div className="flex flex-col gap-6 py-6">
                 <Link href="/" className="flex items-center gap-2">
-                  <Plane className="h-5 w-5 text-primary" />
+                  <div className="bg-primary text-white rounded-md w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    AF
+                  </div>
                   <span className="font-bold text-base text-primary">Accelerated Flight School</span>
                 </Link>
+                {/* Discovery Flight highlighted in mobile too */}
+                <Link href="/discovery-flight" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
+                  <Plane className="w-4 h-4" />
+                  Discovery Flight — $190
+                </Link>
                 <nav className="flex flex-col gap-1">
-                  {mobileAllLinks.map((link) => (
+                  {mobileAllLinks.filter(l => l.href !== "/discovery-flight").map((link) => (
                     <SheetClose asChild key={link.href}>
                       <Link
                         href={link.href}
