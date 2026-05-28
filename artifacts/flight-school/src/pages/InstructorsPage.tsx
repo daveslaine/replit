@@ -71,7 +71,7 @@ export function InstructorsPage() {
                 <img
                   src="/images/instructor-david.png"
                   alt="David T. - Flight Instructor Instrument"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-8 flex-1 flex flex-col">
