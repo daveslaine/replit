@@ -40,8 +40,9 @@ export function InstructorsPage() {
                     <h2 className="text-2xl font-bold text-primary">Reza S.</h2>
                     <p className="text-secondary font-medium">Owner & Senior Instructor</p>
                   </div>
-                  <div className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-1 text-center">
+                  <div className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-center">
                     <p className="text-xl font-bold text-slate-800">$45<span className="text-sm font-normal text-slate-500">/hr</span></p>
+                    <p className="text-[10px] text-slate-500">$35/hr w/ block</p>
                   </div>
                 </div>
                 
@@ -66,7 +67,7 @@ export function InstructorsPage() {
                 <img 
                   src="/images/instructor-david.png" 
                   alt="David T. - Flight Instructor" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="p-8 flex-1 flex flex-col">
@@ -90,7 +91,7 @@ export function InstructorsPage() {
                 <div className="mt-auto pt-6 border-t border-slate-100">
                   <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Teaching Philosophy</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
-                    "Aviation is a continuous learning process. I focus on creating a supportive, calm environment where students feel comfortable asking questions. Every maneuver has a purpose, and I make sure my students understand the 'why' behind the controls, connecting everything back to safety and standard operating procedures."
+                    "I believe in putting the student first. I will not be there to waste your time and take your money, or throw you under the bus. I am transparent and upfront, and my goal is to serve you and ensure you pass, and know what is going on and what it is you are doing. You will feel certain when training with me, and my satisfaction comes from seeing you pass."
                   </p>
                 </div>
               </div>
