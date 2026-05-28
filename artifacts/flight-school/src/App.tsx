@@ -23,6 +23,7 @@ import { InstructorsPage } from "@/pages/InstructorsPage";
 import { PricingPage } from "@/pages/PricingPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
+import { DealsPage } from "@/pages/DealsPage";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +54,11 @@ function Router() {
       <Route path="/pricing" component={PricingPage} />
       <Route path="/contact" component={ContactPage} />
       <Route path="/discovery-flight" component={DiscoveryFlightPage} />
+      <Route path="/van-nuys-accelerated-flight-school-deals-coupons" component={DealsPage} />
+      <Route path="/van-nuys-accelerated-flight-school-pricing" component={PricingPage} />
+      <Route path="/van-nuys-accelerated-flight-school-aircraft" component={OurAircraftPage} />
+      <Route path="/van-nuys-accelerated-flight-school-instructors" component={InstructorsPage} />
+      <Route path="/van-nuys-accelerated-flight-school-contact" component={ContactPage} />
       <Route component={NotFound} />
     </Switch>
   );
