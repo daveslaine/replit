@@ -41,13 +41,8 @@ export function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
             <div className="space-y-4">
-              <Link href="/" className="flex items-center gap-2">
-                <div className="bg-white/10 text-white rounded-md w-8 h-8 flex items-center justify-center font-bold text-sm shrink-0">
-                  AF
-                </div>
-                <span className="font-bold text-base text-white leading-tight">
-                  Accelerated Flight School
-                </span>
+              <Link href="/" className="flex items-center">
+                <img src="/images/logo.png" alt="Accelerated Flight School" className="h-10 w-auto brightness-0 invert" />
               </Link>
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
