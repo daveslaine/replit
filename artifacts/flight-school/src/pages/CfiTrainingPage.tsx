@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { GraduationCap, Phone } from "lucide-react";
+import { GraduationCap, Phone, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -47,10 +47,28 @@ export function CfiTrainingPage() {
                 <p className="text-sm text-slate-600 mb-6">After completing Commercial Pilot certificate. Varies heavily on your knowledge of aviation fundamentals.</p>
                 
                 <div className="h-px bg-slate-200 w-full mb-6" />
-                
+
                 <h3 className="text-lg font-bold text-primary mb-2">CFII Add-on</h3>
                 <p className="text-2xl font-bold text-slate-800 mb-1">~$2,000 – $4,000</p>
-                <p className="text-xs text-slate-500">Become a <AviationTerm term="CFII" /> to teach instrument students.</p>
+                <p className="text-xs text-slate-500 mb-6">Become a <AviationTerm term="CFII" /> to teach instrument students.</p>
+
+                <div className="h-px bg-slate-200 w-full mb-6" />
+
+                <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-3">Checkride Fees</h3>
+                <div className="space-y-2 text-sm text-left">
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-700"><AviationTerm term="CFI" /> <AviationTerm term="Checkride" /></span>
+                    <span className="font-bold text-secondary">~$2,000–$3,000</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-slate-700"><AviationTerm term="CFII" /> <AviationTerm term="Checkride" /></span>
+                    <span className="font-bold text-secondary">~$800</span>
+                  </div>
+                </div>
+                <div className="mt-3 flex gap-2 text-xs text-slate-500 text-left">
+                  <Info className="w-4 h-4 shrink-0 mt-0.5" />
+                  <span>CFI checkride fees reflect the additional complexity of evaluating teaching ability, not just flying skill. Paid directly to the <AviationTerm term="DPE" />.</span>
+                </div>
               </div>
             </div>
           </div>

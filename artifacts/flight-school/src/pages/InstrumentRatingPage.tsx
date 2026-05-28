@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { CloudRain, CheckCircle2, Phone } from "lucide-react";
+import { CloudRain, CheckCircle2, Phone, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -66,6 +66,28 @@ export function InstrumentRatingPage() {
                   <p className="text-xs text-slate-500 mt-1">or $180/hr with 10-hour package</p>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 mb-8">
+            <h2 className="text-2xl font-bold text-primary mb-4">Costs to Plan For</h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1"><AviationTerm term="DPE" /> <AviationTerm term="Checkride" /> Fee</p>
+                <p className="text-2xl font-bold text-secondary">~$800 – $1,000</p>
+                <p className="text-xs text-slate-500 mt-1">Paid directly to the examiner. Applies at every school.</p>
+              </div>
+              <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
+                <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">ForeFlight Essential Plan</p>
+                <p className="text-2xl font-bold text-secondary">$260/yr</p>
+                <p className="text-xs text-slate-500 mt-1">Required for IFR training and above — includes IFR en route charts and georeferenced approach plates.</p>
+              </div>
+            </div>
+            <div className="mt-4 flex gap-3 p-4 bg-blue-50 border border-blue-200 rounded-xl">
+              <Info className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+              <p className="text-sm text-blue-700">
+                An iPad or iPad mini with built-in cellular and GPS is required to run ForeFlight during <AviationTerm term="IFR" /> training. The Basic ForeFlight plan ($130/yr) is sufficient for <AviationTerm term="Private Pilot" /> and VFR flying; the Essential plan ($260/yr) is required once you begin instrument training.
+              </p>
             </div>
           </div>
 

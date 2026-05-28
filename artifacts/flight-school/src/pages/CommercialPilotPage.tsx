@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Briefcase, AlertTriangle, Phone } from "lucide-react";
+import { Briefcase, AlertTriangle, Phone, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -70,6 +70,24 @@ export function CommercialPilotPage() {
                     <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">Already have Private/IFR?</p>
                     <p className="text-xl font-bold text-slate-800 mb-2">Call for custom estimate</p>
                     <p className="text-sm text-slate-600">We will evaluate your current logbook and build a custom syllabus to bridge the gap to 250 hours efficiently.</p>
+                  </div>
+
+                  <div className="pt-6 border-t border-slate-200">
+                    <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">Additional Per-Certificate Costs</p>
+                    <div className="space-y-1 text-sm text-slate-600">
+                      <div className="flex justify-between">
+                        <span><AviationTerm term="DPE" /> <AviationTerm term="Checkride" /> fee (each)</span>
+                        <span className="font-bold text-slate-800">~$800–$1,000</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Written test fee (each)</span>
+                        <span className="font-bold text-slate-800">~$175</span>
+                      </div>
+                    </div>
+                    <div className="mt-3 flex gap-2 text-xs text-slate-500">
+                      <Info className="w-4 h-4 shrink-0 mt-0.5" />
+                      <span>Checkride fees are paid directly to the examiner and apply at every flight school.</span>
+                    </div>
                   </div>
                 </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { CheckCircle2, PlaneTakeoff, ShieldCheck } from "lucide-react";
+import { CheckCircle2, PlaneTakeoff, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -55,6 +55,16 @@ export function PrivatePilotPage() {
                 </div>
               </div>
 
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6 flex gap-3">
+                <Info className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-bold text-blue-800 mb-1">FAA Medical Certificate Required Before Solo</h4>
+                  <p className="text-sm text-blue-700 leading-relaxed">
+                    Before you fly <AviationTerm term="Solo time" /> — without an instructor onboard — the FAA requires you to hold a valid medical certificate from an FAA Aviation Medical Examiner. We recommend scheduling your medical early in training. Exam fees are typically $100–$200.
+                  </p>
+                </div>
+              </div>
+
               <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 md:p-8">
                 <h3 className="text-xl font-bold text-primary mb-4">Flight Time Expectations</h3>
                 <p className="text-slate-700 mb-4">
@@ -78,13 +88,43 @@ export function PrivatePilotPage() {
                   <div>
                     <p className="text-sm text-primary-foreground/80 uppercase tracking-wider font-bold mb-1">Accelerated Estimate</p>
                     <p className="text-3xl font-bold text-white">~$7,500 <span className="text-lg font-normal opacity-80">- $12,500</span></p>
+                    <p className="text-xs text-white/60 mt-1">Training costs only</p>
                   </div>
                   <div className="pt-4 border-t border-white/20">
                     <p className="text-sm text-primary-foreground/80 uppercase tracking-wider font-bold mb-1">SoCal Average</p>
                     <p className="text-xl font-bold text-white/70">$15,000 - $25,000+</p>
                   </div>
+                  <div className="pt-4 border-t border-white/20 space-y-2 text-sm">
+                    <p className="font-bold text-white/80 uppercase tracking-wider text-xs mb-2">Additional Required Costs</p>
+                    <div className="flex justify-between">
+                      <span className="text-white/70"><AviationTerm term="DPE" /> <AviationTerm term="Checkride" /> fee</span>
+                      <span className="font-bold">~$800–$1,000</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-white/70">Written test fee</span>
+                      <span className="font-bold">~$175</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-white/70">Headset (one-time)</span>
+                      <span className="font-bold">~$100</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-white/70">ForeFlight (Basic)</span>
+                      <span className="font-bold">$130/yr</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-white/70">FAA Medical exam</span>
+                      <span className="font-bold">~$100–$200</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="space-y-4 pt-4 border-t border-white/20">
+                <div className="pt-4 border-t border-white/20 mb-4">
+                  <div className="flex gap-2 text-xs text-white/60">
+                    <Info className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>iPad with cellular &amp; GPS required for ForeFlight. FAA textbooks are free to download at faa.gov.</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
                   <a href="tel:818-469-1414" className="block w-full">
                     <Button size="lg" variant="secondary" className="w-full font-bold">
                       Call to Discuss
@@ -92,7 +132,7 @@ export function PrivatePilotPage() {
                   </a>
                   <Link href="/pricing" className="block w-full">
                     <Button size="lg" variant="outline" className="w-full font-bold border-white/30 hover:bg-white/10 text-white">
-                      View Pricing Details
+                      View Full Pricing
                     </Button>
                   </Link>
                 </div>
