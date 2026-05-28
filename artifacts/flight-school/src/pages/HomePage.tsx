@@ -477,9 +477,7 @@ export function HomePage() {
                   <div>
                     <p className="font-bold text-slate-800 mb-1">Our Approach</p>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      Accelerated Flight School coordinates checkride planning early once students
-                      demonstrate solid progress. The goal is to take the practical test shortly
-                      after training completion — not months later.
+                      Accelerated Flight School coordinates checkride planning early once students demonstrate solid progress. The goal is to take the practical test shortly after training completion — not months later, by using our <AviationTerm term="DPE" /> network to schedule your <AviationTerm term="Checkride" /> (flight test) when you are still in training yet show clear potential to pass, so that when your training is complete, you take your checkride within <strong>1–3 weeks</strong>, whereas in most other schools this will take <strong>1–5 months</strong>, because they do not have a student-centric approach.
                     </p>
                   </div>
                 </div>
