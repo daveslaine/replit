@@ -5,9 +5,6 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-export interface HealthStatus {
-  status: string;
-}
 
 export type ContactInputTrainingGoal = typeof ContactInputTrainingGoal[keyof typeof ContactInputTrainingGoal];
 
@@ -20,20 +17,3 @@ export const ContactInputTrainingGoal = {
   'airline-pathway': 'airline-pathway',
   'not-sure': 'not-sure',
 } as const;
-
-export interface ContactInput {
-  /** @minLength 1 */
-  name: string;
-  /** @minLength 1 */
-  phone: string;
-  email: string;
-  trainingGoal: ContactInputTrainingGoal;
-  /** @nullable */
-  questions?: string | null;
-}
-
-export interface ContactResult {
-  success: boolean;
-  message: string;
-}
-

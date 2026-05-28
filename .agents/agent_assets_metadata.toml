@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "AFbDhjTvkVVSN6JbLuRLx"
+uri = "file://artifacts/flight-school/public/images/hero.png"
+type = "image"
+title = "Cessna over Southern California"
+
+[[generated]]
+id = "kthCW0zKrvdiTDzFCPuwl"
+uri = "file://artifacts/flight-school/public/images/piper-cherokee.png"
+type = "image"
+title = "Piper Cherokee parked"
+
+[[generated]]
+id = "XGFg-GElDPxLLeBgc6UfB"
+uri = "file://artifacts/flight-school/public/images/instructor-reza.png"
+type = "image"
+title = "Instructor Reza headshot"
+
+[[generated]]
+id = "QxWaLeg5w-HAWsAFCQhDb"
+uri = "file://artifacts/flight-school/public/images/instructor-david.png"
+type = "image"
+title = "Instructor David headshot"
