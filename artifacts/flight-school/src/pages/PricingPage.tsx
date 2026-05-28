@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Phone, Info } from "lucide-react";
+import { Phone, Info, Tablet, Headphones, BookOpen, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 import { StudentPromise } from "@/components/StudentPromise";
@@ -127,12 +127,138 @@ export function PricingPage() {
             </div>
           </div>
 
+          {/* Checkride Fees Table */}
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 mb-8">
+            <h2 className="text-2xl font-bold text-primary mb-2">FAA Checkride Fees</h2>
+            <p className="text-slate-600 mb-6 text-sm">
+              Every pilot certificate and rating requires a practical test administered by a <AviationTerm term="DPE" /> — a Designated Pilot Examiner. These fees are paid directly to the examiner and are separate from your training costs. They apply at every flight school with no exceptions.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b-2 border-slate-200">
+                    <th className="text-left py-3 pr-4 font-bold text-slate-700">Certificate / Rating</th>
+                    <th className="text-right py-3 font-bold text-slate-700">Estimated DPE Fee</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  <tr>
+                    <td className="py-3 pr-4 text-slate-700"><AviationTerm term="Private Pilot" /> Checkride</td>
+                    <td className="py-3 text-right font-bold text-secondary">~$800 – $1,000</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 text-slate-700"><AviationTerm term="Instrument Rating" /> Checkride</td>
+                    <td className="py-3 text-right font-bold text-secondary">~$800 – $1,000</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 text-slate-700"><AviationTerm term="Commercial Pilot" /> Checkride</td>
+                    <td className="py-3 text-right font-bold text-secondary">~$800 – $1,000</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 text-slate-700"><AviationTerm term="CFI" /> Checkride</td>
+                    <td className="py-3 text-right font-bold text-secondary">~$2,000 – $3,000</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 pr-4 text-slate-700"><AviationTerm term="CFII" /> Checkride</td>
+                    <td className="py-3 text-right font-bold text-secondary">~$800</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-xs text-slate-500 mt-4">
+              DPE fees vary by examiner and may change. These figures reflect current Southern California market rates and are for planning purposes. Written (knowledge) test fees are separate — typically around $175 per attempt.
+            </p>
+          </div>
+
+          {/* Student Equipment & Required Costs */}
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 mb-8">
+            <h2 className="text-2xl font-bold text-primary mb-2">Required Student Equipment &amp; Fees</h2>
+            <p className="text-slate-600 mb-8 text-sm leading-relaxed">
+              The items below are required for every student at every flight school — there are no exceptions in aviation. We list them here so you have a complete and honest picture of what flight training costs before you begin.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+
+              {/* Headset */}
+              <div className="flex gap-4 p-5 bg-slate-50 rounded-xl border border-slate-200">
+                <Headphones className="w-8 h-8 text-secondary shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-slate-800 mb-1">Aviation Headset</h3>
+                  <p className="text-2xl font-bold text-secondary mb-1">~$100 <span className="text-sm font-normal text-slate-500">one-time</span></p>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    A basic aviation headset is required before you can fly. Entry-level headsets in the $100 range are completely acceptable for student training. A good headset will last many years.
+                  </p>
+                </div>
+              </div>
+
+              {/* iPad + ForeFlight */}
+              <div className="flex gap-4 p-5 bg-slate-50 rounded-xl border border-slate-200">
+                <Tablet className="w-8 h-8 text-secondary shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-slate-800 mb-1">iPad or iPad Mini (with Cellular &amp; GPS)</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed mb-3">
+                    Every student needs an iPad or iPad mini with built-in cellular and GPS — not Wi-Fi only. This is required to run ForeFlight, the industry-standard aviation navigation app. In busy airspace like the Los Angeles Basin, ForeFlight is a necessity, not optional.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-slate-700">ForeFlight Basic (Student / VFR pilots)</span>
+                      <span className="font-bold text-secondary text-sm">$130/yr</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm text-slate-700">ForeFlight Essential (<AviationTerm term="Instrument Rating" /> and above)</span>
+                      <span className="font-bold text-secondary text-sm">$260/yr</span>
+                    </div>
+                  </div>
+                  <p className="text-xs text-slate-500 mt-2">
+                    Once you begin Instrument Rating training, you will need to upgrade to the Essential plan, which includes IFR en route charts, georeferenced approach plates, and other IFR-specific features.
+                  </p>
+                </div>
+              </div>
+
+              {/* FAA Medical */}
+              <div className="flex gap-4 p-5 bg-slate-50 rounded-xl border border-slate-200">
+                <Stethoscope className="w-8 h-8 text-secondary shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-slate-800 mb-1">FAA Medical Certificate</h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    Before a student pilot can fly solo — meaning fly the aircraft without an instructor onboard — they must obtain a valid FAA medical certificate from an FAA Aviation Medical Examiner (AME). This is a federal requirement that applies at every flight school. Medical exam fees vary by examiner and class of medical but are typically in the range of $100–$200. We recommend completing your medical early in training.
+                  </p>
+                </div>
+              </div>
+
+              {/* FAA Books */}
+              <div className="flex gap-4 p-5 bg-slate-50 rounded-xl border border-slate-200">
+                <BookOpen className="w-8 h-8 text-secondary shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-slate-800 mb-1">FAA Textbooks &amp; Charts</h3>
+                  <p className="text-sm font-bold text-green-700 mb-2">Free to download digitally</p>
+                  <p className="text-sm text-slate-600 leading-relaxed mb-3">
+                    All official FAA training materials are available free online. You can also purchase printed copies if you prefer a physical book. Key materials include:
+                  </p>
+                  <ul className="text-sm text-slate-700 space-y-1">
+                    <li>• Pilot's Handbook of Aeronautical Knowledge (PHAK)</li>
+                    <li>• Airplane Flying Handbook (AFH)</li>
+                    <li>• Instrument Flying Handbook (IFH)</li>
+                    <li>• Instrument Procedures Handbook (IPH)</li>
+                    <li>• FAR/AIM (Federal Aviation Regulations / Aeronautical Information Manual)</li>
+                    <li>• VFR Sectional Charts and IFR En Route Charts</li>
+                  </ul>
+                  <p className="text-xs text-slate-500 mt-3">
+                    All of the above are available free at <strong>faa.gov</strong> and through the FAA's digital library. We will point you to exactly where to find them.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Written test + misc */}
           <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex gap-4">
             <Info className="w-6 h-6 text-amber-600 shrink-0 mt-0.5" />
             <div>
-              <h3 className="font-bold text-amber-800 mb-2">Other Costs to Consider</h3>
+              <h3 className="font-bold text-amber-800 mb-2">Additional Costs to Be Aware Of</h3>
               <p className="text-amber-700 text-sm leading-relaxed">
-                Additional costs in flight training may include: written test fees, FAA medical exam, headset, books or supplies, renter's insurance (if required), and <AviationTerm term="DPE" /> <AviationTerm term="Checkride" /> fees. We explain all of these upfront so students are never surprised.
+                Other costs include: written knowledge test fees (~$175 per attempt), renter's insurance if required, and the <AviationTerm term="DPE" /> <AviationTerm term="Checkride" /> fees listed above. We explain all of these at the start of training so students are never surprised. These costs are standard across all flight schools.
               </p>
             </div>
           </div>
