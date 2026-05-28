@@ -31,7 +31,7 @@ export function InstructorsPage() {
                 <img 
                   src="/images/instructor-reza.png" 
                   alt="Reza S. - Flight Instructor" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="p-8 flex-1 flex flex-col">
