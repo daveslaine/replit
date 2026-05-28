@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "wouter";
-import { Plane, Phone, MessageSquare, MapPin } from "lucide-react";
+import { Plane, Phone, MessageSquare, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -52,7 +52,7 @@ export function Footer() {
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                <span>Van Nuys Airport (KVNY)<br />Van Nuys, California</span>
+                <span>H7, 7900 Balboa Blvd.<br />Van Nuys, CA 91406</span>
               </div>
             </div>
 
@@ -118,10 +118,26 @@ export function Footer() {
                   <Phone className="h-4 w-4 shrink-0" />
                   818-469-1414
                 </a>
+                <a href="mailto:email@placeholderemail.com" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
+                  <Mail className="h-4 w-4 shrink-0" />
+                  email@placeholderemail.com
+                </a>
                 <a href="sms:818-469-1414" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
                   <MessageSquare className="h-4 w-4 shrink-0" />
                   Text Us
                 </a>
+                <div className="flex items-start gap-2 text-primary-foreground/60 text-sm pt-1">
+                  <Clock className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>Mon – Sun&nbsp;&nbsp;6:00 AM – 11:00 PM</span>
+                </div>
+                <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
+                  <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
+                  <span>
+                    H7, 7900 Balboa Blvd.<br />
+                    Van Nuys, CA 91406<br />
+                    <span className="text-primary-foreground/40">(Van Nuys Airport – VNY)</span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
