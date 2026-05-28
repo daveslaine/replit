@@ -26,36 +26,28 @@ export function OurAircraftPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-12">
             {/* Photo gallery */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-              <div className="col-span-2 md:col-span-2 row-span-2">
-                <img
-                  src="/images/piper-cherokee.png"
-                  alt="1985 Piper PA28 Cherokee Warrior II at Van Nuys Airport"
-                  className="w-full h-64 md:h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="col-span-1">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
+              <div className="col-span-2 md:col-span-2">
                 <img
                   src="/images/aircraft-exterior.png"
                   alt="N9172Y Piper Cherokee Warrior II in flight"
-                  className="w-full h-44 object-cover"
+                  className="w-full h-56 md:h-72 object-cover"
                   loading="lazy"
                 />
               </div>
-              <div className="col-span-1">
+              <div className="col-span-1 hidden md:block">
                 <img
                   src="/images/aircraft-cockpit.jpg"
                   alt="Piper Cherokee cockpit and instrument panel"
-                  className="w-full h-44 object-cover"
+                  className="w-full h-72 object-cover"
                   loading="lazy"
                 />
               </div>
-              <div className="col-span-2">
+              <div className="col-span-2 md:col-span-3">
                 <img
                   src="/images/aircraft-ramp.jpg"
                   alt="Piper Cherokee on the ramp at Van Nuys Airport"
-                  className="w-full h-44 object-cover"
+                  className="w-full h-48 object-cover"
                   loading="lazy"
                 />
               </div>
