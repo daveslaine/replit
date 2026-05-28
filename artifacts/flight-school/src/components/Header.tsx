@@ -33,7 +33,17 @@ const mobileAllLinks = [
 
 export function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 20);
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -45,29 +55,46 @@ export function Header() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  const transparent = !scrolled;
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+        transparent
+          ? "bg-transparent border-transparent"
+          : "bg-white border-b border-slate-200 shadow-sm"
+      }`}
+    >
+      <div className="container mx-auto px-4 h-14 flex items-center justify-between gap-4">
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0" data-testid="link-home">
-          <div className="bg-primary text-white rounded-md w-8 h-8 flex items-center justify-center font-bold text-sm shrink-0">
+          <div className="bg-primary text-white rounded-md w-7 h-7 flex items-center justify-center font-bold text-xs shrink-0">
             AF
           </div>
-          <span className="font-bold text-base text-primary hidden sm:inline-block leading-tight">
+          <span
+            className={`font-bold text-sm hidden sm:inline-block leading-tight transition-colors duration-300 ${
+              transparent ? "text-white" : "text-primary"
+            }`}
+          >
             Accelerated Flight School
           </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-5">
+        <nav className="hidden lg:flex items-center gap-4 flex-1 justify-center">
           {/* Training Programs dropdown */}
           <div className="relative" ref={dropdownRef}>
             <button
-              className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className={`flex items-center gap-1 text-xs font-medium transition-colors duration-300 ${
+                transparent
+                  ? "text-white/80 hover:text-white"
+                  : "text-slate-600 hover:text-primary"
+              }`}
               onClick={() => setDropdownOpen((v) => !v)}
               data-testid="button-training-programs-dropdown"
             >
               Training Programs
-              <ChevronDown className={`h-4 w-4 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
+              <ChevronDown className={`h-3.5 w-3.5 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
             </button>
             {dropdownOpen && (
               <div className="absolute top-full left-0 mt-2 w-52 bg-white rounded-xl border border-slate-200 shadow-lg py-2 z-50">
@@ -86,10 +113,10 @@ export function Header() {
             )}
           </div>
 
-          {/* Discovery Flight — highlighted pill */}
+          {/* Discovery Flight — always blue pill */}
           <Link href="/discovery-flight" data-testid="link-discovery-flight-nav">
-            <span className="inline-flex items-center gap-1.5 bg-secondary text-white text-sm font-bold px-3.5 py-1.5 rounded-full hover:bg-secondary/90 transition-colors">
-              <Plane className="w-3.5 h-3.5" />
+            <span className="inline-flex items-center gap-1.5 bg-secondary text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-secondary/90 transition-colors">
+              <Plane className="w-3 h-3" />
               Discovery Flight
             </span>
           </Link>
@@ -98,7 +125,11 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className={`text-xs font-medium transition-colors duration-300 ${
+                transparent
+                  ? "text-white/80 hover:text-white"
+                  : "text-slate-600 hover:text-primary"
+              }`}
               data-testid={`link-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
             >
               {link.label}
@@ -106,10 +137,19 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        {/* Right side: phone button */}
+        <div className="flex items-center gap-2 shrink-0">
           <a href="tel:818-469-1414" className="hidden md:inline-flex" data-testid="link-call-header">
-            <Button variant="default" size="sm" className="gap-2 font-bold">
-              <Phone className="h-4 w-4" />
+            <Button
+              variant="default"
+              size="sm"
+              className={`gap-1.5 font-bold text-xs px-3 h-8 transition-all duration-300 ${
+                transparent
+                  ? "bg-primary/80 hover:bg-primary border-white/20 text-white"
+                  : ""
+              }`}
+            >
+              <Phone className="h-3.5 w-3.5" />
               818-469-1414
             </Button>
           </a>
@@ -117,8 +157,15 @@ export function Header() {
           {/* Mobile Menu */}
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="lg:hidden" data-testid="button-mobile-menu">
-                <Menu className="h-6 w-6" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className={`lg:hidden h-8 w-8 transition-colors duration-300 ${
+                  transparent ? "text-white hover:bg-white/10" : ""
+                }`}
+                data-testid="button-mobile-menu"
+              >
+                <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
@@ -130,7 +177,6 @@ export function Header() {
                   </div>
                   <span className="font-bold text-base text-primary">Accelerated Flight School</span>
                 </Link>
-                {/* Discovery Flight highlighted in mobile too */}
                 <Link href="/discovery-flight" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
                   <Plane className="w-4 h-4" />
                   Discovery Flight — $190
