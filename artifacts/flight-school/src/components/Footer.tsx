@@ -42,7 +42,7 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-4">
               <Link href="/" className="flex items-center">
-                <img src="/images/logo.png" alt="Accelerated Flight School" className="h-10 w-auto brightness-0 invert" />
+                <img src="/images/logo.png" alt="Accelerated Flight School" style={{ height: "52px", width: "auto", filter: "brightness(0) invert(1)" }} />
               </Link>
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
