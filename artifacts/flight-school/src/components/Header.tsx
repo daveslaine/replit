@@ -72,17 +72,14 @@ export function Header() {
     >
       <div className="container mx-auto px-4 h-14 flex items-center justify-between gap-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 shrink-0" data-testid="link-home">
-          <div className="bg-primary text-white rounded-md w-7 h-7 flex items-center justify-center font-bold text-xs shrink-0">
-            AF
-          </div>
-          <span
-            className={`font-bold text-sm hidden sm:inline-block leading-tight transition-colors duration-300 ${
-              transparent ? "text-white" : "text-primary"
+        <Link href="/" className="flex items-center shrink-0" data-testid="link-home">
+          <img
+            src="/images/logo.png"
+            alt="Accelerated Flight School"
+            className={`h-8 w-auto transition-all duration-300 ${
+              transparent ? "brightness-0 invert" : ""
             }`}
-          >
-            Accelerated Flight School
-          </span>
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -176,11 +173,8 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[360px]">
               <div className="flex flex-col gap-6 py-6">
-                <Link href="/" className="flex items-center gap-2">
-                  <div className="bg-primary text-white rounded-md w-8 h-8 flex items-center justify-center font-bold text-sm">
-                    AF
-                  </div>
-                  <span className="font-bold text-base text-primary">Accelerated Flight School</span>
+                <Link href="/" className="flex items-center">
+                  <img src="/images/logo.png" alt="Accelerated Flight School" className="h-9 w-auto" />
                 </Link>
                 <Link href="/discovery-flight" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
                   <Plane className="w-4 h-4" />
