@@ -25,12 +25,40 @@ export function OurAircraftPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-12">
-            <div className="w-full h-64 md:h-96 relative">
-              <img 
-                src="/images/piper-cherokee.png" 
-                alt="1985 Piper PA28 Cherokee Warrior II parked on a sunny airport ramp at Van Nuys Airport" 
-                className="w-full h-full object-cover"
-              />
+            {/* Photo gallery */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
+              <div className="col-span-2 md:col-span-2 row-span-2">
+                <img
+                  src="/images/piper-cherokee.png"
+                  alt="1985 Piper PA28 Cherokee Warrior II at Van Nuys Airport"
+                  className="w-full h-64 md:h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-span-1">
+                <img
+                  src="/images/aircraft-exterior.png"
+                  alt="N9172Y Piper Cherokee Warrior II in flight"
+                  className="w-full h-44 object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-span-1">
+                <img
+                  src="/images/aircraft-cockpit.jpg"
+                  alt="Piper Cherokee cockpit and instrument panel"
+                  className="w-full h-44 object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-span-2">
+                <img
+                  src="/images/aircraft-ramp.jpg"
+                  alt="Piper Cherokee on the ramp at Van Nuys Airport"
+                  className="w-full h-44 object-cover"
+                  loading="lazy"
+                />
+              </div>
             </div>
             
             <div className="p-8 md:p-12">
