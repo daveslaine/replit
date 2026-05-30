@@ -102,7 +102,6 @@ export function HomePage() {
           content="Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 818-469-1414."
         />
       </Helmet>
-
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section className="relative w-full min-h-[92vh] flex flex-col bg-primary text-white overflow-hidden">
         {/* Background photo */}
@@ -129,9 +128,7 @@ export function HomePage() {
             <h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-xl"
               data-testid="text-hero-heading"
-            >
-              Structured and Affordable Flight Training at Van Nuys
-            </h1>
+            >High Quality and Affordable Flight Training at Van Nuys</h1>
             <p
               className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-lg"
               data-testid="text-hero-subheading"
@@ -139,7 +136,7 @@ export function HomePage() {
               Learn to fly with one of the most transparent and affordable flight schools in
               California. We explain the entire training process from day one so students
               understand exactly what they are training for, how the FAA checkride works,
-              what realistic costs look like, and how to progress efficiently.
+              what realistic costs look like, and how to progress efficiently. Pay as you go per hour.
             </p>
 
             {/* CTA buttons */}
@@ -197,7 +194,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── What Kind of Pilot? ────────────────────────────────── */}
       <section className="py-16 bg-white border-b border-slate-100">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -245,7 +241,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Why Different ─────────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -429,7 +424,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Checkride Scheduling Advantage ───────────────────── */}
       <section className="py-20 bg-slate-50 border-y border-slate-200">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -486,7 +480,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Pricing Snapshot ─────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -599,12 +592,10 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── Student Promise ───────────────────────────────────── */}
       <div className="container mx-auto px-4">
         <StudentPromise />
       </div>
-
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="bg-primary text-white py-24">
         <div className="container mx-auto px-4 text-center max-w-4xl">
