@@ -38,7 +38,7 @@ const corePrograms = [
 
 export function LandingPage() {
   const [location] = useLocation();
-  const slug = location.replace(/^\/landing-page-/, "");
+  const slug = location.replace(/^\//, "");
   const page = getLandingPage(slug);
 
   if (!page) {

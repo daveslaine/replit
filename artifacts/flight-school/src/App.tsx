@@ -29,12 +29,14 @@ import { DealsPage } from "@/pages/DealsPage";
 import { AboutUsPage } from "@/pages/AboutUsPage";
 import { DirectionsPage } from "@/pages/DirectionsPage";
 import { LandingPage } from "@/pages/LandingPage";
+import { getLandingPage } from "@/data/landingPages";
 
 const queryClient = new QueryClient();
 
 function LandingOrNotFound() {
   const [location] = useLocation();
-  if (location.startsWith("/landing-page-")) {
+  const slug = location.replace(/^\//, "");
+  if (getLandingPage(slug)) {
     return <LandingPage />;
   }
   return <NotFound />;
