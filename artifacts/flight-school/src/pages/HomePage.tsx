@@ -97,7 +97,7 @@ export function HomePage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Accelerated Flight School | Van Nuys Airport | Affordable Flight Training</title>
+        <title>Accelerated Flight School | Van Nuys Airport KVNY | Affordable Flight Training Los Angeles</title>
         <meta
           name="description"
           content="Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 818-469-1414."
@@ -156,7 +156,7 @@ export function HomePage() {
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/discovery-flight" data-testid="link-hero-discovery">
+              <Link href="/discovery-flight-van-nuys" data-testid="link-hero-discovery">
                 <Button
                   size="lg"
                   variant="outline"

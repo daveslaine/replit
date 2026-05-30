@@ -123,7 +123,7 @@ export function Footer() {
               <h3 className="font-bold text-white text-sm uppercase tracking-wider">Training Programs</h3>
               <ul className="space-y-2.5">
                 <li>
-                  <Link href="/discovery-flight" className="text-primary-foreground/70 hover:text-white transition-colors text-sm font-medium">
+                  <Link href="/discovery-flight-van-nuys" className="text-primary-foreground/70 hover:text-white transition-colors text-sm font-medium">
                     Discovery Flight — $190
                   </Link>
                 </li>

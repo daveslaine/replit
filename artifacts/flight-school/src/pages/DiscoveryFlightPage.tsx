@@ -9,7 +9,7 @@ export function DiscoveryFlightPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Discovery Flight Van Nuys | 1.5 Hours for $190 | Accelerated Flight School</title>
+        <title>Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School</title>
         <meta
           name="description"
           content="1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley, zero-g maneuvers included. Call 818-469-1414."

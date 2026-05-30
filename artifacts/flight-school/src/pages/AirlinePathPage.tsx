@@ -20,7 +20,7 @@ export function AirlinePathPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Airline Pilot Training Path Van Nuys | Zero to ATP Los Angeles | Accelerated Flight School</title>
+        <title>Airline Pilot Path Van Nuys Airport KVNY | Zero to ATP Los Angeles | Accelerated Flight School</title>
         <meta name="description" content="Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → Multi-Engine → CFI → ATP. Transparent costs, no upfront payment. Call 818-469-1414." />
         <meta name="keywords" content="airline pilot training van nuys, zero to ATP Los Angeles, airline career path Southern California, become airline pilot Van Nuys, ATP training KVNY, airline pilot school Los Angeles, zero to airline van nuys airport, how to become airline pilot California" />
       </Helmet>

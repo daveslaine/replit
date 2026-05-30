@@ -108,7 +108,7 @@ export function InstructorsPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Flight Instructors Van Nuys | CFI CFII | Accelerated Flight School</title>
+        <title>Flight Instructors Van Nuys Airport KVNY | CFI CFII Los Angeles | Accelerated Flight School</title>
         <meta
           name="description"
           content="Meet our CFI and CFII instructors at Van Nuys Airport. Reza S. and David T. offer structured, ACS-focused flight training. Rates from $35/hr. Call 818-469-1414."

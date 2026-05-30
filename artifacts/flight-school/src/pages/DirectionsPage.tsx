@@ -7,7 +7,7 @@ export function DirectionsPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>How to Find Us | Accelerated Flight School Van Nuys Airport | Directions & Parking</title>
+        <title>Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School</title>
         <meta name="description" content="Step-by-step directions to Accelerated Flight School at 7900 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 818-469-1414." />
       </Helmet>
 

@@ -28,7 +28,7 @@ const topNavLinks = [
 
 const mobileAllLinks = [
   { href: "/", label: "Home" },
-  { href: "/discovery-flight", label: "Discovery Flight" },
+  { href: "/discovery-flight-van-nuys", label: "Discovery Flight" },
   ...trainingLinks,
   { href: "/van-nuys-accelerated-flight-school-pricing", label: "Pricing" },
   { href: "/van-nuys-accelerated-flight-school-deals-coupons", label: "Deals & Coupons" },
@@ -122,7 +122,7 @@ export function Header() {
           </div>
 
           {/* Discovery Flight — always blue pill */}
-          <Link href="/discovery-flight" data-testid="link-discovery-flight-nav">
+          <Link href="/discovery-flight-van-nuys" data-testid="link-discovery-flight-nav">
             <span className="inline-flex items-center gap-1.5 bg-secondary text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-secondary/90 transition-colors">
               <Plane className="w-3 h-3" />
               Discovery Flight
@@ -183,12 +183,12 @@ export function Header() {
                   <img src="/images/logo.png" alt="AFS" style={{ height: "48px", width: "auto" }} />
                   <span className="font-bold text-base text-primary leading-tight">Accelerated<br />Flight School</span>
                 </Link>
-                <Link href="/discovery-flight" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
+                <Link href="/discovery-flight-van-nuys" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
                   <Plane className="w-4 h-4" />
                   Discovery Flight — $190
                 </Link>
                 <nav className="flex flex-col gap-1">
-                  {mobileAllLinks.filter(l => l.href !== "/discovery-flight").map((link) => (
+                  {mobileAllLinks.filter(l => l.href !== "/discovery-flight-van-nuys").map((link) => (
                     <SheetClose asChild key={link.href}>
                       <Link
                         href={link.href}

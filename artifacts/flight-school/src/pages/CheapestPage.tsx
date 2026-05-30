@@ -98,7 +98,7 @@ export function CheapestPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Cheapest Flight School Van Nuys CA | Real Pricing | Accelerated Flight School</title>
+        <title>Cheapest Flight School Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School</title>
         <meta name="description" content="The cheapest flight school in Van Nuys CA — with real pricing. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Structured, ACS-based. Call 818-469-1414." />
         <meta name="keywords" content="cheapest flight school van nuys, cheap flight training Los Angeles, affordable pilot training KVNY, flight school pricing Van Nuys CA" />
       </Helmet>

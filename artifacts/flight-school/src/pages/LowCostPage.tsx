@@ -88,7 +88,7 @@ export function LowCostPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Low Cost Flight Training Van Nuys CA | Real Pricing | Accelerated Flight School</title>
+        <title>Low Cost Flight Training Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School</title>
         <meta name="description" content="Low-cost flight training at Van Nuys Airport (KVNY). Aircraft $160/hr wet. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. High-quality ACS instruction. Call 818-469-1414." />
         <meta name="keywords" content="low cost flight school van nuys, affordable flight training KVNY, low cost pilot training Los Angeles, cheap flight lessons Van Nuys California" />
       </Helmet>
@@ -256,7 +256,7 @@ export function LowCostPage() {
                 <Phone className="w-5 h-5" /> Call or Text 818-469-1414
               </Button>
             </a>
-            <Link href="/discovery-flight">
+            <Link href="/discovery-flight-van-nuys">
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-lg font-bold border-primary text-primary hover:bg-primary/5">
                 Book a Discovery Flight — $190
               </Button>
