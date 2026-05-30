@@ -12,10 +12,10 @@ export function CheapestPage() {
         <meta name="description" content="The cheapest flight school in Van Nuys CA with professional FAA-focused training. Private Pilot ~$7,500–$12,500. Aircraft $160/hr wet. Call 818-469-1414." />
       </Helmet>
 
-      <section className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
+      <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Cheapest Flight School in Van Nuys CA Without Cheap Training</h1>
-          <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Cheapest Flight School in Van Nuys CA Without Cheap Training</h1>
+          <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
             Affordable does not mean unstructured. Total cost savings come from efficiency, structured lessons, and proactive scheduling — not just low hourly rates.
           </p>
         </div>

@@ -1,7 +1,53 @@
 import React from "react";
 import { Link } from "wouter";
-import { Plane, Phone, MessageSquare, MapPin, Clock, Mail } from "lucide-react";
+import { Phone, MessageSquare, MapPin, Clock, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="0.01" fill="currentColor" strokeWidth="3" />
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  );
+}
+
+function GoogleBusinessIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z" />
+    </svg>
+  );
+}
+
+function YelpIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
+      <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V11a1 1 0 0 0-2 0v5.93A8 8 0 0 1 4.07 13H10a1 1 0 0 0 0-2H4.07A8 8 0 0 1 11 4.07V10a1 1 0 0 0 2 0V4.07A8 8 0 0 1 19.93 11H14a1 1 0 0 0 0 2h5.93A8 8 0 0 1 13 19.93z" />
+    </svg>
+  );
+}
+
+const SocialLink = ({ href, label, children }: { href: string; label: string; children: React.ReactNode }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label={label}
+    className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/25 border border-white/15 flex items-center justify-center transition-colors text-white"
+  >
+    {children}
+  </a>
+);
 
 export function Footer() {
   return (
@@ -52,6 +98,24 @@ export function Footer() {
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                 <span>H7, 7900 Balboa Blvd.<br />Van Nuys, CA 91406</span>
               </div>
+              {/* Social Links */}
+              <div className="pt-1">
+                <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-2 font-bold">Find Us Online</p>
+                <div className="flex gap-2">
+                  <SocialLink href="#" label="Google Business">
+                    <GoogleBusinessIcon />
+                  </SocialLink>
+                  <SocialLink href="#" label="Yelp">
+                    <YelpIcon />
+                  </SocialLink>
+                  <SocialLink href="#" label="Instagram">
+                    <InstagramIcon />
+                  </SocialLink>
+                  <SocialLink href="#" label="Facebook">
+                    <FacebookIcon />
+                  </SocialLink>
+                </div>
+              </div>
             </div>
 
             {/* Training Programs */}
@@ -66,9 +130,10 @@ export function Footer() {
                 {[
                   { href: "/private-pilot-van-nuys", label: "Private Pilot" },
                   { href: "/instrument-rating-van-nuys", label: "Instrument Rating" },
-                  { href: "/commercial-pilot-training", label: "Commercial Pilot" },
-                  { href: "/cfi-training", label: "CFI Training" },
-                  { href: "/airline-pilot-path", label: "Airline Pilot Path" },
+                  { href: "/commercial-pilot-training-van-nuys", label: "Commercial Pilot" },
+                  { href: "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training", label: "Multi-Engine Add-On" },
+                  { href: "/cfi-training-van-nuys", label: "CFI Training" },
+                  { href: "/airline-pilot-path-van-nuys", label: "Airline Pilot Path" },
                 ].map((link) => (
                   <li key={link.href}>
                     <Link
@@ -116,10 +181,6 @@ export function Footer() {
                   <Phone className="h-4 w-4 shrink-0" />
                   818-469-1414
                 </a>
-                <a href="mailto:email@placeholderemail.com" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
-                  <Mail className="h-4 w-4 shrink-0" />
-                  email@placeholderemail.com
-                </a>
                 <a href="sms:818-469-1414" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
                   <MessageSquare className="h-4 w-4 shrink-0" />
                   Text Us
@@ -140,8 +201,9 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-xs">
+          <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-xs space-y-1">
             <p>&copy; {new Date().getFullYear()} Accelerated Flight School. All rights reserved. Van Nuys Airport (KVNY), Van Nuys, California.</p>
+            <p>Affiliated with <span className="text-primary-foreground/60 font-medium">Accelerated Flight Academy</span>.</p>
           </div>
         </div>
       </div>
