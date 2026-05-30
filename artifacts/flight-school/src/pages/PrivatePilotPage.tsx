@@ -169,6 +169,76 @@ export function PrivatePilotPage() {
                 </p>
               </div>
 
+              {/* Flight Proficiency Requirements */}
+              <div className="bg-white rounded-xl border border-slate-200 p-6 md:p-8">
+                <h3 className="text-xl font-bold text-primary mb-2">FAA Flight Proficiency Requirements</h3>
+                <p className="text-sm text-slate-500 mb-6">
+                  To pass your Private Pilot checkride, you must demonstrate competency in all 10 required areas of operation listed in the FAA's Airman Certification Standards (ACS). Here is what each area involves and what you will practice extensively before your checkride.
+                </p>
+                <div className="space-y-5">
+                  {[
+                    {
+                      num: "I",
+                      title: "Preflight Preparation",
+                      detail: "Obtaining and analyzing a weather briefing, checking NOTAMs and TFRs, calculating weight and balance, computing takeoff and landing performance, and confirming aircraft airworthiness via the maintenance logbooks.",
+                    },
+                    {
+                      num: "II",
+                      title: "Preflight Procedures",
+                      detail: "The physical walkaround inspection of the aircraft — checking fuel quantity and quality, oil level, control surface freedom of movement, tires, lights, pitot-static system, and all visible structural components. Also covers cockpit setup, avionics checks, and engine run-up procedures.",
+                    },
+                    {
+                      num: "III",
+                      title: "Airport and Seaplane Base Operations",
+                      detail: "Ground operations at controlled and uncontrolled airports: taxiing techniques, taxi diagrams, runway incursion avoidance, radio communications with tower, CTAF procedures at non-towered airports, and light gun signal recognition.",
+                    },
+                    {
+                      num: "IV",
+                      title: "Takeoffs, Landings, and Go-Arounds",
+                      detail: "Normal and crosswind takeoffs and landings, short-field and soft-field techniques, go-around procedures when an approach must be abandoned, and rejected takeoff procedures. Each technique trains you to safely handle a different runway surface or condition.",
+                    },
+                    {
+                      num: "V",
+                      title: "Performance Maneuvers",
+                      detail: "Steep Turns: The primary performance maneuver for the Private Pilot. You enter a coordinated 45° banked turn and maintain altitude within ±100 ft, airspeed within ±10 knots, and roll out on the entry heading within ±10°. At 45° of bank the load factor increases to 1.41 G, requiring increased back pressure throughout. Steep turns develop precise aircraft control, coordination, and spatial awareness under elevated G-loading.",
+                    },
+                    {
+                      num: "VI",
+                      title: "Ground Reference Maneuvers",
+                      detail: "These low-altitude maneuvers train you to track a precise path over the ground while compensating for wind drift — a fundamental skill for all traffic patterns and cross-country flying. Three maneuvers are tested:\n\n• Rectangular Course: Flying a rectangular ground track around a field at a constant altitude (600–1,000 ft AGL). You must continuously correct your bank angle and crab angle to maintain uniform distance from each side despite wind. Simulates the traffic pattern.\n\n• S-Turns Across a Road: Flying a series of alternating semicircles on each side of a linear ground reference (road or fence line). Each half-circle requires you to progressively vary bank angle — steeper on the downwind side where groundspeed is higher, shallower on the upwind side — to maintain equal-radius turns.\n\n• Turns Around a Point: Maintaining a constant-radius circle around a fixed ground reference. Bank must be steepest directly downwind (fastest groundspeed) and shallowest directly upwind (slowest groundspeed), with smooth continuous adjustment throughout.",
+                    },
+                    {
+                      num: "VII",
+                      title: "Navigation",
+                      detail: "Pilotage (navigating by visual ground reference to sectional chart), dead reckoning (using heading, airspeed, and time to compute position), VOR radio navigation, and GPS navigation. Cross-country planning, fuel planning, and diversion to an alternate airport if weather or other factors require it.",
+                    },
+                    {
+                      num: "VIII",
+                      title: "Slow Flight and Stalls",
+                      detail: "Three distinct skills are tested:\n\n• Slow Flight (Minimum Controllable Airspeed): You slow the aircraft to 5–10 knots above stall speed — inside the \"region of reversed command\" where adding back pressure increases drag more than it increases lift. You must maintain altitude and heading while demonstrating that the aircraft still responds to control inputs, albeit sluggishly. This teaches stall recognition before the stall occurs.\n\n• Power-Off Stalls (Approach-to-Landing Stall): Configured for landing (gear down if applicable, flaps extended, power at idle), you pitch up until the stall warning sounds and the aircraft stalls. Recovery: simultaneously lower the nose below the horizon and add full power. This simulates a dangerously nose-high final approach.\n\n• Power-On Stalls (Departure Stall): Full power applied, aircraft pitched up aggressively to simulate a departure or go-around stall scenario. Recovery requires simultaneously lowering the nose while maintaining full power. The strong propeller slipstream creates significant left-turning tendencies — right rudder is critical. This is a more aggressive stall with faster onset than the power-off version.",
+                    },
+                    {
+                      num: "IX",
+                      title: "Emergency Operations",
+                      detail: "Simulated engine failure and forced landing to a field (your instructor will chop the throttle and you must set up for the best available landing area). Also covers partial power failures, electrical system malfunctions, smoke and fire in flight, emergency communications, and use of emergency checklists. The examiner will also test your judgment on system failures during the oral exam.",
+                    },
+                    {
+                      num: "X",
+                      title: "Postflight Procedures",
+                      detail: "Engine shutdown checklist, aircraft securing (tie-downs, chocks, control locks), completing the flight logbook entry, noting and reporting any aircraft discrepancies or maintenance items observed during the flight.",
+                    },
+                  ].map((area) => (
+                    <div key={area.num} className="border-l-4 border-secondary pl-4">
+                      <h4 className="font-bold text-primary mb-1 text-sm">
+                        <span className="text-secondary font-black mr-2">Area {area.num}.</span>
+                        {area.title}
+                      </h4>
+                      <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-line">{area.detail}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               {/* Checkride Scheduling Advantage */}
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8">
                 <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-3">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Phone, Info, Tablet, Headphones, BookOpen, Stethoscope, Shield, CheckCircle2, ExternalLink } from "lucide-react";
+import { Phone, Info, Tablet, Headphones, BookOpen, Stethoscope, Shield, CheckCircle2, ExternalLink, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 import { StudentPromise } from "@/components/StudentPromise";
@@ -111,7 +111,7 @@ export function PricingPage() {
 
                 <div className="pt-4 border-t border-slate-100">
                   <div className="flex justify-between items-baseline mb-1">
-                    <Link href="/commercial-pilot-training" className="font-bold text-lg text-secondary hover:underline">Commercial Pilot</Link>
+                    <Link href="/commercial-pilot-training-van-nuys" className="font-bold text-lg text-secondary hover:underline">Commercial Pilot</Link>
                     <span className="font-bold text-slate-800">~$40,000–$55,000</span>
                   </div>
                   <p className="text-sm text-slate-600 mb-1">From zero hours. If you already have ratings, call for a custom bridge estimate.</p>
@@ -128,7 +128,7 @@ export function PricingPage() {
 
                 <div className="pt-4 border-t border-slate-100">
                   <div className="flex justify-between items-baseline mb-1">
-                    <span className="font-bold text-lg text-slate-800">Commercial Multi Engine Add-On</span>
+                    <Link href="/commercial-pilot-multi-engine-add-on-van-nuys-flight-training" className="font-bold text-lg text-secondary hover:underline">Commercial Multi-Engine Add-On</Link>
                     <span className="font-bold text-slate-800">$3,000–$4,000</span>
                   </div>
                   <p className="text-sm text-red-600 font-medium">SoCal Average: $5,000–$8,000</p>
@@ -136,7 +136,7 @@ export function PricingPage() {
 
                 <div className="pt-4 border-t border-slate-100">
                   <div className="flex justify-between items-baseline mb-1">
-                    <Link href="/cfi-training" className="font-bold text-lg text-secondary hover:underline">CFI Training</Link>
+                    <Link href="/cfi-training-van-nuys" className="font-bold text-lg text-secondary hover:underline">CFI Training</Link>
                     <span className="font-bold text-slate-800">~$3,000–$6,000</span>
                   </div>
                   <p className="text-sm text-slate-600 mb-1">After completing Commercial Pilot.</p>
@@ -358,12 +358,71 @@ export function PricingPage() {
           </div>
 
           {/* Written test + misc */}
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex gap-4">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 flex gap-4 mb-8">
             <Info className="w-6 h-6 text-amber-600 shrink-0 mt-0.5" />
             <div>
               <h3 className="font-bold text-amber-800 mb-2">Additional Costs to Be Aware Of</h3>
               <p className="text-amber-700 text-sm leading-relaxed">
                 Other costs include: written knowledge test fees (~$175 per attempt), renter's insurance if required, and the <AviationTerm term="DPE" /> <AviationTerm term="Checkride" /> fees listed above. We explain all of these at the start of training so students are never surprised. These costs are standard across all flight schools.
+              </p>
+            </div>
+          </div>
+
+          {/* Loan Warning */}
+          <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-10">
+            <div className="flex gap-4 mb-6">
+              <AlertTriangle className="w-8 h-8 text-yellow-400 shrink-0 mt-1" />
+              <div>
+                <h2 className="text-2xl font-bold text-white mb-1">Why We Don't Offer Flight Training Loans — And Why You Should Be Skeptical of Schools That Do</h2>
+                <p className="text-sm text-slate-400">Flight school financing, pilot loan programs, zero-down flight training offers — how they really work.</p>
+              </div>
+            </div>
+
+            <p className="text-slate-300 leading-relaxed mb-4">
+              Some flight schools — typically large Part 141 academies — advertise financing programs or partnerships with pilot loan providers. On the surface, this sounds convenient. In practice, the economics are stacked heavily against you as a student.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <h3 className="font-bold text-yellow-400 mb-3 text-sm uppercase tracking-wider">The True Cost With a Loan</h3>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 font-bold shrink-0">•</span>
+                    <span>Going from <strong className="text-white">zero hours to Commercial Pilot + CFI</strong> at a loan-affiliated school typically costs <strong className="text-yellow-300">$110,000 or more</strong> — paid by the loan provider, not you, upfront.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 font-bold shrink-0">•</span>
+                    <span>Repayment begins the moment you start working as a new instructor — earning entry-level instructor pay while carrying a six-figure debt load.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 font-bold shrink-0">•</span>
+                    <span>By the time the loan is fully paid off, total repayment with interest often reaches <strong className="text-yellow-300">$250,000–$300,000</strong>.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+                <h3 className="font-bold text-yellow-400 mb-3 text-sm uppercase tracking-wider">Why Large Loan Schools Have a Bad Reputation</h3>
+                <ul className="space-y-2 text-sm text-slate-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 font-bold shrink-0">•</span>
+                    <span>The loan disbursement typically happens far before you finish their promised 7–8 month program. Once the school has been paid by the lender, their financial incentive to keep you enrolled is significantly reduced.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 font-bold shrink-0">•</span>
+                    <span>Students who struggle — for any reason — are frequently dismissed on pretextual grounds. The school keeps the disbursed loan money. You are left with partial training and the full debt.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-yellow-400 font-bold shrink-0">•</span>
+                    <span>The school charges more because the lender is paying — not you. Higher prices mean higher loan balances and higher total repayment for the student.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white/10 border border-white/20 rounded-xl p-5">
+              <h3 className="font-bold text-white mb-2">Our Position</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                We do not offer loan financing, and we are not affiliated with any pilot loan program. We charge the same rate regardless of how you pay — and you pay only when you fly. A student paying $195/hr for 60 hours of dual training pays $11,700. The same 60 hours at a loan-affiliated school can cost $25,000–$40,000, financed at high interest rates, with repayment beginning on day one of your new instructor career. We think you deserve better than that.
               </p>
             </div>
           </div>
