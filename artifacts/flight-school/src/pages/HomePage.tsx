@@ -434,13 +434,20 @@ export function HomePage() {
             </div>
             <div className="space-y-4 text-primary-foreground/85 leading-relaxed">
               <p>
-                At Accelerated Flight School, the ultimate responsibility to ensure you pass, falls on us. We do this by providing high quality instruction, and also at a fair, low, and honest price.
+                At Accelerated Flight School, we believe the responsibility to prepare you properly falls on us. You are paying for instruction, structure, guidance, and a real path to passing. Our job is to provide high-quality training at a fair, low, and honest price, while making sure you always understand where you stand and what is required to succeed.
               </p>
               <p>
-                In other flight schools, students especially young ones or students who are not aware of how flight schools work, and the goals of most instructors, will spend time and money, with a terrible instructor, and fail multiple stage checks, or even checkrides, yet be told it was their fault, as these instructors only care about keeping their own job, while not caring at all about your piloting aspirations. Thousands of students have found themselves with an inadequate uncaring instructor who didn't care to help them pass, found any minor and most of the time illegitimate reason to complain to the flight school owner about the student, so that when the student inevitably fails due to inadequate care and instruction, the student is blamed and told its their fault, while the inadequate instructor keeps their job, and the owner has no obligation to make things right by refunding you or providing a better instructor. In other words the system is designed to give you no recourse and make you believe if the instructor failed you, that it is your fault.
+                At many flight schools, especially for younger students or students who are new to aviation, it is easy to get trapped in a system where they keep spending money without getting clear answers. A student may be assigned an instructor who is unorganized, unmotivated, or more focused on protecting their own job than helping the student succeed. The student may fail stage checks or even a checkride, then be told it was entirely their fault, even when the training was poorly structured, poorly explained, or not properly managed.
+              </p>
+              <p>
+                This happens more often than people realize. Students can spend thousands of dollars with an instructor who does not clearly explain the standards, does not give a real plan for improvement, and does not take ownership of the student's progress. Then, when the student struggles, the blame gets shifted onto the student instead of anyone asking whether the instruction, communication, or training plan failed them.
+              </p>
+              <p className="font-medium text-white/95">We do not believe in that kind of flight training.</p>
+              <p>
+                At Accelerated Flight School, we treat your success as our responsibility. We care whether you understand the material. We care whether you are progressing. We care whether you are being prepared correctly for the FAA checkride. We care whether you are happy, confident, satisfied, and willing to return for more training.
               </p>
               <p className="font-semibold text-white">
-                At our school we only care about ensuring you are happy, satisfied, pass, and return for more training. We treat our students exactly how they deserve to be treated as paying customers.
+                We treat students the way paying customers deserve to be treated: with respect, honesty, clear instruction, fair pricing, and a serious commitment to helping them pass.
               </p>
             </div>
           </div>
