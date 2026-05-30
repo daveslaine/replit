@@ -123,7 +123,7 @@ export function OurAircraftPage() {
               </div>
 
               <h3 className="text-xl font-bold text-primary mb-4">Aircraft Features</h3>
-              <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <div className="grid md:grid-cols-2 gap-4 mb-10">
                 {[
                   { title: "IFR Equipped", desc: "Has instruments used for instrument flight training." },
                   { title: "Garmin GNS 430", desc: "Panel-mounted GPS and navigation system." },
@@ -142,6 +142,61 @@ export function OurAircraftPage() {
                 ))}
               </div>
 
+              {/* V-Speeds — inside the N9172Y card */}
+              <div className="border border-slate-200 rounded-xl overflow-hidden mb-6">
+                <div className="px-6 pt-6 pb-3 border-b border-slate-100 bg-slate-50">
+                  <h3 className="text-lg font-bold text-primary mb-0.5">V-Speeds — N9172Y</h3>
+                  <p className="text-slate-500 text-sm">
+                    Standardized airspeed references for this aircraft. Tap any row to see what it means and why it matters.
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 px-5 py-2 bg-slate-50 border-b border-slate-100 text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <span className="w-16 shrink-0">Code</span>
+                  <span className="w-24 shrink-0">Value</span>
+                  <span className="flex-1">Name</span>
+                </div>
+                <VSpeeds />
+              </div>
+
+              {/* Performance Specs — inside the N9172Y card */}
+              <div className="border border-slate-200 rounded-xl overflow-hidden mb-6">
+                <div className="px-6 pt-5 pb-3 border-b border-slate-100 bg-slate-50">
+                  <h3 className="text-lg font-bold text-primary mb-0.5">Performance Specifications</h3>
+                  <p className="text-slate-500 text-sm">Published performance figures for the Piper PA-28-161 Warrior II.</p>
+                </div>
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-y divide-slate-100">
+                  {perfSpecs.map((s) => (
+                    <div key={s.label} className="px-6 py-5">
+                      <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">{s.label}</p>
+                      <p className="text-lg font-bold text-primary">{s.value}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* POH disclaimer + link — inside the N9172Y card */}
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-8">
+                <div className="flex gap-3">
+                  <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-bold text-amber-800 text-sm mb-1">Reference Document — Not Aircraft-Specific</p>
+                    <p className="text-amber-700 text-sm leading-relaxed mb-3">
+                      The Pilot's Operating Handbook linked below is for a <strong>similar model and year</strong> Piper PA-28-161 Warrior II and is provided for reference and study purposes only. It is <strong>not</strong> the POH of the actual aircraft N9172Y. The weight and loading data listed in this POH are <strong>not</strong> the actual figures for N9172Y. Always use the specific POH carried in the aircraft for any operational decisions.
+                    </p>
+                    <a
+                      href="/N9172Y-PA28-161-POH-reference.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
+                    >
+                      <FileText className="w-4 h-4" />
+                      Download POH Reference — PA-28-161 Warrior II
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <div className="bg-primary/5 rounded-xl p-6 border border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div>
                   <h4 className="font-bold text-primary mb-1">Ready to fly?</h4>
@@ -154,65 +209,6 @@ export function OurAircraftPage() {
                   </Button>
                 </a>
               </div>
-            </div>
-          </div>
-
-          {/* V-Speeds */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-12">
-            <div className="px-8 pt-8 pb-4 border-b border-slate-100">
-              <h2 className="text-2xl font-bold text-primary mb-1">V-Speeds — N9172Y Piper Warrior II</h2>
-              <p className="text-slate-500 text-sm">
-                V-speeds are standardized airspeed references that define safe operating limits and optimal performance targets for a specific aircraft.
-                Tap any speed to see what it means and why it matters.
-              </p>
-            </div>
-
-            {/* Header row */}
-            <div className="flex items-center gap-4 px-5 py-2 bg-slate-50 border-b border-slate-100 text-xs font-bold uppercase tracking-widest text-slate-400">
-              <span className="w-16 shrink-0">Code</span>
-              <span className="w-24 shrink-0">Value</span>
-              <span className="flex-1">Name</span>
-            </div>
-
-            <VSpeeds />
-
-            {/* POH disclaimer + link */}
-            <div className="mx-6 my-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
-              <div className="flex gap-3">
-                <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-bold text-amber-800 text-sm mb-1">Reference Document — Not Aircraft-Specific</p>
-                  <p className="text-amber-700 text-sm leading-relaxed mb-3">
-                    The Pilot's Operating Handbook linked below is for a <strong>similar model and year</strong> Piper PA-28-161 Warrior II and is provided for reference and study purposes only. It is <strong>not</strong> the POH of the actual aircraft N9172Y. The weight and loading data listed in this POH are <strong>not</strong> the actual figures for N9172Y. Always use the specific POH carried in the aircraft for any operational decisions.
-                  </p>
-                  <a
-                    href="/N9172Y-PA28-161-POH-reference.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-primary text-white text-sm font-bold px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors"
-                  >
-                    <FileText className="w-4 h-4" />
-                    Download POH Reference — PA-28-161 Warrior II
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Performance Specs */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-12">
-            <div className="px-8 pt-8 pb-4 border-b border-slate-100">
-              <h2 className="text-2xl font-bold text-primary mb-1">Performance Specifications</h2>
-              <p className="text-slate-500 text-sm">Published performance figures for the Piper PA-28-161 Warrior II.</p>
-            </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-y divide-slate-100">
-              {perfSpecs.map((s) => (
-                <div key={s.label} className="px-6 py-5">
-                  <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">{s.label}</p>
-                  <p className="text-lg font-bold text-primary">{s.value}</p>
-                </div>
-              ))}
             </div>
           </div>
 
