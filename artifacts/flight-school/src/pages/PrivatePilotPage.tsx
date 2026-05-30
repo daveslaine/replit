@@ -9,8 +9,9 @@ export function PrivatePilotPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Private Pilot Training Van Nuys | Accelerated Flight School</title>
-        <meta name="description" content="Get your Private Pilot license at Van Nuys Airport. Structured FAA ACS training. Estimated $7,500–$12,500. Half the cost of most SoCal schools. Call 818-469-1414." />
+        <title>Private Pilot License Training Van Nuys Airport | Affordable Flight School Los Angeles | Accelerated Flight School</title>
+        <meta name="description" content="Earn your Private Pilot License at Van Nuys Airport (KVNY), Los Angeles. FAA ACS-structured training. Estimated $7,500–$12,500 — half the SoCal average. No upfront payment. Call 818-469-1414." />
+        <meta name="keywords" content="private pilot license van nuys, private pilot training Los Angeles, learn to fly Van Nuys, flight school KVNY, affordable private pilot California, private pilot certificate Southern California, PPL training Los Angeles, flight lessons Van Nuys Airport" />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -190,7 +191,7 @@ export function PrivatePilotPage() {
                   </div>
                 </div>
                 <p className="text-sm text-slate-600 mt-4 leading-relaxed">
-                  Examiner availability in Southern California is limited and demand is high. Schools that wait until training is complete to begin scheduling often leave students waiting months. During that wait, skills degrade and extra refresher flights add cost. Our proactive DPE relationships ensure you test while you're still sharp — saving you both time and money.
+                  Examiner availability in Southern California is limited and demand is high. Schools that wait until training is complete to begin scheduling often leave students waiting months. During that wait, skills degrade and extra refresher flights add cost. Our proactive DPE relationships ensure you test while you're still sharp — saving you both time and money. <strong>We will ensure you get a Private Pilot DPE fast.</strong>
                 </p>
               </div>
             </div>

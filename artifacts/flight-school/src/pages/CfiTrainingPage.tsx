@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { GraduationCap, Phone, Info } from "lucide-react";
+import { GraduationCap, Phone, Info, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -9,8 +9,9 @@ export function CfiTrainingPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>CFI Training Van Nuys | Certified Flight Instructor | Accelerated Flight School</title>
-        <meta name="description" content="Become a Certified Flight Instructor at Van Nuys Airport. Teach students, earn money flying, build hours. Estimated $3,000–$6,000 after Commercial. Call 818-469-1414." />
+        <title>CFI Training Van Nuys Airport | Become a Certified Flight Instructor Los Angeles | Accelerated Flight School</title>
+        <meta name="description" content="Become a Certified Flight Instructor (CFI) at Van Nuys Airport (KVNY), Los Angeles. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, earn money flying. Call 818-469-1414." />
+        <meta name="keywords" content="CFI training van nuys, certified flight instructor Los Angeles, become flight instructor Southern California, CFI course KVNY, CFII training Los Angeles, flight instructor certificate van nuys, flight instructor training affordable California" />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -71,6 +72,32 @@ export function CfiTrainingPage() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Checkride Scheduling Advantage */}
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8 mb-12">
+            <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-3">
+              <CalendarClock className="w-6 h-6 text-secondary shrink-0" />
+              Checkride Scheduling Advantage
+            </h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              The CFI checkride requires a specialized DPE who evaluates both your flying and your teaching ability — these examiners book up fast. We proactively line up your CFI examiner as you approach training completion so you are not stuck waiting after months of preparation. <strong>We will ensure you get a CFI DPE fast.</strong>
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
+                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
+                <p className="text-xs text-slate-500 mt-1">from training completion to checkride</p>
+              </div>
+              <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
+                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
+                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
+              </div>
+            </div>
+            <p className="text-sm text-slate-600 mt-4 leading-relaxed">
+              CFI examiners in Southern California are rare and in high demand. Many candidates wait months after finishing their training before they can even schedule a checkride. Our DPE network keeps that gap short — you test while your knowledge is fresh and your teaching demonstrations are sharp.
+            </p>
           </div>
 
           <div className="text-center">

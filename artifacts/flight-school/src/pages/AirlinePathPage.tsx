@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Plane, ArrowDown, Phone } from "lucide-react";
+import { Plane, ArrowDown, Phone, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -19,8 +19,9 @@ export function AirlinePathPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Airline Pilot Path | Zero to Airline | Accelerated Flight School Van Nuys</title>
-        <meta name="description" content="Your structured path from zero experience toward airline eligibility. Private Pilot → Instrument → Commercial → CFI → ATP. Start at Van Nuys. Call 818-469-1414." />
+        <title>Airline Pilot Training Path Van Nuys | Zero to ATP Los Angeles | Accelerated Flight School</title>
+        <meta name="description" content="Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → CFI → ATP. Transparent costs, no upfront payment. Call 818-469-1414." />
+        <meta name="keywords" content="airline pilot training van nuys, zero to ATP Los Angeles, airline career path Southern California, become airline pilot Van Nuys, ATP training KVNY, airline pilot school Los Angeles, zero to airline van nuys airport, how to become airline pilot California" />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -72,6 +73,32 @@ export function AirlinePathPage() {
               <li>First-class medical certification</li>
               <li>Current market conditions and specific employer requirements</li>
             </ul>
+          </div>
+
+          {/* Checkride Scheduling Advantage */}
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8 mb-12">
+            <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-3">
+              <CalendarClock className="w-6 h-6 text-secondary shrink-0" />
+              Checkride Scheduling Advantage — At Every Stage
+            </h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              On the airline path you have multiple checkrides — Private Pilot, Instrument Rating, Commercial Pilot, and CFI. At each stage, we proactively coordinate your DPE scheduling so that when you finish training for a certificate, your examiner is already booked. No months wasted waiting in a backlog while your skills go stale. <strong>We will ensure you get your airline path DPEs fast at every stage.</strong>
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
+                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
+                <p className="text-xs text-slate-500 mt-1">from training completion to checkride — each stage</p>
+              </div>
+              <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
+                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
+                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
+              </div>
+            </div>
+            <p className="text-sm text-slate-600 mt-4 leading-relaxed">
+              On the airline path, wasted time between certificates compounds quickly. Every month of delay is a month you are not building hours or moving toward the 1,500-hour ATP milestone. Our DPE network and proactive scheduling keeps your momentum intact throughout the entire career path.
+            </p>
           </div>
 
           <div className="text-center">
