@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { CloudRain, CheckCircle2, Phone, Info, Users, GraduationCap } from "lucide-react";
+import { CloudRain, CheckCircle2, Phone, Info, Users, GraduationCap, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -9,8 +9,9 @@ export function InstrumentRatingPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Instrument Rating Training Van Nuys | Accelerated Flight School</title>
-        <meta name="description" content="Add an Instrument Rating at Van Nuys Airport. ~$8,500–$15,000. Learn IFR flying, ATC communication, and instrument approaches. Call 818-469-1414." />
+        <title>Instrument Rating Training Van Nuys Airport KVNY | IFR Training Los Angeles | Accelerated Flight School</title>
+        <meta name="description" content="Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 818-469-1414." />
+        <meta name="keywords" content="instrument rating van nuys, IFR training Los Angeles, instrument rating Southern California, add-on instrument rating KVNY, IFR training Van Nuys Airport, instrument rating affordable California, instrument flight training Los Angeles" />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -232,6 +233,32 @@ export function InstrumentRatingPage() {
                 An iPad or iPad mini with built-in cellular and GPS is required to run ForeFlight during <AviationTerm term="IFR" /> training. The Basic ForeFlight plan ($130/yr) is sufficient for <AviationTerm term="Private Pilot" /> and VFR flying; the Essential plan ($260/yr) is required once you begin instrument training. If you already pay $130/yr for Basic, you only pay an additional $130/yr to upgrade to Essential.
               </p>
             </div>
+          </div>
+
+          {/* Checkride Scheduling Advantage */}
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8 mb-8">
+            <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-3">
+              <CalendarClock className="w-6 h-6 text-secondary shrink-0" />
+              Checkride Scheduling Advantage
+            </h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              We coordinate your Instrument Rating checkride scheduling early — once you demonstrate consistent instrument proficiency, your IFR DPE slot is already being lined up so your practical test is ready when training is complete, not months after. <strong>We will ensure you get an Instrument Rating DPE fast.</strong>
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
+                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
+                <p className="text-xs text-slate-500 mt-1">from training completion to checkride</p>
+              </div>
+              <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
+                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
+                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
+              </div>
+            </div>
+            <p className="text-sm text-slate-600 mt-4 leading-relaxed">
+              IFR examiners in Southern California are in high demand. Instrument skills degrade quickly without regular flying — a long post-training wait forces extra refresher flights and added cost. Our proactive DPE network keeps that gap as short as possible.
+            </p>
           </div>
 
           <div className="text-center">

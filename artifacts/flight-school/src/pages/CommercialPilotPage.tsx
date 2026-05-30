@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Briefcase, AlertTriangle, Phone, Info } from "lucide-react";
+import { Briefcase, AlertTriangle, Phone, Info, CalendarClock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
@@ -9,8 +9,9 @@ export function CommercialPilotPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Commercial Pilot Training | Accelerated Flight School Van Nuys</title>
-        <meta name="description" content="Commercial Pilot certificate training at Van Nuys Airport. Not just the airline path — legal paying flight operations. From ~$40K-$55K total from zero. Call 818-469-1414." />
+        <title>Commercial Pilot Training Van Nuys Airport | Los Angeles Commercial Pilot Certificate | Accelerated Flight School</title>
+        <meta name="description" content="Earn your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. ~$40,000–$55,000 from zero hours — well below the SoCal average of $70K–$110K. No upfront payment. Call 818-469-1414." />
+        <meta name="keywords" content="commercial pilot training van nuys, commercial pilot certificate Los Angeles, commercial pilot license Southern California, fly for hire van nuys, commercial pilot KVNY, CPL training Los Angeles, commercial pilot affordable California" />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -100,6 +101,40 @@ export function CommercialPilotPage() {
                 </div>
               </div>
             </div>
+          </div>
+          {/* Checkride Scheduling Advantage */}
+          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8 mb-12">
+            <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-3">
+              <CalendarClock className="w-6 h-6 text-secondary shrink-0" />
+              Checkride Scheduling Advantage
+            </h3>
+            <p className="text-slate-700 leading-relaxed mb-4">
+              As you approach the 250-hour mark and training completion, we proactively coordinate your Commercial Pilot checkride with a DPE from our network — so your practical test is scheduled before your training ends, not after. <strong>We will ensure you get a Commercial Pilot DPE fast.</strong>
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
+                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
+                <p className="text-xs text-slate-500 mt-1">from training completion to checkride</p>
+              </div>
+              <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
+                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
+                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
+              </div>
+            </div>
+            <p className="text-sm text-slate-600 mt-4 leading-relaxed">
+              Commercial pilot skills require consistent flying to maintain. A long gap between training and your checkride means extra flights and extra cost. Our DPE relationships minimize that gap — you test while your flying is sharp.
+            </p>
+          </div>
+
+          <div className="text-center">
+            <a href="tel:818-469-1414">
+              <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
+                <Phone className="w-5 h-5" />
+                Call or Text 818-469-1414
+              </Button>
+            </a>
           </div>
         </div>
       </section>
