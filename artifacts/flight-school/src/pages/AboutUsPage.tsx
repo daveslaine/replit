@@ -246,20 +246,20 @@ export function AboutUsPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-3">Our Fleet</p>
-              <h2 className="text-3xl font-bold text-primary mb-6">Cessna 172 — The World's Most Common Training Aircraft</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">Well-Maintained Training Aircraft at Van Nuys Airport</h2>
               <div className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  We train in a Cessna 172 — the most widely used training aircraft in the world and the standard platform for Private Pilot and Instrument Rating training. Our aircraft is well-maintained, equipped with modern Garmin avionics, and ForeFlight-compatible for GPS navigation training.
+                  We fly out of Van Nuys Airport (KVNY) in a well-maintained training aircraft equipped with modern avionics and ForeFlight-compatible GPS navigation. Every flight hour you log counts directly toward your FAA certificates and ratings.
                 </p>
                 <p>
-                  Every hour logged in our Cessna 172 is directly applicable to your certificates and ratings, and counts toward all FAA hour requirements.
+                  Our aircraft is flown wet — fuel is included in the hourly rate, so the price you see is the price you pay.
                 </p>
                 <div className="grid grid-cols-2 gap-3 mt-4">
                   {[
                     { label: "Wet Rental Rate", value: "$160/hr" },
                     { label: "10-Hour Block", value: "$150/hr" },
-                    { label: "Aircraft", value: "Cessna 172" },
                     { label: "Fuel", value: "Included (wet)" },
+                    { label: "Airport", value: "KVNY" },
                   ].map((item) => (
                     <div key={item.label} className="bg-white rounded-lg border border-slate-200 p-3">
                       <p className="text-xs text-slate-500 font-bold uppercase tracking-wide mb-0.5">{item.label}</p>
@@ -274,7 +274,7 @@ export function AboutUsPage() {
                 <div className="bg-white rounded-2xl border border-slate-200 p-6 hover:border-secondary transition-colors cursor-pointer">
                   <Plane className="w-8 h-8 text-secondary mb-3" />
                   <h3 className="font-bold text-primary mb-2">View Our Aircraft</h3>
-                  <p className="text-sm text-slate-600">Full specs, avionics details, and rental requirements for our Cessna 172.</p>
+                  <p className="text-sm text-slate-600">Full specs, avionics details, and rental requirements for our training aircraft.</p>
                 </div>
               </Link>
             </div>
