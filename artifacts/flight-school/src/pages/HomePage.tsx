@@ -136,7 +136,7 @@ export function HomePage() {
               Learn to fly with one of the most transparent and affordable flight schools in
               California. We explain the entire training process from day one so students
               understand exactly what they are training for, how the FAA checkride works,
-              what realistic costs look like, and how to progress efficiently. Pay as you go per hour.
+              what realistic costs look like, and how to progress efficiently.
             </p>
 
             {/* CTA buttons */}
