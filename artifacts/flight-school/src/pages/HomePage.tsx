@@ -19,6 +19,7 @@ import {
   FileText,
   Target,
   Shield,
+  Tag,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
@@ -130,13 +131,18 @@ export function HomePage() {
               data-testid="text-hero-heading"
             >High Quality and Affordable Flight Training at Van Nuys</h1>
             <p
-              className="text-base md:text-lg text-white/85 leading-relaxed mb-8 max-w-lg"
+              className="text-base md:text-lg text-white/85 leading-relaxed mb-4 max-w-lg"
               data-testid="text-hero-subheading"
             >
               Learn to fly with one of the most transparent and affordable flight schools in
               California. We explain the entire training process from day one so students
               understand exactly what they are training for, how the FAA checkride works,
               what realistic costs look like, and how to progress efficiently.
+            </p>
+
+            <p className="text-sm font-bold text-green-400 mb-8 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 shrink-0" />
+              Pay as you fly only — no upfront enrollment fees
             </p>
 
             {/* CTA buttons */}
@@ -155,6 +161,15 @@ export function HomePage() {
                 >
                   <PlaneTakeoff className="w-4 h-4" />
                   Discovery Flight — $190
+                </Button>
+              </Link>
+              <Link href="/deals" data-testid="link-hero-coupons">
+                <Button
+                  size="lg"
+                  className="font-bold text-base h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white gap-2"
+                >
+                  <Tag className="w-4 h-4" />
+                  Coupons
                 </Button>
               </Link>
             </div>
@@ -306,6 +321,10 @@ export function HomePage() {
               <p className="text-3xl font-bold text-white">~$7,500 – $12,500</p>
               <p className="text-xs text-slate-400 mt-1">
                 Private Pilot, depending on consistency, weather, study habits, and proficiency
+              </p>
+              <p className="text-sm font-bold text-green-400 mt-3 flex items-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                No upfront payment — pay only when you fly
               </p>
             </div>
             <Link href="/pricing" className="shrink-0">
@@ -569,7 +588,7 @@ export function HomePage() {
                 David T. — {rateTab === "standard" ? "standard rate" : "10-hr block"}
               </p>
               <div className="mt-4 pt-4 border-t border-slate-200">
-                <p className="text-xl font-bold text-slate-700">$45<span className="text-sm text-slate-400 font-normal">/hr</span></p>
+                <p className="text-xl font-bold text-slate-700">${rateTab === "standard" ? "45" : "35"}<span className="text-sm text-slate-400 font-normal">/hr</span></p>
                 <p className="text-xs text-slate-500">Reza S. (Owner)</p>
               </div>
               {rateTab === "block" && (
