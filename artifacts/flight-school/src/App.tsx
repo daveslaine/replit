@@ -27,6 +27,7 @@ import { ContactPage } from "@/pages/ContactPage";
 import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
 import { DealsPage } from "@/pages/DealsPage";
 import { AboutUsPage } from "@/pages/AboutUsPage";
+import { DirectionsPage } from "@/pages/DirectionsPage";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,7 @@ function PublicRoutes() {
         <Route path="/van-nuys-accelerated-flight-school-instructors" component={InstructorsPage} />
         <Route path="/van-nuys-accelerated-flight-school-contact" component={ContactPage} />
         <Route path="/van-nuys-accelerated-flight-school-about" component={AboutUsPage} />
+        <Route path="/van-nuys-accelerated-flight-school-directions" component={DirectionsPage} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
