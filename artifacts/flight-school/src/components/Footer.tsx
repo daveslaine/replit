@@ -96,7 +96,7 @@ export function Footer() {
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
-                <span>H7, 7900 Balboa Blvd.<br />Van Nuys, CA 91406</span>
+                <span>7900 Balboa Blvd H7<br />Van Nuys, CA 91406</span>
               </div>
               {/* Social Links */}
               <div className="pt-1">
@@ -192,7 +192,7 @@ export function Footer() {
                 <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                   <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                   <span>
-                    H7, 7900 Balboa Blvd.<br />
+                    7900 Balboa Blvd H7<br />
                     Van Nuys, CA 91406<br />
                     <span className="text-primary-foreground/40">(Van Nuys Airport – VNY)</span><br />
                     <Link href="/van-nuys-accelerated-flight-school-directions" className="text-primary-foreground/60 hover:text-white underline underline-offset-2 transition-colors text-xs mt-1 inline-block">

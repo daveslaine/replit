@@ -95,7 +95,7 @@ export function AboutUsPage() {
               },
               {
                 title: "Central San Fernando Valley Location",
-                detail: "Located at H7, 7900 Balboa Blvd, Van Nuys CA 91406 — easily accessible from throughout the greater Los Angeles area. Minutes from the 405, 101, and 118 freeways."
+                detail: "Located at 7900 Balboa Blvd H7, Van Nuys CA 91406 — easily accessible from throughout the greater Los Angeles area. Minutes from the 405, 101, and 118 freeways."
               },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-xl border border-slate-200 p-6">
@@ -367,7 +367,7 @@ export function AboutUsPage() {
                 Location
               </h3>
               <div className="space-y-2 text-slate-700">
-                <p className="font-bold">H7, 7900 Balboa Blvd.</p>
+                <p className="font-bold">7900 Balboa Blvd H7</p>
                 <p>Van Nuys, CA 91406</p>
                 <p className="text-sm text-slate-500">Van Nuys Airport (VNY / KVNY)</p>
                 <p className="text-sm text-slate-500 pt-2">Accessible from the 405, 101, and 118 freeways. Serving the greater Los Angeles area including the San Fernando Valley, Conejo Valley, Simi Valley, Santa Clarita, Glendale, Burbank, and the Westside.</p>
