@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
@@ -69,11 +69,24 @@ function PublicRoutes() {
   );
 }
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [location]);
+  return null;
+}
+
 function AppRouter() {
   const [location] = useLocation();
   const isAdmin = location === "/admin" || location.startsWith("/admin/");
   if (isAdmin) return <AdminRoot />;
-  return <PublicRoutes />;
+  return (
+    <>
+      <ScrollToTop />
+      <PublicRoutes />
+    </>
+  );
 }
 
 function App() {
