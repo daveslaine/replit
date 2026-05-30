@@ -34,3 +34,19 @@ export const SubmitContactBody = zod.object({
 })
 
 
+/**
+ * Request a presigned URL for uploading a file to object storage
+ * @summary Request presigned upload URL
+ */
+export const RequestUploadUrlBody = zod.object({
+  "name": zod.string(),
+  "size": zod.number(),
+  "contentType": zod.string()
+})
+
+export const RequestUploadUrlResponse = zod.object({
+  "uploadURL": zod.string(),
+  "objectPath": zod.string()
+})
+
+

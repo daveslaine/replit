@@ -12,6 +12,8 @@ tags:
     description: Health operations
   - name: contact
     description: Contact form operations
+  - name: storage
+    description: Object storage operations
 paths:
   /healthz:
     get:
@@ -45,6 +47,27 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ContactResult"
+        "400":
+          description: Invalid input
+  /storage/uploads/request-url:
+    post:
+      operationId: requestUploadUrl
+      tags: [storage]
+      summary: Request presigned upload URL
+      description: Request a presigned URL for uploading a file to object storage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RequestUploadUrlBody"
+      responses:
+        "200":
+          description: Presigned upload URL
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RequestUploadUrlResponse"
         "400":
           description: Invalid input
 components:
@@ -93,4 +116,27 @@ components:
         success:
           type: boolean
         message:
+          type: string
+    RequestUploadUrlBody:
+      type: object
+      required:
+        - name
+        - size
+        - contentType
+      properties:
+        name:
+          type: string
+        size:
+          type: number
+        contentType:
+          type: string
+    RequestUploadUrlResponse:
+      type: object
+      required:
+        - uploadURL
+        - objectPath
+      properties:
+        uploadURL:
+          type: string
+        objectPath:
           type: string
