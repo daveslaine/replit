@@ -17,15 +17,15 @@ function getCroppedBlob(image: HTMLImageElement, crop: Crop): Promise<Blob> {
   const canvas = document.createElement("canvas");
   const scaleX = image.naturalWidth / image.width;
   const scaleY = image.naturalHeight / image.height;
-  const px = window.devicePixelRatio || 1;
-  const cw = (crop.width / 100) * image.width * scaleX;
-  const ch = (crop.height / 100) * image.height * scaleY;
-  canvas.width = cw * px;
-  canvas.height = ch * px;
+  const cropX = Math.round((crop.x / 100) * image.width * scaleX);
+  const cropY = Math.round((crop.y / 100) * image.height * scaleY);
+  const cropW = Math.round((crop.width / 100) * image.width * scaleX);
+  const cropH = Math.round((crop.height / 100) * image.height * scaleY);
+  canvas.width = cropW;
+  canvas.height = cropH;
   const ctx = canvas.getContext("2d")!;
-  ctx.scale(px, px);
   ctx.imageSmoothingQuality = "high";
-  ctx.drawImage(image, (crop.x / 100) * image.width * scaleX, (crop.y / 100) * image.height * scaleY, cw, ch, 0, 0, cw, ch);
+  ctx.drawImage(image, cropX, cropY, cropW, cropH, 0, 0, cropW, cropH);
   return new Promise((resolve, reject) =>
     canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("Canvas empty"))), "image/jpeg", 0.92),
   );
@@ -57,7 +57,9 @@ function AircraftModal({ initial, onSave, onClose }: { initial: FormData | null;
 
   function onImageLoad(e: React.SyntheticEvent<HTMLImageElement>) {
     const { width, height } = e.currentTarget;
-    setCrop(centerAspectCrop(width, height, 16 / 9));
+    const c = centerAspectCrop(width, height, 16 / 9);
+    setCrop(c);
+    setCompletedCrop(c);
   }
 
   async function applyCrop() {
@@ -96,7 +98,7 @@ function AircraftModal({ initial, onSave, onClose }: { initial: FormData | null;
               <div className="space-y-3">
                 <p className="text-xs text-slate-500">Drag to crop (16:9), then click Apply.</p>
                 <ReactCrop crop={crop} onChange={setCrop} onComplete={setCompletedCrop} aspect={16 / 9} className="max-h-60">
-                  <img ref={imgRef} src={rawImageSrc} onLoad={onImageLoad} className="max-h-60 object-contain" alt="crop" />
+                  <img ref={imgRef} src={rawImageSrc} onLoad={onImageLoad} className="max-h-60 w-auto block" alt="crop" />
                 </ReactCrop>
                 <div className="flex gap-2">
                   <Button type="button" size="sm" onClick={applyCrop} disabled={uploading} className="gap-1.5">

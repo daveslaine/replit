@@ -34,7 +34,7 @@ function InstructorCard({ inst }: { inst: Instructor }) {
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
-      <div className="h-64 overflow-hidden bg-slate-100">
+      <div className="w-full aspect-[3/4] overflow-hidden bg-slate-100">
         {photoSrc ? (
           <img
             src={photoSrc}
