@@ -168,7 +168,7 @@ export function AboutUsPage() {
               </div>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  We provide scenario-based training so that you not only learn efficiently — you also build real confidence fast. Most training at other schools limits students to a narrow set of routes between school-approved waypoints. This is inadequate for real-world piloting.
+                  We use scenario-based training so students learn efficiently and build confidence faster. Most training at other schools limits students to a narrow set of routes between school-approved waypoints. This is inadequate for real-world piloting.
                 </p>
                 <p>
                   Piloting is all about smooth, confident flying even in new situations and under pressure. When flying with our instructors, you will learn instinctively how to:
@@ -226,13 +226,20 @@ export function AboutUsPage() {
               </div>
               <div className="space-y-4 text-primary-foreground/85 leading-relaxed">
                 <p>
-                  At Accelerated Flight School, the ultimate responsibility to ensure you pass falls on us. We do this by providing high-quality instruction at a fair, low, and honest price.
+                  At Accelerated Flight School, we believe the responsibility to prepare you properly falls on us. You are paying for instruction, structure, guidance, and a real path to passing. Our job is to provide high-quality training at a fair, low, and honest price, while making sure you always understand where you stand and what is required to succeed.
                 </p>
                 <p>
-                  In many flight schools — especially large schools — students spend time and money with instructors who only care about keeping their job, not about your progress. When a student fails due to inadequate instruction, the system is designed to blame the student, protect the instructor, and leave you with no recourse and no refund.
+                  At many flight schools, especially for younger students or students who are new to aviation, it is easy to get trapped in a system where they keep spending money without getting clear answers. A student may be assigned an instructor who is unorganized, unmotivated, or more focused on protecting their own job than helping the student succeed. The student may fail stage checks or even a checkride, then be told it was entirely their fault, even when the training was poorly structured, poorly explained, or not properly managed.
+                </p>
+                <p>
+                  This happens more often than people realize. Students can spend thousands of dollars with an instructor who does not clearly explain the standards, does not give a real plan for improvement, and does not take ownership of the student's progress. Then, when the student struggles, the blame gets shifted onto the student instead of anyone asking whether the instruction, communication, or training plan failed them.
+                </p>
+                <p className="font-medium text-white/95">We do not believe in that kind of flight training.</p>
+                <p>
+                  At Accelerated Flight School, we treat your success as our responsibility. We care whether you understand the material. We care whether you are progressing. We care whether you are being prepared correctly for the FAA checkride. We care whether you are happy, confident, satisfied, and willing to return for more training.
                 </p>
                 <p className="font-semibold text-white">
-                  At our school, we only care about ensuring you are happy, satisfied, pass, and return for more training. We treat our students exactly how they deserve to be treated as paying customers — and as aspiring pilots.
+                  We treat students the way paying customers deserve to be treated: with respect, honesty, clear instruction, fair pricing, and a serious commitment to helping them pass.
                 </p>
               </div>
             </div>

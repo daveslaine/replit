@@ -129,7 +129,7 @@ export function HomePage() {
             <h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-xl"
               data-testid="text-hero-heading"
-            >High Quality and Affordable Flight Training at Van Nuys</h1>
+            >High Quality and Affordable Flight Training at Van Nuys Airport</h1>
             <p
               className="text-base md:text-lg text-white/85 leading-relaxed mb-4 max-w-lg"
               data-testid="text-hero-subheading"
@@ -140,6 +140,9 @@ export function HomePage() {
               what realistic costs look like, and how to progress efficiently.
             </p>
 
+            <p className="text-white/80 text-sm mb-3 max-w-lg">
+              Private Pilot, Instrument Rating, Commercial Pilot, and CFI training with transparent pricing, ACS-based instruction, and no upfront enrollment fees.
+            </p>
             <p className="text-sm font-bold text-green-400 mb-8 flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 shrink-0" />
               Pay as you fly only — no upfront enrollment fees
