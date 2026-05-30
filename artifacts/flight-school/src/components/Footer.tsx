@@ -157,6 +157,7 @@ export function Footer() {
                   { href: "/van-nuys-accelerated-flight-school-aircraft", label: "Our Aircraft" },
                   { href: "/van-nuys-accelerated-flight-school-instructors", label: "Flight Instructors" },
                   { href: "/van-nuys-accelerated-flight-school-about", label: "About Us" },
+                  { href: "/faq", label: "FAQ" },
                   { href: "/van-nuys-accelerated-flight-school-contact", label: "Contact Us" },
                   { href: "/cheapest-flight-school-van-nuys-ca", label: "Cheapest Flight School Van Nuys" },
                   { href: "/low-cost-flight-school-van-nuys-ca", label: "Low-Cost Flight Training Van Nuys" },
