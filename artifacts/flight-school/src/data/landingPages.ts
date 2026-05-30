@@ -65,7 +65,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Students from Encino, Tarzana, Sherman Oaks, Reseda, Woodland Hills, and Lake Balboa have direct and easy access to Van Nuys Airport for flight training. KVNY is a high-activity general aviation airport that gives students real-world experience with complex airspace, tower communications, and diverse traffic.",
       "Encino-area students often ask whether they should train at Van Nuys or Santa Monica. Van Nuys offers a general aviation environment with no commercial airline complexity, consistent training weather, and direct access to LA and Burbank Class B/C airspace training routes.",
-      "At Accelerated Flight School, training for private pilot and instrument students from Encino is structured around clear milestones. You know your next lesson objective before you leave from the previous one. David Tom, CFII, provides direct, honest instruction without padding your logbook or your bill.",
+      "At Accelerated Flight School, training for private pilot and instrument students from Encino is structured around clear milestones. You know your next lesson objective before you leave from the previous one. Our instructors provide direct, honest instruction without padding your logbook or your bill.",
     ],
     nearbyAreas: ["Tarzana", "Sherman Oaks", "Reseda", "Woodland Hills", "Lake Balboa"],
     faqs: [
@@ -85,7 +85,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Burbank Airport (BUR) is primarily a commercial airline airport. Many Burbank-area students — including those from North Hollywood, Toluca Lake, Glendale, Sun Valley, and Studio City — look to Van Nuys Airport for their general aviation flight training needs instead.",
       "Van Nuys Airport is a dedicated general aviation facility, which means you train alongside other private pilots, not commercial jets. The traffic pattern, tower communications, and airspace structure at KVNY give student pilots realistic and varied training conditions without the complexity of a major airline hub.",
-      "Training at Accelerated Flight School from the Burbank area is straightforward: the drive is typically 15–25 minutes depending on your neighborhood. Your instruction is ACS-based, checkride-focused, and delivered by David Tom, CFII, who has been instructing since the early 2000s.",
+      "Training at Accelerated Flight School from the Burbank area is straightforward: the drive is typically 15–25 minutes depending on your neighborhood. Your instruction is ACS-based, checkride-focused, and delivered by our experienced instructors.",
     ],
     nearbyAreas: ["North Hollywood", "Toluca Lake", "Glendale", "Sun Valley", "Studio City"],
     faqs: [
@@ -185,7 +185,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Pasadena, South Pasadena, Altadena, Glendale, La Cañada Flintridge, and Eagle Rock are all within driving range of Van Nuys Airport — typically 25–40 minutes via the 134 or 210 freeways. KVNY offers a full general aviation training environment with live tower, complex airspace, and consistent weather.",
       "For students based in the San Gabriel Valley, training at Van Nuys Airport exposes you to the full spectrum of LA Basin airspace — Burbank Class C, LA Class B transitions, Santa Barbara VOR routes, and Palmdale cross-country options. This makes you a capable cross-country pilot before your checkride.",
-      "Accelerated Flight School is structured for progress. Instructor David Tom, CFII, keeps your training on a clear path from the first lesson. ACS standards are applied from day one so your skills are always building toward the certificate.",
+      "Accelerated Flight School is structured for progress. Our instructors keep your training on a clear path from the first lesson. ACS standards are applied from day one so your skills are always building toward the certificate.",
     ],
     nearbyAreas: ["South Pasadena", "Altadena", "Glendale", "La Cañada Flintridge", "Eagle Rock"],
     faqs: [
@@ -224,7 +224,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Westlake Village students choose Accelerated Flight School at Van Nuys Airport for structured training, direct instructor accountability, and clear pricing without large upfront commitments.",
     localIntro: [
       "Westlake Village, Thousand Oaks, Oak Park, Agoura Hills, Calabasas, and Newbury Park are all within reasonable driving distance of Van Nuys Airport. Students from this area often appreciate professional, no-nonsense instruction that respects their time and their investment.",
-      "At Accelerated Flight School, training is structured and accountable. Instructor David Tom, CFII, has been teaching since the early 2000s. Every lesson has a clear objective, every debrief is honest, and every student knows exactly what they are working toward next. This accountability translates to fewer total hours and lower overall cost.",
+      "At Accelerated Flight School, training is structured and accountable. Our instructors bring years of experience. Every lesson has a clear objective, every debrief is honest, and every student knows exactly what they are working toward next. This accountability translates to fewer total hours and lower overall cost.",
       "Pay-as-you-fly pricing means you never have a large sum at risk. Aircraft is $160/hr wet, instructor is $35/hr, dual is $195/hr combined. There are no monthly fees, no fuel surcharges, and no pressure to finance training packages through third-party lenders.",
     ],
     nearbyAreas: ["Thousand Oaks", "Oak Park", "Agoura Hills", "Calabasas", "Newbury Park"],
@@ -253,7 +253,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Do I need any paperwork before starting training?", a: "No. We only need a government-issued photo ID for your first lesson. Medical requirements apply before solo, and we can advise you on the process." },
       { q: "Can students complete commercial pilot training here?", a: "Yes. We offer Private Pilot, Instrument Rating, and Commercial Pilot training. The Piper Cherokee can be used for commercial maneuver training." },
       { q: "Is there any minimum commitment required?", a: "No. There is no minimum lesson commitment. You can start with a single Discovery Flight for $190 and take it from there." },
-      { q: "How do I reach David Tom for scheduling?", a: "Call or text 818-469-1414. David Tom, CFII, is the primary instructor and will handle your scheduling directly." },
+      { q: "How do I schedule a lesson or reach an instructor?", a: "Call or text 818-469-1414. Call or text 818-469-1414 and one of our instructors will assist you directly." },
     ],
   },
   {
@@ -305,7 +305,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Tarzana, Encino, Woodland Hills, Reseda, Sherman Oaks, and Lake Balboa are all within easy reach of Van Nuys Airport. The proximity makes part-time training very practical — a quick drive, focused lesson, professional debrief, and you are back on the freeway in under 2 hours.",
       "Short commutes mean you can fly more often, which directly improves your skill retention. Frequent short-gap lessons are one of the best ways to keep training costs under control. Tarzana-area students who can train 2–3 times per week often progress significantly faster than students who fly once a week or less.",
-      "Accelerated Flight School keeps scheduling simple and direct. You contact David Tom, CFII, directly — no scheduling intermediary, no front desk runaround. You discuss your availability, set your next lesson, and get flying.",
+      "Accelerated Flight School keeps scheduling simple and direct. You contact our CFII instructors, directly — no scheduling intermediary, no front desk runaround. You discuss your availability, set your next lesson, and get flying.",
     ],
     nearbyAreas: ["Encino", "Woodland Hills", "Reseda", "Sherman Oaks", "Lake Balboa"],
     faqs: [
@@ -332,8 +332,8 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Is Van Nuys Airport a good training airport for beginners?", a: "Yes. Van Nuys is a controlled airport with a live tower, which means you learn proper radio communication and traffic pattern procedures from the very beginning — skills every pilot needs." },
       { q: "How long is a typical lesson?", a: "Lessons typically run 1 to 1.5 hours of flight time plus 30 minutes of pre-flight briefing and 15–20 minutes of debrief. Budget about 2–2.5 hours per visit." },
       { q: "Do you offer Discovery Flights?", a: "Yes. The Discovery Flight is 1.5 hours for $190 — a great first step before committing to a certificate program." },
-      { q: "What certifications does your instructor hold?", a: "David Tom holds CFI and CFII certificates and has been instructing since the early 2000s." },
-      { q: "How do I book a lesson?", a: "Call or text 818-469-1414 to speak directly with David Tom and schedule your first lesson or Discovery Flight." },
+      { q: "What certifications does your instructor hold?", a: "our instructors holds CFI and CFII certificates and has been instructing since the early 2000s." },
+      { q: "How do I book a lesson?", a: "Call or text 818-469-1414 to speak directly with our instructors and schedule your first lesson or Discovery Flight." },
     ],
   },
   {
@@ -353,7 +353,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How long does it take to get a private pilot certificate?", a: "Most students complete private pilot training in 6–12 months part-time. Training frequency is the biggest variable." },
       { q: "Can I use my private pilot certificate to fly out of Van Nuys after I complete training?", a: "Yes. Once certificated, you can rent aircraft and fly as a private pilot. We can discuss rental and currency options when you are nearing checkride readiness." },
       { q: "What is the benefit of ACS-based training?", a: "ACS training aligns every lesson with FAA checkride standards. You are never practicing maneuvers that do not count — every flight hour builds toward your certificate." },
-      { q: "Who is the instructor?", a: "David Tom, CFI/CFII, is the primary instructor at Accelerated Flight School. He has been instructing since the early 2000s and teaches all lessons personally." },
+      { q: "Who is the instructor?", a: "our instructors, CFI/CFII, is the primary instructor at Accelerated Flight School. He has been instructing since the early 2000s and teaches all lessons personally." },
     ],
   },
   {
@@ -365,7 +365,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Santa Clarita, Valencia, Newhall, Canyon Country, Sylmar, and Granada Hills students are all within a 20–35 minute drive south to Van Nuys Airport. KVNY is the primary general aviation training airport serving the greater San Fernando Valley and north LA County corridor.",
       "From Santa Clarita, cross-country flights during private pilot training often include routes north toward Bakersfield, east to Palmdale or Apple Valley, and south toward Hawthorne or Torrance. The variety of routing options makes Van Nuys an excellent base for building navigation skills.",
-      "Accelerated Flight School provides structured, ACS-based training from the first lesson. No runaround, no mystery pricing, no pressure to buy large training packages. David Tom, CFII, works directly with each student to build toward their certificate goals.",
+      "Accelerated Flight School provides structured, ACS-based training from the first lesson. No runaround, no mystery pricing, no pressure to buy large training packages. our CFII instructors, works directly with each student to build toward their certificate goals.",
     ],
     nearbyAreas: ["Valencia", "Newhall", "Canyon Country", "Sylmar", "Granada Hills"],
     faqs: [
@@ -413,7 +413,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How far is Camarillo from Van Nuys Airport?", a: "Approximately 45–60 minutes east on the 101 Freeway, depending on traffic. A manageable drive for students who want to train at KVNY." },
       { q: "What does KVNY offer that coastal airports do not?", a: "Van Nuys Airport features an active tower, ILS approaches, complex surrounding airspace, and consistent training activity. These conditions prepare students well for complex airspace navigation." },
       { q: "Can I start with a single Discovery Flight?", a: "Yes. The Discovery Flight is 1.5 hours for $190 with no commitment beyond that single lesson." },
-      { q: "How do I find out if Van Nuys training is right for me?", a: "Call or text 818-469-1414 to speak with David Tom, CFII. He can discuss your training goals honestly and help you decide what makes the most sense for your situation." },
+      { q: "How do I find out if Van Nuys training is right for me?", a: "Call or text 818-469-1414 to speak with our CFII instructors. He can discuss your training goals honestly and help you decide what makes the most sense for your situation." },
     ],
   },
   {
@@ -504,7 +504,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Beverly Hills and Westside students seeking professional flight training find structured instruction, honest pricing, and direct instructor access at Accelerated Flight School, Van Nuys Airport KVNY.",
     localIntro: [
       "Beverly Hills, West Hollywood, Century City, Westwood, Brentwood, and Santa Monica are all within a 30–45 minute drive of Van Nuys Airport, depending on traffic. Students from these areas often value professionalism, clear communication, and quality — and expect the same from their flight instruction.",
-      "At Accelerated Flight School, you work directly with David Tom, CFII, who has been instructing since the early 2000s. There is no front desk layer, no administrative runaround, and no ambiguity in your training plan. Every lesson has an objective, every debrief is honest, and every dollar you spend maps to real progress.",
+      "At Accelerated Flight School, you work directly with our experienced instructors. There is no front desk layer, no administrative runaround, and no ambiguity in your training plan. Every lesson has an objective, every debrief is honest, and every dollar you spend maps to real progress.",
       "Transparent pricing means there are no surprises. Aircraft is $160/hr wet, instructor is $35/hr, dual rate is $195/hr combined. No fuel surcharges, no booking fees, no monthly membership dues. Pay for what you fly.",
     ],
     nearbyAreas: ["West Hollywood", "Century City", "Westwood", "Brentwood", "Santa Monica"],
@@ -644,7 +644,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Earn your instrument rating at Van Nuys Airport — Accelerated Flight School provides CFII-led IFR training with real approaches, cross-country IFR, and structured checkride preparation.",
     localIntro: [
       "The instrument rating allows you to fly in clouds and reduced visibility using only the cockpit instruments. Training for the instrument rating at Van Nuys Airport (KVNY) is exceptionally practical — the airport has an ILS approach, VOR approaches, and RNAV procedures that you practice during real instrument conditions when available.",
-      "Instrument rating training at Accelerated Flight School is conducted by David Tom, CFII. The curriculum covers approach procedures, holding patterns, IFR cross-country navigation, ATC clearance interpretation, and emergency instrument procedures. You will also build the 50 hours of cross-country PIC time required before the instrument rating practical test.",
+      "Instrument rating training at Accelerated Flight School is conducted by our CFII instructors. The curriculum covers approach procedures, holding patterns, IFR cross-country navigation, ATC clearance interpretation, and emergency instrument procedures. You will also build the 50 hours of cross-country PIC time required before the instrument rating practical test.",
       "The Los Angeles Basin airspace — with its Burbank Class C, LAX Class B, multiple approach procedures, and high-density traffic — is one of the most challenging and rewarding environments for IFR training in the country. Students who earn their instrument rating here are genuinely prepared for real IFR flying.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Glendale"],
@@ -684,7 +684,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Become a Certified Flight Instructor at Van Nuys Airport — Accelerated Flight School offers CFI training with lesson plan development, FOI preparation, and checkride-focused instruction.",
     localIntro: [
       "CFI training prepares you to teach other pilots. It is a demanding certificate that requires mastery of aeronautical knowledge, teaching methodology, and the ability to demonstrate all private and commercial maneuvers from the right seat. At Accelerated Flight School, CFI training is structured around the actual CFI practical test standards.",
-      "The CFI curriculum covers the Fundamentals of Instruction (FOI), lesson plan development, right-seat maneuver demonstrations, and oral knowledge preparation across all subject areas. Instructor David Tom, CFII, teaches you how to teach — not just how to fly.",
+      "The CFI curriculum covers the Fundamentals of Instruction (FOI), lesson plan development, right-seat maneuver demonstrations, and oral knowledge preparation across all subject areas. Instructor our CFII instructors, teaches you how to teach — not just how to fly.",
       "CFI training at KVNY is practical. You work with real lesson structures, real briefing techniques, and real-world scenarios. The goal is not just to pass the CFI checkride but to emerge as a genuinely competent instructor from day one of your teaching career.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "North Hollywood"],
@@ -704,7 +704,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Add instrument instruction privileges to your CFI certificate at Van Nuys Airport — Accelerated Flight School provides CFII training with real IFR procedures, teaching methods, and checkride preparation.",
     localIntro: [
       "The CFII (Certified Flight Instructor – Instrument) certificate allows you to teach instrument flying to other pilots. It is one of the most valuable add-ons to a CFI certificate because it dramatically expands your student base and keeps you in the cockpit during instrument conditions.",
-      "CFII training at Accelerated Flight School covers teaching instrument approaches, holding, IFR cross-country planning, instrument flight regulations, and how to effectively communicate complex IFR procedures to student pilots. David Tom, CFII, teaches the CFII from an instructor-of-instructors perspective.",
+      "CFII training at Accelerated Flight School covers teaching instrument approaches, holding, IFR cross-country planning, instrument flight regulations, and how to effectively communicate complex IFR procedures to student pilots. our CFII instructors, teaches the CFII from an instructor-of-instructors perspective.",
       "The Los Angeles Basin airspace — with multiple approach procedures, ILS options at KVNY, and complex ATC environments — provides an excellent real-world teaching environment for the CFII curriculum.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Glendale"],
@@ -713,65 +713,65 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What are the CFII prerequisites?", a: "You must hold a CFI certificate and instrument rating, and meet FAA 61.187 requirements for the CFII rating." },
       { q: "What does CFII training cover at Accelerated Flight School?", a: "Teaching instrument approaches, IFR cross-country navigation, holding patterns, approach briefings, instrument regulations, and right-seat CFII demonstration." },
       { q: "Is CFII training available alongside CFI training?", a: "Yes. Many candidates pursue CFI and CFII together. We can structure a combined training plan based on your background." },
-      { q: "How do I start CFII training?", a: "Call or text 818-469-1414 to discuss your current certificates and training goals with David Tom." },
+      { q: "How do I start CFII training?", a: "Call or text 818-469-1414 to discuss your current certificates and training goals with our instructors." },
     ],
   },
   {
     slug: "flight-instructor-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Flight Instructor Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight instructor in Van Nuys at KVNY — David Tom, CFI/CFII, $35/hr. Direct instruction, no intermediary. Accelerated Flight School. Call 818-469-1414.",
+    metaDescription: "Flight instructor in Van Nuys at KVNY — our instructors, CFI/CFII, $35/hr. Direct instruction, no intermediary. Accelerated Flight School. Call 818-469-1414.",
     h1: "Flight Instructor in Van Nuys",
-    subheadline: "David Tom, CFI/CFII, provides direct flight instruction at Van Nuys Airport — structured, honest, and checkride-focused at $35/hr instructor rate.",
+    subheadline: "our instructors, CFI/CFII, provides direct flight instruction at Van Nuys Airport — structured, honest, and checkride-focused at $35/hr instructor rate.",
     localIntro: [
-      "Finding a qualified, experienced flight instructor in Van Nuys can be a challenge. David Tom, CFI/CFII, is the primary instructor at Accelerated Flight School and has been teaching since the early 2000s. He provides direct, personal instruction to every student — no front desk, no scheduling intermediary.",
-      "David Tom holds both CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument) certificates. This means he can teach everything from your first Discovery Flight through your instrument rating and commercial pilot certificate. His instructor rate is $35/hr, and combined with $160/hr wet aircraft, the dual rate is $195/hr.",
-      "Students who work with David Tom consistently note the directness of his instruction. Lesson objectives are clear before every flight, debriefs are honest, and progress is explained at every stage. If you are struggling with a maneuver, you know why and what to do about it. If you are ready for the next phase, you are told — without delay.",
+      "Finding a qualified, experienced flight instructor in Van Nuys can be a challenge. our instructors, CFI/CFII, is the primary instructor at Accelerated Flight School and has been teaching since the early 2000s. He provides direct, personal instruction to every student — no front desk, no scheduling intermediary.",
+      "our instructors holds both CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument) certificates. This means he can teach everything from your first Discovery Flight through your instrument rating and commercial pilot certificate. His instructor rate is $35/hr, and combined with $160/hr wet aircraft, the dual rate is $195/hr.",
+      "Students who work with our instructors consistently note the directness of his instruction. Lesson objectives are clear before every flight, debriefs are honest, and progress is explained at every stage. If you are struggling with a maneuver, you know why and what to do about it. If you are ready for the next phase, you are told — without delay.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "North Hollywood", "Burbank"],
     faqs: [
-      { q: "Who is the flight instructor at Accelerated Flight School?", a: "David Tom, CFI/CFII, is the primary instructor. He has been teaching flight at Van Nuys Airport since the early 2000s." },
-      { q: "What certificates does David Tom hold?", a: "CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument)." },
+      { q: "Who is the flight instructor at Accelerated Flight School?", a: "our instructors, CFI/CFII, is the primary instructor. He has been teaching flight at Van Nuys Airport since the early 2000s." },
+      { q: "What certificates does our instructors hold?", a: "CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument)." },
       { q: "What is the instructor rate?", a: "$35/hr. Combined with $160/hr wet aircraft, dual training is $195/hr." },
-      { q: "Can I reach David Tom directly?", a: "Yes. Call or text 818-469-1414 to speak directly with David Tom about scheduling, training questions, or your next lesson." },
-      { q: "Does David Tom teach all programs?", a: "Yes. David Tom teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII programs." },
+      { q: "Can I reach our instructors directly?", a: "Yes. Call or text 818-469-1414 to speak directly with our instructors about scheduling, training questions, or your next lesson." },
+      { q: "Does our instructors teach all programs?", a: "Yes. our instructors teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII programs." },
     ],
   },
   {
     slug: "cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFI Near Me Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Looking for a CFI near you in Los Angeles? David Tom, CFI/CFII, at Van Nuys Airport KVNY. Direct contact, $35/hr instructor rate. Call 818-469-1414.",
+    metaDescription: "Looking for a CFI near you in Los Angeles? our instructors, CFI/CFII, at Van Nuys Airport KVNY. Direct contact, $35/hr instructor rate. Call 818-469-1414.",
     h1: "CFI Near Me in Los Angeles",
-    subheadline: "If you are looking for a CFI in the Los Angeles area, Accelerated Flight School offers direct access to David Tom, CFI/CFII, at Van Nuys Airport — no intermediary, no runaround.",
+    subheadline: "If you are looking for a CFI in the Los Angeles area, Accelerated Flight School offers direct access to our instructors, CFI/CFII, at Van Nuys Airport — no intermediary, no runaround.",
     localIntro: [
       "Searching for a CFI near you in Los Angeles means you are looking for an instructor you can reach directly, schedule with easily, and trust to give you honest, structured instruction. That is exactly what Accelerated Flight School provides at Van Nuys Airport (KVNY).",
-      "David Tom, CFI/CFII, is reachable by call or text at 818-469-1414. He handles scheduling directly, responds promptly, and discusses your training goals honestly before you spend a dollar. There is no front desk layer between you and your instructor.",
+      "our instructors, CFI/CFII, is reachable by call or text at 818-469-1414. He handles scheduling directly, responds promptly, and discusses your training goals honestly before you spend a dollar. There is no front desk layer between you and your instructor.",
       "Van Nuys Airport is centrally located in the San Fernando Valley and accessible from most of the greater Los Angeles area. Whether you are coming from Sherman Oaks, Burbank, North Hollywood, Encino, or further afield, KVNY is a straightforward destination.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "North Hollywood", "Burbank", "Los Angeles"],
     faqs: [
-      { q: "How do I find and contact a CFI at Accelerated Flight School?", a: "Call or text 818-469-1414 to reach David Tom, CFI/CFII, directly. He is the primary instructor and handles all scheduling." },
+      { q: "How do I find and contact a CFI at Accelerated Flight School?", a: "Call or text 818-469-1414 to reach our instructors, CFI/CFII, directly. He is the primary instructor and handles all scheduling." },
       { q: "What is the instructor rate?", a: "$35/hr. Combined with the aircraft wet rate, dual flight training is $195/hr." },
-      { q: "Does the CFI teach all programs?", a: "Yes. David Tom teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII training." },
+      { q: "Does the CFI teach all programs?", a: "Yes. our instructors teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII training." },
       { q: "What airport does Accelerated Flight School use?", a: "Van Nuys Airport (KVNY), located at 7900 Balboa Blvd, Van Nuys, CA — in the Foxtrot Hangars area." },
-      { q: "What if I am returning to flying after a long break?", a: "A Flight Review (BFR) is available. Call David Tom at 818-469-1414 to discuss your situation and what recurrency training looks like for your background." },
+      { q: "What if I am returning to flying after a long break?", a: "A Flight Review (BFR) is available. Call our instructors at 818-469-1414 to discuss your situation and what recurrency training looks like for your background." },
     ],
   },
   {
     slug: "cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFII Near Me Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Looking for a CFII near you in Los Angeles? David Tom, CFII, at Van Nuys Airport KVNY. Instrument rating training, IFR instruction. Call 818-469-1414.",
+    metaDescription: "Looking for a CFII near you in Los Angeles? our CFII instructors, at Van Nuys Airport KVNY. Instrument rating training, IFR instruction. Call 818-469-1414.",
     h1: "CFII Near Me in Los Angeles",
-    subheadline: "David Tom, CFII, at Van Nuys Airport provides direct instrument rating instruction to Los Angeles area students — IFR training, approaches, and checkride preparation at KVNY.",
+    subheadline: "our CFII instructors, at Van Nuys Airport provides direct instrument rating instruction to Los Angeles area students — IFR training, approaches, and checkride preparation at KVNY.",
     localIntro: [
-      "Finding a CFII (Certified Flight Instructor – Instrument) in Los Angeles who provides direct, structured instruction can be difficult. At Accelerated Flight School, David Tom, CFII, is available for instrument rating training at Van Nuys Airport. You can reach him directly at 818-469-1414 without going through a booking system or front desk.",
-      "Instrument rating training at KVNY is practical and real-world. The airport has ILS, VOR, and RNAV approaches. You train in actual aircraft using real ATC procedures, not just a simulator. Your CFII — David Tom — has been teaching IFR since the early 2000s and structures every lesson around the instrument rating ACS standards.",
+      "Finding a CFII (Certified Flight Instructor – Instrument) in Los Angeles who provides direct, structured instruction can be difficult. At Accelerated Flight School, our CFII instructors, is available for instrument rating training at Van Nuys Airport. You can reach him directly at 818-469-1414 without going through a booking system or front desk.",
+      "Instrument rating training at KVNY is practical and real-world. The airport has ILS, VOR, and RNAV approaches. You train in actual aircraft using real ATC procedures, not just a simulator. Your CFII — our instructors — has been teaching IFR since the early 2000s and structures every lesson around the instrument rating ACS standards.",
       "If you already hold a private pilot certificate and are ready to work toward your instrument rating, contact Accelerated Flight School at 818-469-1414 to discuss your current flight hours, schedule, and what an instrument rating training plan looks like for your situation.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Encino", "Glendale"],
     faqs: [
       { q: "What does a CFII do differently than a CFI?", a: "A CFII holds an instrument instructor rating and can train pilots specifically for the instrument rating. Not all CFIs are also CFIIs." },
       { q: "What are the prerequisites to start instrument training?", a: "You must hold a private pilot certificate and have 50 hours of cross-country PIC time before taking the instrument rating practical test. Training can begin earlier." },
-      { q: "How do I contact a CFII at Accelerated Flight School?", a: "Call or text 818-469-1414 to reach David Tom, CFII, directly." },
+      { q: "How do I contact a CFII at Accelerated Flight School?", a: "Call or text 818-469-1414 to reach our CFII instructors, directly." },
       { q: "How much does instrument rating training cost?", a: "At $195/hr combined dual rate, most students complete instrument rating training in 40–60 hours of instrument instruction time, totaling approximately $7,800–$11,700 in flight costs." },
       { q: "Can I do an Instrument Proficiency Check (IPC) with your CFII?", a: "Yes. IPCs are available for certificated instrument pilots who need to restore instrument currency. Call 818-469-1414 to schedule." },
     ],
@@ -813,7 +813,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What is the Piper Warrior aircraft rate?", a: "$160/hr wet — fuel included. No surcharges." },
       { q: "Can I use the Piper Warrior for commercial maneuver training?", a: "Yes. The Piper Cherokee can be used for commercial maneuver training. Discuss complex aircraft requirements with your instructor for specific commercial checkride logistics." },
       { q: "Is the same aircraft available for all programs?", a: "Yes. The same Piper Cherokee Warrior II is used for Discovery Flights, private pilot, instrument, and commercial training." },
-      { q: "How do I schedule a lesson in the Piper Warrior?", a: "Call or text 818-469-1414 to schedule with David Tom, CFI/CFII, directly." },
+      { q: "How do I schedule a lesson in the Piper Warrior?", a: "Call or text 818-469-1414 to schedule with our instructors, CFI/CFII, directly." },
     ],
   },
   {
@@ -874,7 +874,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What should I ask before choosing a flight school?", a: "Ask about hourly rates (wet vs. dry), instructor qualifications, training structure (ACS vs. informal), aircraft condition, typical checkride pass rate, and whether prepayment is required." },
       { q: "Why does ACS alignment matter?", a: "Because your checkride examiner evaluates you against ACS standards. Training that does not align with ACS wastes your hours and money on skills that may not be tested." },
       { q: "Should I choose the cheapest school or the closest school?", a: "Neither automatically. The best choice is the school with the lowest total cost to certificate — which means structured training that keeps total hours low, at a reasonable hourly rate, with an aircraft you fly consistently." },
-      { q: "What is Accelerated Flight School's approach?", a: "ACS-based instruction from day one, pay-as-you-fly pricing, one primary aircraft you fly every lesson, and direct CFII instruction from David Tom." },
+      { q: "What is Accelerated Flight School's approach?", a: "ACS-based instruction from day one, pay-as-you-fly pricing, one primary aircraft you fly every lesson, and direct CFII instruction from our instructors." },
       { q: "How do I evaluate a flight school before committing?", a: "Book a Discovery Flight or single introductory lesson. Evaluate the pre-flight briefing, instruction quality during the flight, and the post-flight debrief. That one lesson tells you almost everything you need to know." },
     ],
   },
@@ -888,7 +888,7 @@ export const landingPages: LandingPageConfig[] = [
       "Los Angeles has dozens of flight schools across multiple airports. Choosing among them is not just about price or location — it is about identifying which school will actually get you to your certificate goal at the lowest total cost, with the best preparation.",
       "The most important factor is training structure. A school that builds every lesson around the FAA's ACS (Airman Certification Standards) from lesson one gives you the highest probability of a focused, efficient path to your certificate. Schools that fly loosely without clear objectives often produce students who need far more hours than the FAA minimum — meaning they pay far more in total.",
       "The second factor is instructor accountability. Your CFI or CFII should debrief every flight with specific observations about what you did well and what needs more work. If your instructor cannot explain exactly what skill you are developing and why it matters for your checkride, find a different instructor.",
-      "At Accelerated Flight School in Van Nuys Airport, we do not claim to be the best — we let our approach speak for itself: ACS-based training from day one, pay-as-you-fly pricing, transparent rates, and direct CFII instruction from David Tom who has been teaching since the early 2000s.",
+      "At Accelerated Flight School in Van Nuys Airport, we do not claim to be the best — we let our approach speak for itself: ACS-based training from day one, pay-as-you-fly pricing, transparent rates, and direct CFII instruction from our instructors who has been teaching since the early 2000s.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Glendale", "Encino"],
     faqs: [
@@ -956,7 +956,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What does 40 hours of instrument training cost?", a: "At $195/hr dual, 40 hours costs $7,800. Most students require 40–60 hours, totaling $7,800–$11,700 in flight costs." },
       { q: "What are simulated instrument conditions?", a: "Simulated instrument conditions means flying under a view-limiting device (foggles/hood) in VMC with your CFII acting as safety pilot. This counts toward instrument time requirements." },
       { q: "Can I train for instrument rating at Van Nuys Airport?", a: "Yes. KVNY has ILS, VOR, and RNAV approaches and an active tower, making it an excellent base for instrument training." },
-      { q: "How do I get a cost estimate for my instrument rating?", a: "Call or text 818-469-1414. David Tom, CFII, will review your current hours and provide an honest estimate of your instrument rating training path." },
+      { q: "How do I get a cost estimate for my instrument rating?", a: "Call or text 818-469-1414. our CFII instructors, will review your current hours and provide an honest estimate of your instrument rating training path." },
     ],
   },
   {
@@ -982,12 +982,12 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-review-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Flight Review Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight Review (BFR) at Van Nuys Airport KVNY with David Tom, CFI. Recurrent training, currency, proficiency. Accelerated Flight School. Call 818-469-1414.",
+    metaDescription: "Flight Review (BFR) at Van Nuys Airport KVNY with our instructors, CFI. Recurrent training, currency, proficiency. Accelerated Flight School. Call 818-469-1414.",
     h1: "Flight Review at Van Nuys Airport",
-    subheadline: "Accelerated Flight School at Van Nuys Airport offers Flight Reviews (BFR) for certificated pilots — recurrent training, proficiency restoration, and currency compliance with CFI David Tom.",
+    subheadline: "Accelerated Flight School at Van Nuys Airport offers Flight Reviews (BFR) for certificated pilots — recurrent training, proficiency restoration, and currency compliance with CFI our instructors.",
     localIntro: [
       "A Flight Review (formerly called a Biennial Flight Review or BFR) is required every 24 calendar months for all certificated pilots to remain current and legal. The review consists of at least 1 hour of ground instruction and 1 hour of flight instruction with a CFI.",
-      "At Accelerated Flight School, Flight Reviews are structured around your background, currency gap, and current proficiency level. David Tom, CFI/CFII, tailors the review to genuinely assess and restore your proficiency — not just check a regulatory box. If you have not flown in several months or years, the review may involve additional time to bring your skills back to a safe standard.",
+      "At Accelerated Flight School, Flight Reviews are structured around your background, currency gap, and current proficiency level. our instructors, CFI/CFII, tailors the review to genuinely assess and restore your proficiency — not just check a regulatory box. If you have not flown in several months or years, the review may involve additional time to bring your skills back to a safe standard.",
       "The Flight Review at Accelerated Flight School is conducted at Van Nuys Airport in the Piper Cherokee. Ground and flight instruction time is billed at standard rates: aircraft $160/hr wet and instructor $35/hr. Most Flight Reviews require 2–4 hours total depending on currency gap.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "Burbank", "North Hollywood"],
@@ -996,27 +996,27 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How long does a Flight Review take?", a: "At minimum, 1 hour of ground and 1 hour of flight. Most reviews take 2–4 hours total depending on how long you have been out of the cockpit." },
       { q: "What does a Flight Review cost at Accelerated Flight School?", a: "Aircraft is $160/hr wet and instructor is $35/hr. A 2-hour flight review with 1 hour flight + 1 hour ground would cost approximately $160 + $70 = $230." },
       { q: "What if I have not flown in a long time?", a: "If you have a significant currency gap, your instructor will assess where you are and structure appropriate training. There is no judgment — just honest skill assessment and proficiency restoration." },
-      { q: "Can I get a Flight Review at Van Nuys Airport?", a: "Yes. Call or text 818-469-1414 to schedule a Flight Review with David Tom, CFI/CFII." },
+      { q: "Can I get a Flight Review at Van Nuys Airport?", a: "Yes. Call or text 818-469-1414 to schedule a Flight Review with our instructors, CFI/CFII." },
     ],
   },
   {
     slug: "instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Instrument Proficiency Check Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Instrument Proficiency Check (IPC) at Van Nuys Airport KVNY with David Tom, CFII. Restore instrument currency, approaches, holding, IFR procedures. Call 818-469-1414.",
+    metaDescription: "Instrument Proficiency Check (IPC) at Van Nuys Airport KVNY with our CFII instructors. Restore instrument currency, approaches, holding, IFR procedures. Call 818-469-1414.",
     h1: "Instrument Proficiency Check at Van Nuys Airport",
-    subheadline: "Restore your instrument currency at Van Nuys Airport — Accelerated Flight School provides Instrument Proficiency Checks (IPC) with CFII David Tom, covering approaches, holding, and IFR procedures.",
+    subheadline: "Restore your instrument currency at Van Nuys Airport — Accelerated Flight School provides Instrument Proficiency Checks (IPC) with CFII our instructors, covering approaches, holding, and IFR procedures.",
     localIntro: [
       "An Instrument Proficiency Check (IPC) is required when an instrument-rated pilot's currency has lapsed — specifically, when they cannot demonstrate having met the recency requirements of FAR 61.57(c) within the preceding 6 calendar months. An IPC must be conducted by a CFII and covers all instrument skill areas.",
-      "At Accelerated Flight School, the IPC is conducted by David Tom, CFII, at Van Nuys Airport. KVNY's ILS, VOR, and RNAV approaches make it an excellent location for a thorough IPC that tests real approach skills, not just simulated procedures. The IPC covers approach procedures, holding, tracking, partial panel, unusual attitude recovery, and IFR regulations.",
+      "At Accelerated Flight School, the IPC is conducted by our CFII instructors, at Van Nuys Airport. KVNY's ILS, VOR, and RNAV approaches make it an excellent location for a thorough IPC that tests real approach skills, not just simulated procedures. The IPC covers approach procedures, holding, tracking, partial panel, unusual attitude recovery, and IFR regulations.",
       "The IPC at Accelerated Flight School is a genuine proficiency check — not a rubber stamp. If your instrument skills are not where they need to be for safe IFR flight, your CFII will provide the additional training needed before endorsing currency restoration. Safety and genuine proficiency are the objectives.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "Burbank", "Glendale"],
     faqs: [
       { q: "What is an Instrument Proficiency Check (IPC)?", a: "An IPC is required when an instrument-rated pilot's currency has lapsed beyond the 6-month recency window. It must be conducted by a CFII and covers all instrument skill areas to FAA standards." },
-      { q: "Who must conduct an IPC?", a: "An IPC must be conducted by a CFII (Certified Flight Instructor – Instrument). David Tom, CFII, conducts IPCs at Accelerated Flight School." },
+      { q: "Who must conduct an IPC?", a: "An IPC must be conducted by a CFII (Certified Flight Instructor – Instrument). our CFII instructors, conducts IPCs at Accelerated Flight School." },
       { q: "How long does an IPC take?", a: "Typically 2–4 hours including briefing, flight, and debrief. More time may be needed if instrument skills require significant restoration." },
       { q: "What does an IPC cost at Accelerated Flight School?", a: "Aircraft is $160/hr wet and instructor is $35/hr. A 2-hour IPC flight would cost approximately $390 in flight costs plus briefing time." },
-      { q: "Can I do an IPC at Van Nuys Airport?", a: "Yes. Call or text 818-469-1414 to schedule an IPC with David Tom, CFII." },
+      { q: "Can I do an IPC at Van Nuys Airport?", a: "Yes. Call or text 818-469-1414 to schedule an IPC with our CFII instructors." },
     ],
   },
   // ── NEW INTENT-BASED LANDING PAGES ──────────────────────────────────────────
@@ -1029,7 +1029,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Accelerated Flight School at Van Nuys Airport (KVNY) offers a clear, step-by-step path from zero experience to your pilot certificate — in the heart of the Los Angeles aviation corridor.",
     localIntro: [
       "Los Angeles is one of the best places in the country to learn to fly. Year-round VFR weather, world-class airspace complexity, and dedicated general aviation airports like Van Nuys (KVNY) give student pilots constant access to diverse flying conditions. Accelerated Flight School is based at KVNY — one of the busiest general aviation airports in the United States.",
-      "Becoming a pilot in Los Angeles starts with one simple step: a Discovery Flight. In 1.5 hours for $190, you sit in the left seat of a Piper Cherokee, take off from KVNY, and fly over the San Fernando Valley with David Tom, CFII, guiding you. It is the most efficient way to confirm that flying is right for you before investing in a full program.",
+      "Becoming a pilot in Los Angeles starts with one simple step: a Discovery Flight. In 1.5 hours for $190, you sit in the left seat of a Piper Cherokee, take off from KVNY, and fly over the San Fernando Valley with a CFII instructor guiding you. It is the most efficient way to confirm that flying is right for you before investing in a full program.",
       "After your Discovery Flight, the Private Pilot Certificate is your first formal milestone. The FAA requires a minimum of 40 flight hours, but most students need 60–75 hours to reach genuine checkride standard. At Accelerated Flight School, every lesson follows the ACS (Airman Certification Standards) so every hour moves you toward the certificate — no filler, no repeated lessons. From private pilot you can continue to instrument rating, commercial, CFI, and the airline path.",
     ],
     nearbyAreas: ["Van Nuys", "San Fernando Valley", "Burbank", "Sherman Oaks", "Woodland Hills"],
@@ -1114,13 +1114,13 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "The best flight school in Los Angeles is the one that gets you from where you are to your certificate with the fewest wasted hours and the most honest billing. That sounds simple, but many schools fall short on both counts. Accelerated Flight School at Van Nuys Airport (KVNY) is built around exactly that principle: efficient, ACS-focused instruction with transparent, itemized pricing from the first lesson.",
       "Los Angeles has no shortage of flight schools. Van Nuys Airport alone hosts multiple flight training operations. The key differentiators matter: Does the school fly a well-maintained training aircraft or a rotating fleet of questionable availability? Is instruction ACS-based from day one, or does your instructor decide what to cover each lesson? Is pricing fully disclosed upfront or are there fuel charges, booking fees, and mandatory packages? Accelerated Flight School answers well on every count.",
-      "We train in a Piper Cherokee Warrior II — a stable, reliable four-seat trainer with known performance characteristics. Your instruction is with David Tom, CFII, who has structured the program around the FAA's Airman Certification Standards. Lessons are booked directly. No dispatch desk, no assembly-line throughput, no pressure to finance a multi-thousand dollar package before your first lesson.",
+      "We train in a Piper Cherokee Warrior II — a stable, reliable four-seat trainer with known performance characteristics. Your instruction is with our CFII instructors, who has structured the program around the FAA's Airman Certification Standards. Lessons are booked directly. No dispatch desk, no assembly-line throughput, no pressure to finance a multi-thousand dollar package before your first lesson.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Woodland Hills", "Burbank", "Encino", "Glendale"],
     faqs: [
       { q: "What should I look for in a Los Angeles flight school?", a: "Look for: (1) ACS-based structured instruction, not ad-hoc flying; (2) transparent all-in pricing with no hidden surcharges; (3) a well-maintained dedicated training aircraft; (4) an experienced CFII with a checkride track record; (5) flexible scheduling; (6) no high-pressure package sales." },
       { q: "What aircraft does Accelerated Flight School use?", a: "We train in a Piper Cherokee Warrior II (N9172Y) — a four-seat, low-wing trainer known for stability and predictability. $160/hr wet, fuel included." },
-      { q: "Who provides flight instruction at Accelerated Flight School?", a: "David Tom, CFII, provides all instruction. He brings a structured, honest teaching approach based on FAA ACS standards, with a focus on checkride-readiness and practical skill." },
+      { q: "Who provides flight instruction at Accelerated Flight School?", a: "our CFII instructors, provides all instruction. He brings a structured, honest teaching approach based on FAA ACS standards, with a focus on checkride-readiness and practical skill." },
       { q: "Is Accelerated Flight School right for every student?", a: "We are the best fit for motivated students who want structured, efficient training with flexible scheduling and no pressure sales. If you want a large club environment with many aircraft and students, there are other options. If you want to get to your certificate efficiently, call us." },
       { q: "How do I find out if Accelerated Flight School is the right fit?", a: "Book a Discovery Flight for $190. In 1.5 hours you experience the airplane, the airspace, and the instruction style firsthand. Call or text 818-469-1414." },
     ],
@@ -1133,7 +1133,7 @@ export const landingPages: LandingPageConfig[] = [
     h1: "Discovery Flight in Los Angeles",
     subheadline: "Take the controls of a real airplane over Los Angeles for $190. Your Discovery Flight departs from Van Nuys Airport (KVNY) — 1.5 hours, real instruction, no prior experience needed.",
     localIntro: [
-      "A Discovery Flight is a 1.5-hour introductory flight lesson where you sit in the left seat, take off from Van Nuys Airport, and fly over the San Fernando Valley with David Tom, CFII, guiding you. This is not a sightseeing tour — it is a real lesson where you feel the controls, make corrections, and experience what flight training actually involves. Cost: $190, all-in.",
+      "A Discovery Flight is a 1.5-hour introductory flight lesson where you sit in the left seat, take off from Van Nuys Airport, and fly over the San Fernando Valley with a CFII instructor guiding you. This is not a sightseeing tour — it is a real lesson where you feel the controls, make corrections, and experience what flight training actually involves. Cost: $190, all-in.",
       "Los Angeles is one of the most spectacular places in the world for a first flight. From Van Nuys Airport, your Discovery Flight takes you over the San Fernando Valley with views of the Santa Monica Mountains, downtown LA, and on clear days, the Pacific coastline. Southern California visibility regularly exceeds 50 miles. You will take off from one of the busiest general aviation airports in the U.S. and see the city from a perspective most people never experience.",
       "The Discovery Flight is the most efficient first step in deciding whether to pursue your pilot certificate. Most students who complete a Discovery Flight at Accelerated Flight School book their first official private pilot lesson within the same week. After the flight, your instructor walks you through what a full private pilot training program looks like — timeline, cost, and what to expect.",
     ],
@@ -1155,7 +1155,7 @@ export const landingPages: LandingPageConfig[] = [
     subheadline: "Start your aviation journey at Van Nuys Airport (KVNY) — one of the busiest general aviation airports in the U.S. Structured training, real airspace, and clear results at Accelerated Flight School.",
     localIntro: [
       "Learning to fly in Los Angeles puts you in some of the most dynamic and educational airspace in the country. Van Nuys Airport (KVNY) sits in the San Fernando Valley surrounded by Class B, Class C, and Class D airspace. From your earliest cross-country flights, you navigate real Los Angeles aviation infrastructure — the same airspace used by cargo jets, helicopters, charter aircraft, and private pilots every day. This makes you a more capable and confident pilot faster.",
-      "Accelerated Flight School is a structured, ACS-based flight training program. Learning to fly here means your instructor — David Tom, CFII — builds your skills in a deliberate sequence: ground fundamentals, basic maneuvers, traffic pattern work, first solo, cross-country navigation, night flight, and checkride preparation. Every lesson has a clear objective. Nothing is added to pad your logbook; everything serves your certificate goal.",
+      "Accelerated Flight School is a structured, ACS-based flight training program. Learning to fly here means your instructor — our CFII instructors — builds your skills in a deliberate sequence: ground fundamentals, basic maneuvers, traffic pattern work, first solo, cross-country navigation, night flight, and checkride preparation. Every lesson has a clear objective. Nothing is added to pad your logbook; everything serves your certificate goal.",
       "The path to a private pilot certificate involves completing a minimum 40 hours of flight time (FAA minimum), passing a written knowledge test, and passing an FAA practical exam with a Designated Pilot Examiner. At $195/hr dual and $160/hr solo, most students invest $10,000–$13,000 in flight training for private pilot. The Discovery Flight at $190 is the perfect — and lowest-risk — starting point.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "Burbank", "Woodland Hills", "Glendale"],
@@ -1177,7 +1177,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "An instrument rating (IR) allows you to fly legally in clouds, low visibility, and IFR (Instrument Flight Rules) conditions — making you a significantly safer and more capable pilot. FAA requirements to earn an instrument rating: hold a Private Pilot Certificate, log 50 hours of cross-country PIC flight time, complete 40 hours of actual or simulated instrument time, pass the FAA Instrument Airplane Knowledge Test, and pass an instrument rating checkride (oral + flight) with a Designated Pilot Examiner.",
       "Van Nuys Airport is an exceptional base for instrument training in Los Angeles. KVNY has an ILS approach, a VOR/DME, and RNAV GPS approaches on both runways. The surrounding airspace — Burbank Approach, SoCal Approach, the LA Class B transition routes — gives instrument students real-world exposure to the ATC environment that instrument-rated pilots use every day. You are not flying practice approaches in empty airspace; you are operating in the real IFR system.",
-      "At Accelerated Flight School, instrument rating training is conducted by David Tom, CFII. Lessons are structured around real-world IFR operations: IFR clearances and departure procedures, en-route navigation, holding patterns, ILS and RNAV approaches, partial-panel flying, and unusual attitude recovery. Most students complete the instrument rating in 4–7 months after finishing their private pilot certificate.",
+      "At Accelerated Flight School, instrument rating training is conducted by our CFII instructors. Lessons are structured around real-world IFR operations: IFR clearances and departure procedures, en-route navigation, holding patterns, ILS and RNAV approaches, partial-panel flying, and unusual attitude recovery. Most students complete the instrument rating in 4–7 months after finishing their private pilot certificate.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Glendale", "Encino"],
     faqs: [
