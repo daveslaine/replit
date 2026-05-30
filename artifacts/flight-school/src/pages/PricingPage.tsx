@@ -379,7 +379,7 @@ export function PricingPage() {
             </div>
 
             <p className="text-slate-300 leading-relaxed mb-4">
-              Some flight schools — typically large Part 141 academies — advertise financing programs or partnerships with pilot loan providers. On the surface, this sounds convenient. In practice, the economics are stacked heavily against you as a student.
+              Some flight schools — typically large Part 141 academies, and some Part 61 schools that heavily advertise zero-to-airline-pilot programs — offer financing programs or partnerships with pilot loan providers. On the surface, this sounds convenient. In practice, the economics are stacked heavily against you as a student.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 mb-6">
