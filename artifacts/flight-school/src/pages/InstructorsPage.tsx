@@ -21,7 +21,7 @@ interface Instructor {
 
 const STATIC_PHOTOS: Record<string, string> = {
   "Reza S.": "/images/instructor-reza.png",
-  "David T.": "/images/instructor-david.png",
+  "David T.": "/images/instructor-david.jpg",
 };
 
 function InstructorCard({ inst }: { inst: Instructor }) {
