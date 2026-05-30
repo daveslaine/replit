@@ -34,7 +34,7 @@ export function AviationTerm({ term, definition }: AviationTermProps) {
   return (
     <Tooltip delayDuration={300}>
       <TooltipTrigger asChild>
-        <span className="border-b-2 border-dotted border-primary/50 cursor-help font-medium text-foreground hover:bg-primary/5 px-0.5 rounded transition-colors" data-testid={`term-${term.toLowerCase().replace(/\s+/g, "-")}`}>
+        <span className="border-b-2 border-dotted border-primary/50 cursor-help font-medium hover:bg-primary/5 px-0.5 rounded transition-colors text-[#ffffff]" data-testid={`term-${term.toLowerCase().replace(/\s+/g, "-")}`}>
           {term}
         </span>
       </TooltipTrigger>
