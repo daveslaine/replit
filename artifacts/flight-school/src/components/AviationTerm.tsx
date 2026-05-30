@@ -26,6 +26,7 @@ const defaultDefinitions: Record<string, string> = {
   "Private Pilot": "The first major pilot certificate for people who want to fly for personal travel, recreation, and carrying passengers.",
   "Instrument Rating": "An added rating that allows a pilot to fly using instruments and ATC guidance in more challenging weather conditions.",
   "ATP": "Airline Transport Pilot certificate, the certificate required to serve as an airline captain.",
+  "Class Bravo": "Class B airspace surrounds the nation's busiest airports. Flying through it requires an ATC clearance and specific equipment.",
 };
 
 export function AviationTerm({ term, definition }: AviationTermProps) {
@@ -34,7 +35,7 @@ export function AviationTerm({ term, definition }: AviationTermProps) {
   return (
     <Tooltip delayDuration={300}>
       <TooltipTrigger asChild>
-        <span className="border-b-2 border-dotted border-primary/50 cursor-help font-medium hover:bg-primary/5 px-0.5 rounded transition-colors text-[#ffffffb3]" data-testid={`term-${term.toLowerCase().replace(/\s+/g, "-")}`}>
+        <span className="border-b-2 border-dotted border-current/50 cursor-help font-medium hover:opacity-80 px-0.5 rounded transition-opacity" data-testid={`term-${term.toLowerCase().replace(/\s+/g, "-")}`}>
           {term}
         </span>
       </TooltipTrigger>

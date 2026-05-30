@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Phone, Info, Tablet, Headphones, BookOpen, Stethoscope } from "lucide-react";
+import { Phone, Info, Tablet, Headphones, BookOpen, Stethoscope, Shield, CheckCircle2, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 import { StudentPromise } from "@/components/StudentPromise";
@@ -17,8 +17,12 @@ export function PricingPage() {
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Transparent Flight Training Pricing</h1>
-          <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto mb-6">
             We believe students should understand real training costs before they begin. Costs depend on consistency, study habits, weather, scheduling, and proficiency — but we provide realistic estimates upfront.
+          </p>
+          <p className="text-sm font-bold text-green-400 flex items-center justify-center gap-1.5">
+            <CheckCircle2 className="w-4 h-4 shrink-0" />
+            No upfront payment — pay only when you fly
           </p>
         </div>
       </section>
@@ -72,8 +76,8 @@ export function PricingPage() {
                     <span className="font-bold text-primary text-xl">$180/hr</span>
                   </div>
                   <div className="flex justify-between items-center pt-2">
-                    <span className="text-sm text-slate-600">30-Hour Package</span>
-                    <span className="text-sm font-bold text-slate-800">~$28/hr Inst. + ~$145/hr Acft</span>
+                    <span className="text-sm text-slate-600">30-Hour Package Combined</span>
+                    <span className="text-sm font-bold text-slate-800">$173/hr</span>
                   </div>
                 </div>
               </div>
@@ -81,7 +85,11 @@ export function PricingPage() {
 
             {/* Estimates */}
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
-              <h2 className="text-2xl font-bold text-primary mb-6 border-b border-slate-100 pb-4">Program Estimates</h2>
+              <h2 className="text-2xl font-bold text-primary mb-2 border-b border-slate-100 pb-4">Program Estimates</h2>
+              <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3 mb-6 flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
+                <p className="text-sm text-green-800 font-medium">No Upfront Payment — Pay only when you fly. Combined dual rates from $180–$195/hr.</p>
+              </div>
               
               <div className="space-y-6">
                 <div>
@@ -95,9 +103,10 @@ export function PricingPage() {
                 <div className="pt-4 border-t border-slate-100">
                   <div className="flex justify-between items-baseline mb-1">
                     <Link href="/instrument-rating-van-nuys" className="font-bold text-lg text-secondary hover:underline">Instrument Rating</Link>
-                    <span className="font-bold text-slate-800">$180–$195/hr</span>
+                    <span className="font-bold text-xl text-primary">~$8,500–$15,000</span>
                   </div>
-                  <p className="text-sm text-slate-600">Contact us for a detailed total estimate based on your current experience.</p>
+                  <p className="text-sm text-slate-600 mb-1">The lower estimate is possible with rigorous use of a safety pilot. Contact us for a detailed total estimate based on your current experience.</p>
+                  <p className="text-sm text-red-600 font-medium">SoCal Average: $16,000–$23,000</p>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100">
@@ -105,7 +114,24 @@ export function PricingPage() {
                     <Link href="/commercial-pilot-training" className="font-bold text-lg text-secondary hover:underline">Commercial Pilot</Link>
                     <span className="font-bold text-slate-800">~$40,000–$55,000</span>
                   </div>
-                  <p className="text-sm text-slate-600">From zero hours. If you already have ratings, call for a custom bridge estimate.</p>
+                  <p className="text-sm text-slate-600 mb-1">From zero hours. If you already have ratings, call for a custom bridge estimate.</p>
+                  <p className="text-sm text-red-600 font-medium">SoCal Average: $70,000–$110,000</p>
+                </div>
+
+                <div className="pt-4 border-t border-slate-100">
+                  <div className="flex justify-between items-baseline mb-1">
+                    <span className="font-bold text-lg text-slate-800">Commercial Pilot (hours included)</span>
+                    <span className="font-bold text-slate-800">Call or text</span>
+                  </div>
+                  <p className="text-sm text-slate-600">For exact price. Requires 250 hrs total aircraft time and 100 hrs XC PIC time.</p>
+                </div>
+
+                <div className="pt-4 border-t border-slate-100">
+                  <div className="flex justify-between items-baseline mb-1">
+                    <span className="font-bold text-lg text-slate-800">Commercial Multi Engine Add-On</span>
+                    <span className="font-bold text-slate-800">$3,000–$4,000</span>
+                  </div>
+                  <p className="text-sm text-red-600 font-medium">SoCal Average: $5,000–$8,000</p>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100">
@@ -113,7 +139,8 @@ export function PricingPage() {
                     <Link href="/cfi-training" className="font-bold text-lg text-secondary hover:underline">CFI Training</Link>
                     <span className="font-bold text-slate-800">~$3,000–$6,000</span>
                   </div>
-                  <p className="text-sm text-slate-600">After completing Commercial Pilot.</p>
+                  <p className="text-sm text-slate-600 mb-1">After completing Commercial Pilot.</p>
+                  <p className="text-sm text-red-600 font-medium">SoCal Average: $5,000–$11,000</p>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100">
@@ -121,7 +148,8 @@ export function PricingPage() {
                     <span className="font-bold text-lg text-slate-800">CFII Training</span>
                     <span className="font-bold text-slate-800">~$2,000–$4,000</span>
                   </div>
-                  <p className="text-sm text-slate-600">After completing CFI.</p>
+                  <p className="text-sm text-slate-600 mb-1">After completing CFI.</p>
+                  <p className="text-sm text-red-600 font-medium">SoCal Average: $3,000–$6,000</p>
                 </div>
               </div>
             </div>
@@ -130,9 +158,12 @@ export function PricingPage() {
           {/* Checkride Fees Table */}
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 mb-8">
             <h2 className="text-2xl font-bold text-primary mb-2">FAA Checkride Fees</h2>
-            <p className="text-slate-600 mb-6 text-sm">
+            <p className="text-slate-600 mb-3 text-sm">
               Every pilot certificate and rating requires a practical test administered by a <AviationTerm term="DPE" /> — a Designated Pilot Examiner. These fees are paid directly to the examiner and are separate from your training costs. They apply at every flight school with no exceptions.
             </p>
+            <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3 mb-6 text-sm text-green-800 leading-relaxed">
+              <strong>No upfront payment for checkrides.</strong> You pay these fees directly to the examiner only when you take that specific checkride. For example, if you are pursuing your Private Pilot Certificate, you will pay the DPE $800–$1,000 at that time only — not before, and not for future ratings. You never pay all checkride fees at once. Each fee is due only for the certificate or rating you are actively testing for.
+            </div>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
@@ -186,7 +217,7 @@ export function PricingPage() {
                   <h3 className="font-bold text-slate-800 mb-1">Aviation Headset</h3>
                   <p className="text-2xl font-bold text-secondary mb-1">~$100 <span className="text-sm font-normal text-slate-500">one-time</span></p>
                   <p className="text-sm text-slate-600 leading-relaxed">
-                    A basic aviation headset is required before you can fly. Entry-level headsets in the $100 range are completely acceptable for student training. A good headset will last many years.
+                    A basic aviation headset is required before you can fly. Entry-level headsets in the $100 range are completely acceptable for student training. Buy it once and you're set — your headset works throughout all ratings and training stages, and will last many years.
                   </p>
                 </div>
               </div>
@@ -220,8 +251,11 @@ export function PricingPage() {
                 <Stethoscope className="w-8 h-8 text-secondary shrink-0 mt-1" />
                 <div>
                   <h3 className="font-bold text-slate-800 mb-1">FAA Medical Certificate</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed mb-2">
                     Before a student pilot can fly solo — meaning fly the aircraft without an instructor onboard — they must obtain a valid FAA medical certificate from an FAA Aviation Medical Examiner (AME). This is a federal requirement that applies at every flight school. Medical exam fees vary by examiner and class of medical but are typically in the range of $100–$200. We recommend completing your medical early in training.
+                  </p>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    <strong>Duration:</strong> Your medical certificate lasts <strong>5 years</strong> from the date issued if you were under age 40 at the time of the exam, or <strong>2 years</strong> if you were age 40 or older.
                   </p>
                 </div>
               </div>
@@ -235,17 +269,88 @@ export function PricingPage() {
                   <p className="text-sm text-slate-600 leading-relaxed mb-3">
                     All official FAA training materials are available free online. You can also purchase printed copies if you prefer a physical book. Key materials include:
                   </p>
-                  <ul className="text-sm text-slate-700 space-y-1">
-                    <li>• Pilot's Handbook of Aeronautical Knowledge (PHAK)</li>
-                    <li>• Airplane Flying Handbook (AFH)</li>
-                    <li>• Instrument Flying Handbook (IFH)</li>
-                    <li>• Instrument Procedures Handbook (IPH)</li>
-                    <li>• FAR/AIM (Federal Aviation Regulations / Aeronautical Information Manual)</li>
-                    <li>• VFR Sectional Charts and IFR En Route Charts</li>
+                  <ul className="text-sm text-slate-700 space-y-1.5">
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        Pilot's Handbook of Aeronautical Knowledge (PHAK)
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/00_afh_full.pdf" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        Airplane Flying Handbook (AFH)
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        Instrument Flying Handbook (IFH)
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/FAA-H-8083-16B.pdf" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        Instrument Procedures Handbook (IPH)
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.ecfr.gov/current/title-14/chapter-I" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        FAR — Federal Aviation Regulations (Title 14)
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/Air_traffic/publications/media/AIM-Basic-w-Chg1-and-Chg2-dtd-3-21-24.pdf" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        AIM — Aeronautical Information Manual
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/vfr/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        VFR Sectional Charts
+                      </a>
+                    </li>
+                    <li className="flex items-center gap-1.5">
+                      <ExternalLink className="w-3 h-3 text-secondary shrink-0" />
+                      <a href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/ifr/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">
+                        IFR Low En Route Charts
+                      </a>
+                    </li>
                   </ul>
                   <p className="text-xs text-slate-500 mt-3">
-                    All of the above are available free at <strong>faa.gov</strong> and through the FAA's digital library. We will point you to exactly where to find them.
+                    All of the above are available free at <strong>faa.gov</strong>. We will point you to exactly where to find each one.
                   </p>
+                </div>
+              </div>
+
+              {/* Rental Insurance */}
+              <div className="flex gap-4 p-5 bg-slate-50 rounded-xl border border-slate-200 md:col-span-2">
+                <Shield className="w-8 h-8 text-secondary shrink-0 mt-1" />
+                <div className="w-full">
+                  <h3 className="font-bold text-slate-800 mb-1">Renter's Insurance</h3>
+                  <p className="text-2xl font-bold text-secondary mb-1">~$300/yr <span className="text-sm font-normal text-slate-500">one-time annual fee</span></p>
+                  <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                    Renter's insurance is required only when you rent the aircraft for solo flight or any flight without an instructor present. <strong>It is not required while flying with an instructor onboard.</strong> Once you begin solo flying, you must maintain active coverage.
+                  </p>
+                  <h4 className="text-sm font-bold text-slate-700 mb-2">Required Minimum Coverage:</h4>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    <div className="bg-white rounded-lg border border-slate-200 p-3">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Bodily Injury &amp; Property Damage Liability</p>
+                      <ul className="text-sm text-slate-700 space-y-0.5">
+                        <li>• $25,000 per person</li>
+                        <li>• $250,000 property damage</li>
+                        <li>• $250,000 per accident</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white rounded-lg border border-slate-200 p-3">
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-1">Aircraft Damage Liability</p>
+                      <ul className="text-sm text-slate-700 space-y-0.5">
+                        <li>• $25,000 each non-owned aircraft</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
 
