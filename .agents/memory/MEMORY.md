@@ -1,0 +1,2 @@
+- [Orval zod codegen conflict](orval-zod-schemas.md) — removing `schemas` option from zod orval config prevents duplicate export conflict; remove stale types barrel after codegen.
+- [Admin session memory store](admin-session.md) — use express-session default memory store for single-admin panels; connect-pg-simple requires pre-created session table.
