@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import ReactCrop, { type Crop, centerCrop, makeAspectCrop } from "react-image-crop";
+import ReactCrop, { type Crop, type PixelCrop, centerCrop, makeAspectCrop } from "react-image-crop";
 import "react-image-crop/dist/ReactCrop.css";
 import { adminApi, type Instructor } from "@/lib/adminApi";
 import { Button } from "@/components/ui/button";
@@ -15,19 +15,20 @@ function centerAspectCrop(w: number, h: number, aspect: number): Crop {
   return centerCrop(makeAspectCrop({ unit: "%", width: 90 }, aspect, w, h), w, h);
 }
 
-function getCroppedBlob(image: HTMLImageElement, crop: Crop): Promise<Blob> {
-  const canvas = document.createElement("canvas");
+// crop is in CSS pixels (what react-image-crop's onComplete returns)
+function getCroppedBlob(image: HTMLImageElement, crop: PixelCrop): Promise<Blob> {
   const scaleX = image.naturalWidth / image.width;
   const scaleY = image.naturalHeight / image.height;
-  const cropX = Math.round((crop.x / 100) * image.width * scaleX);
-  const cropY = Math.round((crop.y / 100) * image.height * scaleY);
-  const cropW = Math.round((crop.width / 100) * image.width * scaleX);
-  const cropH = Math.round((crop.height / 100) * image.height * scaleY);
-  canvas.width = cropW;
-  canvas.height = cropH;
+  const x = Math.round(crop.x * scaleX);
+  const y = Math.round(crop.y * scaleY);
+  const w = Math.round(crop.width * scaleX);
+  const h = Math.round(crop.height * scaleY);
+  const canvas = document.createElement("canvas");
+  canvas.width = w;
+  canvas.height = h;
   const ctx = canvas.getContext("2d")!;
   ctx.imageSmoothingQuality = "high";
-  ctx.drawImage(image, cropX, cropY, cropW, cropH, 0, 0, cropW, cropH);
+  ctx.drawImage(image, x, y, w, h, 0, 0, w, h);
   return new Promise((resolve, reject) =>
     canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("Canvas empty"))), "image/jpeg", 0.92),
   );
@@ -62,7 +63,7 @@ function InstructorModal({
 
   const [rawImageSrc, setRawImageSrc] = useState<string | null>(null);
   const [crop, setCrop] = useState<Crop>();
-  const [completedCrop, setCompletedCrop] = useState<Crop>();
+  const [completedCrop, setCompletedCrop] = useState<PixelCrop>();
   const imgRef = useRef<HTMLImageElement>(null);
   const [uploading, setUploading] = useState(false);
   const [saving, setSaving] = useState(false);
@@ -90,7 +91,14 @@ function InstructorModal({
     const { width, height } = e.currentTarget;
     const c = centerAspectCrop(width, height, 3 / 4);
     setCrop(c);
-    setCompletedCrop(c);
+    // Convert percentage crop → pixel crop (matching what onComplete returns)
+    setCompletedCrop({
+      unit: "px",
+      x: (c.x / 100) * width,
+      y: (c.y / 100) * height,
+      width: (c.width / 100) * width,
+      height: (c.height / 100) * height,
+    });
   }
 
   async function applyCrop() {
