@@ -220,7 +220,7 @@ export function LandingPage() {
               { title: "Checkride-Focused Preparation", body: "You are never wondering when you will be ready. Your instructor tracks your progress against checkride standards and gives you a clear picture at every stage." },
               { title: "Instructor Accountability", body: "Your instructor debriefs every flight with specific observations. What you did well, what needs work, and exactly what your next lesson will address." },
               { title: "Pay-As-You-Fly", body: "No large training loans required. No large prepaid blocks. You schedule and pay per lesson, keeping your investment proportional to your progress at all times." },
-              { title: "Student-First Instruction", body: "No runaround, no scripted upsell sequences, no inflated hours. David Tom, CFII, teaches because he believes in the mission of aviation training done right." },
+              { title: "Student-First Instruction", body: "No runaround, no scripted upsell sequences, no inflated hours. Our instructors teach because they believe in the mission of aviation training done right." },
               { title: "No Pressure on Pace", body: "Train twice a week or twice a month — your schedule, your pace. The instruction quality does not change based on how fast you progress through the program." },
             ].map((item) => (
               <div key={item.title} className="flex gap-4">
@@ -256,7 +256,7 @@ export function LandingPage() {
             Ready to Start Flying?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Call or text David Tom, CFII, directly at <strong>818-469-1414</strong> — or book a Discovery Flight at Van Nuys Airport for $190 and experience flight training before committing to a full program.
+            Call or text us directly at <strong>818-469-1414</strong> — or book a Discovery Flight at Van Nuys Airport for $190 and experience flight training before committing to a full program.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:8184691414">
