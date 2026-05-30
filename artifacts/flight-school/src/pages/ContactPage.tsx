@@ -101,10 +101,24 @@ export function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-slate-800 text-lg mb-1">Location</h3>
-                      <p className="text-slate-600">Van Nuys Airport (KVNY)<br />Van Nuys, California</p>
+                      <p className="text-slate-600">7900 Balboa Blvd H7<br />Van Nuys, CA 91406<br />Van Nuys Airport (KVNY)</p>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Google Maps embed */}
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <iframe
+                  title="Accelerated Flight School location at Van Nuys Airport"
+                  src="https://www.google.com/maps?q=7900+Balboa+Blvd,+Van+Nuys,+CA+91406&output=embed"
+                  width="100%"
+                  height="280"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
               </div>
             </div>
 

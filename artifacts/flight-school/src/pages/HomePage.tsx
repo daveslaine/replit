@@ -24,6 +24,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 import { StudentPromise } from "@/components/StudentPromise";
+import { Testimonials } from "@/components/Testimonials";
 
 const pilotGoals = [
   {
@@ -621,6 +622,8 @@ export function HomePage() {
           </div>
         </div>
       </section>
+      {/* ── Testimonials ──────────────────────────────────────── */}
+      <Testimonials />
       {/* ── Student Promise ───────────────────────────────────── */}
       <div className="container mx-auto px-4">
         <StudentPromise />

@@ -23,6 +23,7 @@ const topNavLinks = [
   { href: "/van-nuys-accelerated-flight-school-deals-coupons", label: "Deals" },
   { href: "/van-nuys-accelerated-flight-school-aircraft", label: "Aircraft" },
   { href: "/van-nuys-accelerated-flight-school-instructors", label: "Instructors" },
+  { href: "/faq", label: "FAQ" },
   { href: "/van-nuys-accelerated-flight-school-contact", label: "Contact" },
 ];
 
@@ -34,6 +35,7 @@ const mobileAllLinks = [
   { href: "/van-nuys-accelerated-flight-school-deals-coupons", label: "Deals & Coupons" },
   { href: "/van-nuys-accelerated-flight-school-aircraft", label: "Aircraft" },
   { href: "/van-nuys-accelerated-flight-school-instructors", label: "Instructors" },
+  { href: "/faq", label: "FAQ" },
   { href: "/van-nuys-accelerated-flight-school-contact", label: "Contact" },
 ];
 

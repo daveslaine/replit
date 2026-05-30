@@ -28,8 +28,10 @@ import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
 import { DealsPage } from "@/pages/DealsPage";
 import { AboutUsPage } from "@/pages/AboutUsPage";
 import { DirectionsPage } from "@/pages/DirectionsPage";
+import { FaqPage } from "@/pages/FaqPage";
 import { LandingPage } from "@/pages/LandingPage";
 import { getLandingPage } from "@/data/landingPages";
+import { SeoSchema } from "@/components/SeoSchema";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +47,7 @@ function LandingOrNotFound() {
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen">
+      <SeoSchema />
       <Header />
       <main className="flex-1 pb-16 md:pb-0">{children}</main>
       <Footer />
@@ -82,6 +85,8 @@ function PublicRoutes() {
         <Route path="/van-nuys-accelerated-flight-school-contact" component={ContactPage} />
         <Route path="/van-nuys-accelerated-flight-school-about" component={AboutUsPage} />
         <Route path="/van-nuys-accelerated-flight-school-directions" component={DirectionsPage} />
+        <Route path="/faq" component={FaqPage} />
+        <Route path="/flight-training-faq-van-nuys" component={FaqPage} />
         <Route component={LandingOrNotFound} />
       </Switch>
     </Layout>
