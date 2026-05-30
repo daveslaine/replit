@@ -166,7 +166,7 @@ export function HomePage() {
                   Discovery Flight — $190
                 </Button>
               </Link>
-              <Link href="/deals" data-testid="link-hero-coupons">
+              <Link href="/van-nuys-accelerated-flight-school-deals-coupons" data-testid="link-hero-coupons">
                 <Button
                   size="lg"
                   className="font-bold text-base h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white gap-2"
