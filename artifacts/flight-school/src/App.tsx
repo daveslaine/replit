@@ -28,8 +28,17 @@ import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
 import { DealsPage } from "@/pages/DealsPage";
 import { AboutUsPage } from "@/pages/AboutUsPage";
 import { DirectionsPage } from "@/pages/DirectionsPage";
+import { LandingPage } from "@/pages/LandingPage";
 
 const queryClient = new QueryClient();
+
+function LandingOrNotFound() {
+  const [location] = useLocation();
+  if (location.startsWith("/landing-page-")) {
+    return <LandingPage />;
+  }
+  return <NotFound />;
+}
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -62,6 +71,7 @@ function PublicRoutes() {
         <Route path="/instructors" component={InstructorsPage} />
         <Route path="/pricing" component={PricingPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/discovery-flight-van-nuys" component={DiscoveryFlightPage} />
         <Route path="/discovery-flight" component={DiscoveryFlightPage} />
         <Route path="/van-nuys-accelerated-flight-school-deals-coupons" component={DealsPage} />
         <Route path="/van-nuys-accelerated-flight-school-pricing" component={PricingPage} />
@@ -70,7 +80,7 @@ function PublicRoutes() {
         <Route path="/van-nuys-accelerated-flight-school-contact" component={ContactPage} />
         <Route path="/van-nuys-accelerated-flight-school-about" component={AboutUsPage} />
         <Route path="/van-nuys-accelerated-flight-school-directions" component={DirectionsPage} />
-        <Route component={NotFound} />
+        <Route component={LandingOrNotFound} />
       </Switch>
     </Layout>
   );

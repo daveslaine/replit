@@ -9,7 +9,7 @@ export function DealsPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Van Nuys Accelerated Flight School Deals & Coupons | Save on Flight Training</title>
+        <title>Deals & Coupons | Van Nuys Airport KVNY | Save on Flight Training | Accelerated Flight School</title>
         <meta
           name="description"
           content="Current deals and coupons at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 818-469-1414."

@@ -9,7 +9,7 @@ export function OurAircraftPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Our Aircraft | 1985 Piper Cherokee Warrior II | Accelerated Flight School</title>
+        <title>Our Training Aircraft | Van Nuys Airport KVNY | Piper Cherokee Warrior II | Accelerated Flight School</title>
         <meta name="description" content="Train in a 1985 Piper PA28 Cherokee Warrior II. IFR equipped, Garmin GNS 430, ADS-B, leather seats. $160/hr wet rental. Van Nuys Airport. Call 818-469-1414." />
       </Helmet>
 

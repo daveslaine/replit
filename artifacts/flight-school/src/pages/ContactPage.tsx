@@ -50,7 +50,7 @@ export function ContactPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Contact Accelerated Flight School | Van Nuys Airport | 818-469-1414</title>
+        <title>Contact Accelerated Flight School | Van Nuys Airport KVNY | 818-469-1414</title>
         <meta name="description" content="Contact Accelerated Flight School at Van Nuys Airport. Call or text 818-469-1414 for questions about flight training, pricing, or to get started. We'll explain everything." />
       </Helmet>
 

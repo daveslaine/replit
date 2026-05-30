@@ -9,7 +9,7 @@ export function CommercialPilotPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Commercial Pilot Training Van Nuys Airport | Los Angeles Commercial Pilot Certificate | Accelerated Flight School</title>
+        <title>Commercial Pilot Training Van Nuys Airport KVNY | Los Angeles Commercial Certificate | Accelerated Flight School</title>
         <meta name="description" content="Earn your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. ~$40,000–$55,000 from zero hours — well below the SoCal average of $70K–$110K. No upfront payment. Call 818-469-1414." />
         <meta name="keywords" content="commercial pilot training van nuys, commercial pilot certificate Los Angeles, commercial pilot license Southern California, fly for hire van nuys, commercial pilot KVNY, CPL training Los Angeles, commercial pilot affordable California" />
       </Helmet>

@@ -1,0 +1,500 @@
+The goal is to create a large set of important SEO landing pages for city searches, airport-area searches, and common flight training keyword searches around Van Nuys Airport / KVNY.
+
+Do not add these pages to the main navigation.
+
+Do not add these pages to the footer.
+
+Do not create a Service Areas footer section.
+
+Only add these pages to sitemap.xml and make sure robots.txt references sitemap.xml.
+
+The main navigation should stay clean and only include the normal core pages:
+Home
+Private Pilot
+Instrument
+Commercial
+CFI
+Pricing
+Aircraft
+Discovery Flight
+Contact
+
+Use “David Tom” anywhere an instructor name is needed. Do not use “David Tamrazi” or “David T.”
+
+Use a dynamic landing page system if possible. The site appears to be React/Vite, so create one reusable landing page component and one data/config file. The data/config file should include each page’s slug, meta title, meta description, H1, city/search intent, nearby cities, local angle, page body content, FAQs, and CTA text.
+
+Each URL must work as its own page. Each page must have its own unique title tag, meta description, H1, body content, FAQ, and internal links.
+
+If dynamic routing is used, make sure:
+- each URL is crawlable
+- each URL is included in sitemap.xml
+- each page gets its own title tag and meta description
+- the site does not use hash URLs
+- the page works when opened directly
+- the final hosted site can serve these routes properly
+- robots.txt references sitemap.xml
+
+General page template for every landing page:
+
+1. Hero section:
+H1 based on the target keyword.
+Subheadline explaining that Accelerated Flight School provides affordable, structured flight training at Van Nuys Airport / KVNY.
+CTA buttons:
+Call or Text 818-469-1414
+Discovery Flight — 1.5 Hours for $190
+
+2. Local relevance section:
+Mention the target city and nearby cities naturally.
+Always state that training is based at Van Nuys Airport / KVNY.
+Do not falsely claim the school is physically located in any city other than Van Nuys.
+
+3. Why Van Nuys / KVNY section:
+Explain that KVNY is a strong general aviation training airport.
+Explain that students train in real Los Angeles-area airspace.
+Explain that the training is structured, clear, and focused on progress.
+
+4. Pricing section:
+Aircraft rental: $160/hr wet
+Instructor: $35/hr
+Dual aircraft + instructor: $195/hr
+Discovery Flight: 1.5 hours for $190
+Mention transparent pricing and pay-as-you-fly.
+Mention we do not push large flight training loans.
+
+5. Programs section:
+Link to these existing program pages:
+Private Pilot
+Instrument Rating
+Commercial Pilot
+CFI Training
+Pricing
+Aircraft
+Discovery Flight
+Contact
+
+6. Training approach section:
+Use language already found throughout the site:
+affordable flight training
+structured training
+clear pricing
+ACS-based training
+checkride-focused preparation
+instructor accountability
+student-first instruction
+no student runaround
+pay-as-you-fly
+no large training loan pressure
+
+7. FAQ section:
+Each page should have 4–6 unique questions based on that page’s city or keyword.
+
+8. Final CTA:
+Call or Text 818-469-1414
+Book a Discovery Flight — 1.5 Hours for $190
+
+Important wording rules:
+- Do not say we are physically based in any city other than Van Nuys.
+- Say “near [city]” or “serving students from [city].”
+- Do not make false guarantees.
+- Do not say “guaranteed pass.”
+- Do not say “we are the best” as a direct unsupported claim.
+- For “best flight school” pages, write them as comparison/education pages: “what to look for before choosing.”
+- Do not keyword-stuff ugly text.
+- Use natural local wording.
+- Do not add any of these new landing pages to footer or main navigation.
+- Add all of them to sitemap.xml.
+- Remove any Replit default meta descriptions that say built by Replit or update this description.
+
+Create these city landing pages.
+
+For city landing pages, use this meta title format exactly:
+Flight School Near [City] - Accelerated Flight School in Van Nuys Airport KVNY
+
+Use URL format:
+landing-page-flight-school-near-[city-slug]-accelerated-flight-school-van-nuys-kvny
+
+Example:
+City: Calabasas
+URL: /landing-page-flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Calabasas - Accelerated Flight School in Van Nuys Airport KVNY
+
+City landing pages to create:
+
+1. Calabasas
+URL: /landing-page-flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Calabasas - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Calabasas
+Mention nearby: Oak Park, Agoura Hills, Westlake Village, Woodland Hills, Hidden Hills, Thousand Oaks.
+Local angle: good option for students from the Calabasas / Conejo Valley area who want structured training at KVNY.
+
+2. Sherman Oaks
+URL: /landing-page-flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Sherman Oaks - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Sherman Oaks
+Mention nearby: Studio City, Encino, Valley Village, North Hollywood, Toluca Lake.
+Local angle: close drive to Van Nuys Airport, good for after-work or part-time training.
+
+3. Encino
+URL: /landing-page-flight-school-near-encino-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Encino - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Encino
+Mention nearby: Tarzana, Sherman Oaks, Reseda, Woodland Hills, Lake Balboa.
+Local angle: direct access to KVNY, good for private pilot and instrument students.
+
+4. Burbank
+URL: /landing-page-flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Burbank - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Burbank
+Mention nearby: North Hollywood, Toluca Lake, Glendale, Sun Valley, Studio City.
+Local angle: Burbank Airport is primarily a commercial airline airport. Use careful wording: “Many Burbank-area students look to Van Nuys Airport for general aviation flight training options.” Do not make a hard legal claim unless verified.
+
+5. Glendale
+URL: /landing-page-flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Glendale - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Glendale
+Mention nearby: Burbank, Pasadena, Eagle Rock, La Cañada Flintridge, Montrose.
+Local angle: good option for Glendale students looking for structured flight training at KVNY.
+
+6. Hollywood
+URL: /landing-page-flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Hollywood - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Hollywood
+Mention nearby: West Hollywood, Studio City, Los Feliz, Universal City, Silver Lake.
+Local angle: beginner-friendly discovery flights and part-time flight training at KVNY.
+
+7. Santa Monica
+URL: /landing-page-flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Santa Monica - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Santa Monica
+Mention nearby: Brentwood, Westwood, Culver City, Venice, Marina del Rey, Pacific Palisades.
+Local angle: Van Nuys Airport training can be more cost-effective than training at Santa Monica because the student can avoid Santa Monica Airport landing-fee concerns. Use careful wording: “Van Nuys-based training may help students avoid added Santa Monica Airport landing-fee costs.” Do not overstate.
+
+8. Culver City
+URL: /landing-page-flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Culver City - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Culver City
+Mention nearby: Palms, Mar Vista, West LA, Santa Monica, Venice, Westwood.
+Local angle: good option for Westside students willing to drive to KVNY for lower-cost training.
+
+9. Pasadena
+URL: /landing-page-flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Pasadena - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Pasadena
+Mention nearby: South Pasadena, Altadena, Glendale, La Cañada Flintridge, Eagle Rock.
+Local angle: structured training at Van Nuys for San Gabriel Valley students.
+
+10. Thousand Oaks
+URL: /landing-page-flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Thousand Oaks - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Thousand Oaks
+Mention nearby: Westlake Village, Oak Park, Agoura Hills, Newbury Park, Moorpark, Camarillo.
+Local angle: Conejo Valley students may prefer fewer, longer, more productive lessons at KVNY.
+
+11. Westlake Village
+URL: /landing-page-flight-school-near-westlake-village-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Westlake Village - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Westlake Village
+Mention nearby: Thousand Oaks, Oak Park, Agoura Hills, Calabasas, Newbury Park.
+Local angle: premium local market, emphasize structured training, low rates, and direct instructor accountability.
+
+12. Agoura Hills
+URL: /landing-page-flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Agoura Hills - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Agoura Hills
+Mention nearby: Calabasas, Oak Park, Westlake Village, Thousand Oaks, Malibu Canyon.
+Local angle: strong option for students west of the Valley who want Van Nuys Airport training.
+
+13. Oak Park
+URL: /landing-page-flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Oak Park - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Oak Park
+Mention nearby: Agoura Hills, Westlake Village, Calabasas, Thousand Oaks, Woodland Hills.
+Local angle: Van Nuys training for Oak Park / Conejo Valley students.
+
+14. Woodland Hills
+URL: /landing-page-flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Woodland Hills - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Woodland Hills
+Mention nearby: Tarzana, Calabasas, Encino, Canoga Park, West Hills.
+Local angle: very practical location for west Valley students.
+
+15. Tarzana
+URL: /landing-page-flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Tarzana - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Tarzana
+Mention nearby: Encino, Woodland Hills, Reseda, Sherman Oaks, Lake Balboa.
+Local angle: close to KVNY, easy for part-time lessons.
+
+16. North Hollywood
+URL: /landing-page-flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near North Hollywood - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near North Hollywood
+Mention nearby: Burbank, Studio City, Valley Village, Toluca Lake, Sun Valley.
+Local angle: convenient Valley location for discovery flights and pilot training.
+
+17. Studio City
+URL: /landing-page-flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Studio City - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Studio City
+Mention nearby: Sherman Oaks, Hollywood, Universal City, Toluca Lake, Valley Village.
+Local angle: close to KVNY and ideal for beginners who want a discovery flight.
+
+18. Santa Clarita
+URL: /landing-page-flight-school-near-santa-clarita-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Santa Clarita - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Santa Clarita
+Mention nearby: Valencia, Newhall, Canyon Country, Sylmar, Granada Hills.
+Local angle: Van Nuys-based training for north LA County students.
+
+19. Simi Valley
+URL: /landing-page-flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Simi Valley - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Simi Valley
+Mention nearby: Moorpark, Chatsworth, Porter Ranch, Thousand Oaks, West Hills.
+Local angle: good option for students between Ventura County and the San Fernando Valley.
+
+20. Camarillo
+URL: /landing-page-flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Camarillo - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Camarillo
+Mention nearby: Oxnard, Ventura, Thousand Oaks, Moorpark, Newbury Park.
+Local angle: Phrase carefully. Do not say “Camarillo has bad weather.” Say: “Coastal airports can be affected by marine layer, fog, and low clouds that sometimes reduce VFR training windows. Some students compare Camarillo-area options with Van Nuys-based training because KVNY may offer different training-weather and airspace advantages depending on the day.”
+
+21. Long Beach
+URL: /landing-page-flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Long Beach - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Long Beach
+Mention nearby: Signal Hill, Lakewood, Torrance, Carson, San Pedro.
+Local angle: Students comparing LA-area flight schools may consider Van Nuys for lower-cost structured training.
+
+22. Ontario
+URL: /landing-page-flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Ontario - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Ontario
+Mention nearby: Rancho Cucamonga, Upland, Pomona, Chino, Claremont.
+Local angle: For Inland Empire students comparing options across LA, explain Van Nuys offers a structured, affordable training option.
+
+23. Los Angeles
+URL: /landing-page-flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Los Angeles
+Mention nearby: Hollywood, West LA, Downtown LA, Glendale, Burbank, Santa Monica, Pasadena.
+Local angle: broad Los Angeles landing page for general “flight school Los Angeles” intent.
+
+24. Malibu
+URL: /landing-page-flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Malibu - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Malibu
+Mention nearby: Calabasas, Agoura Hills, Pacific Palisades, Santa Monica, Westlake Village.
+Local angle: Malibu-area students can train at KVNY with structured pricing and discovery flights.
+
+25. Beverly Hills
+URL: /landing-page-flight-school-near-beverly-hills-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Near Beverly Hills - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Near Beverly Hills
+Mention nearby: West Hollywood, Century City, Westwood, Brentwood, Santa Monica.
+Local angle: premium market page, emphasize professional instruction, clear pricing, and no large loan pressure.
+
+Also create these non-city keyword landing pages. These are common search intents, not just city pages.
+
+26. Affordable Flight Training Los Angeles
+URL: /landing-page-affordable-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Affordable Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Affordable Flight Training in Los Angeles
+Focus: low aircraft/instructor rates, transparent pricing, pay-as-you-fly, no loan pressure.
+
+27. Cheap Flight School Los Angeles
+URL: /landing-page-cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Cheap Flight School Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Cheap Flight School in Los Angeles Without Cheap Training
+Focus: low cost does not mean low quality; structured training reduces wasted hours.
+
+28. Low Cost Flight Training Los Angeles
+URL: /landing-page-low-cost-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Low Cost Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Low Cost Flight Training in Los Angeles
+Focus: explain cost control, aircraft rate, instructor rate, dual rate, and discovery flight.
+
+29. Discovery Flight Los Angeles
+URL: /landing-page-discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Discovery Flight Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Discovery Flight in Los Angeles
+Focus: 1.5-hour discovery flight for $190, beginner-friendly, what to expect, call/text CTA.
+
+30. Discovery Flight Van Nuys
+URL: /landing-page-discovery-flight-van-nuys-accelerated-flight-school-kvny
+Meta title: Discovery Flight Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Discovery Flight at Van Nuys Airport
+Focus: local discovery flight page, Piper Cherokee, first flight, intro lesson, 1.5 hours for $190.
+
+31. Private Pilot Training Los Angeles
+URL: /landing-page-private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Private Pilot Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Private Pilot Training in Los Angeles
+Focus: private pilot path, pricing, training structure, checkride preparation.
+
+32. Instrument Rating Los Angeles
+URL: /landing-page-instrument-rating-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Instrument Rating Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Instrument Rating Training in Los Angeles
+Focus: IFR training, CFII instruction, approaches, cross-country, checkride preparation.
+
+33. Commercial Pilot Training Los Angeles
+URL: /landing-page-commercial-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Commercial Pilot Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Commercial Pilot Training in Los Angeles
+Focus: commercial maneuvers, time building, structured plan, affordable aircraft and instructor rates.
+
+34. CFI Training Los Angeles
+URL: /landing-page-cfi-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: CFI Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: CFI Training in Los Angeles
+Focus: certified flight instructor training, lesson plans, FOI, teaching, checkride prep.
+
+35. CFII Training Los Angeles
+URL: /landing-page-cfii-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: CFII Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: CFII Training in Los Angeles
+Focus: instrument instructor training, teaching approaches, IFR regulations, CFII checkride prep.
+
+36. Flight Instructor Van Nuys
+URL: /landing-page-flight-instructor-van-nuys-accelerated-flight-school-kvny
+Meta title: Flight Instructor Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight Instructor in Van Nuys
+Focus: David Tom, CFII, direct instruction, $35/hr instructor rate, call/text CTA.
+
+37. CFI Near Me Los Angeles
+URL: /landing-page-cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: CFI Near Me Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: CFI Near Me in Los Angeles
+Focus: people looking for a local instructor, direct contact, affordable training, Van Nuys Airport.
+
+38. CFII Near Me Los Angeles
+URL: /landing-page-cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: CFII Near Me Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: CFII Near Me in Los Angeles
+Focus: instrument instruction, IFR training, CFII direct contact, Van Nuys Airport.
+
+39. Piper Cherokee Flight Training Van Nuys
+URL: /landing-page-piper-cherokee-flight-training-van-nuys-kvny
+Meta title: Piper Cherokee Flight Training Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Piper Cherokee Flight Training at Van Nuys Airport
+Focus: 1985 Piper Cherokee Warrior II, $160/hr wet, stable trainer, private pilot, instrument, time building.
+
+40. Piper Warrior Flight Training Los Angeles
+URL: /landing-page-piper-warrior-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Piper Warrior Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Piper Warrior Flight Training in Los Angeles
+Focus: aircraft-specific page for students searching by airplane type.
+
+41. Pay As You Fly Flight Training Los Angeles
+URL: /landing-page-pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Pay As You Fly Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Pay-As-You-Fly Flight Training in Los Angeles
+Focus: no large upfront loan, transparent pricing, control over spending.
+
+42. Flight Training Without Loans Los Angeles
+URL: /landing-page-flight-training-without-loans-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight Training Without Loans Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight Training Without Large Training Loans
+Focus: anti-loan message, pay-as-you-fly, cost transparency.
+
+43. Best Flight School Van Nuys
+URL: /landing-page-best-flight-school-van-nuys-accelerated-flight-school-kvny
+Meta title: Best Flight School Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Choosing the Best Flight School in Van Nuys
+Focus: do not claim “we are the best.” Explain what students should look for: clear pricing, accountability, ACS-based training, aircraft availability, honest expectations, checkride preparation, student respect.
+
+44. Best Flight School Los Angeles
+URL: /landing-page-best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Best Flight School Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Choosing the Best Flight School in Los Angeles
+Focus: comparison/education page, not unsupported bragging.
+
+45. Flight School Cost Los Angeles
+URL: /landing-page-flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Flight School Cost Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight School Cost in Los Angeles
+Focus: explain aircraft rate, instructor rate, dual rate, discovery flight, private pilot estimate, instrument estimate, why costs vary.
+
+46. Private Pilot License Cost Los Angeles
+URL: /landing-page-private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Private Pilot License Cost Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Private Pilot License Cost in Los Angeles
+Focus: explain realistic PPL cost, minimum vs real-world hours, how structured training controls cost.
+
+47. Instrument Rating Cost Los Angeles
+URL: /landing-page-instrument-rating-cost-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Instrument Rating Cost Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Instrument Rating Cost in Los Angeles
+Focus: explain instrument training cost, cross-country PIC time, simulated/actual instrument time, CFII instruction.
+
+48. Time Building Los Angeles
+URL: /landing-page-time-building-los-angeles-accelerated-flight-school-van-nuys-kvny
+Meta title: Time Building Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Time Building in Los Angeles
+Focus: Piper Cherokee rental, structured time building, commercial pilot path, safety pilot if applicable.
+
+49. Flight Review Van Nuys
+URL: /landing-page-flight-review-van-nuys-accelerated-flight-school-kvny
+Meta title: Flight Review Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Flight Review at Van Nuys Airport
+Focus: flight review/BFR, recurrent training, safety, proficiency, instructor rate.
+
+50. Instrument Proficiency Check Van Nuys
+URL: /landing-page-instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny
+Meta title: Instrument Proficiency Check Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY
+H1: Instrument Proficiency Check at Van Nuys Airport
+Focus: IPC, instrument currency, CFII, approaches, holding, tracking, IFR procedures.
+
+For all pages:
+- Use as much relevant existing site language as possible.
+- Mix and match existing site sections where appropriate, but rewrite enough so each page is unique.
+- Pull content themes from pricing, discovery flight, aircraft, private pilot, instrument rating, commercial, CFI, instructors, loan skepticism, and training approach pages.
+- Add new relevant text where needed so each landing page is useful and not thin.
+- Do not make pages that are just copied boilerplate.
+- Every page should have at least 700–1,200 words if possible.
+- Every page should include 4–6 FAQs.
+- Every page should include CTA buttons near the top and bottom.
+- Every page should link internally to the core program pages.
+- Every page should include the phone number 818-469-1414.
+- Every page should include tel:8184691414 and sms:8184691414 links.
+- Every page should mention Van Nuys Airport / KVNY.
+- Every page should include pricing:
+  Aircraft $160/hr wet
+  Instructor $35/hr
+  Dual aircraft + instructor $195/hr
+  Discovery Flight — 1.5 Hours for $190
+
+Suggested CTA text variations:
+Call or Text 818-469-1414
+Book a Discovery Flight
+Start With a $190 Discovery Flight
+View Transparent Pricing
+Talk to David Tom, CFII
+Train at Van Nuys Airport
+
+Sitemap requirements:
+- Add every new landing page URL to sitemap.xml.
+- Make sure sitemap uses the final live domain when available.
+- If the domain is unknown, use a placeholder that can be updated later.
+- Update robots.txt to reference sitemap.xml.
+- Do not include Replit preview URLs in sitemap once live domain is known.
+
+robots.txt should be:
+User-agent: *
+Allow: /
+
+Sitemap: https://YOURDOMAIN.com/sitemap.xml
+
+Final check:
+- No footer links for these new SEO landing pages.
+- No main nav links for these new SEO landing pages.
+- No Replit default meta descriptions.
+- No “built by Replit” meta text.
+- No duplicate page titles.
+- No duplicate meta descriptions.
+- No false location claims.
+- No guarantee language.
+- No unsupported “best” claim.
+- Use David Tom, not David Tamrazi or David T.

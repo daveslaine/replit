@@ -9,7 +9,7 @@ export function InstrumentRatingPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Instrument Rating Training Van Nuys Airport KVNY | IFR Training Los Angeles | Accelerated Flight School</title>
+        <title>Instrument Rating Training Van Nuys Airport KVNY | IFR Los Angeles | Accelerated Flight School</title>
         <meta name="description" content="Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 818-469-1414." />
         <meta name="keywords" content="instrument rating van nuys, IFR training Los Angeles, instrument rating Southern California, add-on instrument rating KVNY, IFR training Van Nuys Airport, instrument rating affordable California, instrument flight training Los Angeles" />
       </Helmet>
