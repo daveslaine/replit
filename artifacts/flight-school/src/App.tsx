@@ -19,6 +19,7 @@ import { InstrumentRatingPage } from "@/pages/InstrumentRatingPage";
 import { CommercialPilotPage } from "@/pages/CommercialPilotPage";
 import { CfiTrainingPage } from "@/pages/CfiTrainingPage";
 import { AirlinePathPage } from "@/pages/AirlinePathPage";
+import { CommercialMultiEnginePage } from "@/pages/CommercialMultiEnginePage";
 import { OurAircraftPage } from "@/pages/OurAircraftPage";
 import { InstructorsPage } from "@/pages/InstructorsPage";
 import { PricingPage } from "@/pages/PricingPage";
@@ -49,8 +50,12 @@ function PublicRoutes() {
         <Route path="/low-cost-flight-school-van-nuys-ca" component={LowCostPage} />
         <Route path="/private-pilot-van-nuys" component={PrivatePilotPage} />
         <Route path="/instrument-rating-van-nuys" component={InstrumentRatingPage} />
+        <Route path="/commercial-pilot-training-van-nuys" component={CommercialPilotPage} />
         <Route path="/commercial-pilot-training" component={CommercialPilotPage} />
+        <Route path="/commercial-pilot-multi-engine-add-on-van-nuys-flight-training" component={CommercialMultiEnginePage} />
+        <Route path="/cfi-training-van-nuys" component={CfiTrainingPage} />
         <Route path="/cfi-training" component={CfiTrainingPage} />
+        <Route path="/airline-pilot-path-van-nuys" component={AirlinePathPage} />
         <Route path="/airline-pilot-path" component={AirlinePathPage} />
         <Route path="/our-aircraft" component={OurAircraftPage} />
         <Route path="/instructors" component={InstructorsPage} />

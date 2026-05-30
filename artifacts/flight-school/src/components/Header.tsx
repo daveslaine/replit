@@ -12,9 +12,10 @@ import {
 const trainingLinks = [
   { href: "/private-pilot-van-nuys", label: "Private Pilot" },
   { href: "/instrument-rating-van-nuys", label: "Instrument Rating" },
-  { href: "/commercial-pilot-training", label: "Commercial Pilot" },
-  { href: "/cfi-training", label: "CFI / CFII Training" },
-  { href: "/airline-pilot-path", label: "Airline Pilot Path" },
+  { href: "/commercial-pilot-training-van-nuys", label: "Commercial Pilot" },
+  { href: "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training", label: "Multi-Engine Add-On" },
+  { href: "/cfi-training-van-nuys", label: "CFI / CFII Training" },
+  { href: "/airline-pilot-path-van-nuys", label: "Airline Pilot Path" },
 ];
 
 const topNavLinks = [

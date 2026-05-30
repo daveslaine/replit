@@ -1,26 +1,27 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Plane, ArrowDown, Phone, CalendarClock } from "lucide-react";
+import { Plane, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
 export function AirlinePathPage() {
   const steps = [
-    { title: "Private Pilot", desc: "Learn the fundamentals of flight and earn your first certificate." },
-    { title: "Instrument Rating", desc: "Learn to fly in the clouds strictly by reference to instruments." },
-    { title: "Commercial Pilot", desc: "Build time to 250 hours and learn professional-level precision to fly for hire." },
-    { title: "CFI & CFII", desc: "Become a flight instructor to teach others and get paid while building your hours." },
-    { title: "Build Flight Time", desc: "Work as an instructor or in other commercial operations until you reach 1,500 hours." },
-    { title: "ATP Eligibility", desc: "Meet the requirements for the Airline Transport Pilot certificate." },
-    { title: "Airline First Officer", desc: "Apply and interview at regional airlines to start your career." }
+    { title: "Private Pilot", desc: "Learn the fundamentals of flight and earn your first certificate.", link: "/private-pilot-van-nuys" },
+    { title: "Instrument Rating", desc: "Learn to fly in the clouds strictly by reference to instruments.", link: "/instrument-rating-van-nuys" },
+    { title: "Commercial Pilot", desc: "Build time to 250 hours and learn professional-level precision to fly for hire.", link: "/commercial-pilot-training-van-nuys" },
+    { title: "Commercial Pilot Multi-Engine Add-On", desc: "Learn to fly multi-engine aircraft and build 15 hours of Pilot in Command time in the multi-engine — a key step toward airline and charter eligibility.", link: "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training" },
+    { title: "CFI & CFII", desc: "Become a flight instructor to teach others and get paid while building your hours.", link: "/cfi-training-van-nuys" },
+    { title: "Build Flight Time", desc: "Work as an instructor or in other commercial operations until you reach 1,500 hours.", link: null },
+    { title: "ATP Eligibility", desc: "Meet the requirements for the Airline Transport Pilot certificate.", link: null },
+    { title: "Airline First Officer", desc: "Apply and interview at regional airlines to start your career.", link: null },
   ];
 
   return (
     <div className="w-full">
       <Helmet>
         <title>Airline Pilot Training Path Van Nuys | Zero to ATP Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → CFI → ATP. Transparent costs, no upfront payment. Call 818-469-1414." />
+        <meta name="description" content="Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → Multi-Engine → CFI → ATP. Transparent costs, no upfront payment. Call 818-469-1414." />
         <meta name="keywords" content="airline pilot training van nuys, zero to ATP Los Angeles, airline career path Southern California, become airline pilot Van Nuys, ATP training KVNY, airline pilot school Los Angeles, zero to airline van nuys airport, how to become airline pilot California" />
       </Helmet>
 
@@ -45,17 +46,23 @@ export function AirlinePathPage() {
 
           <div className="max-w-2xl mx-auto relative mb-16">
             <div className="absolute left-[28px] md:left-1/2 top-0 bottom-0 w-1 bg-slate-200 md:-ml-0.5" />
-            
+
             {steps.map((step, index) => (
               <div key={index} className={`relative flex items-center mb-8 md:justify-between ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
                 <div className="absolute left-[16px] md:left-1/2 w-6 h-6 rounded-full bg-secondary border-4 border-white shadow-sm md:-ml-3 z-10" />
-                
+
                 <div className="ml-16 md:ml-0 md:w-[calc(50%-3rem)] bg-white p-6 rounded-xl border border-slate-200 shadow-sm relative">
                   <div className={`hidden md:block absolute top-6 w-4 h-4 bg-white border-t border-r border-slate-200 rotate-45 ${index % 2 === 0 ? '-left-2 -rotate-135' : '-right-2'}`} />
                   <div className={`md:hidden absolute top-6 -left-2 w-4 h-4 bg-white border-b border-l border-slate-200 rotate-45`} />
-                  
+
                   <div className="text-xs font-bold text-slate-400 mb-1 tracking-wider uppercase">Step {index + 1}</div>
-                  <h3 className="text-xl font-bold text-primary mb-2">{step.title}</h3>
+                  {step.link ? (
+                    <Link href={step.link}>
+                      <h3 className="text-xl font-bold text-secondary mb-2 hover:underline cursor-pointer">{step.title}</h3>
+                    </Link>
+                  ) : (
+                    <h3 className="text-xl font-bold text-primary mb-2">{step.title}</h3>
+                  )}
                   <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </div>
@@ -73,32 +80,6 @@ export function AirlinePathPage() {
               <li>First-class medical certification</li>
               <li>Current market conditions and specific employer requirements</li>
             </ul>
-          </div>
-
-          {/* Checkride Scheduling Advantage */}
-          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8 mb-12">
-            <h3 className="text-xl font-bold text-primary mb-3 flex items-center gap-3">
-              <CalendarClock className="w-6 h-6 text-secondary shrink-0" />
-              Checkride Scheduling Advantage — At Every Stage
-            </h3>
-            <p className="text-slate-700 leading-relaxed mb-4">
-              On the airline path you have multiple checkrides — Private Pilot, Instrument Rating, Commercial Pilot, and CFI. At each stage, we proactively coordinate your DPE scheduling so that when you finish training for a certificate, your examiner is already booked. No months wasted waiting in a backlog while your skills go stale. <strong>We will ensure you get your airline path DPEs fast at every stage.</strong>
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
-                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
-                <p className="text-xs text-slate-500 mt-1">from training completion to checkride — each stage</p>
-              </div>
-              <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
-                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
-                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
-              </div>
-            </div>
-            <p className="text-sm text-slate-600 mt-4 leading-relaxed">
-              On the airline path, wasted time between certificates compounds quickly. Every month of delay is a month you are not building hours or moving toward the 1,500-hour ATP milestone. Our DPE network and proactive scheduling keeps your momentum intact throughout the entire career path.
-            </p>
           </div>
 
           <div className="text-center">
