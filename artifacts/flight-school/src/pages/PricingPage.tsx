@@ -430,6 +430,25 @@ export function PricingPage() {
         </div>
       </section>
 
+      {/* Payment Methods */}
+      <section className="py-12 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-3">Payment Methods</p>
+          <h2 className="text-xl font-bold text-primary mb-6">We Accept</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {["Cash", "Zelle", "Apple Pay", "CashApp", "PayPal"].map((method) => (
+              <div
+                key={method}
+                className="bg-white border border-slate-200 rounded-xl px-5 py-3 font-semibold text-primary text-sm shadow-sm"
+              >
+                {method}
+              </div>
+            ))}
+          </div>
+          <p className="text-slate-500 text-xs mt-4">Payment is collected per flight — no large upfront sums required.</p>
+        </div>
+      </section>
+
       <div className="container mx-auto px-4">
         <StudentPromise />
       </div>

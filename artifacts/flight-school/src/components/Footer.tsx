@@ -194,7 +194,10 @@ export function Footer() {
                   <span>
                     H7, 7900 Balboa Blvd.<br />
                     Van Nuys, CA 91406<br />
-                    <span className="text-primary-foreground/40">(Van Nuys Airport – VNY)</span>
+                    <span className="text-primary-foreground/40">(Van Nuys Airport – VNY)</span><br />
+                    <Link href="/van-nuys-accelerated-flight-school-directions" className="text-primary-foreground/60 hover:text-white underline underline-offset-2 transition-colors text-xs mt-1 inline-block">
+                      Click here for help finding our office
+                    </Link>
                   </span>
                 </div>
               </div>
