@@ -10,7 +10,7 @@ export function PrivatePilotPage() {
     <div className="w-full">
       <Helmet>
         <title>Private Pilot Training Van Nuys Airport KVNY | Affordable Flight School Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Earn your Private Pilot License at Van Nuys Airport (KVNY), Los Angeles. FAA ACS-structured training. Estimated $7,500–$12,500 — half the SoCal average. No upfront payment. Call 818-469-1414." />
+        <meta name="description" content="Earn your Private Pilot License at Van Nuys Airport (KVNY), Los Angeles. FAA ACS-structured training. Estimated $7,500–$12,500 — half the SoCal average. No upfront payment. Call 323-332-0585." />
         <meta name="keywords" content="private pilot license van nuys, private pilot training Los Angeles, learn to fly Van Nuys, flight school KVNY, affordable private pilot California, private pilot certificate Southern California, PPL training Los Angeles, flight lessons Van Nuys Airport" />
       </Helmet>
 
@@ -327,7 +327,7 @@ export function PrivatePilotPage() {
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <a href="tel:818-469-1414" className="block w-full">
+                  <a href="tel:323-332-0585" className="block w-full">
                     <Button size="lg" variant="secondary" className="w-full font-bold">
                       Call to Discuss
                     </Button>

@@ -9,7 +9,7 @@ export function CommercialMultiEnginePage() {
     <div className="w-full">
       <Helmet>
         <title>Multi-Engine Add-On Training Van Nuys Airport KVNY | Twin Engine Rating Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Add a Multi-Engine rating to your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. $3,000–$4,000 — below the SoCal average of $5,000–$8,000. No written exam required. Call 818-469-1414." />
+        <meta name="description" content="Add a Multi-Engine rating to your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. $3,000–$4,000 — below the SoCal average of $5,000–$8,000. No written exam required. Call 323-332-0585." />
         <meta name="keywords" content="commercial multi engine add-on van nuys, multi engine rating Los Angeles, twin engine training Southern California, ME add-on KVNY, multi engine commercial pilot California, multi engine training Van Nuys Airport, add multi engine rating Los Angeles" />
       </Helmet>
 
@@ -211,10 +211,10 @@ export function CommercialMultiEnginePage() {
 
           <div className="text-center">
             <p className="text-lg text-slate-600 mb-6">Ready to add multi-engine to your commercial certificate?</p>
-            <a href="tel:818-469-1414">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="h-14 px-8 text-lg font-bold gap-2">
                 <Phone className="w-5 h-5" />
-                Call or Text 818-469-1414
+                Call or Text 323-332-0585
               </Button>
             </a>
           </div>

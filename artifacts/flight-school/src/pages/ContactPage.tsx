@@ -21,6 +21,7 @@ const formSchema = z.object({
     "commercial-pilot", 
     "cfi-cfii", 
     "airline-pathway", 
+    "aircraft-rental", 
     "not-sure"
   ], {
     required_error: "Please select a training goal",
@@ -50,8 +51,8 @@ export function ContactPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Contact Accelerated Flight School | Van Nuys Airport KVNY | 818-469-1414</title>
-        <meta name="description" content="Contact Accelerated Flight School at Van Nuys Airport. Call or text 818-469-1414 for questions about flight training, pricing, or to get started. We'll explain everything." />
+        <title>Contact Accelerated Flight School | Van Nuys Airport KVNY | 323-332-0585</title>
+        <meta name="description" content="Contact Accelerated Flight School at Van Nuys Airport. Call or text 323-332-0585 for questions about flight training, pricing, or to get started. We'll explain everything." />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -79,14 +80,14 @@ export function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-slate-800 text-lg mb-1">Phone Number</h3>
-                      <p className="text-3xl font-bold text-primary mb-3">818-469-1414</p>
+                      <p className="text-3xl font-bold text-primary mb-3">323-332-0585</p>
                       <div className="flex gap-3">
-                        <a href="tel:818-469-1414">
+                        <a href="tel:323-332-0585">
                           <Button variant="secondary" className="gap-2">
                             <Phone className="w-4 h-4" /> Call
                           </Button>
                         </a>
-                        <a href="sms:818-469-1414">
+                        <a href="sms:323-332-0585">
                           <Button variant="outline" className="gap-2 border-primary text-primary hover:bg-primary/5">
                             <MessageSquare className="w-4 h-4" /> Text
                           </Button>
@@ -204,6 +205,7 @@ export function ContactPage() {
                                 <SelectItem value="commercial-pilot">Commercial Pilot</SelectItem>
                                 <SelectItem value="cfi-cfii">CFI / CFII</SelectItem>
                                 <SelectItem value="airline-pathway">Airline Pathway</SelectItem>
+                                <SelectItem value="aircraft-rental">Aircraft Rental</SelectItem>
                                 <SelectItem value="not-sure">Not Sure Yet</SelectItem>
                               </SelectContent>
                             </Select>

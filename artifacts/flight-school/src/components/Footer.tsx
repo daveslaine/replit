@@ -62,13 +62,13 @@ export function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-            <a href="tel:818-469-1414">
+            <a href="tel:323-332-0585">
               <Button variant="secondary" className="gap-2 font-bold w-full sm:w-auto">
                 <Phone className="h-4 w-4" />
-                Call 818-469-1414
+                Call 323-332-0585
               </Button>
             </a>
-            <a href="sms:818-469-1414">
+            <a href="sms:323-332-0585">
               <Button
                 variant="outline"
                 className="gap-2 font-bold w-full sm:w-auto bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
@@ -178,13 +178,17 @@ export function Footer() {
             <div className="space-y-4">
               <h3 className="font-bold text-white text-sm uppercase tracking-wider">Contact</h3>
               <div className="space-y-3">
-                <a href="tel:818-469-1414" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
+                <a href="tel:323-332-0585" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
                   <Phone className="h-4 w-4 shrink-0" />
-                  818-469-1414
+                  323-332-0585
                 </a>
-                <a href="sms:818-469-1414" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
+                <a href="sms:323-332-0585" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
                   <MessageSquare className="h-4 w-4 shrink-0" />
                   Text Us
+                </a>
+                <a href="mailto:fly@acceleratedflightschool.net" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm break-all">
+                  <Mail className="h-4 w-4 shrink-0" />
+                  fly@acceleratedflightschool.net
                 </a>
                 <div className="flex items-start gap-2 text-primary-foreground/60 text-sm pt-1">
                   <Clock className="h-4 w-4 shrink-0 mt-0.5" />

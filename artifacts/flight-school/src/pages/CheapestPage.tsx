@@ -99,7 +99,7 @@ export function CheapestPage() {
     <div className="w-full">
       <Helmet>
         <title>Cheapest Flight School Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School</title>
-        <meta name="description" content="The cheapest flight school in Van Nuys CA — with real pricing. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Structured, ACS-based. Call 818-469-1414." />
+        <meta name="description" content="The cheapest flight school in Van Nuys CA — with real pricing. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Structured, ACS-based. Call 323-332-0585." />
         <meta name="keywords" content="cheapest flight school van nuys, cheap flight training Los Angeles, affordable pilot training KVNY, flight school pricing Van Nuys CA" />
       </Helmet>
 
@@ -112,9 +112,9 @@ export function CheapestPage() {
             Affordable does not mean unstructured. Our low prices come from efficiency, honest rates, and proactive scheduling — not from cutting corners on instruction quality.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:818-469-1414">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="h-12 px-7 font-bold bg-white text-primary hover:bg-white/90 gap-2">
-                <Phone className="w-4 h-4" /> Call 818-469-1414
+                <Phone className="w-4 h-4" /> Call 323-332-0585
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-pricing">
@@ -234,9 +234,9 @@ export function CheapestPage() {
           <h2 className="text-2xl font-bold text-primary mb-3">Ready to start for less?</h2>
           <p className="text-slate-500 mb-7">Call or text us — we'll give you a realistic cost estimate for your specific goals, schedule, and starting point.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:818-469-1414">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
-                <Phone className="w-5 h-5" /> Call or Text 818-469-1414
+                <Phone className="w-5 h-5" /> Call or Text 323-332-0585
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-pricing">

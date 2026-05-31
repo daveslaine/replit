@@ -264,7 +264,7 @@ export function FaqPage() {
         <title>Flight Training FAQ | How Long, Costs, Soloing | Accelerated Flight School Van Nuys</title>
         <meta
           name="description"
-          content="Answers to common flight training questions: how long Private Pilot, Instrument, and Commercial take, what you need to solo, transferring from another school, medical requirements, and costs. Van Nuys Airport (KVNY). Call 818-469-1414."
+          content="Answers to common flight training questions: how long Private Pilot, Instrument, and Commercial take, what you need to solo, transferring from another school, medical requirements, and costs. Van Nuys Airport (KVNY). Call 323-332-0585."
         />
         <link rel="canonical" href="https://acceleratedflightschool.net/faq" />
         <meta property="og:url" content="https://acceleratedflightschool.net/faq" />
@@ -305,13 +305,13 @@ export function FaqPage() {
               We are happy to answer anything, even if you are completely new to aviation and do not know where to start.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
-              <a href="tel:818-469-1414">
+              <a href="tel:323-332-0585">
                 <Button className="w-full sm:w-auto gap-2 font-bold">
                   <Phone className="w-4 h-4" />
-                  Call 818-469-1414
+                  Call 323-332-0585
                 </Button>
               </a>
-              <a href="sms:818-469-1414">
+              <a href="sms:323-332-0585">
                 <Button variant="outline" className="w-full sm:w-auto gap-2 font-bold border-primary text-primary hover:bg-primary/5">
                   <MessageSquare className="w-4 h-4" />
                   Text Us

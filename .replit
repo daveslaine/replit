@@ -38,3 +38,7 @@ externalPort = 3000
 
 [userenv.shared]
 ADMIN_PASSWORD = "afs-admin-2024"
+SMTP_HOST = "smtppro.zoho.com"
+SMTP_PORT = "465"
+SMTP_USER = "fly@acceleratedflightschool.net"
+CONTACT_TO_EMAIL = "fly@acceleratedflightschool.net"

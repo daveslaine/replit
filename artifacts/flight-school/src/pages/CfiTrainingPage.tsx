@@ -10,7 +10,7 @@ export function CfiTrainingPage() {
     <div className="w-full">
       <Helmet>
         <title>CFI Training Van Nuys Airport KVNY | Become a Flight Instructor Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Become a Certified Flight Instructor (CFI) at Van Nuys Airport (KVNY), Los Angeles. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, earn money flying. Call 818-469-1414." />
+        <meta name="description" content="Become a Certified Flight Instructor (CFI) at Van Nuys Airport (KVNY), Los Angeles. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, earn money flying. Call 323-332-0585." />
         <meta name="keywords" content="CFI training van nuys, certified flight instructor Los Angeles, become flight instructor Southern California, CFI course KVNY, CFII training Los Angeles, flight instructor certificate van nuys, flight instructor training affordable California" />
       </Helmet>
 
@@ -103,10 +103,10 @@ export function CfiTrainingPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-primary mb-6">Ready to teach?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:818-469-1414">
+              <a href="tel:323-332-0585">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                   <Phone className="w-5 h-5" />
-                  Call or Text 818-469-1414
+                  Call or Text 323-332-0585
                 </Button>
               </a>
             </div>
