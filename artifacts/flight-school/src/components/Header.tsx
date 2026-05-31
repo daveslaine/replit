@@ -149,7 +149,7 @@ export function Header() {
 
         {/* Right side: phone button */}
         <div className="flex items-center gap-2 shrink-0">
-          <a href="tel:818-469-1414" className="hidden md:inline-flex" data-testid="link-call-header">
+          <a href="tel:323-332-0585" className="hidden md:inline-flex" data-testid="link-call-header">
             <Button
               variant="default"
               size="sm"
@@ -160,7 +160,7 @@ export function Header() {
               }`}
             >
               <Phone className="h-3.5 w-3.5" />
-              818-469-1414
+              323-332-0585
             </Button>
           </a>
 
@@ -203,16 +203,16 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="flex flex-col gap-2 pt-4 border-t border-slate-100">
-                  <a href="tel:818-469-1414" className="w-full">
+                  <a href="tel:323-332-0585" className="w-full">
                     <Button className="w-full gap-2 font-bold">
                       <Phone className="h-4 w-4" />
-                      Call 818-469-1414
+                      Call 323-332-0585
                     </Button>
                   </a>
-                  <a href="sms:818-469-1414" className="w-full">
+                  <a href="sms:323-332-0585" className="w-full">
                     <Button variant="outline" className="w-full gap-2 font-bold">
                       <MessageSquare className="h-4 w-4" />
-                      Text 818-469-1414
+                      Text 323-332-0585
                     </Button>
                   </a>
                 </div>

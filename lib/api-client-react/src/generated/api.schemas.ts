@@ -18,6 +18,7 @@ export const ContactInputTrainingGoal = {
   'commercial-pilot': 'commercial-pilot',
   'cfi-cfii': 'cfi-cfii',
   'airline-pathway': 'airline-pathway',
+  'aircraft-rental': 'aircraft-rental',
   'not-sure': 'not-sure',
 } as const;
 

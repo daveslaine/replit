@@ -10,7 +10,7 @@ export function AboutUsPage() {
     <div className="w-full">
       <Helmet>
         <title>About Accelerated Flight School | Van Nuys Airport KVNY | Experienced CFI Instructors Since 2000s</title>
-        <meta name="description" content="Accelerated Flight School at Van Nuys Airport (KVNY). Experienced flight instructors flying since the early 2000s. Structured FAA ACS training. Affordable, transparent pricing. No upfront payment. Call 818-469-1414." />
+        <meta name="description" content="Accelerated Flight School at Van Nuys Airport (KVNY). Experienced flight instructors flying since the early 2000s. Structured FAA ACS training. Affordable, transparent pricing. No upfront payment. Call 323-332-0585." />
         <meta name="keywords" content="about accelerated flight school van nuys, flight instructor van nuys, experienced CFI KVNY, van nuys airport flight school, affordable flight training Los Angeles, accelerated flight academy" />
       </Helmet>
 
@@ -383,13 +383,13 @@ export function AboutUsPage() {
           <h2 className="text-2xl font-bold text-primary mb-4">Ready to Start Your Training?</h2>
           <p className="text-slate-500 mb-8">Call or text us. We'll explain exactly where to begin — no pressure, no commitments.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:818-469-1414">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                 <Phone className="w-5 h-5" />
-                Call 818-469-1414
+                Call 323-332-0585
               </Button>
             </a>
-            <a href="sms:818-469-1414">
+            <a href="sms:323-332-0585">
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                 Text Us
               </Button>

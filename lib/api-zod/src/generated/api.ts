@@ -29,7 +29,7 @@ export const SubmitContactBody = zod.object({
   "name": zod.string().min(1),
   "phone": zod.string().min(1),
   "email": zod.string().email(),
-  "trainingGoal": zod.enum(['private-pilot', 'instrument-rating', 'commercial-pilot', 'cfi-cfii', 'airline-pathway', 'not-sure']),
+  "trainingGoal": zod.enum(['private-pilot', 'instrument-rating', 'commercial-pilot', 'cfi-cfii', 'airline-pathway', 'aircraft-rental', 'not-sure']),
   "questions": zod.string().nullish()
 })
 

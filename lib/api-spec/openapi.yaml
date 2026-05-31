@@ -104,6 +104,7 @@ components:
             - commercial-pilot
             - cfi-cfii
             - airline-pathway
+            - aircraft-rental
             - not-sure
         questions:
           type: ["string", "null"]
