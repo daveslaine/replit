@@ -96,7 +96,15 @@ export function OurAircraftPage() {
                   loading="lazy"
                 />
               </div>
-              <div className="col-span-2 md:col-span-3">
+              <div className="col-span-2 md:col-span-1">
+                <img
+                  src="/images/aircraft-interior-n9172y.webp"
+                  alt="N9172Y Piper Cherokee Warrior II interior — instrument panel and dual control yokes"
+                  className="w-full h-48 md:h-72 object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="col-span-2 md:col-span-2">
                 <img
                   src="/images/aircraft-ramp.jpg"
                   alt="Piper Cherokee on the ramp at Van Nuys Airport"
