@@ -12,7 +12,7 @@ export function DiscoveryFlightPage() {
         <title>Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School</title>
         <meta
           name="description"
-          content="1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley, zero-g maneuvers included. Call 323-332-0585."
+          content="1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 323-332-0585."
         />
       </Helmet>
 
@@ -37,7 +37,8 @@ export function DiscoveryFlightPage() {
           <p className="text-xl text-primary-foreground/90 leading-relaxed mb-4 max-w-2xl">
             A 1.5-hour introductory flight with a <AviationTerm term="CFI" /> — 50% longer than
             most schools offer, for less money. No experience required. You will actually take
-            the controls of N9172Y over the San Fernando Valley, including fun zero-g style maneuvers.
+            the controls of N9172Y over the San Fernando Valley and out along the beautiful Malibu
+            coastline, including fun zero-g style maneuvers.
           </p>
           <p className="text-3xl font-bold text-white mb-2">$190</p>
           <p className="text-sm text-white/60 mb-8">1.5 hours — aircraft + instructor included</p>
@@ -103,7 +104,7 @@ export function DiscoveryFlightPage() {
               <Star className="w-8 h-8 text-secondary mx-auto mb-4" />
               <h3 className="font-bold text-white mb-2">You Fly the Plane</h3>
               <p className="text-sm text-primary-foreground/80 leading-relaxed">
-                You take the controls of N9172Y over the San Fernando Valley. Real flying — not a simulator.
+                You take the controls of N9172Y over the San Fernando Valley and the beautiful Malibu coastline. Real flying — not a simulator.
               </p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center">
@@ -130,7 +131,7 @@ export function DiscoveryFlightPage() {
                 "No aviation experience or knowledge required",
                 "1.5 hours total — pre-flight briefing, flight, and debrief",
                 "You fly N9172Y, the 1985 Piper PA-28 Warrior II",
-                "Flight over the San Fernando Valley and Van Nuys area",
+                "Scenic flight over the San Fernando Valley and the beautiful Malibu coastline",
                 "Fun zero-g style maneuvers included",
                 "50% more flight time than most other discovery flights",
                 "Your instructor handles all radio communication",
