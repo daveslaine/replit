@@ -232,6 +232,13 @@ export function ContactPage() {
                         )}
                       />
 
+                      {submitContact.isError && (
+                        <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+                          Something went wrong sending your message. Please call or text us at{" "}
+                          <a href="tel:323-332-0585" className="font-bold underline">323-332-0585</a> and we'll help you right away.
+                        </div>
+                      )}
+
                       <Button 
                         type="submit" 
                         className="w-full h-12 text-lg font-bold" 
