@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
-const SITE_URL = "https://acceleratedflightschool.com";
+const SITE_URL = "https://acceleratedflightschool.net";
 
 const organizationSchema = {
   "@context": "https://schema.org",
