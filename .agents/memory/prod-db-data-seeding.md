@@ -18,3 +18,6 @@ For essentially-static default content (e.g. a couple of instructors), add a see
 - **Non-clobbering:** if the table already has rows, set the flag without inserting.
 
 The new `seed_history` table reaches prod via the normal Publish schema migration; the seed then fills prod data on first deploy. User must Publish for it to take effect.
+
+## Re-entered data can lose richness vs. original hardcoded version
+When content is migrated from hardcoded JSX into a DB/admin-panel, the manual re-entry may be simpler than the original. The canonical original instructor content (full quotes, full certification lists, original rates) lives in git **at the parent of the "Implement admin panel for managing instructors and aircraft" commit** — recover with `git show <thatcommit>^:artifacts/flight-school/src/pages/InstructorsPage.tsx`. The restored values now live in `DEFAULT_INSTRUCTORS` in `seedInstructors.ts` (source of truth for prod seeding).
