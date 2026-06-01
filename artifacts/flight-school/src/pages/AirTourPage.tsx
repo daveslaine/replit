@@ -9,7 +9,6 @@ import {
   MapPin,
   ChevronDown,
   ChevronUp,
-  Info,
   Camera,
   Users,
 } from "lucide-react";
@@ -146,12 +145,6 @@ export function AirTourPage() {
               </p>
             ))}
           </div>
-
-          {/* Clarify callout */}
-          <div className="mt-8 flex gap-3 bg-amber-50 border border-amber-200 rounded-xl p-4">
-            <Info className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-            <p className="text-amber-900 text-sm leading-relaxed">{page.clarify}</p>
-          </div>
         </div>
       </section>
 
@@ -160,10 +153,9 @@ export function AirTourPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-3">
-                What You Might See From the Air
+              <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-5">
+                What You Will See From the Air
               </h2>
-              <p className="text-slate-500 mb-6">{page.sceneryIntro}</p>
               <div className="flex flex-wrap gap-2">
                 {page.scenery.map((area) => (
                   <span
@@ -176,14 +168,16 @@ export function AirTourPage() {
                 ))}
               </div>
               <p className="text-slate-400 text-xs mt-5 leading-relaxed">
-                Scenery and routing are never guaranteed and always depend on weather, air traffic
-                control, airspace, and safety on the day of your flight.
+                Exact scenery and routing vary with each flight depending on conditions on the day.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
               <img
-                src="/images/aircraft-ramp.jpg"
-                alt="N9172Y Piper PA-28 Cherokee Warrior II at Van Nuys Airport"
+                src={page.photos[0]?.src ?? "/images/aircraft-ramp.jpg"}
+                alt={
+                  page.photos[0]?.alt ??
+                  "N9172Y Piper PA-28 Cherokee Warrior II at Van Nuys Airport"
+                }
                 className="w-full h-64 md:h-72 object-cover"
               />
             </div>
@@ -214,6 +208,17 @@ export function AirTourPage() {
           </div>
         </div>
       </section>
+
+      {/* Scenic banner photo */}
+      {page.photos[1] && (
+        <section className="relative">
+          <img
+            src={page.photos[1].src}
+            alt={page.photos[1].alt}
+            className="w-full h-72 md:h-[28rem] object-cover"
+          />
+        </section>
+      )}
 
       {/* Pricing */}
       <section className="py-14 bg-slate-50">
