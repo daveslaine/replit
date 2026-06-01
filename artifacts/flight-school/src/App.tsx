@@ -31,6 +31,8 @@ import { DirectionsPage } from "@/pages/DirectionsPage";
 import { FaqPage } from "@/pages/FaqPage";
 import { LandingPage } from "@/pages/LandingPage";
 import { getLandingPage } from "@/data/landingPages";
+import { AirTourPage } from "@/pages/AirTourPage";
+import { getAirTourPage } from "@/data/airTourPages";
 import { SeoSchema } from "@/components/SeoSchema";
 
 const queryClient = new QueryClient();
@@ -38,6 +40,9 @@ const queryClient = new QueryClient();
 function LandingOrNotFound() {
   const [location] = useLocation();
   const slug = location.replace(/^\//, "");
+  if (getAirTourPage(slug)) {
+    return <AirTourPage />;
+  }
   if (getLandingPage(slug)) {
     return <LandingPage />;
   }
