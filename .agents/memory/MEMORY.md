@@ -1,1 +1,2 @@
 - [Flight school email & DNS](flight-school-email-dns.md) — contact form sends via Zoho SMTP to fly@; inbox needs Zoho MX/SPF at GoDaddy (replace Mailgun); site is CSR SPA so meta isn't in view-source.
+- [Prod DB data not migrated on Publish](prod-db-data-seeding.md) — Publish migrates schema only, not table data; prod executeSql is read-only; use one-time concurrency-safe startup seed (advisory lock + seed_history flag) for defaults.
