@@ -223,7 +223,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/malibu-coast-aerial.png", alt: "Malibu coastline from the air" },
-      { src: "/images/malibu-coast-aerial-2.png", alt: "Aerial view of the Malibu coast and mountains" },
     ],
     faqs: [
       {
