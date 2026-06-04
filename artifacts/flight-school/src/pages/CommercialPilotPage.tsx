@@ -10,7 +10,7 @@ export function CommercialPilotPage() {
     <div className="w-full">
       <Helmet>
         <title>Commercial Pilot Training Van Nuys Airport KVNY | Los Angeles Commercial Certificate | Accelerated Flight School</title>
-        <meta name="description" content="Earn your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. ~$40,000–$55,000 from zero hours — well below the SoCal average of $70K–$110K. No upfront payment. Call 323-332-0585." />
+        <meta name="description" content="Earn your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. ~$40,000–$55,000 from zero hours — well below the SoCal average of $70K–$110K. No upfront payment. Call 310-490-0402." />
         <meta name="keywords" content="commercial pilot training van nuys, commercial pilot certificate Los Angeles, commercial pilot license Southern California, fly for hire van nuys, commercial pilot KVNY, CPL training Los Angeles, commercial pilot affordable California" />
       </Helmet>
 
@@ -93,7 +93,7 @@ export function CommercialPilotPage() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-slate-200">
-                  <a href="tel:323-332-0585">
+                  <a href="tel:310-490-0402">
                     <Button className="w-full font-bold text-base h-12">
                       Call to Discuss Your Path
                     </Button>
@@ -224,10 +224,10 @@ export function CommercialPilotPage() {
           </div>
 
           <div className="text-center">
-            <a href="tel:323-332-0585">
+            <a href="tel:310-490-0402">
               <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                 <Phone className="w-5 h-5" />
-                Call or Text 323-332-0585
+                Call or Text 310-490-0402
               </Button>
             </a>
           </div>

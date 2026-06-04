@@ -25,7 +25,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
   {
     name: "David T.",
     title: "Flight Instructor Instrument",
-    phone: "323-332-0585",
+    phone: "(310) 490-0402",
     bio: null,
     teachingPhilosophy:
       "I believe in putting the student first. I will not be there to waste your time and take your money, or throw you under the bus. I am transparent and upfront, and my goal is to serve you and ensure you pass, and know what is going on and what it is you are doing. You will feel certain when training with me, and my satisfaction comes from seeing you pass.",

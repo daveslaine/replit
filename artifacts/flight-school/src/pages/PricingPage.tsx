@@ -11,7 +11,7 @@ export function PricingPage() {
     <div className="w-full">
       <Helmet>
         <title>Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School</title>
-        <meta name="description" content="Transparent flight training pricing at Van Nuys Airport. Aircraft $160/hr wet. Combined dual from $180/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585." />
+        <meta name="description" content="Transparent flight training pricing at Van Nuys Airport. Aircraft $160/hr wet. Combined dual from $180/hr. Private Pilot ~$7,500–$12,500. Call 310-490-0402." />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -456,10 +456,10 @@ export function PricingPage() {
       <section className="py-16 text-center">
         <h2 className="text-2xl font-bold text-primary mb-6">Let's calculate your exact path.</h2>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:323-332-0585">
+          <a href="tel:310-490-0402">
             <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
               <Phone className="w-5 h-5" />
-              Call or Text 323-332-0585
+              Call or Text 310-490-0402
             </Button>
           </a>
         </div>

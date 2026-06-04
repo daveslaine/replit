@@ -78,9 +78,9 @@ export function LandingPage() {
             {page.subheadline}
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="tel:3233320585">
+            <a href="tel:3104900402">
               <Button size="lg" variant="secondary" className="font-bold gap-2 h-12 px-6">
-                <Phone className="w-4 h-4" /> Call or Text 323-332-0585
+                <Phone className="w-4 h-4" /> Call or Text 310-490-0402
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -174,9 +174,9 @@ export function LandingPage() {
                 <DollarSign className="w-4 h-4" /> View Full Pricing
               </Button>
             </Link>
-            <a href="tel:3233320585">
+            <a href="tel:3104900402">
               <Button className="gap-2 font-semibold">
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 310-490-0402
               </Button>
             </a>
           </div>
@@ -256,17 +256,17 @@ export function LandingPage() {
             Ready to Start Flying?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Call or text us directly at <strong>323-332-0585</strong> — or book a Discovery Flight at Van Nuys Airport for $190 and experience flight training before committing to a full program.
+            Call or text us directly at <strong>310-490-0402</strong> — or book a Discovery Flight at Van Nuys Airport for $190 and experience flight training before committing to a full program.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:3233320585">
+            <a href="tel:3104900402">
               <Button size="lg" variant="secondary" className="font-bold gap-2 h-12 px-7">
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 310-490-0402
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:3104900402">
               <Button size="lg" variant="outline" className="font-bold gap-2 h-12 px-7 border-white text-white hover:bg-white/10">
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 310-490-0402
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">

@@ -10,7 +10,7 @@ export function InstrumentRatingPage() {
     <div className="w-full">
       <Helmet>
         <title>Instrument Rating Training Van Nuys Airport KVNY | IFR Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 323-332-0585." />
+        <meta name="description" content="Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 310-490-0402." />
         <meta name="keywords" content="instrument rating van nuys, IFR training Los Angeles, instrument rating Southern California, add-on instrument rating KVNY, IFR training Van Nuys Airport, instrument rating affordable California, instrument flight training Los Angeles" />
       </Helmet>
 
@@ -264,10 +264,10 @@ export function InstrumentRatingPage() {
           <div className="text-center">
             <p className="text-lg text-slate-600 mb-6">Ready to start your IFR training or need a detailed estimate?</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:323-332-0585">
+              <a href="tel:310-490-0402">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                   <Phone className="w-5 h-5" />
-                  Call or Text 323-332-0585
+                  Call or Text 310-490-0402
                 </Button>
               </a>
             </div>

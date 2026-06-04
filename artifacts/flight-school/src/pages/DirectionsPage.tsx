@@ -8,7 +8,7 @@ export function DirectionsPage() {
     <div className="w-full">
       <Helmet>
         <title>Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School</title>
-        <meta name="description" content="Step-by-step directions to Accelerated Flight School at 7900 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585." />
+        <meta name="description" content="Step-by-step directions to Accelerated Flight School at 7900 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 310-490-0402." />
       </Helmet>
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-12">
@@ -30,8 +30,8 @@ export function DirectionsPage() {
               <p className="text-amber-800 text-sm leading-relaxed">
                 The entrance gate requires a code to open. <strong>Call or text us when you arrive</strong> and we will give you the code immediately.
               </p>
-              <a href="tel:323-332-0585" className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-amber-900 underline underline-offset-2">
-                <Phone className="w-4 h-4" /> 323-332-0585
+              <a href="tel:310-490-0402" className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-amber-900 underline underline-offset-2">
+                <Phone className="w-4 h-4" /> 310-490-0402
               </a>
             </div>
           </div>
@@ -80,7 +80,7 @@ export function DirectionsPage() {
               {
                 step: "2",
                 title: "Call or text us for the gate code",
-                detail: "Before you enter, call or text 323-332-0585. We will give you the access code for the red gate immediately."
+                detail: "Before you enter, call or text 310-490-0402. We will give you the access code for the red gate immediately."
               },
               {
                 step: "3",
@@ -143,10 +143,10 @@ export function DirectionsPage() {
 
           <div className="mt-6 text-center">
             <p className="text-slate-500 text-sm mb-3">Still not sure? We're happy to talk you through it.</p>
-            <a href="tel:323-332-0585">
+            <a href="tel:310-490-0402">
               <Button className="gap-2 font-bold">
                 <Phone className="w-4 h-4" />
-                Call 323-332-0585
+                Call 310-490-0402
               </Button>
             </a>
           </div>

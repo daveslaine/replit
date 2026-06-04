@@ -12,7 +12,7 @@ export function DiscoveryFlightPage() {
         <title>Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School</title>
         <meta
           name="description"
-          content="1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 323-332-0585."
+          content="1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 310-490-0402."
         />
       </Helmet>
 
@@ -43,13 +43,13 @@ export function DiscoveryFlightPage() {
           <p className="text-3xl font-bold text-white mb-2">$190</p>
           <p className="text-sm text-white/60 mb-8">1.5 hours — aircraft + instructor included</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:323-332-0585" data-testid="link-discovery-call">
+            <a href="tel:310-490-0402" data-testid="link-discovery-call">
               <Button size="lg" variant="secondary" className="font-bold text-base h-12 px-8 gap-2">
                 <Phone className="w-4 h-4" />
                 Book by Phone
               </Button>
             </a>
-            <a href="sms:323-332-0585" data-testid="link-discovery-text">
+            <a href="sms:310-490-0402" data-testid="link-discovery-text">
               <Button
                 size="lg"
                 variant="outline"
@@ -61,7 +61,7 @@ export function DiscoveryFlightPage() {
             </a>
           </div>
           <p className="text-sm text-primary-foreground/60 mt-4">
-            Call or text 323-332-0585 — we will schedule your flight and answer any questions.
+            Call or text 310-490-0402 — we will schedule your flight and answer any questions.
           </p>
         </div>
       </section>
@@ -256,13 +256,13 @@ export function DiscoveryFlightPage() {
             Most schools charge more for 1 hour. We include 1.5 hours for less.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:310-490-0402">
               <Button size="lg" className="font-bold h-14 px-8 text-lg gap-2">
                 <Phone className="w-5 h-5" />
-                Call 323-332-0585 to Book
+                Call 310-490-0402 to Book
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:310-490-0402">
               <Button size="lg" variant="outline" className="font-bold h-14 px-8 text-lg gap-2 border-primary text-primary hover:bg-primary/5">
                 <MessageSquare className="w-5 h-5" />
                 Text to Book
