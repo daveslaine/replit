@@ -51,8 +51,8 @@ export function ContactPage() {
   return (
     <div className="w-full">
       <Helmet>
-        <title>Contact Accelerated Flight School | Van Nuys Airport KVNY | 323-332-0585</title>
-        <meta name="description" content="Contact Accelerated Flight School at Van Nuys Airport. Call or text 323-332-0585 for questions about flight training, pricing, or to get started. We'll explain everything." />
+        <title>Contact Accelerated Flight School | Van Nuys Airport KVNY | 310-490-0402</title>
+        <meta name="description" content="Contact Accelerated Flight School at Van Nuys Airport. Call or text 310-490-0402 for questions about flight training, pricing, or to get started. We'll explain everything." />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -80,14 +80,14 @@ export function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-slate-800 text-lg mb-1">Phone Number</h3>
-                      <p className="text-3xl font-bold text-primary mb-3">323-332-0585</p>
+                      <p className="text-3xl font-bold text-primary mb-3">310-490-0402</p>
                       <div className="flex gap-3">
-                        <a href="tel:323-332-0585">
+                        <a href="tel:310-490-0402">
                           <Button variant="secondary" className="gap-2">
                             <Phone className="w-4 h-4" /> Call
                           </Button>
                         </a>
-                        <a href="sms:323-332-0585">
+                        <a href="sms:310-490-0402">
                           <Button variant="outline" className="gap-2 border-primary text-primary hover:bg-primary/5">
                             <MessageSquare className="w-4 h-4" /> Text
                           </Button>
@@ -235,7 +235,7 @@ export function ContactPage() {
                       {submitContact.isError && (
                         <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
                           Something went wrong sending your message. Please call or text us at{" "}
-                          <a href="tel:323-332-0585" className="font-bold underline">323-332-0585</a> and we'll help you right away.
+                          <a href="tel:310-490-0402" className="font-bold underline">310-490-0402</a> and we'll help you right away.
                         </div>
                       )}
 

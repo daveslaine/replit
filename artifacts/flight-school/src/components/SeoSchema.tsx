@@ -11,7 +11,7 @@ const organizationSchema = {
   description:
     "Affordable, structured flight training at Van Nuys Airport (KVNY) for Private Pilot, Instrument Rating, Commercial Pilot, CFI, and the airline pathway. Pay-as-you-fly, no large upfront payments.",
   url: SITE_URL,
-  telephone: "+1-323-332-0585",
+  telephone: "+1-310-490-0402",
   image: `${SITE_URL}/images/aircraft-exterior.png`,
   logo: `${SITE_URL}/images/logo.png`,
   priceRange: "$$",

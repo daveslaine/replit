@@ -78,7 +78,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3 shrink-0" data-testid="link-home">
           <img
             src="/images/logo.png"
-            alt="AFS"
+            alt="Accelerated Flight Academy"
             style={{ height: "52px", width: "auto", filter: transparent ? "brightness(0) invert(1)" : "none", transition: "filter 0.3s" }}
           />
           <span
@@ -86,7 +86,7 @@ export function Header() {
               transparent ? "text-white" : "text-primary"
             }`}
           >
-            Accelerated<br />Flight School
+            Accelerated<br />Flight Academy
           </span>
         </Link>
 
@@ -149,7 +149,7 @@ export function Header() {
 
         {/* Right side: phone button */}
         <div className="flex items-center gap-2 shrink-0">
-          <a href="tel:323-332-0585" className="hidden md:inline-flex" data-testid="link-call-header">
+          <a href="tel:310-490-0402" className="hidden md:inline-flex" data-testid="link-call-header">
             <Button
               variant="default"
               size="sm"
@@ -160,7 +160,7 @@ export function Header() {
               }`}
             >
               <Phone className="h-3.5 w-3.5" />
-              323-332-0585
+              310-490-0402
             </Button>
           </a>
 
@@ -182,8 +182,8 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[360px]">
               <div className="flex flex-col gap-6 py-6">
                 <Link href="/" className="flex items-center gap-3">
-                  <img src="/images/logo.png" alt="AFS" style={{ height: "48px", width: "auto" }} />
-                  <span className="font-bold text-base text-primary leading-tight">Accelerated<br />Flight School</span>
+                  <img src="/images/logo.png" alt="Accelerated Flight Academy" style={{ height: "48px", width: "auto" }} />
+                  <span className="font-bold text-base text-primary leading-tight">Accelerated<br />Flight Academy</span>
                 </Link>
                 <Link href="/discovery-flight-van-nuys" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
                   <Plane className="w-4 h-4" />
@@ -203,16 +203,16 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="flex flex-col gap-2 pt-4 border-t border-slate-100">
-                  <a href="tel:323-332-0585" className="w-full">
+                  <a href="tel:310-490-0402" className="w-full">
                     <Button className="w-full gap-2 font-bold">
                       <Phone className="h-4 w-4" />
-                      Call 323-332-0585
+                      Call 310-490-0402
                     </Button>
                   </a>
-                  <a href="sms:323-332-0585" className="w-full">
+                  <a href="sms:310-490-0402" className="w-full">
                     <Button variant="outline" className="w-full gap-2 font-bold">
                       <MessageSquare className="h-4 w-4" />
-                      Text 323-332-0585
+                      Text 310-490-0402
                     </Button>
                   </a>
                 </div>

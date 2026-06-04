@@ -63,7 +63,7 @@ export function OurAircraftPage() {
     <div className="w-full">
       <Helmet>
         <title>Our Training Aircraft | Van Nuys Airport KVNY | Piper Cherokee Warrior II | Accelerated Flight School</title>
-        <meta name="description" content="Train in a 1985 Piper PA28 Cherokee Warrior II N9172Y. IFR equipped, Garmin GNS 430, ADS-B. V-speeds, performance specs, and POH reference. $160/hr wet. Call 323-332-0585." />
+        <meta name="description" content="Train in a 1985 Piper PA28 Cherokee Warrior II N9172Y. IFR equipped, Garmin GNS 430, ADS-B. V-speeds, performance specs, and POH reference. $160/hr wet. Call 310-490-0402." />
       </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -210,10 +210,10 @@ export function OurAircraftPage() {
                   <h4 className="font-bold text-primary mb-1">Ready to fly?</h4>
                   <p className="text-sm text-slate-600">Contact us to schedule an introductory flight in this aircraft.</p>
                 </div>
-                <a href="tel:323-332-0585" className="w-full sm:w-auto">
+                <a href="tel:310-490-0402" className="w-full sm:w-auto">
                   <Button className="w-full font-bold gap-2">
                     <Phone className="w-4 h-4" />
-                    Call 323-332-0585
+                    Call 310-490-0402
                   </Button>
                 </a>
               </div>
