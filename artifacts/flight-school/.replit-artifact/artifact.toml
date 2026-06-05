@@ -24,17 +24,13 @@ serve = "static"
 
 # Flat-file prerendering: every route is served from /<route>.html (no directory),
 # so the host never 301-redirects /<route> -> /<route>/ and the SPA catch-all
-# cannot hijack it. Both the clean URL and the trailing-slash variant are mapped
-# to the same flat file (the previously-broken build 301'd clean URLs to the
-# trailing-slash form, so some may be indexed that way). Real assets shadow these
-# rewrites and serve directly. The SPA catch-all MUST stay LAST.
+# cannot hijack the clean URL. Real assets shadow these rewrites and serve
+# directly. One rewrite per route keeps the rule count within the static-deploy
+# limit (the trailing-slash variants doubled it and broke publishing). The SPA
+# catch-all MUST stay LAST.
 
 [[services.production.rewrites]]
 from = "/discovery-flight-van-nuys"
-to = "/discovery-flight-van-nuys.html"
-
-[[services.production.rewrites]]
-from = "/discovery-flight-van-nuys/"
 to = "/discovery-flight-van-nuys.html"
 
 [[services.production.rewrites]]
@@ -42,15 +38,7 @@ from = "/private-pilot-van-nuys"
 to = "/private-pilot-van-nuys.html"
 
 [[services.production.rewrites]]
-from = "/private-pilot-van-nuys/"
-to = "/private-pilot-van-nuys.html"
-
-[[services.production.rewrites]]
 from = "/instrument-rating-van-nuys"
-to = "/instrument-rating-van-nuys.html"
-
-[[services.production.rewrites]]
-from = "/instrument-rating-van-nuys/"
 to = "/instrument-rating-van-nuys.html"
 
 [[services.production.rewrites]]
@@ -58,15 +46,7 @@ from = "/commercial-pilot-training-van-nuys"
 to = "/commercial-pilot-training-van-nuys.html"
 
 [[services.production.rewrites]]
-from = "/commercial-pilot-training-van-nuys/"
-to = "/commercial-pilot-training-van-nuys.html"
-
-[[services.production.rewrites]]
 from = "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training"
-to = "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training.html"
-
-[[services.production.rewrites]]
-from = "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training/"
 to = "/commercial-pilot-multi-engine-add-on-van-nuys-flight-training.html"
 
 [[services.production.rewrites]]
@@ -74,15 +54,7 @@ from = "/cfi-training-van-nuys"
 to = "/cfi-training-van-nuys.html"
 
 [[services.production.rewrites]]
-from = "/cfi-training-van-nuys/"
-to = "/cfi-training-van-nuys.html"
-
-[[services.production.rewrites]]
 from = "/airline-pilot-path-van-nuys"
-to = "/airline-pilot-path-van-nuys.html"
-
-[[services.production.rewrites]]
-from = "/airline-pilot-path-van-nuys/"
 to = "/airline-pilot-path-van-nuys.html"
 
 [[services.production.rewrites]]
@@ -90,15 +62,7 @@ from = "/van-nuys-accelerated-flight-school-pricing"
 to = "/van-nuys-accelerated-flight-school-pricing.html"
 
 [[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-pricing/"
-to = "/van-nuys-accelerated-flight-school-pricing.html"
-
-[[services.production.rewrites]]
 from = "/van-nuys-accelerated-flight-school-deals-coupons"
-to = "/van-nuys-accelerated-flight-school-deals-coupons.html"
-
-[[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-deals-coupons/"
 to = "/van-nuys-accelerated-flight-school-deals-coupons.html"
 
 [[services.production.rewrites]]
@@ -106,15 +70,7 @@ from = "/van-nuys-accelerated-flight-school-aircraft"
 to = "/van-nuys-accelerated-flight-school-aircraft.html"
 
 [[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-aircraft/"
-to = "/van-nuys-accelerated-flight-school-aircraft.html"
-
-[[services.production.rewrites]]
 from = "/van-nuys-accelerated-flight-school-instructors"
-to = "/van-nuys-accelerated-flight-school-instructors.html"
-
-[[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-instructors/"
 to = "/van-nuys-accelerated-flight-school-instructors.html"
 
 [[services.production.rewrites]]
@@ -122,15 +78,7 @@ from = "/van-nuys-accelerated-flight-school-contact"
 to = "/van-nuys-accelerated-flight-school-contact.html"
 
 [[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-contact/"
-to = "/van-nuys-accelerated-flight-school-contact.html"
-
-[[services.production.rewrites]]
 from = "/van-nuys-accelerated-flight-school-about"
-to = "/van-nuys-accelerated-flight-school-about.html"
-
-[[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-about/"
 to = "/van-nuys-accelerated-flight-school-about.html"
 
 [[services.production.rewrites]]
@@ -138,15 +86,7 @@ from = "/van-nuys-accelerated-flight-school-directions"
 to = "/van-nuys-accelerated-flight-school-directions.html"
 
 [[services.production.rewrites]]
-from = "/van-nuys-accelerated-flight-school-directions/"
-to = "/van-nuys-accelerated-flight-school-directions.html"
-
-[[services.production.rewrites]]
 from = "/faq"
-to = "/faq.html"
-
-[[services.production.rewrites]]
-from = "/faq/"
 to = "/faq.html"
 
 [[services.production.rewrites]]
@@ -154,15 +94,7 @@ from = "/cheapest-flight-school-van-nuys-ca"
 to = "/cheapest-flight-school-van-nuys-ca.html"
 
 [[services.production.rewrites]]
-from = "/cheapest-flight-school-van-nuys-ca/"
-to = "/cheapest-flight-school-van-nuys-ca.html"
-
-[[services.production.rewrites]]
 from = "/low-cost-flight-school-van-nuys-ca"
-to = "/low-cost-flight-school-van-nuys-ca.html"
-
-[[services.production.rewrites]]
-from = "/low-cost-flight-school-van-nuys-ca/"
 to = "/low-cost-flight-school-van-nuys-ca.html"
 
 [[services.production.rewrites]]
@@ -170,15 +102,7 @@ from = "/flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -186,15 +110,7 @@ from = "/flight-school-near-encino-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-encino-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-encino-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-encino-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -202,15 +118,7 @@ from = "/flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -218,15 +126,7 @@ from = "/flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny
 to = "/flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -234,15 +134,7 @@ from = "/flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -250,15 +142,7 @@ from = "/flight-school-near-westlake-village-accelerated-flight-school-van-nuys-
 to = "/flight-school-near-westlake-village-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-westlake-village-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-westlake-village-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -266,15 +150,7 @@ from = "/flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -282,15 +158,7 @@ from = "/flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -298,15 +166,7 @@ from = "/flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-santa-clarita-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-santa-clarita-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-santa-clarita-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-santa-clarita-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -314,15 +174,7 @@ from = "/flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -330,15 +182,7 @@ from = "/flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -346,15 +190,7 @@ from = "/flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny"
-to = "/flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny/"
 to = "/flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -362,15 +198,7 @@ from = "/flight-school-near-beverly-hills-accelerated-flight-school-van-nuys-kvn
 to = "/flight-school-near-beverly-hills-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-near-beverly-hills-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-near-beverly-hills-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/how-to-become-a-pilot-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny"
-to = "/how-to-become-a-pilot-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
-from = "/how-to-become-a-pilot-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
 to = "/how-to-become-a-pilot-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
@@ -378,15 +206,7 @@ from = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airpo
 to = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
-to = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
 from = "/learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny"
-to = "/learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
-from = "/learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
 to = "/learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
@@ -394,15 +214,7 @@ from = "/how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-v
 to = "/how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
-from = "/how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
-to = "/how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
 from = "/what-do-you-need-to-become-an-airline-pilot-accelerated-flight-school-van-nuys-airport-kvny"
-to = "/what-do-you-need-to-become-an-airline-pilot-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
-from = "/what-do-you-need-to-become-an-airline-pilot-accelerated-flight-school-van-nuys-airport-kvny/"
 to = "/what-do-you-need-to-become-an-airline-pilot-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
@@ -410,15 +222,7 @@ from = "/affordable-flight-training-los-angeles-accelerated-flight-school-van-nu
 to = "/affordable-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/affordable-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/affordable-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -426,15 +230,7 @@ from = "/low-cost-flight-training-los-angeles-accelerated-flight-school-van-nuys
 to = "/low-cost-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/low-cost-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/low-cost-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -442,15 +238,7 @@ from = "/discovery-flight-van-nuys-accelerated-flight-school-kvny"
 to = "/discovery-flight-van-nuys-accelerated-flight-school-kvny.html"
 
 [[services.production.rewrites]]
-from = "/discovery-flight-van-nuys-accelerated-flight-school-kvny/"
-to = "/discovery-flight-van-nuys-accelerated-flight-school-kvny.html"
-
-[[services.production.rewrites]]
 from = "/private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -458,15 +246,7 @@ from = "/instrument-rating-los-angeles-accelerated-flight-school-van-nuys-kvny"
 to = "/instrument-rating-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/instrument-rating-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/instrument-rating-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/commercial-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/commercial-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/commercial-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/commercial-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -474,15 +254,7 @@ from = "/cfi-training-los-angeles-accelerated-flight-school-van-nuys-kvny"
 to = "/cfi-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/cfi-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/cfi-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/cfii-training-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/cfii-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/cfii-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/cfii-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -490,15 +262,7 @@ from = "/flight-instructor-van-nuys-accelerated-flight-school-kvny"
 to = "/flight-instructor-van-nuys-accelerated-flight-school-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-instructor-van-nuys-accelerated-flight-school-kvny/"
-to = "/flight-instructor-van-nuys-accelerated-flight-school-kvny.html"
-
-[[services.production.rewrites]]
 from = "/cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -506,15 +270,7 @@ from = "/cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny"
 to = "/cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/piper-cherokee-flight-training-van-nuys-kvny"
-to = "/piper-cherokee-flight-training-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/piper-cherokee-flight-training-van-nuys-kvny/"
 to = "/piper-cherokee-flight-training-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -522,15 +278,7 @@ from = "/piper-warrior-flight-training-los-angeles-accelerated-flight-school-van
 to = "/piper-warrior-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/piper-warrior-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/piper-warrior-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -538,15 +286,7 @@ from = "/flight-training-without-loans-los-angeles-accelerated-flight-school-van
 to = "/flight-training-without-loans-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-training-without-loans-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-training-without-loans-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -554,15 +294,7 @@ from = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny"
 to = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -570,15 +302,7 @@ from = "/instrument-rating-cost-los-angeles-accelerated-flight-school-van-nuys-k
 to = "/instrument-rating-cost-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/instrument-rating-cost-los-angeles-accelerated-flight-school-van-nuys-kvny/"
-to = "/instrument-rating-cost-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/time-building-los-angeles-accelerated-flight-school-van-nuys-kvny"
-to = "/time-building-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/time-building-los-angeles-accelerated-flight-school-van-nuys-kvny/"
 to = "/time-building-los-angeles-accelerated-flight-school-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -586,15 +310,7 @@ from = "/flight-review-van-nuys-accelerated-flight-school-kvny"
 to = "/flight-review-van-nuys-accelerated-flight-school-kvny.html"
 
 [[services.production.rewrites]]
-from = "/flight-review-van-nuys-accelerated-flight-school-kvny/"
-to = "/flight-review-van-nuys-accelerated-flight-school-kvny.html"
-
-[[services.production.rewrites]]
 from = "/instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny"
-to = "/instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny.html"
-
-[[services.production.rewrites]]
-from = "/instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny/"
 to = "/instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny.html"
 
 [[services.production.rewrites]]
@@ -602,15 +318,7 @@ from = "/los-angeles-sightseeing-air-tour-discovery-flight-van-nuys-kvny"
 to = "/los-angeles-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/los-angeles-sightseeing-air-tour-discovery-flight-van-nuys-kvny/"
-to = "/los-angeles-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/los-angeles-helicopter-sightseeing-air-tour-alternative-discovery-flight-van-nuys-kvny"
-to = "/los-angeles-helicopter-sightseeing-air-tour-alternative-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/los-angeles-helicopter-sightseeing-air-tour-alternative-discovery-flight-van-nuys-kvny/"
 to = "/los-angeles-helicopter-sightseeing-air-tour-alternative-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -618,15 +326,7 @@ from = "/los-angeles-sightseeing-flight-tour-discovery-flight-van-nuys-kvny"
 to = "/los-angeles-sightseeing-flight-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/los-angeles-sightseeing-flight-tour-discovery-flight-van-nuys-kvny/"
-to = "/los-angeles-sightseeing-flight-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny"
-to = "/santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny/"
 to = "/santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -634,15 +334,7 @@ from = "/malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny"
 to = "/malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny/"
-to = "/malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny"
-to = "/hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny/"
 to = "/hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -650,15 +342,7 @@ from = "/long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny"
 to = "/long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
-from = "/long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny/"
-to = "/long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
 from = "/catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny"
-to = "/catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
-
-[[services.production.rewrites]]
-from = "/catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny/"
 to = "/catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny.html"
 
 [[services.production.rewrites]]
@@ -666,15 +350,7 @@ from = "/flight-school-locations-los-angeles"
 to = "/flight-school-locations-los-angeles.html"
 
 [[services.production.rewrites]]
-from = "/flight-school-locations-los-angeles/"
-to = "/flight-school-locations-los-angeles.html"
-
-[[services.production.rewrites]]
 from = "/los-angeles-air-tours-sightseeing-flights"
-to = "/los-angeles-air-tours-sightseeing-flights.html"
-
-[[services.production.rewrites]]
-from = "/los-angeles-air-tours-sightseeing-flights/"
 to = "/los-angeles-air-tours-sightseeing-flights.html"
 
 [[services.production.rewrites]]
@@ -682,15 +358,7 @@ from = "/best-flight-school-van-nuys-accelerated-flight-school-kvny"
 to = "/best-flight-school-van-nuys-accelerated-flight-school-kvny.html"
 
 [[services.production.rewrites]]
-from = "/best-flight-school-van-nuys-accelerated-flight-school-kvny/"
-to = "/best-flight-school-van-nuys-accelerated-flight-school-kvny.html"
-
-[[services.production.rewrites]]
 from = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-airport-kvny"
-to = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
-from = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
 to = "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
@@ -698,23 +366,11 @@ from = "/private-pilot-license-cost-accelerated-flight-school-van-nuys-airport-k
 to = "/private-pilot-license-cost-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
-from = "/private-pilot-license-cost-accelerated-flight-school-van-nuys-airport-kvny/"
-to = "/private-pilot-license-cost-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
 from = "/private-pilot-license-cost-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny"
 to = "/private-pilot-license-cost-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
-from = "/private-pilot-license-cost-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
-to = "/private-pilot-license-cost-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
 from = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny"
-to = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
-
-[[services.production.rewrites]]
-from = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny/"
 to = "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny.html"
 
 [[services.production.rewrites]]
