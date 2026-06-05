@@ -45,8 +45,8 @@ const organizationSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 34.2007,
-    longitude: -118.4894,
+    latitude: 34.21740332119742,
+    longitude: -118.50046956543292,
   },
   areaServed: [
     "Van Nuys",
