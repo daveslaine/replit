@@ -112,7 +112,7 @@ export function ContactPage() {
               <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
                 <iframe
                   title="Accelerated Flight School location at Van Nuys Airport"
-                  src="https://www.google.com/maps?q=7900+Balboa+Blvd,+Van+Nuys,+CA+91406&output=embed"
+                  src="https://www.google.com/maps?q=7910+Balboa+Blvd,+Van+Nuys,+CA+91406&output=embed"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}
