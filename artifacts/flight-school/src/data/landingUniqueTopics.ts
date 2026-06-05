@@ -40,7 +40,7 @@ export const landingUniqueTopics: Record<string, UniqueSection> = {
     paragraphs: [
       "Your Discovery Flight at Van Nuys is flown in N9172Y, a Piper PA-28 Cherokee Warrior II. The low-wing Warrior is one of aviation's most trusted primary trainers: stable in pitch, gentle in the stall, and forgiving enough that a first-time student can actually feel the controls respond rather than fighting the airplane.",
       "Sitting at KVNY before you taxi, you will hear the tower sequencing a steady stream of traffic. Flying out of an active, controlled field from your very first lesson is part of the value — you start building situational awareness in real airspace instead of an empty practice area, and that experience carries straight into formal training.",
-      "The 1.5-hour flight is genuine instruction, so it is logged toward the hours you will eventually need for a certificate. Pricing is $190 for one person or $270 for two if you would like to share the experience, weight and balance permitting. We are at 7900 Balboa Blvd H7, Van Nuys, CA 91406; call or text 323-332-0585 to book.",
+      "The 1.5-hour flight is genuine instruction, so it is logged toward the hours you will eventually need for a certificate. Pricing is $190 for one person or $270 for two if you would like to share the experience, weight and balance permitting. We are at 7910 Balboa Blvd H7, Van Nuys, CA 91406; call or text 323-332-0585 to book.",
     ],
   },
   "private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny": {
@@ -200,7 +200,7 @@ export const landingUniqueTopics: Record<string, UniqueSection> = {
     paragraphs: [
       "Two early items trip up more new students than the flying itself: the medical and the knowledge study plan. For a private pilot certificate you will need at least an FAA third-class medical from an Aviation Medical Examiner, so it is smart to schedule that early — if there is anything in your history that needs review, you would rather learn it before you have invested in lessons.",
       "Alongside the flying, you will study for the FAA knowledge test. Many students use an online ground school and self-study while their flight lessons progress, which keeps the written test from becoming a bottleneck before the checkride.",
-      "The flying itself begins simply: book a $190 Discovery Flight in N9172Y at Van Nuys, and if it confirms what you hoped, your instructor builds a lesson plan from there. From your first month onward you will be at 7900 Balboa Blvd H7 in the San Fernando Valley, flying in real LA airspace. Call or text 323-332-0585 to take the first step.",
+      "The flying itself begins simply: book a $190 Discovery Flight in N9172Y at Van Nuys, and if it confirms what you hoped, your instructor builds a lesson plan from there. From your first month onward you will be at 7910 Balboa Blvd H7 in the San Fernando Valley, flying in real LA airspace. Call or text 323-332-0585 to take the first step.",
     ],
   },
   "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny": {

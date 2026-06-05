@@ -69,7 +69,7 @@ export const landingPages: LandingPageConfig[] = [
     ],
     nearbyAreas: ["Tarzana", "Sherman Oaks", "Reseda", "Woodland Hills", "Lake Balboa"],
     faqs: [
-      { q: "What airport do you train from?", a: "We train from Van Nuys Airport (KVNY), located at 7900 Balboa Blvd, Van Nuys, CA. Easy access from Encino via Ventura Blvd or the 101/405." },
+      { q: "What airport do you train from?", a: "We train from Van Nuys Airport (KVNY), located at 7910 Balboa Blvd, Van Nuys, CA. Easy access from Encino via Ventura Blvd or the 101/405." },
       { q: "Is the instrument rating available for students near Encino?", a: "Yes. We offer instrument rating training with CFII instruction. The airspace around KVNY is excellent for real-world IFR training, including Burbank approaches and LA Basin procedures." },
       { q: "How much does a private pilot certificate cost at your school?", a: "Most students complete private pilot training in 60–75 hours of flight time. At $195/hr dual, total flight cost typically ranges from $11,700–$14,625 plus ground school and FAA written test fees. Structured training helps control total hours." },
       { q: "Do you offer instrument rating instruction?", a: "Yes. We offer CFII instruction for the instrument rating. This includes cross-country IFR flights, simulated and actual instrument conditions, approaches, holding, and checkride preparation." },
@@ -269,7 +269,7 @@ export const landingPages: LandingPageConfig[] = [
     ],
     nearbyAreas: ["Agoura Hills", "Westlake Village", "Calabasas", "Thousand Oaks", "Woodland Hills"],
     faqs: [
-      { q: "What is the best way to reach Van Nuys Airport from Oak Park?", a: "Take the 101 Freeway east toward Van Nuys, exit at Balboa Blvd, and head south to 7900 Balboa Blvd. Approximately 30–40 minutes depending on traffic." },
+      { q: "What is the best way to reach Van Nuys Airport from Oak Park?", a: "Take the 101 Freeway east toward Van Nuys, exit at Balboa Blvd, and head south to 7910 Balboa Blvd. Approximately 30–40 minutes depending on traffic." },
       { q: "What programs are available?", a: "Private Pilot, Instrument Rating, Commercial Pilot, CFI/CFII Training, and Discovery Flights." },
       { q: "Can I do longer lessons to make the drive worth it?", a: "Yes. We can accommodate 1.5–2.5 hour lesson blocks. Longer sessions are often more productive for students making a longer commute." },
       { q: "What is the Discovery Flight?", a: "A 1.5-hour introductory flight for $190. No experience required. You will fly the aircraft with instructor guidance." },
@@ -470,7 +470,7 @@ export const landingPages: LandingPageConfig[] = [
     nearbyAreas: ["Hollywood", "West LA", "Downtown LA", "Glendale", "Burbank", "Santa Monica", "Pasadena"],
     faqs: [
       { q: "Why train at Van Nuys Airport instead of other LA airports?", a: "Van Nuys Airport (KVNY) is a dedicated general aviation airport with an active tower, ILS approaches, and year-round high-activity conditions. It is one of the most complete training environments in Southern California." },
-      { q: "How do I get to Van Nuys Airport?", a: "Van Nuys Airport is located at 7900 Balboa Blvd, Van Nuys, CA. Accessible from the 405, 101, and 118 freeways." },
+      { q: "How do I get to Van Nuys Airport?", a: "Van Nuys Airport is located at 7910 Balboa Blvd, Van Nuys, CA. Accessible from the 405, 101, and 118 freeways." },
       { q: "What does a private pilot certificate cost in Los Angeles?", a: "At $195/hr dual, most students complete private pilot in 60–75 hours, totaling approximately $11,700–$14,625 in flight costs. Structured training reduces total hours significantly." },
       { q: "Do you offer instrument rating training in the Los Angeles area?", a: "Yes. CFII instruction for the instrument rating is available. LA Basin airspace is excellent for practical IFR training." },
       { q: "How do I get started?", a: "Call or text 323-332-0585 or book a Discovery Flight for $190. No prior experience required." },
@@ -609,7 +609,7 @@ export const landingPages: LandingPageConfig[] = [
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "North Hollywood", "Burbank"],
     faqs: [
-      { q: "Where exactly do I go for the Discovery Flight?", a: "Accelerated Flight School is based at 7900 Balboa Blvd H7, Van Nuys, CA — in the Foxtrot Hangars area of Van Nuys Airport. Contact us at 323-332-0585 for specific parking and gate directions." },
+      { q: "Where exactly do I go for the Discovery Flight?", a: "Accelerated Flight School is based at 7910 Balboa Blvd H7, Van Nuys, CA — in the Foxtrot Hangars area of Van Nuys Airport. Contact us at 323-332-0585 for specific parking and gate directions." },
       { q: "What aircraft do I fly during the Discovery Flight?", a: "You will fly our Piper Cherokee — a stable, comfortable four-seat low-wing trainer. The same aircraft used for private pilot, instrument, and commercial training." },
       { q: "Can I bring a passenger on the Discovery Flight?", a: "A passenger may be possible depending on weight and balance. Contact us in advance at 323-332-0585 to discuss." },
       { q: "Is the Discovery Flight logged as actual flight training time?", a: "Yes. The flight is a real instructional flight and can be logged toward your private pilot certificate requirements." },
@@ -752,7 +752,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How do I find and contact a CFI at Accelerated Flight School?", a: "Call or text 323-332-0585 to reach our instructors, CFI/CFII, directly. He is the primary instructor and handles all scheduling." },
       { q: "What is the instructor rate?", a: "$35/hr. Combined with the aircraft wet rate, dual flight training is $195/hr." },
       { q: "Does the CFI teach all programs?", a: "Yes. our instructors teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII training." },
-      { q: "What airport does Accelerated Flight School use?", a: "Van Nuys Airport (KVNY), located at 7900 Balboa Blvd, Van Nuys, CA — in the Foxtrot Hangars area." },
+      { q: "What airport does Accelerated Flight School use?", a: "Van Nuys Airport (KVNY), located at 7910 Balboa Blvd, Van Nuys, CA — in the Foxtrot Hangars area." },
       { q: "What if I am returning to flying after a long break?", a: "A Flight Review (BFR) is available. Call our instructors at 323-332-0585 to discuss your situation and what recurrency training looks like for your background." },
     ],
   },

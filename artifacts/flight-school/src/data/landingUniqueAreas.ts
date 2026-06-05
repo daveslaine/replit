@@ -7,7 +7,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
   "flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny": {
     heading: "What Calabasas Students Can Expect Out of Van Nuys Airport",
     paragraphs: [
-      "From most Calabasas neighborhoods the trip to KVNY is a quick hop on the 101 to the Balboa Boulevard exit, then a few blocks south to the general aviation ramp at 7900 Balboa Blvd H7. Because there are no toll roads and you are heading against the heaviest commute direction in the mornings, students often find the drive shorter than the freeway distance suggests.",
+      "From most Calabasas neighborhoods the trip to KVNY is a quick hop on the 101 to the Balboa Boulevard exit, then a few blocks south to the general aviation ramp at 7910 Balboa Blvd H7. Because there are no toll roads and you are heading against the heaviest commute direction in the mornings, students often find the drive shorter than the freeway distance suggests.",
       "Calabasas sits right against the Santa Monica Mountains, and that terrain becomes one of your first real-world references in the air. On early lessons you will pick out the ridgelines above Mulholland, Las Virgenes Canyon, and the reservoir, learning to hold altitude and headings against landmarks you already know from the ground.",
       "Training revolves around a single, well-known airplane: our Piper PA-28 Cherokee Warrior II, tail number N9172Y. Working in the same stable trainer every lesson means each flight builds directly on the last instead of restarting on a different aircraft. Call or text 323-332-0585 to talk through a schedule that fits your week.",
     ],
@@ -39,7 +39,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
   "flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny": {
     heading: "Crossing the Valley From Glendale to the Cockpit",
     paragraphs: [
-      "Glendale students generally take the 134 west through Burbank and merge onto the 101 before exiting at Balboa for the short drive to 7900 Balboa Blvd H7. Timing the trip outside peak hours keeps it predictable, and many students pair an early-morning or mid-day slot with the lighter direction of traffic.",
+      "Glendale students generally take the 134 west through Burbank and merge onto the 101 before exiting at Balboa for the short drive to 7910 Balboa Blvd H7. Timing the trip outside peak hours keeps it predictable, and many students pair an early-morning or mid-day slot with the lighter direction of traffic.",
       "Your home turf shows up clearly from the air. The Verdugo Mountains, the deep cut of the Los Angeles River, and Griffith Park with its observatory perched on the south slope all become orientation points as you learn to fly headings, hold pattern altitude, and report your position to the KVNY tower.",
       "We keep things simple: one airplane, our Piper PA-28 Cherokee Warrior II (N9172Y), and transparent rates — $160/hr wet for the aircraft, $35/hr for the instructor, $195/hr together. There are no fuel surcharges or membership dues hiding in the bill. Call or text 323-332-0585 to set up your first lesson.",
     ],
@@ -103,7 +103,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
   "flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny": {
     heading: "Oak Park to Van Nuys: Planning Around the Distance",
     paragraphs: [
-      "From Oak Park, students usually drop down to the 101 and head east to the Balboa exit for the run to 7900 Balboa Blvd H7. It is one of the longer in-region drives, so booking a substantial block of flight time turns each trip into a meaningful step rather than a brief hop.",
+      "From Oak Park, students usually drop down to the 101 and head east to the Balboa exit for the run to 7910 Balboa Blvd H7. It is one of the longer in-region drives, so booking a substantial block of flight time turns each trip into a meaningful step rather than a brief hop.",
       "The quiet, hill-ringed setting of Oak Park stands in clear contrast to the dense Valley you will fly over, and that contrast is useful. Early flights let you trace the boundary between open space and suburb, using the surrounding ridgelines and the Valley grid as references while you build basic airwork and navigation habits.",
       "All instruction happens in our Piper PA-28 Cherokee Warrior II (N9172Y), with no per-lesson minimum and no large upfront payment. The 10-hour block rate of $150/hr wet rewards the steady-flying approach that longer commutes encourage. Call or text 323-332-0585 to arrange your schedule.",
     ],

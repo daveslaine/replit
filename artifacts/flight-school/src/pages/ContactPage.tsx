@@ -102,7 +102,7 @@ export function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-slate-800 text-lg mb-1">Location</h3>
-                      <p className="text-slate-600">7900 Balboa Blvd H7<br />Van Nuys, CA 91406<br />Van Nuys Airport (KVNY)</p>
+                      <p className="text-slate-600">7910 Balboa Blvd H7<br />Van Nuys, CA 91406<br />Van Nuys Airport (KVNY)</p>
                     </div>
                   </div>
                 </div>
