@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { getLandingPage } from "@/data/landingPages";
 import { getLandingUnique } from "@/data/landingUnique";
 
-const SITE_ORIGIN = "https://acceleratedflightschool.net";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = React.useState(false);
@@ -65,7 +64,6 @@ export function LandingPage() {
         <title>{page.metaTitle}</title>
         <meta name="description" content={page.metaDescription} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`${SITE_ORIGIN}/${page.slug}`} />
       </Helmet>
 
       {/* Hero */}

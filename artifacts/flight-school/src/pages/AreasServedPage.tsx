@@ -5,7 +5,6 @@ import { Phone, MessageSquare, Plane, MapPin, ArrowRight, Camera } from "lucide-
 import { Button } from "@/components/ui/button";
 import { landingPages, type LandingPageConfig } from "@/data/landingPages";
 
-const SITE_ORIGIN = "https://acceleratedflightschool.net";
 
 type Group = {
   key: string;
@@ -98,7 +97,6 @@ export function AreasServedPage() {
       .sort((a, b) => a.h1.localeCompare(b.h1)),
   })).filter((g) => g.pages.length > 0);
 
-  const canonical = `${SITE_ORIGIN}/flight-school-locations-los-angeles`;
   const totalPages = landingPages.length;
 
   return (
@@ -110,7 +108,6 @@ export function AreasServedPage() {
           content="Accelerated Flight School at Van Nuys Airport (KVNY) serves student pilots across Los Angeles and Ventura counties. Browse flight training by neighborhood, certificate, and cost. Call 323-332-0585."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={canonical} />
       </Helmet>
 
       {/* Hero */}

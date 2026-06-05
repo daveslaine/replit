@@ -252,8 +252,8 @@ importers:
   artifacts/flight-school:
     dependencies:
       react-helmet-async:
-        specifier: ^3.0.0
-        version: 3.0.0(react@19.1.0)
+        specifier: ^2.0.5
+        version: 2.0.5(react@19.1.0)
       react-image-crop:
         specifier: ^11.0.10
         version: 11.0.10(react@19.1.0)
@@ -2806,7 +2806,7 @@ packages:
     engines: {node: '>=6.0.0'}
 
   npm-run-path@6.0.0:
-    resolution: {integrity: sha512-9qny7Z9DsQU8Ou39ERsPU4OZQlSTP47ShQzuKZ6PRXpYLtIFgl/DEBYEXKlvcEa+9tHVcK8CF81Y2V72qaZhWA==}
+    resolution: {integrity: sha512-9qny7Z9DsQU8Ou39ERsPU4OZQlSTP47ShQzuKZ6PRXpYLtIFgl/DEBYEXKlvcEa+9tHVcK8CF81Y2V72qaZhWA==, tarball: https://registry.npmjs.org/npm-run-path/-/npm-run-path-6.0.0.tgz}
     engines: {node: '>=18'}
 
   object-assign@4.1.1:
@@ -3031,10 +3031,10 @@ packages:
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
 
-  react-helmet-async@3.0.0:
-    resolution: {integrity: sha512-nA3IEZfXiclgrz4KLxAhqJqIfFDuvzQwlKwpdmzZIuC1KNSghDEIXmyU0TKtbM+NafnkICcwx8CECFrZ/sL/1w==}
+  react-helmet-async@2.0.5:
+    resolution: {integrity: sha512-rYUYHeus+i27MvFE+Jaa4WsyBKGkL6qVgbJvSBoX8mbsWoABJXdEO0bZyi0F6i+4f0NuIb8AvqPMj3iXFHkMwg==}
     peerDependencies:
-      react: ^16.6.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: ^16.6.0 || ^17.0.0 || ^18.0.0
 
   react-hook-form@7.75.0:
     resolution: {integrity: sha512-Ovv94H+0p3sJ7B9B5QxPuCP1u8V/cHuVGyH55cSwodYDtoJwK+fqk3vjfIgSX59I2U/bU4z0nRJ9HMLpNiWEmw==}
@@ -6026,7 +6026,7 @@ snapshots:
 
   react-fast-compare@3.2.2: {}
 
-  react-helmet-async@3.0.0(react@19.1.0):
+  react-helmet-async@2.0.5(react@19.1.0):
     dependencies:
       invariant: 2.2.4
       react: 19.1.0

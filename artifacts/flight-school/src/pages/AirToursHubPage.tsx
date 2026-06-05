@@ -5,7 +5,6 @@ import { Phone, MessageSquare, Plane, MapPin, ArrowRight, Camera, CheckCircle2 }
 import { Button } from "@/components/ui/button";
 import { airTourPages } from "@/data/airTourPages";
 
-const SITE_ORIGIN = "https://acceleratedflightschool.net";
 
 function tourLabel(h1: string): string {
   return h1.split(":")[0].trim();
@@ -13,7 +12,6 @@ function tourLabel(h1: string): string {
 
 export function AirToursHubPage() {
   const tours = [...airTourPages].sort((a, b) => a.h1.localeCompare(b.h1));
-  const canonical = `${SITE_ORIGIN}/los-angeles-air-tours-sightseeing-flights`;
 
   return (
     <div className="w-full">
@@ -24,7 +22,6 @@ export function AirToursHubPage() {
           content="Looking for a Los Angeles air tour or sightseeing flight? Take the controls yourself on a real discovery flight from Van Nuys Airport (KVNY). $190 for 1, $270 for 2. Call 323-332-0585."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={canonical} />
       </Helmet>
 
       {/* Hero */}

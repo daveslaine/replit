@@ -16,7 +16,6 @@ import { Button } from "@/components/ui/button";
 import { getAirTourPage } from "@/data/airTourPages";
 import { getAirTourUnique } from "@/data/airTourUnique";
 
-const SITE_ORIGIN = "https://acceleratedflightschool.net";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = React.useState(false);
@@ -85,15 +84,12 @@ export function AirTourPage() {
     );
   }
 
-  const canonical = `${SITE_ORIGIN}/${page.slug}`;
-
   return (
     <div className="w-full">
       <Helmet>
         <title>{page.metaTitle}</title>
         <meta name="description" content={page.metaDescription} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={canonical} />
       </Helmet>
 
       {/* Hero */}

@@ -266,8 +266,6 @@ export function FaqPage() {
           name="description"
           content="Answers to common flight training questions: how long Private Pilot, Instrument, and Commercial take, what you need to solo, transferring from another school, medical requirements, and costs. Van Nuys Airport (KVNY). Call 323-332-0585."
         />
-        <link rel="canonical" href="https://acceleratedflightschool.net/faq" />
-        <meta property="og:url" content="https://acceleratedflightschool.net/faq" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
