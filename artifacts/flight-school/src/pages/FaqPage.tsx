@@ -268,7 +268,6 @@ export function FaqPage() {
         />
         <link rel="canonical" href="https://acceleratedflightschool.net/faq" />
         <meta property="og:url" content="https://acceleratedflightschool.net/faq" />
-        <meta property="og:title" content="Flight Training FAQ | Accelerated Flight School Van Nuys" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 

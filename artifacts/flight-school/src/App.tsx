@@ -118,12 +118,12 @@ function AppRouter() {
   );
 }
 
-function App() {
+function App({ ssrPath, helmetContext }: { ssrPath?: string; helmetContext?: object } = {}) {
   return (
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <WouterRouter base={import.meta.env.BASE_URL?.replace(/\/$/, "") || ""}>
+          <WouterRouter base={import.meta.env.BASE_URL?.replace(/\/$/, "") || ""} ssrPath={ssrPath}>
             <AppRouter />
           </WouterRouter>
           <Toaster />

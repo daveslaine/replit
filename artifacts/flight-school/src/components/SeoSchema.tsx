@@ -3,6 +3,11 @@ import { Helmet } from "react-helmet-async";
 
 const SITE_URL = "https://acceleratedflightschool.net";
 
+const OG_TITLE = "Accelerated Flight School | Van Nuys Airport (KVNY)";
+const OG_DESCRIPTION =
+  "Affordable, structured flight training at Van Nuys Airport. Private Pilot, Instrument Rating, Commercial Pilot, CFI, and Airline Pathway. No upfront payment. Call 323-332-0585.";
+const OG_IMAGE = `${SITE_URL}/images/aircraft-exterior.png`;
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["EducationalOrganization", "LocalBusiness"],
@@ -50,6 +55,15 @@ const organizationSchema = {
 export function SeoSchema() {
   return (
     <Helmet>
+      <meta property="og:title" content={OG_TITLE} />
+      <meta property="og:description" content={OG_DESCRIPTION} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Accelerated Flight School" />
+      <meta property="og:image" content={OG_IMAGE} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={OG_TITLE} />
+      <meta name="twitter:description" content={OG_DESCRIPTION} />
+      <meta name="twitter:image" content={OG_IMAGE} />
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
     </Helmet>
   );

@@ -55,8 +55,9 @@ export function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
             <div className="space-y-4">
-              <Link href="/" className="inline-flex bg-white rounded-xl px-4 py-3 shadow-sm">
-                <img src="/images/afs-logo-new.png" alt="Accelerated Flight School" style={{ height: "44px", width: "auto" }} />
+              <Link href="/" className="flex items-center gap-3">
+                <img src="/images/logo.png" alt="Accelerated Flight School" style={{ height: "44px", width: "auto", filter: "brightness(0) invert(1)" }} />
+                <span className="font-bold text-sm text-white whitespace-nowrap">Accelerated Flight School</span>
               </Link>
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
