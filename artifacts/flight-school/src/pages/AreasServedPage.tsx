@@ -226,7 +226,7 @@ export function AreasServedPage() {
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 7900 Balboa Blvd H7 · Van Nuys Airport (KVNY) · Van Nuys, CA
+            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport (KVNY) · Van Nuys, CA
             91406
           </p>
         </div>

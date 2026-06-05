@@ -8,7 +8,7 @@ export function DirectionsPage() {
     <div className="w-full">
       <Helmet>
         <title>Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School</title>
-        <meta name="description" content="Step-by-step directions to Accelerated Flight School at 7900 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585." />
+        <meta name="description" content="Step-by-step directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585." />
       </Helmet>
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-12">
@@ -16,7 +16,7 @@ export function DirectionsPage() {
           <p className="text-xs font-bold uppercase tracking-widest text-primary-foreground/60 mb-4">Van Nuys Airport (KVNY)</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">How to Find Our Office</h1>
           <p className="text-lg text-primary-foreground/85">
-            7900 Balboa Blvd H7, Van Nuys, CA 91406
+            7910 Balboa Blvd H7, Van Nuys, CA 91406
           </p>
         </div>
       </section>
@@ -45,7 +45,7 @@ export function DirectionsPage() {
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm mb-10">
             <img
               src="/images/directions-entrance.png"
-              alt="Entrance view at 7900 Balboa Blvd Van Nuys Airport — red gate on left near Foxtrot Hangars, flight school building on right"
+              alt="Entrance view at 7910 Balboa Blvd Van Nuys Airport — red gate on left near Foxtrot Hangars, flight school building on right"
               className="w-full object-cover"
             />
             <div className="bg-slate-50 border-t border-slate-200 px-5 py-3 text-xs text-slate-500 leading-relaxed">
@@ -74,7 +74,7 @@ export function DirectionsPage() {
             {[
               {
                 step: "1",
-                title: "Arrive at 7900 Balboa Blvd, Van Nuys, CA 91406",
+                title: "Arrive at 7910 Balboa Blvd, Van Nuys, CA 91406",
                 detail: "Pull up to the address. You will see the airport complex. On the right side, there is a large hangar building that houses multiple flight schools — you can see it in the photo above with the red circle on the right."
               },
               {
@@ -125,7 +125,7 @@ export function DirectionsPage() {
               <MapPin className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
               <div>
                 <p className="font-bold text-primary mb-1">Full Address</p>
-                <p className="text-slate-700 text-sm">7900 Balboa Blvd H7<br />Van Nuys, CA 91406<br />Van Nuys Airport (VNY / KVNY)</p>
+                <p className="text-slate-700 text-sm">7910 Balboa Blvd H7<br />Van Nuys, CA 91406<br />Van Nuys Airport (VNY / KVNY)</p>
                 <a
                   href="https://maps.google.com/?q=7900+Balboa+Blvd+Van+Nuys+CA+91406"
                   target="_blank"

@@ -22,7 +22,7 @@ const organizationSchema = {
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "7900 Balboa Blvd H7",
+    streetAddress: "7910 Balboa Blvd H7",
     addressLocality: "Van Nuys",
     addressRegion: "CA",
     postalCode: "91406",
