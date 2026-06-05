@@ -88,10 +88,7 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-3">
-                <img src="/images/logo.png" alt="AFS" style={{ height: "56px", width: "auto", filter: "brightness(0) invert(1)" }} />
-                <span className="font-bold text-base text-white leading-tight">
-                  Accelerated<br />Flight School
-                </span>
+                <img src="/images/afs-logo.png" alt="Accelerated Flight School" style={{ height: "56px", width: "auto", filter: "drop-shadow(0 0 2px rgba(255,255,255,0.6)) drop-shadow(0 1px 4px rgba(0,0,0,0.45))" }} />
               </Link>
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
