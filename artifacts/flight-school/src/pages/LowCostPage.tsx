@@ -89,7 +89,7 @@ export function LowCostPage() {
     <div className="w-full">
       <Helmet>
         <title>Low Cost Flight Training Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School</title>
-        <meta name="description" content="Low-cost flight training at Van Nuys Airport (KVNY). Aircraft $160/hr wet. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. High-quality ACS instruction. Call 310-490-0402." />
+        <meta name="description" content="Low-cost flight training at Van Nuys Airport (KVNY). Aircraft $160/hr wet. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. High-quality ACS instruction. Call 323-332-0585." />
         <meta name="keywords" content="low cost flight school van nuys, affordable flight training KVNY, low cost pilot training Los Angeles, cheap flight lessons Van Nuys California" />
       </Helmet>
 
@@ -102,9 +102,9 @@ export function LowCostPage() {
             Low cost through structure and efficiency — not shortcuts. Transparent hourly rates, ACS-based lessons, and proactive checkride scheduling that saves you real money.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:310-490-0402">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="h-12 px-7 font-bold bg-white text-primary hover:bg-white/90 gap-2">
-                <Phone className="w-4 h-4" /> Call 310-490-0402
+                <Phone className="w-4 h-4" /> Call 323-332-0585
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-pricing">
@@ -251,9 +251,9 @@ export function LowCostPage() {
           <h2 className="text-2xl font-bold text-primary mb-3">Start with one flight. No commitment.</h2>
           <p className="text-slate-500 mb-7">Call or text us to get a personalized cost estimate for your training goals. We'll be honest about timelines, costs, and what it realistically takes.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:310-490-0402">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
-                <Phone className="w-5 h-5" /> Call or Text 310-490-0402
+                <Phone className="w-5 h-5" /> Call or Text 323-332-0585
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">

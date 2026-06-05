@@ -1,3 +1,2 @@
 - [Flight school email & DNS](flight-school-email-dns.md) — contact form sends via Zoho SMTP to fly@; inbox needs Zoho MX/SPF at GoDaddy (replace Mailgun); site is CSR SPA so meta isn't in view-source.
-- [Flight school instructor data](flight-school-instructor-seed.md) — instructors come from DB (one-time non-clobbering seed); to change a field everywhere, fix seed + UPDATE dev row + edit prod via /admin (prod DB is read-only to tooling).
 - [Prod DB data not migrated on Publish](prod-db-data-seeding.md) — Publish migrates schema only, not table data; prod executeSql is read-only; use one-time concurrency-safe startup seed (advisory lock + seed_history flag) for defaults.
