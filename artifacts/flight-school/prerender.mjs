@@ -31,9 +31,17 @@ for (const route of uniqueRoutes) {
     const html = template
       .replace("<!--app-head-->", head)
       .replace("<!--app-html-->", appHtml);
-    const outDir = route === "/" ? distPublic : path.join(distPublic, route);
-    fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, "index.html"), html);
+    // Flat-file output: /route -> dist/public/route.html (NOT route/index.html).
+    // Directory output makes the static host treat /route as a directory and
+    // 301-redirect /route -> /route/, which then gets hijacked by the SPA
+    // catch-all and serves homepage HTML. Flat files have no directory, so the
+    // explicit `/route -> /route.html` rewrite serves the right page with no 301.
+    const outPath =
+      route === "/"
+        ? path.join(distPublic, "index.html")
+        : path.join(distPublic, `${route}.html`);
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, html);
     ok++;
   } catch (err) {
     failed++;
@@ -61,9 +69,9 @@ for (const [from, to] of Object.entries(redirects ?? {})) {
 <body>This page has moved to <a href="${target}">${target}</a>.</body>
 </html>
 `;
-  const outDir = path.join(distPublic, from);
-  fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "index.html"), stub);
+  const outPath = path.join(distPublic, `${from}.html`);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.writeFileSync(outPath, stub);
   redirected++;
 }
 
