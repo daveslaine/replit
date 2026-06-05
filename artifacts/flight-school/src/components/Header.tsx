@@ -75,19 +75,17 @@ export function Header() {
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0" data-testid="link-home">
+        <Link href="/" className="flex items-center shrink-0" data-testid="link-home">
           <img
-            src="/images/logo.png"
-            alt="AFS"
-            style={{ height: "52px", width: "auto", filter: transparent ? "brightness(0) invert(1)" : "none", transition: "filter 0.3s" }}
+            src="/images/afs-logo-red.png"
+            alt="Accelerated Flight School"
+            style={{
+              height: "46px",
+              width: "auto",
+              filter: transparent ? "drop-shadow(0 1px 4px rgba(0,0,0,0.45))" : "none",
+              transition: "filter 0.3s",
+            }}
           />
-          <span
-            className={`hidden sm:block font-bold text-sm leading-tight transition-colors duration-300 ${
-              transparent ? "text-white" : "text-primary"
-            }`}
-          >
-            Accelerated<br />Flight School
-          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -181,9 +179,8 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[360px]">
               <div className="flex flex-col gap-6 py-6">
-                <Link href="/" className="flex items-center gap-3">
-                  <img src="/images/logo.png" alt="AFS" style={{ height: "48px", width: "auto" }} />
-                  <span className="font-bold text-base text-primary leading-tight">Accelerated<br />Flight School</span>
+                <Link href="/" className="flex items-center">
+                  <img src="/images/afs-logo-red.png" alt="Accelerated Flight School" style={{ height: "42px", width: "auto" }} />
                 </Link>
                 <Link href="/discovery-flight-van-nuys" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
                   <Plane className="w-4 h-4" />
