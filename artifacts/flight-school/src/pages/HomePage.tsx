@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import {
   Phone,
@@ -97,13 +97,10 @@ export function HomePage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Accelerated Flight School | Van Nuys Airport KVNY | Affordable Flight Training Los Angeles</title>
-        <meta
-          name="description"
-          content="Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."
-        />
-      </Helmet>
+      <Seo
+        title={"Accelerated Flight School | Van Nuys Airport KVNY | Affordable Flight Training Los Angeles"}
+        description={"Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."}
+      />
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section className="relative w-full min-h-[92vh] flex flex-col bg-primary text-white overflow-hidden">
         {/* Background photo */}

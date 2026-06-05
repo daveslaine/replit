@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, CheckCircle2, TrendingDown, Star, DollarSign, CalendarClock, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -97,11 +97,10 @@ const whyCheaper = [
 export function CheapestPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Cheapest Flight School Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School</title>
-        <meta name="description" content="The cheapest flight school in Van Nuys CA — with real pricing. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Structured, ACS-based. Call 323-332-0585." />
-        <meta name="keywords" content="cheapest flight school van nuys, cheap flight training Los Angeles, affordable pilot training KVNY, flight school pricing Van Nuys CA" />
-      </Helmet>
+      <Seo
+        title={"Cheapest Flight School Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School"}
+        description={"The cheapest flight school in Van Nuys CA — with real pricing. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Structured, ACS-based. Call 323-332-0585."}
+      />
 
       {/* Hero */}
       <section className="bg-primary text-white py-16 md:py-24">

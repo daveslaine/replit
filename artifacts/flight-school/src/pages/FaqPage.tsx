@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { ChevronDown, ChevronUp, Phone, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -260,14 +260,9 @@ export function FaqPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Flight Training FAQ | How Long, Costs, Soloing | Accelerated Flight School Van Nuys</title>
-        <meta
-          name="description"
-          content="Answers to common flight training questions: how long Private Pilot, Instrument, and Commercial take, what you need to solo, transferring from another school, medical requirements, and costs. Van Nuys Airport (KVNY). Call 323-332-0585."
-        />
+      <Seo title={"Flight Training FAQ | How Long, Costs, Soloing | Accelerated Flight School Van Nuys"} description={"Answers to common flight training questions: how long Private Pilot, Instrument, and Commercial take, what you need to solo, transferring from another school, medical requirements, and costs. Van Nuys Airport (KVNY). Call 323-332-0585."}>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
-      </Helmet>
+      </Seo>
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

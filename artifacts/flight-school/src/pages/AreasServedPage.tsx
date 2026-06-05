@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, MessageSquare, Plane, MapPin, ArrowRight, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -101,14 +101,10 @@ export function AreasServedPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Flight Training Across Los Angeles | Areas Served — Accelerated Flight School KVNY</title>
-        <meta
-          name="description"
-          content="Accelerated Flight School at Van Nuys Airport (KVNY) serves student pilots across Los Angeles and Ventura counties. Browse flight training by neighborhood, certificate, and cost. Call 323-332-0585."
-        />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      <Seo
+        title={"Flight Training Across Los Angeles | Areas Served — Accelerated Flight School KVNY"}
+        description={"Accelerated Flight School at Van Nuys Airport (KVNY) serves student pilots across Los Angeles and Ventura counties. Browse flight training by neighborhood, certificate, and cost. Call 323-332-0585."}
+      />
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">

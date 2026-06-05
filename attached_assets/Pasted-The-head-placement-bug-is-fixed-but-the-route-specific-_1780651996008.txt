@@ -1,0 +1,135 @@
+The head placement bug is fixed, but the route-specific SEO metadata is still wrong.
+
+
+
+Example: on the pricing page, the browser tab/title is route-specific:
+
+“Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School”
+
+
+
+But View Page Source still shows blanket homepage social/canonical metadata:
+
+og:title = “Accelerated Flight School | Van Nuys Airport (KVNY)”
+
+og:description = generic homepage description
+
+og:url = https://acceleratedflightschool.net/
+
+canonical = https://acceleratedflightschool.net/
+
+
+
+That is wrong.
+
+
+
+For every route, the route-specific page title must also be used for:
+
+1. og:title
+
+2. twitter:title
+
+
+
+The route-specific page description must also be used for:
+
+3. meta description
+
+4. og:description
+
+5. twitter:description
+
+
+
+The route URL must be used for:
+
+6. canonical
+
+7. og:url
+
+
+
+Do not use the homepage canonical, homepage og:title, homepage og:description, homepage og:url, or homepage Twitter metadata on non-homepage routes.
+
+
+
+For the pricing page specifically, View Source should show:
+
+
+
+<title>Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School</title>
+
+<link rel="canonical" href="https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-pricing">
+
+<meta property="og:title" content="Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School">
+
+<meta property="og:url" content="https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-pricing">
+
+<meta name="twitter:title" content="Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School">
+
+
+
+Acceptance test:
+
+Run every sitemap URL through the built static HTML files and print a table:
+
+
+
+route
+
+title
+
+description
+
+canonical
+
+og:title
+
+og:description
+
+og:url
+
+twitter:title
+
+twitter:description
+
+
+
+Fail every non-homepage route where:
+
+- canonical is https://acceleratedflightschool.net/
+
+- og:url is https://acceleratedflightschool.net/
+
+- og:title is the generic homepage title
+
+- twitter:title is the generic homepage title
+
+- description is the generic homepage description
+
+
+
+Keep the Twitter/X card tags. We do not need a Twitter account for them.
+
+
+
+But make them route-specific.
+
+
+
+For every route:
+
+- twitter:title should match that page’s <title>
+
+- twitter:description should match that page’s meta description
+
+- twitter:image can stay the default aircraft/social image unless we add page-specific images later
+
+
+
+The real issue is not the presence of Twitter tags. The issue is that non-homepage routes are still using homepage values for og:title, og:description, og:url, twitter:title, twitter:description, and canonical.
+
+
+
+Fix the metadata values per route.

@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Phone, MessageSquare, MapPin, Loader2, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,10 +50,10 @@ export function ContactPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Contact Accelerated Flight School | Van Nuys Airport KVNY | 323-332-0585</title>
-        <meta name="description" content="Contact Accelerated Flight School at Van Nuys Airport. Call or text 323-332-0585 for questions about flight training, pricing, or to get started. We'll explain everything." />
-      </Helmet>
+      <Seo
+        title={"Contact Accelerated Flight School | Van Nuys Airport KVNY | 323-332-0585"}
+        description={"Contact Accelerated Flight School at Van Nuys Airport. Call or text 323-332-0585 for questions about flight training, pricing, or to get started. We'll explain everything."}
+      />
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

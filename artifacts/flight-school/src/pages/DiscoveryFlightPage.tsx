@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, CheckCircle2, Clock, MapPin, Star, MessageSquare, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,13 +8,10 @@ import { AviationTerm } from "@/components/AviationTerm";
 export function DiscoveryFlightPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School</title>
-        <meta
-          name="description"
-          content="1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 323-332-0585."
-        />
-      </Helmet>
+      <Seo
+        title={"Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School"}
+        description={"1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 323-332-0585."}
+      />
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden">

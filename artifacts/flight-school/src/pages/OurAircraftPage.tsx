@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { CheckCircle2, Phone, Clock, BookOpen, FileText, Target, Shield, Plane, ExternalLink, ChevronDown, ChevronUp, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
@@ -61,10 +61,10 @@ function VSpeeds() {
 export function OurAircraftPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Our Training Aircraft | Van Nuys Airport KVNY | Piper Cherokee Warrior II | Accelerated Flight School</title>
-        <meta name="description" content="Train in a 1985 Piper PA28 Cherokee Warrior II N9172Y. IFR equipped, Garmin GNS 430, ADS-B. V-speeds, performance specs, and POH reference. $160/hr wet. Call 323-332-0585." />
-      </Helmet>
+      <Seo
+        title={"Our Training Aircraft | Van Nuys Airport KVNY | Piper Cherokee Warrior II | Accelerated Flight School"}
+        description={"Train in a 1985 Piper PA28 Cherokee Warrior II N9172Y. IFR equipped, Garmin GNS 430, ADS-B. V-speeds, performance specs, and POH reference. $160/hr wet. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

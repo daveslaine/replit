@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, Info, Tablet, Headphones, BookOpen, Stethoscope, Shield, CheckCircle2, ExternalLink, AlertTriangle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,10 +9,10 @@ import { StudentPromise } from "@/components/StudentPromise";
 export function PricingPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School</title>
-        <meta name="description" content="Transparent flight training pricing at Van Nuys Airport. Aircraft $160/hr wet. Combined dual from $180/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585." />
-      </Helmet>
+      <Seo
+        title={"Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School"}
+        description={"Transparent flight training pricing at Van Nuys Airport. Aircraft $160/hr wet. Combined dual from $180/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

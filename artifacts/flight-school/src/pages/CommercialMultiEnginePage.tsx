@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { CheckCircle2, Phone, Info, GraduationCap, CalendarClock, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
@@ -7,11 +7,10 @@ import { AviationTerm } from "@/components/AviationTerm";
 export function CommercialMultiEnginePage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Multi-Engine Add-On Training Van Nuys Airport KVNY | Twin Engine Rating Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Add a Multi-Engine rating to your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. $3,000–$4,000 — below the SoCal average of $5,000–$8,000. No written exam required. Call 323-332-0585." />
-        <meta name="keywords" content="commercial multi engine add-on van nuys, multi engine rating Los Angeles, twin engine training Southern California, ME add-on KVNY, multi engine commercial pilot California, multi engine training Van Nuys Airport, add multi engine rating Los Angeles" />
-      </Helmet>
+      <Seo
+        title={"Multi-Engine Add-On Training Van Nuys Airport KVNY | Twin Engine Rating Los Angeles | Accelerated Flight School"}
+        description={"Add a Multi-Engine rating to your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. $3,000–$4,000 — below the SoCal average of $5,000–$8,000. No written exam required. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">
