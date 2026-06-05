@@ -227,25 +227,26 @@ export function OurAircraftPage() {
                 <Clock className="w-6 h-6 text-secondary" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-primary">More Aircraft Coming Soon</h2>
+                <h2 className="text-2xl font-bold text-primary">Other Aircraft Available</h2>
                 <p className="text-slate-500 text-sm">On demand, additional aircraft will be made available</p>
               </div>
             </div>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Upon demand, we will have additional aircraft available for training. We are committed to always offering the most affordable rates in the Van Nuys area — no matter which aircraft you fly.
+              Upon demand by the student, if they wish, we also have additional aircraft on standby. If the student would like to fly one of these instead, they are welcome to.
             </p>
-            <div className="grid sm:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { name: "Piper PA-28 Cherokee", desc: "Additional Cherokees available on demand — the same stable, reliable platform you already know." },
-                { name: "Cessna 172 Skyhawk", desc: "The world's most popular training aircraft. Widely used for primary and instrument training." },
-                { name: "Multi-Engine Aircraft", desc: "Multi-engine training for Commercial, MEI, and airline-track students. Available upon demand." },
+                { name: "Cessna 172N Skyhawk", price: "$145/hr" },
+                { name: "Cessna 172P Skyhawk", price: "$160/hr" },
+                { name: "Cessna 172S Skyhawk", price: "$170/hr" },
+                { name: "Piper Warrior", price: "$165/hr" },
               ].map((a) => (
-                <div key={a.name} className="bg-slate-50 rounded-xl border border-slate-200 p-5">
-                  <div className="flex items-center gap-2 mb-2">
+                <div key={a.name} className="bg-slate-50 rounded-xl border border-slate-200 p-5 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2">
                     <Plane className="w-4 h-4 text-secondary shrink-0" />
                     <p className="font-bold text-primary text-sm">{a.name}</p>
                   </div>
-                  <p className="text-sm text-slate-500 leading-relaxed">{a.desc}</p>
+                  <p className="font-bold text-secondary text-sm shrink-0">{a.price}</p>
                 </div>
               ))}
             </div>
