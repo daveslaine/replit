@@ -1,13 +1,15 @@
 ---
 name: Flight school logo assets
-description: Header/footer logo handling — "transparent" PNGs often ship opaque white bg; legibility across transparent/scrolled header states.
+description: Header/footer logo handling — two-logo system across transparent/scrolled states; "transparent" PNGs often ship opaque white bg.
 ---
 
 # Logo assets (header + footer)
 
-- Header is transparent over the dark navy hero at page top (`scrolled` false) and turns solid white after scroll (`scrolled` true). Logo must read in BOTH states.
-- The current brand mark is blue "AFS" + orange/yellow speed stripe + white "ACCELERATED FLIGHT SCHOOL" banner. It already contains the school name, so do NOT add a separate text span next to it (header and footer).
-- **Gotcha:** user-supplied "transparent" logo PNGs have repeatedly shipped with an *opaque white background* (PNG colorType reports RGBA/6, but background pixels are fully opaque white). This renders as an ugly white box behind the logo over the dark hero. Fix: run the remove-image-background tool on the file after copying it in.
-  - **Why:** blue/colored letters need real transparency to sit on the navy hero; a baked white box breaks the transparent-header design.
-- Blue-on-navy is low contrast at the top state. Apply a white glow drop-shadow only when transparent, e.g. `drop-shadow(0 0 2px rgba(255,255,255,0.6)) drop-shadow(0 1px 4px rgba(0,0,0,0.45))`; no filter when scrolled (blue-on-white is already high contrast). Footer is navy too, so it uses the same glow.
-- Logo files live in `artifacts/flight-school/public/images/`. Active mark: `afs-logo.png`. `logo.png` (old plain blue) is legacy and still referenced by SeoSchema.
+- Header is transparent over the dark navy hero at page top (`scrolled` false) and turns solid white after scroll (`scrolled` true). The logo must read in BOTH states, so two different logos are used.
+- **Design system (current):**
+  - Dark backgrounds (transparent header top state + footer): white wordmark `logo.png` with CSS `filter: brightness(0) invert(1)` PLUS a separate white "Accelerated Flight School" text span. `logo.png` is a plain AFS letterform with no built-in name banner, so the text span is required here.
+  - Light backgrounds (scrolled header + mobile sheet): the full colored brand mark `afs-logo-new.png` (blue "AFS" + orange/yellow speed stripe + "ACCELERATED FLIGHT SCHOOL" banner). It already contains the school name, so do NOT add a text span next to it.
+- **Gotcha:** user-supplied "transparent" logo PNGs have repeatedly shipped with an *opaque white background* (PNG colorType reports RGBA/6 but background pixels are fully opaque white), which renders as an ugly white box over the dark hero. Fix: run the remove-image-background tool after copying it in. (`afs-logo-new.png` was genuinely transparent — corners srgba(0,0,0,0) — so it needed no fix; always check before assuming.)
+- **Favicons** were generated from an AFS-only crop of the colored mark via ImageMagick `magick` (PIL/sharp unavailable). Active set in `public/`: `favicon.ico` (bundles 16/32/48), `favicon-16.png`, `favicon-32.png`, `apple-touch-icon.png`; linked from `index.html`. Old `favicon.svg` removed.
+- Logo files live in `artifacts/flight-school/public/images/`. Active: `afs-logo-new.png` (colored, light bg) and `logo.png` (white-able wordmark, dark bg; also referenced by SeoSchema). Superseded variants (`afs-logo.png`, `afs-logo-red.png`, `afs-mark.png`) were deleted.
+- **Footer socials:** use `react-icons` — `FcGoogle` (multicolor, color prop ignored) linking the Google Business profile, and `SiYelp` set red via `style={{color:"#d32323"}}` (uses currentColor) linking the Yelp page — on white circular badges. Facebook/Instagram were removed.

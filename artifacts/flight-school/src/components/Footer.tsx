@@ -1,41 +1,9 @@
 import React from "react";
 import { Link } from "wouter";
 import { Phone, MessageSquare, MapPin, Clock, Mail } from "lucide-react";
+import { FcGoogle } from "react-icons/fc";
+import { SiYelp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
-
-function InstagramIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="0.01" fill="currentColor" strokeWidth="3" />
-    </svg>
-  );
-}
-
-function FacebookIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-    </svg>
-  );
-}
-
-function GoogleBusinessIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z" />
-    </svg>
-  );
-}
-
-function YelpIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor">
-      <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V11a1 1 0 0 0-2 0v5.93A8 8 0 0 1 4.07 13H10a1 1 0 0 0 0-2H4.07A8 8 0 0 1 11 4.07V10a1 1 0 0 0 2 0V4.07A8 8 0 0 1 19.93 11H14a1 1 0 0 0 0 2h5.93A8 8 0 0 1 13 19.93z" />
-    </svg>
-  );
-}
 
 const SocialLink = ({ href, label, children }: { href: string; label: string; children: React.ReactNode }) => (
   <a
@@ -43,7 +11,7 @@ const SocialLink = ({ href, label, children }: { href: string; label: string; ch
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/25 border border-white/15 flex items-center justify-center transition-colors text-white"
+    className="w-10 h-10 rounded-full bg-white hover:bg-white/90 shadow-sm flex items-center justify-center transition-colors"
   >
     {children}
   </a>
@@ -88,7 +56,8 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-3">
-                <img src="/images/afs-logo.png" alt="Accelerated Flight School" style={{ height: "56px", width: "auto", filter: "drop-shadow(0 0 2px rgba(255,255,255,0.6)) drop-shadow(0 1px 4px rgba(0,0,0,0.45))" }} />
+                <img src="/images/logo.png" alt="Accelerated Flight School" style={{ height: "48px", width: "auto", filter: "brightness(0) invert(1)" }} />
+                <span className="font-bold text-base text-white leading-tight">Accelerated<br />Flight School</span>
               </Link>
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
@@ -99,17 +68,11 @@ export function Footer() {
               <div className="pt-1">
                 <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-2 font-bold">Find Us Online</p>
                 <div className="flex gap-2">
-                  <SocialLink href="#" label="Google Business">
-                    <GoogleBusinessIcon />
+                  <SocialLink href="https://maps.app.goo.gl/xZWYCzZRoLzFBQ617" label="Google Business Profile">
+                    <FcGoogle className="w-5 h-5" />
                   </SocialLink>
-                  <SocialLink href="#" label="Yelp">
-                    <YelpIcon />
-                  </SocialLink>
-                  <SocialLink href="#" label="Instagram">
-                    <InstagramIcon />
-                  </SocialLink>
-                  <SocialLink href="#" label="Facebook">
-                    <FacebookIcon />
+                  <SocialLink href="https://yelp.com/biz/accelerated-flight-school-van-nuys-2" label="Yelp">
+                    <SiYelp className="w-5 h-5" style={{ color: "#d32323" }} />
                   </SocialLink>
                 </div>
               </div>
