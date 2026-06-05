@@ -109,8 +109,8 @@ export function HomePage() {
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero.png"
-            alt="Aircraft at Van Nuys Airport with San Gabriel Mountains"
+            src="/images/wing-view-coast.jpeg"
+            alt="Southern California coastline seen from the wing of an Accelerated Flight School aircraft"
             className="w-full h-full object-cover object-center"
           />
           {/* Dark gradient — stronger on left so text is readable, fades right so plane shows */}
