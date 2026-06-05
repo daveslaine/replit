@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getAirTourPage } from "@/data/airTourPages";
+import { getAirTourUnique } from "@/data/airTourUnique";
 
 const SITE_ORIGIN = "https://acceleratedflightschool.net";
 
@@ -68,6 +69,7 @@ export function AirTourPage() {
   const [location] = useLocation();
   const slug = location.replace(/^\//, "");
   const page = getAirTourPage(slug);
+  const unique = getAirTourUnique(slug);
 
   if (!page) {
     return (
@@ -147,6 +149,22 @@ export function AirTourPage() {
           </div>
         </div>
       </section>
+
+      {/* Unique page-specific content */}
+      {unique && (
+        <section className="py-14 bg-white border-t border-slate-100">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-6">{unique.heading}</h2>
+            <div className="space-y-5">
+              {unique.paragraphs.map((para, i) => (
+                <p key={i} className="text-slate-700 leading-relaxed text-base md:text-lg">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* What you might see */}
       <section className="py-14 bg-slate-50">
