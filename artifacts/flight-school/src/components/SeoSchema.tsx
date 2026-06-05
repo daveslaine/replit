@@ -49,7 +49,10 @@ const organizationSchema = {
     opens: "06:00",
     closes: "23:00",
   },
-  sameAs: [] as string[],
+  sameAs: [
+    "https://maps.app.goo.gl/xZWYCzZRoLzFBQ617",
+    "https://www.yelp.com/biz/accelerated-flight-school-van-nuys-2",
+  ] as string[],
 };
 
 export function SeoSchema() {
