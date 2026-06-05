@@ -19,7 +19,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Calabasas - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Accelerated Flight School serves students from Calabasas with structured flight training at Van Nuys Airport (KVNY). Aircraft $160/hr wet, instructor $35/hr, Discovery Flight $190. Call 310-490-0402.",
+    metaDescription: "Accelerated Flight School serves students from Calabasas with structured flight training at Van Nuys Airport (KVNY). Aircraft $160/hr wet, instructor $35/hr, Discovery Flight $190. Call 323-332-0585.",
     h1: "Flight School Near Calabasas",
     subheadline: "Accelerated Flight School provides affordable, ACS-based flight training at Van Nuys Airport (KVNY) — a short drive from Calabasas and the surrounding Conejo Valley.",
     localIntro: [
@@ -39,7 +39,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Sherman Oaks - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training for Sherman Oaks students at Van Nuys Airport KVNY. Just minutes away. Aircraft $160/hr wet, instructor $35/hr. Call or text 310-490-0402.",
+    metaDescription: "Flight training for Sherman Oaks students at Van Nuys Airport KVNY. Just minutes away. Aircraft $160/hr wet, instructor $35/hr. Call or text 323-332-0585.",
     h1: "Flight School Near Sherman Oaks",
     subheadline: "Van Nuys Airport is minutes from Sherman Oaks — making Accelerated Flight School a practical option for after-work training, weekend lessons, and part-time pilot programs.",
     localIntro: [
@@ -50,7 +50,7 @@ export const landingPages: LandingPageConfig[] = [
     nearbyAreas: ["Studio City", "Encino", "Valley Village", "North Hollywood", "Toluca Lake"],
     faqs: [
       { q: "How far is Van Nuys Airport from Sherman Oaks?", a: "Van Nuys Airport is about 5–10 minutes from Sherman Oaks, depending on traffic. It is one of the closest general aviation airports to the mid-Valley." },
-      { q: "Can I train on evenings or weekends?", a: "Yes. We offer flexible scheduling including evenings and weekends. Contact us at 310-490-0402 to discuss availability." },
+      { q: "Can I train on evenings or weekends?", a: "Yes. We offer flexible scheduling including evenings and weekends. Contact us at 323-332-0585 to discuss availability." },
       { q: "What is the dual rate for aircraft and instructor combined?", a: "Aircraft rental is $160/hr wet and instructor is $35/hr, totaling $195/hr for dual flight training." },
       { q: "Is there a minimum number of lessons I need to commit to?", a: "No. We are a pay-as-you-fly school. No large upfront packages, no loan pressure. Schedule and pay per lesson." },
       { q: "What is the Discovery Flight and what does it cost?", a: "The Discovery Flight is a 1.5-hour introductory flight for $190. You fly the airplane over the San Fernando Valley with an instructor. It is a great first step before committing to a full program." },
@@ -59,7 +59,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-encino-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Encino - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training near Encino at Van Nuys Airport KVNY. Private pilot, instrument rating, commercial programs. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "Flight training near Encino at Van Nuys Airport KVNY. Private pilot, instrument rating, commercial programs. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Encino",
     subheadline: "Encino is minutes from Van Nuys Airport — one of Southern California's most active general aviation training airports. Structured, transparent flight training at Accelerated Flight School.",
     localIntro: [
@@ -73,13 +73,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Is the instrument rating available for students near Encino?", a: "Yes. We offer instrument rating training with CFII instruction. The airspace around KVNY is excellent for real-world IFR training, including Burbank approaches and LA Basin procedures." },
       { q: "How much does a private pilot certificate cost at your school?", a: "Most students complete private pilot training in 60–75 hours of flight time. At $195/hr dual, total flight cost typically ranges from $11,700–$14,625 plus ground school and FAA written test fees. Structured training helps control total hours." },
       { q: "Do you offer instrument rating instruction?", a: "Yes. We offer CFII instruction for the instrument rating. This includes cross-country IFR flights, simulated and actual instrument conditions, approaches, holding, and checkride preparation." },
-      { q: "How do I get started?", a: "Call or text 310-490-0402, or book a Discovery Flight online. No prior experience required." },
+      { q: "How do I get started?", a: "Call or text 323-332-0585, or book a Discovery Flight online. No prior experience required." },
     ],
   },
   {
     slug: "flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Burbank - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Many Burbank-area students train at Van Nuys Airport for general aviation flight training. Aircraft $160/hr wet, Discovery Flight $190. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Many Burbank-area students train at Van Nuys Airport for general aviation flight training. Aircraft $160/hr wet, Discovery Flight $190. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Burbank",
     subheadline: "Many students from the Burbank area look to Van Nuys Airport (KVNY) for general aviation flight training — structured programs, transparent pricing, and experienced CFII instruction.",
     localIntro: [
@@ -99,7 +99,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Glendale - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Structured flight training at Van Nuys Airport for Glendale students. Aircraft $160/hr wet, instructor $35/hr. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Structured flight training at Van Nuys Airport for Glendale students. Aircraft $160/hr wet, instructor $35/hr. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Glendale",
     subheadline: "Students from Glendale train at Van Nuys Airport (KVNY) with Accelerated Flight School — ACS-based programs, clear pricing, and direct instructor access from the first lesson.",
     localIntro: [
@@ -113,13 +113,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What is ACS-based training?", a: "ACS stands for Airman Certification Standards — the FAA's official checkride standard. We train to those standards from lesson one, so your skills are always relevant to your certificate goal." },
       { q: "Can I take an instrument rating after getting my private pilot certificate?", a: "Yes. We offer both private pilot and instrument rating instruction. Many students from Glendale continue from private pilot directly into instrument rating training." },
       { q: "How does transparent pricing work?", a: "Aircraft is $160/hr wet, instructor is $35/hr, dual rate is $195/hr. No fuel surcharges, no booking fees, no monthly dues. What you see is what you pay." },
-      { q: "How do I get started?", a: "Call or text 310-490-0402 or book a Discovery Flight for $190. No commitment required beyond the first lesson." },
+      { q: "How do I get started?", a: "Call or text 323-332-0585 or book a Discovery Flight for $190. No commitment required beyond the first lesson." },
     ],
   },
   {
     slug: "flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Hollywood - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training near Hollywood at Van Nuys Airport KVNY. Discovery Flight $190 for 1.5 hours. Part-time programs available. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight training near Hollywood at Van Nuys Airport KVNY. Discovery Flight $190 for 1.5 hours. Part-time programs available. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Hollywood",
     subheadline: "Van Nuys Airport (KVNY) is a 20-minute drive from Hollywood — an accessible base for beginner Discovery Flights and full private pilot programs with Accelerated Flight School.",
     localIntro: [
@@ -139,7 +139,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Santa Monica - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Santa Monica-area students compare Van Nuys Airport for flight training. Accelerated Flight School at KVNY — aircraft $160/hr wet, Discovery Flight $190. Call 310-490-0402.",
+    metaDescription: "Santa Monica-area students compare Van Nuys Airport for flight training. Accelerated Flight School at KVNY — aircraft $160/hr wet, Discovery Flight $190. Call 323-332-0585.",
     h1: "Flight School Near Santa Monica",
     subheadline: "Santa Monica students looking for structured, affordable flight training often compare Van Nuys Airport — Accelerated Flight School offers ACS-based programs and pay-as-you-fly pricing at KVNY.",
     localIntro: [
@@ -159,7 +159,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Culver City - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training for Culver City and Westside students at Van Nuys Airport KVNY. Aircraft $160/hr wet. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight training for Culver City and Westside students at Van Nuys Airport KVNY. Aircraft $160/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Culver City",
     subheadline: "Culver City and Westside students who are willing to make the drive to Van Nuys Airport gain access to structured, affordable flight training with Accelerated Flight School at KVNY.",
     localIntro: [
@@ -172,14 +172,14 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Is the drive from Culver City to Van Nuys worth it for flight training?", a: "Many students from Culver City and the Westside find that the lower total training cost, structured instruction, and consistent aircraft availability justify the drive." },
       { q: "What is the hourly rate for flight instruction?", a: "Aircraft is $160/hr wet, instructor is $35/hr, dual combined is $195/hr. No additional fees." },
       { q: "Can I complete my private pilot certificate at your school?", a: "Yes. We offer complete private pilot training from first lesson through checkride preparation." },
-      { q: "How do I book a first lesson?", a: "Call or text 310-490-0402. The Discovery Flight is $190 for 1.5 hours and is a good starting point." },
+      { q: "How do I book a first lesson?", a: "Call or text 323-332-0585. The Discovery Flight is $190 for 1.5 hours and is a good starting point." },
       { q: "Do you offer ground school?", a: "We provide ground instruction as part of your lessons and can recommend written test prep resources. Your CFI will ensure you are prepared for the FAA knowledge test." },
     ],
   },
   {
     slug: "flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Pasadena - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Structured flight training at Van Nuys Airport for Pasadena and San Gabriel Valley students. Aircraft $160/hr wet. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Structured flight training at Van Nuys Airport for Pasadena and San Gabriel Valley students. Aircraft $160/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Pasadena",
     subheadline: "San Gabriel Valley students from Pasadena train at Van Nuys Airport (KVNY) with Accelerated Flight School — structured ACS-based programs and clear pricing, no runaround.",
     localIntro: [
@@ -193,13 +193,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Do I need a medical certificate before starting training?", a: "You do not need a medical to begin training, but you will need at least a Third Class (or BasicMed) medical before your first solo flight. We can advise you on timing." },
       { q: "How many hours does it take to earn a private pilot certificate?", a: "The FAA minimum is 40 hours, but national averages run 60–75 hours. Structured training is the single best way to keep total hours — and total cost — lower." },
       { q: "What is included in the $195/hr dual rate?", a: "Aircraft rental ($160/hr wet) plus instructor ($35/hr) equals $195/hr. Fuel, maintenance, and insurance are included in the aircraft wet rate. No surcharges." },
-      { q: "Can Pasadena students train on weekends?", a: "Yes. Weekend scheduling is available. Call or text 310-490-0402 to discuss your schedule." },
+      { q: "Can Pasadena students train on weekends?", a: "Yes. Weekend scheduling is available. Call or text 323-332-0585 to discuss your schedule." },
     ],
   },
   {
     slug: "flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Thousand Oaks - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Conejo Valley students train at Van Nuys Airport with Accelerated Flight School. Fewer, longer, more productive lessons. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "Conejo Valley students train at Van Nuys Airport with Accelerated Flight School. Fewer, longer, more productive lessons. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Thousand Oaks",
     subheadline: "Students from Thousand Oaks and the Conejo Valley find that fewer, longer, more productive lessons at Van Nuys Airport often deliver better results than short sessions at a closer but less structured school.",
     localIntro: [
@@ -213,13 +213,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What is the total cost of a private pilot certificate?", a: "At our rates ($195/hr dual), most students spend approximately $11,700–$14,625 on flight time, plus written test fees and ground study. Structured training keeps total hours lower." },
       { q: "Are there instrument rating options after private pilot?", a: "Yes. We offer CFII instruction for the instrument rating, which is a logical next step for Conejo Valley students who want to fly through the marine layer or in IMC conditions." },
       { q: "Can I do a Discovery Flight first?", a: "Yes. The Discovery Flight is 1.5 hours for $190 and is available to anyone regardless of prior experience." },
-      { q: "What days and times are available?", a: "We offer flexible scheduling including weekday and weekend slots. Call or text 310-490-0402." },
+      { q: "What days and times are available?", a: "We offer flexible scheduling including weekday and weekend slots. Call or text 323-332-0585." },
     ],
   },
   {
     slug: "flight-school-near-westlake-village-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Westlake Village - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Professional flight training near Westlake Village at Van Nuys Airport KVNY. Structured instruction, transparent pricing, no large loan pressure. Call 310-490-0402.",
+    metaDescription: "Professional flight training near Westlake Village at Van Nuys Airport KVNY. Structured instruction, transparent pricing, no large loan pressure. Call 323-332-0585.",
     h1: "Flight School Near Westlake Village",
     subheadline: "Westlake Village students choose Accelerated Flight School at Van Nuys Airport for structured training, direct instructor accountability, and clear pricing without large upfront commitments.",
     localIntro: [
@@ -233,13 +233,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Is the Piper Cherokee a good aircraft for the private pilot certificate?", a: "Yes. The Piper Cherokee is a stable, reliable low-wing trainer. It is predictable in all flight regimes and well-suited for private pilot through commercial training." },
       { q: "What is included in the wet aircraft rate?", a: "The $160/hr wet rate includes fuel, maintenance reserves, and aircraft insurance. You do not pay separately for fuel or unexpected surcharges." },
       { q: "Can I start with a Discovery Flight?", a: "Yes. The Discovery Flight is 1.5 hours for $190 and requires no prior flying experience or commitment." },
-      { q: "How does scheduling work?", a: "Call or text 310-490-0402 to schedule. We work with your availability to find lesson times that fit your schedule." },
+      { q: "How does scheduling work?", a: "Call or text 323-332-0585 to schedule. We work with your availability to find lesson times that fit your schedule." },
     ],
   },
   {
     slug: "flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Agoura Hills - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training for Agoura Hills and west Valley students at Van Nuys Airport KVNY. Aircraft $160/hr wet. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight training for Agoura Hills and west Valley students at Van Nuys Airport KVNY. Aircraft $160/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Agoura Hills",
     subheadline: "Students from Agoura Hills and the areas west of the San Fernando Valley find Accelerated Flight School at Van Nuys Airport a strong option for structured, transparent flight training.",
     localIntro: [
@@ -253,13 +253,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Do I need any paperwork before starting training?", a: "No. We only need a government-issued photo ID for your first lesson. Medical requirements apply before solo, and we can advise you on the process." },
       { q: "Can students complete commercial pilot training here?", a: "Yes. We offer Private Pilot, Instrument Rating, and Commercial Pilot training. The Piper Cherokee can be used for commercial maneuver training." },
       { q: "Is there any minimum commitment required?", a: "No. There is no minimum lesson commitment. You can start with a single Discovery Flight for $190 and take it from there." },
-      { q: "How do I schedule a lesson or reach an instructor?", a: "Call or text 310-490-0402. Call or text 310-490-0402 and one of our instructors will assist you directly." },
+      { q: "How do I schedule a lesson or reach an instructor?", a: "Call or text 323-332-0585. Call or text 323-332-0585 and one of our instructors will assist you directly." },
     ],
   },
   {
     slug: "flight-school-near-oak-park-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Oak Park - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Oak Park and Conejo Valley students train at Van Nuys Airport KVNY with Accelerated Flight School. Structured programs, transparent pricing. Call 310-490-0402.",
+    metaDescription: "Oak Park and Conejo Valley students train at Van Nuys Airport KVNY with Accelerated Flight School. Structured programs, transparent pricing. Call 323-332-0585.",
     h1: "Flight School Near Oak Park",
     subheadline: "Van Nuys Airport training for Oak Park and Conejo Valley students — structured ACS-based instruction, clear hourly pricing, and direct access to one of LA's best general aviation training airports.",
     localIntro: [
@@ -279,7 +279,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Woodland Hills - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training near Woodland Hills at Van Nuys Airport KVNY. Practical location for west Valley students. Aircraft $160/hr wet. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight training near Woodland Hills at Van Nuys Airport KVNY. Practical location for west Valley students. Aircraft $160/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Woodland Hills",
     subheadline: "Woodland Hills is one of the most convenient locations in the west Valley for training at Van Nuys Airport — a short drive east on Ventura or the 101.",
     localIntro: [
@@ -290,7 +290,7 @@ export const landingPages: LandingPageConfig[] = [
     nearbyAreas: ["Tarzana", "Calabasas", "Encino", "Canoga Park", "West Hills"],
     faqs: [
       { q: "How far is Woodland Hills from Van Nuys Airport?", a: "Approximately 15–25 minutes east via Ventura Blvd or the 101 to Balboa Blvd. Very convenient for Woodland Hills residents." },
-      { q: "Do you train on weekends?", a: "Yes. Weekend and evening slots are available based on scheduling. Call or text 310-490-0402." },
+      { q: "Do you train on weekends?", a: "Yes. Weekend and evening slots are available based on scheduling. Call or text 323-332-0585." },
       { q: "What is the total estimated cost of the private pilot certificate?", a: "Most students complete in 60–75 hours of flight time. At $195/hr dual, that is approximately $11,700–$14,625 in flight costs, plus written test and medical fees." },
       { q: "Is there a financing option?", a: "We do not push large training loans or financing packages. We offer pay-as-you-fly pricing that keeps each payment proportional to your training progress." },
       { q: "What cross-country routes do Woodland Hills students typically fly?", a: "Common cross-country destinations include Camarillo, Santa Barbara, Burbank, Brackett Field, Hawthorne, and Big Bear — all practical from KVNY." },
@@ -299,7 +299,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Tarzana - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Tarzana students train at Van Nuys Airport KVNY — close drive, structured programs, part-time scheduling available. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "Tarzana students train at Van Nuys Airport KVNY — close drive, structured programs, part-time scheduling available. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Tarzana",
     subheadline: "Tarzana is minutes from Van Nuys Airport — Accelerated Flight School offers part-time training, flexible scheduling, and ACS-based instruction for new and continuing pilots.",
     localIntro: [
@@ -319,7 +319,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near North Hollywood - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "North Hollywood students train at Van Nuys Airport KVNY — convenient Valley location, Discovery Flights and full pilot programs. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "North Hollywood students train at Van Nuys Airport KVNY — convenient Valley location, Discovery Flights and full pilot programs. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Near North Hollywood",
     subheadline: "Van Nuys Airport is minutes from North Hollywood — Accelerated Flight School offers beginner Discovery Flights and full private pilot and instrument programs at KVNY.",
     localIntro: [
@@ -333,13 +333,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How long is a typical lesson?", a: "Lessons typically run 1 to 1.5 hours of flight time plus 30 minutes of pre-flight briefing and 15–20 minutes of debrief. Budget about 2–2.5 hours per visit." },
       { q: "Do you offer Discovery Flights?", a: "Yes. The Discovery Flight is 1.5 hours for $190 — a great first step before committing to a certificate program." },
       { q: "What certifications does your instructor hold?", a: "our instructors holds CFI and CFII certificates and has been instructing since the early 2000s." },
-      { q: "How do I book a lesson?", a: "Call or text 310-490-0402 to speak directly with our instructors and schedule your first lesson or Discovery Flight." },
+      { q: "How do I book a lesson?", a: "Call or text 323-332-0585 to speak directly with our instructors and schedule your first lesson or Discovery Flight." },
     ],
   },
   {
     slug: "flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Studio City - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Studio City students start their flight training at Van Nuys Airport KVNY. Close, structured, beginner-friendly. Discovery Flight $190. Accelerated Flight School. 310-490-0402.",
+    metaDescription: "Studio City students start their flight training at Van Nuys Airport KVNY. Close, structured, beginner-friendly. Discovery Flight $190. Accelerated Flight School. 323-332-0585.",
     h1: "Flight School Near Studio City",
     subheadline: "Studio City is minutes from Van Nuys Airport — ideal for beginners who want a Discovery Flight and convenient for students working through private pilot or instrument programs.",
     localIntro: [
@@ -359,7 +359,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-santa-clarita-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Santa Clarita - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Santa Clarita students train at Van Nuys Airport KVNY with Accelerated Flight School. North LA County, structured programs, transparent pricing. Call 310-490-0402.",
+    metaDescription: "Santa Clarita students train at Van Nuys Airport KVNY with Accelerated Flight School. North LA County, structured programs, transparent pricing. Call 323-332-0585.",
     h1: "Flight School Near Santa Clarita",
     subheadline: "Students from Santa Clarita and north Los Angeles County train at Van Nuys Airport — Accelerated Flight School offers structured programs, pay-as-you-fly pricing, and CFII instruction at KVNY.",
     localIntro: [
@@ -379,7 +379,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Simi Valley - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Simi Valley students between Ventura County and the San Fernando Valley train at Van Nuys Airport KVNY with Accelerated Flight School. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "Simi Valley students between Ventura County and the San Fernando Valley train at Van Nuys Airport KVNY with Accelerated Flight School. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Simi Valley",
     subheadline: "Simi Valley students looking for structured flight training have a practical choice at Van Nuys Airport — Accelerated Flight School offers ACS-based programs between Ventura County and the San Fernando Valley.",
     localIntro: [
@@ -391,7 +391,7 @@ export const landingPages: LandingPageConfig[] = [
     faqs: [
       { q: "Is Van Nuys a better training airport than Camarillo for Simi Valley students?", a: "It depends on your goals. KVNY offers a controlled airspace environment with more complex traffic patterns and approach options. Some students prefer this challenge; others prefer the quieter environment at CMA. We are happy to discuss which fits your training goals." },
       { q: "How far is Simi Valley from Van Nuys Airport?", a: "Approximately 25–35 minutes via the 118 Freeway east to Van Nuys. Most Simi Valley residents find it a manageable commute." },
-      { q: "Do you offer evening lessons?", a: "Yes. Evening and night flying is available and required for the private pilot certificate. Scheduling is flexible — contact us at 310-490-0402." },
+      { q: "Do you offer evening lessons?", a: "Yes. Evening and night flying is available and required for the private pilot certificate. Scheduling is flexible — contact us at 323-332-0585." },
       { q: "What is night flying training like?", a: "Night training includes night landings, cross-country planning, and airport lighting familiarity. Van Nuys at night is a well-lit, active airport that provides excellent night training conditions." },
       { q: "Is there a Discovery Flight available?", a: "Yes. 1.5 hours for $190. No prior experience required." },
     ],
@@ -399,7 +399,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Camarillo - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Some Camarillo students compare Van Nuys Airport options for structured flight training. Accelerated Flight School at KVNY — aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "Some Camarillo students compare Van Nuys Airport options for structured flight training. Accelerated Flight School at KVNY — aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Camarillo",
     subheadline: "Some students from the Camarillo area compare coastal airport training with Van Nuys Airport options — Accelerated Flight School offers structured programs at KVNY year-round.",
     localIntro: [
@@ -413,13 +413,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How far is Camarillo from Van Nuys Airport?", a: "Approximately 45–60 minutes east on the 101 Freeway, depending on traffic. A manageable drive for students who want to train at KVNY." },
       { q: "What does KVNY offer that coastal airports do not?", a: "Van Nuys Airport features an active tower, ILS approaches, complex surrounding airspace, and consistent training activity. These conditions prepare students well for complex airspace navigation." },
       { q: "Can I start with a single Discovery Flight?", a: "Yes. The Discovery Flight is 1.5 hours for $190 with no commitment beyond that single lesson." },
-      { q: "How do I find out if Van Nuys training is right for me?", a: "Call or text 310-490-0402 to speak with our CFII instructors. He can discuss your training goals honestly and help you decide what makes the most sense for your situation." },
+      { q: "How do I find out if Van Nuys training is right for me?", a: "Call or text 323-332-0585 to speak with our CFII instructors. He can discuss your training goals honestly and help you decide what makes the most sense for your situation." },
     ],
   },
   {
     slug: "flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Long Beach - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Long Beach students comparing LA-area flight schools may find structured, lower-cost training at Van Nuys Airport KVNY with Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Long Beach students comparing LA-area flight schools may find structured, lower-cost training at Van Nuys Airport KVNY with Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Long Beach",
     subheadline: "Students from Long Beach and the South Bay compare flight schools across the greater LA area — Accelerated Flight School at Van Nuys Airport offers structured programs and transparent pricing at KVNY.",
     localIntro: [
@@ -439,7 +439,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Ontario - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Inland Empire students comparing LA-area flight training options consider Accelerated Flight School at Van Nuys Airport KVNY. Structured programs, transparent pricing. Call 310-490-0402.",
+    metaDescription: "Inland Empire students comparing LA-area flight training options consider Accelerated Flight School at Van Nuys Airport KVNY. Structured programs, transparent pricing. Call 323-332-0585.",
     h1: "Flight School Near Ontario",
     subheadline: "Inland Empire students from Ontario and surrounding cities sometimes compare Van Nuys Airport against local options when looking for structured, affordable flight training in the LA area.",
     localIntro: [
@@ -459,7 +459,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Accelerated Flight School at Van Nuys Airport KVNY serves students from across greater Los Angeles. Structured programs, ACS-based training, transparent pricing. Call 310-490-0402.",
+    metaDescription: "Accelerated Flight School at Van Nuys Airport KVNY serves students from across greater Los Angeles. Structured programs, ACS-based training, transparent pricing. Call 323-332-0585.",
     h1: "Flight School Near Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport serves students from across greater Los Angeles — structured programs, experienced CFII instruction, and transparent pricing at KVNY.",
     localIntro: [
@@ -473,13 +473,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How do I get to Van Nuys Airport?", a: "Van Nuys Airport is located at 7900 Balboa Blvd, Van Nuys, CA. Accessible from the 405, 101, and 118 freeways." },
       { q: "What does a private pilot certificate cost in Los Angeles?", a: "At $195/hr dual, most students complete private pilot in 60–75 hours, totaling approximately $11,700–$14,625 in flight costs. Structured training reduces total hours significantly." },
       { q: "Do you offer instrument rating training in the Los Angeles area?", a: "Yes. CFII instruction for the instrument rating is available. LA Basin airspace is excellent for practical IFR training." },
-      { q: "How do I get started?", a: "Call or text 310-490-0402 or book a Discovery Flight for $190. No prior experience required." },
+      { q: "How do I get started?", a: "Call or text 323-332-0585 or book a Discovery Flight for $190. No prior experience required." },
     ],
   },
   {
     slug: "flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Malibu - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Malibu-area students train at Van Nuys Airport KVNY with Accelerated Flight School. Discovery Flights, private pilot, instrument programs. Call 310-490-0402.",
+    metaDescription: "Malibu-area students train at Van Nuys Airport KVNY with Accelerated Flight School. Discovery Flights, private pilot, instrument programs. Call 323-332-0585.",
     h1: "Flight School Near Malibu",
     subheadline: "Malibu and Pacific Coast Highway residents have straightforward access to Van Nuys Airport — Accelerated Flight School offers Discovery Flights and full training programs at KVNY.",
     localIntro: [
@@ -499,7 +499,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-near-beverly-hills-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Beverly Hills - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Professional flight training near Beverly Hills at Van Nuys Airport KVNY. Structured instruction, clear pricing, experienced CFII. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Professional flight training near Beverly Hills at Van Nuys Airport KVNY. Structured instruction, clear pricing, experienced CFII. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Beverly Hills",
     subheadline: "Beverly Hills and Westside students seeking professional flight training find structured instruction, honest pricing, and direct instructor access at Accelerated Flight School, Van Nuys Airport KVNY.",
     localIntro: [
@@ -519,7 +519,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "affordable-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Affordable Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Affordable flight training in Los Angeles at Van Nuys Airport KVNY. Aircraft $160/hr wet, instructor $35/hr, no loan pressure, pay-as-you-fly. Call 310-490-0402.",
+    metaDescription: "Affordable flight training in Los Angeles at Van Nuys Airport KVNY. Aircraft $160/hr wet, instructor $35/hr, no loan pressure, pay-as-you-fly. Call 323-332-0585.",
     h1: "Affordable Flight Training in Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport provides affordable, transparent flight training for Los Angeles students — low hourly rates, no large upfront loans, and ACS-based instruction that reduces total training hours.",
     localIntro: [
@@ -539,7 +539,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Cheap Flight School Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Cheap flight school in Los Angeles without cheap training. Structured ACS-based instruction reduces wasted hours. Aircraft $160/hr wet. Van Nuys Airport. Call 310-490-0402.",
+    metaDescription: "Cheap flight school in Los Angeles without cheap training. Structured ACS-based instruction reduces wasted hours. Aircraft $160/hr wet. Van Nuys Airport. Call 323-332-0585.",
     h1: "Cheap Flight School in Los Angeles Without Cheap Training",
     subheadline: "Low hourly rates do not mean low-quality training — Accelerated Flight School at Van Nuys Airport proves that affordable pricing and structured instruction are not mutually exclusive.",
     localIntro: [
@@ -553,13 +553,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How does structured training save money?", a: "Structured training reduces total flight hours by ensuring every lesson builds on the previous one with clear objectives. Fewer wasted hours means lower total cost even at the same hourly rate." },
       { q: "What is your aircraft rate?", a: "$160/hr wet — fuel, maintenance, and insurance included." },
       { q: "What is your instructor rate?", a: "$35/hr. Combined with aircraft, dual rate is $195/hr." },
-      { q: "How do I start?", a: "Call or text 310-490-0402 or book a Discovery Flight for $190." },
+      { q: "How do I start?", a: "Call or text 323-332-0585 or book a Discovery Flight for $190." },
     ],
   },
   {
     slug: "low-cost-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Low Cost Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Low cost flight training in Los Angeles at Van Nuys Airport KVNY. Aircraft $160/hr wet, instructor $35/hr, Discovery Flight $190. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Low cost flight training in Los Angeles at Van Nuys Airport KVNY. Aircraft $160/hr wet, instructor $35/hr, Discovery Flight $190. Accelerated Flight School. Call 323-332-0585.",
     h1: "Low Cost Flight Training in Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport offers some of the lowest combined aircraft and instructor rates in Los Angeles — with structured training that keeps total hours and total cost lower.",
     localIntro: [
@@ -573,13 +573,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What does 'wet rate' mean?", a: "A wet rate includes fuel in the hourly price. You pay $160/hr and fuel, maintenance, and insurance are all included. No separate fuel billing." },
       { q: "Is there a Discovery Flight available?", a: "Yes. 1.5 hours for $190. A low-cost way to experience real flight training before committing to a certificate program." },
       { q: "Do you offer instrument rating training at low cost?", a: "Yes. Instrument rating instruction at $195/hr dual is available from our CFII. Most instrument students complete the rating in 40–60 hours of combined flight time." },
-      { q: "How do I get started?", a: "Call or text 310-490-0402. No commitment required beyond your first lesson or Discovery Flight." },
+      { q: "How do I get started?", a: "Call or text 323-332-0585. No commitment required beyond your first lesson or Discovery Flight." },
     ],
   },
   {
     slug: "discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Discovery Flight Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Discovery Flight in Los Angeles at Van Nuys Airport KVNY. 1.5 hours for $190 — fly over the San Fernando Valley with instructor guidance. Call 310-490-0402.",
+    metaDescription: "Discovery Flight in Los Angeles at Van Nuys Airport KVNY. 1.5 hours for $190 — fly over the San Fernando Valley with instructor guidance. Call 323-332-0585.",
     h1: "Discovery Flight in Los Angeles",
     subheadline: "Fly over Los Angeles in a real aircraft — Accelerated Flight School's Discovery Flight is 1.5 hours for $190 at Van Nuys Airport, and you take the controls from the beginning.",
     localIntro: [
@@ -599,7 +599,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "discovery-flight-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Discovery Flight Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Discovery Flight at Van Nuys Airport KVNY. 1.5 hours for $190 in a Piper Cherokee. First flight experience, zero-G, intro lesson. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Discovery Flight at Van Nuys Airport KVNY. 1.5 hours for $190 in a Piper Cherokee. First flight experience, zero-G, intro lesson. Accelerated Flight School. Call 323-332-0585.",
     h1: "Discovery Flight at Van Nuys Airport",
     subheadline: "Accelerated Flight School's Discovery Flight departs from Van Nuys Airport — 1.5 hours in a Piper Cherokee for $190, with real controls in your hands from the first minute.",
     localIntro: [
@@ -609,9 +609,9 @@ export const landingPages: LandingPageConfig[] = [
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "North Hollywood", "Burbank"],
     faqs: [
-      { q: "Where exactly do I go for the Discovery Flight?", a: "Accelerated Flight School is based at 7900 Balboa Blvd H7, Van Nuys, CA — in the Foxtrot Hangars area of Van Nuys Airport. Contact us at 310-490-0402 for specific parking and gate directions." },
+      { q: "Where exactly do I go for the Discovery Flight?", a: "Accelerated Flight School is based at 7900 Balboa Blvd H7, Van Nuys, CA — in the Foxtrot Hangars area of Van Nuys Airport. Contact us at 323-332-0585 for specific parking and gate directions." },
       { q: "What aircraft do I fly during the Discovery Flight?", a: "You will fly our Piper Cherokee — a stable, comfortable four-seat low-wing trainer. The same aircraft used for private pilot, instrument, and commercial training." },
-      { q: "Can I bring a passenger on the Discovery Flight?", a: "A passenger may be possible depending on weight and balance. Contact us in advance at 310-490-0402 to discuss." },
+      { q: "Can I bring a passenger on the Discovery Flight?", a: "A passenger may be possible depending on weight and balance. Contact us in advance at 323-332-0585 to discuss." },
       { q: "Is the Discovery Flight logged as actual flight training time?", a: "Yes. The flight is a real instructional flight and can be logged toward your private pilot certificate requirements." },
       { q: "What should I wear or bring?", a: "Wear comfortable clothing. Bring your government-issued ID. No special equipment is needed — we provide everything for the flight." },
     ],
@@ -619,7 +619,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Private Pilot Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Private pilot training in Los Angeles at Van Nuys Airport KVNY. ACS-based instruction, checkride preparation, $195/hr dual. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Private pilot training in Los Angeles at Van Nuys Airport KVNY. ACS-based instruction, checkride preparation, $195/hr dual. Accelerated Flight School. Call 323-332-0585.",
     h1: "Private Pilot Training in Los Angeles",
     subheadline: "Earn your private pilot certificate at Van Nuys Airport with ACS-based instruction from Accelerated Flight School — structured, checkride-focused, and priced transparently.",
     localIntro: [
@@ -639,7 +639,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "instrument-rating-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Instrument Rating Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Instrument rating training in Los Angeles at Van Nuys Airport KVNY. CFII instruction, approaches, cross-country IFR, checkride prep. Call 310-490-0402.",
+    metaDescription: "Instrument rating training in Los Angeles at Van Nuys Airport KVNY. CFII instruction, approaches, cross-country IFR, checkride prep. Call 323-332-0585.",
     h1: "Instrument Rating Training in Los Angeles",
     subheadline: "Earn your instrument rating at Van Nuys Airport — Accelerated Flight School provides CFII-led IFR training with real approaches, cross-country IFR, and structured checkride preparation.",
     localIntro: [
@@ -659,7 +659,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "commercial-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Commercial Pilot Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Commercial pilot training in Los Angeles at Van Nuys Airport KVNY. Commercial maneuvers, time building, structured plan, affordable rates. Call 310-490-0402.",
+    metaDescription: "Commercial pilot training in Los Angeles at Van Nuys Airport KVNY. Commercial maneuvers, time building, structured plan, affordable rates. Call 323-332-0585.",
     h1: "Commercial Pilot Training in Los Angeles",
     subheadline: "Earn your commercial pilot certificate at Van Nuys Airport with structured instruction from Accelerated Flight School — affordable aircraft rates for time building and precise commercial maneuver training.",
     localIntro: [
@@ -679,7 +679,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "cfi-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFI Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "CFI training in Los Angeles at Van Nuys Airport KVNY. Lesson plans, FOI, teaching methods, checkride prep. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "CFI training in Los Angeles at Van Nuys Airport KVNY. Lesson plans, FOI, teaching methods, checkride prep. Accelerated Flight School. Call 323-332-0585.",
     h1: "CFI Training in Los Angeles",
     subheadline: "Become a Certified Flight Instructor at Van Nuys Airport — Accelerated Flight School offers CFI training with lesson plan development, FOI preparation, and checkride-focused instruction.",
     localIntro: [
@@ -689,17 +689,17 @@ export const landingPages: LandingPageConfig[] = [
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "North Hollywood"],
     faqs: [
-      { q: "What are the prerequisites for CFI training?", a: "You must hold a commercial pilot certificate with instrument rating and have logged the required flight hours. Contact us at 310-490-0402 to discuss your specific qualifications." },
+      { q: "What are the prerequisites for CFI training?", a: "You must hold a commercial pilot certificate with instrument rating and have logged the required flight hours. Contact us at 323-332-0585 to discuss your specific qualifications." },
       { q: "What does CFI training cover?", a: "Fundamentals of Instruction (FOI), lesson plan development, right-seat maneuver demonstration, oral knowledge in all aeronautical subject areas, and checkride preparation." },
       { q: "How long does CFI training take?", a: "Duration varies by student background and lesson frequency. Most candidates with strong flight backgrounds complete CFI training in 20–40 hours of focused preparation." },
       { q: "Is CFI training separate from CFII training?", a: "Yes. CFI covers VFR instruction. CFII adds instrument instruction privileges. Both are available at Accelerated Flight School." },
-      { q: "How do I get started with CFI training?", a: "Call or text 310-490-0402 to discuss your current certificates and how to structure your CFI training path." },
+      { q: "How do I get started with CFI training?", a: "Call or text 323-332-0585 to discuss your current certificates and how to structure your CFI training path." },
     ],
   },
   {
     slug: "cfii-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFII Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "CFII training in Los Angeles at Van Nuys Airport KVNY. Instrument instructor training, approaches, IFR regulations, checkride prep. Call 310-490-0402.",
+    metaDescription: "CFII training in Los Angeles at Van Nuys Airport KVNY. Instrument instructor training, approaches, IFR regulations, checkride prep. Call 323-332-0585.",
     h1: "CFII Training in Los Angeles",
     subheadline: "Add instrument instruction privileges to your CFI certificate at Van Nuys Airport — Accelerated Flight School provides CFII training with real IFR procedures, teaching methods, and checkride preparation.",
     localIntro: [
@@ -713,13 +713,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What are the CFII prerequisites?", a: "You must hold a CFI certificate and instrument rating, and meet FAA 61.187 requirements for the CFII rating." },
       { q: "What does CFII training cover at Accelerated Flight School?", a: "Teaching instrument approaches, IFR cross-country navigation, holding patterns, approach briefings, instrument regulations, and right-seat CFII demonstration." },
       { q: "Is CFII training available alongside CFI training?", a: "Yes. Many candidates pursue CFI and CFII together. We can structure a combined training plan based on your background." },
-      { q: "How do I start CFII training?", a: "Call or text 310-490-0402 to discuss your current certificates and training goals with our instructors." },
+      { q: "How do I start CFII training?", a: "Call or text 323-332-0585 to discuss your current certificates and training goals with our instructors." },
     ],
   },
   {
     slug: "flight-instructor-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Flight Instructor Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight instructor in Van Nuys at KVNY — our instructors, CFI/CFII, $35/hr. Direct instruction, no intermediary. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight instructor in Van Nuys at KVNY — our instructors, CFI/CFII, $35/hr. Direct instruction, no intermediary. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight Instructor in Van Nuys",
     subheadline: "our instructors, CFI/CFII, provides direct flight instruction at Van Nuys Airport — structured, honest, and checkride-focused at $35/hr instructor rate.",
     localIntro: [
@@ -732,54 +732,54 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Who is the flight instructor at Accelerated Flight School?", a: "our instructors, CFI/CFII, is the primary instructor. He has been teaching flight at Van Nuys Airport since the early 2000s." },
       { q: "What certificates does our instructors hold?", a: "CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument)." },
       { q: "What is the instructor rate?", a: "$35/hr. Combined with $160/hr wet aircraft, dual training is $195/hr." },
-      { q: "Can I reach our instructors directly?", a: "Yes. Call or text 310-490-0402 to speak directly with our instructors about scheduling, training questions, or your next lesson." },
+      { q: "Can I reach our instructors directly?", a: "Yes. Call or text 323-332-0585 to speak directly with our instructors about scheduling, training questions, or your next lesson." },
       { q: "Does our instructors teach all programs?", a: "Yes. our instructors teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII programs." },
     ],
   },
   {
     slug: "cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFI Near Me Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Looking for a CFI near you in Los Angeles? our instructors, CFI/CFII, at Van Nuys Airport KVNY. Direct contact, $35/hr instructor rate. Call 310-490-0402.",
+    metaDescription: "Looking for a CFI near you in Los Angeles? our instructors, CFI/CFII, at Van Nuys Airport KVNY. Direct contact, $35/hr instructor rate. Call 323-332-0585.",
     h1: "CFI Near Me in Los Angeles",
     subheadline: "If you are looking for a CFI in the Los Angeles area, Accelerated Flight School offers direct access to our instructors, CFI/CFII, at Van Nuys Airport — no intermediary, no runaround.",
     localIntro: [
       "Searching for a CFI near you in Los Angeles means you are looking for an instructor you can reach directly, schedule with easily, and trust to give you honest, structured instruction. That is exactly what Accelerated Flight School provides at Van Nuys Airport (KVNY).",
-      "our instructors, CFI/CFII, is reachable by call or text at 310-490-0402. He handles scheduling directly, responds promptly, and discusses your training goals honestly before you spend a dollar. There is no front desk layer between you and your instructor.",
+      "our instructors, CFI/CFII, is reachable by call or text at 323-332-0585. He handles scheduling directly, responds promptly, and discusses your training goals honestly before you spend a dollar. There is no front desk layer between you and your instructor.",
       "Van Nuys Airport is centrally located in the San Fernando Valley and accessible from most of the greater Los Angeles area. Whether you are coming from Sherman Oaks, Burbank, North Hollywood, Encino, or further afield, KVNY is a straightforward destination.",
     ],
     nearbyAreas: ["Van Nuys", "Sherman Oaks", "Encino", "North Hollywood", "Burbank", "Los Angeles"],
     faqs: [
-      { q: "How do I find and contact a CFI at Accelerated Flight School?", a: "Call or text 310-490-0402 to reach our instructors, CFI/CFII, directly. He is the primary instructor and handles all scheduling." },
+      { q: "How do I find and contact a CFI at Accelerated Flight School?", a: "Call or text 323-332-0585 to reach our instructors, CFI/CFII, directly. He is the primary instructor and handles all scheduling." },
       { q: "What is the instructor rate?", a: "$35/hr. Combined with the aircraft wet rate, dual flight training is $195/hr." },
       { q: "Does the CFI teach all programs?", a: "Yes. our instructors teaches Discovery Flights, Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII training." },
       { q: "What airport does Accelerated Flight School use?", a: "Van Nuys Airport (KVNY), located at 7900 Balboa Blvd, Van Nuys, CA — in the Foxtrot Hangars area." },
-      { q: "What if I am returning to flying after a long break?", a: "A Flight Review (BFR) is available. Call our instructors at 310-490-0402 to discuss your situation and what recurrency training looks like for your background." },
+      { q: "What if I am returning to flying after a long break?", a: "A Flight Review (BFR) is available. Call our instructors at 323-332-0585 to discuss your situation and what recurrency training looks like for your background." },
     ],
   },
   {
     slug: "cfii-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFII Near Me Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Looking for a CFII near you in Los Angeles? our CFII instructors, at Van Nuys Airport KVNY. Instrument rating training, IFR instruction. Call 310-490-0402.",
+    metaDescription: "Looking for a CFII near you in Los Angeles? our CFII instructors, at Van Nuys Airport KVNY. Instrument rating training, IFR instruction. Call 323-332-0585.",
     h1: "CFII Near Me in Los Angeles",
     subheadline: "our CFII instructors, at Van Nuys Airport provides direct instrument rating instruction to Los Angeles area students — IFR training, approaches, and checkride preparation at KVNY.",
     localIntro: [
-      "Finding a CFII (Certified Flight Instructor – Instrument) in Los Angeles who provides direct, structured instruction can be difficult. At Accelerated Flight School, our CFII instructors, is available for instrument rating training at Van Nuys Airport. You can reach him directly at 310-490-0402 without going through a booking system or front desk.",
+      "Finding a CFII (Certified Flight Instructor – Instrument) in Los Angeles who provides direct, structured instruction can be difficult. At Accelerated Flight School, our CFII instructors, is available for instrument rating training at Van Nuys Airport. You can reach him directly at 323-332-0585 without going through a booking system or front desk.",
       "Instrument rating training at KVNY is practical and real-world. The airport has ILS, VOR, and RNAV approaches. You train in actual aircraft using real ATC procedures, not just a simulator. Your CFII — our instructors — has been teaching IFR since the early 2000s and structures every lesson around the instrument rating ACS standards.",
-      "If you already hold a private pilot certificate and are ready to work toward your instrument rating, contact Accelerated Flight School at 310-490-0402 to discuss your current flight hours, schedule, and what an instrument rating training plan looks like for your situation.",
+      "If you already hold a private pilot certificate and are ready to work toward your instrument rating, contact Accelerated Flight School at 323-332-0585 to discuss your current flight hours, schedule, and what an instrument rating training plan looks like for your situation.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Encino", "Glendale"],
     faqs: [
       { q: "What does a CFII do differently than a CFI?", a: "A CFII holds an instrument instructor rating and can train pilots specifically for the instrument rating. Not all CFIs are also CFIIs." },
       { q: "What are the prerequisites to start instrument training?", a: "You must hold a private pilot certificate and have 50 hours of cross-country PIC time before taking the instrument rating practical test. Training can begin earlier." },
-      { q: "How do I contact a CFII at Accelerated Flight School?", a: "Call or text 310-490-0402 to reach our CFII instructors, directly." },
+      { q: "How do I contact a CFII at Accelerated Flight School?", a: "Call or text 323-332-0585 to reach our CFII instructors, directly." },
       { q: "How much does instrument rating training cost?", a: "At $195/hr combined dual rate, most students complete instrument rating training in 40–60 hours of instrument instruction time, totaling approximately $7,800–$11,700 in flight costs." },
-      { q: "Can I do an Instrument Proficiency Check (IPC) with your CFII?", a: "Yes. IPCs are available for certificated instrument pilots who need to restore instrument currency. Call 310-490-0402 to schedule." },
+      { q: "Can I do an Instrument Proficiency Check (IPC) with your CFII?", a: "Yes. IPCs are available for certificated instrument pilots who need to restore instrument currency. Call 323-332-0585 to schedule." },
     ],
   },
   {
     slug: "piper-cherokee-flight-training-van-nuys-kvny",
     metaTitle: "Piper Cherokee Flight Training Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Train in a 1985 Piper Cherokee Warrior II at Van Nuys Airport KVNY. $160/hr wet. Private pilot, instrument rating, time building. Accelerated Flight School. 310-490-0402.",
+    metaDescription: "Train in a 1985 Piper Cherokee Warrior II at Van Nuys Airport KVNY. $160/hr wet. Private pilot, instrument rating, time building. Accelerated Flight School. 323-332-0585.",
     h1: "Piper Cherokee Flight Training at Van Nuys Airport",
     subheadline: "Accelerated Flight School's training fleet at Van Nuys Airport includes a 1985 Piper Cherokee Warrior II — a stable, well-maintained low-wing trainer available at $160/hr wet.",
     localIntro: [
@@ -793,13 +793,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Why a Piper Cherokee instead of a Cessna 172?", a: "Both are excellent trainers. The Cherokee is a low-wing design, which offers different visibility and handling characteristics. Students coming from Cherokee training often find the transition to other aircraft straightforward." },
       { q: "Is the aircraft IFR-equipped?", a: "Yes. The Piper Cherokee is equipped for IFR training, including the necessary avionics for instrument approaches and cross-country IFR flights." },
       { q: "What is the aircraft rental rate?", a: "$160/hr wet — fuel, maintenance reserves, and insurance are included in the hourly rate." },
-      { q: "Is the aircraft available for solo time building?", a: "Yes. Certificated pilots can rent the aircraft for solo PIC time building. Contact 310-490-0402 to discuss rental requirements." },
+      { q: "Is the aircraft available for solo time building?", a: "Yes. Certificated pilots can rent the aircraft for solo PIC time building. Contact 323-332-0585 to discuss rental requirements." },
     ],
   },
   {
     slug: "piper-warrior-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Piper Warrior Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Piper Warrior flight training in Los Angeles at Van Nuys Airport KVNY. $160/hr wet aircraft rental. Private pilot, instrument, commercial. Call 310-490-0402.",
+    metaDescription: "Piper Warrior flight training in Los Angeles at Van Nuys Airport KVNY. $160/hr wet aircraft rental. Private pilot, instrument, commercial. Call 323-332-0585.",
     h1: "Piper Warrior Flight Training in Los Angeles",
     subheadline: "Train in the Piper Cherokee Warrior at Van Nuys Airport — Accelerated Flight School offers private pilot, instrument, and commercial training in the Piper Warrior at $160/hr wet.",
     localIntro: [
@@ -813,13 +813,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What is the Piper Warrior aircraft rate?", a: "$160/hr wet — fuel included. No surcharges." },
       { q: "Can I use the Piper Warrior for commercial maneuver training?", a: "Yes. The Piper Cherokee can be used for commercial maneuver training. Discuss complex aircraft requirements with your instructor for specific commercial checkride logistics." },
       { q: "Is the same aircraft available for all programs?", a: "Yes. The same Piper Cherokee Warrior II is used for Discovery Flights, private pilot, instrument, and commercial training." },
-      { q: "How do I schedule a lesson in the Piper Warrior?", a: "Call or text 310-490-0402 to schedule with our instructors, CFI/CFII, directly." },
+      { q: "How do I schedule a lesson in the Piper Warrior?", a: "Call or text 323-332-0585 to schedule with our instructors, CFI/CFII, directly." },
     ],
   },
   {
     slug: "pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Pay As You Fly Flight Training Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Pay-as-you-fly flight training in Los Angeles at Van Nuys Airport KVNY. No large upfront loan, transparent pricing, control your spending. Call 310-490-0402.",
+    metaDescription: "Pay-as-you-fly flight training in Los Angeles at Van Nuys Airport KVNY. No large upfront loan, transparent pricing, control your spending. Call 323-332-0585.",
     h1: "Pay-As-You-Fly Flight Training in Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport does not pressure students into large training loans — pay per lesson, control your budget, and progress on your terms.",
     localIntro: [
@@ -833,13 +833,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Can I pause training without losing money?", a: "Yes. Because you pay per lesson, pausing training does not cost you anything beyond the lessons already flown." },
       { q: "Are there any monthly fees or membership requirements?", a: "No. No monthly fees, no membership dues, no booking charges. Transparent per-lesson pricing only." },
       { q: "Is pay-as-you-fly more expensive per lesson?", a: "No. The per-lesson rates at Accelerated Flight School are among the lower combined rates in the Los Angeles area: $195/hr dual combined." },
-      { q: "How do I get started with pay-as-you-fly training?", a: "Call or text 310-490-0402 or book a Discovery Flight for $190. No commitment required beyond that first lesson." },
+      { q: "How do I get started with pay-as-you-fly training?", a: "Call or text 323-332-0585 or book a Discovery Flight for $190. No commitment required beyond that first lesson." },
     ],
   },
   {
     slug: "flight-training-without-loans-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight Training Without Loans Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight training without large training loans in Los Angeles. Pay-as-you-fly at Van Nuys Airport KVNY. Aircraft $160/hr wet. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight training without large training loans in Los Angeles. Pay-as-you-fly at Van Nuys Airport KVNY. Aircraft $160/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight Training Without Large Training Loans",
     subheadline: "Accelerated Flight School at Van Nuys Airport does not push students toward large training loans — transparent pay-as-you-fly pricing keeps your flight training investment honest.",
     localIntro: [
@@ -853,13 +853,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Can I really train for a private pilot certificate without a large loan?", a: "Yes. At $195/hr combined, you can fund training incrementally as you go. Flying 2–3 times per week, most students spend $400–$600/week on flight training — manageable for many without large financing." },
       { q: "What if I need to pause training due to finances?", a: "You can pause at any time without penalty. Your logbook and training records stay with you regardless." },
       { q: "Is there any minimum prepayment required?", a: "No. Pay per lesson as you go." },
-      { q: "How do I start without making a large commitment?", a: "The Discovery Flight is $190 for 1.5 hours. Call or text 310-490-0402 to book." },
+      { q: "How do I start without making a large commitment?", a: "The Discovery Flight is $190 for 1.5 hours. Call or text 323-332-0585 to book." },
     ],
   },
   {
     slug: "best-flight-school-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Best Flight School Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Choosing the best flight school in Van Nuys. What to look for: clear pricing, ACS training, instructor accountability, aircraft quality. Accelerated Flight School at KVNY. 310-490-0402.",
+    metaDescription: "Choosing the best flight school in Van Nuys. What to look for: clear pricing, ACS training, instructor accountability, aircraft quality. Accelerated Flight School at KVNY. 323-332-0585.",
     h1: "Choosing the Best Flight School in Van Nuys",
     subheadline: "Before choosing a flight school in Van Nuys, know what to look for — this page explains what actually matters when evaluating your options at KVNY.",
     localIntro: [
@@ -881,7 +881,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Best Flight School Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Choosing the best flight school in Los Angeles. Evaluation criteria, pricing transparency, ACS training, instructor accountability. Accelerated Flight School KVNY. 310-490-0402.",
+    metaDescription: "Choosing the best flight school in Los Angeles. Evaluation criteria, pricing transparency, ACS training, instructor accountability. Accelerated Flight School KVNY. 323-332-0585.",
     h1: "Choosing the Best Flight School in Los Angeles",
     subheadline: "The best flight school in Los Angeles is the one that gets you to checkride-ready efficiently, honestly, and without financial games — here is how to evaluate your options.",
     localIntro: [
@@ -902,7 +902,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Cost Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "What does flight school cost in Los Angeles? Aircraft rate, instructor rate, private pilot estimate, instrument rating estimate. Accelerated Flight School KVNY. 310-490-0402.",
+    metaDescription: "What does flight school cost in Los Angeles? Aircraft rate, instructor rate, private pilot estimate, instrument rating estimate. Accelerated Flight School KVNY. 323-332-0585.",
     h1: "Flight School Cost in Los Angeles",
     subheadline: "Understanding flight school costs in Los Angeles — aircraft rates, instructor rates, estimated totals by certificate, and how structured training controls your overall investment.",
     localIntro: [
@@ -922,7 +922,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Private Pilot License Cost Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Private pilot license cost in Los Angeles explained. Minimum vs. real-world hours, how structured training controls cost. Accelerated Flight School KVNY. Call 310-490-0402.",
+    metaDescription: "Private pilot license cost in Los Angeles explained. Minimum vs. real-world hours, how structured training controls cost. Accelerated Flight School KVNY. Call 323-332-0585.",
     h1: "Private Pilot License Cost in Los Angeles",
     subheadline: "What does a private pilot certificate actually cost in Los Angeles? Real numbers, honest estimates, and how structured training keeps your total investment as low as possible.",
     localIntro: [
@@ -936,13 +936,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How does structured training reduce total cost?", a: "ACS-based training with clear objectives per lesson keeps every flight hour productive. Students who average 65 hours instead of 90 hours save approximately $4,875 at our dual rate." },
       { q: "What are the non-flight costs for a private pilot certificate?", a: "FAA knowledge test (~$175), checkride examiner fee (~$150–$400), ground school/study materials (~$100–$600), and medical certificate (~$75–$200)." },
       { q: "Is the Discovery Flight cost deducted from total training cost?", a: "The Discovery Flight counts as logged flight time toward your required hours. The $190 is part of your overall training investment." },
-      { q: "Can I get a cost estimate before starting?", a: "Yes. Call or text 310-490-0402 for an honest discussion of what your training path and cost estimate looks like based on your background and goals." },
+      { q: "Can I get a cost estimate before starting?", a: "Yes. Call or text 323-332-0585 for an honest discussion of what your training path and cost estimate looks like based on your background and goals." },
     ],
   },
   {
     slug: "instrument-rating-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Instrument Rating Cost Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Instrument rating cost in Los Angeles explained. Cross-country PIC time, instrument hours, CFII rates. Accelerated Flight School KVNY. Call 310-490-0402.",
+    metaDescription: "Instrument rating cost in Los Angeles explained. Cross-country PIC time, instrument hours, CFII rates. Accelerated Flight School KVNY. Call 323-332-0585.",
     h1: "Instrument Rating Cost in Los Angeles",
     subheadline: "What does an instrument rating actually cost in Los Angeles? Honest breakdown of flight time requirements, CFII rates, and how to estimate your total instrument training investment.",
     localIntro: [
@@ -956,25 +956,25 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What does 40 hours of instrument training cost?", a: "At $195/hr dual, 40 hours costs $7,800. Most students require 40–60 hours, totaling $7,800–$11,700 in flight costs." },
       { q: "What are simulated instrument conditions?", a: "Simulated instrument conditions means flying under a view-limiting device (foggles/hood) in VMC with your CFII acting as safety pilot. This counts toward instrument time requirements." },
       { q: "Can I train for instrument rating at Van Nuys Airport?", a: "Yes. KVNY has ILS, VOR, and RNAV approaches and an active tower, making it an excellent base for instrument training." },
-      { q: "How do I get a cost estimate for my instrument rating?", a: "Call or text 310-490-0402. our CFII instructors, will review your current hours and provide an honest estimate of your instrument rating training path." },
+      { q: "How do I get a cost estimate for my instrument rating?", a: "Call or text 323-332-0585. our CFII instructors, will review your current hours and provide an honest estimate of your instrument rating training path." },
     ],
   },
   {
     slug: "time-building-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Time Building Los Angeles - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Build flight time in Los Angeles with Piper Cherokee rental at Van Nuys Airport KVNY. $160/hr wet. Commercial pilot path, safety pilot available. Call 310-490-0402.",
+    metaDescription: "Build flight time in Los Angeles with Piper Cherokee rental at Van Nuys Airport KVNY. $160/hr wet. Commercial pilot path, safety pilot available. Call 323-332-0585.",
     h1: "Time Building in Los Angeles",
     subheadline: "Accelerated Flight School offers Piper Cherokee rental at Van Nuys Airport for time building — $160/hr wet for solo PIC flights, cross-country routes, and commercial pilot hour requirements.",
     localIntro: [
       "Time building — accumulating flight hours toward commercial pilot certificate requirements or personal proficiency goals — is one of the most cost-sensitive activities in aviation. Every hour of solo aircraft rental adds to your total investment. At $160/hr wet, the Piper Cherokee at Accelerated Flight School is a practical time-building option in the Los Angeles area.",
       "Commercial pilot certificate requirements include 250 total hours, 100 hours PIC, and 50 hours cross-country PIC. Students who have completed private pilot and instrument rating often use solo rental flights to build toward these totals. From Van Nuys Airport, practical time-building routes include Camarillo, Santa Barbara, Bakersfield, Palmdale, Brackett Field, Big Bear, Hawthorne, and beyond.",
-      "Safety pilot services — where a current instrument-rated pilot acts as safety pilot while you practice instrument approaches under the hood — may be available depending on scheduling. Contact Accelerated Flight School at 310-490-0402 to discuss time-building arrangements.",
+      "Safety pilot services — where a current instrument-rated pilot acts as safety pilot while you practice instrument approaches under the hood — may be available depending on scheduling. Contact Accelerated Flight School at 323-332-0585 to discuss time-building arrangements.",
     ],
     nearbyAreas: ["Van Nuys", "Los Angeles", "Burbank", "Sherman Oaks", "Encino"],
     faqs: [
-      { q: "Can I rent the Piper Cherokee for solo time building?", a: "Yes. Aircraft rental at $160/hr wet is available for certificated pilots with appropriate currency. Contact 310-490-0402 to discuss rental requirements." },
+      { q: "Can I rent the Piper Cherokee for solo time building?", a: "Yes. Aircraft rental at $160/hr wet is available for certificated pilots with appropriate currency. Contact 323-332-0585 to discuss rental requirements." },
       { q: "What cross-country destinations are practical from Van Nuys for time building?", a: "Common routes include Camarillo, Santa Barbara, Bakersfield, Palmdale, Big Bear, Brackett Field, Hawthorne, and Long Beach — all well within the Cherokee's practical range." },
-      { q: "Is a safety pilot available for instrument time building?", a: "Safety pilot arrangements may be available. Call 310-490-0402 to discuss scheduling." },
+      { q: "Is a safety pilot available for instrument time building?", a: "Safety pilot arrangements may be available. Call 323-332-0585 to discuss scheduling." },
       { q: "How many hours do I need for a commercial pilot certificate?", a: "250 total hours, including 100 hours PIC and 50 hours cross-country PIC. Many instrument-rated pilots are already close to this total after private and instrument training." },
       { q: "Is the aircraft IFR-equipped for cross-country IFR time building?", a: "Yes. The Piper Cherokee is IFR-equipped. Solo IFR flights require instrument currency and appropriate weather conditions." },
     ],
@@ -982,7 +982,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "flight-review-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Flight Review Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Flight Review (BFR) at Van Nuys Airport KVNY with our instructors, CFI. Recurrent training, currency, proficiency. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Flight Review (BFR) at Van Nuys Airport KVNY with our instructors, CFI. Recurrent training, currency, proficiency. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight Review at Van Nuys Airport",
     subheadline: "Accelerated Flight School at Van Nuys Airport offers Flight Reviews (BFR) for certificated pilots — recurrent training, proficiency restoration, and currency compliance with CFI our instructors.",
     localIntro: [
@@ -996,13 +996,13 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How long does a Flight Review take?", a: "At minimum, 1 hour of ground and 1 hour of flight. Most reviews take 2–4 hours total depending on how long you have been out of the cockpit." },
       { q: "What does a Flight Review cost at Accelerated Flight School?", a: "Aircraft is $160/hr wet and instructor is $35/hr. A 2-hour flight review with 1 hour flight + 1 hour ground would cost approximately $160 + $70 = $230." },
       { q: "What if I have not flown in a long time?", a: "If you have a significant currency gap, your instructor will assess where you are and structure appropriate training. There is no judgment — just honest skill assessment and proficiency restoration." },
-      { q: "Can I get a Flight Review at Van Nuys Airport?", a: "Yes. Call or text 310-490-0402 to schedule a Flight Review with our instructors, CFI/CFII." },
+      { q: "Can I get a Flight Review at Van Nuys Airport?", a: "Yes. Call or text 323-332-0585 to schedule a Flight Review with our instructors, CFI/CFII." },
     ],
   },
   {
     slug: "instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Instrument Proficiency Check Van Nuys - Accelerated Flight School in Van Nuys Airport KVNY",
-    metaDescription: "Instrument Proficiency Check (IPC) at Van Nuys Airport KVNY with our CFII instructors. Restore instrument currency, approaches, holding, IFR procedures. Call 310-490-0402.",
+    metaDescription: "Instrument Proficiency Check (IPC) at Van Nuys Airport KVNY with our CFII instructors. Restore instrument currency, approaches, holding, IFR procedures. Call 323-332-0585.",
     h1: "Instrument Proficiency Check at Van Nuys Airport",
     subheadline: "Restore your instrument currency at Van Nuys Airport — Accelerated Flight School provides Instrument Proficiency Checks (IPC) with CFII our instructors, covering approaches, holding, and IFR procedures.",
     localIntro: [
@@ -1016,7 +1016,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Who must conduct an IPC?", a: "An IPC must be conducted by a CFII (Certified Flight Instructor – Instrument). our CFII instructors, conducts IPCs at Accelerated Flight School." },
       { q: "How long does an IPC take?", a: "Typically 2–4 hours including briefing, flight, and debrief. More time may be needed if instrument skills require significant restoration." },
       { q: "What does an IPC cost at Accelerated Flight School?", a: "Aircraft is $160/hr wet and instructor is $35/hr. A 2-hour IPC flight would cost approximately $390 in flight costs plus briefing time." },
-      { q: "Can I do an IPC at Van Nuys Airport?", a: "Yes. Call or text 310-490-0402 to schedule an IPC with our CFII instructors." },
+      { q: "Can I do an IPC at Van Nuys Airport?", a: "Yes. Call or text 323-332-0585 to schedule an IPC with our CFII instructors." },
     ],
   },
   // ── NEW INTENT-BASED LANDING PAGES ──────────────────────────────────────────
@@ -1024,7 +1024,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "how-to-become-a-pilot-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "How to Become a Pilot in Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "Step-by-step guide to becoming a pilot in Los Angeles. Start with a $190 Discovery Flight at Van Nuys Airport (KVNY). Private pilot, instrument rating, commercial — Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Step-by-step guide to becoming a pilot in Los Angeles. Start with a $190 Discovery Flight at Van Nuys Airport (KVNY). Private pilot, instrument rating, commercial — Accelerated Flight School. Call 323-332-0585.",
     h1: "How to Become a Pilot in Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport (KVNY) offers a clear, step-by-step path from zero experience to your pilot certificate — in the heart of the Los Angeles aviation corridor.",
     localIntro: [
@@ -1045,7 +1045,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "private-pilot-license-cost-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Private Pilot License Cost – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "Complete cost breakdown for a private pilot certificate at Accelerated Flight School, Van Nuys Airport KVNY. Aircraft $160/hr wet, instructor $35/hr. No surprise fees. Call 310-490-0402.",
+    metaDescription: "Complete cost breakdown for a private pilot certificate at Accelerated Flight School, Van Nuys Airport KVNY. Aircraft $160/hr wet, instructor $35/hr. No surprise fees. Call 323-332-0585.",
     h1: "Private Pilot License Cost",
     subheadline: "Honest, itemized breakdown of what it actually costs to earn your private pilot certificate — no hidden fees, no mandatory packages — at Accelerated Flight School, Van Nuys Airport KVNY.",
     localIntro: [
@@ -1066,7 +1066,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "private-pilot-license-cost-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Private Pilot License Cost in Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "What does it cost to get a private pilot license in Los Angeles? Full honest pricing from Accelerated Flight School at Van Nuys Airport KVNY. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "What does it cost to get a private pilot license in Los Angeles? Full honest pricing from Accelerated Flight School at Van Nuys Airport KVNY. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Private Pilot License Cost in Los Angeles",
     subheadline: "What does it really cost to earn your private pilot certificate in the Los Angeles area? Transparent pricing and honest totals from Accelerated Flight School at Van Nuys Airport KVNY.",
     localIntro: [
@@ -1080,14 +1080,14 @@ export const landingPages: LandingPageConfig[] = [
       { q: "Are there cheaper flight schools in Los Angeles?", a: "Some schools advertise lower rates but charge separately for fuel, briefings, or ground instruction. At Accelerated Flight School, $160/hr wet is the all-in aircraft rate — fuel included, no added charges." },
       { q: "What is the checkride (practical exam) fee in LA?", a: "Checkride fees are set by the Designated Pilot Examiner (DPE) and typically range from $700–$900 in the Los Angeles area. This fee is paid directly to the DPE and is not part of school tuition." },
       { q: "How many months does it take to complete private pilot in LA?", a: "Training 2–3 times per week, most students complete private pilot in 5–8 months. More frequency means faster progression; less frequency means more review time and more total cost." },
-      { q: "Is there a Discovery Flight I can take before committing to a full program?", a: "Yes. The Discovery Flight is $190 for 1.5 hours — a real lesson where you take the controls over the San Fernando Valley. Call or text 310-490-0402 to book." },
+      { q: "Is there a Discovery Flight I can take before committing to a full program?", a: "Yes. The Discovery Flight is $190 for 1.5 hours — a real lesson where you take the controls over the San Fernando Valley. Call or text 323-332-0585 to book." },
     ],
   },
 
   {
     slug: "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Flight School Cost Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "Complete cost breakdown for flight school in Los Angeles — private pilot, instrument rating, commercial. Accelerated Flight School at Van Nuys Airport KVNY. Aircraft $160/hr wet. Call 310-490-0402.",
+    metaDescription: "Complete cost breakdown for flight school in Los Angeles — private pilot, instrument rating, commercial. Accelerated Flight School at Van Nuys Airport KVNY. Aircraft $160/hr wet. Call 323-332-0585.",
     h1: "Flight School Cost in Los Angeles",
     subheadline: "Full cost breakdown for every stage of flight training in Los Angeles — private pilot through commercial — at Accelerated Flight School, Van Nuys Airport KVNY.",
     localIntro: [
@@ -1108,7 +1108,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "best-flight-school-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Best Flight School Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "What makes the best flight school in LA? Structured ACS training, honest pricing, experienced CFII, and a well-maintained aircraft at Van Nuys Airport KVNY. Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "What makes the best flight school in LA? Structured ACS training, honest pricing, experienced CFII, and a well-maintained aircraft at Van Nuys Airport KVNY. Accelerated Flight School. Call 323-332-0585.",
     h1: "Best Flight School in Los Angeles",
     subheadline: "Structured training, real aircraft, experienced CFII instruction, and honest pricing — what separates Accelerated Flight School from the rest at Van Nuys Airport KVNY.",
     localIntro: [
@@ -1122,14 +1122,14 @@ export const landingPages: LandingPageConfig[] = [
       { q: "What aircraft does Accelerated Flight School use?", a: "We train in a Piper Cherokee Warrior II (N9172Y) — a four-seat, low-wing trainer known for stability and predictability. $160/hr wet, fuel included." },
       { q: "Who provides flight instruction at Accelerated Flight School?", a: "our CFII instructors, provides all instruction. He brings a structured, honest teaching approach based on FAA ACS standards, with a focus on checkride-readiness and practical skill." },
       { q: "Is Accelerated Flight School right for every student?", a: "We are the best fit for motivated students who want structured, efficient training with flexible scheduling and no pressure sales. If you want a large club environment with many aircraft and students, there are other options. If you want to get to your certificate efficiently, call us." },
-      { q: "How do I find out if Accelerated Flight School is the right fit?", a: "Book a Discovery Flight for $190. In 1.5 hours you experience the airplane, the airspace, and the instruction style firsthand. Call or text 310-490-0402." },
+      { q: "How do I find out if Accelerated Flight School is the right fit?", a: "Book a Discovery Flight for $190. In 1.5 hours you experience the airplane, the airspace, and the instruction style firsthand. Call or text 323-332-0585." },
     ],
   },
 
   {
     slug: "discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Discovery Flight Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "Take your first flight over Los Angeles for $190. 1.5-hour Discovery Flight from Van Nuys Airport KVNY with Accelerated Flight School. You take the controls. Call or text 310-490-0402.",
+    metaDescription: "Take your first flight over Los Angeles for $190. 1.5-hour Discovery Flight from Van Nuys Airport KVNY with Accelerated Flight School. You take the controls. Call or text 323-332-0585.",
     h1: "Discovery Flight in Los Angeles",
     subheadline: "Take the controls of a real airplane over Los Angeles for $190. Your Discovery Flight departs from Van Nuys Airport (KVNY) — 1.5 hours, real instruction, no prior experience needed.",
     localIntro: [
@@ -1150,7 +1150,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Learn to Fly Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "Learn to fly in Los Angeles at Van Nuys Airport KVNY with Accelerated Flight School. Private pilot, instrument rating, commercial programs. Discovery Flight $190. Call 310-490-0402.",
+    metaDescription: "Learn to fly in Los Angeles at Van Nuys Airport KVNY with Accelerated Flight School. Private pilot, instrument rating, commercial programs. Discovery Flight $190. Call 323-332-0585.",
     h1: "Learn to Fly in Los Angeles",
     subheadline: "Start your aviation journey at Van Nuys Airport (KVNY) — one of the busiest general aviation airports in the U.S. Structured training, real airspace, and clear results at Accelerated Flight School.",
     localIntro: [
@@ -1171,7 +1171,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "How to Get Your Instrument Rating in Los Angeles – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "Complete guide to earning your instrument rating in Los Angeles. Requirements, cost, timeline, and CFII training at Van Nuys Airport KVNY — Accelerated Flight School. Call 310-490-0402.",
+    metaDescription: "Complete guide to earning your instrument rating in Los Angeles. Requirements, cost, timeline, and CFII training at Van Nuys Airport KVNY — Accelerated Flight School. Call 323-332-0585.",
     h1: "How to Get Your Instrument Rating in Los Angeles",
     subheadline: "Complete guide to earning your instrument rating at Van Nuys Airport (KVNY) — requirements, cost, timeline, and CFII training at Accelerated Flight School.",
     localIntro: [
@@ -1192,7 +1192,7 @@ export const landingPages: LandingPageConfig[] = [
   {
     slug: "what-do-you-need-to-become-an-airline-pilot-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "What Do You Need to Become an Airline Pilot – Accelerated Flight School at Van Nuys Airport KVNY",
-    metaDescription: "The full roadmap from zero to airline cockpit. Requirements, certificates, hours, and timeline — starting with your first lesson at Accelerated Flight School, Van Nuys Airport KVNY. Call 310-490-0402.",
+    metaDescription: "The full roadmap from zero to airline cockpit. Requirements, certificates, hours, and timeline — starting with your first lesson at Accelerated Flight School, Van Nuys Airport KVNY. Call 323-332-0585.",
     h1: "What Do You Need to Become an Airline Pilot",
     subheadline: "The complete roadmap from zero flight time to the airline cockpit — starting with your first lesson at Accelerated Flight School, Van Nuys Airport KVNY.",
     localIntro: [
@@ -1206,7 +1206,7 @@ export const landingPages: LandingPageConfig[] = [
       { q: "How many flight hours do I need to fly for an airline?", a: "FAA regulations require 1,500 total flight hours for a standard ATP certificate. With an FAA-approved aviation degree (R-ATP), the minimum is 1,000 hours. Most regional airlines hire close to these ATP minimums." },
       { q: "How long does it take to become an airline pilot?", a: "The fastest realistic path is 3–5 years from zero experience: roughly 1 year to earn Private/Instrument/Commercial/CFI certificates, then 1–3 years of flight instructing or other flying to accumulate the 1,000–1,500 hours required for ATP minimums." },
       { q: "What is the total cost of the airline pilot path?", a: "Training from zero through commercial and CFI certificates typically runs $60,000–$100,000+ depending on total hours and school. This is spread over several years. Accelerated Flight School's pay-as-you-fly model helps manage costs one certificate at a time without requiring large upfront loans." },
-      { q: "Can I start the airline path at Accelerated Flight School with zero experience?", a: "Yes. We offer Discovery Flight, Private Pilot, Instrument Rating, Commercial Pilot, and CFI/CFII training at Van Nuys Airport. The airline path starts with your first lesson. Call or text 310-490-0402 to begin." },
+      { q: "Can I start the airline path at Accelerated Flight School with zero experience?", a: "Yes. We offer Discovery Flight, Private Pilot, Instrument Rating, Commercial Pilot, and CFI/CFII training at Van Nuys Airport. The airline path starts with your first lesson. Call or text 323-332-0585 to begin." },
     ],
   },
 ];

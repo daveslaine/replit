@@ -62,13 +62,13 @@ export function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-            <a href="tel:310-490-0402">
+            <a href="tel:323-332-0585">
               <Button variant="secondary" className="gap-2 font-bold w-full sm:w-auto">
                 <Phone className="h-4 w-4" />
-                Call 310-490-0402
+                Call 323-332-0585
               </Button>
             </a>
-            <a href="sms:310-490-0402">
+            <a href="sms:323-332-0585">
               <Button
                 variant="outline"
                 className="gap-2 font-bold w-full sm:w-auto bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
@@ -88,9 +88,9 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-3">
-                <img src="/images/logo.png" alt="Accelerated Flight Academy" style={{ height: "56px", width: "auto", filter: "brightness(0) invert(1)" }} />
+                <img src="/images/logo.png" alt="AFS" style={{ height: "56px", width: "auto", filter: "brightness(0) invert(1)" }} />
                 <span className="font-bold text-base text-white leading-tight">
-                  Accelerated<br />Flight Academy
+                  Accelerated<br />Flight School
                 </span>
               </Link>
               <p className="text-primary-foreground/70 text-sm">Structured. Transparent. Affordable.</p>
@@ -178,11 +178,11 @@ export function Footer() {
             <div className="space-y-4">
               <h3 className="font-bold text-white text-sm uppercase tracking-wider">Contact</h3>
               <div className="space-y-3">
-                <a href="tel:310-490-0402" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
+                <a href="tel:323-332-0585" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
                   <Phone className="h-4 w-4 shrink-0" />
-                  310-490-0402
+                  323-332-0585
                 </a>
-                <a href="sms:310-490-0402" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
+                <a href="sms:323-332-0585" className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm">
                   <MessageSquare className="h-4 w-4 shrink-0" />
                   Text Us
                 </a>
@@ -210,7 +210,8 @@ export function Footer() {
           </div>
 
           <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-xs space-y-1">
-            <p>&copy; {new Date().getFullYear()} Accelerated Flight Academy. All rights reserved. Van Nuys Airport (KVNY), Van Nuys, California.</p>
+            <p>&copy; {new Date().getFullYear()} Accelerated Flight School. All rights reserved. Van Nuys Airport (KVNY), Van Nuys, California.</p>
+            <p>Affiliated with <span className="text-primary-foreground/60 font-medium">Accelerated Flight Academy</span>.</p>
           </div>
         </div>
       </div>

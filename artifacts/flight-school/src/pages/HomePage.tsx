@@ -101,7 +101,7 @@ export function HomePage() {
         <title>Accelerated Flight School | Van Nuys Airport KVNY | Affordable Flight Training Los Angeles</title>
         <meta
           name="description"
-          content="Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 310-490-0402."
+          content="Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."
         />
       </Helmet>
       {/* ── Hero ──────────────────────────────────────────────── */}
@@ -180,12 +180,12 @@ export function HomePage() {
 
             {/* Phone */}
             <a
-              href="tel:310-490-0402"
+              href="tel:323-332-0585"
               className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors"
               data-testid="link-hero-phone"
             >
               <Phone className="w-3.5 h-3.5" />
-              310-490-0402
+              323-332-0585
             </a>
           </div>
         </div>
@@ -638,20 +638,20 @@ export function HomePage() {
             path.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:310-490-0402">
+            <a href="tel:323-332-0585">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                 <Phone className="w-5 h-5" />
-                Call 310-490-0402
+                Call 323-332-0585
               </Button>
             </a>
-            <a href="sms:310-490-0402">
+            <a href="sms:323-332-0585">
               <Button
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold border-primary-foreground/30 hover:bg-primary-foreground/10 text-white gap-2"
               >
                 <MessageSquare className="w-5 h-5" />
-                Text 310-490-0402
+                Text 323-332-0585
               </Button>
             </a>
           </div>

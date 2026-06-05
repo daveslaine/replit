@@ -12,7 +12,7 @@ export function DealsPage() {
         <title>Deals & Coupons | Van Nuys Airport KVNY | Save on Flight Training | Accelerated Flight School</title>
         <meta
           name="description"
-          content="Current deals and coupons at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 310-490-0402."
+          content="Current deals and coupons at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 323-332-0585."
         />
       </Helmet>
 
@@ -65,10 +65,10 @@ export function DealsPage() {
                 Experience 1.5 hours of real flight time including zero-g maneuvers over Van Nuys.
                 Mention this coupon when you call or text to book.
               </p>
-              <a href="tel:310-490-0402">
+              <a href="tel:323-332-0585">
                 <Button className="w-full font-bold gap-2">
                   <Phone className="w-4 h-4" />
-                  Call to Book — 310-490-0402
+                  Call to Book — 323-332-0585
                 </Button>
               </a>
             </div>
@@ -110,10 +110,10 @@ export function DealsPage() {
               <p className="text-slate-500 text-xs mb-5">
                 Valid for the first 5 flights. "Flights" means any scheduled lesson — hourly time applies to all hours flown during those sessions.
               </p>
-              <a href="tel:310-490-0402">
+              <a href="tel:323-332-0585">
                 <Button variant="outline" className="w-full font-bold gap-2 border-secondary text-secondary hover:bg-secondary hover:text-white">
                   <Phone className="w-4 h-4" />
-                  Call to Book — 310-490-0402
+                  Call to Book — 323-332-0585
                 </Button>
               </a>
             </div>
@@ -260,13 +260,13 @@ export function DealsPage() {
           <h2 className="text-2xl font-bold text-primary mb-4">Ready to Claim Your Coupon?</h2>
           <p className="text-slate-500 mb-8">Call or text us to book your Discovery Flight or start your training at our new student rate.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:310-490-0402">
+            <a href="tel:323-332-0585">
               <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                 <Phone className="w-5 h-5" />
-                Call 310-490-0402
+                Call 323-332-0585
               </Button>
             </a>
-            <a href="sms:310-490-0402">
+            <a href="sms:323-332-0585">
               <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                 Text Us
               </Button>
