@@ -1,0 +1,49 @@
+Replit is half-right and half-bullshitting you.
+
+Your page is prerendered because “View Source” shows tons of real HTML content inside <div id="root">, including the hero text, nav, footer, schema, etc. So it is not a blank client-only SPA. The uploaded source clearly shows real rendered body content inside #root.
+
+But the problem is this: your actual SEO tags are being rendered inside <body><div id="root">, not inside the real <head>.
+
+In your source, the real <head> only has charset, viewport, analytics, icons, fonts, JS, and CSS. Then the <head> closes. After that, inside <body><div id="root">, it shows:
+
+<meta property="og:title"...>
+
+<title>Accelerated Flight School...</title>
+
+<meta name="description"...>
+
+<script type="application/ld+json">...
+
+That means Replit did prerender the page, but it rendered the SEO head tags in the wrong place. They are not in the document head. That is not ideal.
+
+You do not need Inspect Element for this. For SEO-critical stuff, View Page Source is the correct test. Inspect Element shows the final browser DOM after JavaScript runs, which can lie to you about what was originally served. View Source shows what Googlebot initially receives.
+
+The fix is simple: tell Replit this exactly:
+
+The site is prerendering body content correctly, but SEO head tags are being rendered inside <body><div id="root"> instead of inside the actual <head>.
+
+In View Source, the real <head> does not contain the page <title>, meta description, canonical tag, Open Graph tags, Twitter tags, or JSON-LD. They are appearing inside the root div in the body.
+
+Fix the SSG/prerender pipeline so every route injects its SEO tags into the actual document <head> before the closing </head> tag.
+
+For every prerendered route, the raw View Source must show:
+<title>...</title>
+<meta name="description" content="...">
+<link rel="canonical" href="...">
+<meta property="og:title" content="...">
+<meta property="og:description" content="...">
+<meta property="og:url" content="...">
+<meta property="og:type" content="website">
+<meta property="og:image" content="...">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">...</script>
+
+These must be inside <head>, not inside <body>, not inside #root, and not only injected after hydration.
+
+After fixing, verify by using View Page Source, not Inspect Element.
+
+Also tell it this:
+
+Do not duplicate SEO tags. Each page should have one title, one meta description, one canonical, and one main LocalBusiness/EducationalOrganization JSON-LD block. Page-specific FAQ schema is okay only on pages that actually show those FAQs.
+
+Bottom line: SSG is working for body content. SEO head injection is wrong. Fix that before bragging that the code is SEO-complete.
