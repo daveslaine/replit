@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { CloudRain, CheckCircle2, Phone, Info, Users, GraduationCap, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,11 +8,10 @@ import { AviationTerm } from "@/components/AviationTerm";
 export function InstrumentRatingPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Instrument Rating Training Van Nuys Airport KVNY | IFR Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 323-332-0585." />
-        <meta name="keywords" content="instrument rating van nuys, IFR training Los Angeles, instrument rating Southern California, add-on instrument rating KVNY, IFR training Van Nuys Airport, instrument rating affordable California, instrument flight training Los Angeles" />
-      </Helmet>
+      <Seo
+        title={"Instrument Rating Training Van Nuys Airport KVNY | IFR Los Angeles | Accelerated Flight School"}
+        description={"Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

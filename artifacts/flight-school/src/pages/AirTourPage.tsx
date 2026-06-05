@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link, useLocation } from "wouter";
 import {
   Phone,
@@ -86,11 +86,10 @@ export function AirTourPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>{page.metaTitle}</title>
-        <meta name="description" content={page.metaDescription} />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      <Seo
+        title={page.metaTitle}
+        description={page.metaDescription}
+      />
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">

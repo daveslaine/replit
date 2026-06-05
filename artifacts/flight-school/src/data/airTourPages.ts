@@ -45,7 +45,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles skyline from the air at night" },
-      { src: "/images/cockpit-experience.png", alt: "A guest enjoying a discovery flight in the cockpit" },
     ],
     faqs: [
       {
@@ -88,7 +87,6 @@ export const airTourPages: AirTourPageConfig[] = [
       "The Getty Center",
     ],
     photos: [
-      { src: "/images/cockpit-experience.png", alt: "A guest enjoying a discovery flight in the cockpit" },
       { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles skyline from the air at night" },
     ],
     faqs: [
@@ -133,7 +131,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles skyline lit up from the air" },
-      { src: "/images/cockpit-experience.png", alt: "A guest smiling during a discovery flight" },
     ],
     faqs: [
       {
@@ -176,7 +173,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/malibu-coast-aerial.png", alt: "Southern California coastline from the air" },
-      { src: "/images/cockpit-experience.png", alt: "A guest enjoying a coastal discovery flight" },
     ],
     faqs: [
       {
@@ -265,7 +261,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/hollywood-sign-aerial.png", alt: "The Hollywood Sign from the air" },
-      { src: "/images/cockpit-experience.png", alt: "A guest enjoying a discovery flight over LA" },
     ],
     faqs: [
       {
@@ -308,7 +303,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles basin from the air" },
-      { src: "/images/cockpit-experience.png", alt: "A guest flying a discovery flight" },
     ],
     faqs: [
       {
@@ -351,7 +345,6 @@ export const airTourPages: AirTourPageConfig[] = [
     ],
     photos: [
       { src: "/images/catalina-aerial.png", alt: "Catalina Island from the air" },
-      { src: "/images/cockpit-experience.png", alt: "A guest enjoying a discovery flight" },
     ],
     pricingNote:
       "The standard discovery flight is from Van Nuys and may include scenic LA/coastal views depending on conditions. Extended routes such as Catalina require separate planning, time, weather, fuel, and pricing.",

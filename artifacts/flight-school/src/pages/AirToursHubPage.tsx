@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, MessageSquare, Plane, MapPin, ArrowRight, Camera, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -15,14 +15,10 @@ export function AirToursHubPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Los Angeles Air Tours & Sightseeing Flights | Discovery Flight Alternative — KVNY</title>
-        <meta
-          name="description"
-          content="Looking for a Los Angeles air tour or sightseeing flight? Take the controls yourself on a real discovery flight from Van Nuys Airport (KVNY). $190 for 1, $270 for 2. Call 323-332-0585."
-        />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+      <Seo
+        title={"Los Angeles Air Tours & Sightseeing Flights | Discovery Flight Alternative — KVNY"}
+        description={"Looking for a Los Angeles air tour or sightseeing flight? Take the controls yourself on a real discovery flight from Van Nuys Airport (KVNY). $190 for 1, $270 for 2. Call 323-332-0585."}
+      />
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">

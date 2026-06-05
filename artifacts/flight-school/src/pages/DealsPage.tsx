@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Tag, CheckCircle2, Phone, Star, DollarSign, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,13 +8,10 @@ import { AviationTerm } from "@/components/AviationTerm";
 export function DealsPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Deals & Coupons | Van Nuys Airport KVNY | Save on Flight Training | Accelerated Flight School</title>
-        <meta
-          name="description"
-          content="Current deals and coupons at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 323-332-0585."
-        />
-      </Helmet>
+      <Seo
+        title={"Deals & Coupons | Van Nuys Airport KVNY | Save on Flight Training | Accelerated Flight School"}
+        description={"Current deals and coupons at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 323-332-0585."}
+      />
 
       {/* Hero */}
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">

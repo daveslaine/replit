@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { CheckCircle2, Target, BookOpen, FileText, Plane, Shield, Phone, MapPin, Clock, Star, Users, DollarSign, CalendarClock, GraduationCap } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -8,11 +8,10 @@ import { AviationTerm } from "@/components/AviationTerm";
 export function AboutUsPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>About Accelerated Flight School | Van Nuys Airport KVNY | Experienced CFI Instructors Since 2000s</title>
-        <meta name="description" content="Accelerated Flight School at Van Nuys Airport (KVNY). Experienced flight instructors flying since the early 2000s. Structured FAA ACS training. Affordable, transparent pricing. No upfront payment. Call 323-332-0585." />
-        <meta name="keywords" content="about accelerated flight school van nuys, flight instructor van nuys, experienced CFI KVNY, van nuys airport flight school, affordable flight training Los Angeles, accelerated flight academy" />
-      </Helmet>
+      <Seo
+        title={"About Accelerated Flight School | Van Nuys Airport KVNY | Experienced CFI Instructors Since 2000s"}
+        description={"Accelerated Flight School at Van Nuys Airport (KVNY). Experienced flight instructors flying since the early 2000s. Structured FAA ACS training. Affordable, transparent pricing. No upfront payment. Call 323-332-0585."}
+      />
 
       {/* Hero */}
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">

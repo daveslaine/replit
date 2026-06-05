@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Plane, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -19,11 +19,10 @@ export function AirlinePathPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Airline Pilot Path Van Nuys Airport KVNY | Zero to ATP Los Angeles | Accelerated Flight School</title>
-        <meta name="description" content="Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → Multi-Engine → CFI → ATP. Transparent costs, no upfront payment. Call 323-332-0585." />
-        <meta name="keywords" content="airline pilot training van nuys, zero to ATP Los Angeles, airline career path Southern California, become airline pilot Van Nuys, ATP training KVNY, airline pilot school Los Angeles, zero to airline van nuys airport, how to become airline pilot California" />
-      </Helmet>
+      <Seo
+        title={"Airline Pilot Path Van Nuys Airport KVNY | Zero to ATP Los Angeles | Accelerated Flight School"}
+        description={"Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → Multi-Engine → CFI → ATP. Transparent costs, no upfront payment. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

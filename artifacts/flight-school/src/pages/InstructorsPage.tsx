@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { useQuery } from "@tanstack/react-query";
 import { Phone, DollarSign, CheckCircle2, Heart, UserCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -107,13 +107,10 @@ export function InstructorsPage() {
 
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Flight Instructors Van Nuys Airport KVNY | CFI CFII Los Angeles | Accelerated Flight School</title>
-        <meta
-          name="description"
-          content="Meet our CFI and CFII instructors at Van Nuys Airport. Reza S. and David T. offer structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."
-        />
-      </Helmet>
+      <Seo
+        title={"Flight Instructors Van Nuys Airport KVNY | CFI CFII Los Angeles | Accelerated Flight School"}
+        description={"Meet our CFI and CFII instructors at Van Nuys Airport. Reza S. and David T. offer structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">

@@ -1,15 +1,15 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Seo } from "@/components/Seo";
 import { MapPin, Phone, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function DirectionsPage() {
   return (
     <div className="w-full">
-      <Helmet>
-        <title>Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School</title>
-        <meta name="description" content="Step-by-step directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585." />
-      </Helmet>
+      <Seo
+        title={"Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School"}
+        description={"Step-by-step directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585."}
+      />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-12">
         <div className="container mx-auto px-4 max-w-3xl text-center">
