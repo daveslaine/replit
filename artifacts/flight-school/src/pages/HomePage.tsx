@@ -50,13 +50,13 @@ const pilotGoals = [
       {
         icon: Briefcase,
         title: "Commercial Pilot",
-        href: "/commercial-pilot-training",
+        href: "/commercial-pilot-training-van-nuys",
         desc: "The pilot certificate that allows you to be paid for certain legal flying operations.",
       },
       {
         icon: GraduationCap,
         title: "Certified Flight Instructor (CFI)",
-        href: "/cfi-training",
+        href: "/cfi-training-van-nuys",
         desc: "Become an instructor, teach students, earn money flying, and build professional flight hours.",
       },
     ],
@@ -67,7 +67,7 @@ const pilotGoals = [
       {
         icon: Building2,
         title: "Airline Transport Pilot",
-        href: "/airline-pilot-path",
+        href: "/airline-pilot-path-van-nuys",
         desc: "A structured path from zero experience toward the certificates and flight time needed for airline eligibility — from Private Pilot all the way to the ATP certificate.",
       },
     ],
@@ -151,7 +151,7 @@ export function HomePage() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-5">
-              <Link href="/contact" data-testid="link-hero-start">
+              <Link href="/van-nuys-accelerated-flight-school-contact" data-testid="link-hero-start">
                 <Button size="lg" className="font-bold text-base h-12 px-7 bg-secondary hover:bg-secondary/90 text-white gap-2">
                   Start Flight Training
                   <ArrowRight className="w-4 h-4" />
@@ -331,7 +331,7 @@ export function HomePage() {
                 No upfront payment — pay only when you fly
               </p>
             </div>
-            <Link href="/pricing" className="shrink-0">
+            <Link href="/van-nuys-accelerated-flight-school-pricing" className="shrink-0">
               <Button variant="outline" className="border-slate-600 text-white hover:bg-white/10 font-bold">
                 See Full Pricing
               </Button>
@@ -614,7 +614,7 @@ export function HomePage() {
           </p>
 
           <div className="text-center mt-6">
-            <Link href="/pricing" data-testid="link-pricing-snapshot-more">
+            <Link href="/van-nuys-accelerated-flight-school-pricing" data-testid="link-pricing-snapshot-more">
               <Button variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
                 View Full Pricing &amp; Program Estimates
               </Button>

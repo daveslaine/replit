@@ -87,11 +87,11 @@ export function Header() {
             }}
           />
           <span
-            className={`font-bold text-sm leading-tight text-white transition-opacity duration-300 ${
-              transparent ? "hidden sm:block" : "hidden"
+            className={`hidden sm:block font-bold text-sm whitespace-nowrap leading-none transition-colors duration-300 ${
+              transparent ? "text-white" : "text-primary"
             }`}
           >
-            Accelerated<br />Flight School
+            Accelerated Flight School
           </span>
         </Link>
 

@@ -332,7 +332,7 @@ export function PrivatePilotPage() {
                       Call to Discuss
                     </Button>
                   </a>
-                  <Link href="/pricing" className="block w-full">
+                  <Link href="/van-nuys-accelerated-flight-school-pricing" className="block w-full">
                     <Button size="lg" variant="outline" className="w-full font-bold border-white/30 hover:bg-white/10 text-white">
                       View Full Pricing
                     </Button>
