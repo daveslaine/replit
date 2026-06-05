@@ -77,12 +77,14 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" data-testid="link-home">
           <img
-            src="/images/afs-logo-red.png"
+            src="/images/afs-logo.png"
             alt="Accelerated Flight School"
             style={{
               height: "46px",
               width: "auto",
-              filter: transparent ? "drop-shadow(0 1px 4px rgba(0,0,0,0.45))" : "none",
+              filter: transparent
+                ? "drop-shadow(0 0 2px rgba(255,255,255,0.6)) drop-shadow(0 1px 4px rgba(0,0,0,0.45))"
+                : "none",
               transition: "filter 0.3s",
             }}
           />
@@ -180,7 +182,7 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[360px]">
               <div className="flex flex-col gap-6 py-6">
                 <Link href="/" className="flex items-center">
-                  <img src="/images/afs-logo-red.png" alt="Accelerated Flight School" style={{ height: "42px", width: "auto" }} />
+                  <img src="/images/afs-logo.png" alt="Accelerated Flight School" style={{ height: "42px", width: "auto" }} />
                 </Link>
                 <Link href="/discovery-flight-van-nuys" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
                   <Plane className="w-4 h-4" />
