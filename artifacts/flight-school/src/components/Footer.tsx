@@ -112,6 +112,8 @@ export function Footer() {
               <h3 className="font-bold text-white text-sm uppercase tracking-wider">Resources</h3>
               <ul className="space-y-2.5">
                 {[
+                  { href: "/flight-school-locations-los-angeles", label: "Areas We Serve" },
+                  { href: "/los-angeles-air-tours-sightseeing-flights", label: "LA Air Tours & Sightseeing" },
                   { href: "/van-nuys-accelerated-flight-school-pricing", label: "Van Nuys Flight School Pricing" },
                   { href: "/van-nuys-accelerated-flight-school-deals-coupons", label: "Deals & Coupons" },
                   { href: "/van-nuys-accelerated-flight-school-aircraft", label: "Our Aircraft" },

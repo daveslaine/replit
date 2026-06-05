@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation, Redirect } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
@@ -33,6 +33,9 @@ import { LandingPage } from "@/pages/LandingPage";
 import { getLandingPage } from "@/data/landingPages";
 import { AirTourPage } from "@/pages/AirTourPage";
 import { getAirTourPage } from "@/data/airTourPages";
+import { AreasServedPage } from "@/pages/AreasServedPage";
+import { AirToursHubPage } from "@/pages/AirToursHubPage";
+import { redirects } from "@/data/redirects";
 import { SeoSchema } from "@/components/SeoSchema";
 
 const queryClient = new QueryClient();
@@ -40,6 +43,10 @@ const queryClient = new QueryClient();
 function LandingOrNotFound() {
   const [location] = useLocation();
   const slug = location.replace(/^\//, "");
+  const redirectTarget = redirects[slug];
+  if (redirectTarget) {
+    return <Redirect to={`/${redirectTarget}`} replace />;
+  }
   if (getAirTourPage(slug)) {
     return <AirTourPage />;
   }
@@ -92,6 +99,8 @@ function PublicRoutes() {
         <Route path="/van-nuys-accelerated-flight-school-directions" component={DirectionsPage} />
         <Route path="/faq" component={FaqPage} />
         <Route path="/flight-training-faq-van-nuys" component={FaqPage} />
+        <Route path="/flight-school-locations-los-angeles" component={AreasServedPage} />
+        <Route path="/los-angeles-air-tours-sightseeing-flights" component={AirToursHubPage} />
         <Route component={LandingOrNotFound} />
       </Switch>
     </Layout>

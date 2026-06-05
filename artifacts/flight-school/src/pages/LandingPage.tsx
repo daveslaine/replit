@@ -4,6 +4,9 @@ import { Link, useLocation } from "wouter";
 import { Phone, MessageSquare, CheckCircle2, Plane, MapPin, DollarSign, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getLandingPage } from "@/data/landingPages";
+import { getLandingUnique } from "@/data/landingUnique";
+
+const SITE_ORIGIN = "https://acceleratedflightschool.net";
 
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = React.useState(false);
@@ -40,6 +43,7 @@ export function LandingPage() {
   const [location] = useLocation();
   const slug = location.replace(/^\//, "");
   const page = getLandingPage(slug);
+  const unique = getLandingUnique(slug);
 
   if (!page) {
     return (
@@ -61,6 +65,7 @@ export function LandingPage() {
         <title>{page.metaTitle}</title>
         <meta name="description" content={page.metaDescription} />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`${SITE_ORIGIN}/${page.slug}`} />
       </Helmet>
 
       {/* Hero */}
@@ -114,6 +119,22 @@ export function LandingPage() {
           )}
         </div>
       </section>
+
+      {/* Unique page-specific content */}
+      {unique && (
+        <section className="py-14 bg-white border-t border-slate-100">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-6">{unique.heading}</h2>
+            <div className="space-y-5">
+              {unique.paragraphs.map((para, i) => (
+                <p key={i} className="text-slate-700 leading-relaxed text-base md:text-lg">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Why Van Nuys / KVNY */}
       <section className="py-14 bg-slate-50">
