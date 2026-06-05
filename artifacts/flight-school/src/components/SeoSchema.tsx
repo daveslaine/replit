@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "wouter";
 
 const SITE_URL = "https://acceleratedflightschool.net";
 
@@ -7,6 +8,20 @@ const OG_TITLE = "Accelerated Flight School | Van Nuys Airport (KVNY)";
 const OG_DESCRIPTION =
   "Affordable, structured flight training at Van Nuys Airport. Private Pilot, Instrument Rating, Commercial Pilot, CFI, and Airline Pathway. No upfront payment. Call 323-332-0585.";
 const OG_IMAGE = `${SITE_URL}/images/aircraft-exterior.png`;
+
+// Client-only alias routes (not in the sitemap) → the canonical, indexed URL.
+// Keeps canonical/og:url correct when a non-canonical alias is hit directly.
+const ALIAS_CANONICAL: Record<string, string> = {
+  "/commercial-pilot-training": "/commercial-pilot-training-van-nuys",
+  "/cfi-training": "/cfi-training-van-nuys",
+  "/airline-pilot-path": "/airline-pilot-path-van-nuys",
+  "/discovery-flight": "/discovery-flight-van-nuys",
+  "/flight-training-faq-van-nuys": "/faq",
+  "/pricing": "/van-nuys-accelerated-flight-school-pricing",
+  "/our-aircraft": "/van-nuys-accelerated-flight-school-aircraft",
+  "/instructors": "/van-nuys-accelerated-flight-school-instructors",
+  "/contact": "/van-nuys-accelerated-flight-school-contact",
+};
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -56,11 +71,19 @@ const organizationSchema = {
 };
 
 export function SeoSchema() {
+  const [rawLocation] = useLocation();
+  const normalized =
+    rawLocation && rawLocation !== "/" ? rawLocation.replace(/\/+$/, "") : "/";
+  const path = ALIAS_CANONICAL[normalized] ?? normalized;
+  const canonicalUrl = path === "/" ? `${SITE_URL}/` : `${SITE_URL}${path}`;
+
   return (
     <Helmet>
+      <link rel="canonical" href={canonicalUrl} />
       <meta property="og:title" content={OG_TITLE} />
       <meta property="og:description" content={OG_DESCRIPTION} />
       <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content="Accelerated Flight School" />
       <meta property="og:image" content={OG_IMAGE} />
       <meta name="twitter:card" content="summary_large_image" />
