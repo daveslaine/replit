@@ -189,10 +189,12 @@ export function Header() {
                 <Link href="/" className="flex items-center">
                   <img src="/images/afs-logo-new.png" alt="Accelerated Flight School" style={{ height: "44px", width: "auto" }} />
                 </Link>
-                <Link href="/discovery-flight-van-nuys" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
-                  <Plane className="w-4 h-4" />
-                  Discovery Flight — $190
-                </Link>
+                <SheetClose asChild>
+                  <Link href="/discovery-flight-van-nuys" className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit">
+                    <Plane className="w-4 h-4" />
+                    Discovery Flight — $190
+                  </Link>
+                </SheetClose>
                 <nav className="flex flex-col gap-1">
                   {mobileAllLinks.filter(l => l.href !== "/discovery-flight-van-nuys").map((link) => (
                     <SheetClose asChild key={link.href}>
