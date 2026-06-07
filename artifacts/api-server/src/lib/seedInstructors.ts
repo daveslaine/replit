@@ -9,7 +9,7 @@ const SEED_LOCK_ID = 918_469;
 const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
   {
     name: "Reza S.",
-    title: "",
+    title: "Flight Instructor & Instrument Instructor",
     phone: "(310) 490-0402",
     bio: null,
     teachingPhilosophy:
@@ -24,7 +24,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
   },
   {
     name: "David T.",
-    title: "Flight Instructor Instrument",
+    title: "Flight Instructor & Instrument Instructor",
     phone: "323-332-0585",
     bio: null,
     teachingPhilosophy:
@@ -123,5 +123,45 @@ export async function applyInstructorContentFixes(): Promise<void> {
     });
   } catch (err) {
     logger.error({ err }, "Failed to apply instructor content fixes");
+  }
+}
+
+const TITLE_FIX_KEY = "instructors_fix_titles_v1";
+const TITLE_FIX_LOCK_ID = 918_471;
+const INSTRUCTOR_TITLE = "Flight Instructor & Instrument Instructor";
+
+/**
+ * One-time title correction for databases seeded before both instructors were
+ * given the same displayed title. Sets Reza S. and David T. to
+ * "Flight Instructor & Instrument Instructor".
+ *
+ * Runs exactly once per database (recorded under TITLE_FIX_KEY) behind an
+ * advisory lock, so it is safe under concurrent Autoscale boots and never
+ * clobbers later admin-panel edits.
+ */
+export async function applyInstructorTitleFixes(): Promise<void> {
+  try {
+    await db.transaction(async (tx) => {
+      await tx.execute(sql`SELECT pg_advisory_xact_lock(${TITLE_FIX_LOCK_ID})`);
+
+      const already = await tx
+        .select({ key: seedHistoryTable.key })
+        .from(seedHistoryTable)
+        .where(sql`${seedHistoryTable.key} = ${TITLE_FIX_KEY}`)
+        .limit(1);
+      if (already.length > 0) {
+        return;
+      }
+
+      await tx
+        .update(instructorsTable)
+        .set({ title: INSTRUCTOR_TITLE })
+        .where(sql`${instructorsTable.name} IN ('Reza S.', 'David T.')`);
+
+      await tx.insert(seedHistoryTable).values({ key: TITLE_FIX_KEY });
+      logger.info("Applied one-time instructor title fixes");
+    });
+  } catch (err) {
+    logger.error({ err }, "Failed to apply instructor title fixes");
   }
 }

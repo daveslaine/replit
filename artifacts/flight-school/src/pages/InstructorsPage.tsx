@@ -163,7 +163,7 @@ export function InstructorsPage() {
           )}
 
           <p className="text-center text-slate-500 text-lg mb-16">
-            More great instructors — with photos — coming soon.
+            We have additional instructors on our team — their photos are coming soon.
           </p>
 
           {/* Why We Charge Less */}
