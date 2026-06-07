@@ -72,8 +72,8 @@ export function DiscoveryFlightPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School"}
-        description={"1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 323-332-0585."}
+        title={"Discovery Flight Van Nuys | Accelerated Flight School"}
+        description={"1.5-hour discovery flight at Van Nuys Airport for $190. Fly over the San Fernando Valley and Malibu coastline, zero-g maneuvers included. Call 323-332-0585."}
       >
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
       </Seo>

@@ -9,8 +9,8 @@ export function PrivatePilotPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Private Pilot Training Van Nuys Airport KVNY | Affordable Flight School Los Angeles | Accelerated Flight School"}
-        description={"Earn your Private Pilot License at Van Nuys Airport (KVNY), Los Angeles. FAA ACS-structured training. Estimated $7,500–$12,500 — half the SoCal average. No upfront payment. Call 323-332-0585."}
+        title={"Private Pilot Training Van Nuys | Accelerated Flight School"}
+        description={"Private Pilot training at Van Nuys Airport (KVNY). FAA ACS-structured. ~$7,500–$12,500, below the SoCal average. No upfront payment. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">

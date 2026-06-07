@@ -60,6 +60,7 @@ export function Seo({
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content="Accelerated Flight School" />
       <meta property="og:image" content={OG_IMAGE} />
+      <meta property="og:locale" content="en_US" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />

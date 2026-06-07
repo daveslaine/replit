@@ -8,8 +8,8 @@ export function CommercialMultiEnginePage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Multi-Engine Add-On Training Van Nuys Airport KVNY | Twin Engine Rating Los Angeles | Accelerated Flight School"}
-        description={"Add a Multi-Engine rating to your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. $3,000–$4,000 — below the SoCal average of $5,000–$8,000. No written exam required. Call 323-332-0585."}
+        title={"Multi-Engine Rating Van Nuys | Accelerated Flight School"}
+        description={"Add a Multi-Engine rating at Van Nuys Airport (KVNY). $3,000–$4,000, below SoCal's $5K–$8K average. No written exam required. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">

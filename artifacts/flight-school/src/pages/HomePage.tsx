@@ -98,7 +98,7 @@ export function HomePage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Accelerated Flight School | Van Nuys Airport KVNY | Affordable Flight Training Los Angeles"}
+        title={"Flight Training Van Nuys Airport | Accelerated Flight School"}
         description={"Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."}
       />
       {/* ── Hero ──────────────────────────────────────────────── */}

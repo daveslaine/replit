@@ -258,7 +258,7 @@ export function FaqPage() {
 
   return (
     <div className="w-full">
-      <Seo title={"Flight Training FAQ | How Long, Costs, Soloing | Accelerated Flight School Van Nuys"} description={"Answers to common flight training questions: how long Private Pilot, Instrument, and Commercial take, what you need to solo, transferring from another school, medical requirements, and costs. Van Nuys Airport (KVNY). Call 323-332-0585."}>
+      <Seo title={"Flight Training FAQ | Costs, Soloing & Timing | Van Nuys"} description={"Flight training questions answered: how long training takes, solo requirements, medical, and costs at Van Nuys Airport (KVNY). Call 323-332-0585."}>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Seo>
 

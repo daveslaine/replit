@@ -108,8 +108,8 @@ export function InstructorsPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Flight Instructors Van Nuys Airport KVNY | CFI CFII Los Angeles | Accelerated Flight School"}
-        description={"Meet our CFI and CFII instructors at Van Nuys Airport. Reza S. and David T. offer structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."}
+        title={"Meet Our Flight Instructors | Van Nuys Airport KVNY"}
+        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">

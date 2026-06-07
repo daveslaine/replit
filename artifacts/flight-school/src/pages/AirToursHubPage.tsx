@@ -16,8 +16,8 @@ export function AirToursHubPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Los Angeles Air Tours & Sightseeing Flights | Discovery Flight Alternative — KVNY"}
-        description={"Looking for a Los Angeles air tour or sightseeing flight? Take the controls yourself on a real discovery flight from Van Nuys Airport (KVNY). $190 for 1, $270 for 2. Call 323-332-0585."}
+        title={"Los Angeles Air Tours & Sightseeing Flights | KVNY"}
+        description={"Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $190 for one person. Call 323-332-0585."}
       />
 
       {/* Hero */}

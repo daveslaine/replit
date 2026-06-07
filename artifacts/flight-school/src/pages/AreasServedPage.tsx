@@ -102,8 +102,8 @@ export function AreasServedPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Flight Training Across Los Angeles | Areas Served — Accelerated Flight School KVNY"}
-        description={"Accelerated Flight School at Van Nuys Airport (KVNY) serves student pilots across Los Angeles and Ventura counties. Browse flight training by neighborhood, certificate, and cost. Call 323-332-0585."}
+        title={"Flight Training Areas Served | Accelerated Flight School"}
+        description={"Serving student pilots across LA and Ventura counties from Van Nuys Airport (KVNY). Browse flight training by neighborhood and certificate. Call 323-332-0585."}
       />
 
       {/* Hero */}

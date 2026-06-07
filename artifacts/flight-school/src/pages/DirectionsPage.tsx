@@ -7,12 +7,8 @@ export function DirectionsPage() {
   return (
     <div className="w-full">
       <Seo
-        title={
-          "Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School"
-        }
-        description={
-          "Step-by-step directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585."
-        }
+        title={"Directions to Accelerated Flight School | Van Nuys KVNY"}
+        description={"Directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided on arrival. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-12">

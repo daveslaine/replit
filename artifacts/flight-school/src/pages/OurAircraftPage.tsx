@@ -62,8 +62,8 @@ export function OurAircraftPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Our Training Aircraft | Van Nuys Airport KVNY | Piper Cherokee Warrior II | Accelerated Flight School"}
-        description={"Train in a 1985 Piper PA28 Cherokee Warrior II N9172Y. IFR equipped, Garmin GNS 430, ADS-B. V-speeds, performance specs, and POH reference. $160/hr wet. Call 323-332-0585."}
+        title={"Training Aircraft | Van Nuys Airport KVNY | Accelerated Flight School"}
+        description={"Train in a 1985 Piper PA28 Cherokee Warrior II (N9172Y). IFR equipped, Garmin GNS 430, ADS-B. Full V-speeds and POH reference. $160/hr wet. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
