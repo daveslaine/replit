@@ -14,7 +14,7 @@ if (!template.includes("<!--app-html-->") || !template.includes("<!--app-head-->
   );
 }
 
-const { render, redirects } = await import(path.join(__dirname, "dist/server/entry-server.js"));
+const { render } = await import(path.join(__dirname, "dist/server/entry-server.js"));
 
 const sitemap = fs.readFileSync(path.join(__dirname, "public/sitemap.xml"), "utf-8");
 const routes = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)]
@@ -49,66 +49,6 @@ for (const route of uniqueRoutes) {
   }
 }
 
-// Write canonical redirect stubs for consolidated duplicate URLs.
-// Not in the sitemap; noindex + canonical + meta-refresh so crawlers consolidate
-// to the canonical page and any direct hit is forwarded client-side.
-let redirected = 0;
-for (const [from, to] of Object.entries(redirects ?? {})) {
-  const target = `/${to}`;
-  const stub = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="canonical" href="${SITE_URL}${target}" />
-<meta name="robots" content="noindex, follow" />
-<meta http-equiv="refresh" content="0; url=${target}" />
-<title>Redirecting…</title>
-<script>window.location.replace(${JSON.stringify(target)});</script>
-</head>
-<body>This page has moved to <a href="${target}">${target}</a>.</body>
-</html>
-`;
-  const outPath = path.join(distPublic, `${from}.html`);
-  fs.mkdirSync(path.dirname(outPath), { recursive: true });
-  fs.writeFileSync(outPath, stub);
-  redirected++;
-}
-
-// Client-only alias routes: valid pages that are intentionally NOT in the
-// sitemap (their canonical points to the indexed URL via Seo's ALIAS_CANONICAL).
-// Prerender them so they serve a 200 static file; the Express server returns a
-// hard 404 for anything not prerendered, so these must exist on disk.
-// Keep in sync with ALIAS_CANONICAL in src/components/Seo.tsx.
-const aliasRoutes = [
-  "/commercial-pilot-training",
-  "/cfi-training",
-  "/airline-pilot-path",
-  "/discovery-flight",
-  "/flight-training-faq-van-nuys",
-  "/pricing",
-  "/our-aircraft",
-  "/instructors",
-  "/contact",
-];
-let aliases = 0;
-for (const route of aliasRoutes) {
-  if (uniqueRoutes.includes(route)) continue;
-  try {
-    const { appHtml, head } = render(route);
-    const html = template
-      .replace("<!--app-head-->", head)
-      .replace("<!--app-html-->", appHtml);
-    const outPath = path.join(distPublic, `${route.replace(/^\//, "")}.html`);
-    fs.mkdirSync(path.dirname(outPath), { recursive: true });
-    fs.writeFileSync(outPath, html);
-    aliases++;
-  } catch (err) {
-    failed++;
-    console.error(`[prerender] FAILED alias ${route}:`, err?.message || err);
-  }
-}
-
 // 404 page: served by the Express server with an HTTP 404 status for any route
 // that isn't a prerendered file (avoids soft-404s that hurt SEO).
 try {
@@ -123,7 +63,7 @@ try {
 }
 
 console.log(
-  `[prerender] Done: ${ok} pages, ${aliases} aliases, ${redirected} redirect stubs, 404 page written, ${failed} failed.`,
+  `[prerender] Done: ${ok} pages, 404 page written, ${failed} failed.`,
 );
 if (failed > 0) {
   process.exitCode = 1;

@@ -1,0 +1,26 @@
+# Accelerated Flight School
+
+> Accelerated Flight School is an FAA-certified Part 141 and Part 61 flight school based at Van Nuys Airport (KVNY) in Los Angeles, California. The school offers private pilot, instrument rating, commercial pilot, CFI, and airline-path training at competitive prices, plus introductory discovery flights and sightseeing air tours over Los Angeles.
+
+## Key Pages
+
+- [Home](https://acceleratedflightschool.net/): Overview of the school, programs, and how to get started.
+- [Discovery Flight](https://acceleratedflightschool.net/discovery-flight-van-nuys): Book an introductory flight lesson over Van Nuys and Los Angeles.
+- [Pricing](https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-pricing): Full pricing for aircraft rentals and training programs.
+- [Private Pilot License](https://acceleratedflightschool.net/private-pilot-van-nuys): PPL training program details, requirements, and timeline.
+- [Instrument Rating](https://acceleratedflightschool.net/instrument-rating-van-nuys): IFR rating program for instrument-qualified flight.
+- [Commercial Pilot Training](https://acceleratedflightschool.net/commercial-pilot-training-van-nuys): CPL program for students pursuing a professional pilot career.
+- [CFI Training](https://acceleratedflightschool.net/cfi-training-van-nuys): Certified Flight Instructor certificate program.
+- [Airline Pilot Path](https://acceleratedflightschool.net/airline-pilot-path-van-nuys): End-to-end pathway from zero hours to airline first officer.
+- [FAQ](https://acceleratedflightschool.net/faq): Common questions about learning to fly, cost, and timelines.
+- [Contact](https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-contact): Phone, email, and address for the school.
+- [About Us](https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-about): School history, mission, and instructors.
+- [Our Aircraft](https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-aircraft): Fleet of training aircraft available for rent and instruction.
+- [Instructors](https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-instructors): Meet the flight instructor team.
+- [Air Tours Hub](https://acceleratedflightschool.net/los-angeles-air-tours): Scenic sightseeing flights over Los Angeles and surrounding areas.
+- [Areas Served](https://acceleratedflightschool.net/flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny): Cities and communities served within the greater Los Angeles area.
+- [Deals & Coupons](https://acceleratedflightschool.net/van-nuys-accelerated-flight-school-deals-coupons): Current promotions and flight training discounts.
+
+## Sitemap
+
+https://acceleratedflightschool.net/sitemap.xml

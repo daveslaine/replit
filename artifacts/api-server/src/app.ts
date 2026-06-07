@@ -43,6 +43,37 @@ app.use(
   }),
 );
 
+// Short alias paths → their canonical indexed URLs (301 permanent).
+// These are shorter/memorable URLs that were never the canonical form;
+// server-level redirects ensure crawlers and social bots see a real 301
+// instead of a duplicate prerendered page with only a canonical hint.
+const ALIAS_REDIRECTS: Record<string, string> = {
+  "/commercial-pilot-training": "/commercial-pilot-training-van-nuys",
+  "/cfi-training": "/cfi-training-van-nuys",
+  "/airline-pilot-path": "/airline-pilot-path-van-nuys",
+  "/discovery-flight": "/discovery-flight-van-nuys",
+  "/flight-training-faq-van-nuys": "/faq",
+  "/pricing": "/van-nuys-accelerated-flight-school-pricing",
+  "/our-aircraft": "/van-nuys-accelerated-flight-school-aircraft",
+  "/instructors": "/van-nuys-accelerated-flight-school-instructors",
+  "/contact": "/van-nuys-accelerated-flight-school-contact",
+};
+
+// Legacy slug consolidations (old landing-page slugs → canonical slug).
+// Slugs are path segments without a leading slash.
+const LEGACY_REDIRECTS: Record<string, string> = {
+  "best-flight-school-van-nuys-accelerated-flight-school-kvny":
+    "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny",
+  "best-flight-school-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
+    "/best-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny",
+  "private-pilot-license-cost-accelerated-flight-school-van-nuys-airport-kvny":
+    "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
+  "private-pilot-license-cost-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
+    "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
+  "discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
+    "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny",
+};
+
 app.use((req, res, next) => {
   // Canonical redirects apply only to the marketing site, never to the API.
   // Redirecting API requests (esp. non-GET) would break clients.
@@ -65,6 +96,25 @@ app.use((req, res, next) => {
     const queryIndex = req.originalUrl.indexOf("?");
     const query = queryIndex >= 0 ? req.originalUrl.slice(queryIndex) : "";
     res.redirect(301, `${cleanPath}${query}`);
+    return;
+  }
+
+  // Alias redirects: short memorable paths → canonical indexed paths.
+  const aliasTarget = ALIAS_REDIRECTS[req.path];
+  if (aliasTarget) {
+    const queryIndex = req.originalUrl.indexOf("?");
+    const query = queryIndex >= 0 ? req.originalUrl.slice(queryIndex) : "";
+    res.redirect(301, `${aliasTarget}${query}`);
+    return;
+  }
+
+  // Legacy redirects: old slug consolidations.
+  const slug = req.path.replace(/^\//, "");
+  const legacyTarget = LEGACY_REDIRECTS[slug];
+  if (legacyTarget) {
+    const queryIndex = req.originalUrl.indexOf("?");
+    const query = queryIndex >= 0 ? req.originalUrl.slice(queryIndex) : "";
+    res.redirect(301, `${legacyTarget}${query}`);
     return;
   }
 
