@@ -29,9 +29,6 @@ function InstructorCard({ inst }: { inst: Instructor }) {
     ? `/api/storage${inst.photoObjectPath}`
     : STATIC_PHOTOS[inst.name] ?? null;
 
-  const phone = inst.phone ?? "";
-  const phoneHref = "tel:" + phone.replace(/[^0-9]/g, "");
-
   return (
     <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
       <div className="w-1/2 mx-auto mt-6 aspect-[3/4] overflow-hidden rounded-xl bg-slate-100">
@@ -54,15 +51,6 @@ function InstructorCard({ inst }: { inst: Instructor }) {
             <h2 className="text-2xl font-bold text-primary">{inst.name}</h2>
             {inst.title && (
               <p className="text-secondary font-medium">{inst.title}</p>
-            )}
-            {phone && (
-              <a
-                href={phoneHref}
-                className="inline-flex items-center gap-1.5 text-slate-500 hover:text-primary transition-colors text-sm mt-1"
-              >
-                <Phone className="w-3.5 h-3.5" />
-                {phone}
-              </a>
             )}
           </div>
           <div className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-center">
