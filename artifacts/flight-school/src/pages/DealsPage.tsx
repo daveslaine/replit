@@ -54,9 +54,12 @@ export function DealsPage() {
                 </div>
               </div>
               <p className="text-5xl font-bold text-amber-600 mb-1">$20 <span className="text-xl font-normal text-slate-500">off</span></p>
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-4">
                 <span className="text-xl text-slate-400 line-through">$190</span>
                 <span className="text-2xl font-bold text-secondary">$170</span>
+                <span className="text-sm font-normal text-slate-400">
+                  Bring a passenger — $230 with 1 passenger
+                </span>
               </div>
               <p className="text-slate-600 text-sm mb-5 leading-relaxed">
                 Experience 1.5 hours of real flight time including zero-g maneuvers over Van Nuys.
