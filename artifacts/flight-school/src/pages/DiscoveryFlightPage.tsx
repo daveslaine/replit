@@ -99,7 +99,7 @@ export function DiscoveryFlightPage() {
           <p className="text-xl text-primary-foreground/90 leading-relaxed mb-4 max-w-2xl">
             A 1.5-hour introductory flight with a <AviationTerm term="CFI" /> — 50% longer than
             most schools offer, for less money. No experience required. You will actually take
-            the controls of N9172Y over the San Fernando Valley and out along the beautiful Malibu
+            the controls of our aircraft over the San Fernando Valley and out along the beautiful Malibu
             coastline, including fun zero-g style maneuvers.
           </p>
           <p className="text-3xl font-bold text-white mb-2">
@@ -171,7 +171,7 @@ export function DiscoveryFlightPage() {
               <Star className="w-8 h-8 text-secondary mx-auto mb-4" />
               <h3 className="font-bold text-white mb-2">You Fly the Plane</h3>
               <p className="text-sm text-primary-foreground/80 leading-relaxed">
-                You take the controls of N9172Y over the San Fernando Valley and the beautiful Malibu coastline. Real flying — not a simulator.
+                You take the controls of the aircraft over the San Fernando Valley and the beautiful Malibu coastline. Real flying — not a simulator.
               </p>
             </div>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center">
@@ -197,7 +197,7 @@ export function DiscoveryFlightPage() {
               {[
                 "No aviation experience or knowledge required",
                 "1.5 hours total — pre-flight briefing, flight, and debrief",
-                "You fly N9172Y, the 1985 Piper PA-28 Warrior II",
+                "You fly our aircraft, either a Piper Warrior II or a Cessna 172",
                 "Scenic flight over the San Fernando Valley and the beautiful Malibu coastline",
                 "Fun zero-g style maneuvers included",
                 "50% more flight time than most other discovery flights",
@@ -221,15 +221,15 @@ export function DiscoveryFlightPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-4">The Aircraft — N9172Y</h2>
+              <h2 className="text-3xl font-bold text-primary mb-4">The Aircraft</h2>
               <p className="text-slate-600 leading-relaxed mb-4">
-                Your Discovery Flight takes place in our 1985 Piper PA-28 Cherokee Warrior II —
-                tail number N9172Y. A stable, well-maintained, beginner-friendly training aircraft
-                with leather seats, a Garmin GNS 430 GPS, and full IFR equipment.
+                Your Discovery Flight takes place in our Piper PA-28 Cherokee Warrior II
+                or a Cessna 172. Both are stable, well-maintained, beginner-friendly, and easy
+                to fly, with IFR-equipped GPS.
               </p>
               <div className="space-y-2 mb-6">
                 {[
-                  "1985 Piper PA-28 Cherokee Warrior II — N9172Y",
+                  "Piper PA-28 Cherokee Warrior II or Cessna 172",
                   "Leather seats, well-maintained",
                   "Garmin GNS 430 GPS navigation",
                   "Stable and forgiving to fly",
