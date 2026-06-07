@@ -99,7 +99,7 @@ export function AirTourPage() {
     serviceType: "Discovery Flight",
     provider: { "@id": `${SITE_URL}/#organization` },
     url: `${SITE_URL}/${slug}`,
-    image: page.photos[0]?.src ? `${SITE_URL}${page.photos[0].src}` : `${SITE_URL}/images/aircraft-exterior.png`,
+    image: page.photos[0]?.src ? `${SITE_URL}${page.photos[0].src}` : `${SITE_URL}/images/aircraft-exterior.jpg`,
     offers: [
       {
         "@type": "Offer",
@@ -142,7 +142,7 @@ export function AirTourPage() {
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
-        <div className="absolute inset-0 bg-[url('/images/aircraft-takeoff.png')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/aircraft-takeoff.jpg')] bg-cover bg-center opacity-20" />
         <div className="relative container mx-auto px-4 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-white/20">
             <MapPin className="w-3.5 h-3.5" />

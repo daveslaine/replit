@@ -44,7 +44,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "SoFi Stadium",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles skyline from the air at night" },
+      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles skyline from the air at night" },
     ],
     faqs: [
       {
@@ -87,7 +87,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "The Getty Center",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles skyline from the air at night" },
+      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles skyline from the air at night" },
     ],
     faqs: [
       {
@@ -130,7 +130,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "Santa Monica Pier",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles skyline lit up from the air" },
+      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles skyline lit up from the air" },
     ],
     faqs: [
       {
@@ -172,7 +172,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "Malibu coastline",
     ],
     photos: [
-      { src: "/images/malibu-coast-aerial.png", alt: "Southern California coastline from the air" },
+      { src: "/images/malibu-coast-aerial.webp", alt: "Southern California coastline from the air" },
     ],
     faqs: [
       {
@@ -218,7 +218,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "Pacific Coast Highway",
     ],
     photos: [
-      { src: "/images/malibu-coast-aerial.png", alt: "Malibu coastline from the air" },
+      { src: "/images/malibu-coast-aerial.webp", alt: "Malibu coastline from the air" },
     ],
     faqs: [
       {
@@ -260,7 +260,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "Downtown LA skyline",
     ],
     photos: [
-      { src: "/images/hollywood-sign-aerial.png", alt: "The Hollywood Sign from the air" },
+      { src: "/images/hollywood-sign-aerial.webp", alt: "The Hollywood Sign from the air" },
     ],
     faqs: [
       {
@@ -302,7 +302,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "Pacific coastline",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.png", alt: "Los Angeles basin from the air" },
+      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles basin from the air" },
     ],
     faqs: [
       {
@@ -344,7 +344,7 @@ export const airTourPages: AirTourPageConfig[] = [
       "Pacific coastline",
     ],
     photos: [
-      { src: "/images/catalina-aerial.png", alt: "Catalina Island from the air" },
+      { src: "/images/catalina-aerial.webp", alt: "Catalina Island from the air" },
     ],
     pricingNote:
       "The standard discovery flight is from Van Nuys and may include scenic LA/coastal views depending on conditions. Extended routes such as Catalina require separate planning, time, weather, fuel, and pricing.",

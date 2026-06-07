@@ -106,7 +106,7 @@ export function HomePage() {
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/wing-view-coast.jpeg"
+            src="/images/wing-view-coast.webp"
             alt="Southern California coastline seen from the wing of an Accelerated Flight School aircraft"
             className="w-full h-full object-cover object-center"
           />
@@ -457,7 +457,7 @@ export function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-md order-2 md:order-1">
               <img
-                src="/images/piper-cherokee.png"
+                src="/images/piper-cherokee.webp"
                 alt="Piper Cherokee cockpit panel and instruments at Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"

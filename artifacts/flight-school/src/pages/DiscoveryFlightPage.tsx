@@ -17,7 +17,7 @@ const serviceSchema = {
   serviceType: "Discovery Flight",
   provider: { "@id": `${SITE_URL}/#organization` },
   url: `${SITE_URL}/discovery-flight-van-nuys`,
-  image: `${SITE_URL}/images/aircraft-takeoff.png`,
+  image: `${SITE_URL}/images/aircraft-takeoff.jpg`,
   areaServed: "Los Angeles",
   serviceLocation: {
     "@type": "Airport",
@@ -82,7 +82,7 @@ export function DiscoveryFlightPage() {
       <section className="relative bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/aircraft-takeoff.png"
+            src="/images/aircraft-takeoff.jpg"
             alt="N9172Y Piper Cherokee taking off from Van Nuys Airport"
             className="w-full h-full object-cover opacity-40"
           />
@@ -250,7 +250,7 @@ export function DiscoveryFlightPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md">
               <img
-                src="/images/aircraft-takeoff.png"
+                src="/images/aircraft-takeoff.jpg"
                 alt="N9172Y Piper Cherokee Warrior II taking off from Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"

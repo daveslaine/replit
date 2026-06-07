@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "wouter";
 
 const SITE_URL = "https://acceleratedflightschool.net";
-const OG_IMAGE = `${SITE_URL}/images/aircraft-exterior.png`;
+const OG_IMAGE = `${SITE_URL}/images/aircraft-exterior.jpg`;
 
 // Client-only alias routes (not in the sitemap) → the canonical, indexed URL.
 // Keeps canonical/og:url correct when a non-canonical alias is hit directly.
