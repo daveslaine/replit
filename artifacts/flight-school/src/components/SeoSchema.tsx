@@ -50,8 +50,18 @@ const organizationSchema = {
   ] as string[],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: "Accelerated Flight School",
+  inLanguage: "en-US",
+  publisher: { "@id": `${SITE_URL}/#organization` },
+};
+
 /**
- * Global, route-independent structured data (Organization / LocalBusiness).
+ * Global, route-independent structured data (Organization / LocalBusiness + WebSite).
  * Per-route head tags (title, description, canonical, Open Graph, Twitter) live
  * in the <Seo> component rendered by each page.
  */
@@ -59,6 +69,7 @@ export function SeoSchema() {
   return (
     <Helmet>
       <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+      <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
     </Helmet>
   );
 }

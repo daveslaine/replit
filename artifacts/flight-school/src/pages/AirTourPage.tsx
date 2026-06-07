@@ -17,13 +17,16 @@ import { getAirTourPage } from "@/data/airTourPages";
 import { getAirTourUnique } from "@/data/airTourUnique";
 
 
-function FAQItem({ q, a }: { q: string; a: string }) {
+function FAQItem({ q, a, id }: { q: string; a: string; id: string }) {
   const [open, setOpen] = React.useState(false);
+  const panelId = `${id}-panel`;
   return (
     <div className="border border-slate-200 rounded-xl overflow-hidden">
       <button
         className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors"
         onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls={panelId}
       >
         <span>{q}</span>
         {open ? (
@@ -32,11 +35,12 @@ function FAQItem({ q, a }: { q: string; a: string }) {
           <ChevronDown className="w-4 h-4 shrink-0 text-slate-400" />
         )}
       </button>
-      {open && (
-        <div className="px-5 pb-4 text-slate-600 leading-relaxed text-sm border-t border-slate-100 pt-3">
-          {a}
-        </div>
-      )}
+      <div
+        id={panelId}
+        className={`px-5 pb-4 text-slate-600 leading-relaxed text-sm border-t border-slate-100 pt-3${open ? "" : " hidden"}`}
+      >
+        {a}
+      </div>
     </div>
   );
 }
@@ -84,12 +88,57 @@ export function AirTourPage() {
     );
   }
 
+  const SITE_URL = "https://acceleratedflightschool.net";
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}/${slug}#service`,
+    name: page.h1,
+    description: page.metaDescription,
+    serviceType: "Discovery Flight",
+    provider: { "@id": `${SITE_URL}/#organization` },
+    url: `${SITE_URL}/${slug}`,
+    image: page.photos[0]?.src ? `${SITE_URL}${page.photos[0].src}` : `${SITE_URL}/images/aircraft-exterior.png`,
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Discovery Flight — 1 Person",
+        price: "190",
+        priceCurrency: "USD",
+        description: "Discovery flight for one person. Aircraft and CFI instructor included.",
+        seller: { "@id": `${SITE_URL}/#organization` },
+      },
+      {
+        "@type": "Offer",
+        name: "Discovery Flight — 2 People",
+        price: "270",
+        priceCurrency: "USD",
+        description: "Discovery flight for two people (subject to aircraft weight limitations). Aircraft and CFI instructor included.",
+        seller: { "@id": `${SITE_URL}/#organization` },
+      },
+    ],
+  };
+
+  const faqSchema = page.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <div className="w-full">
       <Seo
         title={page.metaTitle}
         description={page.metaDescription}
-      />
+      >
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+      </Seo>
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
@@ -288,7 +337,7 @@ export function AirTourPage() {
           </h2>
           <div className="space-y-3">
             {page.faqs.map((faq, i) => (
-              <FAQItem key={i} q={faq.q} a={faq.a} />
+              <FAQItem key={i} id={`at-faq-${i}`} q={faq.q} a={faq.a} />
             ))}
           </div>
         </div>
