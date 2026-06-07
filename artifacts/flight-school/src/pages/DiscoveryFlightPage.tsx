@@ -102,7 +102,12 @@ export function DiscoveryFlightPage() {
             the controls of N9172Y over the San Fernando Valley and out along the beautiful Malibu
             coastline, including fun zero-g style maneuvers.
           </p>
-          <p className="text-3xl font-bold text-white mb-2">$190</p>
+          <p className="text-3xl font-bold text-white mb-2">
+            $190
+            <span className="ml-3 text-base font-normal text-white/50">
+              Bring a passenger — $250 with 1 passenger
+            </span>
+          </p>
           <p className="text-sm text-white/60 mb-8">1.5 hours — aircraft + instructor included</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="tel:323-332-0585" data-testid="link-discovery-call">
