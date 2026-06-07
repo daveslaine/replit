@@ -75,7 +75,56 @@ for (const [from, to] of Object.entries(redirects ?? {})) {
   redirected++;
 }
 
-console.log(`[prerender] Done: ${ok} pages written, ${redirected} redirect stubs, ${failed} failed.`);
+// Client-only alias routes: valid pages that are intentionally NOT in the
+// sitemap (their canonical points to the indexed URL via Seo's ALIAS_CANONICAL).
+// Prerender them so they serve a 200 static file; the Express server returns a
+// hard 404 for anything not prerendered, so these must exist on disk.
+// Keep in sync with ALIAS_CANONICAL in src/components/Seo.tsx.
+const aliasRoutes = [
+  "/commercial-pilot-training",
+  "/cfi-training",
+  "/airline-pilot-path",
+  "/discovery-flight",
+  "/flight-training-faq-van-nuys",
+  "/pricing",
+  "/our-aircraft",
+  "/instructors",
+  "/contact",
+];
+let aliases = 0;
+for (const route of aliasRoutes) {
+  if (uniqueRoutes.includes(route)) continue;
+  try {
+    const { appHtml, head } = render(route);
+    const html = template
+      .replace("<!--app-head-->", head)
+      .replace("<!--app-html-->", appHtml);
+    const outPath = path.join(distPublic, `${route.replace(/^\//, "")}.html`);
+    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+    fs.writeFileSync(outPath, html);
+    aliases++;
+  } catch (err) {
+    failed++;
+    console.error(`[prerender] FAILED alias ${route}:`, err?.message || err);
+  }
+}
+
+// 404 page: served by the Express server with an HTTP 404 status for any route
+// that isn't a prerendered file (avoids soft-404s that hurt SEO).
+try {
+  const { appHtml, head } = render("/404");
+  const html = template
+    .replace("<!--app-head-->", head)
+    .replace("<!--app-html-->", appHtml);
+  fs.writeFileSync(path.join(distPublic, "404.html"), html);
+} catch (err) {
+  failed++;
+  console.error("[prerender] FAILED 404 page:", err?.message || err);
+}
+
+console.log(
+  `[prerender] Done: ${ok} pages, ${aliases} aliases, ${redirected} redirect stubs, 404 page written, ${failed} failed.`,
+);
 if (failed > 0) {
   process.exitCode = 1;
 }

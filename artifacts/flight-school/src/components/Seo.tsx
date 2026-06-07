@@ -24,6 +24,8 @@ type SeoProps = {
   description: string;
   /** Optional override for the canonical/og:url path; defaults to the current route. */
   canonical?: string;
+  /** Robots directive; defaults to indexable. Pass "noindex, follow" for 404/utility pages. */
+  robots?: string;
   children?: React.ReactNode;
 };
 
@@ -32,7 +34,13 @@ type SeoProps = {
  * and route-specific Open Graph + Twitter tags so social/search previews match
  * the actual page instead of falling back to homepage values.
  */
-export function Seo({ title, description, canonical, children }: SeoProps) {
+export function Seo({
+  title,
+  description,
+  canonical,
+  robots = "index, follow",
+  children,
+}: SeoProps) {
   const [rawLocation] = useLocation();
   const normalized =
     rawLocation && rawLocation !== "/" ? rawLocation.replace(/\/+$/, "") : "/";
@@ -44,7 +52,7 @@ export function Seo({ title, description, canonical, children }: SeoProps) {
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={robots} />
       <link rel="canonical" href={canonicalUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
