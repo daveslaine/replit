@@ -3,6 +3,8 @@ modules = ["nodejs-24", "python-3.11", "postgresql-16"]
 [deployment]
 router = "application"
 deploymentTarget = "autoscale"
+build = "pnpm run build"
+run = "pnpm --filter @workspace/api-server run start"
 
 [deployment.postBuild]
 args = ["pnpm", "store", "prune"]
@@ -21,6 +23,10 @@ timeoutMs = 20000
 
 [nix]
 channel = "stable-25_05"
+
+[[ports]]
+localPort = 5099
+externalPort = 3001
 
 [[ports]]
 localPort = 8080
