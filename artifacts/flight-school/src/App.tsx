@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { Switch, Route, Router as WouterRouter, useLocation, Redirect } from "wouter";
+import {
+  Switch,
+  Route,
+  Router as WouterRouter,
+  useLocation,
+  Redirect,
+} from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
@@ -37,6 +43,7 @@ import { AreasServedPage } from "@/pages/AreasServedPage";
 import { AirToursHubPage } from "@/pages/AirToursHubPage";
 import { redirects } from "@/data/redirects";
 import { SeoSchema } from "@/components/SeoSchema";
+import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 
 const queryClient = new QueryClient();
 
@@ -73,34 +80,85 @@ function PublicRoutes() {
     <Layout>
       <Switch>
         <Route path="/" component={HomePage} />
-        <Route path="/cheapest-flight-school-van-nuys-ca" component={CheapestPage} />
-        <Route path="/low-cost-flight-school-van-nuys-ca" component={LowCostPage} />
+        <Route
+          path="/cheapest-flight-school-van-nuys-ca"
+          component={CheapestPage}
+        />
+        <Route
+          path="/low-cost-flight-school-van-nuys-ca"
+          component={LowCostPage}
+        />
         <Route path="/private-pilot-van-nuys" component={PrivatePilotPage} />
-        <Route path="/instrument-rating-van-nuys" component={InstrumentRatingPage} />
-        <Route path="/commercial-pilot-training-van-nuys" component={CommercialPilotPage} />
-        <Route path="/commercial-pilot-training" component={CommercialPilotPage} />
-        <Route path="/commercial-pilot-multi-engine-add-on-van-nuys-flight-training" component={CommercialMultiEnginePage} />
+        <Route
+          path="/instrument-rating-van-nuys"
+          component={InstrumentRatingPage}
+        />
+        <Route
+          path="/commercial-pilot-training-van-nuys"
+          component={CommercialPilotPage}
+        />
+        <Route
+          path="/commercial-pilot-training"
+          component={CommercialPilotPage}
+        />
+        <Route
+          path="/commercial-pilot-multi-engine-add-on-van-nuys-flight-training"
+          component={CommercialMultiEnginePage}
+        />
         <Route path="/cfi-training-van-nuys" component={CfiTrainingPage} />
         <Route path="/cfi-training" component={CfiTrainingPage} />
-        <Route path="/airline-pilot-path-van-nuys" component={AirlinePathPage} />
+        <Route
+          path="/airline-pilot-path-van-nuys"
+          component={AirlinePathPage}
+        />
         <Route path="/airline-pilot-path" component={AirlinePathPage} />
         <Route path="/our-aircraft" component={OurAircraftPage} />
         <Route path="/instructors" component={InstructorsPage} />
         <Route path="/pricing" component={PricingPage} />
         <Route path="/contact" component={ContactPage} />
-        <Route path="/discovery-flight-van-nuys" component={DiscoveryFlightPage} />
+        <Route
+          path="/discovery-flight-van-nuys"
+          component={DiscoveryFlightPage}
+        />
         <Route path="/discovery-flight" component={DiscoveryFlightPage} />
-        <Route path="/van-nuys-accelerated-flight-school-deals-coupons" component={DealsPage} />
-        <Route path="/van-nuys-accelerated-flight-school-pricing" component={PricingPage} />
-        <Route path="/van-nuys-accelerated-flight-school-aircraft" component={OurAircraftPage} />
-        <Route path="/van-nuys-accelerated-flight-school-instructors" component={InstructorsPage} />
-        <Route path="/van-nuys-accelerated-flight-school-contact" component={ContactPage} />
-        <Route path="/van-nuys-accelerated-flight-school-about" component={AboutUsPage} />
-        <Route path="/van-nuys-accelerated-flight-school-directions" component={DirectionsPage} />
+        <Route
+          path="/van-nuys-accelerated-flight-school-deals-coupons"
+          component={DealsPage}
+        />
+        <Route
+          path="/van-nuys-accelerated-flight-school-pricing"
+          component={PricingPage}
+        />
+        <Route
+          path="/van-nuys-accelerated-flight-school-aircraft"
+          component={OurAircraftPage}
+        />
+        <Route
+          path="/van-nuys-accelerated-flight-school-instructors"
+          component={InstructorsPage}
+        />
+        <Route
+          path="/van-nuys-accelerated-flight-school-contact"
+          component={ContactPage}
+        />
+        <Route
+          path="/van-nuys-accelerated-flight-school-about"
+          component={AboutUsPage}
+        />
+        <Route
+          path="/van-nuys-accelerated-flight-school-directions"
+          component={DirectionsPage}
+        />
         <Route path="/faq" component={FaqPage} />
         <Route path="/flight-training-faq-van-nuys" component={FaqPage} />
-        <Route path="/flight-school-locations-los-angeles" component={AreasServedPage} />
-        <Route path="/los-angeles-air-tours-sightseeing-flights" component={AirToursHubPage} />
+        <Route
+          path="/flight-school-locations-los-angeles"
+          component={AreasServedPage}
+        />
+        <Route
+          path="/los-angeles-air-tours-sightseeing-flights"
+          component={AirToursHubPage}
+        />
         <Route component={LandingOrNotFound} />
       </Switch>
     </Layout>
@@ -121,18 +179,25 @@ function AppRouter() {
   if (isAdmin) return <AdminRoot />;
   return (
     <>
+      <AnalyticsTracker />
       <ScrollToTop />
       <PublicRoutes />
     </>
   );
 }
 
-function App({ ssrPath, helmetContext }: { ssrPath?: string; helmetContext?: object } = {}) {
+function App({
+  ssrPath,
+  helmetContext,
+}: { ssrPath?: string; helmetContext?: object } = {}) {
   return (
     <HelmetProvider context={helmetContext}>
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <WouterRouter base={import.meta.env.BASE_URL?.replace(/\/$/, "") || ""} ssrPath={ssrPath}>
+          <WouterRouter
+            base={import.meta.env.BASE_URL?.replace(/\/$/, "") || ""}
+            ssrPath={ssrPath}
+          >
             <AppRouter />
           </WouterRouter>
           <Toaster />
