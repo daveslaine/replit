@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Seo } from "@/components/Seo";
 import {
   Phone,
@@ -29,6 +29,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useSubmitContact } from "@workspace/api-client-react";
+import { trackLeadFormSubmit } from "@/lib/analytics";
 
 const formSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -70,11 +71,19 @@ export function ContactPage() {
     submitContact.mutate({ data });
   };
 
+  useEffect(() => {
+    if (submitContact.isSuccess) {
+      trackLeadFormSubmit(form.getValues("trainingGoal"));
+    }
+  }, [form, submitContact.isSuccess]);
+
   return (
     <div className="w-full">
       <Seo
         title={"Contact Accelerated Flight School | Van Nuys Airport"}
-        description={"Call or text 323-332-0585 with questions about flight training, pricing, or to get started at Van Nuys Airport (KVNY). We'll walk you through everything."}
+        description={
+          "Call or text 323-332-0585 with questions about flight training, pricing, or to get started at Van Nuys Airport (KVNY). We'll walk you through everything."
+        }
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
