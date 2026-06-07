@@ -3,8 +3,14 @@ import { Seo } from "@/components/Seo";
 import { Link, useLocation } from "wouter";
 import { Phone, MessageSquare, CheckCircle2, Plane, MapPin, DollarSign, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getLandingPage } from "@/data/landingPages";
+import { getLandingPage, landingPages } from "@/data/landingPages";
 import { getLandingUnique } from "@/data/landingUnique";
+
+const landingPageSlugs = new Set(landingPages.map((p) => p.slug));
+
+function areaToSlug(area: string): string {
+  return `flight-school-near-${area.toLowerCase().replace(/\s+/g, "-")}-accelerated-flight-school-van-nuys-kvny`;
+}
 
 
 function FAQItem({ q, a }: { q: string; a: string }) {
@@ -107,11 +113,23 @@ export function LandingPage() {
           {page.nearbyAreas.length > 0 && (
             <div className="mt-8 flex flex-wrap gap-2">
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider w-full mb-1">Also serving students from:</span>
-              {page.nearbyAreas.map((area) => (
-                <span key={area} className="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">
-                  <MapPin className="w-3 h-3 text-primary" />{area}
-                </span>
-              ))}
+              {page.nearbyAreas.map((area) => {
+                const slug = areaToSlug(area);
+                if (landingPageSlugs.has(slug)) {
+                  return (
+                    <Link key={area} href={`/${slug}`}>
+                      <span className="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer">
+                        <MapPin className="w-3 h-3 text-primary" />{area}
+                      </span>
+                    </Link>
+                  );
+                }
+                return (
+                  <span key={area} className="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">
+                    <MapPin className="w-3 h-3 text-primary" />{area}
+                  </span>
+                );
+              })}
             </div>
           )}
         </div>
