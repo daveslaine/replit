@@ -98,8 +98,8 @@ export function CheapestPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Cheapest Flight School Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School"}
-        description={"The cheapest flight school in Van Nuys CA — with real pricing. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Structured, ACS-based. Call 323-332-0585."}
+        title={"Cheapest Flight School Van Nuys Airport | Real Pricing"}
+        description={"Affordable flight training in Van Nuys. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $160/hr wet. Call 323-332-0585."}
       />
 
       {/* Hero */}

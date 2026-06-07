@@ -16,13 +16,13 @@ export function AirToursHubPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Los Angeles Air Tours & Sightseeing Flights | Discovery Flight Alternative — KVNY"}
-        description={"Looking for a Los Angeles air tour or sightseeing flight? Take the controls yourself on a real discovery flight from Van Nuys Airport (KVNY). $190 for 1, $270 for 2. Call 323-332-0585."}
+        title={"Los Angeles Air Tours & Sightseeing Flights | KVNY"}
+        description={"Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $190 for one person. Call 323-332-0585."}
       />
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
-        <div className="absolute inset-0 bg-[url('/images/downtown-la-night-aerial.png')] bg-cover bg-center opacity-25" />
+        <div className="absolute inset-0 bg-[url('/images/downtown-la-night-aerial.webp')] bg-cover bg-center opacity-25" />
         <div className="relative container mx-auto px-4 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-white/20">
             <Camera className="w-3.5 h-3.5" />

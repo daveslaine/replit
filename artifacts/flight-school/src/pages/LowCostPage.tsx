@@ -88,8 +88,8 @@ export function LowCostPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Low Cost Flight Training Van Nuys Airport KVNY | Real Pricing | Accelerated Flight School"}
-        description={"Low-cost flight training at Van Nuys Airport (KVNY). Aircraft $160/hr wet. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. High-quality ACS instruction. Call 323-332-0585."}
+        title={"Low-Cost Flight Training Van Nuys | Accelerated Flight School"}
+        description={"Low-cost flight training at Van Nuys Airport. Aircraft $160/hr wet. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Call 323-332-0585."}
       />
 
       {/* Hero */}

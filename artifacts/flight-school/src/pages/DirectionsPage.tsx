@@ -7,12 +7,8 @@ export function DirectionsPage() {
   return (
     <div className="w-full">
       <Seo
-        title={
-          "Directions to Our Office | Van Nuys Airport KVNY | Accelerated Flight School"
-        }
-        description={
-          "Step-by-step directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided upon arrival. Call 323-332-0585."
-        }
+        title={"Directions to Accelerated Flight School | Van Nuys KVNY"}
+        description={"Directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided on arrival. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-12">
@@ -58,7 +54,7 @@ export function DirectionsPage() {
           {/* Photo */}
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm mb-10">
             <img
-              src="/images/directions-entrance.png"
+              src="/images/directions-entrance.webp"
               alt="Entrance view at 7910 Balboa Blvd Van Nuys Airport — red gate on left near Foxtrot Hangars, flight school building on right"
               className="w-full object-cover"
             />

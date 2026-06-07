@@ -9,7 +9,7 @@ const SEED_LOCK_ID = 918_469;
 const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
   {
     name: "Reza S.",
-    title: "Owner & Instructor",
+    title: "",
     phone: "(310) 490-0402",
     bio: null,
     teachingPhilosophy:
@@ -19,7 +19,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
     certifications: ["Commercial Multi-Engine", "CFI", "CFII"],
     photoObjectPath: null,
     photoPosition: "top",
-    sortOrder: 0,
+    sortOrder: 1,
     active: true,
   },
   {
@@ -34,7 +34,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
     certifications: ["Commercial Pilot", "CFI", "CFII"],
     photoObjectPath: null,
     photoPosition: "top",
-    sortOrder: 1,
+    sortOrder: 0,
     active: true,
   },
 ];
@@ -79,5 +79,49 @@ export async function seedInstructorsIfEmpty(): Promise<void> {
     });
   } catch (err) {
     logger.error({ err }, "Failed to seed default instructors");
+  }
+}
+
+const FIX_KEY = "instructors_fix_owner_order_v1";
+const FIX_LOCK_ID = 918_470;
+
+/**
+ * One-time content correction applied to databases that were already seeded
+ * before these editorial decisions were made:
+ * - Reza S. should display without an "Owner" title (just his name).
+ * - David T. should appear first (left), Reza S. second (right).
+ *
+ * Runs exactly once per database (recorded in `seed_history` under FIX_KEY),
+ * guarded by an advisory lock so concurrent Autoscale instances don't race.
+ * Because it runs only once, later admin edits in the panel are never clobbered.
+ */
+export async function applyInstructorContentFixes(): Promise<void> {
+  try {
+    await db.transaction(async (tx) => {
+      await tx.execute(sql`SELECT pg_advisory_xact_lock(${FIX_LOCK_ID})`);
+
+      const already = await tx
+        .select({ key: seedHistoryTable.key })
+        .from(seedHistoryTable)
+        .where(sql`${seedHistoryTable.key} = ${FIX_KEY}`)
+        .limit(1);
+      if (already.length > 0) {
+        return;
+      }
+
+      await tx
+        .update(instructorsTable)
+        .set({ title: "", sortOrder: 1 })
+        .where(sql`${instructorsTable.name} = 'Reza S.'`);
+      await tx
+        .update(instructorsTable)
+        .set({ sortOrder: 0 })
+        .where(sql`${instructorsTable.name} = 'David T.'`);
+
+      await tx.insert(seedHistoryTable).values({ key: FIX_KEY });
+      logger.info("Applied one-time instructor content fixes");
+    });
+  } catch (err) {
+    logger.error({ err }, "Failed to apply instructor content fixes");
   }
 }

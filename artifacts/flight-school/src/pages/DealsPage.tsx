@@ -9,8 +9,8 @@ export function DealsPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Deals & Coupons | Van Nuys Airport KVNY | Save on Flight Training | Accelerated Flight School"}
-        description={"Current deals and coupons at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 323-332-0585."}
+        title={"Flight Training Deals & Coupons | Accelerated Flight School"}
+        description={"Current deals at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $155/hr + instructor $30/hr. Call 323-332-0585."}
       />
 
       {/* Hero */}

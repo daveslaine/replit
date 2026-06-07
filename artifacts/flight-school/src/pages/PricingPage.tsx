@@ -10,7 +10,7 @@ export function PricingPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Flight Training Pricing | Van Nuys Airport KVNY | Transparent Costs | Accelerated Flight School"}
+        title={"Flight Training Pricing | Transparent Costs | Van Nuys KVNY"}
         description={"Transparent flight training pricing at Van Nuys Airport. Aircraft $160/hr wet. Combined dual from $180/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585."}
       />
 

@@ -1,4 +1,6 @@
 - [Flight school email & DNS](flight-school-email-dns.md) — contact form sends via Zoho SMTP to fly@; inbox needs Zoho MX/SPF at GoDaddy (replace Mailgun); site is CSR SPA so meta isn't in view-source.
 - [Flight school SSG](flight-school-ssg.md) — build pre-renders 85 sitemap routes to static HTML; helmet@3 doesn't dedupe across instances so one tag = one source; internal links must use canonical URLs.
+- [Flight school prod serving](flight-school-prod-serving.md) — prod is a Node process (serve.mjs, no deps/no build) not static, so trailing-slash etc. get REAL 301s; redirect tables duplicated from app.ts, keep in sync.
+- [Flight school instructors](flight-school-instructors.md) — instructor cards are DB-driven via /api/instructors; editing seed won't update existing rows, use one-time seed_history backfill; Reza title intentionally "", David left/Reza right.
 - [Flight school logo assets](flight-school-logo-assets.md) — "transparent" logo PNGs often ship opaque white bg (run bg-removal); header needs white-glow for blue-on-navy at top, none when scrolled.
 - [Prod DB data not migrated on Publish](prod-db-data-seeding.md) — Publish migrates schema only, not table data; prod executeSql is read-only; use one-time concurrency-safe startup seed (advisory lock + seed_history flag) for defaults.

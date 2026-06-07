@@ -73,12 +73,8 @@ export function ContactPage() {
   return (
     <div className="w-full">
       <Seo
-        title={
-          "Contact Accelerated Flight School | Van Nuys Airport KVNY | 323-332-0585"
-        }
-        description={
-          "Contact Accelerated Flight School at Van Nuys Airport. Call or text 323-332-0585 for questions about flight training, pricing, or to get started. We'll explain everything."
-        }
+        title={"Contact Accelerated Flight School | Van Nuys Airport"}
+        description={"Call or text 323-332-0585 with questions about flight training, pricing, or to get started at Van Nuys Airport (KVNY). We'll walk you through everything."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">

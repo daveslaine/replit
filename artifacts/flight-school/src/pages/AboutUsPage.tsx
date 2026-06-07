@@ -9,8 +9,8 @@ export function AboutUsPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"About Accelerated Flight School | Van Nuys Airport KVNY | Experienced CFI Instructors Since 2000s"}
-        description={"Accelerated Flight School at Van Nuys Airport (KVNY). Experienced flight instructors flying since the early 2000s. Structured FAA ACS training. Affordable, transparent pricing. No upfront payment. Call 323-332-0585."}
+        title={"About Accelerated Flight School | Van Nuys Airport KVNY"}
+        description={"Experienced CFIs at Van Nuys Airport since the early 2000s. FAA ACS-structured training, transparent pricing, no upfront payment. Call 323-332-0585."}
       />
 
       {/* Hero */}

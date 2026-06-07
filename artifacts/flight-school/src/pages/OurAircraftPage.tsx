@@ -62,8 +62,8 @@ export function OurAircraftPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Our Training Aircraft | Van Nuys Airport KVNY | Piper Cherokee Warrior II | Accelerated Flight School"}
-        description={"Train in a 1985 Piper PA28 Cherokee Warrior II N9172Y. IFR equipped, Garmin GNS 430, ADS-B. V-speeds, performance specs, and POH reference. $160/hr wet. Call 323-332-0585."}
+        title={"Training Aircraft | Van Nuys Airport KVNY | Accelerated Flight School"}
+        description={"Train in a 1985 Piper PA28 Cherokee Warrior II (N9172Y). IFR equipped, Garmin GNS 430, ADS-B. Full V-speeds and POH reference. $160/hr wet. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -82,7 +82,7 @@ export function OurAircraftPage() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
               <div className="col-span-2 md:col-span-2">
                 <img
-                  src="/images/aircraft-exterior.png"
+                  src="/images/aircraft-exterior.jpg"
                   alt="N9172Y Piper Cherokee Warrior II in flight"
                   className="w-full h-56 md:h-72 object-cover"
                   loading="lazy"
@@ -90,7 +90,7 @@ export function OurAircraftPage() {
               </div>
               <div className="col-span-1 hidden md:block">
                 <img
-                  src="/images/aircraft-cockpit.jpg"
+                  src="/images/aircraft-cockpit.webp"
                   alt="Piper Cherokee cockpit and instrument panel"
                   className="w-full h-72 object-cover"
                   loading="lazy"

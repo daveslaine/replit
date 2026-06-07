@@ -20,8 +20,8 @@ export function AirlinePathPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Airline Pilot Path Van Nuys Airport KVNY | Zero to ATP Los Angeles | Accelerated Flight School"}
-        description={"Structured zero-to-airline path starting at Van Nuys Airport (KVNY), Los Angeles. Private Pilot → Instrument Rating → Commercial → Multi-Engine → CFI → ATP. Transparent costs, no upfront payment. Call 323-332-0585."}
+        title={"Airline Pilot Path Van Nuys | Accelerated Flight School"}
+        description={"Private → Instrument → Commercial → Multi-Engine → CFI → ATP, starting at Van Nuys Airport (KVNY). Transparent costs, no upfront payment. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">

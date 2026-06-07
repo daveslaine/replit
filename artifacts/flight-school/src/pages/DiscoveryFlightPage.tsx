@@ -5,19 +5,84 @@ import { Phone, CheckCircle2, Clock, MapPin, Star, MessageSquare, Zap } from "lu
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/discovery-flight-van-nuys#service`,
+  name: "Discovery Flight at Van Nuys Airport",
+  description:
+    "1.5-hour introductory discovery flight with a Certified Flight Instructor at Van Nuys Airport. Includes pre-flight briefing, hands-on flying over the San Fernando Valley and Malibu coastline, zero-g maneuvers, and a post-flight debrief.",
+  serviceType: "Discovery Flight",
+  provider: { "@id": `${SITE_URL}/#organization` },
+  url: `${SITE_URL}/discovery-flight-van-nuys`,
+  image: `${SITE_URL}/images/aircraft-takeoff.jpg`,
+  areaServed: "Los Angeles",
+  serviceLocation: {
+    "@type": "Airport",
+    name: "Van Nuys Airport",
+    iataCode: "VNY",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7910 Balboa Blvd",
+      addressLocality: "Van Nuys",
+      addressRegion: "CA",
+      postalCode: "91406",
+      addressCountry: "US",
+    },
+  },
+  offers: {
+    "@type": "Offer",
+    price: "190",
+    priceCurrency: "USD",
+    description: "1.5-hour discovery flight for one person. Aircraft and CFI instructor included.",
+    seller: { "@id": `${SITE_URL}/#organization` },
+  },
+};
+
+const trainingSteps = [
+  {
+    step: "Discovery Flight",
+    note: "$190 — today",
+    href: null,
+    highlight: true,
+  },
+  {
+    step: "Private Pilot",
+    note: "~$7,500–$12,500 est.",
+    href: "/private-pilot-van-nuys",
+    highlight: false,
+  },
+  {
+    step: "Instrument Rating",
+    note: "Add-on rating",
+    href: "/instrument-rating-van-nuys",
+    highlight: false,
+  },
+  {
+    step: "Commercial Pilot",
+    note: "Get paid to fly",
+    href: "/commercial-pilot-training-van-nuys",
+    highlight: false,
+  },
+];
+
 export function DiscoveryFlightPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Discovery Flight Van Nuys Airport KVNY | 1.5 Hours for $190 | Accelerated Flight School"}
-        description={"1.5-hour discovery flight at Van Nuys Airport for $190 — 50% longer than most schools. Fly N9172Y over the San Fernando Valley and the beautiful Malibu coastline, zero-g maneuvers included. Call 323-332-0585."}
-      />
+        title={"Discovery Flight Van Nuys | Accelerated Flight School"}
+        description={"1.5-hour discovery flight at Van Nuys Airport for $190. Fly over the San Fernando Valley and Malibu coastline, zero-g maneuvers included. Call 323-332-0585."}
+      >
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+      </Seo>
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/aircraft-takeoff.png"
+            src="/images/aircraft-takeoff.jpg"
             alt="N9172Y Piper Cherokee taking off from Van Nuys Airport"
             className="w-full h-full object-cover opacity-40"
           />
@@ -185,7 +250,7 @@ export function DiscoveryFlightPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md">
               <img
-                src="/images/aircraft-takeoff.png"
+                src="/images/aircraft-takeoff.jpg"
                 alt="N9172Y Piper Cherokee Warrior II taking off from Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"
@@ -204,27 +269,21 @@ export function DiscoveryFlightPage() {
             forward looks like from here.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-0">
-            {[
-              { step: "Discovery Flight", note: "$190 — today", highlight: true },
-              { step: "Private Pilot", note: "~$7,500–$12,500 est." },
-              { step: "Instrument Rating", note: "Add-on rating" },
-              { step: "Commercial Pilot", note: "Get paid to fly" },
-            ].map((item, i, arr) => (
+            {trainingSteps.map((item, i, arr) => (
               <React.Fragment key={i}>
-                <div
-                  className={`rounded-xl px-6 py-4 text-center min-w-[140px] ${
-                    item.highlight
-                      ? "bg-secondary text-white shadow-lg"
-                      : "bg-slate-50 border border-slate-200"
-                  }`}
-                >
-                  <p className={`font-bold text-sm ${item.highlight ? "text-white" : "text-primary"}`}>
-                    {item.step}
-                  </p>
-                  <p className={`text-xs mt-1 ${item.highlight ? "text-white/80" : "text-slate-500"}`}>
-                    {item.note}
-                  </p>
-                </div>
+                {item.href ? (
+                  <Link href={item.href}>
+                    <div className="rounded-xl px-6 py-4 text-center min-w-[140px] bg-slate-50 border border-slate-200 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer">
+                      <p className="font-bold text-sm text-primary">{item.step}</p>
+                      <p className="text-xs mt-1 text-slate-500">{item.note}</p>
+                    </div>
+                  </Link>
+                ) : (
+                  <div className="rounded-xl px-6 py-4 text-center min-w-[140px] bg-secondary text-white shadow-lg">
+                    <p className="font-bold text-sm text-white">{item.step}</p>
+                    <p className="text-xs mt-1 text-white/80">{item.note}</p>
+                  </div>
+                )}
                 {i < arr.length - 1 && (
                   <div className="text-slate-300 font-bold text-lg px-1 hidden md:block">→</div>
                 )}
@@ -237,6 +296,28 @@ export function DiscoveryFlightPage() {
           <p className="text-center text-sm text-slate-500 mt-6">
             Your Discovery Flight hours count toward your <AviationTerm term="Private Pilot" /> logbook.
           </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link href="/private-pilot-van-nuys">
+              <Button variant="outline" size="sm" className="font-semibold border-primary text-primary hover:bg-primary/5">
+                Private Pilot Training →
+              </Button>
+            </Link>
+            <Link href="/instrument-rating-van-nuys">
+              <Button variant="outline" size="sm" className="font-semibold border-primary text-primary hover:bg-primary/5">
+                Instrument Rating →
+              </Button>
+            </Link>
+            <Link href="/commercial-pilot-training-van-nuys">
+              <Button variant="outline" size="sm" className="font-semibold border-primary text-primary hover:bg-primary/5">
+                Commercial Pilot →
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button variant="outline" size="sm" className="font-semibold">
+                View All Pricing →
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -9,8 +9,8 @@ export function CfiTrainingPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"CFI Training Van Nuys Airport KVNY | Become a Flight Instructor Los Angeles | Accelerated Flight School"}
-        description={"Become a Certified Flight Instructor (CFI) at Van Nuys Airport (KVNY), Los Angeles. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, earn money flying. Call 323-332-0585."}
+        title={"CFI Training Van Nuys Airport | Become a Flight Instructor"}
+        description={"Become a CFI at Van Nuys Airport. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, and earn money flying. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">

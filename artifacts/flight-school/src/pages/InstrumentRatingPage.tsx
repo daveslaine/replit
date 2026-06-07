@@ -9,8 +9,8 @@ export function InstrumentRatingPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Instrument Rating Training Van Nuys Airport KVNY | IFR Los Angeles | Accelerated Flight School"}
-        description={"Earn your Instrument Rating at Van Nuys Airport (KVNY), Los Angeles. ~$8,500–$15,000 — well below the SoCal average of $16K–$23K. Safety pilot strategy explained. No upfront payment. Call 323-332-0585."}
+        title={"Instrument Rating Training Van Nuys | Accelerated Flight School"}
+        description={"Earn your Instrument Rating at Van Nuys Airport. ~$8,500–$15,000 — below SoCal's average. Safety pilot strategy included. No upfront payment. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">

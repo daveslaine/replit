@@ -20,7 +20,7 @@ interface Instructor {
 }
 
 const STATIC_PHOTOS: Record<string, string> = {
-  "Reza S.": "/images/instructor-reza.png",
+  "Reza S.": "/images/instructor-reza.webp",
   "David T.": "/images/instructor-david.jpg",
 };
 
@@ -34,7 +34,7 @@ function InstructorCard({ inst }: { inst: Instructor }) {
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
-      <div className="w-full aspect-[3/4] overflow-hidden bg-slate-100">
+      <div className="w-1/2 mx-auto mt-6 aspect-[3/4] overflow-hidden rounded-xl bg-slate-100">
         {photoSrc ? (
           <img
             src={photoSrc}
@@ -52,7 +52,9 @@ function InstructorCard({ inst }: { inst: Instructor }) {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h2 className="text-2xl font-bold text-primary">{inst.name}</h2>
-            <p className="text-secondary font-medium">{inst.title}</p>
+            {inst.title && (
+              <p className="text-secondary font-medium">{inst.title}</p>
+            )}
             {phone && (
               <a
                 href={phoneHref}
@@ -108,8 +110,8 @@ export function InstructorsPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Flight Instructors Van Nuys Airport KVNY | CFI CFII Los Angeles | Accelerated Flight School"}
-        description={"Meet our CFI and CFII instructors at Van Nuys Airport. Reza S. and David T. offer structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."}
+        title={"Meet Our Flight Instructors | Van Nuys Airport KVNY"}
+        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">
@@ -126,6 +128,18 @@ export function InstructorsPage() {
 
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-5xl">
+          {/* Ratings we train */}
+          <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 md:p-8 mb-12 text-center max-w-3xl mx-auto">
+            <p className="text-slate-700 leading-relaxed">
+              Our instructors train students through every stage of their flying career — from{" "}
+              <strong>Private Pilot License (PPL)</strong> and{" "}
+              <strong>Instrument Rating</strong>, to{" "}
+              <strong>Commercial Pilot License (CPL)</strong>,{" "}
+              <strong>Certified Flight Instructor (CFI)</strong>, and{" "}
+              <strong>Certified Flight Instructor – Instrument (CFII)</strong>.
+            </p>
+          </div>
+
           {/* Instructor Cards from API */}
           {isLoading ? (
             <div className="grid md:grid-cols-2 gap-8 mb-16">
@@ -147,6 +161,10 @@ export function InstructorsPage() {
               ))}
             </div>
           )}
+
+          <p className="text-center text-slate-500 text-lg mb-16">
+            More great instructors — with photos — coming soon.
+          </p>
 
           {/* Why We Charge Less */}
           <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-10 mb-8">

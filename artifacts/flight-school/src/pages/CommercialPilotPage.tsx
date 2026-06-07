@@ -9,8 +9,8 @@ export function CommercialPilotPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Commercial Pilot Training Van Nuys Airport KVNY | Los Angeles Commercial Certificate | Accelerated Flight School"}
-        description={"Earn your Commercial Pilot certificate at Van Nuys Airport (KVNY), Los Angeles. ~$40,000–$55,000 from zero hours — well below the SoCal average of $70K–$110K. No upfront payment. Call 323-332-0585."}
+        title={"Commercial Pilot Training Van Nuys | Accelerated Flight School"}
+        description={"Earn your Commercial Pilot certificate at Van Nuys Airport. ~$40,000–$55,000 from zero hours, below the SoCal average. No upfront payment. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
