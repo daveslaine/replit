@@ -25,9 +25,9 @@ export interface AirTourPageConfig {
 export const airTourPages: AirTourPageConfig[] = [
   {
     slug: "los-angeles-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
-    metaTitle: "Los Angeles Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+    metaTitle: "Los Angeles Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Looking for a Los Angeles sightseeing air tour? Book a real discovery flight lesson from Van Nuys Airport. Fly with a CFI, take the controls, and see iconic LA scenery. $190 for 1 person, $270 for 2.",
+      "Real discovery flight from Van Nuys Airport — take the controls with a CFI over Los Angeles. See iconic LA scenery. $190 for 1 person, $270 for 2.",
     h1: "Los Angeles Sightseeing Air Tour Alternative: Discovery Flight from Van Nuys Airport",
     subheadline:
       "A real discovery flight lesson with a Certified Flight Instructor from Van Nuys Airport (KVNY). Sit up front, learn the controls, and you may fly the airplane yourself.",
@@ -68,9 +68,9 @@ export const airTourPages: AirTourPageConfig[] = [
   {
     slug: "los-angeles-helicopter-sightseeing-air-tour-alternative-discovery-flight-van-nuys-kvny",
     metaTitle:
-      "Los Angeles Helicopter Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+      "Los Angeles Helicopter Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Searching for a Los Angeles helicopter sightseeing air tour? Try a real airplane discovery flight from Van Nuys Airport where you may take the controls with a CFI. $190 for 1, $270 for 2.",
+      "Skip the helicopter tour — fly the airplane yourself on a discovery flight from Van Nuys Airport with a CFI. $190 for 1, $270 for 2.",
     h1: "Los Angeles Helicopter Sightseeing Air Tour Alternative: Fly the Plane Yourself",
     subheadline:
       "Dreaming of seeing Los Angeles from the sky? Take it further — fly the airplane yourself on a hands-on discovery flight from Van Nuys Airport, with a Certified Flight Instructor right beside you.",
@@ -111,9 +111,9 @@ export const airTourPages: AirTourPageConfig[] = [
   {
     slug: "los-angeles-sightseeing-flight-tour-discovery-flight-van-nuys-kvny",
     metaTitle:
-      "Los Angeles Sightseeing Flight Tour Discovery Flight | Accelerated Flight School KVNY",
+      "Los Angeles Scenic Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Book a Los Angeles sightseeing discovery flight lesson from Van Nuys Airport. Take the controls with a CFI and enjoy scenic LA views. $190 for 1 person, $270 for 2.",
+      "Book a discovery flight from Van Nuys Airport — take the controls with a CFI and enjoy scenic LA views. $190 for 1 person, $270 for 2.",
     h1: "Los Angeles Sightseeing Flight Tour Experience: Discovery Flight Lesson",
     subheadline:
       "An introductory flight lesson with scenic LA views from Van Nuys Airport. You're not just a passenger — you get a pre-flight briefing, fly with a CFI, and may take the controls.",
@@ -153,9 +153,9 @@ export const airTourPages: AirTourPageConfig[] = [
   },
   {
     slug: "santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
-    metaTitle: "Santa Monica Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+    metaTitle: "Santa Monica Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Looking for a Santa Monica sightseeing air tour? Fly a discovery flight lesson from Van Nuys Airport with possible Santa Monica and coastal views. $190 for 1, $270 for 2.",
+      "Fly a discovery flight from Van Nuys Airport with possible Santa Monica and coastal views. Take the controls with a CFI. $190 for 1, $270 for 2.",
     h1: "Santa Monica Sightseeing Air Tour Alternative: Discovery Flight from Van Nuys",
     subheadline:
       "Looking for a Santa Monica sightseeing air tour or coastal flying experience? Fly a discovery flight lesson from nearby Van Nuys Airport and take the controls with a CFI.",
@@ -199,7 +199,7 @@ export const airTourPages: AirTourPageConfig[] = [
   },
   {
     slug: "malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
-    metaTitle: "Malibu Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+    metaTitle: "Malibu Discovery Flight | Accelerated Flight School",
     metaDescription:
       "Experience the Malibu coastline on a discovery flight lesson from Van Nuys Airport. Fly with a CFI and take the controls. $190 for 1 person, $270 for 2.",
     h1: "Malibu Sightseeing Air Tour Alternative: Coastline Discovery Flight Lesson",
@@ -241,9 +241,9 @@ export const airTourPages: AirTourPageConfig[] = [
   },
   {
     slug: "hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
-    metaTitle: "Hollywood Sign Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+    metaTitle: "Hollywood Sign Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Looking for a Hollywood Sign sightseeing air tour? Book a discovery flight lesson from Van Nuys Airport with possible Hollywood Sign and LA landmark views. $190 for 1, $270 for 2.",
+      "Book a discovery flight from Van Nuys Airport with possible Hollywood Sign and LA landmark views. Take the controls with a CFI. $190 for 1, $270 for 2.",
     h1: "Hollywood Sign Sightseeing Air Tour Alternative: Discovery Flight with LA Landmark Views",
     subheadline:
       "Prefer to fly the plane instead of just riding along? Book a discovery flight lesson from Van Nuys Airport with possible Hollywood Sign and LA landmark views.",
@@ -283,9 +283,9 @@ export const airTourPages: AirTourPageConfig[] = [
   },
   {
     slug: "long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
-    metaTitle: "Long Beach Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+    metaTitle: "Long Beach Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Searching for a Long Beach sightseeing air tour? Try a hands-on discovery flight lesson from Van Nuys Airport with scenic LA and coastal views when available. $190 for 1, $270 for 2.",
+      "Hands-on discovery flight from Van Nuys Airport with scenic LA and coastal views. Take the controls with a CFI. $190 for 1, $270 for 2.",
     h1: "Long Beach Sightseeing Air Tour Alternative: Hands-On Discovery Flight",
     subheadline:
       "Based at Van Nuys Airport, we offer hands-on discovery flight lessons with scenic LA and coastal views — and you get to fly the airplane yourself.",
@@ -325,9 +325,9 @@ export const airTourPages: AirTourPageConfig[] = [
   },
   {
     slug: "catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
-    metaTitle: "Catalina Island Sightseeing Air Tour Discovery Flight | Accelerated Flight School KVNY",
+    metaTitle: "Catalina Island Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Looking for a Catalina Island sightseeing air tour? Start with a discovery flight lesson from Van Nuys Airport and experience real flying with a CFI. $190 for 1, $270 for 2.",
+      "Experience real flying from Van Nuys Airport — take the controls with a CFI over Southern California. $190 for 1, $270 for 2.",
     h1: "Catalina Island Sightseeing Air Tour Alternative: Discovery Flight from Van Nuys",
     subheadline:
       "The standard $190 discovery flight is an introductory lesson from Van Nuys Airport where you fly the plane. Extended scenic routes like Catalina can be arranged separately — just ask.",
