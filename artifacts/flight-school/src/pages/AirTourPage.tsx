@@ -343,6 +343,60 @@ export function AirTourPage() {
         </div>
       </section>
 
+      {/* Related routes */}
+      <section className="py-14 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-xl font-black text-slate-800 mb-6">Explore More</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            <Link href="/los-angeles-air-tours-sightseeing-flights">
+              <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
+                <p className="font-bold text-primary text-sm mb-1">All LA Sightseeing Flights</p>
+                <p className="text-xs text-slate-500 leading-relaxed">Browse all scenic discovery flight routes departing from Van Nuys Airport.</p>
+              </div>
+            </Link>
+            <Link href="/discovery-flight-van-nuys">
+              <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
+                <p className="font-bold text-primary text-sm mb-1">Discovery Flight — $190</p>
+                <p className="text-xs text-slate-500 leading-relaxed">Our main 1.5-hour introductory flight. Price, what's included, aircraft details, and how to book.</p>
+              </div>
+            </Link>
+            <Link href="/private-pilot-van-nuys">
+              <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
+                <p className="font-bold text-primary text-sm mb-1">Continue to Private Pilot</p>
+                <p className="text-xs text-slate-500 leading-relaxed">Your discovery flight hours count toward your Private Pilot logbook. See what training looks like.</p>
+              </div>
+            </Link>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny">
+              <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full hover:border-primary/40 hover:text-primary transition-colors cursor-pointer">
+                <MapPin className="w-3 h-3" /> Malibu
+              </span>
+            </Link>
+            <Link href="/hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny">
+              <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full hover:border-primary/40 hover:text-primary transition-colors cursor-pointer">
+                <MapPin className="w-3 h-3" /> Hollywood Sign
+              </span>
+            </Link>
+            <Link href="/santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny">
+              <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full hover:border-primary/40 hover:text-primary transition-colors cursor-pointer">
+                <MapPin className="w-3 h-3" /> Santa Monica
+              </span>
+            </Link>
+            <Link href="/catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny">
+              <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full hover:border-primary/40 hover:text-primary transition-colors cursor-pointer">
+                <MapPin className="w-3 h-3" /> Catalina Island
+              </span>
+            </Link>
+            <Link href="/long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny">
+              <span className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium px-3 py-1.5 rounded-full hover:border-primary/40 hover:text-primary transition-colors cursor-pointer">
+                <MapPin className="w-3 h-3" /> Long Beach
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 max-w-3xl text-center">
