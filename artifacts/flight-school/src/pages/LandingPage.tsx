@@ -3,26 +3,36 @@ import { Seo } from "@/components/Seo";
 import { Link, useLocation } from "wouter";
 import { Phone, MessageSquare, CheckCircle2, Plane, MapPin, DollarSign, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getLandingPage } from "@/data/landingPages";
+import { getLandingPage, landingPages } from "@/data/landingPages";
 import { getLandingUnique } from "@/data/landingUnique";
 
+const landingPageSlugs = new Set(landingPages.map((p) => p.slug));
 
-function FAQItem({ q, a }: { q: string; a: string }) {
+function areaToSlug(area: string): string {
+  return `flight-school-near-${area.toLowerCase().replace(/\s+/g, "-")}-accelerated-flight-school-van-nuys-kvny`;
+}
+
+
+function FAQItem({ q, a, id }: { q: string; a: string; id: string }) {
   const [open, setOpen] = React.useState(false);
+  const panelId = `${id}-panel`;
   return (
     <div className="border border-slate-200 rounded-xl overflow-hidden">
       <button
         className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-slate-800 hover:bg-slate-50 transition-colors"
         onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls={panelId}
       >
         <span>{q}</span>
         {open ? <ChevronUp className="w-4 h-4 shrink-0 text-primary" /> : <ChevronDown className="w-4 h-4 shrink-0 text-slate-400" />}
       </button>
-      {open && (
-        <div className="px-5 pb-4 text-slate-600 leading-relaxed text-sm border-t border-slate-100 pt-3">
-          {a}
-        </div>
-      )}
+      <div
+        id={panelId}
+        className={`px-5 pb-4 text-slate-600 leading-relaxed text-sm border-t border-slate-100 pt-3${open ? "" : " hidden"}`}
+      >
+        {a}
+      </div>
     </div>
   );
 }
@@ -58,12 +68,50 @@ export function LandingPage() {
     );
   }
 
+  const SITE_URL = "https://acceleratedflightschool.net";
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}/${slug}#service`,
+    name: page.h1,
+    description: page.metaDescription,
+    serviceType: "Flight Training",
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: [page.h1.replace(/^Flight School Near\s*/i, ""), ...page.nearbyAreas].filter(Boolean).map((area) => ({
+      "@type": "City",
+      name: area,
+    })),
+    url: `${SITE_URL}/${slug}`,
+    offers: {
+      "@type": "Offer",
+      price: "190",
+      priceCurrency: "USD",
+      name: "Discovery Flight",
+      description: "Introductory discovery flight lesson with a Certified Flight Instructor at Van Nuys Airport (KVNY). 1.5 hours in the air.",
+      seller: { "@id": `${SITE_URL}/#organization` },
+    },
+  };
+
+  const faqSchema = page.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: page.faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  } : null;
+
   return (
     <div className="w-full">
       <Seo
         title={page.metaTitle}
         description={page.metaDescription}
-      />
+      >
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+      </Seo>
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
@@ -107,11 +155,23 @@ export function LandingPage() {
           {page.nearbyAreas.length > 0 && (
             <div className="mt-8 flex flex-wrap gap-2">
               <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider w-full mb-1">Also serving students from:</span>
-              {page.nearbyAreas.map((area) => (
-                <span key={area} className="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">
-                  <MapPin className="w-3 h-3 text-primary" />{area}
-                </span>
-              ))}
+              {page.nearbyAreas.map((area) => {
+                const slug = areaToSlug(area);
+                if (landingPageSlugs.has(slug)) {
+                  return (
+                    <Link key={area} href={`/${slug}`}>
+                      <span className="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer">
+                        <MapPin className="w-3 h-3 text-primary" />{area}
+                      </span>
+                    </Link>
+                  );
+                }
+                return (
+                  <span key={area} className="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-sm font-medium px-3 py-1 rounded-full">
+                    <MapPin className="w-3 h-3 text-primary" />{area}
+                  </span>
+                );
+              })}
             </div>
           )}
         </div>
@@ -261,7 +321,7 @@ export function LandingPage() {
           </h2>
           <div className="space-y-3">
             {page.faqs.map((faq, i) => (
-              <FAQItem key={i} q={faq.q} a={faq.a} />
+              <FAQItem key={i} id={`lp-faq-${i}`} q={faq.q} a={faq.a} />
             ))}
           </div>
         </div>
