@@ -21,31 +21,47 @@ const routes = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)]
   .map((m) => m[1].trim().replace(SITE_URL, ""))
   .map((p) => (p === "" ? "/" : p));
 const uniqueRoutes = [...new Set(routes)];
+const utilityRoutes = ["/contact-thank-you"];
+
+function writeRoute(route, label = route) {
+  const { appHtml, head } = render(route);
+  const html = template
+    .replace("<!--app-head-->", head)
+    .replace("<!--app-html-->", appHtml);
+  // Flat-file output: /route -> dist/public/route.html (NOT route/index.html).
+  // Directory output makes the static host treat /route as a directory and
+  // 301-redirect /route -> /route/, which then gets hijacked by the SPA
+  // catch-all and serves homepage HTML. Flat files have no directory, so the
+  // explicit `/route -> /route.html` rewrite serves the right page with no 301.
+  const outPath =
+    route === "/"
+      ? path.join(distPublic, "index.html")
+      : path.join(distPublic, `${route}.html`);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.writeFileSync(outPath, html);
+  return label;
+}
 
 let ok = 0;
 let failed = 0;
 
 for (const route of uniqueRoutes) {
   try {
-    const { appHtml, head } = render(route);
-    const html = template
-      .replace("<!--app-head-->", head)
-      .replace("<!--app-html-->", appHtml);
-    // Flat-file output: /route -> dist/public/route.html (NOT route/index.html).
-    // Directory output makes the static host treat /route as a directory and
-    // 301-redirect /route -> /route/, which then gets hijacked by the SPA
-    // catch-all and serves homepage HTML. Flat files have no directory, so the
-    // explicit `/route -> /route.html` rewrite serves the right page with no 301.
-    const outPath =
-      route === "/"
-        ? path.join(distPublic, "index.html")
-        : path.join(distPublic, `${route}.html`);
-    fs.mkdirSync(path.dirname(outPath), { recursive: true });
-    fs.writeFileSync(outPath, html);
+    writeRoute(route);
     ok++;
   } catch (err) {
     failed++;
     console.error(`[prerender] FAILED ${route}:`, err?.message || err);
+  }
+}
+
+for (const route of utilityRoutes) {
+  try {
+    writeRoute(route);
+    ok++;
+  } catch (err) {
+    failed++;
+    console.error(`[prerender] FAILED utility route ${route}:`, err?.message || err);
   }
 }
 

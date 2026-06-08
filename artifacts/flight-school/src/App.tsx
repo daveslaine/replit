@@ -30,6 +30,7 @@ import { OurAircraftPage } from "@/pages/OurAircraftPage";
 import { InstructorsPage } from "@/pages/InstructorsPage";
 import { PricingPage } from "@/pages/PricingPage";
 import { ContactPage } from "@/pages/ContactPage";
+import { ContactThankYouPage } from "@/pages/ContactThankYouPage";
 import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
 import { DealsPage } from "@/pages/DealsPage";
 import { AboutUsPage } from "@/pages/AboutUsPage";
@@ -116,6 +117,7 @@ function PublicRoutes() {
         <Route path="/instructors" component={InstructorsPage} />
         <Route path="/pricing" component={PricingPage} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/contact-thank-you" component={ContactThankYouPage} />
         <Route
           path="/discovery-flight-van-nuys"
           component={DiscoveryFlightPage}

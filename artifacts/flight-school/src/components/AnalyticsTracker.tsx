@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 import {
   trackContactClick,
+  trackInternalLinkClick,
   trackOutboundClick,
   trackPageView,
 } from "@/lib/analytics";
@@ -17,6 +18,19 @@ function isExternalUrl(href: string) {
   try {
     const url = new URL(href, window.location.href);
     return url.origin !== window.location.origin;
+  } catch {
+    return false;
+  }
+}
+
+function isTrackableInternalUrl(href: string) {
+  try {
+    const url = new URL(href, window.location.href);
+    return (
+      url.origin === window.location.origin &&
+      url.pathname !== window.location.pathname &&
+      !url.pathname.startsWith("/admin")
+    );
   } catch {
     return false;
   }
@@ -50,6 +64,11 @@ export function AnalyticsTracker() {
 
       if (isExternalUrl(href)) {
         trackOutboundClick(href);
+        return;
+      }
+
+      if (isTrackableInternalUrl(href)) {
+        trackInternalLinkClick(href, link.textContent?.trim().slice(0, 80));
       }
     };
 
