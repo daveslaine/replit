@@ -598,7 +598,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "discovery-flight-van-nuys-accelerated-flight-school-kvny",
-    metaTitle: "Discovery Flight Van Nuys | Accelerated Flight School",
+    metaTitle: "Discovery Flight at Van Nuys Airport (KVNY) | Accelerated Flight School",
     metaDescription: "Discovery Flight at Van Nuys Airport. 1.5 hours for $190 in a Piper Cherokee. First flight experience, zero-G maneuver, intro lesson. Accelerated Flight School.",
     h1: "Discovery Flight at Van Nuys Airport",
     subheadline: "Accelerated Flight School's Discovery Flight departs from Van Nuys Airport — 1.5 hours in a Piper Cherokee for $190, with real controls in your hands from the first minute.",
