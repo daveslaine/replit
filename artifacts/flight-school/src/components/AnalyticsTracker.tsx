@@ -68,7 +68,7 @@ export function AnalyticsTracker() {
       }
 
       if (isTrackableInternalUrl(href)) {
-        trackInternalLinkClick(href, link.textContent?.trim().slice(0, 80));
+        trackInternalLinkClick(href, link?.textContent?.trim().slice(0, 80));
       }
     };
 
