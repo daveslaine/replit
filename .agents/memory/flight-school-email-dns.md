@@ -30,6 +30,23 @@ When the site "won't load" after a DNS change, check the **authoritative** answe
 classic cause is the old record still cached at its original TTL; lowering TTL only speeds
 *future* changes. `dig` is not installed; use node dns or Google DoH (`dns.google/resolve`).
 
+# TLS cert & "site won't load / ERR_SSL_PROTOCOL_ERROR" reports
+
+The Replit deployment auto-provisions a valid **Let's Encrypt** cert whose SAN covers **only
+the apex** `acceleratedflightschool.net` — **NOT `www.`**. So `www.` throws a real cert error
+for everyone; links/listings must use the bare domain (or add a www→apex redirect + cert).
+
+**Why:** when the user reports SSL errors that reproduce on their desktop (Chrome+Edge both,
+incognito) but the site works elsewhere (their iPhone, server-side curl), the cert is fine —
+verify from the sandbox with `openssl s_client -connect <host>:443 -servername <host>` (issuer,
+dates, SAN) and `curl -sI https://<host>/`. If those pass, the fault is **client-side**.
+
+**How to apply:** the user runs **AdGuard**, which false-positive-blocks this domain — it
+returns an invalid TLS response (→ ERR_SSL_PROTOCOL_ERROR) and shows "dangerous" over http,
+even though AdGuard's own check says the domain is in no blocklist. Fix is on their machine:
+pause AdGuard / add domain to AdGuard Allowlist / disable HTTPS filtering for it, then
+`ipconfig /flushdns`. Not a code or deployment bug — do not change the app.
+
 # Why page titles aren't in "View Page Source"
 
 This is a client-side-rendered SPA (React + Vite, no SSR). View-source shows the raw initial
