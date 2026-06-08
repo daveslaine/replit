@@ -1,17 +1,37 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, MessageSquare, Plane, MapPin, ArrowRight, Camera, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { airTourPages } from "@/data/airTourPages";
 
+const SITE_URL = "https://acceleratedflightschool.net";
 
 function tourLabel(h1: string): string {
   return h1.split(":")[0].trim();
 }
 
+const sortedTours = [...airTourPages].sort((a, b) => a.h1.localeCompare(b.h1));
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": `${SITE_URL}/los-angeles-air-tours-sightseeing-flights#itemlist`,
+  name: "Los Angeles Air Tours & Sightseeing Flights",
+  description: "Discovery flight routes and sightseeing flight options available from Van Nuys Airport (KVNY).",
+  url: `${SITE_URL}/los-angeles-air-tours-sightseeing-flights`,
+  numberOfItems: sortedTours.length,
+  itemListElement: sortedTours.map((tour, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: tourLabel(tour.h1),
+    url: `${SITE_URL}/${tour.slug}`,
+  })),
+};
+
 export function AirToursHubPage() {
-  const tours = [...airTourPages].sort((a, b) => a.h1.localeCompare(b.h1));
+  const tours = sortedTours;
 
   return (
     <div className="w-full">
@@ -19,6 +39,9 @@ export function AirToursHubPage() {
         title={"Los Angeles Air Tours & Sightseeing Flights | KVNY"}
         description={"Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $190 for one person. Call 323-332-0585."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
+      </Helmet>
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">

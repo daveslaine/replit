@@ -1,9 +1,30 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Phone, MessageSquare, Plane, MapPin, ArrowRight, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { landingPages, type LandingPageConfig } from "@/data/landingPages";
+
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const sortedLandingPages = [...landingPages].sort((a, b) => a.h1.localeCompare(b.h1));
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": `${SITE_URL}/flight-school-locations-los-angeles#itemlist`,
+  name: "Flight Training Areas Served — Accelerated Flight School",
+  description: "All flight training service area pages for Accelerated Flight School, serving student pilots across Los Angeles and Ventura counties from Van Nuys Airport.",
+  url: `${SITE_URL}/flight-school-locations-los-angeles`,
+  numberOfItems: sortedLandingPages.length,
+  itemListElement: sortedLandingPages.map((page, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: page.h1,
+    url: `${SITE_URL}/${page.slug}`,
+  })),
+};
 
 
 type Group = {
@@ -105,6 +126,9 @@ export function AreasServedPage() {
         title={"Flight Training Areas Served | Accelerated Flight School"}
         description={"Serving student pilots across LA and Ventura counties from Van Nuys Airport (KVNY). Browse flight training by neighborhood and certificate. Call 323-332-0585."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
+      </Helmet>
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
