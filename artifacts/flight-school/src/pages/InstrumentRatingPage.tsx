@@ -10,7 +10,7 @@ export function InstrumentRatingPage() {
     <div className="w-full">
       <Seo
         title={"Instrument Rating Training Van Nuys | Accelerated Flight School"}
-        description={"Earn your Instrument Rating at Van Nuys Airport. ~$8,500–$15,000 — below SoCal's average. Safety pilot strategy included. No upfront payment. Call 323-332-0585."}
+        description={"Earn your Instrument Rating at Van Nuys Airport. ~$8,500–$15,000, below SoCal's average. Safety pilot strategy included. No upfront payment."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
