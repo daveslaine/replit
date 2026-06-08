@@ -26,6 +26,9 @@ const notFoundHtml = path.join(publicDir, "404.html");
 
 const PORT = Number(process.env.PORT) || 25224;
 
+// Canonical (bare) host. www of this exact host is 301'd here; see redirect rule 0.
+const CANONICAL_HOST = "acceleratedflightschool.net";
+
 // Short alias paths -> their canonical indexed URLs (301 permanent).
 const ALIAS_REDIRECTS = {
   "/commercial-pilot-training": "/commercial-pilot-training-van-nuys",
@@ -160,6 +163,18 @@ const server = http.createServer((req, res) => {
   }
 
   // --- Canonical redirects (real 301) ---
+
+  // 0. www -> apex (bare domain). The TLS cert only covers the apex, and we want
+  //    a single canonical host for SEO. Only the exact known www host is matched
+  //    and the target apex is HARDCODED (never derived from the Host header) to
+  //    avoid a host-header open-redirect. Unknown hosts fall through and serve
+  //    normally. (Browser must complete TLS on www first, which requires www to
+  //    be added as a custom domain on the deployment so a cert is provisioned.)
+  const host = (req.headers.host || "").toLowerCase().split(":")[0];
+  if (host === `www.${CANONICAL_HOST}`) {
+    redirect(res, `https://${CANONICAL_HOST}${pathname}${query}`);
+    return;
+  }
 
   // 1. Trailing slash -> clean URL (generic; covers every page).
   if (pathname.length > 1 && pathname.endsWith("/")) {
