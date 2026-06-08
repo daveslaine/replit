@@ -44,7 +44,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "SoFi Stadium",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles skyline from the air at night" },
+      {
+        src: "/images/downtown-la-night-aerial.webp",
+        alt: "Los Angeles skyline from the air at night",
+      },
     ],
     faqs: [
       {
@@ -75,7 +78,7 @@ export const airTourPages: AirTourPageConfig[] = [
     subheadline:
       "Dreaming of seeing Los Angeles from the sky? Take it further — fly the airplane yourself on a hands-on discovery flight from Van Nuys Airport, with a Certified Flight Instructor right beside you.",
     intro: [
-      "If you're dreaming about seeing Los Angeles from above, here's an even better way to do it: a discovery flight where you don't just ride along — you actually take the controls and fly. With a Certified Flight Instructor beside you in our 1985 Piper PA-28 Cherokee Warrior II (N9172Y), you'll experience real flying from the front seat at Van Nuys Airport (KVNY).",
+      "If you're dreaming about seeing Los Angeles from above, here's an even better way to do it: a discovery flight where you don't just ride along — you actually take the controls and fly. With a Certified Flight Instructor beside you Aircraft, whether Piper Cherokee or a good old Cessna 172, you'll experience real flying from the front seat at Van Nuys Airport (KVNY).",
       "It's hands-on from the start. You'll sit up front, learn the basic controls, and fly with your instructor's guidance — interactive, educational, and a genuine first step toward becoming a pilot if you catch the bug.",
       "And it's an absolute blast. Lifting off is thrilling and joyful, the views over Southern California are unreal, and with your instructor you can even feel the light, floating sensation of a gentle zero-G maneuver. It's an experience people talk about for years.",
     ],
@@ -87,7 +90,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "The Getty Center",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles skyline from the air at night" },
+      {
+        src: "/images/downtown-la-night-aerial.webp",
+        alt: "Los Angeles skyline from the air at night",
+      },
     ],
     faqs: [
       {
@@ -130,7 +136,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "Santa Monica Pier",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles skyline lit up from the air" },
+      {
+        src: "/images/downtown-la-night-aerial.webp",
+        alt: "Los Angeles skyline lit up from the air",
+      },
     ],
     faqs: [
       {
@@ -172,7 +181,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "Malibu coastline",
     ],
     photos: [
-      { src: "/images/malibu-coast-aerial.webp", alt: "Southern California coastline from the air" },
+      {
+        src: "/images/malibu-coast-aerial.webp",
+        alt: "Southern California coastline from the air",
+      },
     ],
     faqs: [
       {
@@ -218,7 +230,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "Pacific Coast Highway",
     ],
     photos: [
-      { src: "/images/malibu-coast-aerial.webp", alt: "Malibu coastline from the air" },
+      {
+        src: "/images/malibu-coast-aerial.webp",
+        alt: "Malibu coastline from the air",
+      },
     ],
     faqs: [
       {
@@ -260,7 +275,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "Downtown LA skyline",
     ],
     photos: [
-      { src: "/images/hollywood-sign-aerial.webp", alt: "The Hollywood Sign from the air" },
+      {
+        src: "/images/hollywood-sign-aerial.webp",
+        alt: "The Hollywood Sign from the air",
+      },
     ],
     faqs: [
       {
@@ -302,7 +320,10 @@ export const airTourPages: AirTourPageConfig[] = [
       "Pacific coastline",
     ],
     photos: [
-      { src: "/images/downtown-la-night-aerial.webp", alt: "Los Angeles basin from the air" },
+      {
+        src: "/images/downtown-la-night-aerial.webp",
+        alt: "Los Angeles basin from the air",
+      },
     ],
     faqs: [
       {
@@ -344,11 +365,15 @@ export const airTourPages: AirTourPageConfig[] = [
       "Pacific coastline",
     ],
     photos: [
-      { src: "/images/catalina-aerial.webp", alt: "Catalina Island from the air" },
+      {
+        src: "/images/catalina-aerial.webp",
+        alt: "Catalina Island from the air",
+      },
     ],
     pricingNote:
       "The standard discovery flight is from Van Nuys and may include scenic LA/coastal views depending on conditions. Extended routes such as Catalina require separate planning, time, weather, fuel, and pricing.",
-    ctaNote: "Call or text to ask about discovery flights and extended scenic training routes.",
+    ctaNote:
+      "Call or text to ask about discovery flights and extended scenic training routes.",
     faqs: [
       {
         q: "Is Catalina Island included in the $190 discovery flight?",
