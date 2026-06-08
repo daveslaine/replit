@@ -518,7 +518,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "affordable-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
-    metaTitle: "Affordable Flight Training Los Angeles | Accelerated Flight School",
+    metaTitle: "Affordable Flight Training, Van Nuys | Accelerated Flight School",
     metaDescription: "Affordable flight training in Los Angeles at Van Nuys Airport. Aircraft $160/hr wet, instructor $35/hr, no loan pressure, pay-as-you-fly.",
     h1: "Affordable Flight Training in Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport provides affordable, transparent flight training for Los Angeles students — low hourly rates, no large upfront loans, and ACS-based instruction that reduces total training hours.",
@@ -598,7 +598,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "discovery-flight-van-nuys-accelerated-flight-school-kvny",
-    metaTitle: "Discovery Flight Van Nuys | Accelerated Flight School",
+    metaTitle: "Discovery Flight Van Nuys (KVNY) | Accelerated Flight School",
     metaDescription: "Discovery Flight at Van Nuys Airport. 1.5 hours for $190 in a Piper Cherokee. First flight experience, zero-G maneuver, intro lesson. Accelerated Flight School.",
     h1: "Discovery Flight at Van Nuys Airport",
     subheadline: "Accelerated Flight School's Discovery Flight departs from Van Nuys Airport — 1.5 hours in a Piper Cherokee for $190, with real controls in your hands from the first minute.",
@@ -778,7 +778,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "piper-cherokee-flight-training-van-nuys-kvny",
-    metaTitle: "Piper Cherokee Flight Training Van Nuys | Accelerated Flight School",
+    metaTitle: "Piper Cherokee Training Van Nuys | Accelerated Flight School",
     metaDescription: "Train in a 1985 Piper Cherokee Warrior II at Van Nuys Airport. $160/hr wet. Private pilot, instrument rating, and time building. Accelerated Flight School.",
     h1: "Piper Cherokee Flight Training at Van Nuys Airport",
     subheadline: "Accelerated Flight School's training fleet at Van Nuys Airport includes a 1985 Piper Cherokee Warrior II — a stable, well-maintained low-wing trainer available at $160/hr wet.",
@@ -798,7 +798,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "piper-warrior-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
-    metaTitle: "Piper Warrior Flight Training Los Angeles | Accelerated Flight School",
+    metaTitle: "Piper Warrior Training Los Angeles | Accelerated Flight School",
     metaDescription: "Piper Warrior flight training in Los Angeles at Van Nuys Airport KVNY. $160/hr wet aircraft rental. Private pilot, instrument, commercial. Call 323-332-0585.",
     h1: "Piper Warrior Flight Training in Los Angeles",
     subheadline: "Train in the Piper Cherokee Warrior at Van Nuys Airport — Accelerated Flight School offers private pilot, instrument, and commercial training in the Piper Warrior at $160/hr wet.",
@@ -818,7 +818,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "pay-as-you-fly-flight-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
-    metaTitle: "Pay As You Fly Flight Training Los Angeles | Accelerated Flight School",
+    metaTitle: "Pay-As-You-Fly Training Los Angeles | Accelerated Flight School",
     metaDescription: "Pay-as-you-fly flight training in Los Angeles at Van Nuys Airport KVNY. No large upfront loan, transparent pricing, control your spending. Call 323-332-0585.",
     h1: "Pay-As-You-Fly Flight Training in Los Angeles",
     subheadline: "Accelerated Flight School at Van Nuys Airport does not pressure students into large training loans — pay per lesson, control your budget, and progress on your terms.",
@@ -838,7 +838,7 @@ export const landingPages: LandingPageConfig[] = [
   },
   {
     slug: "flight-training-without-loans-los-angeles-accelerated-flight-school-van-nuys-kvny",
-    metaTitle: "Flight Training Without Loans Los Angeles | Accelerated Flight School",
+    metaTitle: "No-Loan Flight Training Los Angeles | Accelerated Flight School",
     metaDescription: "Flight training without large loans in Los Angeles. Pay-as-you-fly at Van Nuys Airport. Aircraft $160/hr wet, instructor $35/hr. Accelerated Flight School.",
     h1: "Flight Training Without Large Training Loans",
     subheadline: "Accelerated Flight School at Van Nuys Airport does not push students toward large training loans — transparent pay-as-you-fly pricing keeps your flight training investment honest.",
@@ -1065,7 +1065,7 @@ export const landingPages: LandingPageConfig[] = [
 
   {
     slug: "how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
-    metaTitle: "Get an Instrument Rating in Los Angeles | Accelerated Flight School",
+    metaTitle: "How to Get an Instrument Rating | Accelerated Flight School",
     metaDescription: "Complete guide to earning your instrument rating in Los Angeles. Requirements, cost, timeline, and CFII training at Van Nuys Airport. Accelerated Flight School.",
     h1: "How to Get Your Instrument Rating in Los Angeles",
     subheadline: "Complete guide to earning your instrument rating at Van Nuys Airport (KVNY) — requirements, cost, timeline, and CFII training at Accelerated Flight School.",
@@ -1086,7 +1086,7 @@ export const landingPages: LandingPageConfig[] = [
 
   {
     slug: "what-do-you-need-to-become-an-airline-pilot-accelerated-flight-school-van-nuys-airport-kvny",
-    metaTitle: "What You Need to Become an Airline Pilot | Accelerated Flight School",
+    metaTitle: "How to Become an Airline Pilot | Accelerated Flight School",
     metaDescription: "Roadmap from zero to airline cockpit — certificates, hours, timeline, starting with a discovery flight at Accelerated Flight School, Van Nuys Airport.",
     h1: "What Do You Need to Become an Airline Pilot",
     subheadline: "The complete roadmap from zero flight time to the airline cockpit — starting with your first lesson at Accelerated Flight School, Van Nuys Airport KVNY.",

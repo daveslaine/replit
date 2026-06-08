@@ -1,9 +1,50 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { CheckCircle2, PlaneTakeoff, Info, Shield, CalendarClock, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
+
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/private-pilot-van-nuys#service`,
+  name: "Private Pilot Certificate Training at Van Nuys",
+  description:
+    "FAA ACS-structured Private Pilot certificate training at Van Nuys Airport (KVNY). Includes dual instruction, solo flights, cross-country training, and checkride preparation.",
+  serviceType: "Private Pilot Certificate Training",
+  provider: { "@id": `${SITE_URL}/#organization` },
+  url: `${SITE_URL}/private-pilot-van-nuys`,
+  areaServed: "Los Angeles",
+  serviceLocation: {
+    "@type": "Airport",
+    name: "Van Nuys Airport",
+    iataCode: "VNY",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7910 Balboa Blvd",
+      addressLocality: "Van Nuys",
+      addressRegion: "CA",
+      postalCode: "91406",
+      addressCountry: "US",
+    },
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      minPrice: "7500",
+      maxPrice: "12500",
+      priceCurrency: "USD",
+    },
+    description: "Private Pilot training cost estimate: ~$7,500–$12,500. Pay-as-you-fly, no large upfront payment required.",
+    seller: { "@id": `${SITE_URL}/#organization` },
+  },
+};
 
 export function PrivatePilotPage() {
   return (
@@ -12,6 +53,9 @@ export function PrivatePilotPage() {
         title={"Private Pilot Training Van Nuys | Accelerated Flight School"}
         description={"Private Pilot training at Van Nuys Airport (KVNY). FAA ACS-structured. ~$7,500–$12,500, below the SoCal average. No upfront payment. Call 323-332-0585."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+      </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl">

@@ -1,9 +1,50 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { GraduationCap, Phone, Info, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
+
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/cfi-training-van-nuys#service`,
+  name: "Certified Flight Instructor (CFI) Training at Van Nuys",
+  description:
+    "CFI certificate training at Van Nuys Airport (KVNY). Requires existing Commercial Pilot certificate. CFII add-on available. Teaches future instructors to train the next generation of pilots.",
+  serviceType: "CFI Certificate Training",
+  provider: { "@id": `${SITE_URL}/#organization` },
+  url: `${SITE_URL}/cfi-training-van-nuys`,
+  areaServed: "Los Angeles",
+  serviceLocation: {
+    "@type": "Airport",
+    name: "Van Nuys Airport",
+    iataCode: "VNY",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7910 Balboa Blvd",
+      addressLocality: "Van Nuys",
+      addressRegion: "CA",
+      postalCode: "91406",
+      addressCountry: "US",
+    },
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      minPrice: "3000",
+      maxPrice: "6000",
+      priceCurrency: "USD",
+    },
+    description: "CFI training cost estimate: $3,000–$6,000 after Commercial Pilot certificate. Pay-as-you-fly, no large upfront payment required.",
+    seller: { "@id": `${SITE_URL}/#organization` },
+  },
+};
 
 export function CfiTrainingPage() {
   return (
@@ -12,6 +53,9 @@ export function CfiTrainingPage() {
         title={"CFI Training Van Nuys Airport | Become a Flight Instructor"}
         description={"Become a CFI at Van Nuys Airport. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, and earn money flying. Call 323-332-0585."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+      </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

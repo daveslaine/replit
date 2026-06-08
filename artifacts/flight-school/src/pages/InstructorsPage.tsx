@@ -99,7 +99,7 @@ export function InstructorsPage() {
     <div className="w-full">
       <Seo
         title={"Meet Our Flight Instructors | Van Nuys Airport KVNY"}
-        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Rates from $35/hr. Call 323-332-0585."}
+        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Rates from $35/hr."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">

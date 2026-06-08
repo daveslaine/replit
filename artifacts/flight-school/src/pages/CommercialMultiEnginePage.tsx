@@ -1,8 +1,49 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { CheckCircle2, Phone, Info, GraduationCap, CalendarClock, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
+
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/commercial-pilot-multi-engine-add-on-van-nuys-flight-training#service`,
+  name: "Commercial Multi-Engine Add-On Rating at Van Nuys",
+  description:
+    "Add multi-engine privileges to an existing Commercial Single-Engine certificate at Van Nuys Airport (KVNY). No FAA written exam required. Typically 10–15 hours of dual flight.",
+  serviceType: "Multi-Engine Rating Add-On",
+  provider: { "@id": `${SITE_URL}/#organization` },
+  url: `${SITE_URL}/commercial-pilot-multi-engine-add-on-van-nuys-flight-training`,
+  areaServed: "Los Angeles",
+  serviceLocation: {
+    "@type": "Airport",
+    name: "Van Nuys Airport",
+    iataCode: "VNY",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7910 Balboa Blvd",
+      addressLocality: "Van Nuys",
+      addressRegion: "CA",
+      postalCode: "91406",
+      addressCountry: "US",
+    },
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      minPrice: "3000",
+      maxPrice: "4000",
+      priceCurrency: "USD",
+    },
+    description: "Multi-Engine add-on rating cost estimate: $3,000–$4,000. Pay-as-you-fly, no large upfront payment required.",
+    seller: { "@id": `${SITE_URL}/#organization` },
+  },
+};
 
 export function CommercialMultiEnginePage() {
   return (
@@ -11,6 +52,9 @@ export function CommercialMultiEnginePage() {
         title={"Multi-Engine Rating Van Nuys | Accelerated Flight School"}
         description={"Add a Multi-Engine rating at Van Nuys Airport (KVNY). $3,000–$4,000, below SoCal's $5K–$8K average. No written exam required. Call 323-332-0585."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+      </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

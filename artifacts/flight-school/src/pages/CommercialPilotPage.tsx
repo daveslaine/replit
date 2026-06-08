@@ -1,9 +1,50 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { Briefcase, AlertTriangle, Phone, Info, CalendarClock, CheckCircle2, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
+
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/commercial-pilot-training-van-nuys#service`,
+  name: "Commercial Pilot Certificate Training at Van Nuys",
+  description:
+    "FAA Commercial Pilot certificate training at Van Nuys Airport (KVNY). Full pathway from zero hours includes Private Pilot, Instrument Rating, and Commercial training to professional standards.",
+  serviceType: "Commercial Pilot Certificate Training",
+  provider: { "@id": `${SITE_URL}/#organization` },
+  url: `${SITE_URL}/commercial-pilot-training-van-nuys`,
+  areaServed: "Los Angeles",
+  serviceLocation: {
+    "@type": "Airport",
+    name: "Van Nuys Airport",
+    iataCode: "VNY",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7910 Balboa Blvd",
+      addressLocality: "Van Nuys",
+      addressRegion: "CA",
+      postalCode: "91406",
+      addressCountry: "US",
+    },
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      minPrice: "40000",
+      maxPrice: "55000",
+      priceCurrency: "USD",
+    },
+    description: "Full Commercial Pilot pathway cost estimate from zero hours: ~$40,000–$55,000. Pay-as-you-fly, no large upfront payment required.",
+    seller: { "@id": `${SITE_URL}/#organization` },
+  },
+};
 
 export function CommercialPilotPage() {
   return (
@@ -12,6 +53,9 @@ export function CommercialPilotPage() {
         title={"Commercial Pilot Training Van Nuys | Accelerated Flight School"}
         description={"Earn your Commercial Pilot certificate at Van Nuys Airport. ~$40,000–$55,000 from zero hours, below the SoCal average. No upfront payment. Call 323-332-0585."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+      </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">

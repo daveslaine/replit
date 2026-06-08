@@ -1,17 +1,61 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import { CloudRain, CheckCircle2, Phone, Info, Users, GraduationCap, CalendarClock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AviationTerm } from "@/components/AviationTerm";
 
+const SITE_URL = "https://acceleratedflightschool.net";
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": `${SITE_URL}/instrument-rating-van-nuys#service`,
+  name: "Instrument Rating Training at Van Nuys",
+  description:
+    "FAA Instrument Rating training at Van Nuys Airport (KVNY). Includes simulated and actual instrument flight, IFR cross-country, safety pilot strategy, and checkride preparation.",
+  serviceType: "Instrument Rating Training",
+  provider: { "@id": `${SITE_URL}/#organization` },
+  url: `${SITE_URL}/instrument-rating-van-nuys`,
+  areaServed: "Los Angeles",
+  serviceLocation: {
+    "@type": "Airport",
+    name: "Van Nuys Airport",
+    iataCode: "VNY",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "7910 Balboa Blvd",
+      addressLocality: "Van Nuys",
+      addressRegion: "CA",
+      postalCode: "91406",
+      addressCountry: "US",
+    },
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "USD",
+    priceSpecification: {
+      "@type": "PriceSpecification",
+      minPrice: "8500",
+      maxPrice: "15000",
+      priceCurrency: "USD",
+    },
+    description: "Instrument Rating training cost estimate: ~$8,500–$15,000. Pay-as-you-fly, no large upfront payment required.",
+    seller: { "@id": `${SITE_URL}/#organization` },
+  },
+};
+
 export function InstrumentRatingPage() {
   return (
     <div className="w-full">
       <Seo
         title={"Instrument Rating Training Van Nuys | Accelerated Flight School"}
-        description={"Earn your Instrument Rating at Van Nuys Airport. ~$8,500–$15,000 — below SoCal's average. Safety pilot strategy included. No upfront payment. Call 323-332-0585."}
+        description={"Earn your Instrument Rating at Van Nuys Airport. ~$8,500–$15,000, below SoCal's average. Safety pilot strategy included. No upfront payment."}
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+      </Helmet>
 
       <section className="bg-primary text-white py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl text-center">
