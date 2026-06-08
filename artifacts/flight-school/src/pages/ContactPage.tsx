@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useLocation } from "wouter";
 import { Seo } from "@/components/Seo";
 import {
   Phone,
@@ -56,6 +57,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export function ContactPage() {
   const submitContact = useSubmitContact();
+  const [, setLocation] = useLocation();
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -73,9 +75,10 @@ export function ContactPage() {
 
   useEffect(() => {
     if (submitContact.isSuccess) {
-      trackLeadFormSubmit(form.getValues("trainingGoal"));
+      trackLeadFormSubmit(form.getValues("trainingGoal"), "/contact-thank-you");
+      setLocation("/contact-thank-you");
     }
-  }, [form, submitContact.isSuccess]);
+  }, [form, setLocation, submitContact.isSuccess]);
 
   return (
     <div className="w-full">
