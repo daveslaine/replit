@@ -46,20 +46,11 @@ function InstructorCard({ inst }: { inst: Instructor }) {
         )}
       </div>
       <div className="p-8 flex-1 flex flex-col">
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h2 className="text-2xl font-bold text-primary">{inst.name}</h2>
-            {inst.title && (
-              <p className="text-secondary font-medium">{inst.title}</p>
-            )}
-          </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-center">
-            <p className="text-xl font-bold text-slate-800">
-              ${inst.rateStandard}
-              <span className="text-sm font-normal text-slate-500">/hr</span>
-            </p>
-            <p className="text-[10px] text-slate-500">${inst.rateBlock}/hr w/ block</p>
-          </div>
+        <div className="mb-4">
+          <h2 className="text-2xl font-bold text-primary">{inst.name}</h2>
+          {inst.title && (
+            <p className="text-secondary font-medium">{inst.title}</p>
+          )}
         </div>
 
         {inst.certifications.length > 0 && (
@@ -99,7 +90,7 @@ export function InstructorsPage() {
     <div className="w-full">
       <Seo
         title={"Meet Our Flight Instructors | Van Nuys Airport KVNY"}
-        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Rates from $35/hr."}
+        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Call 323-332-0585."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">

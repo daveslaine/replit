@@ -99,7 +99,9 @@ export function HomePage() {
     <div className="w-full">
       <Seo
         title={"Flight Training Van Nuys Airport | Accelerated Flight School"}
-        description={"Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."}
+        description={
+          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."
+        }
       />
       {/* ── Hero ──────────────────────────────────────────────── */}
       <section className="relative w-full min-h-[92vh] flex flex-col bg-primary text-white overflow-hidden">
@@ -127,19 +129,24 @@ export function HomePage() {
             <h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-xl"
               data-testid="text-hero-heading"
-            >High Quality and Affordable Flight Training at Van Nuys Airport</h1>
+            >
+              High Quality and Affordable Flight Training at Van Nuys Airport
+            </h1>
             <p
               className="text-base md:text-lg text-white/85 leading-relaxed mb-4 max-w-lg"
               data-testid="text-hero-subheading"
             >
-              Learn to fly with one of the most transparent and affordable flight schools in
-              California. We explain the entire training process from day one so students
-              understand exactly what they are training for, how the FAA checkride works,
-              what realistic costs look like, and how to progress efficiently.
+              Learn to fly with one of the most transparent and affordable
+              flight schools in California. We explain the entire training
+              process from day one so students understand exactly what they are
+              training for, how the FAA checkride works, what realistic costs
+              look like, and how to progress efficiently.
             </p>
 
             <p className="text-white/80 text-sm mb-3 max-w-lg">
-              Private Pilot, Instrument Rating, Commercial Pilot, and CFI training with transparent pricing, ACS-based instruction, and no upfront enrollment fees.
+              Private Pilot, Instrument Rating, Commercial Pilot, and CFI
+              training with transparent pricing, ACS-based instruction, and no
+              upfront enrollment fees.
             </p>
             <p className="text-sm font-bold text-green-400 mb-8 flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 shrink-0" />
@@ -148,23 +155,35 @@ export function HomePage() {
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-5">
-              <Link href="/van-nuys-accelerated-flight-school-contact" data-testid="link-hero-start">
-                <Button size="lg" className="font-bold text-base h-12 px-7 bg-secondary hover:bg-secondary/90 text-white gap-2">
+              <Link
+                href="/van-nuys-accelerated-flight-school-contact"
+                data-testid="link-hero-start"
+              >
+                <Button
+                  size="lg"
+                  className="font-bold text-base h-12 px-7 bg-secondary hover:bg-secondary/90 text-white gap-2"
+                >
                   Start Flight Training
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
-              <Link href="/discovery-flight-van-nuys" data-testid="link-hero-discovery">
+              <Link
+                href="/discovery-flight-van-nuys"
+                data-testid="link-hero-discovery"
+              >
                 <Button
                   size="lg"
                   variant="outline"
                   className="font-bold text-base h-12 px-7 border-white/40 hover:bg-white/10 text-white gap-2"
                 >
                   <PlaneTakeoff className="w-4 h-4" />
-                  Discovery Flight — $190
+                  Discovery Flight — $230
                 </Button>
               </Link>
-              <Link href="/van-nuys-accelerated-flight-school-deals-coupons" data-testid="link-hero-coupons">
+              <Link
+                href="/van-nuys-accelerated-flight-school-deals-coupons"
+                data-testid="link-hero-coupons"
+              >
                 <Button
                   size="lg"
                   className="font-bold text-base h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white gap-2"
@@ -192,9 +211,9 @@ export function HomePage() {
           <div className="container mx-auto px-4 max-w-5xl pb-8">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-lg">
               {[
-                { label: "AIRCRAFT RATE", value: "$160/hr wet" },
-                { label: "INSTRUCTOR FROM", value: "$35/hr" },
-                { label: "COMBINED DUAL", value: "$195/hr" },
+                { label: "AIRCRAFT RATE", value: "$175/hr wet" },
+                { label: "INSTRUCTOR FROM", value: "$40/hr" },
+                { label: "COMBINED DUAL", value: "$215/hr" },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -214,22 +233,33 @@ export function HomePage() {
       <section className="py-16 bg-white border-b border-slate-100">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-3">Training Programs</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">What Kind of Pilot Do You Want to Become?</h2>
+            <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-3">
+              Training Programs
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+              What Kind of Pilot Do You Want to Become?
+            </h2>
           </div>
 
           <div className="space-y-10">
             {pilotGoals.map((group, gi) => (
-              <div key={gi} className="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+              <div
+                key={gi}
+                className="rounded-2xl border border-slate-200 overflow-hidden shadow-sm"
+              >
                 {/* Goal header */}
                 <div className="bg-primary/5 border-b border-slate-200 px-6 py-4 flex items-start gap-3">
                   <span className="bg-primary text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     {gi + 1}
                   </span>
-                  <p className="font-semibold text-primary text-base leading-snug">{group.goal}</p>
+                  <p className="font-semibold text-primary text-base leading-snug">
+                    {group.goal}
+                  </p>
                 </div>
                 {/* Program cards */}
-                <div className={`grid gap-px bg-slate-100 ${group.programs.length === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
+                <div
+                  className={`grid gap-px bg-slate-100 ${group.programs.length === 1 ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}
+                >
                   {group.programs.map((p) => {
                     const Icon = p.icon;
                     return (
@@ -239,8 +269,12 @@ export function HomePage() {
                         data-testid={`card-program-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                       >
                         <Icon className="w-6 h-6 text-secondary mb-0.5" />
-                        <h3 className="text-base font-bold text-primary">{p.title}</h3>
-                        <p className="text-sm text-slate-600 leading-relaxed flex-1">{p.desc}</p>
+                        <h3 className="text-base font-bold text-primary">
+                          {p.title}
+                        </h3>
+                        <p className="text-sm text-slate-600 leading-relaxed flex-1">
+                          {p.desc}
+                        </p>
                         <Link
                           href={p.href}
                           className="inline-flex items-center gap-1 text-sm font-bold text-secondary hover:underline mt-1"
@@ -268,9 +302,10 @@ export function HomePage() {
               Why Accelerated Flight School Is Different
             </h2>
             <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-              Many students across the aviation industry become frustrated because training
-              can feel random, costs can be unclear, instructors may not explain why maneuvers
-              matter, and checkride planning may happen too late.
+              Many students across the aviation industry become frustrated
+              because training can feel random, costs can be unclear,
+              instructors may not explain why maneuvers matter, and checkride
+              planning may happen too late.
             </p>
           </div>
 
@@ -311,8 +346,12 @@ export function HomePage() {
               <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">
                 Southern California market average
               </p>
-              <p className="text-2xl font-bold text-white/60 line-through">$15,000 – $25,000+</p>
-              <p className="text-xs text-slate-400 mt-1">Private Pilot or Instrument Rating at many area schools</p>
+              <p className="text-2xl font-bold text-white/60 line-through">
+                $15,000 – $25,000+
+              </p>
+              <p className="text-xs text-slate-400 mt-1">
+                Private Pilot or Instrument Rating at many area schools
+              </p>
             </div>
             <div className="h-px md:h-16 md:w-px bg-slate-700" />
             <div>
@@ -321,15 +360,22 @@ export function HomePage() {
               </p>
               <p className="text-3xl font-bold text-white">~$7,500 – $12,500</p>
               <p className="text-xs text-slate-400 mt-1">
-                Private Pilot, depending on consistency, weather, study habits, and proficiency
+                Private Pilot, depending on consistency, weather, study habits,
+                and proficiency
               </p>
               <p className="text-sm font-bold text-green-400 mt-3 flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 No upfront payment — pay only when you fly
               </p>
             </div>
-            <Link href="/van-nuys-accelerated-flight-school-pricing" className="shrink-0">
-              <Button variant="outline" className="border-slate-600 text-white hover:bg-white/10 font-bold">
+            <Link
+              href="/van-nuys-accelerated-flight-school-pricing"
+              className="shrink-0"
+            >
+              <Button
+                variant="outline"
+                className="border-slate-600 text-white hover:bg-white/10 font-bold"
+              >
                 See Full Pricing
               </Button>
             </Link>
@@ -341,20 +387,41 @@ export function HomePage() {
               <div className="bg-secondary/10 rounded-xl p-3 shrink-0">
                 <Target className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold text-primary mt-1">Purpose-Driven Maneuvers</h3>
+              <h3 className="text-xl font-bold text-primary mt-1">
+                Purpose-Driven Maneuvers
+              </h3>
             </div>
             <div className="space-y-4 text-slate-600 leading-relaxed pl-16">
               <p>
-                Most flight training feels confusing at first because students are often told what maneuver they are doing without being told why it matters. A student may hear, "Today we are doing steep turns," but not understand how that maneuver connects to the Private Pilot Certificate, the FAA checkride, or the skills required to become a safe pilot.
+                Most flight training feels confusing at first because students
+                are often told what maneuver they are doing without being told
+                why it matters. A student may hear, "Today we are doing steep
+                turns," but not understand how that maneuver connects to the
+                Private Pilot Certificate, the FAA checkride, or the skills
+                required to become a safe pilot.
               </p>
-              <p className="font-semibold text-primary">At Accelerated Flight School, we teach differently.</p>
+              <p className="font-semibold text-primary">
+                At Accelerated Flight School, we teach differently.
+              </p>
               <p>
-                Before you ever leave the ground, we show you the Airman Certification Standards, called the <AviationTerm term="ACS" />. The ACS is the FAA's official testing guide and grading standard for pilot checkrides. A Designated Pilot Examiner, called a <AviationTerm term="DPE" />, uses those standards to test you during your oral exam and flight test.
+                Before you ever leave the ground, we show you the Airman
+                Certification Standards, called the <AviationTerm term="ACS" />.
+                The ACS is the FAA's official testing guide and grading standard
+                for pilot checkrides. A Designated Pilot Examiner, called a{" "}
+                <AviationTerm term="DPE" />, uses those standards to test you
+                during your oral exam and flight test.
               </p>
               <p>
-                That means from the beginning of training, you will understand exactly what is expected of you. Whether you are training for Private Pilot, Instrument Rating, Commercial Pilot, CFI, or CFII, every lesson is connected to the standard you must eventually meet.
+                That means from the beginning of training, you will understand
+                exactly what is expected of you. Whether you are training for
+                Private Pilot, Instrument Rating, Commercial Pilot, CFI, or
+                CFII, every lesson is connected to the standard you must
+                eventually meet.
               </p>
-              <p>Instead of simply saying, "Today we are doing steep turns," we explain:</p>
+              <p>
+                Instead of simply saying, "Today we are doing steep turns," we
+                explain:
+              </p>
               <ul className="space-y-2">
                 {[
                   "Why steep turns matter.",
@@ -370,10 +437,14 @@ export function HomePage() {
                 ))}
               </ul>
               <p>
-                Every lesson has a purpose. You will know what you are doing, why you are doing it, how it will be tested, and how it moves you closer to passing your <AviationTerm term="Checkride" />.
+                Every lesson has a purpose. You will know what you are doing,
+                why you are doing it, how it will be tested, and how it moves
+                you closer to passing your <AviationTerm term="Checkride" />.
               </p>
               <p>
-                This structured approach helps students avoid confusion, train with confidence, and reduce wasted money on lessons that feel random or disconnected.
+                This structured approach helps students avoid confusion, train
+                with confidence, and reduce wasted money on lessons that feel
+                random or disconnected.
               </p>
             </div>
           </div>
@@ -384,10 +455,18 @@ export function HomePage() {
               <div className="bg-secondary/10 rounded-xl p-3 shrink-0">
                 <BookOpen className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold text-primary mt-1">Study Expectations</h3>
+              <h3 className="text-xl font-bold text-primary mt-1">
+                Study Expectations
+              </h3>
             </div>
             <div className="pl-16 text-slate-600 leading-relaxed">
-              Students must study outside of flight lessons to progress efficiently. We are upfront about this from day one. Flight training is not just showing up and flying. Students must study at home, understand the FAA materials, and prepare for the written test, oral exam, and flight portion. We help point you toward FAA books and free online resources so you know exactly what to study and why it matters.
+              Students must study outside of flight lessons to progress
+              efficiently. We are upfront about this from day one. Flight
+              training is not just showing up and flying. Students must study at
+              home, understand the FAA materials, and prepare for the written
+              test, oral exam, and flight portion. We help point you toward FAA
+              books and free online resources so you know exactly what to study
+              and why it matters.
             </div>
           </div>
 
@@ -397,10 +476,20 @@ export function HomePage() {
               <div className="bg-secondary/10 rounded-xl p-3 shrink-0">
                 <FileText className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold text-primary mt-1">Written Examination</h3>
+              <h3 className="text-xl font-bold text-primary mt-1">
+                Written Examination
+              </h3>
             </div>
             <div className="pl-16 text-slate-600 leading-relaxed">
-              We help you with the written tests and direct you to study preps so that you pass the first time and pass with a high score. We are transparent and tell you upfront to pass with a high score (which is easy to do with our help) because any test question you miss on the written, you will need to demonstrate you understand it perfectly in the oral portion of your <AviationTerm term="Checkride" /> (flight test). Thus you will know ahead of time how to score high with our help, so your checkride goes much easier.
+              We help you with the written tests and direct you to study preps
+              so that you pass the first time and pass with a high score. We are
+              transparent and tell you upfront to pass with a high score (which
+              is easy to do with our help) because any test question you miss on
+              the written, you will need to demonstrate you understand it
+              perfectly in the oral portion of your{" "}
+              <AviationTerm term="Checkride" /> (flight test). Thus you will
+              know ahead of time how to score high with our help, so your
+              checkride goes much easier.
             </div>
           </div>
 
@@ -410,14 +499,29 @@ export function HomePage() {
               <div className="bg-secondary/10 rounded-xl p-3 shrink-0">
                 <Plane className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold text-primary mt-1">Confidence Building Instruction</h3>
+              <h3 className="text-xl font-bold text-primary mt-1">
+                Confidence Building Instruction
+              </h3>
             </div>
             <div className="pl-16 space-y-4 text-slate-600 leading-relaxed">
               <p>
-                We are the only school that provide scenario based training so that you as the student learn efficiently, and also, learn to build confidence fast. Most training in other schools involves teaching you how to fly in your home airport, or to only understand how to go from the school approved point A to point B, but this is inadequate. Piloting is all about smooth and confident flying even in new situations or during pressure.
+                We are the only school that provide scenario based training so
+                that you as the student learn efficiently, and also, learn to
+                build confidence fast. Most training in other schools involves
+                teaching you how to fly in your home airport, or to only
+                understand how to go from the school approved point A to point
+                B, but this is inadequate. Piloting is all about smooth and
+                confident flying even in new situations or during pressure.
               </p>
               <p>
-                When flying with our instructors, you will be able to learn instinctively and intuitively how to fly to an airport you have never been to out of the blue, such as by diverting, how to descend and enter its pattern, or how to fly a difficult instrument approach in an airport you have not been to or are diverting to, or how to fly through <AviationTerm term="Class Bravo" /> airspace confidently and how to obtain the clearance to do so.
+                When flying with our instructors, you will be able to learn
+                instinctively and intuitively how to fly to an airport you have
+                never been to out of the blue, such as by diverting, how to
+                descend and enter its pattern, or how to fly a difficult
+                instrument approach in an airport you have not been to or are
+                diverting to, or how to fly through{" "}
+                <AviationTerm term="Class Bravo" /> airspace confidently and how
+                to obtain the clearance to do so.
               </p>
             </div>
           </div>
@@ -428,24 +532,54 @@ export function HomePage() {
               <div className="bg-white/10 rounded-xl p-3 shrink-0">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mt-1">Responsibility is on Us</h3>
+              <h3 className="text-xl font-bold text-white mt-1">
+                Responsibility is on Us
+              </h3>
             </div>
             <div className="space-y-4 text-primary-foreground/85 leading-relaxed">
               <p>
-                At Accelerated Flight School, we believe the responsibility to prepare you properly falls on us. You are paying for instruction, structure, guidance, and a real path to passing. Our job is to provide high-quality training at a fair, low, and honest price, while making sure you always understand where you stand and what is required to succeed.
+                At Accelerated Flight School, we believe the responsibility to
+                prepare you properly falls on us. You are paying for
+                instruction, structure, guidance, and a real path to passing.
+                Our job is to provide high-quality training at a fair, low, and
+                honest price, while making sure you always understand where you
+                stand and what is required to succeed.
               </p>
               <p>
-                At many flight schools, especially for younger students or students who are new to aviation, it is easy to get trapped in a system where they keep spending money without getting clear answers. A student may be assigned an instructor who is unorganized, unmotivated, or more focused on protecting their own job than helping the student succeed. The student may fail stage checks or even a checkride, then be told it was entirely their fault, even when the training was poorly structured, poorly explained, or not properly managed.
+                At many flight schools, especially for younger students or
+                students who are new to aviation, it is easy to get trapped in a
+                system where they keep spending money without getting clear
+                answers. A student may be assigned an instructor who is
+                unorganized, unmotivated, or more focused on protecting their
+                own job than helping the student succeed. The student may fail
+                stage checks or even a checkride, then be told it was entirely
+                their fault, even when the training was poorly structured,
+                poorly explained, or not properly managed.
               </p>
               <p>
-                This happens more often than people realize. Students can spend thousands of dollars with an instructor who does not clearly explain the standards, does not give a real plan for improvement, and does not take ownership of the student's progress. Then, when the student struggles, the blame gets shifted onto the student instead of anyone asking whether the instruction, communication, or training plan failed them.
+                This happens more often than people realize. Students can spend
+                thousands of dollars with an instructor who does not clearly
+                explain the standards, does not give a real plan for
+                improvement, and does not take ownership of the student's
+                progress. Then, when the student struggles, the blame gets
+                shifted onto the student instead of anyone asking whether the
+                instruction, communication, or training plan failed them.
               </p>
-              <p className="font-medium text-white/95">We do not believe in that kind of flight training.</p>
+              <p className="font-medium text-white/95">
+                We do not believe in that kind of flight training.
+              </p>
               <p>
-                At Accelerated Flight School, we treat your success as our responsibility. We care whether you understand the material. We care whether you are progressing. We care whether you are being prepared correctly for the FAA checkride. We care whether you are happy, confident, satisfied, and willing to return for more training.
+                At Accelerated Flight School, we treat your success as our
+                responsibility. We care whether you understand the material. We
+                care whether you are progressing. We care whether you are being
+                prepared correctly for the FAA checkride. We care whether you
+                are happy, confident, satisfied, and willing to return for more
+                training.
               </p>
               <p className="font-semibold text-white">
-                We treat students the way paying customers deserve to be treated: with respect, honesty, clear instruction, fair pricing, and a serious commitment to helping them pass.
+                We treat students the way paying customers deserve to be
+                treated: with respect, honesty, clear instruction, fair pricing,
+                and a serious commitment to helping them pass.
               </p>
             </div>
           </div>
@@ -474,31 +608,49 @@ export function HomePage() {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-slate-800 mb-1">The Hidden Cost</p>
+                    <p className="font-bold text-slate-800 mb-1">
+                      The Hidden Cost
+                    </p>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      Many schools wait until all training is complete before booking a{" "}
-                      <AviationTerm term="DPE" /> checkride slot. In Southern California, this
-                      can create a 1–3 month delay after training ends.
+                      Many schools wait until all training is complete before
+                      booking a <AviationTerm term="DPE" /> checkride slot. In
+                      Southern California, this can create a 1–3 month delay
+                      after training ends.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-slate-800 mb-1">That Delay Costs Money</p>
+                    <p className="font-bold text-slate-800 mb-1">
+                      That Delay Costs Money
+                    </p>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      Pilot skills rust quickly without regular flying. A long wait forces extra
-                      refresher flights, frustration, and added cost before the{" "}
-                      <AviationTerm term="Checkride" />.
+                      Pilot skills rust quickly without regular flying. A long
+                      wait forces extra refresher flights, frustration, and
+                      added cost before the <AviationTerm term="Checkride" />.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CalendarClock className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-slate-800 mb-1">Our Approach</p>
+                    <p className="font-bold text-slate-800 mb-1">
+                      Our Approach
+                    </p>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      Accelerated Flight School coordinates checkride planning early once students demonstrate solid progress. The goal is to take the practical test shortly after training completion — not months later, by using our <AviationTerm term="DPE" /> network to schedule your <AviationTerm term="Checkride" /> (flight test) when you are still in training yet show clear potential to pass, so that when your training is complete, you take your checkride within <strong>1–3 weeks</strong>, whereas in most other schools this will take <strong>1–5 months</strong>, because they do not have a student-centric approach.
+                      Accelerated Flight School coordinates checkride planning
+                      early once students demonstrate solid progress. The goal
+                      is to take the practical test shortly after training
+                      completion — not months later, by using our{" "}
+                      <AviationTerm term="DPE" /> network to schedule your{" "}
+                      <AviationTerm term="Checkride" /> (flight test) when you
+                      are still in training yet show clear potential to pass, so
+                      that when your training is complete, you take your
+                      checkride within <strong>1–3 weeks</strong>, whereas in
+                      most other schools this will take{" "}
+                      <strong>1–5 months</strong>, because they do not have a
+                      student-centric approach.
                     </p>
                   </div>
                 </div>
@@ -514,7 +666,9 @@ export function HomePage() {
             <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-3">
               Transparent Pricing
             </p>
-            <h2 className="text-3xl font-bold text-primary mb-3">Pricing Snapshot</h2>
+            <h2 className="text-3xl font-bold text-primary mb-3">
+              Pricing Snapshot
+            </h2>
             <p className="text-slate-500 mb-6">
               Toggle between standard and block rates to see your savings.
             </p>
@@ -552,14 +706,16 @@ export function HomePage() {
                 Aircraft Rental
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                ${rateTab === "standard" ? "160" : "150"}
+                ${rateTab === "standard" ? "175" : "165"}
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1">
                 <AviationTerm term="Wet rental" /> — fuel included
               </p>
               {rateTab === "block" && (
-                <p className="text-xs text-green-600 font-bold mt-2">Save $10/hr vs standard</p>
+                <p className="text-xs text-green-600 font-bold mt-2">
+                  Save $10/hr vs standard
+                </p>
               )}
             </div>
 
@@ -572,14 +728,16 @@ export function HomePage() {
                 Aircraft + Instructor
               </p>
               <p className="text-5xl font-bold text-white mb-1">
-                ${rateTab === "standard" ? "195" : "180"}
+                ${rateTab === "standard" ? "215" : "205"}
                 <span className="text-xl font-normal opacity-70">/hr</span>
               </p>
               <p className="text-xs text-primary-foreground/60 mt-1">
                 Aircraft + Instructor Included
               </p>
               {rateTab === "block" && (
-                <p className="text-xs text-green-300 font-bold mt-2">Save $15/hr vs standard</p>
+                <p className="text-xs text-green-300 font-bold mt-2">
+                  Save $10/hr vs standard
+                </p>
               )}
             </div>
 
@@ -589,30 +747,30 @@ export function HomePage() {
                 Instructor
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                ${rateTab === "standard" ? "35" : "30"}
+                From $40
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1">
-                David T. — {rateTab === "standard" ? "standard rate" : "10-hr block"}
+                (+$20/hr to the flight school)
               </p>
-              <div className="mt-4 pt-4 border-t border-slate-200">
-                <p className="text-xl font-bold text-slate-700">${rateTab === "standard" ? "45" : "35"}<span className="text-sm text-slate-400 font-normal">/hr</span></p>
-                <p className="text-xs text-slate-500">Reza S. (Owner)</p>
-              </div>
-              {rateTab === "block" && (
-                <p className="text-xs text-green-600 font-bold mt-2">Save $5/hr vs standard</p>
-              )}
             </div>
           </div>
 
           <p className="text-xs text-center text-slate-400 mb-2">
-            <AviationTerm term="Wet rental" /> means fuel is included in the aircraft rate.{" "}
-            <AviationTerm term="Dual instruction" /> means flying with an instructor onboard.
+            <AviationTerm term="Wet rental" /> means fuel is included in the
+            aircraft rate. <AviationTerm term="Dual instruction" /> means flying
+            with an instructor onboard.
           </p>
 
           <div className="text-center mt-6">
-            <Link href="/van-nuys-accelerated-flight-school-pricing" data-testid="link-pricing-snapshot-more">
-              <Button variant="outline" className="font-bold border-primary text-primary hover:bg-primary/5">
+            <Link
+              href="/van-nuys-accelerated-flight-school-pricing"
+              data-testid="link-pricing-snapshot-more"
+            >
+              <Button
+                variant="outline"
+                className="font-bold border-primary text-primary hover:bg-primary/5"
+              >
                 View Full Pricing &amp; Program Estimates
               </Button>
             </Link>
@@ -628,15 +786,21 @@ export function HomePage() {
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="bg-primary text-white py-24">
         <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h2 className="text-4xl font-bold mb-6">Have Questions? We'll Explain Everything.</h2>
+          <h2 className="text-4xl font-bold mb-6">
+            Have Questions? We'll Explain Everything.
+          </h2>
           <p className="text-xl text-primary-foreground/80 mb-10 leading-relaxed">
-            Even if you are completely new to aviation and do not know where to start, call or
-            text us. We will answer your questions and help you understand the right training
-            path.
+            Even if you are completely new to aviation and do not know where to
+            start, call or text us. We will answer your questions and help you
+            understand the right training path.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="tel:323-332-0585">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
+              >
                 <Phone className="w-5 h-5" />
                 Call 323-332-0585
               </Button>

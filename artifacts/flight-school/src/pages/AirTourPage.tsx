@@ -16,7 +16,6 @@ import { Button } from "@/components/ui/button";
 import { getAirTourPage } from "@/data/airTourPages";
 import { getAirTourUnique } from "@/data/airTourUnique";
 
-
 function FAQItem({ q, a, id }: { q: string; a: string; id: string }) {
   const [open, setOpen] = React.useState(false);
   const panelId = `${id}-panel`;
@@ -78,7 +77,9 @@ export function AirTourPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center py-24">
-          <h1 className="text-2xl font-bold text-slate-800 mb-4">Page Not Found</h1>
+          <h1 className="text-2xl font-bold text-slate-800 mb-4">
+            Page Not Found
+          </h1>
           <p className="text-slate-500 mb-6">This page does not exist.</p>
           <Link href="/">
             <Button>Back to Home</Button>
@@ -99,14 +100,17 @@ export function AirTourPage() {
     serviceType: "Discovery Flight",
     provider: { "@id": `${SITE_URL}/#organization` },
     url: `${SITE_URL}/${slug}`,
-    image: page.photos[0]?.src ? `${SITE_URL}${page.photos[0].src}` : `${SITE_URL}/images/aircraft-exterior.jpg`,
+    image: page.photos[0]?.src
+      ? `${SITE_URL}${page.photos[0].src}`
+      : `${SITE_URL}/images/aircraft-exterior.jpg`,
     offers: [
       {
         "@type": "Offer",
         name: "Discovery Flight — 1 Person",
-        price: "190",
+        price: "230",
         priceCurrency: "USD",
-        description: "Discovery flight for one person. Aircraft and CFI instructor included.",
+        description:
+          "Discovery flight for one person. Aircraft and CFI instructor included.",
         seller: { "@id": `${SITE_URL}/#organization` },
       },
       {
@@ -114,30 +118,37 @@ export function AirTourPage() {
         name: "Discovery Flight — 2 People",
         price: "270",
         priceCurrency: "USD",
-        description: "Discovery flight for two people (subject to aircraft weight limitations). Aircraft and CFI instructor included.",
+        description:
+          "Discovery flight for two people (subject to aircraft weight limitations). Aircraft and CFI instructor included.",
         seller: { "@id": `${SITE_URL}/#organization` },
       },
     ],
   };
 
-  const faqSchema = page.faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: page.faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  } : null;
+  const faqSchema =
+    page.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: page.faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
 
   return (
     <div className="w-full">
-      <Seo
-        title={page.metaTitle}
-        description={page.metaDescription}
-      >
-        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
-        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+      <Seo title={page.metaTitle} description={page.metaDescription}>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
+        </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Seo>
 
       {/* Hero */}
@@ -156,7 +167,11 @@ export function AirTourPage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <a href="tel:3233320585">
-              <Button size="lg" variant="secondary" className="font-bold gap-2 h-12 px-6">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="font-bold gap-2 h-12 px-6"
+              >
                 <Phone className="w-4 h-4" /> Call 323-332-0585
               </Button>
             </a>
@@ -186,7 +201,10 @@ export function AirTourPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="space-y-5">
             {page.intro.map((para, i) => (
-              <p key={i} className="text-slate-700 leading-relaxed text-base md:text-lg">
+              <p
+                key={i}
+                className="text-slate-700 leading-relaxed text-base md:text-lg"
+              >
                 {para}
               </p>
             ))}
@@ -198,10 +216,15 @@ export function AirTourPage() {
       {unique && (
         <section className="py-14 bg-white border-t border-slate-100">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-6">{unique.heading}</h2>
+            <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-6">
+              {unique.heading}
+            </h2>
             <div className="space-y-5">
               {unique.paragraphs.map((para, i) => (
-                <p key={i} className="text-slate-700 leading-relaxed text-base md:text-lg">
+                <p
+                  key={i}
+                  className="text-slate-700 leading-relaxed text-base md:text-lg"
+                >
                   {para}
                 </p>
               ))}
@@ -230,7 +253,8 @@ export function AirTourPage() {
                 ))}
               </div>
               <p className="text-slate-400 text-xs mt-5 leading-relaxed">
-                Exact scenery and routing vary with each flight depending on conditions on the day.
+                Exact scenery and routing vary with each flight depending on
+                conditions on the day.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
@@ -254,17 +278,25 @@ export function AirTourPage() {
             Why a Discovery Flight Beats a Passive Air Tour
           </h2>
           <p className="text-slate-500 mb-8 max-w-2xl">
-            A sightseeing charter puts you in the back as a passenger. A discovery flight puts you in
-            the front, with your hands on the controls.
+            A sightseeing charter puts you in the back as a passenger. A
+            discovery flight puts you in the front, with your hands on the
+            controls.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {highlights.map((item) => (
-              <div key={item.title} className="bg-slate-50 rounded-xl p-5 border border-slate-200">
+              <div
+                key={item.title}
+                className="bg-slate-50 rounded-xl p-5 border border-slate-200"
+              >
                 <div className="flex items-center gap-2 mb-2">
                   {item.icon}
-                  <h3 className="font-bold text-slate-800 text-sm">{item.title}</h3>
+                  <h3 className="font-bold text-slate-800 text-sm">
+                    {item.title}
+                  </h3>
                 </div>
-                <p className="text-slate-500 text-sm leading-relaxed">{item.body}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  {item.body}
+                </p>
               </div>
             ))}
           </div>
@@ -285,26 +317,40 @@ export function AirTourPage() {
       {/* Pricing */}
       <section className="py-14 bg-slate-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-2">Discovery Flight Pricing</h2>
-          <p className="text-slate-500 mb-8">Aircraft and instructor included. No hidden fees.</p>
+          <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-2">
+            Discovery Flight Pricing
+          </h2>
+          <p className="text-slate-500 mb-8">
+            Aircraft and instructor included. No hidden fees.
+          </p>
           <div className="grid sm:grid-cols-2 gap-4 mb-6">
             <div className="bg-white border border-primary/20 rounded-xl p-6 text-center">
               <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">
                 1 Person
               </div>
-              <div className="text-4xl font-black text-slate-800 mb-1">$190</div>
-              <div className="text-xs text-slate-500">Aircraft + instructor included</div>
+              <div className="text-4xl font-black text-slate-800 mb-1">
+                $230
+              </div>
+              <div className="text-xs text-slate-500">
+                Aircraft + instructor included
+              </div>
             </div>
             <div className="bg-white border border-primary/20 rounded-xl p-6 text-center">
               <div className="text-xs font-semibold text-primary uppercase tracking-wider mb-1">
                 2 People
               </div>
-              <div className="text-4xl font-black text-slate-800 mb-1">$270</div>
-              <div className="text-xs text-slate-500">Total — subject to aircraft limitations</div>
+              <div className="text-4xl font-black text-slate-800 mb-1">
+                $270
+              </div>
+              <div className="text-xs text-slate-500">
+                Total — subject to aircraft limitations
+              </div>
             </div>
           </div>
           {page.pricingNote && (
-            <p className="text-slate-500 text-sm leading-relaxed mb-6">{page.pricingNote}</p>
+            <p className="text-slate-500 text-sm leading-relaxed mb-6">
+              {page.pricingNote}
+            </p>
           )}
           <div className="flex flex-wrap gap-3">
             <a href="tel:3233320585">
@@ -346,24 +392,41 @@ export function AirTourPage() {
       {/* Related routes */}
       <section className="py-14 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-xl font-black text-slate-800 mb-6">Explore More</h2>
+          <h2 className="text-xl font-black text-slate-800 mb-6">
+            Explore More
+          </h2>
           <div className="grid sm:grid-cols-3 gap-4">
             <Link href="/los-angeles-air-tours-sightseeing-flights">
               <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
-                <p className="font-bold text-primary text-sm mb-1">All LA Sightseeing Flights</p>
-                <p className="text-xs text-slate-500 leading-relaxed">Browse all scenic discovery flight routes departing from Van Nuys Airport.</p>
+                <p className="font-bold text-primary text-sm mb-1">
+                  All LA Sightseeing Flights
+                </p>
+                <p className="text-xs text-slate-500 leading-relaxed">
+                  Browse all scenic discovery flight routes departing from Van
+                  Nuys Airport.
+                </p>
               </div>
             </Link>
             <Link href="/discovery-flight-van-nuys">
               <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
-                <p className="font-bold text-primary text-sm mb-1">Discovery Flight — $190</p>
-                <p className="text-xs text-slate-500 leading-relaxed">Our main 1.5-hour introductory flight. Price, what's included, aircraft details, and how to book.</p>
+                <p className="font-bold text-primary text-sm mb-1">
+                  Discovery Flight — $230
+                </p>
+                <p className="text-xs text-slate-500 leading-relaxed">
+                  Our main 1.5-hour introductory flight. Price, what's included,
+                  aircraft details, and how to book.
+                </p>
               </div>
             </Link>
             <Link href="/private-pilot-van-nuys">
               <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
-                <p className="font-bold text-primary text-sm mb-1">Continue to Private Pilot</p>
-                <p className="text-xs text-slate-500 leading-relaxed">Your discovery flight hours count toward your Private Pilot logbook. See what training looks like.</p>
+                <p className="font-bold text-primary text-sm mb-1">
+                  Continue to Private Pilot
+                </p>
+                <p className="text-xs text-slate-500 leading-relaxed">
+                  Your discovery flight hours count toward your Private Pilot
+                  logbook. See what training looks like.
+                </p>
               </div>
             </Link>
           </div>
@@ -400,14 +463,20 @@ export function AirTourPage() {
       {/* Bottom CTA */}
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl font-black mb-4">Ready to Take the Controls?</h2>
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Ready to Take the Controls?
+          </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
             {page.ctaNote ??
-              "Call or text us directly at 323-332-0585 to book your discovery flight at Van Nuys Airport — $190 for 1 person, $270 for 2."}
+              "Call or text us directly at 323-332-0585 to book your discovery flight at Van Nuys Airport — $230 for 1 person, $270 for 2."}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:3233320585">
-              <Button size="lg" variant="secondary" className="font-bold gap-2 h-12 px-7">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="font-bold gap-2 h-12 px-7"
+              >
                 <Phone className="w-4 h-4" /> Call 323-332-0585
               </Button>
             </a>
@@ -430,8 +499,8 @@ export function AirTourPage() {
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport (KVNY) · Van Nuys, CA
-            91406
+            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport
+            (KVNY) · Van Nuys, CA 91406
           </p>
         </div>
       </section>

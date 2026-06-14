@@ -164,13 +164,13 @@ const faqs: Faq[] = [
   {
     q: "What happens at a Discovery Flight?",
     plain:
-      "A Discovery Flight is an introductory lesson where you actually fly the aircraft with an instructor. It's the best way to experience training before committing. Ours is $190.",
+      "A Discovery Flight is an introductory lesson where you actually fly the aircraft with an instructor. It's the best way to experience training before committing. Ours is $230.",
     a: (
       <>
         A <strong>Discovery Flight</strong> is an introductory lesson where you sit in the pilot seat and{" "}
         <strong>actually fly the aircraft</strong> with an instructor guiding you. You will handle the controls, see what
         a real lesson feels like, and get your questions answered. It is the best, no-pressure way to experience flight
-        training before committing to a full program. Ours is <strong>$190</strong>.
+        training before committing to a full program. Ours is <strong>$230</strong>.
       </>
     ),
   },
@@ -190,12 +190,12 @@ const faqs: Faq[] = [
   {
     q: "How much does training cost?",
     plain:
-      "We're a pay-as-you-fly school with no large upfront payments. Aircraft rental is $160/hr wet, and a Discovery Flight is $190. See our pricing page for full details.",
+      "We're a pay-as-you-fly school with no large upfront payments. Aircraft rental is $175/hr wet, and a Discovery Flight is $230. See our pricing page for full details.",
     a: (
       <>
         We are a <strong>pay-as-you-fly</strong> school — no large prepaid blocks or training loans required. Aircraft
-        rental in our Piper Warrior II is <strong>$160/hr wet</strong> (fuel included), and a Discovery Flight is{" "}
-        <strong>$190</strong>. You pay per lesson, keeping your investment proportional to your progress. See our pricing
+        rental in our Piper Warrior II is <strong>$175/hr wet</strong> (fuel included), and a Discovery Flight is{" "}
+        <strong>$230</strong>. You pay per lesson, keeping your investment proportional to your progress. See our pricing
         page for full details, and call us anytime with questions.
       </>
     ),
