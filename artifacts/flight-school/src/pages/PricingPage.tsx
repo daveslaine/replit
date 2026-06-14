@@ -771,7 +771,7 @@ export function PricingPage() {
           </p>
           <h2 className="text-xl font-bold text-primary mb-6">We Accept</h2>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Cash", "Zelle", "Apple Pay", "CashApp", "PayPal"].map(
+            {["Cash", "Credit Card", "Zelle", "Apple Pay", "CashApp"].map(
               (method) => (
                 <div
                   key={method}
