@@ -19,10 +19,12 @@ export function ContactThankYouPage() {
           <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-secondary">
             <CheckCircle2 className="h-9 w-9" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-5">Message Sent</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-5">
+            Message Sent
+          </h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed">
-            We received your flight training inquiry and will follow up soon. If
-            you want the fastest answer, call or text us now.
+            We received your flight training inquiry and will follow up soon.
+            If you want the fastest answer, call or text us now.
           </p>
         </div>
       </section>
@@ -31,10 +33,7 @@ export function ContactThankYouPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid gap-4 sm:grid-cols-3">
             <a href="tel:323-332-0585">
-              <Button
-                className="h-14 w-full gap-2 text-base"
-                variant="secondary"
-              >
+              <Button className="h-14 w-full gap-2 text-base" variant="secondary">
                 <Phone className="h-5 w-5" />
                 Call Now
               </Button>

@@ -144,10 +144,10 @@ export function OurAircraftPage() {
     <div className="w-full">
       <Seo
         title={
-          "Training Aircraft at Van Nuys (KVNY) | Accelerated Flight School"
+          "Training Aircraft | Van Nuys Airport KVNY | Accelerated Flight School"
         }
         description={
-          "Train in a Piper PA28 Cherokee Warrior II (N9172Y) or Cessna 172. IFR equipped, Garmin GNS 430, ADS-B. Full V-speeds and POH reference. $160/hr wet. Call 323-332-0585."
+          "Train in a 1985 Piper PA28 Cherokee Warrior II (N9172Y). IFR equipped, Garmin GNS 430, ADS-B. Full V-speeds and POH reference. $175/hr wet. Call 323-332-0585."
         }
       />
 
@@ -217,7 +217,7 @@ export function OurAircraftPage() {
                     Standard Rate
                   </p>
                   <p className="text-3xl font-bold text-secondary mb-1">
-                    $160
+                    $175
                     <span className="text-sm font-normal text-slate-500">
                       /hr
                     </span>
@@ -226,7 +226,7 @@ export function OurAircraftPage() {
                     <AviationTerm term="Wet rental" /> (fuel included)
                   </p>
                   <p className="text-xs font-bold text-primary mt-2 pt-2 border-t border-slate-200">
-                    $150/hr with 10-hr block
+                    $165/hr with 10-hr block
                   </p>
                 </div>
               </div>
@@ -390,7 +390,7 @@ export function OurAircraftPage() {
                 { name: "Cessna 172N Skyhawk", price: "$145/hr" },
                 { name: "Cessna 172P Skyhawk", price: "$160/hr" },
                 { name: "Cessna 172S Skyhawk", price: "$170/hr" },
-                { name: "Piper Warrior", price: "$165/hr" },
+                { name: "Piper Warrior", price: "$160/hr" },
               ].map((a) => (
                 <div
                   key={a.name}

@@ -3,4 +3,5 @@
 - [Flight school prod serving](flight-school-prod-serving.md) — prod is a Node process (serve.mjs, no deps/no build) not static, so trailing-slash etc. get REAL 301s; redirect tables duplicated from app.ts, keep in sync.
 - [Flight school instructors](flight-school-instructors.md) — instructor cards are DB-driven via /api/instructors; editing seed won't update existing rows, use one-time seed_history backfill; Reza title intentionally "", David left/Reza right.
 - [Flight school logo assets](flight-school-logo-assets.md) — "transparent" logo PNGs often ship opaque white bg (run bg-removal); header needs white-glow for blue-on-navy at top, none when scrolled.
+- [Flight school pricing model](flight-school-pricing-model.md) — aircraft $175 std/$165 block + instructor "From $40/hr (+$20 to school)" = $215/$205 dual; no 30-hr pkgs; recompute all derived figures on rate change.
 - [Prod DB data not migrated on Publish](prod-db-data-seeding.md) — Publish migrates schema only, not table data; prod executeSql is read-only; use one-time concurrency-safe startup seed (advisory lock + seed_history flag) for defaults.

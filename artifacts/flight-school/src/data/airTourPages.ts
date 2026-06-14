@@ -27,7 +27,7 @@ export const airTourPages: AirTourPageConfig[] = [
     slug: "los-angeles-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
     metaTitle: "Los Angeles Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Real discovery flight from Van Nuys Airport — take the controls with a CFI over Los Angeles. See iconic LA scenery. $190 for 1 person, $270 for 2.",
+      "Real discovery flight from Van Nuys Airport — take the controls with a CFI over Los Angeles. See iconic LA scenery. $230 for 1 person, $270 for 2.",
     h1: "Los Angeles Sightseeing Air Tour Alternative: Discovery Flight from Van Nuys Airport",
     subheadline:
       "A real discovery flight lesson with a Certified Flight Instructor from Van Nuys Airport (KVNY). Sit up front, learn the controls, and you may fly the airplane yourself.",
@@ -73,12 +73,12 @@ export const airTourPages: AirTourPageConfig[] = [
     metaTitle:
       "Los Angeles Helicopter Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Skip the helicopter tour — fly the airplane yourself on a discovery flight from Van Nuys Airport with a CFI. $190 for 1, $270 for 2.",
+      "Skip the helicopter tour — fly the airplane yourself on a discovery flight from Van Nuys Airport with a CFI. $230 for 1, $270 for 2.",
     h1: "Los Angeles Helicopter Sightseeing Air Tour Alternative: Fly the Plane Yourself",
     subheadline:
       "Dreaming of seeing Los Angeles from the sky? Take it further — fly the airplane yourself on a hands-on discovery flight from Van Nuys Airport, with a Certified Flight Instructor right beside you.",
     intro: [
-      "If you're dreaming about seeing Los Angeles from above, here's an even better way to do it: a discovery flight where you don't just ride along — you actually take the controls and fly. With a Certified Flight Instructor beside you Aircraft, whether Piper Cherokee or a good old Cessna 172, you'll experience real flying from the front seat at Van Nuys Airport (KVNY).",
+      "If you're dreaming about seeing Los Angeles from above, here's an even better way to do it: a discovery flight where you don't just ride along — you actually take the controls and fly. With a Certified Flight Instructor beside you in our 1985 Piper PA-28 Cherokee Warrior II (N9172Y), you'll experience real flying from the front seat at Van Nuys Airport (KVNY).",
       "It's hands-on from the start. You'll sit up front, learn the basic controls, and fly with your instructor's guidance — interactive, educational, and a genuine first step toward becoming a pilot if you catch the bug.",
       "And it's an absolute blast. Lifting off is thrilling and joyful, the views over Southern California are unreal, and with your instructor you can even feel the light, floating sensation of a gentle zero-G maneuver. It's an experience people talk about for years.",
     ],
@@ -119,7 +119,7 @@ export const airTourPages: AirTourPageConfig[] = [
     metaTitle:
       "Los Angeles Scenic Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Book a discovery flight from Van Nuys Airport — take the controls with a CFI and enjoy scenic LA views. $190 for 1 person, $270 for 2.",
+      "Book a discovery flight from Van Nuys Airport — take the controls with a CFI and enjoy scenic LA views. $230 for 1 person, $270 for 2.",
     h1: "Los Angeles Sightseeing Flight Tour Experience: Discovery Flight Lesson",
     subheadline:
       "An introductory flight lesson with scenic LA views from Van Nuys Airport. You're not just a passenger — you get a pre-flight briefing, fly with a CFI, and may take the controls.",
@@ -164,7 +164,7 @@ export const airTourPages: AirTourPageConfig[] = [
     slug: "santa-monica-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
     metaTitle: "Santa Monica Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Fly a discovery flight from Van Nuys Airport with possible Santa Monica and coastal views. Take the controls with a CFI. $190 for 1, $270 for 2.",
+      "Fly a discovery flight from Van Nuys Airport with possible Santa Monica and coastal views. Take the controls with a CFI. $230 for 1, $270 for 2.",
     h1: "Santa Monica Sightseeing Air Tour Alternative: Discovery Flight from Van Nuys",
     subheadline:
       "Looking for a Santa Monica sightseeing air tour or coastal flying experience? Fly a discovery flight lesson from nearby Van Nuys Airport and take the controls with a CFI.",
@@ -201,7 +201,7 @@ export const airTourPages: AirTourPageConfig[] = [
       },
       {
         q: "How much is it?",
-        a: "$190 for 1 person or $270 total for 2 people.",
+        a: "$230 for 1 person or $270 total for 2 people.",
       },
       {
         q: "Is this a sightseeing tour or a real flight lesson?",
@@ -213,7 +213,7 @@ export const airTourPages: AirTourPageConfig[] = [
     slug: "malibu-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
     metaTitle: "Malibu Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Experience the Malibu coastline on a discovery flight lesson from Van Nuys Airport. Fly with a CFI and take the controls. $190 for 1 person, $270 for 2.",
+      "Experience the Malibu coastline on a discovery flight lesson from Van Nuys Airport. Fly with a CFI and take the controls. $230 for 1 person, $270 for 2.",
     h1: "Malibu Sightseeing Air Tour Alternative: Coastline Discovery Flight Lesson",
     subheadline:
       "Experience the Malibu coastline from the front seat on a discovery flight lesson from Van Nuys Airport — fly with a CFI and take the controls yourself.",
@@ -258,7 +258,7 @@ export const airTourPages: AirTourPageConfig[] = [
     slug: "hollywood-sign-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
     metaTitle: "Hollywood Sign Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Book a discovery flight from Van Nuys Airport with possible Hollywood Sign and LA landmark views. Take the controls with a CFI. $190 for 1, $270 for 2.",
+      "Book a discovery flight from Van Nuys Airport with possible Hollywood Sign and LA landmark views. Take the controls with a CFI. $230 for 1, $270 for 2.",
     h1: "Hollywood Sign Sightseeing Air Tour Alternative: Discovery Flight with LA Landmark Views",
     subheadline:
       "Prefer to fly the plane instead of just riding along? Book a discovery flight lesson from Van Nuys Airport with possible Hollywood Sign and LA landmark views.",
@@ -303,7 +303,7 @@ export const airTourPages: AirTourPageConfig[] = [
     slug: "long-beach-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
     metaTitle: "Long Beach Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Hands-on discovery flight from Van Nuys Airport with scenic LA and coastal views. Take the controls with a CFI. $190 for 1, $270 for 2.",
+      "Hands-on discovery flight from Van Nuys Airport with scenic LA and coastal views. Take the controls with a CFI. $230 for 1, $270 for 2.",
     h1: "Long Beach Sightseeing Air Tour Alternative: Hands-On Discovery Flight",
     subheadline:
       "Based at Van Nuys Airport, we offer hands-on discovery flight lessons with scenic LA and coastal views — and you get to fly the airplane yourself.",
@@ -348,13 +348,13 @@ export const airTourPages: AirTourPageConfig[] = [
     slug: "catalina-island-sightseeing-air-tour-discovery-flight-van-nuys-kvny",
     metaTitle: "Catalina Island Discovery Flight | Accelerated Flight School",
     metaDescription:
-      "Experience real flying from Van Nuys Airport — take the controls with a CFI over Southern California. $190 for 1, $270 for 2.",
+      "Experience real flying from Van Nuys Airport — take the controls with a CFI over Southern California. $230 for 1, $270 for 2.",
     h1: "Catalina Island Sightseeing Air Tour Alternative: Discovery Flight from Van Nuys",
     subheadline:
-      "The standard $190 discovery flight is an introductory lesson from Van Nuys Airport where you fly the plane. Extended scenic routes like Catalina can be arranged separately — just ask.",
+      "The standard $230 discovery flight is an introductory lesson from Van Nuys Airport where you fly the plane. Extended scenic routes like Catalina can be arranged separately — just ask.",
     intro: [
       "People searching for Catalina Island sightseeing air tours usually want ocean views, island scenery, and a memorable aviation experience. Accelerated Flight School offers an introductory discovery flight lesson from Van Nuys Airport (KVNY) where you may take the controls and experience real flying.",
-      "To be upfront: the standard $190 discovery flight is an introductory lesson based at Van Nuys and does not include Catalina Island. Catalina-style routes or extended coastal and cross-country flights can be discussed separately, depending on aircraft and instructor availability, weather, fuel planning, and pricing — so call or text us and we'll talk through what's realistic.",
+      "To be upfront: the standard $230 discovery flight is an introductory lesson based at Van Nuys and does not include Catalina Island. Catalina-style routes or extended coastal and cross-country flights can be discussed separately, depending on aircraft and instructor availability, weather, fuel planning, and pricing — so call or text us and we'll talk through what's realistic.",
       "Either way, the flying itself is a thrill. Climbing out over Southern California is exciting and joyful, you get to fly the airplane yourself, and with your instructor you can even feel the light, floating sensation of a gentle zero-G maneuver. For most first-timers, the standard discovery flight from KVNY is the perfect, hands-on introduction to flying.",
     ],
     scenery: [
@@ -376,8 +376,8 @@ export const airTourPages: AirTourPageConfig[] = [
       "Call or text to ask about discovery flights and extended scenic training routes.",
     faqs: [
       {
-        q: "Is Catalina Island included in the $190 discovery flight?",
-        a: "No. The standard $190 discovery flight is an introductory lesson from Van Nuys. Extended routes such as Catalina require separate planning, time, weather, fuel, and pricing.",
+        q: "Is Catalina Island included in the $230 discovery flight?",
+        a: "No. The standard $230 discovery flight is an introductory lesson from Van Nuys. Extended routes such as Catalina require separate planning, time, weather, fuel, and pricing.",
       },
       {
         q: "Is this a Catalina sightseeing air tour?",

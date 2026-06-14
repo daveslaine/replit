@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import {
@@ -14,47 +13,21 @@ import {
 import { Button } from "@/components/ui/button";
 import { airTourPages } from "@/data/airTourPages";
 
-const SITE_URL = "https://acceleratedflightschool.net";
-
 function tourLabel(h1: string): string {
   return h1.split(":")[0].trim();
 }
 
-const sortedTours = [...airTourPages].sort((a, b) => a.h1.localeCompare(b.h1));
-
-const itemListSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "@id": `${SITE_URL}/los-angeles-air-tours-sightseeing-flights#itemlist`,
-  name: "Los Angeles Air Tours & Sightseeing Flights",
-  description:
-    "Discovery flight routes and sightseeing flight options available from Van Nuys Airport (KVNY).",
-  url: `${SITE_URL}/los-angeles-air-tours-sightseeing-flights`,
-  numberOfItems: sortedTours.length,
-  itemListElement: sortedTours.map((tour, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: tourLabel(tour.h1),
-    url: `${SITE_URL}/${tour.slug}`,
-  })),
-};
-
 export function AirToursHubPage() {
-  const tours = sortedTours;
+  const tours = [...airTourPages].sort((a, b) => a.h1.localeCompare(b.h1));
 
   return (
     <div className="w-full">
       <Seo
         title={"Los Angeles Air Tours & Sightseeing Flights | KVNY"}
         description={
-          "Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $190 for one person. Call 323-332-0585."
+          "Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $230 for one person. Call 323-332-0585."
         }
       />
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(itemListSchema)}
-        </script>
-      </Helmet>
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
@@ -71,7 +44,7 @@ export function AirToursHubPage() {
             Skip the passive ride in the back of a charter. On our discovery
             flight you sit up front, take the controls with a Certified Flight
             Instructor, and see Southern California from the best seat in the
-            airplane — for $190 (1 person) or $270 (2 people).
+            airplane — for $230 (1 person) or $270 (2 people).
           </p>
           <div className="flex flex-wrap gap-3">
             <a href="tel:3233320585">
@@ -104,7 +77,7 @@ export function AirToursHubPage() {
             Our discovery flight is different: it is a real introductory flight
             lesson where <strong>you</strong> are in the left seat with your
             hands on the controls, guided by a CFI in our Piper PA-28 Cherokee
-            Warrior II or Cessna 172 The scenery is the same world-famous Los
+            Warrior II (N9172Y). The scenery is the same world-famous Los
             Angeles coastline and skyline — but the experience is yours to fly.
           </p>
           <p className="text-slate-700 leading-relaxed text-base md:text-lg">
@@ -176,7 +149,7 @@ export function AirToursHubPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
             Call or text <strong>323-332-0585</strong> to book your discovery
-            flight at Van Nuys Airport — $190 for 1 person, $270 for 2.
+            flight at Van Nuys Airport — $230 for 1 person, $270 for 2.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:3233320585">
