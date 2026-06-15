@@ -168,20 +168,13 @@ export function OurAircraftPage() {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
               <div className="col-span-2 md:col-span-2">
                 <img
-                  src="/images/aircraft-exterior.jpg"
+                  src="/images/aircraft-left-2.jpg"
                   alt="N9172Y Piper Cherokee Warrior II in flight"
                   className="w-full h-56 md:h-72 object-cover"
                   loading="lazy"
                 />
               </div>
-              <div className="col-span-1 hidden md:block">
-                <img
-                  src="/images/aircraft-cockpit.webp"
-                  alt="Piper Cherokee cockpit and instrument panel"
-                  className="w-full h-72 object-cover"
-                  loading="lazy"
-                />
-              </div>
+              
               <div className="col-span-2 md:col-span-1">
                 <img
                   src="/images/aircraft-interior-n9172y.webp"
@@ -192,7 +185,7 @@ export function OurAircraftPage() {
               </div>
               <div className="col-span-2 md:col-span-2">
                 <img
-                  src="/images/aircraft-ramp.jpg"
+                  src="/images/aircraft-side-1.jpg"
                   alt="Piper Cherokee on the ramp at Van Nuys Airport"
                   className="w-full h-48 object-cover"
                   loading="lazy"

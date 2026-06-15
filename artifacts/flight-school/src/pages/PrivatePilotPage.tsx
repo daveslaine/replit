@@ -555,7 +555,7 @@ export function PrivatePilotPage() {
 
               <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <img
-                  src="/images/aircraft-cockpit.webp"
+                  src="/images/aircraft-front.jpg"
                   alt="Private Pilot student cockpit training at Van Nuys Airport"
                   className="h-72 w-full object-cover md:h-[430px]"
                   width="1600"
@@ -842,7 +842,7 @@ export function PrivatePilotPage() {
 
               <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <img
-                  src="/images/aircraft-ramp.jpg"
+                  src="/images/aircraft-side-1.jpg"
                   alt="Training aircraft on the ramp for Private Pilot lessons at Van Nuys Airport"
                   className="h-72 w-full object-cover md:h-[430px]"
                   width="1600"

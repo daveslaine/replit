@@ -591,7 +591,7 @@ export function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-md order-2 md:order-1">
               <img
-                src="/images/piper-cherokee.webp"
+                src="/images/aircraft-left-2.jpg"
                 alt="Piper Cherokee cockpit panel and instruments at Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"
