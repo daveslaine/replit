@@ -100,7 +100,7 @@ export function HomePage() {
       <Seo
         title={"Flight Training Van Nuys Airport | Accelerated Flight School"}
         description={
-          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$7,500. Call or text 323-332-0585."
+          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$9,500. Call or text 323-332-0585."
         }
       />
       {/* ── Hero ──────────────────────────────────────────────── */}
@@ -211,9 +211,9 @@ export function HomePage() {
           <div className="container mx-auto px-4 max-w-5xl pb-8">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-lg">
               {[
-                { label: "AIRCRAFT RATE", value: "$175/hr wet" },
-                { label: "INSTRUCTOR FROM", value: "$40/hr" },
-                { label: "COMBINED DUAL", value: "$215/hr" },
+                { label: "AIRCRAFT RATE", value: "$200/hr wet" },
+                { label: "INSTRUCTOR FROM", value: "$50/hr" },
+                { label: "COMBINED DUAL", value: "$250/hr" },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -358,7 +358,7 @@ export function HomePage() {
               <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
                 Accelerated Flight School estimate
               </p>
-              <p className="text-3xl font-bold text-white">~$7,500 – $12,500</p>
+              <p className="text-3xl font-bold text-white">~$9,900 – $14,500</p>
               <p className="text-xs text-slate-400 mt-1">
                 Private Pilot, depending on consistency, weather, study habits,
                 and proficiency
@@ -706,7 +706,7 @@ export function HomePage() {
                 Aircraft Rental
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                ${rateTab === "standard" ? "175" : "165"}
+                ${rateTab === "standard" ? "200" : "190"}
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1">
@@ -728,7 +728,7 @@ export function HomePage() {
                 Aircraft + Instructor
               </p>
               <p className="text-5xl font-bold text-white mb-1">
-                ${rateTab === "standard" ? "215" : "205"}
+                ${rateTab === "standard" ? "250" : "235"}
                 <span className="text-xl font-normal opacity-70">/hr</span>
               </p>
               <p className="text-xs text-primary-foreground/60 mt-1">
@@ -747,12 +747,10 @@ export function HomePage() {
                 Instructor
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                From $40
+                From $50
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
-              <p className="text-xs text-slate-500 mt-1">
-                (+$20/hr to the flight school)
-              </p>
+              <p className="text-xs text-slate-500 mt-1"></p>
             </div>
           </div>
 

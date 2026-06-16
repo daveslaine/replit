@@ -17,7 +17,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Few neighborhoods sit closer to KVNY than Sherman Oaks. A short run up Sepulveda or Van Nuys Boulevard puts you at the field in minutes, which makes it realistic to fit a lesson around a lunch break or right after work without losing an evening to traffic.",
       "That proximity changes how you learn to navigate. The Sherman Oaks Galleria, the 405/101 interchange, and the Sepulveda Basin are all clear visual markers, and you will use them constantly to orient yourself when the tower hands you a departure or asks you to report a position on the way back in.",
-      "Because Accelerated Flight School operates one airplane and works with students directly, you are scheduling your time in N9172Y rather than waiting in a rotation behind a large fleet. Dual instruction runs $215/hr (aircraft at $175/hr wet plus instructor at $40/hr), and there is no large prepaid package to commit to. Reach us anytime at 323-332-0585.",
+      "Because Accelerated Flight School operates one airplane and works with students directly, you are scheduling your time in N9172Y rather than waiting in a rotation behind a large fleet. Dual instruction runs $250/hr (aircraft at $200/hr wet plus instructor at $50/hr), and there is no large prepaid package to commit to. Reach us anytime at 323-332-0585.",
     ],
   },
   "flight-school-near-encino-accelerated-flight-school-van-nuys-kvny": {
@@ -41,7 +41,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Glendale students generally take the 134 west through Burbank and merge onto the 101 before exiting at Balboa for the short drive to 7910 Balboa Blvd H7. Timing the trip outside peak hours keeps it predictable, and many students pair an early-morning or mid-day slot with the lighter direction of traffic.",
       "Your home turf shows up clearly from the air. The Verdugo Mountains, the deep cut of the Los Angeles River, and Griffith Park with its observatory perched on the south slope all become orientation points as you learn to fly headings, hold pattern altitude, and report your position to the KVNY tower.",
-      "We keep things simple: one airplane, our Piper PA-28 Cherokee Warrior II (N9172Y), and transparent rates — $175/hr wet for the aircraft, $40/hr for the instructor, $215/hr together. There are no fuel surcharges or membership dues hiding in the bill. Call or text 323-332-0585 to set up your first lesson.",
+      "We keep things simple: one airplane, our Piper PA-28 Cherokee Warrior II (N9172Y), and transparent rates — $200/hr wet for the aircraft, $50/hr for the instructor, $250/hr together. There are no fuel surcharges or membership dues hiding in the bill. Call or text 323-332-0585 to set up your first lesson.",
     ],
   },
   "flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny": {
@@ -65,7 +65,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Culver City students usually head up the 405 through the Sepulveda Pass and exit near Balboa, or take surface streets through the West Valley when the freeway is heavy. Since the drive is longer than for in-Valley students, booking a single, focused block of flight time makes each trip count.",
       "The route itself doubles as a flying lesson preview. You will recognize the studios around Culver City, the Baldwin Hills, and the wide sweep of the LA Basin from the air, and your instructor will tie those familiar features into ground reference and navigation exercises early in your training.",
-      "Because we operate one airplane — the Piper PA-28 Cherokee Warrior II, N9172Y — and bill plainly, there are no surprises: $175/hr wet for the aircraft (or $165/hr with a 10-hour block), $40/hr for the instructor. No membership fees, no fuel surcharges. Call or text 323-332-0585 to plan a schedule that respects the drive.",
+      "Because we operate one airplane — the Piper PA-28 Cherokee Warrior II, N9172Y — and bill plainly, there are no surprises: $200/hr wet for the aircraft (or $165/hr with a 10-hour block), $50/hr for the instructor. No membership fees, no fuel surcharges. Call or text 323-332-0585 to plan a schedule that respects the drive.",
     ],
   },
   "flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny": {
@@ -73,7 +73,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Pasadena students typically take the 134 west through Glendale and Burbank, then connect to the 101 before exiting at Balboa. It is a cross-Valley drive, so many San Gabriel Valley students plan longer, less frequent sessions to get the most flying out of each trip to the field.",
       "Your side of town gives you distinctive aerial references. The San Gabriel Mountains towering to the north, the Rose Bowl in its arroyo, and the Colorado Street Bridge stand out clearly, and they become natural waypoints as you practice holding altitude and tracking courses on the way out toward the practice area.",
-      "Training is built around our Piper PA-28 Cherokee Warrior II (N9172Y), with the aircraft at $175/hr wet, the instructor at $40/hr, and dual at $215/hr — no prepaid program required. If you want a low-commitment introduction, a Discovery Flight runs $230 for one person. Call or text 323-332-0585 to begin.",
+      "Training is built around our Piper PA-28 Cherokee Warrior II (N9172Y), with the aircraft at $200/hr wet, the instructor at $50/hr, and dual at $250/hr — no prepaid program required. If you want a low-commitment introduction, a Discovery Flight runs $230 for one person. Call or text 323-332-0585 to begin.",
     ],
   },
   "flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny": {
@@ -90,7 +90,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
       paragraphs: [
         "From Westlake Village the path to KVNY is simple: pick up the 101 east and ride it across the Conejo Grade into the Valley to the Balboa exit. Many students settle into a steady weekly rhythm, treating the drive as part of the routine rather than an obstacle.",
         "Your hometown scenery makes a great training backdrop. Westlake Lake, the surrounding hills, and the open expanse where the Conejo Valley meets the San Fernando Valley all show up clearly aloft, giving you reliable visual anchors while you learn to manage altitude, heading, and airspeed at the same time.",
-        "Because there is one airplane and direct scheduling, you are flying our Piper PA-28 Cherokee Warrior II (N9172Y) on your timeline, not waiting in a fleet queue. Pricing is plain — $215/hr dual, with the aircraft dropping to $165/hr wet on a 10-hour block. Call or text 323-332-0585 to talk through your goals.",
+        "Because there is one airplane and direct scheduling, you are flying our Piper PA-28 Cherokee Warrior II (N9172Y) on your timeline, not waiting in a fleet queue. Pricing is plain — $250/hr dual, with the aircraft dropping to $165/hr wet on a 10-hour block. Call or text 323-332-0585 to talk through your goals.",
       ],
     },
   "flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny": {
@@ -114,7 +114,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Woodland Hills sits close enough that a short drive east on Ventura Boulevard or a brief stretch of the 101 to Balboa puts you at the field quickly. That convenience makes frequent flying realistic, and flying often is one of the most reliable ways to keep skills sharp and total training time down.",
       "The geography west of the field gives you instant orientation. The Warner Center towers, the wide commercial strip along Ventura, and the Santa Monica Mountains to the south are easy to spot from the air, and you will lean on them as visual checkpoints during your first solo-area work.",
-      "Lessons are flown in our single, well-maintained Piper PA-28 Cherokee Warrior II, N9172Y, with direct scheduling instead of a crowded fleet rotation. Dual is $215/hr with no hidden fees, and a 10-hour block lowers the aircraft to $165/hr wet. Call or text 323-332-0585 to claim a slot.",
+      "Lessons are flown in our single, well-maintained Piper PA-28 Cherokee Warrior II, N9172Y, with direct scheduling instead of a crowded fleet rotation. Dual is $250/hr with no hidden fees, and a 10-hour block lowers the aircraft to $165/hr wet. Call or text 323-332-0585 to claim a slot.",
     ],
   },
   "flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny": {
@@ -122,7 +122,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Tarzana students reach KVNY in minutes — a quick drive up Reseda or Tampa, or a brief stretch of the 101 to Balboa. Short commutes are an underrated training advantage: they make it easy to fly two or three times a week, and that frequency keeps freshly learned skills from fading between lessons.",
       "From the air, your everyday surroundings become navigation tools. The Ventura Boulevard corridor, the green of the Sepulveda Basin to the east, and the foothills to the south give you clear references while you practice maintaining altitude and tracking a course back toward the airport.",
-      "You will fly our Piper PA-28 Cherokee Warrior II (N9172Y) with no scheduling middleman — you talk to your instructor and set the next lesson directly. Rates are transparent at $215/hr dual, and a Discovery Flight is $230 for one or $270 for two if you want a relaxed first look. Call or text 323-332-0585.",
+      "You will fly our Piper PA-28 Cherokee Warrior II (N9172Y) with no scheduling middleman — you talk to your instructor and set the next lesson directly. Rates are transparent at $250/hr dual, and a Discovery Flight is $230 for one or $270 for two if you want a relaxed first look. Call or text 323-332-0585.",
     ],
   },
   "flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny":
@@ -131,7 +131,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
       paragraphs: [
         "From NoHo, the drive to Van Nuys Airport is a short westward run on Victory or Burbank Boulevard, or a quick segment of the 170 and 101 to Balboa. The proximity means you can fly frequently, which matters most in early training when consistency drives progress.",
         "The neighborhood landmarks you know translate straight to the cockpit. On first flights you will pick out the NoHo Arts District, the Tujunga Wash, and the Verdugo Mountains rising to the east, then use those features to stay oriented as the tower works you in and out of the pattern.",
-        "Training is centered on one airplane — our Piper PA-28 Cherokee Warrior II, N9172Y — so each lesson builds cleanly on the last. With dual at $215/hr and no prepaid package required, you can start small and grow your schedule. Call or text 323-332-0585 to book a Discovery Flight or your first lesson.",
+        "Training is centered on one airplane — our Piper PA-28 Cherokee Warrior II, N9172Y — so each lesson builds cleanly on the last. With dual at $250/hr and no prepaid package required, you can start small and grow your schedule. Call or text 323-332-0585 to book a Discovery Flight or your first lesson.",
       ],
     },
   "flight-school-near-studio-city-accelerated-flight-school-van-nuys-kvny": {
@@ -147,7 +147,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Santa Clarita students drop south on the 5 or 405 and exit toward Balboa for the run to the general aviation ramp. Because it is a cross-region drive, planning a solid block of flight time per visit makes the trip from north LA County genuinely worthwhile.",
       "The descent from the Santa Clarita Valley into the San Fernando Valley is something you will see mirrored in the air. On training flights you will spot the Newhall Pass, the Santa Susana and San Gabriel ranges framing the basin, and the freeway corridors threading between them — strong landmarks for early pilotage and cross-country planning.",
-      "You will fly our Piper PA-28 Cherokee Warrior II, N9172Y, on pay-as-you-fly terms with no large loan to sign. The instructor rate is $40/hr and dual is $215/hr, with the aircraft at $165/hr wet on a 10-hour block. Call or text 323-332-0585 to set up a schedule that fits the drive south.",
+      "You will fly our Piper PA-28 Cherokee Warrior II, N9172Y, on pay-as-you-fly terms with no large loan to sign. The instructor rate is $50/hr and dual is $250/hr, with the aircraft at $165/hr wet on a 10-hour block. Call or text 323-332-0585 to set up a schedule that fits the drive south.",
     ],
   },
   "flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny": {
@@ -163,7 +163,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "From Camarillo the trip to KVNY is a longer run east on the 101 over the Conejo Grade and into the Valley to the Balboa exit. Students who choose it generally schedule longer, less frequent blocks so the time in the airplane outweighs the time on the freeway.",
       "Coming inland from the coast, you will notice how the geography changes from your seat. On flights you will see the agricultural plain near Camarillo give way to the Conejo hills and then the dense Valley grid, a transition that helps you understand how terrain, distance, and the marine layer interact across Southern California.",
-      "Training is built around our Piper PA-28 Cherokee Warrior II, N9172Y, with clear, package-free pricing — $175/hr wet for the aircraft, or $165/hr on a 10-hour block, plus $40/hr for the instructor. If you want to talk through whether the KVNY commute fits your goals, call or text 323-332-0585.",
+      "Training is built around our Piper PA-28 Cherokee Warrior II, N9172Y, with clear, package-free pricing — $200/hr wet for the aircraft, or $165/hr on a 10-hour block, plus $50/hr for the instructor. If you want to talk through whether the KVNY commute fits your goals, call or text 323-332-0585.",
     ],
   },
   "flight-school-near-long-beach-accelerated-flight-school-van-nuys-kvny": {
@@ -171,7 +171,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Long Beach and South Bay students typically take the 405 north up through the Westside and over the Sepulveda Pass to the Balboa exit. It is a long drive, so the smart play is to book extended lesson blocks of an hour and a half or more so a single visit delivers real flying.",
       "The route gives you a wide tour of the basin you will later navigate. From the air you will eventually see how the harbor and coastal plain connect to the Westside and the Valley, and that big-picture geography helps when you start planning cross-country legs across busy LA airspace.",
-      "All instruction takes place in our Piper PA-28 Cherokee Warrior II (N9172Y), with dual at $215/hr and no large upfront commitment. A 10-hour block brings the aircraft down to $165/hr wet, which suits a commuter's longer-session approach. Call or text 323-332-0585 to plan a workable schedule.",
+      "All instruction takes place in our Piper PA-28 Cherokee Warrior II (N9172Y), with dual at $250/hr and no large upfront commitment. A 10-hour block brings the aircraft down to $165/hr wet, which suits a commuter's longer-session approach. Call or text 323-332-0585 to plan a workable schedule.",
     ],
   },
   "flight-school-near-ontario-accelerated-flight-school-van-nuys-kvny": {
@@ -179,7 +179,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "From Ontario and the Inland Empire, reaching KVNY usually means the 10 or 210 west to the 5 or 405 north, then the Balboa exit. It is a committed drive, so students who train here lean on longer blocks and steady scheduling to make the time on the road pay off in the logbook.",
       "Flying out of Van Nuys also opens up routes back toward home turf. As you advance, cross-country legs eastward toward the Inland Empire give you a fresh aerial perspective on the San Gabriel and San Bernardino ranges, while the dense LA Basin sharpens your airspace and radio skills.",
-      "You will train in our single Piper PA-28 Cherokee Warrior II, N9172Y, with transparent rates and no financing pressure — $175/hr wet for the aircraft (or $165/hr on a block), $40/hr for the instructor, $215/hr together. Call or text 323-332-0585 to see whether KVNY-based training fits your plans.",
+      "You will train in our single Piper PA-28 Cherokee Warrior II, N9172Y, with transparent rates and no financing pressure — $200/hr wet for the aircraft (or $165/hr on a block), $50/hr for the instructor, $250/hr together. Call or text 323-332-0585 to see whether KVNY-based training fits your plans.",
     ],
   },
   "flight-school-near-los-angeles-accelerated-flight-school-van-nuys-kvny": {
@@ -187,7 +187,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "Wherever you start in greater Los Angeles, the freeways funnel toward KVNY through the 405, 101, or 118, with the Balboa exit dropping you at the general aviation ramp. The airport's central position in the Valley makes it reachable from nearly every corner of the city without depending on a single route.",
       "Few places teach airspace like the LA Basin. On your flights you will see the downtown skyline, the Hollywood Hills, the Pacific to the west, and the mountains ringing the city — and you will learn to operate among the layered Class B, C, and D airspace that makes flying here a genuine education rather than isolated pattern work.",
-      "It all happens in our Piper PA-28 Cherokee Warrior II (N9172Y), with honest pay-as-you-fly pricing: $175/hr wet for the aircraft, $40/hr for the instructor, $215/hr dual. A Discovery Flight is $230 for one or $270 for two. Call or text 323-332-0585 to get started.",
+      "It all happens in our Piper PA-28 Cherokee Warrior II (N9172Y), with honest pay-as-you-fly pricing: $200/hr wet for the aircraft, $50/hr for the instructor, $250/hr dual. A Discovery Flight is $230 for one or $270 for two. Call or text 323-332-0585 to get started.",
     ],
   },
   "flight-school-near-malibu-accelerated-flight-school-van-nuys-kvny": {
@@ -203,7 +203,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
     paragraphs: [
       "From Beverly Hills the usual route is the 405 north over the Sepulveda Pass to the Balboa exit, a drive that is easy to plan around the basin's traffic patterns. Booking mid-morning or weekend slots keeps the commute smooth and leaves you unhurried for your pre-flight briefing.",
       "The climb over the pass previews the geography you will fly. On early lessons you will see Century City's towers, the Hollywood Hills, and the line where the Westside gives way to the Valley — clear references your instructor will use while you settle into basic airwork and airspace awareness.",
-      "You work directly with your instructor in one consistent airplane, our Piper PA-28 Cherokee Warrior II (N9172Y), with no front-desk layer and no hidden fees. Pricing is plain: $175/hr wet for the aircraft, $40/hr for the instructor, $215/hr together. Call or text 323-332-0585 to schedule your first flight.",
+      "You work directly with your instructor in one consistent airplane, our Piper PA-28 Cherokee Warrior II (N9172Y), with no front-desk layer and no hidden fees. Pricing is plain: $200/hr wet for the aircraft, $50/hr for the instructor, $250/hr together. Call or text 323-332-0585 to schedule your first flight.",
     ],
   },
 };

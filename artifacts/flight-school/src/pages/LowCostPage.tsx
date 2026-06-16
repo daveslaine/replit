@@ -23,7 +23,7 @@ const programs = [
   },
   {
     name: "Private Pilot Certificate",
-    ours: "~$7,500 – $12,500",
+    ours: "~$9,900 – $14,500",
     socal: "$15,000 – $25,000+",
     details:
       "FAA min 40 hrs. Typical 55–65 hrs with unstructured training at other schools.",
@@ -130,7 +130,7 @@ export function LowCostPage() {
       <Seo
         title={"Low-Cost Flight Training Van Nuys | Accelerated Flight School"}
         description={
-          "Low-cost flight training at Van Nuys Airport. Aircraft $175/hr wet. Private Pilot ~$7,500–$12,500. Zero to Commercial + CFI ~$40,000–$55,000. Call 323-332-0585."
+          "Low-cost flight training at Van Nuys Airport. Aircraft $175/hr wet. Private Pilot ~$9,900–$42,500. Zero to Commercial + CFI ~$40,000–$55,000. Call 323-332-0585."
         }
       />
 

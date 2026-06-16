@@ -147,7 +147,7 @@ export function OurAircraftPage() {
           "Training Aircraft | Van Nuys Airport KVNY | Accelerated Flight School"
         }
         description={
-          "Train in a 1985 Piper PA28 Cherokee Warrior II (N9172Y). IFR equipped, Garmin GNS 430, ADS-B. Full V-speeds and POH reference. $175/hr wet. Call 323-332-0585."
+          "Train in a 1985 Piper PA28 Cherokee Warrior II (N9172Y). IFR equipped, Garmin GNS 430, ADS-B. Full V-speeds and POH reference. $200/hr wet. Call 323-332-0585."
         }
       />
 
@@ -210,7 +210,7 @@ export function OurAircraftPage() {
                     Standard Rate
                   </p>
                   <p className="text-3xl font-bold text-secondary mb-1">
-                    $175
+                    $200
                     <span className="text-sm font-normal text-slate-500">
                       /hr
                     </span>

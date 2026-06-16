@@ -499,19 +499,19 @@ export function InstrumentRatingPage() {
               <div className="space-y-3 border-t border-white/20 pt-5 text-sm">
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Aircraft wet rate</span>
-                  <strong>$175/hr</strong>
+                  <strong>$200/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">CFII instruction</span>
-                  <strong>$40/hr</strong>
+                  <strong>$50/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Combined dual rate</span>
-                  <strong>$215/hr</strong>
+                  <strong>$250/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">10-hour package rate</span>
-                  <strong>$205/hr</strong>
+                  <strong>$235/hr</strong>
                 </div>
               </div>
 
@@ -1366,10 +1366,10 @@ export function InstrumentRatingPage() {
                   {[
                     ["Estimated training range", "~$8,500–$15,000"],
                     ["Southern California average", "$15,000–$25,000"],
-                    ["Aircraft wet rate", "$175/hr"],
-                    ["CFII instruction", "$40/hr"],
-                    ["Combined dual rate", "$215/hr"],
-                    ["10-hour combined package", "$205/hr"],
+                    ["Aircraft wet rate", "$200/hr"],
+                    ["CFII instruction", "$50/hr"],
+                    ["Combined dual rate", "$250/hr"],
+                    ["10-hour combined package", "$235/hr"],
                     ["DPE fee", "Confirm current examiner quote"],
                     [
                       "FAA knowledge test",

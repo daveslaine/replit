@@ -323,22 +323,22 @@ export function LandingPage() {
             {[
               {
                 label: "Aircraft Rental",
-                rate: "$175/hr",
+                rate: "$200/hr",
                 note: "Wet — fuel included",
               },
               {
                 label: "Flight Instructor",
-                rate: "From $40/hr",
+                rate: "From $50/hr",
                 note: "+$20/hr to the flight school",
               },
               {
                 label: "Dual Combined",
-                rate: "$215/hr",
+                rate: "$250/hr",
                 note: "Aircraft + instructor",
               },
               {
                 label: "Discovery Flight",
-                rate: "$190",
+                rate: "$230 ",
                 note: "1.5 hours in the air",
               },
             ].map((item) => (
