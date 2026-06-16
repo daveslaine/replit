@@ -620,19 +620,19 @@ export function CommercialPilotPage() {
               <div className="space-y-3 border-t border-white/20 pt-5 text-sm">
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Aircraft wet rate</span>
-                  <strong>$175/hr</strong>
+                  <strong>$200/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Flight instruction</span>
-                  <strong>$40/hr</strong>
+                  <strong>$50/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Combined dual rate</span>
-                  <strong>$215/hr</strong>
+                  <strong>$250/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">10-hour package rate</span>
-                  <strong>$205/hr</strong>
+                  <strong>$235/hr</strong>
                 </div>
               </div>
 
@@ -1585,12 +1585,12 @@ export function CommercialPilotPage() {
                       "Already have Private or Instrument",
                       "Call for custom estimate",
                     ],
-                    ["Aircraft wet rate", "$175/hr"],
-                    ["Flight instruction", "$40/hr"],
-                    ["Combined dual rate", "$215/hr"],
-                    ["10-hour combined package", "$205/hr"],
+                    ["Aircraft wet rate", "$200/hr"],
+                    ["Flight instruction", "$50/hr"],
+                    ["Combined dual rate", "$250/hr"],
+                    ["10-hour combined package", "$235/hr"],
                     ["DPE checkride fee", "~$800–$1,000 each"],
-                    ["FAA knowledge test", "~$175 each"],
+                    ["FAA knowledge test", "~$200 each"],
                     ["Charts / EFB / subscriptions", "Depends on chosen tools"],
                     ["Headset and supplies", "Depends on existing equipment"],
                   ].map(([label, value]) => (

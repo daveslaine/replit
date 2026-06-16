@@ -23,7 +23,7 @@ export function PricingPage() {
       <Seo
         title={"Flight Training Pricing | Transparent Costs | Van Nuys KVNY"}
         description={
-          "Transparent flight training pricing at Van Nuys Airport. Aircraft $175/hr wet. Combined dual from $205/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585."
+          "Transparent flight training pricing at Van Nuys Airport. Aircraft $200/hr wet. Combined dual from $205/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585."
         }
       />
 
@@ -63,7 +63,7 @@ export function PricingPage() {
                     <span className="text-slate-600">
                       Standard (<AviationTerm term="Wet rental" />)
                     </span>
-                    <span className="font-bold text-secondary">$175/hr</span>
+                    <span className="font-bold text-secondary">$200/hr</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-slate-600">10-Hour Block</span>
@@ -80,7 +80,7 @@ export function PricingPage() {
                       CFI / CFII instruction
                     </span>
                     <span className="font-bold text-secondary text-right">
-                      From $40/hr
+                      From $50/hr
                       <span className="block text-xs font-normal text-slate-400">
                         (+$20/hr to the flight school)
                       </span>
@@ -100,7 +100,7 @@ export function PricingPage() {
                       Standard Combined
                     </span>
                     <span className="font-bold text-primary text-xl">
-                      $215/hr
+                      $250/hr
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
@@ -108,7 +108,7 @@ export function PricingPage() {
                       10-Hour Package Combined
                     </span>
                     <span className="font-bold text-primary text-xl">
-                      $205/hr
+                      $235/hr
                     </span>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export function PricingPage() {
                 <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
                 <p className="text-sm text-green-800 font-medium">
                   No Upfront Payment — Pay only when you fly. Combined dual
-                  rates from $205–$215/hr.
+                  rates from $235–$250/hr.
                 </p>
               </div>
 
@@ -752,7 +752,7 @@ export function PricingPage() {
                 We do not offer loan financing, and we are not affiliated with
                 any pilot loan program. We charge the same rate regardless of
                 how you pay — and you pay only when you fly. A student paying
-                $215/hr for 60 hours of dual training pays $12,900. The same 60
+                $250/hr for 50 hours of dual training pays $13,500. The same 60
                 hours at a loan-affiliated school can cost $25,000–$40,000,
                 financed at high interest rates, with repayment beginning on day
                 one of your new instructor career. We think you deserve better

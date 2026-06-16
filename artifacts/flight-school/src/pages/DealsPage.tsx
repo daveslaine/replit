@@ -18,7 +18,7 @@ export function DealsPage() {
       <Seo
         title={"Flight Training Deals & Coupons | Accelerated Flight School"}
         description={
-          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 5 flights: aircraft $165/hr + instructor from $40/hr. Call 323-332-0585."
+          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 2 flights: aircraft $200/hr + instructor from $50/hr. Call 323-332-0585."
         }
       />
 
@@ -109,10 +109,10 @@ export function DealsPage() {
                 </div>
                 <div>
                   <p className="font-bold text-primary text-lg leading-tight">
-                    First 5 Flights Special
+                    First 2 Flights Special
                   </p>
                   <p className="text-sm text-slate-500">
-                    Includes any hours flown in those 5 flights
+                    Includes any hours flown in those 2 flights
                   </p>
                 </div>
               </div>
@@ -123,10 +123,10 @@ export function DealsPage() {
                   </span>
                   <div className="text-right">
                     <span className="text-slate-400 line-through text-sm mr-2">
-                      $175/hr
+                      $200/hr
                     </span>
                     <span className="font-bold text-secondary text-lg">
-                      $165/hr
+                      $190/hr
                     </span>
                   </div>
                 </div>
@@ -136,24 +136,22 @@ export function DealsPage() {
                   </span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-lg">
-                      From $40/hr
+                      From $45/hr
                     </span>
-                    <span className="block text-xs font-normal text-slate-400">
-                      (+$20/hr to the flight school)
-                    </span>
+                    <span className="block text-xs font-normal text-slate-400"></span>
                   </div>
                 </div>
                 <div className="flex justify-between items-center bg-primary/5 border border-primary/10 rounded-lg px-4 py-3">
                   <span className="font-bold text-primary">
-                    Combined Dual (First 5 Flights)
+                    Combined Dual (First 2 Flights)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    $205/hr
+                    $235/hr
                   </span>
                 </div>
               </div>
               <p className="text-slate-500 text-xs mb-5">
-                Valid for the first 5 flights. "Flights" means any scheduled
+                Valid for the first 2 flights. "Flights" means any scheduled
                 lesson — hourly time applies to all hours flown during those
                 sessions.
               </p>
@@ -202,17 +200,17 @@ export function DealsPage() {
                     Aircraft Rental (<AviationTerm term="Wet rental" />)
                   </span>
                   <span className="font-bold text-secondary text-xl">
-                    $175/hr
+                    $200/hr
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-slate-100">
                   <span className="text-slate-700 font-medium">Instructor</span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-xl">
-                      From $40/hr
+                      From $50/hr
                     </span>
                     <span className="block text-xs font-normal text-slate-400">
-                      (+$20/hr to the flight school)
+                     
                     </span>
                   </div>
                 </div>
@@ -221,7 +219,7 @@ export function DealsPage() {
                     Combined Dual (Aircraft + Instructor)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    $215/hr
+                    $250/hr
                   </span>
                 </div>
               </div>
@@ -247,10 +245,10 @@ export function DealsPage() {
                   </span>
                   <div className="text-right">
                     <span className="text-slate-400 line-through text-sm mr-2">
-                      $175
+                      $
                     </span>
                     <span className="font-bold text-secondary text-xl">
-                      $165/hr
+                      $190/hr
                     </span>
                   </div>
                 </div>
@@ -258,10 +256,10 @@ export function DealsPage() {
                   <span className="text-slate-700 font-medium">Instructor</span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-xl">
-                      From $40/hr
+                      From $45/hr
                     </span>
                     <span className="block text-xs font-normal text-slate-400">
-                      (+$20/hr to the flight school)
+                      
                     </span>
                   </div>
                 </div>
@@ -270,7 +268,7 @@ export function DealsPage() {
                     Combined Dual (Aircraft + Instructor)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    $205/hr
+                    $235/hr
                   </span>
                 </div>
               </div>

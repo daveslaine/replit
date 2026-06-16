@@ -59,7 +59,7 @@ const trainingSteps = [
   },
   {
     step: "Private Pilot",
-    note: "~$7,500–$12,500 est.",
+    note: "~$9,900–$14,500 est.",
     href: "/private-pilot-van-nuys",
     highlight: false,
   },

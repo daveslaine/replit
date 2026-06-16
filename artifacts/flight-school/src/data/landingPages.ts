@@ -20,7 +20,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-calabasas-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Calabasas | Accelerated Flight School",
     metaDescription:
-      "Flight training for Calabasas students at Van Nuys Airport (KVNY). ACS-based programs, $175/hr wet aircraft, $40/hr instructor, Discovery Flight $230.",
+      "Flight training for Calabasas students at Van Nuys Airport (KVNY). ACS-based programs, $200/hr wet aircraft, $50/hr instructor, Discovery Flight $230.",
     h1: "Flight School Near Calabasas",
     subheadline:
       "Accelerated Flight School provides affordable, ACS-based flight training at Van Nuys Airport (KVNY) — a short drive from Calabasas and the surrounding Conejo Valley.",
@@ -64,7 +64,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-sherman-oaks-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Sherman Oaks | Accelerated Flight School",
     metaDescription:
-      "Flight training for Sherman Oaks students at Van Nuys Airport KVNY. Just minutes away. Aircraft $175/hr wet, instructor $40/hr. Call or text 323-332-0585.",
+      "Flight training for Sherman Oaks students at Van Nuys Airport KVNY. Just minutes away. Aircraft $200/hr wet, instructor $50/hr. Call or text 323-332-0585.",
     h1: "Flight School Near Sherman Oaks",
     subheadline:
       "Van Nuys Airport is minutes from Sherman Oaks — making Accelerated Flight School a practical option for after-work training, weekend lessons, and part-time pilot programs.",
@@ -91,7 +91,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the dual rate for aircraft and instructor combined?",
-        a: "Aircraft rental is $175/hr wet and instructor is $40/hr, totaling $215/hr for dual flight training.",
+        a: "Aircraft rental is $200/hr wet and instructor is $50/hr, totaling 250/hr for dual flight training.",
       },
       {
         q: "Is there a minimum number of lessons I need to commit to?",
@@ -107,7 +107,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-encino-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Encino | Accelerated Flight School",
     metaDescription:
-      "Flight training near Encino at Van Nuys Airport KVNY. Private pilot, instrument rating, commercial programs. Aircraft $175/hr wet. Call 323-332-0585.",
+      "Flight training near Encino at Van Nuys Airport KVNY. Private pilot, instrument rating, commercial programs. Aircraft $200/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Encino",
     subheadline:
       "Encino is minutes from Van Nuys Airport — one of Southern California's most active general aviation training airports. Structured, transparent flight training at Accelerated Flight School.",
@@ -134,7 +134,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "How much does a private pilot certificate cost at your school?",
-        a: "Most students complete private pilot training in 60–75 hours of flight time. At $215/hr dual, total flight cost typically ranges from $12,900–$16,125 plus ground school and FAA written test fees. Structured training helps control total hours.",
+        a: "Most students complete private pilot training in 60–75 hours of flight time. At 250/hr dual, total flight cost typically ranges from $12,900–$16,125 plus ground school and FAA written test fees. Structured training helps control total hours.",
       },
       {
         q: "Do you offer instrument rating instruction?",
@@ -150,7 +150,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-burbank-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Burbank | Accelerated Flight School",
     metaDescription:
-      "Burbank-area students train at Van Nuys Airport for general aviation. Aircraft $175/hr wet, instructor $40/hr, Discovery Flight $230. Accelerated Flight School.",
+      "Burbank-area students train at Van Nuys Airport for general aviation. Aircraft $200/hr wet, instructor $50/hr, Discovery Flight $230. Accelerated Flight School.",
     h1: "Flight School Near Burbank",
     subheadline:
       "Many students from the Burbank area look to Van Nuys Airport (KVNY) for general aviation flight training — structured programs, transparent pricing, and experienced CFII instruction.",
@@ -193,7 +193,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-glendale-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Glendale | Accelerated Flight School",
     metaDescription:
-      "Structured flight training at Van Nuys Airport for Glendale students. Aircraft $175/hr wet, instructor $40/hr. Accelerated Flight School. Call 323-332-0585.",
+      "Structured flight training at Van Nuys Airport for Glendale students. Aircraft $200/hr wet, instructor $50/hr. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Glendale",
     subheadline:
       "Students from Glendale train at Van Nuys Airport (KVNY) with Accelerated Flight School — ACS-based programs, clear pricing, and direct instructor access from the first lesson.",
@@ -224,7 +224,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "How does transparent pricing work?",
-        a: "Aircraft is $175/hr wet, instructor is $40/hr, dual rate is $215/hr. No fuel surcharges, no booking fees, no monthly dues. What you see is what you pay.",
+        a: "Aircraft is $200/hr wet, instructor is $50/hr, dual rate is 250/hr. No fuel surcharges, no booking fees, no monthly dues. What you see is what you pay.",
       },
       {
         q: "How do I get started?",
@@ -271,7 +271,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the dual rate?",
-        a: "Aircraft $175/hr wet plus instructor $40/hr equals $215/hr for dual flight training. No hidden fees.",
+        a: "Aircraft $200/hr wet plus instructor $50/hr equals 250/hr for dual flight training. No hidden fees.",
       },
     ],
   },
@@ -279,7 +279,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-santa-monica-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Santa Monica | Accelerated Flight School",
     metaDescription:
-      "Santa Monica-area students compare Van Nuys Airport for flight training. Accelerated Flight School at KVNY — aircraft $175/hr wet, Discovery Flight $230.",
+      "Santa Monica-area students compare Van Nuys Airport for flight training. Accelerated Flight School at KVNY — aircraft $200/hr wet, Discovery Flight $230.",
     h1: "Flight School Near Santa Monica",
     subheadline:
       "Santa Monica students looking for structured, affordable flight training often compare Van Nuys Airport — Accelerated Flight School offers ACS-based programs and pay-as-you-fly pricing at KVNY.",
@@ -323,14 +323,14 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-culver-city-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Culver City | Accelerated Flight School",
     metaDescription:
-      "Flight training for Culver City and Westside students at Van Nuys Airport KVNY. Aircraft $175/hr wet. Accelerated Flight School. Call 323-332-0585.",
+      "Flight training for Culver City and Westside students at Van Nuys Airport KVNY. Aircraft $200/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Culver City",
     subheadline:
       "Culver City and Westside students who are willing to make the drive to Van Nuys Airport gain access to structured, affordable flight training with Accelerated Flight School at KVNY.",
     localIntro: [
       "Culver City, Palms, Mar Vista, West LA, Santa Monica, Venice, and Westwood students looking for lower-cost general aviation training often look east across the Valley to Van Nuys Airport. The drive is typically 30–45 minutes, and the training environment at KVNY is worth the commute.",
       "Van Nuys Airport (KVNY) is a high-activity general aviation facility. The combination of a live tower, complex surrounding airspace, and consistent training conditions makes KVNY one of the better-prepared students in Southern California when they reach checkride day.",
-      "Accelerated Flight School does not charge fuel surcharges, membership fees, or large upfront commitments. The rate is straightforward: $175/hr aircraft, $40/hr instructor, $215/hr dual combined. Discovery Flight is $230 for 1.5 hours.",
+      "Accelerated Flight School does not charge fuel surcharges, membership fees, or large upfront commitments. The rate is straightforward: $200/hr aircraft, $50/hr instructor, 250/hr dual combined. Discovery Flight is $230 for 1.5 hours.",
     ],
     nearbyAreas: [
       "Palms",
@@ -347,7 +347,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the hourly rate for flight instruction?",
-        a: "Aircraft is $175/hr wet, instructor is $40/hr, dual combined is $215/hr. No additional fees.",
+        a: "Aircraft is $200/hr wet, instructor is $50/hr, dual combined is 250/hr. No additional fees.",
       },
       {
         q: "Can I complete my private pilot certificate at your school?",
@@ -367,7 +367,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-pasadena-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Pasadena | Accelerated Flight School",
     metaDescription:
-      "Structured flight training at Van Nuys Airport for Pasadena and San Gabriel Valley students. Aircraft $175/hr wet. Accelerated Flight School. Call 323-332-0585.",
+      "Structured flight training at Van Nuys Airport for Pasadena and San Gabriel Valley students. Aircraft $200/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Pasadena",
     subheadline:
       "San Gabriel Valley students from Pasadena train at Van Nuys Airport (KVNY) with Accelerated Flight School — structured ACS-based programs and clear pricing, no runaround.",
@@ -397,8 +397,8 @@ export const landingPages: LandingPageConfig[] = [
         a: "The FAA minimum is 40 hours, but national averages run 60–75 hours. Structured training is the single best way to keep total hours — and total cost — lower.",
       },
       {
-        q: "What is included in the $215/hr dual rate?",
-        a: "Aircraft rental ($175/hr wet) plus instructor ($40/hr) equals $215/hr. Fuel, maintenance, and insurance are included in the aircraft wet rate. No surcharges.",
+        q: "What is included in the 250/hr dual rate?",
+        a: "Aircraft rental ($200/hr wet) plus instructor ($50/hr) equals 250/hr. Fuel, maintenance, and insurance are included in the aircraft wet rate. No surcharges.",
       },
       {
         q: "Can Pasadena students train on weekends?",
@@ -410,7 +410,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-thousand-oaks-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Thousand Oaks | Accelerated Flight School",
     metaDescription:
-      "Conejo Valley students train at Van Nuys Airport. Fewer, longer, more productive lessons. ACS-based instruction. Aircraft $175/hr wet.",
+      "Conejo Valley students train at Van Nuys Airport. Fewer, longer, more productive lessons. ACS-based instruction. Aircraft $200/hr wet.",
     h1: "Flight School Near Thousand Oaks",
     subheadline:
       "Students from Thousand Oaks and the Conejo Valley find that fewer, longer, more productive lessons at Van Nuys Airport often deliver better results than short sessions at a closer but less structured school.",
@@ -434,7 +434,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the total cost of a private pilot certificate?",
-        a: "At our rates ($215/hr dual), most students spend approximately $12,900–$16,125 on flight time, plus written test fees and ground study. Structured training keeps total hours lower.",
+        a: "At our rates (250/hr dual), most students spend approximately $12,900–$16,125 on flight time, plus written test fees and ground study. Structured training keeps total hours lower.",
       },
       {
         q: "Are there instrument rating options after private pilot?",
@@ -462,7 +462,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Westlake Village, Thousand Oaks, Oak Park, Agoura Hills, Calabasas, and Newbury Park are all within reasonable driving distance of Van Nuys Airport. Students from this area often appreciate professional, no-nonsense instruction that respects their time and their investment.",
       "At Accelerated Flight School, training is structured and accountable. Our instructors bring years of experience. Every lesson has a clear objective, every debrief is honest, and every student knows exactly what they are working toward next. This accountability translates to fewer total hours and lower overall cost.",
-      "Pay-as-you-fly pricing means you never have a large sum at risk. Aircraft is $175/hr wet, instructor is $40/hr, dual is $215/hr combined. There are no monthly fees, no fuel surcharges, and no pressure to finance training packages through third-party lenders.",
+      "Pay-as-you-fly pricing means you never have a large sum at risk. Aircraft is $200/hr wet, instructor is $50/hr, dual is 250/hr combined. There are no monthly fees, no fuel surcharges, and no pressure to finance training packages through third-party lenders.",
     ],
     nearbyAreas: [
       "Thousand Oaks",
@@ -482,7 +482,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is included in the wet aircraft rate?",
-        a: "The $175/hr wet rate includes fuel, maintenance reserves, and aircraft insurance. You do not pay separately for fuel or unexpected surcharges.",
+        a: "The $200/hr wet rate includes fuel, maintenance reserves, and aircraft insurance. You do not pay separately for fuel or unexpected surcharges.",
       },
       {
         q: "Can I start with a Discovery Flight?",
@@ -498,7 +498,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-agoura-hills-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Agoura Hills | Accelerated Flight School",
     metaDescription:
-      "Flight training for Agoura Hills and west Valley students at Van Nuys Airport KVNY. Aircraft $175/hr wet. Accelerated Flight School. Call 323-332-0585.",
+      "Flight training for Agoura Hills and west Valley students at Van Nuys Airport KVNY. Aircraft $200/hr wet. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight School Near Agoura Hills",
     subheadline:
       "Students from Agoura Hills and the areas west of the San Fernando Valley find Accelerated Flight School at Van Nuys Airport a strong option for structured, transparent flight training.",
@@ -584,7 +584,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-woodland-hills-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Woodland Hills | Accelerated Flight School",
     metaDescription:
-      "Flight training near Woodland Hills at Van Nuys Airport. Convenient for west Valley students. Aircraft $175/hr wet, instructor $40/hr.",
+      "Flight training near Woodland Hills at Van Nuys Airport. Convenient for west Valley students. Aircraft $200/hr wet, instructor $50/hr.",
     h1: "Flight School Near Woodland Hills",
     subheadline:
       "Woodland Hills is one of the most convenient locations in the west Valley for training at Van Nuys Airport — a short drive east on Ventura or the 101.",
@@ -611,7 +611,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the total estimated cost of the private pilot certificate?",
-        a: "Most students complete in 60–75 hours of flight time. At $215/hr dual, that is approximately $12,900–$16,125 in flight costs, plus written test and medical fees.",
+        a: "Most students complete in 60–75 hours of flight time. At 250/hr dual, that is approximately $12,900–$16,125 in flight costs, plus written test and medical fees.",
       },
       {
         q: "Is there a financing option?",
@@ -627,7 +627,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-tarzana-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Tarzana | Accelerated Flight School",
     metaDescription:
-      "Tarzana students train at Van Nuys Airport KVNY — close drive, structured programs, part-time scheduling available. Aircraft $175/hr wet. Call 323-332-0585.",
+      "Tarzana students train at Van Nuys Airport KVNY — close drive, structured programs, part-time scheduling available. Aircraft $200/hr wet. Call 323-332-0585.",
     h1: "Flight School Near Tarzana",
     subheadline:
       "Tarzana is minutes from Van Nuys Airport — Accelerated Flight School offers part-time training, flexible scheduling, and ACS-based instruction for new and continuing pilots.",
@@ -670,7 +670,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-north-hollywood-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near North Hollywood | Accelerated Flight School",
     metaDescription:
-      "North Hollywood students train at Van Nuys Airport — convenient Valley location, Discovery Flights and full pilot programs. Aircraft $175/hr wet.",
+      "North Hollywood students train at Van Nuys Airport — convenient Valley location, Discovery Flights and full pilot programs. Aircraft $200/hr wet.",
     h1: "Flight School Near North Hollywood",
     subheadline:
       "Van Nuys Airport is minutes from North Hollywood — Accelerated Flight School offers beginner Discovery Flights and full private pilot and instrument programs at KVNY.",
@@ -791,7 +791,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the instructor rate?",
-        a: "Instructor rate is $40/hr. Combined with $175/hr aircraft, dual rate is $215/hr.",
+        a: "Instructor rate is $50/hr. Combined with $200/hr aircraft, dual rate is 250/hr.",
       },
     ],
   },
@@ -799,7 +799,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-simi-valley-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Simi Valley | Accelerated Flight School",
     metaDescription:
-      "Simi Valley students train at Van Nuys Airport with Accelerated Flight School. Between Ventura County and the San Fernando Valley. Aircraft $175/hr wet.",
+      "Simi Valley students train at Van Nuys Airport with Accelerated Flight School. Between Ventura County and the San Fernando Valley. Aircraft $200/hr wet.",
     h1: "Flight School Near Simi Valley",
     subheadline:
       "Simi Valley students looking for structured flight training have a practical choice at Van Nuys Airport — Accelerated Flight School offers ACS-based programs between Ventura County and the San Fernando Valley.",
@@ -842,7 +842,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-near-camarillo-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Flight School Near Camarillo | Accelerated Flight School",
     metaDescription:
-      "Some Camarillo students compare Van Nuys Airport for structured flight training. Accelerated Flight School at KVNY — aircraft $175/hr wet.",
+      "Some Camarillo students compare Van Nuys Airport for structured flight training. Accelerated Flight School at KVNY — aircraft $200/hr wet.",
     h1: "Flight School Near Camarillo",
     subheadline:
       "Some students from the Camarillo area compare coastal airport training with Van Nuys Airport options — Accelerated Flight School offers structured programs at KVNY year-round.",
@@ -906,7 +906,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the combined dual rate?",
-        a: "Aircraft $175/hr wet plus instructor $40/hr equals $215/hr for dual training. No surcharges.",
+        a: "Aircraft $200/hr wet plus instructor $50/hr equals 250/hr for dual training. No surcharges.",
       },
       {
         q: "Are longer lesson blocks available for commuter students?",
@@ -929,7 +929,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Students from Ontario, Rancho Cucamonga, Upland, Pomona, Chino, and Claremont are approximately 45–60 minutes from Van Nuys Airport. The Inland Empire has several active general aviation airports, but some students look to KVNY for additional options when it comes to instruction quality, aircraft availability, or pricing structure.",
       "Van Nuys Airport (KVNY) sits inside the Los Angeles Basin's most complex airspace structure. Training here provides exposure to LA Class B, Burbank Class C, and cross-country routes both east (toward the Inland Empire and beyond) and west (toward the coast). This variety of routing prepares students for diverse flying after certification.",
-      "Accelerated Flight School offers transparent pay-as-you-fly pricing with no large upfront loan pressure. If you are comparing training costs across the LA area, our rates are straightforward: $175/hr aircraft, $40/hr instructor, $215/hr dual combined.",
+      "Accelerated Flight School offers transparent pay-as-you-fly pricing with no large upfront loan pressure. If you are comparing training costs across the LA area, our rates are straightforward: $200/hr aircraft, $50/hr instructor, 250/hr dual combined.",
     ],
     nearbyAreas: ["Rancho Cucamonga", "Upland", "Pomona", "Chino", "Claremont"],
     faqs: [
@@ -966,7 +966,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Los Angeles is one of the largest and most diverse aviation markets in the world. Students from Hollywood, West LA, Downtown LA, Glendale, Burbank, Santa Monica, Pasadena, and beyond look to Van Nuys Airport as a primary general aviation training hub. KVNY is one of the busiest general aviation airports in the United States.",
       "Training in the LA Basin means working with some of the most complex airspace structures in the country — Class B, Class C, Class D, high-density corridors, and active military operations areas on cross-country routes. Students who earn their certificates here are trained for real-world flying, not isolated rural pattern work.",
-      "Accelerated Flight School offers Private Pilot, Instrument Rating, Commercial Pilot, CFI/CFII, and Discovery Flights at Van Nuys Airport. Instruction is direct, honest, and ACS-based. Pricing is transparent: $175/hr aircraft, $40/hr instructor, $215/hr combined dual.",
+      "Accelerated Flight School offers Private Pilot, Instrument Rating, Commercial Pilot, CFI/CFII, and Discovery Flights at Van Nuys Airport. Instruction is direct, honest, and ACS-based. Pricing is transparent: $200/hr aircraft, $50/hr instructor, 250/hr combined dual.",
     ],
     nearbyAreas: [
       "Hollywood",
@@ -988,7 +988,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What does a private pilot certificate cost in Los Angeles?",
-        a: "At $215/hr dual, most students complete private pilot in 60–75 hours, totaling approximately $12,900–$16,125 in flight costs. Structured training reduces total hours significantly.",
+        a: "At 250/hr dual, most students complete private pilot in 60–75 hours, totaling approximately $12,900–$16,125 in flight costs. Structured training reduces total hours significantly.",
       },
       {
         q: "Do you offer instrument rating training in the Los Angeles area?",
@@ -1054,7 +1054,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Beverly Hills, West Hollywood, Century City, Westwood, Brentwood, and Santa Monica are all within a 30–45 minute drive of Van Nuys Airport, depending on traffic. Students from these areas often value professionalism, clear communication, and quality — and expect the same from their flight instruction.",
       "At Accelerated Flight School, you work directly with our experienced instructors. There is no front desk layer, no administrative runaround, and no ambiguity in your training plan. Every lesson has an objective, every debrief is honest, and every dollar you spend maps to real progress.",
-      "Transparent pricing means there are no surprises. Aircraft is $175/hr wet, instructor is $40/hr, dual rate is $215/hr combined. No fuel surcharges, no booking fees, no monthly membership dues. Pay for what you fly.",
+      "Transparent pricing means there are no surprises. Aircraft is $200/hr wet, instructor is $50/hr, dual rate is 250/hr combined. No fuel surcharges, no booking fees, no monthly membership dues. Pay for what you fly.",
     ],
     nearbyAreas: [
       "West Hollywood",
@@ -1091,12 +1091,12 @@ export const landingPages: LandingPageConfig[] = [
     metaTitle:
       "Affordable Flight Training Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Affordable flight training in Los Angeles at Van Nuys Airport. Aircraft $175/hr wet, instructor $40/hr, no loan pressure, pay-as-you-fly.",
+      "Affordable flight training in Los Angeles at Van Nuys Airport. Aircraft $200/hr wet, instructor $50/hr, no loan pressure, pay-as-you-fly.",
     h1: "Affordable Flight Training in Los Angeles",
     subheadline:
       "Accelerated Flight School at Van Nuys Airport provides affordable, transparent flight training for Los Angeles students — low hourly rates, no large upfront loans, and ACS-based instruction that reduces total training hours.",
     localIntro: [
-      "Affordable flight training in Los Angeles is possible when you know what to look for. The two biggest cost drivers in a private pilot or instrument certificate are aircraft rental rate and instructor rate. At Accelerated Flight School, aircraft rental is $175/hr wet (fuel included) and instructor is $40/hr, giving you a combined dual rate of $215/hr. These rates are kept low intentionally — not by cutting corners on aircraft quality or instruction, but by operating a lean, focused school without the overhead of a large Part 141 operation.",
+      "Affordable flight training in Los Angeles is possible when you know what to look for. The two biggest cost drivers in a private pilot or instrument certificate are aircraft rental rate and instructor rate. At Accelerated Flight School, aircraft rental is $200/hr wet (fuel included) and instructor is $50/hr, giving you a combined dual rate of 250/hr. These rates are kept low intentionally — not by cutting corners on aircraft quality or instruction, but by operating a lean, focused school without the overhead of a large Part 141 operation.",
       "The second cost driver is total hours. The FAA minimum for private pilot is 40 hours, but the national average is 60–75 hours. The gap between minimum and average is caused almost entirely by inconsistent training, unclear lesson objectives, and poor checkride preparation. Structured, ACS-based training — where every lesson ties directly to a checkride standard — is the single most reliable way to keep total hours closer to the FAA minimum.",
       "Pay-as-you-fly pricing means you never have a large sum at risk. You schedule lessons as you progress, pay per lesson, and are never pressured to buy a large block of training time upfront. This transparency is built into every interaction at Accelerated Flight School.",
     ],
@@ -1114,11 +1114,11 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the aircraft rental rate?",
-        a: "$175/hr wet — fuel, maintenance, and insurance are included. No surcharges.",
+        a: "$200/hr wet — fuel, maintenance, and insurance are included. No surcharges.",
       },
       {
         q: "What is the instructor rate?",
-        a: "$40/hr. Combined with aircraft, dual rate is $215/hr.",
+        a: "$50/hr. Combined with aircraft, dual rate is 250/hr.",
       },
       {
         q: "How do you keep total training hours low?",
@@ -1134,14 +1134,14 @@ export const landingPages: LandingPageConfig[] = [
     slug: "cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Cheap Flight School Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Cheap flight school in Los Angeles without cheap training. Structured ACS-based instruction reduces wasted hours. Aircraft $175/hr wet, Van Nuys Airport.",
+      "Cheap flight school in Los Angeles without cheap training. Structured ACS-based instruction reduces wasted hours. Aircraft $200/hr wet, Van Nuys Airport.",
     h1: "Cheap Flight School in Los Angeles Without Cheap Training",
     subheadline:
       "Low hourly rates do not mean low-quality training — Accelerated Flight School at Van Nuys Airport proves that affordable pricing and structured instruction are not mutually exclusive.",
     localIntro: [
       "When people search for a cheap flight school in Los Angeles, they sometimes assume they are trading price for quality. That is not always true — and it is often backwards. Some of the most expensive flight training in the LA area produces the worst outcomes: students who spend 100+ hours on a certificate that requires 40 at minimum, students who fail checkrides due to poor preparation, students who burn through money and give up.",
       "Cheap training, by our definition, is training that wastes your money regardless of the hourly rate. Cheap training is an instructor who does not have clear lesson objectives. Cheap training is flying the same maneuvers over and over without progressing. Cheap training is a school that inflates your hours to increase revenue.",
-      "At Accelerated Flight School, the aircraft rate is $175/hr wet and the instructor rate is $40/hr — among the lower rates in the Los Angeles market. But the goal is not just to be cheap: the goal is to produce certificated pilots who are ready for checkrides and comfortable in the real airspace they will fly in. ACS-based instruction, honest expectations, and direct accountability make that possible at lower cost than many larger schools.",
+      "At Accelerated Flight School, the aircraft rate is $200/hr wet and the instructor rate is $50/hr — among the lower rates in the Los Angeles market. But the goal is not just to be cheap: the goal is to produce certificated pilots who are ready for checkrides and comfortable in the real airspace they will fly in. ACS-based instruction, honest expectations, and direct accountability make that possible at lower cost than many larger schools.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1161,11 +1161,11 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is your aircraft rate?",
-        a: "$175/hr wet — fuel, maintenance, and insurance included.",
+        a: "$200/hr wet — fuel, maintenance, and insurance included.",
       },
       {
         q: "What is your instructor rate?",
-        a: "$40/hr. Combined with aircraft, dual rate is $215/hr.",
+        a: "$50/hr. Combined with aircraft, dual rate is 250/hr.",
       },
       {
         q: "How do I start?",
@@ -1178,13 +1178,13 @@ export const landingPages: LandingPageConfig[] = [
     metaTitle:
       "Low Cost Flight Training Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Low cost flight training in Los Angeles at Van Nuys Airport. Aircraft $175/hr wet, instructor $40/hr, Discovery Flight $230. Accelerated Flight School.",
+      "Low cost flight training in Los Angeles at Van Nuys Airport. Aircraft $200/hr wet, instructor $50/hr, Discovery Flight $230. Accelerated Flight School.",
     h1: "Low Cost Flight Training in Los Angeles",
     subheadline:
       "Accelerated Flight School at Van Nuys Airport offers some of the lowest combined aircraft and instructor rates in Los Angeles — with structured training that keeps total hours and total cost lower.",
     localIntro: [
-      "Low-cost flight training in Los Angeles is achievable with the right combination of affordable rates and structured instruction. Aircraft rental at Accelerated Flight School is $175/hr wet — fuel and insurance included — and instructor rate is $40/hr, for a combined dual rate of $215/hr. The Discovery Flight is 1.5 hours for $230.",
-      "Understanding where your training dollars go is the first step toward controlling total cost. Aircraft rental is typically the largest line item. Instructor time is the second. But the third cost driver — often overlooked — is total hours. A student who completes private pilot in 65 hours at $215/hr pays significantly less than a student who completes at 95 hours at the same rate. Structured, ACS-based training is the most reliable way to keep total hours down.",
+      "Low-cost flight training in Los Angeles is achievable with the right combination of affordable rates and structured instruction. Aircraft rental at Accelerated Flight School is $200/hr wet — fuel and insurance included — and instructor rate is $50/hr, for a combined dual rate of 250/hr. The Discovery Flight is 1.5 hours for $230.",
+      "Understanding where your training dollars go is the first step toward controlling total cost. Aircraft rental is typically the largest line item. Instructor time is the second. But the third cost driver — often overlooked — is total hours. A student who completes private pilot in 65 hours at 250/hr pays significantly less than a student who completes at 95 hours at the same rate. Structured, ACS-based training is the most reliable way to keep total hours down.",
       "At Accelerated Flight School, pay-as-you-fly means you never carry a large debt into your training. You schedule lessons when you are ready, pay per lesson, and control your spending throughout the program. No large training loan packages are pushed here.",
     ],
     nearbyAreas: [
@@ -1197,11 +1197,11 @@ export const landingPages: LandingPageConfig[] = [
     faqs: [
       {
         q: "What is the total cost of low-cost private pilot training in Los Angeles?",
-        a: "At $215/hr dual and 60–70 hours typical completion, total flight cost is approximately $12,900–$15,050 plus written test fees. Structured training keeps total hours in this range.",
+        a: "At 250/hr dual and 60–70 hours typical completion, total flight cost is approximately $12,900–$15,050 plus written test fees. Structured training keeps total hours in this range.",
       },
       {
         q: "What does 'wet rate' mean?",
-        a: "A wet rate includes fuel in the hourly price. You pay $175/hr and fuel, maintenance, and insurance are all included. No separate fuel billing.",
+        a: "A wet rate includes fuel in the hourly price. You pay $200/hr and fuel, maintenance, and insurance are all included. No separate fuel billing.",
       },
       {
         q: "Is there a Discovery Flight available?",
@@ -1209,7 +1209,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "Do you offer instrument rating training at low cost?",
-        a: "Yes. Instrument rating instruction at $215/hr dual is available from our CFII. Most instrument students complete the rating in 40–60 hours of combined flight time.",
+        a: "Yes. Instrument rating instruction at 250/hr dual is available from our CFII. Most instrument students complete the rating in 40–60 hours of combined flight time.",
       },
       {
         q: "How do I get started?",
@@ -1307,14 +1307,14 @@ export const landingPages: LandingPageConfig[] = [
     slug: "private-pilot-training-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Private Pilot Training Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Private pilot training in Los Angeles at Van Nuys Airport. ACS-based instruction, checkride preparation, $215/hr dual. Accelerated Flight School.",
+      "Private pilot training in Los Angeles at Van Nuys Airport. ACS-based instruction, checkride preparation, 250/hr dual. Accelerated Flight School.",
     h1: "Private Pilot Training in Los Angeles",
     subheadline:
       "Earn your private pilot certificate at Van Nuys Airport with ACS-based instruction from Accelerated Flight School — structured, checkride-focused, and priced transparently.",
     localIntro: [
       "The private pilot certificate is the foundational license for all of aviation. Earning it in Los Angeles means training in some of the most complex and interesting airspace in the country. At Accelerated Flight School, private pilot training is built around the FAA's Airman Certification Standards — the same document your examiner uses at your checkride.",
       "Private pilot training at KVNY covers all required flight maneuvers, cross-country navigation, night flying, and emergency procedures. You will develop radio communication skills from your first lesson at this controlled airport. Cross-country routes during training include destinations like Camarillo, Santa Barbara, Brackett Field, and Hawthorne — giving you practical experience across the LA Basin.",
-      "At $215/hr combined dual rate, the FAA minimum of 40 hours would cost approximately $8,600. Most students complete training in 60–75 hours — and structured ACS-based training is the most reliable way to stay in that range rather than stretching to 90–100 hours. We keep total hours honest.",
+      "At 250/hr combined dual rate, the FAA minimum of 40 hours would cost approximately $8,600. Most students complete training in 60–75 hours — and structured ACS-based training is the most reliable way to stay in that range rather than stretching to 90–100 hours. We keep total hours honest.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1334,7 +1334,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the dual flight rate?",
-        a: "Aircraft $175/hr wet plus instructor $40/hr equals $215/hr combined. No fuel surcharges or additional fees.",
+        a: "Aircraft $200/hr wet plus instructor $50/hr equals 250/hr combined. No fuel surcharges or additional fees.",
       },
       {
         q: "Is the private pilot checkride available at Van Nuys?",
@@ -1381,7 +1381,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the dual rate for instrument training?",
-        a: "$215/hr combined (aircraft $175/hr wet plus instructor $40/hr).",
+        a: "250/hr combined (aircraft $200/hr wet plus instructor $50/hr).",
       },
       {
         q: "Is simulated instrument time available?",
@@ -1400,7 +1400,7 @@ export const landingPages: LandingPageConfig[] = [
       "Earn your commercial pilot certificate at Van Nuys Airport with structured instruction from Accelerated Flight School — affordable aircraft rates for time building and precise commercial maneuver training.",
     localIntro: [
       "The commercial pilot certificate requires 250 total flight hours and mastery of a specific set of maneuvers performed to exacting standards. At Accelerated Flight School, commercial training is built around the FAA's ACS for the commercial certificate — chandelles, lazy eights, steep spirals, eights on pylons, and precision landings performed consistently within standards.",
-      "Time building is a major component of commercial pilot training. At $175/hr wet aircraft rental, students can build solo PIC time more economically than at many larger Los Angeles flight schools. The Piper Cherokee is a reliable and comfortable time-building aircraft for cross-country routes across the LA Basin, Central Valley, and beyond.",
+      "Time building is a major component of commercial pilot training. At $200/hr wet aircraft rental, students can build solo PIC time more economically than at many larger Los Angeles flight schools. The Piper Cherokee is a reliable and comfortable time-building aircraft for cross-country routes across the LA Basin, Central Valley, and beyond.",
       "Commercial pilot training at KVNY also benefits from the complex airspace environment. Navigating LA Class B, Burbank Class C, and terminal area procedures under commercial-pilot standards prepares you well for real professional aviation operations.",
     ],
     nearbyAreas: [
@@ -1417,7 +1417,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "Can I build time cheaply for commercial pilot training?",
-        a: "Yes. Aircraft rental at $175/hr wet is available for solo PIC time building. Cross-country flights during time building are an efficient way to accumulate required hours.",
+        a: "Yes. Aircraft rental at $200/hr wet is available for solo PIC time building. Cross-country flights during time building are an efficient way to accumulate required hours.",
       },
       {
         q: "What commercial maneuvers are required?",
@@ -1523,13 +1523,13 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-instructor-van-nuys-accelerated-flight-school-kvny",
     metaTitle: "Flight Instructor Van Nuys | Accelerated Flight School",
     metaDescription:
-      "Flight instructor in Van Nuys at KVNY — our instructors, CFI/CFII, $40/hr. Direct instruction, no intermediary. Accelerated Flight School. Call 323-332-0585.",
+      "Flight instructor in Van Nuys at KVNY — our instructors, CFI/CFII, $50/hr. Direct instruction, no intermediary. Accelerated Flight School. Call 323-332-0585.",
     h1: "Flight Instructor in Van Nuys",
     subheadline:
-      "our instructors, CFI/CFII, provides direct flight instruction at Van Nuys Airport — structured, honest, and checkride-focused at $40/hr instructor rate.",
+      "our instructors, CFI/CFII, provides direct flight instruction at Van Nuys Airport — structured, honest, and checkride-focused at $50/hr instructor rate.",
     localIntro: [
       "Finding a qualified, experienced flight instructor in Van Nuys can be a challenge. our instructors, CFI/CFII, is the primary instructor at Accelerated Flight School and has been teaching since the early 2000s. He provides direct, personal instruction to every student — no front desk, no scheduling intermediary.",
-      "our instructors holds both CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument) certificates. This means he can teach everything from your first Discovery Flight through your instrument rating and commercial pilot certificate. His instructor rate is $40/hr, and combined with $175/hr wet aircraft, the dual rate is $215/hr.",
+      "our instructors holds both CFI (Certified Flight Instructor) and CFII (Certified Flight Instructor – Instrument) certificates. This means he can teach everything from your first Discovery Flight through your instrument rating and commercial pilot certificate. His instructor rate is $50/hr, and combined with $200/hr wet aircraft, the dual rate is 250/hr.",
       "Students who work with our instructors consistently note the directness of his instruction. Lesson objectives are clear before every flight, debriefs are honest, and progress is explained at every stage. If you are struggling with a maneuver, you know why and what to do about it. If you are ready for the next phase, you are told — without delay.",
     ],
     nearbyAreas: [
@@ -1550,7 +1550,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the instructor rate?",
-        a: "$40/hr. Combined with $175/hr wet aircraft, dual training is $215/hr.",
+        a: "$50/hr. Combined with $200/hr wet aircraft, dual training is 250/hr.",
       },
       {
         q: "Can I reach our instructors directly?",
@@ -1566,7 +1566,7 @@ export const landingPages: LandingPageConfig[] = [
     slug: "cfi-near-me-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "CFI Near Me Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Looking for a CFI near you in Los Angeles? our instructors, CFI/CFII, at Van Nuys Airport KVNY. Direct contact, $40/hr instructor rate. Call 323-332-0585.",
+      "Looking for a CFI near you in Los Angeles? our instructors, CFI/CFII, at Van Nuys Airport KVNY. Direct contact, $50/hr instructor rate. Call 323-332-0585.",
     h1: "CFI Near Me in Los Angeles",
     subheadline:
       "If you are looking for a CFI in the Los Angeles area, Accelerated Flight School offers direct access to our instructors, CFI/CFII, at Van Nuys Airport — no intermediary, no runaround.",
@@ -1590,7 +1590,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the instructor rate?",
-        a: "$40/hr. Combined with the aircraft wet rate, dual flight training is $215/hr.",
+        a: "$50/hr. Combined with the aircraft wet rate, dual flight training is 250/hr.",
       },
       {
         q: "Does the CFI teach all programs?",
@@ -1642,7 +1642,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "How much does instrument rating training cost?",
-        a: "At $215/hr combined dual rate, most students complete instrument rating training in 40–60 hours of instrument instruction time, totaling approximately $8,600–$12,900 in flight costs.",
+        a: "At 250/hr combined dual rate, most students complete instrument rating training in 40–60 hours of instrument instruction time, totaling approximately $8,600–$12,900 in flight costs.",
       },
       {
         q: "Can I do an Instrument Proficiency Check (IPC) with your CFII?",
@@ -1655,12 +1655,12 @@ export const landingPages: LandingPageConfig[] = [
     metaTitle:
       "Piper Cherokee Flight Training Van Nuys | Accelerated Flight School",
     metaDescription:
-      "Train in a 1985 Piper Cherokee Warrior II at Van Nuys Airport. $175/hr wet. Private pilot, instrument rating, and time building. Accelerated Flight School.",
+      "Train in a 1985 Piper Cherokee Warrior II at Van Nuys Airport. $200/hr wet. Private pilot, instrument rating, and time building. Accelerated Flight School.",
     h1: "Piper Cherokee Flight Training at Van Nuys Airport",
     subheadline:
-      "Accelerated Flight School's training fleet at Van Nuys Airport includes a 1985 Piper Cherokee Warrior II — a stable, well-maintained low-wing trainer available at $175/hr wet.",
+      "Accelerated Flight School's training fleet at Van Nuys Airport includes a 1985 Piper Cherokee Warrior II — a stable, well-maintained low-wing trainer available at $200/hr wet.",
     localIntro: [
-      "The Piper Cherokee Warrior II is one of the most proven general aviation trainers in history. Its low-wing configuration, stable handling characteristics, and forgiving stall behavior make it an excellent aircraft for students learning to fly. Our 1985 Piper Cherokee — tail number N9172Y — is well-maintained and available at $175/hr wet including fuel.",
+      "The Piper Cherokee Warrior II is one of the most proven general aviation trainers in history. Its low-wing configuration, stable handling characteristics, and forgiving stall behavior make it an excellent aircraft for students learning to fly. Our 1985 Piper Cherokee — tail number N9172Y — is well-maintained and available at $200/hr wet including fuel.",
       "Students training in the Piper Cherokee at KVNY benefit from a reliable, consistent aircraft. You will fly the same airplane every lesson, which is important for skill building — you become familiar with that aircraft's specific handling, power settings, and equipment, and that familiarity translates directly to improved performance and lower training hours.",
       "The Cherokee is suitable for all programs at Accelerated Flight School: Discovery Flights, private pilot, instrument rating, commercial pilot maneuvers, and solo time building. Its four-seat capacity means passengers can occasionally ride along on discovery or cross-country flights with instructor approval.",
     ],
@@ -1686,7 +1686,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the aircraft rental rate?",
-        a: "$175/hr wet — fuel, maintenance reserves, and insurance are included in the hourly rate.",
+        a: "$200/hr wet — fuel, maintenance reserves, and insurance are included in the hourly rate.",
       },
       {
         q: "Is the aircraft available for solo time building?",
@@ -1699,14 +1699,14 @@ export const landingPages: LandingPageConfig[] = [
     metaTitle:
       "Piper Warrior Flight Training Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Piper Warrior flight training in Los Angeles at Van Nuys Airport KVNY. $175/hr wet aircraft rental. Private pilot, instrument, commercial. Call 323-332-0585.",
+      "Piper Warrior flight training in Los Angeles at Van Nuys Airport KVNY. $200/hr wet aircraft rental. Private pilot, instrument, commercial. Call 323-332-0585.",
     h1: "Piper Warrior Flight Training in Los Angeles",
     subheadline:
-      "Train in the Piper Cherokee Warrior at Van Nuys Airport — Accelerated Flight School offers private pilot, instrument, and commercial training in the Piper Warrior at $175/hr wet.",
+      "Train in the Piper Cherokee Warrior at Van Nuys Airport — Accelerated Flight School offers private pilot, instrument, and commercial training in the Piper Warrior at $200/hr wet.",
     localIntro: [
       "The Piper Cherokee Warrior is one of the most widely-used general aviation trainers in the United States. Its predictable handling, comfortable cabin, and IFR-capable avionics make it an excellent training platform for students from Discovery Flight through commercial certificate.",
       "Students searching for Piper Warrior flight training in the Los Angeles area will find Accelerated Flight School at Van Nuys Airport offers direct CFII instruction in this specific aircraft type. Training in the same aircraft every lesson builds familiarity and consistency — two factors that directly reduce total training time.",
-      "The aircraft rental rate is $175/hr wet. At this rate, even time-building flights for commercial pilot hour requirements are economically manageable. Cross-country routes from Van Nuys toward Santa Barbara, Camarillo, Brackett, and the Central Valley are all practical in the Cherokee Warrior.",
+      "The aircraft rental rate is $200/hr wet. At this rate, even time-building flights for commercial pilot hour requirements are economically manageable. Cross-country routes from Van Nuys toward Santa Barbara, Camarillo, Brackett, and the Central Valley are all practical in the Cherokee Warrior.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1722,7 +1722,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is the Piper Warrior aircraft rate?",
-        a: "$175/hr wet — fuel included. No surcharges.",
+        a: "$200/hr wet — fuel included. No surcharges.",
       },
       {
         q: "Can I use the Piper Warrior for commercial maneuver training?",
@@ -1750,7 +1750,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Pay-as-you-fly flight training means exactly what it says: you pay for the training you receive, when you receive it. No large upfront block payments. No training loans pushed by the school. No deposit held against future lessons. You schedule a lesson, you pay for that lesson, and you decide when to schedule the next one.",
       "This model puts you in control of your training investment at every step. If you need to pause for a month due to work or personal commitments, you can do so without losing money. If you are making rapid progress and want to fly four times a week, nothing prevents that either. The pace is yours.",
-      "At Accelerated Flight School, the rates are transparent and simple: aircraft $175/hr wet, instructor $40/hr, Discovery Flight $230 for 1.5 hours. There are no membership fees, no monthly dues, no booking charges, and no fuel surcharges. What you see is what you pay.",
+      "At Accelerated Flight School, the rates are transparent and simple: aircraft $200/hr wet, instructor $50/hr, Discovery Flight $230 for 1.5 hours. There are no membership fees, no monthly dues, no booking charges, and no fuel surcharges. What you see is what you pay.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1774,7 +1774,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "Is pay-as-you-fly more expensive per lesson?",
-        a: "No. The per-lesson rates at Accelerated Flight School are among the lower combined rates in the Los Angeles area: $215/hr dual combined.",
+        a: "No. The per-lesson rates at Accelerated Flight School are among the lower combined rates in the Los Angeles area: 250/hr dual combined.",
       },
       {
         q: "How do I get started with pay-as-you-fly training?",
@@ -1787,14 +1787,14 @@ export const landingPages: LandingPageConfig[] = [
     metaTitle:
       "Flight Training Without Loans Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Flight training without large loans in Los Angeles. Pay-as-you-fly at Van Nuys Airport. Aircraft $175/hr wet, instructor $40/hr. Accelerated Flight School.",
+      "Flight training without large loans in Los Angeles. Pay-as-you-fly at Van Nuys Airport. Aircraft $200/hr wet, instructor $50/hr. Accelerated Flight School.",
     h1: "Flight Training Without Large Training Loans",
     subheadline:
       "Accelerated Flight School at Van Nuys Airport does not push students toward large training loans — transparent pay-as-you-fly pricing keeps your flight training investment honest.",
     localIntro: [
       "Some flight schools encourage students to finance $20,000–$30,000 or more in training costs upfront — before a single hour is flown. This arrangement benefits the school financially and puts the student at significant risk if the training drags, the program is poorly structured, or the student's life circumstances change mid-program.",
       "Accelerated Flight School operates differently. Pay-as-you-fly means you invest in your training progressively, in proportion to your actual progress. Your risk at any given time is limited to the lesson you just flew. You are not locked into a large financial commitment based on a promise of future training.",
-      "The rates are clear and consistent: aircraft $175/hr wet, instructor $40/hr, dual $215/hr combined, Discovery Flight $230 for 1.5 hours. No hidden fees. No pressure to increase the package. No school-sponsored loan programs pushed at enrollment. Just straightforward training with straightforward pricing.",
+      "The rates are clear and consistent: aircraft $200/hr wet, instructor $50/hr, dual 250/hr combined, Discovery Flight $230 for 1.5 hours. No hidden fees. No pressure to increase the package. No school-sponsored loan programs pushed at enrollment. Just straightforward training with straightforward pricing.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1810,7 +1810,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "Can I really train for a private pilot certificate without a large loan?",
-        a: "Yes. At $215/hr combined, you can fund training incrementally as you go. Flying 2–3 times per week, most students spend $400–$600/week on flight training — manageable for many without large financing.",
+        a: "Yes. At 250/hr combined, you can fund training incrementally as you go. Flying 2–3 times per week, most students spend $500–$600/week on flight training — manageable for many without large financing.",
       },
       {
         q: "What if I need to pause training due to finances?",
@@ -1860,7 +1860,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What does Accelerated Flight School charge?",
-        a: "Aircraft $175/hr wet, instructor $40/hr, dual combined $215/hr, Discovery Flight $230 for 1.5 hours.",
+        a: "Aircraft $200/hr wet, instructor $50/hr, dual combined 250/hr, Discovery Flight $230 for 1.5 hours.",
       },
       {
         q: "How do I find out if a school is right for me?",
@@ -1882,8 +1882,8 @@ export const landingPages: LandingPageConfig[] = [
       "Understanding flight school costs in Los Angeles — aircraft rates, instructor rates, estimated totals by certificate, and how structured training controls your overall investment.",
     localIntro: [
       "Flight school costs in Los Angeles vary significantly between schools. Understanding what drives cost helps you compare options intelligently and avoid overpaying for poorly structured training.",
-      "Aircraft rental is typically the largest cost driver. In the LA area, aircraft rental rates range from approximately $130–$200/hr wet (fuel included). At Accelerated Flight School, the aircraft rate is $175/hr wet. Instructor rates in LA range from approximately $30–$65/hr. Our instructor rate is $40/hr. Combined dual rate is $215/hr.",
-      "Discovery Flight: $230 for 1.5 hours. Private Pilot (estimated): $215/hr × 60–75 hours ≈ $12,900–$16,125 in flight costs. Instrument Rating (estimated): $215/hr × 40–60 hours ≈ $8,600–$12,900 in flight costs. Commercial Pilot (additional time building): $175/hr × solo hours + $215/hr × dual hours. These are flight-cost estimates; add FAA written test fees and ground school resources for total program cost.",
+      "Aircraft rental is typically the largest cost driver. In the LA area, aircraft rental rates range from approximately $130–$200/hr wet (fuel included). At Accelerated Flight School, the aircraft rate is $200/hr wet. Instructor rates in LA range from approximately $30–$65/hr. Our instructor rate is $50/hr. Combined dual rate is 250/hr.",
+      "Discovery Flight: $230 for 1.5 hours. Private Pilot (estimated): 250/hr × 60–75 hours ≈ $12,900–$16,125 in flight costs. Instrument Rating (estimated): 250/hr × 40–60 hours ≈ $8,600–$12,900 in flight costs. Commercial Pilot (additional time building): $200/hr × solo hours + 250/hr × dual hours. These are flight-cost estimates; add FAA written test fees and ground school resources for total program cost.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1895,7 +1895,7 @@ export const landingPages: LandingPageConfig[] = [
     faqs: [
       {
         q: "What is the total cost of a private pilot certificate in Los Angeles?",
-        a: "At $215/hr dual and 60–75 typical hours, flight costs range from $12,900 to $16,125. Add written test fee (~$175) and ground study resources. Structured training keeps total hours — and total cost — in this range.",
+        a: "At 250/hr dual and 60–75 typical hours, flight costs range from $12,900 to $16,125. Add written test fee (~$200) and ground study resources. Structured training keeps total hours — and total cost — in this range.",
       },
       {
         q: "Why do costs vary so much between schools?",
@@ -1903,7 +1903,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What is a wet rate vs. dry rate?",
-        a: "Wet rate includes fuel. Dry rate does not — you pay separately for fuel per hour. At Accelerated Flight School, $175/hr is wet (fuel included).",
+        a: "Wet rate includes fuel. Dry rate does not — you pay separately for fuel per hour. At Accelerated Flight School, $200/hr is wet (fuel included).",
       },
       {
         q: "What drives the difference between 40 hours and 90 hours to private pilot?",
@@ -1926,8 +1926,8 @@ export const landingPages: LandingPageConfig[] = [
       "What does a private pilot certificate actually cost in Los Angeles? Real numbers, honest estimates, and how structured training keeps your total investment as low as possible.",
     localIntro: [
       "The FAA minimum for a private pilot certificate is 40 hours of total flight time. The national average to completion is 60–75 hours. In Los Angeles, with its complex airspace and high airport activity, the average is slightly higher — but structured training can significantly reduce the gap between minimum and average.",
-      "At Accelerated Flight School: aircraft is $175/hr wet, instructor is $40/hr, combined dual is $215/hr. Using these rates, the FAA minimum of 40 hours would cost $8,600 in flight time. The realistic 60–75 hour range costs $12,900–$16,125 in flight time. Add approximately $175 for the FAA knowledge test, and $150–$400 for checkride examiner fees.",
-      "Ground school and study materials vary widely. Some students use free YouTube resources and online ground schools ($50–$300); others use more formal programs ($300–$600). The total cost of a private pilot certificate in Los Angeles at Accelerated Flight School, assuming 65 hours of flight time, is approximately $12,675–$13,500 all-in.",
+      "At Accelerated Flight School: aircraft is $200/hr wet, instructor is $50/hr, combined dual is 250/hr. Using these rates, the FAA minimum of 40 hours would cost $13,500 in flight time. The realistic 60–75 hour range costs $12,900–$16,125 in flight time. Add approximately $200 for the FAA knowledge test, and $150–$500 for checkride examiner fees.",
+      "Ground school and study materials vary widely. Some students use free YouTube resources and online ground schools ($50–$300); others use more formal programs ($300–$600). The total cost of a private pilot certificate in Los Angeles at Accelerated Flight School, assuming 65 hours of flight time, is approximately $12,675–$14,000 all-in.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1947,7 +1947,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What are the non-flight costs for a private pilot certificate?",
-        a: "FAA knowledge test (~$175), checkride examiner fee (~$150–$400), ground school/study materials (~$100–$600), and medical certificate (~$75–$200).",
+        a: "FAA knowledge test (~$200), checkride examiner fee (~$800–$1200), ground school/study materials (~$100–$600), and medical certificate (~$75–$200).",
       },
       {
         q: "Is the Discovery Flight cost deducted from total training cost?",
@@ -1968,8 +1968,8 @@ export const landingPages: LandingPageConfig[] = [
     subheadline:
       "What does an instrument rating actually cost in Los Angeles? Honest breakdown of flight time requirements, CFII rates, and how to estimate your total instrument training investment.",
     localIntro: [
-      "The instrument rating requires 50 hours of cross-country PIC time (often already accumulated during private pilot training), 40 hours of instrument time (simulated or actual), and an FAA instrument knowledge test score. At $215/hr combined dual and $175/hr solo aircraft rate, the cost is estimable.",
-      "If you enter instrument training with 50+ hours of cross-country PIC time already logged, the primary cost is instrument instruction hours. At $215/hr for dual and roughly 40–60 hours of instrument instruction, total flight costs for the instrument rating range from $8,600–$12,900. Add the FAA instrument knowledge test (~$175) and examiner checkride fee (~$400–$600).",
+      "The instrument rating requires 50 hours of cross-country PIC time (often already accumulated during private pilot training), 40 hours of instrument time (simulated or actual), and an FAA instrument knowledge test score. At 250/hr combined dual and $200/hr solo aircraft rate, the cost is estimable.",
+      "If you enter instrument training with 50+ hours of cross-country PIC time already logged, the primary cost is instrument instruction hours. At 250/hr for dual and roughly 40–60 hours of instrument instruction, total flight costs for the instrument rating range from $8,600–$12,900. Add the FAA instrument knowledge test (~$200) and examiner checkride fee (~$500–$600).",
       "The Los Angeles Basin is one of the better training environments for instrument rating in California — KVNY has ILS, VOR, and RNAV approaches, and cross-country IFR training exposes students to Burbank, LAX area, and coastal airport procedures. This variety builds practical IFR skills beyond the checkride minimum.",
     ],
     nearbyAreas: [
@@ -1986,7 +1986,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What does 40 hours of instrument training cost?",
-        a: "At $215/hr dual, 40 hours costs $8,600. Most students require 40–60 hours, totaling $8,600–$12,900 in flight costs.",
+        a: "At 250/hr dual, 40 hours costs $8,600. Most students require 40–60 hours, totaling $8,600–$12,900 in flight costs.",
       },
       {
         q: "What are simulated instrument conditions?",
@@ -2006,12 +2006,12 @@ export const landingPages: LandingPageConfig[] = [
     slug: "time-building-los-angeles-accelerated-flight-school-van-nuys-kvny",
     metaTitle: "Time Building Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Build flight time in Los Angeles with Piper Cherokee rental at Van Nuys Airport. $175/hr wet. Commercial pilot path, safety pilot available.",
+      "Build flight time in Los Angeles with Piper Cherokee rental at Van Nuys Airport. $200/hr wet. Commercial pilot path, safety pilot available.",
     h1: "Time Building in Los Angeles",
     subheadline:
-      "Accelerated Flight School offers Piper Cherokee rental at Van Nuys Airport for time building — $175/hr wet for solo PIC flights, cross-country routes, and commercial pilot hour requirements.",
+      "Accelerated Flight School offers Piper Cherokee rental at Van Nuys Airport for time building — $200/hr wet for solo PIC flights, cross-country routes, and commercial pilot hour requirements.",
     localIntro: [
-      "Time building — accumulating flight hours toward commercial pilot certificate requirements or personal proficiency goals — is one of the most cost-sensitive activities in aviation. Every hour of solo aircraft rental adds to your total investment. At $175/hr wet, the Piper Cherokee at Accelerated Flight School is a practical time-building option in the Los Angeles area.",
+      "Time building — accumulating flight hours toward commercial pilot certificate requirements or personal proficiency goals — is one of the most cost-sensitive activities in aviation. Every hour of solo aircraft rental adds to your total investment. At $200/hr wet, the Piper Cherokee at Accelerated Flight School is a practical time-building option in the Los Angeles area.",
       "Commercial pilot certificate requirements include 250 total hours, 100 hours PIC, and 50 hours cross-country PIC. Students who have completed private pilot and instrument rating often use solo rental flights to build toward these totals. From Van Nuys Airport, practical time-building routes include Camarillo, Santa Barbara, Bakersfield, Palmdale, Brackett Field, Big Bear, Hawthorne, and beyond.",
       "Safety pilot services — where a current instrument-rated pilot acts as safety pilot while you practice instrument approaches under the hood — may be available depending on scheduling. Contact Accelerated Flight School at 323-332-0585 to discuss time-building arrangements.",
     ],
@@ -2025,7 +2025,7 @@ export const landingPages: LandingPageConfig[] = [
     faqs: [
       {
         q: "Can I rent the Piper Cherokee for solo time building?",
-        a: "Yes. Aircraft rental at $175/hr wet is available for certificated pilots with appropriate currency. Contact 323-332-0585 to discuss rental requirements.",
+        a: "Yes. Aircraft rental at $200/hr wet is available for certificated pilots with appropriate currency. Contact 323-332-0585 to discuss rental requirements.",
       },
       {
         q: "What cross-country destinations are practical from Van Nuys for time building?",
@@ -2056,7 +2056,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "A Flight Review (formerly called a Biennial Flight Review or BFR) is required every 24 calendar months for all certificated pilots to remain current and legal. The review consists of at least 1 hour of ground instruction and 1 hour of flight instruction with a CFI.",
       "At Accelerated Flight School, Flight Reviews are structured around your background, currency gap, and current proficiency level. our instructors, CFI/CFII, tailors the review to genuinely assess and restore your proficiency — not just check a regulatory box. If you have not flown in several months or years, the review may involve additional time to bring your skills back to a safe standard.",
-      "The Flight Review at Accelerated Flight School is conducted at Van Nuys Airport in the Piper Cherokee. Ground and flight instruction time is billed at standard rates: aircraft $175/hr wet and instructor $40/hr. Most Flight Reviews require 2–4 hours total depending on currency gap.",
+      "The Flight Review at Accelerated Flight School is conducted at Van Nuys Airport in the Piper Cherokee. Ground and flight instruction time is billed at standard rates: aircraft $200/hr wet and instructor $50/hr. Most Flight Reviews require 2–4 hours total depending on currency gap.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -2076,7 +2076,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What does a Flight Review cost at Accelerated Flight School?",
-        a: "Aircraft is $175/hr wet and instructor is $40/hr. A 2-hour flight review with 1 hour flight + 1 hour ground would cost approximately $175 + $70 = $230.",
+        a: "Aircraft is $200/hr wet and instructor is $50/hr. A 2-hour flight review with 1 hour flight + 1 hour ground would cost approximately $200 + $70 = $230.",
       },
       {
         q: "What if I have not flown in a long time?",
@@ -2118,7 +2118,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What does an IPC cost at Accelerated Flight School?",
-        a: "Aircraft is $175/hr wet and instructor is $40/hr. A 2-hour IPC flight would cost approximately $390 in flight costs plus briefing time.",
+        a: "Aircraft is $200/hr wet and instructor is $50/hr. A 2-hour IPC flight would cost approximately $390 in flight costs plus briefing time.",
       },
       {
         q: "Can I do an IPC at Van Nuys Airport?",
@@ -2160,7 +2160,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "How much does it cost to become a pilot in Los Angeles?",
-        a: "At Accelerated Flight School, aircraft is $175/hr wet and instructor is $40/hr. Most students spend $10,000–$13,000 on flight training for private pilot, plus approximately $500–$1,000 for written test prep and FAA exam fees.",
+        a: "At Accelerated Flight School, aircraft is $200/hr wet and instructor is $50/hr. Most students spend $10,000–$13,000 on flight training for private pilot, plus approximately $500–$1,000 for written test prep and FAA exam fees.",
       },
       {
         q: "Do I need any experience to start flight training?",
@@ -2177,13 +2177,13 @@ export const landingPages: LandingPageConfig[] = [
     slug: "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
     metaTitle: "Flight School Cost in Los Angeles | Accelerated Flight School",
     metaDescription:
-      "Flight school cost breakdown for Los Angeles — private pilot, instrument rating, commercial. Aircraft $175/hr wet at Van Nuys Airport.",
+      "Flight school cost breakdown for Los Angeles — private pilot, instrument rating, commercial. Aircraft $200/hr wet at Van Nuys Airport.",
     h1: "Flight School Cost in Los Angeles at Van Nuys Airport (KVNY)",
     subheadline:
       "Full cost breakdown for every stage of flight training in Los Angeles — private pilot through commercial — at Accelerated Flight School, Van Nuys Airport KVNY.",
     localIntro: [
       "Understanding flight school costs in Los Angeles starts with one key fact: the largest variable is not the hourly rate — it is how many hours you need. The FAA minimums are 40 hours for private pilot, 50 cross-country PIC hours and 40 instrument hours for an instrument rating, and 250 total hours for a commercial certificate. Most students exceed the minimums. Structured, ACS-based instruction is the most reliable way to minimize your total hours.",
-      "At Accelerated Flight School, the rates are: $175/hr aircraft (wet, fuel included), $40/hr CFII instruction, $215/hr combined dual flight rate. Rough cost estimates by certificate: Private Pilot (65 hours average): $12,500–$14,000. Instrument Rating (50 additional dual hours): $9,750–$11,000. Commercial Pilot training (requires 250 hours total): variable based on your existing total time. CFI/CFII: additional dual hours to develop teaching skills and build to airline minimums.",
+      "At Accelerated Flight School, the rates are: $200/hr aircraft (wet, fuel included), $50/hr CFII instruction, 250/hr combined dual flight rate. Rough cost estimates by certificate: Private Pilot (65 hours average): $12,500–$14,000. Instrument Rating (50 additional dual hours): $9,750–$11,000. Commercial Pilot training (requires 250 hours total): variable based on your existing total time. CFI/CFII: additional dual hours to develop teaching skills and build to airline minimums.",
       "There are no hidden fees, loan requirements, or mandatory package commitments at Accelerated Flight School. You pay per lesson. You can pause, continue, or accelerate your training at any time without penalty. The Discovery Flight is $230 and is the lowest-risk starting point — 1.5 hours in the left seat before any commitment.",
     ],
     nearbyAreas: [
@@ -2197,11 +2197,11 @@ export const landingPages: LandingPageConfig[] = [
     faqs: [
       {
         q: "What is the total cost of flight training from zero to commercial pilot in LA?",
-        a: "A rough total at Accelerated Flight School rates: Private Pilot ($12,500–$14,000) + Instrument Rating ($9,750–$11,000) + Commercial time-building and training (variable, $15,000–$40,000+) + CFI training ($5,000–$8,000). The total path from zero to commercial CFI typically runs $50,000–$70,000 and takes 2–4 years.",
+        a: "A rough total at Accelerated Flight School rates: Private Pilot ($12,500–$14,000) + Instrument Rating ($9,750–$11,000) + Commercial time-building and training (variable, $15,000–$50,000+) + CFI training ($5,000–$8,000). The total path from zero to commercial CFI typically runs $50,000–$70,000 and takes 2–4 years.",
       },
       {
         q: "Is the aircraft rental rate all-inclusive?",
-        a: "Yes. $175/hr wet means fuel is included in the rental rate. No fuel surcharges, no tach vs. Hobbs billing confusion.",
+        a: "Yes. $200/hr wet means fuel is included in the rental rate. No fuel surcharges, no tach vs. Hobbs billing confusion.",
       },
       {
         q: "Are there financing options for flight training?",
@@ -2229,7 +2229,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "Learning to fly in Los Angeles puts you in some of the most dynamic and educational airspace in the country. Van Nuys Airport (KVNY) sits in the San Fernando Valley surrounded by Class B, Class C, and Class D airspace. From your earliest cross-country flights, you navigate real Los Angeles aviation infrastructure — the same airspace used by cargo jets, helicopters, charter aircraft, and private pilots every day. This makes you a more capable and confident pilot faster.",
       "Accelerated Flight School is a structured, ACS-based flight training program. Learning to fly here means your instructor — our CFII instructors — builds your skills in a deliberate sequence: ground fundamentals, basic maneuvers, traffic pattern work, first solo, cross-country navigation, night flight, and checkride preparation. Every lesson has a clear objective. Nothing is added to pad your logbook; everything serves your certificate goal.",
-      "The path to a private pilot certificate involves completing a minimum 40 hours of flight time (FAA minimum), passing a written knowledge test, and passing an FAA practical exam with a Designated Pilot Examiner. At $215/hr dual and $175/hr solo, most students invest $10,000–$13,000 in flight training for private pilot. The Discovery Flight at $230 is the perfect — and lowest-risk — starting point.",
+      "The path to a private pilot certificate involves completing a minimum 40 hours of flight time (FAA minimum), passing a written knowledge test, and passing an FAA practical exam with a Designated Pilot Examiner. At 250/hr dual and $200/hr solo, most students invest $10,000–$13,000 in flight training for private pilot. The Discovery Flight at $230 is the perfect — and lowest-risk — starting point.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -2296,7 +2296,7 @@ export const landingPages: LandingPageConfig[] = [
       },
       {
         q: "What does instrument rating training cost at Accelerated Flight School?",
-        a: "Aircraft is $175/hr wet and instructor is $40/hr ($215/hr combined dual rate). Most instrument students need 40–60 hours of dual instruction beyond their cross-country time. Instrument rating training at Accelerated Flight School typically costs $8,000–$12,000 in flight time, plus the instrument Knowledge Test fee (~$175) and checkride DPE fee (~$700–$900).",
+        a: "Aircraft is $200/hr wet and instructor is $50/hr (250/hr combined dual rate). Most instrument students need 40–60 hours of dual instruction beyond their cross-country time. Instrument rating training at Accelerated Flight School typically costs $8,000–$12,000 in flight time, plus the instrument Knowledge Test fee (~$200) and checkride DPE fee (~$700–$900).",
       },
       {
         q: "Can I do my instrument training at Van Nuys Airport?",
