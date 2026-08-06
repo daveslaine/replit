@@ -13,8 +13,12 @@ export function CfiTrainingPage() {
         description={"Become a CFI at Van Nuys Airport. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, and earn money flying. Call 424-493-2761."}
       />
 
-      <section className="bg-primary text-white py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <GraduationCap className="w-16 h-16 text-secondary mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Certified Flight Instructor Training</h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
@@ -27,8 +31,8 @@ export function CfiTrainingPage() {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="rounded-2xl overflow-hidden shadow-md mb-12">
             <img
-              src="/images/cessna-skyhawk.webp"
-              alt="Cessna 172 Skyhawk in flight at sunset near Van Nuys Airport"
+              src="/images/fleet/n96575-1.jpg"
+              alt="Cessna 172P Skyhawk N96575 on the ramp"
               className="w-full h-56 md:h-72 object-cover"
               loading="lazy"
             />

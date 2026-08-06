@@ -98,7 +98,7 @@ export function HomePage() {
       <Seo
         title={"Flight Training Van Nuys Airport | Accelerated Flight School"}
         description={
-          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$9,500. Call or text 424-493-2761."
+          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot as low as $8,100. Call or text 424-493-2761."
         }
       />
       {/* ── Hero ──────────────────────────────────────────────── */}
@@ -106,7 +106,7 @@ export function HomePage() {
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/wing-view-coast.webp"
+            src="/images/hero-airliner-gate.jpg"
             alt="Southern California coastline seen from the wing of an Accelerated Flight School aircraft"
             className="w-full h-full object-cover object-center"
           />
@@ -356,10 +356,10 @@ export function HomePage() {
               <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
                 Accelerated Flight School estimate
               </p>
-              <p className="text-3xl font-bold text-white">~$10,800 – $13,500</p>
+              <p className="text-3xl font-bold text-white">As low as $8,100</p>
               <p className="text-xs text-slate-400 mt-1">
-                Private Pilot, depending on consistency, weather, study habits,
-                and proficiency
+                Private Pilot — assumes minimum of 45 hours at $180/hr Dual
+                (Aircraft + Instructor)
               </p>
               <p className="text-sm font-bold text-green-400 mt-3 flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
@@ -589,8 +589,8 @@ export function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-md order-2 md:order-1">
               <img
-                src="/images/cessna-skyhawk.webp"
-                alt="Cessna 172 Skyhawk in flight near Van Nuys Airport"
+                src="/images/fleet/n523er-1.jpg"
+                alt="Cessna 172S Skyhawk N523ER in flight near Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"
               />

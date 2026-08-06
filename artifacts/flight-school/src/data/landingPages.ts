@@ -1314,7 +1314,7 @@ export const landingPages: LandingPageConfig[] = [
     localIntro: [
       "The private pilot certificate is the foundational license for all of aviation. Earning it in Los Angeles means training in some of the most complex and interesting airspace in the country. At Accelerated Flight School, private pilot training is built around the FAA's Airman Certification Standards — the same document your examiner uses at your checkride.",
       "Private pilot training at KVNY covers all required flight maneuvers, cross-country navigation, night flying, and emergency procedures. You will develop radio communication skills from your first lesson at this controlled airport. Cross-country routes during training include destinations like Camarillo, Santa Barbara, Brackett Field, and Hawthorne — giving you practical experience across the LA Basin.",
-      "At the from-$180/hr combined dual rate, the FAA minimum of 40 hours would cost approximately $7,200. Most students complete training in 60–75 hours — and structured ACS-based training is the most reliable way to stay in that range rather than stretching to 90–100 hours. We keep total hours honest.",
+      "At the from-$180/hr combined dual rate, Private Pilot training starts as low as $8,100 (assuming a minimum of 45 hours at $180/hr dual). Most students complete training in 60–75 hours — costing roughly $10,800–$13,500 in flight time — and structured ACS-based training is the most reliable way to stay in that range rather than stretching to 90–100 hours. We keep total hours honest.",
     ],
     nearbyAreas: [
       "Van Nuys",
@@ -1926,7 +1926,7 @@ export const landingPages: LandingPageConfig[] = [
       "What does a private pilot certificate actually cost in Los Angeles? Real numbers, honest estimates, and how structured training keeps your total investment as low as possible.",
     localIntro: [
       "The FAA minimum for a private pilot certificate is 40 hours of total flight time. The national average to completion is 60–75 hours. In Los Angeles, with its complex airspace and high airport activity, the average is slightly higher — but structured training can significantly reduce the gap between minimum and average.",
-      "At Accelerated Flight School: aircraft rental starts at $145/hr wet, instructor is $35/hr, combined dual starts at $180/hr. Using these rates, the FAA minimum of 40 hours would cost $7,200 in flight time. The realistic 60–75 hour range costs $10,800–$13,500 in flight time. Add approximately $200 for the FAA knowledge test, and $150–$500 for checkride examiner fees.",
+      "At Accelerated Flight School: aircraft rental starts at $145/hr wet, instructor is $35/hr, combined dual starts at $180/hr. Using these rates, Private Pilot training starts as low as $8,100 in flight time, assuming a minimum of 45 hours at $180/hr dual. The realistic 60–75 hour range costs $10,800–$13,500 in flight time. Add approximately $200 for the FAA knowledge test, and $150–$500 for checkride examiner fees.",
       "Ground school and study materials vary widely. Some students use free YouTube resources and online ground schools ($50–$300); others use more formal programs ($300–$600). The total cost of a private pilot certificate in Los Angeles at Accelerated Flight School, assuming 65 hours of flight time at the from-$180/hr dual rate (about $11,700 in flight time), is approximately $12,500–$13,500 all-in once ground school, study materials, the FAA written, medical, and checkride fees are added.",
     ],
     nearbyAreas: [

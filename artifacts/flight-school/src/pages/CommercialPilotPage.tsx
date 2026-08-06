@@ -485,8 +485,9 @@ export function CommercialPilotPage() {
 
       <section className="relative overflow-hidden bg-primary text-white">
         <img
-          src="/images/cessna-skyhawk.webp"
-          alt="Cessna 172 Skyhawk in flight near Van Nuys Airport in Los Angeles"
+          src="/images/hero-airliner-gate.jpg"
+          alt=""
+          aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
           width="1600"
           height="900"
@@ -780,8 +781,8 @@ export function CommercialPilotPage() {
 
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
               <img
-                src="/images/warrior-exterior.png"
-                alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
+                src="/images/fleet/n6393c-2.jpg"
+                alt="Piper Warrior N6393C on the ramp"
                 className="h-80 w-full object-cover"
                 width="1000"
                 height="700"
@@ -1289,8 +1290,8 @@ export function CommercialPilotPage() {
 
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
                 <img
-                  src="/images/cessna-skyhawk.webp"
-                  alt="Cessna 172 Skyhawk in flight during Commercial Pilot training in Van Nuys"
+                  src="/images/fleet/n21705-3.jpg"
+                  alt="Cessna 172S Skyhawk N21705 in flight"
                   className="h-72 w-full object-cover"
                   width="900"
                   height="650"

@@ -23,12 +23,16 @@ export function PricingPage() {
       <Seo
         title={"Flight Training Pricing | Transparent Costs | Van Nuys KVNY"}
         description={
-          "Transparent flight training pricing at Van Nuys Airport. Aircraft starting at $145/hr wet. Combined dual from $180/hr. Private Pilot ~$10,800–$13,500. Call 424-493-2761."
+          "Transparent flight training pricing at Van Nuys Airport. Aircraft starting at $145/hr wet. Combined dual from $180/hr. Private Pilot as low as $8,100 (45 hrs at $180/hr dual). Call 424-493-2761."
         }
       />
 
-      <section className="bg-primary text-white py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Transparent Flight Training Pricing
           </h1>
@@ -49,8 +53,8 @@ export function PricingPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="rounded-2xl overflow-hidden shadow-md mb-12">
             <img
-              src="/images/cessna-skyhawk.webp"
-              alt="Cessna 172 Skyhawk in flight at sunset near Van Nuys Airport"
+              src="/images/fleet/n523er-1.jpg"
+              alt="Cessna 172S Skyhawk N523ER in flight at sunset near Van Nuys Airport"
               className="w-full h-56 md:h-72 object-cover"
               loading="lazy"
             />
@@ -137,9 +141,13 @@ export function PricingPage() {
                       Private Pilot
                     </Link>
                     <span className="font-bold text-xl text-primary">
-                      ~$10,800–$13,500
+                      As low as $8,100
                     </span>
                   </div>
+                  <p className="text-xs text-slate-400">
+                    Assumes minimum of 45 hours at $180/hr Dual (Aircraft +
+                    Instructor)
+                  </p>
                   <p className="text-sm text-red-600 font-medium">
                     SoCal Average: $15,000–$25,000+
                   </p>

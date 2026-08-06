@@ -5,6 +5,7 @@ import {
   applyInstructorContentFixes,
   applyInstructorTitleFixes,
   applyInstructorRosterUpdate,
+  applyInstructorRosterRename,
 } from "./lib/seedInstructors";
 
 const rawPort = process.env["PORT"];
@@ -32,5 +33,6 @@ app.listen(port, (err) => {
   void seedInstructorsIfEmpty()
     .then(() => applyInstructorContentFixes())
     .then(() => applyInstructorTitleFixes())
-    .then(() => applyInstructorRosterUpdate());
+    .then(() => applyInstructorRosterUpdate())
+    .then(() => applyInstructorRosterRename());
 });

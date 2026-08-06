@@ -12,8 +12,12 @@ export function CommercialMultiEnginePage() {
         description={"Add a Multi-Engine rating at Van Nuys Airport (KVNY). $3,000–$4,000, below SoCal's $5K–$8K average. No written exam required. Call 424-493-2761."}
       />
 
-      <section className="bg-primary text-white py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-ramp-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <Plane className="w-16 h-16 text-secondary mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Commercial Multi-Engine Add-On Training</h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto mb-4">

@@ -18,13 +18,17 @@ export function DealsPage() {
       <Seo
         title={"Flight Training Deals & Coupons | Accelerated Flight School"}
         description={
-          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 2 flights: aircraft from $145/hr + instructor $35/hr. Call 424-493-2761."
+          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $10 off — $189.99. First 2 flights: aircraft from $145/hr + instructor $25/hr. Call 424-493-2761."
         }
       />
 
       {/* Hero */}
-      <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-ramp-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-6">
             <Tag className="w-4 h-4 text-yellow-300" />
             Van Nuys Airport (KVNY) · Deals &amp; Coupons
@@ -74,14 +78,14 @@ export function DealsPage() {
                 </div>
               </div>
               <p className="text-5xl font-bold text-amber-600 mb-1">
-                $20{" "}
+                $10{" "}
                 <span className="text-xl font-normal text-slate-500">off</span>
               </p>
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-4">
                 <span className="text-xl text-slate-400 line-through">
                   $199.99
                 </span>
-                <span className="text-2xl font-bold text-secondary">$210</span>
+                <span className="text-2xl font-bold text-secondary">$189.99</span>
                 <span className="text-sm font-normal text-slate-400">
                   Bring a passenger — $249.99 with 1 passenger
                 </span>
@@ -134,7 +138,7 @@ export function DealsPage() {
                   </span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-lg">
-                      $35/hr
+                      $25/hr
                     </span>
                     <span className="block text-xs font-normal text-slate-400"></span>
                   </div>
@@ -144,7 +148,7 @@ export function DealsPage() {
                     Combined Dual (First 2 Flights)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    From $180/hr
+                    From $170/hr
                   </span>
                 </div>
               </div>
@@ -187,7 +191,7 @@ export function DealsPage() {
             {/* Fleet photo */}
             <div className="rounded-2xl overflow-hidden shadow-md min-h-64">
               <img
-                src="/images/warrior-exterior.png"
+                src="/images/fleet/n6393c-2.jpg"
                 alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
                 className="w-full h-full object-cover"
                 loading="lazy"
