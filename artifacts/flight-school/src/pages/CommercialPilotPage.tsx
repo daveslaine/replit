@@ -153,7 +153,7 @@ const serviceSchema = {
     iataCode: "VNY",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "7910 Balboa Blvd H7",
+      streetAddress: "16425 Hart St",
       addressLocality: "Van Nuys",
       addressRegion: "CA",
       postalCode: "91406",
@@ -203,7 +203,7 @@ const courseSchema = {
       name: "Van Nuys Airport",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "7910 Balboa Blvd H7",
+        streetAddress: "16425 Hart St",
         addressLocality: "Van Nuys",
         addressRegion: "CA",
         postalCode: "91406",
@@ -485,8 +485,8 @@ export function CommercialPilotPage() {
 
       <section className="relative overflow-hidden bg-primary text-white">
         <img
-          src="/images/aircraft-takeoff.jpg"
-          alt="Commercial Pilot training airplane departing Van Nuys Airport in Los Angeles"
+          src="/images/cessna-skyhawk.webp"
+          alt="Cessna 172 Skyhawk in flight near Van Nuys Airport in Los Angeles"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
           width="1600"
           height="900"
@@ -538,13 +538,13 @@ export function CommercialPilotPage() {
               </div>
 
               <div className="flex flex-col gap-3 sm:flex-row">
-                <a href="tel:323-332-0585">
+                <a href="tel:424-493-2761">
                   <Button
                     size="lg"
                     className="h-14 w-full gap-2 px-7 text-base font-bold sm:w-auto"
                   >
                     <Phone className="h-5 w-5" />
-                    Call or Text 323-332-0585
+                    Call or Text 424-493-2761
                   </Button>
                 </a>
                 <Link href="/van-nuys-accelerated-flight-school-contact">
@@ -620,19 +620,19 @@ export function CommercialPilotPage() {
               <div className="space-y-3 border-t border-white/20 pt-5 text-sm">
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Aircraft wet rate</span>
-                  <strong>$200/hr</strong>
+                  <strong>From $145/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Flight instruction</span>
-                  <strong>$50/hr</strong>
+                  <strong>$35/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Combined dual rate</span>
-                  <strong>$250/hr</strong>
+                  <strong>From $180/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
-                  <span className="text-white/70">10-hour package rate</span>
-                  <strong>$235/hr</strong>
+                  <span className="text-white/70">Fleet range</span>
+                  <strong>$145–$175/hr</strong>
                 </div>
               </div>
 
@@ -780,8 +780,8 @@ export function CommercialPilotPage() {
 
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
               <img
-                src="/images/aircraft-cockpit.webp"
-                alt="Commercial Pilot student training in an airplane cockpit at Van Nuys Airport"
+                src="/images/warrior-exterior.png"
+                alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
                 className="h-80 w-full object-cover"
                 width="1000"
                 height="700"
@@ -1289,8 +1289,8 @@ export function CommercialPilotPage() {
 
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
                 <img
-                  src="/images/aircraft-interior-n9172y.webp"
-                  alt="Airplane cockpit used for Commercial Pilot training in Van Nuys"
+                  src="/images/cessna-skyhawk.webp"
+                  alt="Cessna 172 Skyhawk in flight during Commercial Pilot training in Van Nuys"
                   className="h-72 w-full object-cover"
                   width="900"
                   height="650"
@@ -1585,10 +1585,10 @@ export function CommercialPilotPage() {
                       "Already have Private or Instrument",
                       "Call for custom estimate",
                     ],
-                    ["Aircraft wet rate", "$200/hr"],
-                    ["Flight instruction", "$50/hr"],
-                    ["Combined dual rate", "$250/hr"],
-                    ["10-hour combined package", "$235/hr"],
+                    ["Aircraft wet rate", "From $145/hr"],
+                    ["Flight instruction", "$35/hr"],
+                    ["Combined dual rate", "From $180/hr"],
+                    ["Fleet range", "$145–$175/hr"],
                     ["DPE checkride fee", "~$800–$1,000 each"],
                     ["FAA knowledge test", "~$200 each"],
                     ["Charts / EFB / subscriptions", "Depends on chosen tools"],
@@ -1637,7 +1637,7 @@ export function CommercialPilotPage() {
                   ))}
                 </div>
 
-                <a href="tel:323-332-0585" className="mt-6 block">
+                <a href="tel:424-493-2761" className="mt-6 block">
                   <Button className="h-12 w-full font-bold">
                     Call to Discuss Your Path
                   </Button>
@@ -1850,13 +1850,13 @@ export function CommercialPilotPage() {
             rather than a generic package.
           </p>
           <div className="flex flex-col justify-center gap-3 sm:flex-row">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="h-14 w-full gap-2 px-8 text-lg font-bold sm:w-auto"
               >
                 <Phone className="h-5 w-5" />
-                Call or Text 323-332-0585
+                Call or Text 424-493-2761
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-contact">

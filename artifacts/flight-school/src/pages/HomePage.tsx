@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Seo } from "@/components/Seo";
 import { Link } from "wouter";
 import {
@@ -93,14 +93,12 @@ const acceleratedFix = [
 ];
 
 export function HomePage() {
-  const [rateTab, setRateTab] = useState<"standard" | "block">("standard");
-
   return (
     <div className="w-full">
       <Seo
         title={"Flight Training Van Nuys Airport | Accelerated Flight School"}
         description={
-          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$9,500. Call or text 323-332-0585."
+          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot from ~$9,500. Call or text 424-493-2761."
         }
       />
       {/* ── Hero ──────────────────────────────────────────────── */}
@@ -177,7 +175,7 @@ export function HomePage() {
                   className="font-bold text-base h-12 px-7 border-white/40 hover:bg-white/10 text-white gap-2"
                 >
                   <PlaneTakeoff className="w-4 h-4" />
-                  Discovery Flight — $230
+                  Discovery Flight — $199.99
                 </Button>
               </Link>
               <Link
@@ -196,12 +194,12 @@ export function HomePage() {
 
             {/* Phone */}
             <a
-              href="tel:323-332-0585"
+              href="tel:424-493-2761"
               className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors"
               data-testid="link-hero-phone"
             >
               <Phone className="w-3.5 h-3.5" />
-              323-332-0585
+              424-493-2761
             </a>
           </div>
         </div>
@@ -211,9 +209,9 @@ export function HomePage() {
           <div className="container mx-auto px-4 max-w-5xl pb-8">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-lg">
               {[
-                { label: "AIRCRAFT RATE", value: "$200/hr wet" },
-                { label: "INSTRUCTOR FROM", value: "$50/hr" },
-                { label: "COMBINED DUAL", value: "$250/hr" },
+                { label: "AIRCRAFT FROM", value: "$145/hr wet" },
+                { label: "INSTRUCTOR", value: "$35/hr" },
+                { label: "COMBINED DUAL", value: "from $180/hr" },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -358,7 +356,7 @@ export function HomePage() {
               <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
                 Accelerated Flight School estimate
               </p>
-              <p className="text-3xl font-bold text-white">~$9,900 – $14,500</p>
+              <p className="text-3xl font-bold text-white">~$10,800 – $13,500</p>
               <p className="text-xs text-slate-400 mt-1">
                 Private Pilot, depending on consistency, weather, study habits,
                 and proficiency
@@ -591,8 +589,8 @@ export function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-2xl overflow-hidden shadow-md order-2 md:order-1">
               <img
-                src="/images/aircraft-left-2.jpg"
-                alt="Piper Cherokee cockpit panel and instruments at Van Nuys Airport"
+                src="/images/cessna-skyhawk.webp"
+                alt="Cessna 172 Skyhawk in flight near Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"
               />
@@ -670,33 +668,9 @@ export function HomePage() {
               Pricing Snapshot
             </h2>
             <p className="text-slate-500 mb-6">
-              Toggle between standard and block rates to see your savings.
+              We operate a fleet with multiple aircraft at different price
+              points — rates start at $145/hr wet.
             </p>
-            {/* Toggle */}
-            <div className="inline-flex rounded-xl border border-slate-200 bg-slate-50 p-1">
-              <button
-                className={`px-5 py-2 rounded-lg text-sm font-bold transition-all ${
-                  rateTab === "standard"
-                    ? "bg-primary text-white shadow-sm"
-                    : "text-slate-500 hover:text-slate-700"
-                }`}
-                onClick={() => setRateTab("standard")}
-                data-testid="button-rate-standard"
-              >
-                Standard Rate
-              </button>
-              <button
-                className={`px-5 py-2 rounded-lg text-sm font-bold transition-all ${
-                  rateTab === "block"
-                    ? "bg-primary text-white shadow-sm"
-                    : "text-slate-500 hover:text-slate-700"
-                }`}
-                onClick={() => setRateTab("block")}
-                data-testid="button-rate-block"
-              >
-                10-Hr Block
-              </button>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -706,17 +680,12 @@ export function HomePage() {
                 Aircraft Rental
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                ${rateTab === "standard" ? "200" : "190"}
+                From $145
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1">
                 <AviationTerm term="Wet rental" /> — fuel included
               </p>
-              {rateTab === "block" && (
-                <p className="text-xs text-green-600 font-bold mt-2">
-                  Save $10/hr vs standard
-                </p>
-              )}
             </div>
 
             {/* Combined — featured */}
@@ -728,17 +697,12 @@ export function HomePage() {
                 Aircraft + Instructor
               </p>
               <p className="text-5xl font-bold text-white mb-1">
-                ${rateTab === "standard" ? "250" : "235"}
+                From $180
                 <span className="text-xl font-normal opacity-70">/hr</span>
               </p>
               <p className="text-xs text-primary-foreground/60 mt-1">
                 Aircraft + Instructor Included
               </p>
-              {rateTab === "block" && (
-                <p className="text-xs text-green-300 font-bold mt-2">
-                  Save $10/hr vs standard
-                </p>
-              )}
             </div>
 
             {/* Instructor */}
@@ -747,7 +711,7 @@ export function HomePage() {
                 Instructor
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                From $50
+                $35
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1"></p>
@@ -793,24 +757,24 @@ export function HomePage() {
             understand the right training path.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
               >
                 <Phone className="w-5 h-5" />
-                Call 323-332-0585
+                Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:424-493-2761">
               <Button
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold border-primary-foreground/30 hover:bg-primary-foreground/10 text-white gap-2"
               >
                 <MessageSquare className="w-5 h-5" />
-                Text 323-332-0585
+                Text 424-493-2761
               </Button>
             </a>
           </div>

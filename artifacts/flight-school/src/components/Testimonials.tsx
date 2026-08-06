@@ -4,7 +4,7 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Reza is an incredible instructor. He doesn't just teach you to pass a test; he teaches you how to be a truly safe and competent pilot. The 1-on-1 structure saved me months of time.",
+      "My instructor here was incredible. He doesn't just teach you to pass a test; he teaches you how to be a truly safe and competent pilot. The 1-on-1 structure saved me months of time.",
     name: "Jonathan D.",
   },
   {

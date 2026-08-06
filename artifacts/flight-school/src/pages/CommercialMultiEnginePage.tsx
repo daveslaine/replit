@@ -9,7 +9,7 @@ export function CommercialMultiEnginePage() {
     <div className="w-full">
       <Seo
         title={"Multi-Engine Rating Van Nuys | Accelerated Flight School"}
-        description={"Add a Multi-Engine rating at Van Nuys Airport (KVNY). $3,000–$4,000, below SoCal's $5K–$8K average. No written exam required. Call 323-332-0585."}
+        description={"Add a Multi-Engine rating at Van Nuys Airport (KVNY). $3,000–$4,000, below SoCal's $5K–$8K average. No written exam required. Call 424-493-2761."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -210,10 +210,10 @@ export function CommercialMultiEnginePage() {
 
           <div className="text-center">
             <p className="text-lg text-slate-600 mb-6">Ready to add multi-engine to your commercial certificate?</p>
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button size="lg" className="h-14 px-8 text-lg font-bold gap-2">
                 <Phone className="w-5 h-5" />
-                Call or Text 323-332-0585
+                Call or Text 424-493-2761
               </Button>
             </a>
           </div>

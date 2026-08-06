@@ -25,7 +25,7 @@ export function AirToursHubPage() {
       <Seo
         title={"Los Angeles Air Tours & Sightseeing Flights | KVNY"}
         description={
-          "Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $230 for one person. Call 323-332-0585."
+          "Take the controls on a real LA sightseeing flight from Van Nuys Airport (KVNY). Discovery flights start at $199.99 for one person. Call 424-493-2761."
         }
       />
 
@@ -44,16 +44,16 @@ export function AirToursHubPage() {
             Skip the passive ride in the back of a charter. On our discovery
             flight you sit up front, take the controls with a Certified Flight
             Instructor, and see Southern California from the best seat in the
-            airplane — for $230 (1 person) or $270 (2 people).
+            airplane — for $199.99 (1 person) or $249.99 (2 people).
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-6"
               >
-                <Phone className="w-4 h-4" /> Call or Text 323-332-0585
+                <Phone className="w-4 h-4" /> Call or Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -76,8 +76,9 @@ export function AirToursHubPage() {
             helicopter or a small plane as a passenger while someone else flies.
             Our discovery flight is different: it is a real introductory flight
             lesson where <strong>you</strong> are in the left seat with your
-            hands on the controls, guided by a CFI in our Piper PA-28 Cherokee
-            Warrior II (N9172Y). The scenery is the same world-famous Los
+            hands on the controls, guided by a CFI in one of our fleet aircraft
+            — a Cessna 172 Skyhawk or Piper PA-28-161 Warrior II. The scenery is
+            the same world-famous Los
             Angeles coastline and skyline — but the experience is yours to fly.
           </p>
           <p className="text-slate-700 leading-relaxed text-base md:text-lg">
@@ -148,26 +149,26 @@ export function AirToursHubPage() {
             Ready to Take the Controls?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Call or text <strong>323-332-0585</strong> to book your discovery
-            flight at Van Nuys Airport — $230 for 1 person, $270 for 2.
+            Call or text <strong>424-493-2761</strong> to book your discovery
+            flight at Van Nuys Airport — $199.99 for 1 person, $249.99 for 2.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-7"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:4244932761">
               <Button
                 size="lg"
                 variant="outline"
                 className="font-bold gap-2 h-12 px-7 border-white text-white hover:bg-white/10"
               >
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -180,7 +181,7 @@ export function AirToursHubPage() {
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport
+            Accelerated Flight School · 16425 Hart St · Van Nuys Airport
             (KVNY) · Van Nuys, CA 91406
           </p>
         </div>

@@ -175,7 +175,7 @@ function InstructorModal({
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
               <label className="text-sm font-medium text-slate-700 mb-1 block">Name *</label>
-              <Input value={form.name ?? ""} onChange={(e) => set("name", e.target.value)} required placeholder="e.g. Reza S." />
+              <Input value={form.name ?? ""} onChange={(e) => set("name", e.target.value)} required placeholder="e.g. Mark J." />
             </div>
             <div>
               <label className="text-sm font-medium text-slate-700 mb-1 block">Title *</label>

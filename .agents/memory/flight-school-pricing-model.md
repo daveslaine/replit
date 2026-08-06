@@ -1,18 +1,16 @@
 ---
 name: Flight school pricing model
-description: The canonical rate model and instructor-display rule for the flight-school site; keep all pages/data internally consistent with it.
+description: The canonical rate model, fleet, and instructor-display rules for the flight-school site; keep all pages/data internally consistent with it.
 ---
 
-# Pricing model (source of truth for arithmetic)
+# Pricing model (source of truth, updated Aug 6 2026)
 
-- Aircraft rental: **$175/hr** standard (wet), **$165/hr** on the 10-hour block.
-- Instructor: presented as **"From $40/hr"** with a small sub/parenthetical **"(+$20/hr to the flight school)"**. The $40 is the student-facing instructor rate; the school takes an additional $20/hr.
-- Combined dual = aircraft + $40 instructor: **$215/hr** standard, **$205/hr** on the 10-hour block.
-- There are **no 30-hour packages** (removed). The only legitimate "30 hours" mention is the Part 61 AATD simulator-credit line on the instrument page — that is NOT a package.
+- Fleet (aircraft provided by a local operator at KVNY — footer says "Aircraft Provided by Local Operator at KVNY"): four Cessna 172 Skyhawks + one Piper PA-28-161 Warrior II. Cash/Credit hourly: 172S(2001) $170/$175, 172S(2004) $170/$175, PA-28-161 $165/$170, 172P $160/$165, 172N $145/$150. Cards + per-type V-speeds live in `OurAircraftPage.tsx` (hardcoded JSX, NOT the /api/aircraft DB).
+- Marketing rates: aircraft "Starting at $145/hr wet", instructor "$35/hr", combined dual "from $180/hr". No block-rate framing, no "(+$20/hr to school)" sub-lines.
+- Discovery Flight: $199.99 (1 person), $249.99 (with 1 passenger).
+- Phone: 424-493-2761. Address: 16425 Hart St, Van Nuys, CA 91406.
+- The old single aircraft N9172Y (1985 Piper Warrior) is GONE: no references, no photos (all old `aircraft-*.jpg/webp`, `piper-cherokee.webp`, POH pdf deleted). Fleet photos: `/images/cessna-skyhawk.webp`, `/images/warrior-exterior.png`.
 
-**Why:** A sitewide overhaul standardized rates and removed instructor names from every page except the instructors page. Derived figures (program-cost ranges, weekly examples, instrument budgets) are computed off these base rates, so any base-rate change must cascade.
+**Why:** Aug 2026 overhaul — school switched from one owned airplane to an operator-provided fleet; new phone/address; Reza removed from the business.
 
-**How to apply:**
-- Instructor field on **every page except `InstructorsPage`** must be name-less and show "From $40/hr" + "(+$20/hr to the flight school)". No discounted instructor rates (e.g. an old "Instructor Solo $20/hr" row) — they were removed for consistency. The instructors page shows **no prices at all**.
-- Never write the full name "David Tom"; "David T." is acceptable. Names live only in `InstructorsPage`, admin, and `Testimonials`.
-- When changing any base rate, recompute every derived number in `src/data/landingPages.ts`, `landingUniqueTopics.ts`, `landingUniqueAreas.ts`, and in-page prose (program ranges, weekly examples like 3hr×block, instrument budgets like 45×$205=$9,225). After edits, sweep for stale literals: `$185 $195 $180 $150/hr $35/hr $30/hr` and the strings `30-Hour Package`, `Instructor Solo`.
+**How to apply:** On any base-rate change, recompute derived math in `src/data/landingPages.ts`, `landingUniqueTopics.ts`, `landingUniqueAreas.ts` and page prose (1.5-hr lesson ≈ $220 at $145+$35; 65 hr dual ≈ $11,700; PPL all-in ≈ $12,500–$13,500). Sweep stale literals: `$200/hr $250/hr $205/hr $50/hr N9172Y 9172 323-332-0585 7910 Balboa Reza`.

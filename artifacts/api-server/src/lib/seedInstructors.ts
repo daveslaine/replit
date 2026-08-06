@@ -8,24 +8,54 @@ const SEED_LOCK_ID = 918_469;
 
 const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
   {
-    name: "Reza S.",
+    name: "Mark J.",
     title: "Flight Instructor & Instrument Instructor",
-    phone: "(310) 490-0402",
+    phone: null,
     bio: null,
     teachingPhilosophy:
       "I believe in building a foundation of flawless fundamentals. My goal is to produce pilots who don't just pass checkrides, but possess the situational awareness and aeronautical decision-making skills to manage any scenario safely. Structure and transparency from day one eliminate frustration and build confident aviators.",
-    rateStandard: 45,
+    rateStandard: 35,
     rateBlock: 35,
-    certifications: ["Commercial Multi-Engine", "CFI", "CFII"],
+    certifications: ["Commercial Pilot", "CFI", "CFII"],
     photoObjectPath: null,
     photoPosition: "top",
     sortOrder: 1,
     active: true,
   },
   {
+    name: "Sarah K.",
+    title: "Flight Instructor & Instrument Instructor",
+    phone: null,
+    bio: null,
+    teachingPhilosophy:
+      "Flying should feel earned, not intimidating. I break every maneuver into clear, repeatable steps and debrief honestly after every flight, so my students always know exactly where they stand and what comes next.",
+    rateStandard: 35,
+    rateBlock: 35,
+    certifications: ["Commercial Pilot", "CFI", "CFII"],
+    photoObjectPath: null,
+    photoPosition: "top",
+    sortOrder: 2,
+    active: true,
+  },
+  {
+    name: "Elena M.",
+    title: "Flight Instructor & Instrument Instructor",
+    phone: null,
+    bio: null,
+    teachingPhilosophy:
+      "Every student learns differently, and my job is to adapt to you — not the other way around. I focus on calm, methodical instruction that builds real confidence in the airplane, one well-understood lesson at a time.",
+    rateStandard: 35,
+    rateBlock: 35,
+    certifications: ["Commercial Pilot", "CFI"],
+    photoObjectPath: null,
+    photoPosition: "top",
+    sortOrder: 3,
+    active: true,
+  },
+  {
     name: "David T.",
     title: "Flight Instructor & Instrument Instructor",
-    phone: "323-332-0585",
+    phone: "424-493-2761",
     bio: null,
     teachingPhilosophy:
       "I believe in putting the student first. I will not be there to waste your time and take your money, or throw you under the bus. I am transparent and upfront, and my goal is to serve you and ensure you pass, and know what is going on and what it is you are doing. You will feel certain when training with me, and my satisfaction comes from seeing you pass.",
@@ -123,6 +153,59 @@ export async function applyInstructorContentFixes(): Promise<void> {
     });
   } catch (err) {
     logger.error({ err }, "Failed to apply instructor content fixes");
+  }
+}
+
+const ROSTER_FIX_KEY = "instructors_roster_update_v2";
+const ROSTER_FIX_LOCK_ID = 918_472;
+
+/**
+ * One-time roster update for databases seeded with the old roster:
+ * - Removes Reza S. entirely.
+ * - Updates David T.'s phone to the new school number.
+ * - Adds Mark J., Sarah K., and Elena M. (if not already present).
+ *
+ * Runs exactly once per database (recorded under ROSTER_FIX_KEY) behind an
+ * advisory lock, so it is safe under concurrent Autoscale boots and never
+ * clobbers later admin-panel edits.
+ */
+export async function applyInstructorRosterUpdate(): Promise<void> {
+  try {
+    await db.transaction(async (tx) => {
+      await tx.execute(sql`SELECT pg_advisory_xact_lock(${ROSTER_FIX_LOCK_ID})`);
+
+      const already = await tx
+        .select({ key: seedHistoryTable.key })
+        .from(seedHistoryTable)
+        .where(sql`${seedHistoryTable.key} = ${ROSTER_FIX_KEY}`)
+        .limit(1);
+      if (already.length > 0) {
+        return;
+      }
+
+      await tx.delete(instructorsTable).where(sql`${instructorsTable.name} = 'Reza S.'`);
+      await tx
+        .update(instructorsTable)
+        .set({ phone: "424-493-2761", sortOrder: 0 })
+        .where(sql`${instructorsTable.name} = 'David T.'`);
+
+      const newOnes = DEFAULT_INSTRUCTORS.filter((i) => i.name !== "David T.");
+      for (const inst of newOnes) {
+        const existing = await tx
+          .select({ id: instructorsTable.id })
+          .from(instructorsTable)
+          .where(sql`${instructorsTable.name} = ${inst.name}`)
+          .limit(1);
+        if (existing.length === 0) {
+          await tx.insert(instructorsTable).values(inst);
+        }
+      }
+
+      await tx.insert(seedHistoryTable).values({ key: ROSTER_FIX_KEY });
+      logger.info("Applied one-time instructor roster update (removed Reza S., added new instructors)");
+    });
+  } catch (err) {
+    logger.error({ err }, "Failed to apply instructor roster update");
   }
 }
 

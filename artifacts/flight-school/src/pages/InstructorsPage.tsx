@@ -20,8 +20,10 @@ interface Instructor {
 }
 
 const STATIC_PHOTOS: Record<string, string> = {
-  "Reza S.": "/images/instructor-reza.webp",
   "David T.": "/images/instructor-david.jpg",
+  "Mark J.": "/images/instructor-mark.jpg",
+  "Sarah K.": "/images/instructor-sarah.jpg",
+  "Elena M.": "/images/instructor-elena.jpg",
 };
 
 function InstructorCard({ inst }: { inst: Instructor }) {
@@ -90,17 +92,16 @@ export function InstructorsPage() {
     <div className="w-full">
       <Seo
         title={"Meet Our Flight Instructors | Van Nuys Airport KVNY"}
-        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Reza S. and David T. — structured, ACS-focused flight training. Call 323-332-0585."}
+        description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Structured, ACS-focused flight training from a passionate team. Call 424-493-2761."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Instructors</h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
-            Professional educators dedicated to structured, ACS-focused flight training. As we own our
-            airplane and it's our flight school, we have the ability to charge less than any competing
-            flight school while providing higher quality instruction — because we have a genuine passion
-            for aviation.
+            Professional educators dedicated to structured, ACS-focused flight training. Because we keep
+            our overhead low, we have the ability to charge less than competing flight schools while
+            providing higher quality instruction — because we have a genuine passion for aviation.
           </p>
         </div>
       </section>
@@ -208,10 +209,10 @@ export function InstructorsPage() {
               Our instructors are ready to guide you from your very first flight to your advanced ratings.
             </p>
             <div className="flex justify-center">
-              <a href="tel:323-332-0585">
+              <a href="tel:424-493-2761">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                   <Phone className="w-5 h-5" />
-                  Call or Text 323-332-0585
+                  Call or Text 424-493-2761
                 </Button>
               </a>
             </div>

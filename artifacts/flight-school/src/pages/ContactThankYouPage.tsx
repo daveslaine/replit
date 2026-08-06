@@ -32,13 +32,13 @@ export function ContactThankYouPage() {
       <section className="py-14 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid gap-4 sm:grid-cols-3">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button className="h-14 w-full gap-2 text-base" variant="secondary">
                 <Phone className="h-5 w-5" />
                 Call Now
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:424-493-2761">
               <Button className="h-14 w-full gap-2 text-base" variant="outline">
                 <MessageSquare className="h-5 w-5" />
                 Text Us

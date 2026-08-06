@@ -11,13 +11,13 @@ const organizationSchema = {
   description:
     "Affordable, structured flight training at Van Nuys Airport (KVNY) for Private Pilot, Instrument Rating, Commercial Pilot, CFI, and the airline pathway. Pay-as-you-fly, no large upfront payments.",
   url: SITE_URL,
-  telephone: "+1-323-332-0585",
-  image: `${SITE_URL}/images/aircraft-exterior.jpg`,
+  telephone: "+1-424-493-2761",
+  image: `${SITE_URL}/images/cessna-skyhawk.webp`,
   logo: `${SITE_URL}/images/logo.png`,
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "7910 Balboa Blvd H7",
+    streetAddress: "16425 Hart St",
     addressLocality: "Van Nuys",
     addressRegion: "CA",
     postalCode: "91406",

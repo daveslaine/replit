@@ -41,16 +41,16 @@ export function Footer() {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 variant="secondary"
                 className="gap-2 font-bold w-full sm:w-auto"
               >
                 <Phone className="h-4 w-4" />
-                Call 323-332-0585
+                Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:424-493-2761">
               <Button
                 variant="outline"
                 className="gap-2 font-bold w-full sm:w-auto bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
@@ -89,7 +89,7 @@ export function Footer() {
               <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                 <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                 <span>
-                  7910 Balboa Blvd H7
+                  16425 Hart St
                   <br />
                   Van Nuys, CA 91406
                 </span>
@@ -127,7 +127,7 @@ export function Footer() {
                     href="/discovery-flight-van-nuys"
                     className="text-primary-foreground/70 hover:text-white transition-colors text-sm font-medium"
                   >
-                    Discovery Flight — $230
+                    Discovery Flight — $199.99
                   </Link>
                 </li>
                 {[
@@ -230,14 +230,14 @@ export function Footer() {
               </h3>
               <div className="space-y-3">
                 <a
-                  href="tel:323-332-0585"
+                  href="tel:424-493-2761"
                   className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm"
                 >
                   <Phone className="h-4 w-4 shrink-0" />
-                  323-332-0585
+                  424-493-2761
                 </a>
                 <a
-                  href="sms:323-332-0585"
+                  href="sms:424-493-2761"
                   className="flex items-center gap-2 text-primary-foreground/70 hover:text-white transition-colors text-sm"
                 >
                   <MessageSquare className="h-4 w-4 shrink-0" />
@@ -257,20 +257,13 @@ export function Footer() {
                 <div className="flex items-start gap-2 text-primary-foreground/60 text-sm">
                   <MapPin className="h-4 w-4 shrink-0 mt-0.5" />
                   <span>
-                    7910 Balboa Blvd H7
+                    16425 Hart St
                     <br />
                     Van Nuys, CA 91406
                     <br />
                     <span className="text-primary-foreground/40">
                       (Van Nuys Airport – VNY)
                     </span>
-                    <br />
-                    <Link
-                      href="/van-nuys-accelerated-flight-school-directions"
-                      className="text-primary-foreground/60 hover:text-white underline underline-offset-2 transition-colors text-xs mt-1 inline-block"
-                    >
-                      Click here for help finding our office
-                    </Link>
                   </span>
                 </div>
               </div>
@@ -283,11 +276,9 @@ export function Footer() {
               rights reserved. Van Nuys Airport (KVNY), Van Nuys, California.
             </p>
             <p>
-              Affiliated with{" "}
               <span className="text-primary-foreground/60 font-medium">
-                Accelerated Flight Academy
+                Aircraft Provided by Local Operator at KVNY
               </span>
-              .
             </p>
           </div>
         </div>

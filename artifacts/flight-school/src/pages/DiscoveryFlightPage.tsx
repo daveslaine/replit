@@ -25,7 +25,7 @@ const serviceSchema = {
   serviceType: "Discovery Flight",
   provider: { "@id": `${SITE_URL}/#organization` },
   url: `${SITE_URL}/discovery-flight-van-nuys`,
-  image: `${SITE_URL}/images/aircraft-takeoff.jpg`,
+  image: `${SITE_URL}/images/cessna-skyhawk.webp`,
   areaServed: "Los Angeles",
   serviceLocation: {
     "@type": "Airport",
@@ -33,7 +33,7 @@ const serviceSchema = {
     iataCode: "VNY",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "7910 Balboa Blvd",
+      streetAddress: "16425 Hart St",
       addressLocality: "Van Nuys",
       addressRegion: "CA",
       postalCode: "91406",
@@ -53,7 +53,7 @@ const serviceSchema = {
 const trainingSteps = [
   {
     step: "Discovery Flight",
-    note: "$230 — today",
+    note: "$199.99 — today",
     href: null,
     highlight: true,
   },
@@ -83,7 +83,7 @@ export function DiscoveryFlightPage() {
       <Seo
         title={"Discovery Flight Van Nuys | Accelerated Flight School"}
         description={
-          "1.5-hour discovery flight at Van Nuys Airport for $230. Fly over the San Fernando Valley and Malibu coastline, zero-g maneuvers included. Call 323-332-0585."
+          "1.5-hour discovery flight at Van Nuys Airport for $199.99. Fly over the San Fernando Valley and Malibu coastline, zero-g maneuvers included. Call 424-493-2761."
         }
       >
         <script type="application/ld+json">
@@ -95,8 +95,8 @@ export function DiscoveryFlightPage() {
       <section className="relative bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/aircraft-takeoff.jpg"
-            alt="N9172Y Piper Cherokee taking off from Van Nuys Airport"
+            src="/images/cessna-skyhawk.webp"
+            alt="Cessna 172 Skyhawk in flight at sunset near Van Nuys Airport"
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/30" />
@@ -117,16 +117,16 @@ export function DiscoveryFlightPage() {
             coastline, including fun zero-g style maneuvers.
           </p>
           <p className="text-3xl font-bold text-white mb-2">
-            $230
+            $199.99
             <span className="ml-3 text-base font-normal text-white/50">
-              Bring a passenger — $270 with 1 passenger
+              Bring a passenger — $249.99 with 1 passenger
             </span>
           </p>
           <p className="text-sm text-white/60 mb-8">
             1.5 hours — aircraft + instructor included
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:323-332-0585" data-testid="link-discovery-call">
+            <a href="tel:424-493-2761" data-testid="link-discovery-call">
               <Button
                 size="lg"
                 variant="secondary"
@@ -136,7 +136,7 @@ export function DiscoveryFlightPage() {
                 Book by Phone
               </Button>
             </a>
-            <a href="sms:323-332-0585" data-testid="link-discovery-text">
+            <a href="sms:424-493-2761" data-testid="link-discovery-text">
               <Button
                 size="lg"
                 variant="outline"
@@ -148,7 +148,7 @@ export function DiscoveryFlightPage() {
             </a>
           </div>
           <p className="text-sm text-primary-foreground/60 mt-4">
-            Call or text 323-332-0585 — we will schedule your flight and answer
+            Call or text 424-493-2761 — we will schedule your flight and answer
             any questions.
           </p>
         </div>
@@ -295,8 +295,8 @@ export function DiscoveryFlightPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md">
               <img
-                src="/images/aircraft-takeoff.jpg"
-                alt="N9172Y Piper Cherokee Warrior II taking off from Van Nuys Airport"
+                src="/images/warrior-exterior.png"
+                alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"
               />
@@ -391,10 +391,10 @@ export function DiscoveryFlightPage() {
       <section className="py-16 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-primary mb-3">
-            Discovery Flight — $230
+            Discovery Flight — $199.99
           </h2>
           <p className="text-slate-600 mb-2 max-w-xl mx-auto">
-            The $230 includes the aircraft and instructor for your full 1.5-hour
+            The $199.99 includes the aircraft and instructor for your full 1.5-hour
             experience. No hidden fees. If you decide to continue into formal
             training, your instructor will walk you through all costs before you
             commit to anything.
@@ -403,13 +403,13 @@ export function DiscoveryFlightPage() {
             Most schools charge more for 1 hour. We include 1.5 hours for less.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button size="lg" className="font-bold h-14 px-8 text-lg gap-2">
                 <Phone className="w-5 h-5" />
-                Call 323-332-0585 to Book
+                Call 424-493-2761 to Book
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:424-493-2761">
               <Button
                 size="lg"
                 variant="outline"

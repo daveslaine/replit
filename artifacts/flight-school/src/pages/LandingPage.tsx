@@ -159,13 +159,13 @@ export function LandingPage() {
             {page.subheadline}
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-6"
               >
-                <Phone className="w-4 h-4" /> Call or Text 323-332-0585
+                <Phone className="w-4 h-4" /> Call or Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -323,22 +323,22 @@ export function LandingPage() {
             {[
               {
                 label: "Aircraft Rental",
-                rate: "$200/hr",
+                rate: "From $145/hr",
                 note: "Wet — fuel included",
               },
               {
                 label: "Flight Instructor",
-                rate: "From $50/hr",
-                note: "+$20/hr to the flight school",
+                rate: "$35/hr",
+                note: "Fair, flat instructor rate",
               },
               {
                 label: "Dual Combined",
-                rate: "$250/hr",
+                rate: "From $180/hr",
                 note: "Aircraft + instructor",
               },
               {
                 label: "Discovery Flight",
-                rate: "$230 ",
+                rate: "$199.99 ",
                 note: "1.5 hours in the air",
               },
             ].map((item) => (
@@ -365,9 +365,9 @@ export function LandingPage() {
                 <DollarSign className="w-4 h-4" /> View Full Pricing
               </Button>
             </Link>
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button className="gap-2 font-semibold">
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
           </div>
@@ -474,27 +474,27 @@ export function LandingPage() {
             Ready to Start Flying?
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
-            Call or text us directly at <strong>323-332-0585</strong> — or book
+            Call or text us directly at <strong>424-493-2761</strong> — or book
             a Discovery Flight at Van Nuys Airport for $190 and experience
             flight training before committing to a full program.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-7"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:4244932761">
               <Button
                 size="lg"
                 variant="outline"
                 className="font-bold gap-2 h-12 px-7 border-white text-white hover:bg-white/10"
               >
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -507,7 +507,7 @@ export function LandingPage() {
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport
+            Accelerated Flight School · 16425 Hart St · Van Nuys Airport
             (KVNY) · Van Nuys, CA 91406
           </p>
         </div>

@@ -10,7 +10,7 @@ export function CfiTrainingPage() {
     <div className="w-full">
       <Seo
         title={"CFI Training Van Nuys Airport | Become a Flight Instructor"}
-        description={"Become a CFI at Van Nuys Airport. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, and earn money flying. Call 323-332-0585."}
+        description={"Become a CFI at Van Nuys Airport. $3,000–$6,000 after Commercial. CFII add-on available. Teach students, build hours, and earn money flying. Call 424-493-2761."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -25,6 +25,14 @@ export function CfiTrainingPage() {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-4xl">
+          <div className="rounded-2xl overflow-hidden shadow-md mb-12">
+            <img
+              src="/images/cessna-skyhawk.webp"
+              alt="Cessna 172 Skyhawk in flight at sunset near Van Nuys Airport"
+              className="w-full h-56 md:h-72 object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12 mb-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -102,10 +110,10 @@ export function CfiTrainingPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-primary mb-6">Ready to teach?</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:323-332-0585">
+              <a href="tel:424-493-2761">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                   <Phone className="w-5 h-5" />
-                  Call or Text 323-332-0585
+                  Call or Text 424-493-2761
                 </Button>
               </a>
             </div>

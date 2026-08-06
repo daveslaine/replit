@@ -21,7 +21,7 @@ export function AirlinePathPage() {
     <div className="w-full">
       <Seo
         title={"Airline Pilot Path Van Nuys | Accelerated Flight School"}
-        description={"Private → Instrument → Commercial → Multi-Engine → CFI → ATP, starting at Van Nuys Airport (KVNY). Transparent costs, no upfront payment. Call 323-332-0585."}
+        description={"Private → Instrument → Commercial → Multi-Engine → CFI → ATP, starting at Van Nuys Airport (KVNY). Transparent costs, no upfront payment. Call 424-493-2761."}
       />
 
       <section className="bg-primary text-white py-16 md:py-24">
@@ -84,10 +84,10 @@ export function AirlinePathPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-primary mb-6">Let's plan your career trajectory.</h2>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href="tel:323-332-0585">
+              <a href="tel:424-493-2761">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2">
                   <Phone className="w-5 h-5" />
-                  Call or Text 323-332-0585
+                  Call or Text 424-493-2761
                 </Button>
               </a>
             </div>

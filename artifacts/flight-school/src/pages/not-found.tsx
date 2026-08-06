@@ -35,13 +35,13 @@ export default function NotFound() {
               Back to Home
             </Button>
           </Link>
-          <a href="tel:323-332-0585">
+          <a href="tel:424-493-2761">
             <Button
               variant="outline"
               className="gap-2 font-bold w-full sm:w-auto border-primary text-primary hover:bg-primary/5"
             >
               <Phone className="w-4 h-4" />
-              Call 323-332-0585
+              Call 424-493-2761
             </Button>
           </a>
         </div>

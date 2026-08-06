@@ -16,14 +16,14 @@ import { Button } from "@/components/ui/button";
 const programs = [
   {
     name: "Discovery Flight",
-    ours: "$230 flat",
+    ours: "$199.99 flat",
     socal: "$50 – $350+",
     details:
       "1.5 hours total — preflight, full flight, debrief. You fly the aircraft.",
   },
   {
     name: "Private Pilot Certificate",
-    ours: "~$9,900 – $14,500",
+    ours: "~$10,800 – $13,500",
     socal: "$15,000 – $25,000+",
     details:
       "FAA min 40 hrs. Typical 55–65 hrs with unstructured training at other schools.",
@@ -61,25 +61,25 @@ const programs = [
 const rates = [
   {
     label: "Aircraft Rental",
-    value: "$175/hr",
+    value: "From $145/hr",
     sub: "Wet — fuel included",
     highlight: false,
   },
   {
-    label: "Block Rental (10 hrs)",
-    value: "$165/hr",
-    sub: "Wet — fuel included",
+    label: "Fleet Range",
+    value: "$145–$175/hr",
+    sub: "Multiple aircraft, different price points",
     highlight: true,
   },
   {
     label: "Instructor Dual",
-    value: "From $40/hr",
-    sub: "+$20/hr to the flight school",
+    value: "$35/hr",
+    sub: "Fair, flat instructor rate",
     highlight: false,
   },
   {
     label: "Combined Dual Rate",
-    value: "~$205–$215/hr",
+    value: "From $180/hr",
     sub: "Aircraft + instructor total",
     highlight: true,
   },
@@ -130,7 +130,7 @@ export function LowCostPage() {
       <Seo
         title={"Low-Cost Flight Training Van Nuys | Accelerated Flight School"}
         description={
-          "Low-cost flight training at Van Nuys Airport. Aircraft $175/hr wet. Private Pilot ~$9,900–$42,500. Zero to Commercial + CFI ~$40,000–$55,000. Call 323-332-0585."
+          "Low-cost flight training at Van Nuys Airport. Aircraft starting at $145/hr wet. Private Pilot ~$10,800–$13,500. Zero to Commercial + CFI ~$40,000–$55,000. Call 424-493-2761."
         }
       />
 
@@ -149,12 +149,12 @@ export function LowCostPage() {
             scheduling that saves you real money.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="h-12 px-7 font-bold bg-white text-primary hover:bg-white/90 gap-2"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-pricing">
@@ -392,12 +392,12 @@ export function LowCostPage() {
             realistically takes.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
               >
-                <Phone className="w-5 h-5" /> Call or Text 323-332-0585
+                <Phone className="w-5 h-5" /> Call or Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -406,7 +406,7 @@ export function LowCostPage() {
                 variant="outline"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold border-primary text-primary hover:bg-primary/5"
               >
-                Book a Discovery Flight — $230
+                Book a Discovery Flight — $199.99
               </Button>
             </Link>
           </div>
