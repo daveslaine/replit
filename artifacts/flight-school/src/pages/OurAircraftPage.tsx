@@ -18,7 +18,11 @@ const fleet = [
     id: 1,
     name: "Cessna 172S Skyhawk",
     year: "2001",
-    img: "/images/cessna-skyhawk.webp",
+    imgs: [
+      "/images/fleet/n523er-1.jpg",
+      "/images/fleet/n523er-2.jpg",
+      "/images/fleet/n523er-3.jpg",
+    ],
     equipment: [
       "Dual Garmin 6430 GPS",
       "NAV/COM",
@@ -33,7 +37,12 @@ const fleet = [
     id: 2,
     name: "Cessna 172S Skyhawk",
     year: "2004",
-    img: "/images/cessna-skyhawk.webp",
+    imgs: [
+      "/images/fleet/n21705-1.jpg",
+      "/images/fleet/n21705-2.jpg",
+      "/images/fleet/n21705-3.jpg",
+      "/images/fleet/n21705-4.jpg",
+    ],
     equipment: [
       "KLN94 Color GPS",
       "Dual KX155 NAV/COM",
@@ -47,8 +56,8 @@ const fleet = [
   {
     id: 3,
     name: "Piper PA-28-161 Warrior II",
-    year: undefined,
-    img: "/images/warrior-exterior.png",
+    year: "1978",
+    imgs: ["/images/fleet/n6393c-1.jpg", "/images/fleet/n6393c-2.jpg"],
     equipment: [
       "Dual NAV/COM",
       "Garmin SL-30",
@@ -63,7 +72,11 @@ const fleet = [
     id: 4,
     name: "Cessna 172P Skyhawk",
     year: "1984",
-    img: "/images/cessna-skyhawk.webp",
+    imgs: [
+      "/images/fleet/n96575-1.jpg",
+      "/images/fleet/n96575-2.jpg",
+      "/images/fleet/n96575-3.jpg",
+    ],
     equipment: [
       "Dual Garmin 430 GPS",
       "NAV/COM",
@@ -77,12 +90,49 @@ const fleet = [
     id: 5,
     name: "Cessna 172N Skyhawk",
     year: "1980",
-    img: "/images/cessna-skyhawk.webp",
+    imgs: ["/images/fleet/n5298j-1.jpg", "/images/fleet/n5298j-2.jpg"],
     equipment: ["Dual NAV/COM", "GPS", "DME", "Transponder", "Intercom"],
     cash: 145,
     credit: 150,
   },
 ];
+
+function FleetGallery({ imgs, name, year }: { imgs: string[]; name: string; year?: string }) {
+  const [active, setActive] = useState(0);
+  return (
+    <div className="shrink-0 border-b border-slate-100">
+      <div className="h-48 relative">
+        <img
+          src={imgs[active]}
+          alt={`${name}${year ? ` (${year})` : ""} — photo ${active + 1}`}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        {year && (
+          <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full">
+            {year}
+          </div>
+        )}
+      </div>
+      {imgs.length > 1 && (
+        <div className="flex gap-1.5 p-2 bg-slate-50">
+          {imgs.map((src, i) => (
+            <button
+              key={src}
+              onClick={() => setActive(i)}
+              aria-label={`View photo ${i + 1} of ${name}`}
+              className={`h-12 flex-1 rounded-md overflow-hidden border-2 transition-colors ${
+                i === active ? "border-secondary" : "border-transparent opacity-70 hover:opacity-100"
+              }`}
+            >
+              <img src={src} alt="" className="w-full h-full object-cover" loading="lazy" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 const specsData = [
   {
@@ -178,8 +228,12 @@ export function OurAircraftPage() {
         description={"Train in a fleet of Cessna 172 Skyhawks and a Piper Warrior II. Rates starting at $145/hr wet. Call 424-493-2761."}
       />
 
-      <section className="bg-primary text-white py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-ramp-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Training Fleet</h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
             Train in our well-maintained fleet of Cessna and Piper aircraft, equipped for both primary and advanced <AviationTerm term="IFR" /> training.
@@ -196,19 +250,7 @@ export function OurAircraftPage() {
                 key={aircraft.id}
                 className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col hover-elevate transition-transform"
               >
-                <div className="h-48 shrink-0 relative border-b border-slate-100">
-                  <img
-                    src={aircraft.img}
-                    alt={aircraft.name}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                  {aircraft.year && (
-                    <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full">
-                      {aircraft.year}
-                    </div>
-                  )}
-                </div>
+                <FleetGallery imgs={aircraft.imgs} name={aircraft.name} year={aircraft.year} />
 
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">

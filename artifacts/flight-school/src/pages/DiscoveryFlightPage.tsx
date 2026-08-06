@@ -25,7 +25,7 @@ const serviceSchema = {
   serviceType: "Discovery Flight",
   provider: { "@id": `${SITE_URL}/#organization` },
   url: `${SITE_URL}/discovery-flight-van-nuys`,
-  image: `${SITE_URL}/images/cessna-skyhawk.webp`,
+  image: `${SITE_URL}/images/fleet/n523er-1.jpg`,
   areaServed: "Los Angeles",
   serviceLocation: {
     "@type": "Airport",
@@ -59,7 +59,7 @@ const trainingSteps = [
   },
   {
     step: "Private Pilot",
-    note: "~$9,900–$14,500 est.",
+    note: "As low as $8,100",
     href: "/private-pilot-van-nuys",
     highlight: false,
   },
@@ -95,8 +95,9 @@ export function DiscoveryFlightPage() {
       <section className="relative bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/cessna-skyhawk.webp"
-            alt="Cessna 172 Skyhawk in flight at sunset near Van Nuys Airport"
+            src="/images/hero-cockpit-dusk.jpg"
+            alt=""
+            aria-hidden="true"
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/75 to-primary/30" />
@@ -295,8 +296,8 @@ export function DiscoveryFlightPage() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md">
               <img
-                src="/images/warrior-exterior.png"
-                alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
+                src="/images/fleet/n21705-1.jpg"
+                alt="Cessna 172S Skyhawk N21705 on the ramp at Van Nuys Airport"
                 className="w-full h-80 object-cover"
                 loading="lazy"
               />

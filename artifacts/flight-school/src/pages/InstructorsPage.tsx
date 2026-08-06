@@ -21,9 +21,9 @@ interface Instructor {
 
 const STATIC_PHOTOS: Record<string, string> = {
   "David T.": "/images/instructor-david.jpg",
-  "Mark J.": "/images/instructor-mark.jpg",
-  "Sarah K.": "/images/instructor-sarah.jpg",
-  "Elena M.": "/images/instructor-elena.jpg",
+  "Robert H.": "/images/instructor-robert.jpg",
+  "Bella M.": "/images/instructor-bella.jpg",
+  "Jessica B.": "/images/instructor-jessica.jpg",
 };
 
 function InstructorCard({ inst }: { inst: Instructor }) {
@@ -95,8 +95,17 @@ export function InstructorsPage() {
         description={"Meet our CFI and CFII instructors at Van Nuys Airport (KVNY). Structured, ACS-focused flight training from a passionate team. Call 424-493-2761."}
       />
 
-      <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/hero-ramp-dusk.jpg"
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Instructors</h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
             Professional educators dedicated to structured, ACS-focused flight training. Because we keep

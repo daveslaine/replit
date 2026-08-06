@@ -369,8 +369,9 @@ export function InstrumentRatingPage() {
 
       <section className="relative overflow-hidden bg-primary text-white">
         <img
-          src="/images/cessna-skyhawk.webp"
-          alt="Cessna 172 Skyhawk in flight near Van Nuys Airport"
+          src="/images/hero-cockpit-dusk.jpg"
+          alt=""
+          aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
           width="1600"
           height="900"
@@ -691,8 +692,8 @@ export function InstrumentRatingPage() {
 
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
               <img
-                src="/images/warrior-exterior.png"
-                alt="Piper PA-28-161 Warrior II on a sunny ramp during instrument flight training in Los Angeles"
+                src="/images/fleet/n21705-2.jpg"
+                alt="Cessna 172S Skyhawk N21705 instrument panel"
                 className="h-80 w-full object-cover"
                 width="1000"
                 height="700"
@@ -1057,8 +1058,8 @@ export function InstrumentRatingPage() {
 
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
                 <img
-                  src="/images/cessna-skyhawk.webp"
-                  alt="Cessna 172 Skyhawk in flight during IFR training at Van Nuys"
+                  src="/images/fleet/n96575-2.jpg"
+                  alt="Cessna 172P N96575 in flight during IFR training at Van Nuys"
                   className="h-72 w-full object-cover"
                   width="900"
                   height="650"

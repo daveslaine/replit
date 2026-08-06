@@ -23,10 +23,10 @@ const programs = [
   },
   {
     name: "Private Pilot Certificate",
-    ours: "~$10,800 – $13,500",
+    ours: "As low as $8,100",
     socal: "$15,000 – $25,000+",
     details:
-      "FAA min 40 hrs. Typical 55–65 hrs with unstructured training at other schools.",
+      "Assumes minimum of 45 hours at $180/hr Dual (Aircraft + Instructor). Most students finish in 60–75 hrs (~$10,800–$13,500).",
   },
   {
     name: "Instrument Rating",
@@ -130,13 +130,17 @@ export function LowCostPage() {
       <Seo
         title={"Low-Cost Flight Training Van Nuys | Accelerated Flight School"}
         description={
-          "Low-cost flight training at Van Nuys Airport. Aircraft starting at $145/hr wet. Private Pilot ~$10,800–$13,500. Zero to Commercial + CFI ~$40,000–$55,000. Call 424-493-2761."
+          "Low-cost flight training at Van Nuys Airport. Aircraft starting at $145/hr wet. Private Pilot as low as $8,100 (assumes minimum of 45 hours at $180/hr dual). Zero to Commercial + CFI ~$40,000–$55,000. Call 424-493-2761."
         }
       />
 
       {/* Hero */}
-      <section className="bg-primary text-white py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-cockpit-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-primary-foreground/60 mb-4">
             Van Nuys Airport (KVNY)
           </p>

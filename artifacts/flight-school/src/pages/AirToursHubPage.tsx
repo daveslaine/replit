@@ -31,8 +31,11 @@ export function AirToursHubPage() {
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
-        <div className="absolute inset-0 bg-[url('/images/downtown-la-night-aerial.webp')] bg-cover bg-center opacity-25" />
-        <div className="relative container mx-auto px-4 max-w-4xl">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-cockpit-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-white/20">
             <Camera className="w-3.5 h-3.5" />
             Sightseeing flights from Van Nuys Airport (KVNY)

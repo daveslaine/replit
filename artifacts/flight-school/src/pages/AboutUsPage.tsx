@@ -31,8 +31,12 @@ export function AboutUsPage() {
       />
 
       {/* Hero */}
-      <section className="bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
+      <section className="relative bg-primary text-white pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-cockpit-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
           <p className="text-xs font-bold uppercase tracking-widest text-primary-foreground/60 mb-4">
             Van Nuys Airport (KVNY) · San Fernando Valley, CA
           </p>
@@ -521,7 +525,7 @@ export function AboutUsPage() {
               {[
                 {
                   program: "Private Pilot",
-                  ours: "~$9,900–$14,500",
+                  ours: "As low as $8,100",
                   socal: "$15,000–$25,000+",
                 },
                 {

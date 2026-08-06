@@ -102,7 +102,7 @@ export function AirTourPage() {
     url: `${SITE_URL}/${slug}`,
     image: page.photos[0]?.src
       ? `${SITE_URL}${page.photos[0].src}`
-      : `${SITE_URL}/images/cessna-skyhawk.webp`,
+      : `${SITE_URL}/images/fleet/n523er-1.jpg`,
     offers: [
       {
         "@type": "Offer",
@@ -153,7 +153,10 @@ export function AirTourPage() {
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
-        <div className="absolute inset-0 bg-[url('/images/cessna-skyhawk.webp')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 z-0">
+          <img src="/images/hero-cockpit-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <div className="absolute inset-0 bg-primary/80" />
+        </div>
         <div className="relative container mx-auto px-4 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-white/20">
             <MapPin className="w-3.5 h-3.5" />
@@ -259,10 +262,10 @@ export function AirTourPage() {
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
               <img
-                src={page.photos[0]?.src ?? "/images/warrior-exterior.png"}
+                src={page.photos[0]?.src ?? "/images/fleet/n5298j-1.jpg"}
                 alt={
                   page.photos[0]?.alt ??
-                  "Piper PA-28-161 Warrior II at Van Nuys Airport"
+                  "Cessna 172N N5298J at Van Nuys Airport"
                 }
                 className="w-full h-64 md:h-72 object-cover"
               />

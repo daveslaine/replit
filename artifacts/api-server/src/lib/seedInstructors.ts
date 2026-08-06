@@ -8,7 +8,7 @@ const SEED_LOCK_ID = 918_469;
 
 const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
   {
-    name: "Mark J.",
+    name: "Robert H.",
     title: "Flight Instructor & Instrument Instructor",
     phone: null,
     bio: null,
@@ -23,7 +23,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
     active: true,
   },
   {
-    name: "Sarah K.",
+    name: "Bella M.",
     title: "Flight Instructor & Instrument Instructor",
     phone: null,
     bio: null,
@@ -38,7 +38,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
     active: true,
   },
   {
-    name: "Elena M.",
+    name: "Jessica B.",
     title: "Flight Instructor & Instrument Instructor",
     phone: null,
     bio: null,
@@ -46,7 +46,7 @@ const DEFAULT_INSTRUCTORS: InsertInstructor[] = [
       "Every student learns differently, and my job is to adapt to you — not the other way around. I focus on calm, methodical instruction that builds real confidence in the airplane, one well-understood lesson at a time.",
     rateStandard: 35,
     rateBlock: 35,
-    certifications: ["Commercial Pilot", "CFI"],
+    certifications: ["Commercial Pilot", "CFI", "CFII"],
     photoObjectPath: null,
     photoPosition: "top",
     sortOrder: 3,
@@ -156,6 +156,49 @@ export async function applyInstructorContentFixes(): Promise<void> {
   }
 }
 
+const ROSTER_RENAME_KEY = "instructors_roster_rename_v3";
+const ROSTER_RENAME_LOCK_ID = 918_473;
+
+/**
+ * One-time rename for databases that ran roster_update_v2 with the interim
+ * names: Mark J. -> Robert H., Sarah K. -> Bella M., Elena M. -> Jessica B.
+ * Also ensures all three hold Commercial Pilot, CFI, and CFII.
+ * Idempotent (seed_history key) and advisory-lock protected.
+ */
+export async function applyInstructorRosterRename(): Promise<void> {
+  try {
+    await db.transaction(async (tx) => {
+      await tx.execute(sql`SELECT pg_advisory_xact_lock(${ROSTER_RENAME_LOCK_ID})`);
+
+      const already = await tx
+        .select({ key: seedHistoryTable.key })
+        .from(seedHistoryTable)
+        .where(sql`${seedHistoryTable.key} = ${ROSTER_RENAME_KEY}`)
+        .limit(1);
+      if (already.length > 0) {
+        return;
+      }
+
+      const renames: Array<[string, string]> = [
+        ["Mark J.", "Robert H."],
+        ["Sarah K.", "Bella M."],
+        ["Elena M.", "Jessica B."],
+      ];
+      for (const [from, to] of renames) {
+        await tx
+          .update(instructorsTable)
+          .set({ name: to, certifications: ["Commercial Pilot", "CFI", "CFII"] })
+          .where(sql`${instructorsTable.name} = ${from}`);
+      }
+
+      await tx.insert(seedHistoryTable).values({ key: ROSTER_RENAME_KEY });
+      logger.info("Applied one-time instructor roster rename (Robert H., Bella M., Jessica B.)");
+    });
+  } catch (err) {
+    logger.error({ err }, "Failed to apply instructor roster rename");
+  }
+}
+
 const ROSTER_FIX_KEY = "instructors_roster_update_v2";
 const ROSTER_FIX_LOCK_ID = 918_472;
 
@@ -163,7 +206,7 @@ const ROSTER_FIX_LOCK_ID = 918_472;
  * One-time roster update for databases seeded with the old roster:
  * - Removes Reza S. entirely.
  * - Updates David T.'s phone to the new school number.
- * - Adds Mark J., Sarah K., and Elena M. (if not already present).
+ * - Adds Robert H., Bella M., and Jessica B. (if not already present).
  *
  * Runs exactly once per database (recorded under ROSTER_FIX_KEY) behind an
  * advisory lock, so it is safe under concurrent Autoscale boots and never
