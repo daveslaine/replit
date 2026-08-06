@@ -53,7 +53,7 @@ const highlights = [
   {
     icon: <CheckCircle2 className="w-5 h-5 text-primary" />,
     title: "Fly With a CFI",
-    body: "Every flight is with a Certified Flight Instructor in our 1985 Piper PA-28 Cherokee Warrior II (N9172Y).",
+    body: "Every flight is with a Certified Flight Instructor in one of our fleet aircraft — a Cessna 172 Skyhawk or Piper PA-28-161 Warrior II.",
   },
   {
     icon: <Camera className="w-5 h-5 text-primary" />,
@@ -102,12 +102,12 @@ export function AirTourPage() {
     url: `${SITE_URL}/${slug}`,
     image: page.photos[0]?.src
       ? `${SITE_URL}${page.photos[0].src}`
-      : `${SITE_URL}/images/aircraft-exterior.jpg`,
+      : `${SITE_URL}/images/cessna-skyhawk.webp`,
     offers: [
       {
         "@type": "Offer",
         name: "Discovery Flight — 1 Person",
-        price: "230",
+        price: "199.99",
         priceCurrency: "USD",
         description:
           "Discovery flight for one person. Aircraft and CFI instructor included.",
@@ -116,7 +116,7 @@ export function AirTourPage() {
       {
         "@type": "Offer",
         name: "Discovery Flight — 2 People",
-        price: "270",
+        price: "249.99",
         priceCurrency: "USD",
         description:
           "Discovery flight for two people (subject to aircraft weight limitations). Aircraft and CFI instructor included.",
@@ -153,7 +153,7 @@ export function AirTourPage() {
 
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
-        <div className="absolute inset-0 bg-[url('/images/aircraft-takeoff.jpg')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/images/cessna-skyhawk.webp')] bg-cover bg-center opacity-20" />
         <div className="relative container mx-auto px-4 max-w-4xl">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white/90 text-xs font-semibold px-3 py-1.5 rounded-full mb-4 border border-white/20">
             <MapPin className="w-3.5 h-3.5" />
@@ -166,22 +166,22 @@ export function AirTourPage() {
             {page.subheadline}
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-6"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:4244932761">
               <Button
                 size="lg"
                 variant="outline"
                 className="font-bold gap-2 h-12 px-6 border-white text-white hover:bg-white/10"
               >
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -259,10 +259,10 @@ export function AirTourPage() {
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
               <img
-                src={page.photos[0]?.src ?? "/images/aircraft-ramp.jpg"}
+                src={page.photos[0]?.src ?? "/images/warrior-exterior.png"}
                 alt={
                   page.photos[0]?.alt ??
-                  "N9172Y Piper PA-28 Cherokee Warrior II at Van Nuys Airport"
+                  "Piper PA-28-161 Warrior II at Van Nuys Airport"
                 }
                 className="w-full h-64 md:h-72 object-cover"
               />
@@ -329,7 +329,7 @@ export function AirTourPage() {
                 1 Person
               </div>
               <div className="text-4xl font-black text-slate-800 mb-1">
-                $230
+                $199.99
               </div>
               <div className="text-xs text-slate-500">
                 Aircraft + instructor included
@@ -340,7 +340,7 @@ export function AirTourPage() {
                 2 People
               </div>
               <div className="text-4xl font-black text-slate-800 mb-1">
-                $270
+                $249.99
               </div>
               <div className="text-xs text-slate-500">
                 Total — subject to aircraft limitations
@@ -353,17 +353,17 @@ export function AirTourPage() {
             </p>
           )}
           <div className="flex flex-wrap gap-3">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button className="gap-2 font-semibold">
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:4244932761">
               <Button
                 variant="outline"
                 className="gap-2 font-semibold border-primary text-primary hover:bg-primary/5"
               >
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -410,7 +410,7 @@ export function AirTourPage() {
             <Link href="/discovery-flight-van-nuys">
               <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-pointer h-full">
                 <p className="font-bold text-primary text-sm mb-1">
-                  Discovery Flight — $230
+                  Discovery Flight — $199.99
                 </p>
                 <p className="text-xs text-slate-500 leading-relaxed">
                   Our main 1.5-hour introductory flight. Price, what's included,
@@ -468,25 +468,25 @@ export function AirTourPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
             {page.ctaNote ??
-              "Call or text us directly at 323-332-0585 to book your discovery flight at Van Nuys Airport — $230 for 1 person, $270 for 2."}
+              "Call or text us directly at 424-493-2761 to book your discovery flight at Van Nuys Airport — $199.99 for 1 person, $249.99 for 2."}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-7"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:4244932761">
               <Button
                 size="lg"
                 variant="outline"
                 className="font-bold gap-2 h-12 px-7 border-white text-white hover:bg-white/10"
               >
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -499,7 +499,7 @@ export function AirTourPage() {
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport
+            Accelerated Flight School · 16425 Hart St · Van Nuys Airport
             (KVNY) · Van Nuys, CA 91406
           </p>
         </div>

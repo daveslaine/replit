@@ -18,7 +18,7 @@ export function DealsPage() {
       <Seo
         title={"Flight Training Deals & Coupons | Accelerated Flight School"}
         description={
-          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 2 flights: aircraft $200/hr + instructor from $50/hr. Call 323-332-0585."
+          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $20 off. First 2 flights: aircraft from $145/hr + instructor $35/hr. Call 424-493-2761."
         }
       />
 
@@ -35,7 +35,8 @@ export function DealsPage() {
           </h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
             Affordable flight training just got better. Take advantage of our
-            new student coupons and block pricing at Van Nuys Airport — and find
+            new student coupons and low hourly rates at Van Nuys Airport — and
+            find
             out why our lower price actually means higher quality.
           </p>
         </div>
@@ -68,7 +69,7 @@ export function DealsPage() {
                     Discovery Flight
                   </p>
                   <p className="text-sm text-slate-500">
-                    Van Nuys Airport — N9172Y Piper Cherokee
+                    Van Nuys Airport — Cessna 172 Skyhawk
                   </p>
                 </div>
               </div>
@@ -78,11 +79,11 @@ export function DealsPage() {
               </p>
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-4">
                 <span className="text-xl text-slate-400 line-through">
-                  $230
+                  $199.99
                 </span>
                 <span className="text-2xl font-bold text-secondary">$210</span>
                 <span className="text-sm font-normal text-slate-400">
-                  Bring a passenger — $270 with 1 passenger
+                  Bring a passenger — $249.99 with 1 passenger
                 </span>
               </div>
               <p className="text-slate-600 text-sm mb-5 leading-relaxed">
@@ -90,10 +91,10 @@ export function DealsPage() {
                 maneuvers over Van Nuys. Mention this coupon when you call or
                 text to book.
               </p>
-              <a href="tel:323-332-0585">
+              <a href="tel:424-493-2761">
                 <Button className="w-full font-bold gap-2">
                   <Phone className="w-4 h-4" />
-                  Call to Book — 323-332-0585
+                  Call to Book — 424-493-2761
                 </Button>
               </a>
             </div>
@@ -122,11 +123,8 @@ export function DealsPage() {
                     Aircraft Rental (<AviationTerm term="Wet rental" />)
                   </span>
                   <div className="text-right">
-                    <span className="text-slate-400 line-through text-sm mr-2">
-                      $200/hr
-                    </span>
                     <span className="font-bold text-secondary text-lg">
-                      $190/hr
+                      From $145/hr
                     </span>
                   </div>
                 </div>
@@ -136,7 +134,7 @@ export function DealsPage() {
                   </span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-lg">
-                      From $45/hr
+                      $35/hr
                     </span>
                     <span className="block text-xs font-normal text-slate-400"></span>
                   </div>
@@ -146,7 +144,7 @@ export function DealsPage() {
                     Combined Dual (First 2 Flights)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    $235/hr
+                    From $180/hr
                   </span>
                 </div>
               </div>
@@ -155,13 +153,13 @@ export function DealsPage() {
                 lesson — hourly time applies to all hours flown during those
                 sessions.
               </p>
-              <a href="tel:323-332-0585">
+              <a href="tel:424-493-2761">
                 <Button
                   variant="outline"
                   className="w-full font-bold gap-2 border-secondary text-secondary hover:bg-secondary hover:text-white"
                 >
                   <Phone className="w-4 h-4" />
-                  Call to Book — 323-332-0585
+                  Call to Book — 424-493-2761
                 </Button>
               </a>
             </div>
@@ -185,14 +183,24 @@ export function DealsPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {/* Standard */}
+          <div className="grid md:grid-cols-2 gap-8 mb-8 items-stretch">
+            {/* Fleet photo */}
+            <div className="rounded-2xl overflow-hidden shadow-md min-h-64">
+              <img
+                src="/images/warrior-exterior.png"
+                alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Fleet rates */}
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
               <h3 className="text-xl font-bold text-primary mb-1">
-                Standard Rates
+                Fleet Rates
               </h3>
               <p className="text-sm text-slate-500 mb-6">
-                Pay as you go — no commitment required
+                Pay as you go — multiple aircraft at different price points
               </p>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-slate-100">
@@ -200,14 +208,14 @@ export function DealsPage() {
                     Aircraft Rental (<AviationTerm term="Wet rental" />)
                   </span>
                   <span className="font-bold text-secondary text-xl">
-                    $200/hr
+                    From $145/hr
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-slate-100">
                   <span className="text-slate-700 font-medium">Instructor</span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-xl">
-                      From $50/hr
+                      $35/hr
                     </span>
                     <span className="block text-xs font-normal text-slate-400">
                      
@@ -219,58 +227,13 @@ export function DealsPage() {
                     Combined Dual (Aircraft + Instructor)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    $250/hr
+                    From $180/hr
                   </span>
                 </div>
-              </div>
-            </div>
-
-            {/* 10-Hr Block */}
-            <div className="bg-primary/5 rounded-2xl border border-primary/20 shadow-sm p-8">
-              <div className="flex items-center gap-2 mb-1">
-                <h3 className="text-xl font-bold text-primary">
-                  10-Hour Block Rates
-                </h3>
-                <span className="bg-secondary text-white text-xs font-bold px-2 py-0.5 rounded-full">
-                  SAVE MORE
-                </span>
-              </div>
-              <p className="text-sm text-slate-500 mb-6">
-                Pre-pay 10 hours for a better rate
-              </p>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-3 border-b border-primary/10">
-                  <span className="text-slate-700 font-medium">
-                    Aircraft Rental (<AviationTerm term="Wet rental" />)
-                  </span>
-                  <div className="text-right">
-                    <span className="text-slate-400 line-through text-sm mr-2">
-                      $
-                    </span>
-                    <span className="font-bold text-secondary text-xl">
-                      $190/hr
-                    </span>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center py-3 border-b border-primary/10">
-                  <span className="text-slate-700 font-medium">Instructor</span>
-                  <div className="text-right">
-                    <span className="font-bold text-secondary text-xl">
-                      From $45/hr
-                    </span>
-                    <span className="block text-xs font-normal text-slate-400">
-                      
-                    </span>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center py-3 bg-primary/10 rounded-lg px-4">
-                  <span className="text-primary font-bold">
-                    Combined Dual (Aircraft + Instructor)
-                  </span>
-                  <span className="font-bold text-primary text-xl">
-                    $235/hr
-                  </span>
-                </div>
+                <p className="text-xs text-slate-400 pt-1">
+                  Our fleet includes four Cessna 172 Skyhawks ($145–$175/hr) and
+                  a Piper PA-28-161 Warrior II ($165/hr).
+                </p>
               </div>
             </div>
           </div>
@@ -382,16 +345,16 @@ export function DealsPage() {
             at our new student rate.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
               >
                 <Phone className="w-5 h-5" />
-                Call 323-332-0585
+                Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:424-493-2761">
               <Button
                 size="lg"
                 variant="outline"

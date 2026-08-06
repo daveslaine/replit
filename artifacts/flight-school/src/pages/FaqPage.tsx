@@ -190,7 +190,7 @@ const faqs: Faq[] = [
   {
     q: "What happens at a Discovery Flight?",
     plain:
-      "A Discovery Flight is an introductory lesson where you actually fly the aircraft with an instructor. It's the best way to experience training before committing. Ours is $230.",
+      "A Discovery Flight is an introductory lesson where you actually fly the aircraft with an instructor. It's the best way to experience training before committing. Ours is $199.99.",
     a: (
       <>
         A <strong>Discovery Flight</strong> is an introductory lesson where you
@@ -198,7 +198,7 @@ const faqs: Faq[] = [
         with an instructor guiding you. You will handle the controls, see what a
         real lesson feels like, and get your questions answered. It is the best,
         no-pressure way to experience flight training before committing to a
-        full program. Ours is <strong>$230</strong>.
+        full program. Ours is <strong>$199.99</strong>.
       </>
     ),
   },
@@ -220,13 +220,13 @@ const faqs: Faq[] = [
   {
     q: "How much does training cost?",
     plain:
-      "We're a pay-as-you-fly school with no large upfront payments. Aircraft rental is $200/hr wet, and a Discovery Flight is $230. See our pricing page for full details.",
+      "We're a pay-as-you-fly school with no large upfront payments. Aircraft rental starts at $145/hr wet, and a Discovery Flight is $199.99. See our pricing page for full details.",
     a: (
       <>
         We are a <strong>pay-as-you-fly</strong> school — no large prepaid
-        blocks or training loans required. Aircraft rental in our Piper Warrior
-        II is <strong>$200/hr wet</strong> (fuel included), and a Discovery
-        Flight is <strong>$230</strong>. You pay per lesson, keeping your
+        blocks or training loans required. Aircraft rental across our fleet
+        starts at <strong>$145/hr wet</strong> (fuel included), and a Discovery
+        Flight is <strong>$199.99</strong>. You pay per lesson, keeping your
         investment proportional to your progress. See our pricing page for full
         details, and call us anytime with questions.
       </>
@@ -293,7 +293,7 @@ export function FaqPage() {
       <Seo
         title={"Flight Training FAQ | Costs, Soloing & Timing | Van Nuys"}
         description={
-          "Flight training questions answered: how long training takes, solo requirements, medical, and costs at Van Nuys Airport (KVNY). Call 323-332-0585."
+          "Flight training questions answered: how long training takes, solo requirements, medical, and costs at Van Nuys Airport (KVNY). Call 424-493-2761."
         }
       >
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -338,13 +338,13 @@ export function FaqPage() {
               aviation and do not know where to start.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3">
-              <a href="tel:323-332-0585">
+              <a href="tel:424-493-2761">
                 <Button className="w-full sm:w-auto gap-2 font-bold">
                   <Phone className="w-4 h-4" />
-                  Call 323-332-0585
+                  Call 424-493-2761
                 </Button>
               </a>
-              <a href="sms:323-332-0585">
+              <a href="sms:424-493-2761">
                 <Button
                   variant="outline"
                   className="w-full sm:w-auto gap-2 font-bold border-primary text-primary hover:bg-primary/5"

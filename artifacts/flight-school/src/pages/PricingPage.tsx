@@ -23,7 +23,7 @@ export function PricingPage() {
       <Seo
         title={"Flight Training Pricing | Transparent Costs | Van Nuys KVNY"}
         description={
-          "Transparent flight training pricing at Van Nuys Airport. Aircraft $200/hr wet. Combined dual from $205/hr. Private Pilot ~$7,500–$12,500. Call 323-332-0585."
+          "Transparent flight training pricing at Van Nuys Airport. Aircraft starting at $145/hr wet. Combined dual from $180/hr. Private Pilot ~$10,800–$13,500. Call 424-493-2761."
         }
       />
 
@@ -47,6 +47,14 @@ export function PricingPage() {
 
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4 max-w-5xl">
+          <div className="rounded-2xl overflow-hidden shadow-md mb-12">
+            <img
+              src="/images/cessna-skyhawk.webp"
+              alt="Cessna 172 Skyhawk in flight at sunset near Van Nuys Airport"
+              className="w-full h-56 md:h-72 object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Rates */}
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
@@ -61,14 +69,16 @@ export function PricingPage() {
                   </h3>
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-slate-600">
-                      Standard (<AviationTerm term="Wet rental" />)
+                      Fleet (<AviationTerm term="Wet rental" />)
                     </span>
-                    <span className="font-bold text-secondary">$200/hr</span>
+                    <span className="font-bold text-secondary">
+                      From $145/hr
+                    </span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-600">10-Hour Block</span>
-                    <span className="font-bold text-secondary">$165/hr</span>
-                  </div>
+                  <p className="text-xs text-slate-400">
+                    A fleet of Cessna 172 Skyhawks and a Piper Warrior II at
+                    different price points ($145–$175/hr).
+                  </p>
                 </div>
 
                 <div className="pt-4 border-t border-slate-100">
@@ -80,10 +90,7 @@ export function PricingPage() {
                       CFI / CFII instruction
                     </span>
                     <span className="font-bold text-secondary text-right">
-                      From $50/hr
-                      <span className="block text-xs font-normal text-slate-400">
-                        (+$20/hr to the flight school)
-                      </span>
+                      $35/hr
                     </span>
                   </div>
                 </div>
@@ -97,18 +104,10 @@ export function PricingPage() {
                   </p>
                   <div className="flex justify-between items-center mb-1">
                     <span className="font-medium text-slate-800">
-                      Standard Combined
+                      Aircraft + Instructor
                     </span>
                     <span className="font-bold text-primary text-xl">
-                      $250/hr
-                    </span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium text-slate-800">
-                      10-Hour Package Combined
-                    </span>
-                    <span className="font-bold text-primary text-xl">
-                      $235/hr
+                      From $180/hr
                     </span>
                   </div>
                 </div>
@@ -124,7 +123,7 @@ export function PricingPage() {
                 <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
                 <p className="text-sm text-green-800 font-medium">
                   No Upfront Payment — Pay only when you fly. Combined dual
-                  rates from $235–$250/hr.
+                  rates from $180/hr.
                 </p>
               </div>
 
@@ -138,7 +137,7 @@ export function PricingPage() {
                       Private Pilot
                     </Link>
                     <span className="font-bold text-xl text-primary">
-                      ~$7,500–$12,500
+                      ~$10,800–$13,500
                     </span>
                   </div>
                   <p className="text-sm text-red-600 font-medium">
@@ -752,8 +751,9 @@ export function PricingPage() {
                 We do not offer loan financing, and we are not affiliated with
                 any pilot loan program. We charge the same rate regardless of
                 how you pay — and you pay only when you fly. A student paying
-                $250/hr for 50 hours of dual training pays $13,500. The same 60
-                hours at a loan-affiliated school can cost $25,000–$40,000,
+                from $180/hr for 60 hours of dual training pays around $10,800.
+                The same 60 hours at a loan-affiliated school can cost
+                $25,000–$40,000,
                 financed at high interest rates, with repayment beginning on day
                 one of your new instructor career. We think you deserve better
                 than that.
@@ -797,13 +797,13 @@ export function PricingPage() {
           Let's calculate your exact path.
         </h2>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href="tel:323-332-0585">
+          <a href="tel:424-493-2761">
             <Button
               size="lg"
               className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
             >
               <Phone className="w-5 h-5" />
-              Call or Text 323-332-0585
+              Call or Text 424-493-2761
             </Button>
           </a>
         </div>

@@ -26,7 +26,7 @@ export function AboutUsPage() {
       <Seo
         title={"About Accelerated Flight School | Van Nuys Airport KVNY"}
         description={
-          "Experienced CFIs at Van Nuys Airport since the early 2000s. FAA ACS-structured training, transparent pricing, no upfront payment. Call 323-332-0585."
+          "Experienced CFIs at Van Nuys Airport since the early 2000s. FAA ACS-structured training, transparent pricing, no upfront payment. Call 424-493-2761."
         }
       />
 
@@ -169,7 +169,7 @@ export function AboutUsPage() {
               {
                 title: "Central San Fernando Valley Location",
                 detail:
-                  "Located at 7910 Balboa Blvd H7, Van Nuys CA 91406 — easily accessible from throughout the greater Los Angeles area. Minutes from the 405, 101, and 118 freeways.",
+                  "Located at 16425 Hart St, Van Nuys CA 91406 — easily accessible from throughout the greater Los Angeles area. Minutes from the 405, 101, and 118 freeways.",
               },
             ].map((item) => (
               <div
@@ -418,19 +418,21 @@ export function AboutUsPage() {
               </h2>
               <div className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  We fly out of Van Nuys Airport (KVNY) in a well-maintained
-                  training aircraft equipped with modern avionics and
-                  ForeFlight-compatible GPS navigation. Every flight hour you
-                  log counts directly toward your FAA certificates and ratings.
+                  We fly out of Van Nuys Airport (KVNY) with a fleet of
+                  well-maintained training aircraft — four Cessna 172 Skyhawks
+                  and a Piper PA-28-161 Warrior II — equipped with modern
+                  avionics and ForeFlight-compatible GPS navigation. Every
+                  flight hour you log counts directly toward your FAA
+                  certificates and ratings.
                 </p>
                 <p>
-                  Our aircraft is flown wet — fuel is included in the hourly
+                  Our aircraft are flown wet — fuel is included in the hourly
                   rate, so the price you see is the price you pay.
                 </p>
                 <div className="grid grid-cols-2 gap-3 mt-4">
                   {[
-                    { label: "Wet Rental Rate", value: "$160-$200/hr" },
-                    { label: "10-Hour Block", value: "$190/hr" },
+                    { label: "Wet Rental Rate", value: "From $145/hr" },
+                    { label: "Fleet Range", value: "$145-$175/hr" },
                     { label: "Fuel", value: "Included (wet)" },
                     { label: "Airport", value: "KVNY" },
                   ].map((item) => (
@@ -598,7 +600,7 @@ export function AboutUsPage() {
                 Location
               </h3>
               <div className="space-y-2 text-slate-700">
-                <p className="font-bold">7910 Balboa Blvd H7</p>
+                <p className="font-bold">16425 Hart St</p>
                 <p>Van Nuys, CA 91406</p>
                 <p className="text-sm text-slate-500">
                   Van Nuys Airport (VNY / KVNY)
@@ -626,16 +628,16 @@ export function AboutUsPage() {
             no commitments.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
               >
                 <Phone className="w-5 h-5" />
-                Call 323-332-0585
+                Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:323-332-0585">
+            <a href="sms:424-493-2761">
               <Button
                 size="lg"
                 variant="outline"

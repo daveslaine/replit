@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 const programs = [
   {
     name: "Private Pilot Certificate",
-    ours: "~$9,900 – $14,500",
+    ours: "~$10,800 – $13,500",
     socal: "$15,000 – $25,000+",
     savings: "Up to $12,500+ savings",
     minHours: 40,
@@ -63,31 +63,31 @@ const programs = [
 const rates = [
   {
     label: "Aircraft Rental",
-    value: "$200/hr",
+    value: "From $145/hr",
     sub: "Wet (fuel included)",
     highlight: false,
   },
   {
-    label: "10-Hour Block Rental",
-    value: "$190/hr",
-    sub: "Wet (fuel included)",
+    label: "Fleet Range",
+    value: "$145–$175/hr",
+    sub: "Multiple aircraft, different price points",
     highlight: true,
   },
   {
     label: "Instructor (Dual)",
-    value: "From $50/hr",
-    sub: "+$20/hr to the flight school",
+    value: "$35/hr",
+    sub: "Fair, flat instructor rate",
     highlight: false,
   },
   {
     label: "Combined Dual Rate",
-    value: "~$235–$240/hr",
+    value: "From $180/hr",
     sub: "Aircraft + instructor",
     highlight: true,
   },
   {
     label: "Discovery Flight",
-    value: "$230 flat",
+    value: "$199.99 flat",
     sub: "1.5 hrs total, full intro",
     highlight: false,
   },
@@ -110,7 +110,7 @@ const whyCheaper = [
     icon: <TrendingDown className="w-5 h-5 text-secondary shrink-0" />,
     title: "Low hourly rates with no hidden fees",
     detail:
-      "Aircraft at $200/hr wet, combined dual from $205/hr. No enrollment fee, no curriculum fee, no 'materials package.' Pay for what you fly — nothing else.",
+      "Aircraft starting at $145/hr wet, combined dual from $180/hr. No enrollment fee, no curriculum fee, no 'materials package.' Pay for what you fly — nothing else.",
   },
   {
     icon: <Star className="w-5 h-5 text-secondary shrink-0" />,
@@ -138,7 +138,7 @@ export function CheapestPage() {
       <Seo
         title={"Cheapest Flight School Van Nuys Airport | Real Pricing"}
         description={
-          "Affordable flight training in Van Nuys. Private Pilot ~$9,900–$14,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft $200/hr wet. Call 323-332-0585."
+          "Affordable flight training in Van Nuys. Private Pilot ~$10,800–$13,500. Zero to Commercial + CFI ~$40,000–$55,000. Aircraft starting at $145/hr wet. Call 424-493-2761."
         }
       />
 
@@ -157,12 +157,12 @@ export function CheapestPage() {
             cutting corners on instruction quality.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="h-12 px-7 font-bold bg-white text-primary hover:bg-white/90 gap-2"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-pricing">
@@ -365,12 +365,12 @@ export function CheapestPage() {
             specific goals, schedule, and starting point.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button
                 size="lg"
                 className="w-full sm:w-auto h-14 px-8 text-lg font-bold gap-2"
               >
-                <Phone className="w-5 h-5" /> Call or Text 323-332-0585
+                <Phone className="w-5 h-5" /> Call or Text 424-493-2761
               </Button>
             </a>
             <Link href="/van-nuys-accelerated-flight-school-pricing">

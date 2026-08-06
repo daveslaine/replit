@@ -1,22 +1,12 @@
 ---
 name: Flight school instructors data
-description: Instructor cards are DB-driven; how to change title/order so it applies to existing prod rows.
+description: Instructor cards are DB-driven; how to change roster/titles so changes apply to existing prod rows.
 ---
 
 # Flight school instructors data
 
-The Instructors page cards render client-side from `GET /api/instructors`
-(DB-backed `instructors` table), NOT from hardcoded JSX. So title, order
-(`sort_order`), rates, phone are DATA, not markup.
+The Instructors page renders from `GET /api/instructors` (DB table), NOT hardcoded JSX. Photos map by NAME in `InstructorsPage.tsx` `STATIC_PHOTOS`.
 
-**Editing pitfall:** `seedInstructorsIfEmpty` only inserts when the table is
-empty — editing `DEFAULT_INSTRUCTORS` does NOT update existing dev/prod rows
-(prod data is never migrated on publish). To change existing rows everywhere, add
-a one-time idempotent backfill like `applyInstructorContentFixes` in
-`seedInstructors.ts`: advisory lock + a NEW `seed_history` key, run once on
-startup after seeding. Because it runs once ever, later admin-panel edits are not
-clobbered. Always ALSO update `DEFAULT_INSTRUCTORS` so fresh DBs match.
+**Editing pitfall:** `seedInstructorsIfEmpty` only inserts into an empty table — editing `DEFAULT_INSTRUCTORS` does NOT update existing dev/prod rows. To change existing rows everywhere, add a one-time idempotent backfill in `seedInstructors.ts` (advisory lock + a NEW `seed_history` key, run on startup). Always ALSO update `DEFAULT_INSTRUCTORS`.
 
-**Editorial decisions made:** Reza S. title is intentionally empty "" (user wanted
-"Owner" removed, just his name); card hides the title `<p>` when title is empty.
-David T. is sort_order 0 (left), Reza S. sort_order 1 (right).
+**Current roster (Aug 2026, `instructors_roster_update_v2`):** Reza S. deleted entirely (also purged from Testimonials/SEO/admin placeholder). Roster: David T. (sort 0, phone 424-493-2761, real photo), Mark J. (sort 1), Sarah K. (sort 2), Elena M. (sort 3) — the last three are AI-generated headshots in `/images/instructor-{mark,sarah,elena}.jpg` with fictional names. Instructors page shows no prices.

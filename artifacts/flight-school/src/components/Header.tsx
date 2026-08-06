@@ -179,7 +179,7 @@ export function Header() {
         {/* Right side: phone button */}
         <div className="flex items-center gap-2 shrink-0">
           <a
-            href="tel:323-332-0585"
+            href="tel:424-493-2761"
             className="hidden md:inline-flex"
             data-testid="link-call-header"
           >
@@ -193,7 +193,7 @@ export function Header() {
               }`}
             >
               <Phone className="h-3.5 w-3.5" />
-              323-332-0585
+              424-493-2761
             </Button>
           </a>
 
@@ -227,7 +227,7 @@ export function Header() {
                     className="inline-flex items-center gap-2 bg-secondary text-white font-bold px-4 py-2 rounded-full text-sm w-fit"
                   >
                     <Plane className="w-4 h-4" />
-                    Discovery Flight — $230
+                    Discovery Flight — $199.99
                   </Link>
                 </SheetClose>
                 <nav className="flex flex-col gap-1">
@@ -246,19 +246,19 @@ export function Header() {
                     ))}
                 </nav>
                 <div className="flex flex-col gap-2 pt-4 border-t border-slate-100">
-                  <a href="tel:323-332-0585" className="w-full">
+                  <a href="tel:424-493-2761" className="w-full">
                     <Button className="w-full gap-2 font-bold">
                       <Phone className="h-4 w-4" />
-                      Call 323-332-0585
+                      Call 424-493-2761
                     </Button>
                   </a>
-                  <a href="sms:323-332-0585" className="w-full">
+                  <a href="sms:424-493-2761" className="w-full">
                     <Button
                       variant="outline"
                       className="w-full gap-2 font-bold"
                     >
                       <MessageSquare className="h-4 w-4" />
-                      Text 323-332-0585
+                      Text 424-493-2761
                     </Button>
                   </a>
                 </div>

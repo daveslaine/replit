@@ -85,7 +85,7 @@ export function ContactPage() {
       <Seo
         title={"Contact Accelerated Flight School | Van Nuys Airport"}
         description={
-          "Call or text 323-332-0585 with questions about flight training, pricing, or to get started at Van Nuys Airport (KVNY). We'll walk you through everything."
+          "Call or text 424-493-2761 with questions about flight training, pricing, or to get started at Van Nuys Airport (KVNY). We'll walk you through everything."
         }
       />
 
@@ -121,15 +121,15 @@ export function ContactPage() {
                         Phone Number
                       </h3>
                       <p className="text-3xl font-bold text-primary mb-3">
-                        323-332-0585
+                        424-493-2761
                       </p>
                       <div className="flex gap-3">
-                        <a href="tel:323-332-0585">
+                        <a href="tel:424-493-2761">
                           <Button variant="secondary" className="gap-2">
                             <Phone className="w-4 h-4" /> Call
                           </Button>
                         </a>
-                        <a href="sms:323-332-0585">
+                        <a href="sms:424-493-2761">
                           <Button
                             variant="outline"
                             className="gap-2 border-primary text-primary hover:bg-primary/5"
@@ -150,7 +150,7 @@ export function ContactPage() {
                         Location
                       </h3>
                       <p className="text-slate-600">
-                        7910 Balboa Blvd H7
+                        16425 Hart St
                         <br />
                         Van Nuys, CA 91406
                         <br />
@@ -165,7 +165,7 @@ export function ContactPage() {
               <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
                 <iframe
                   title="Accelerated Flight School location at Van Nuys Airport"
-                  src="https://www.google.com/maps?q=7910+Balboa+Blvd+H7,+Van+Nuys,+CA+91406&output=embed"
+                  src="https://www.google.com/maps?q=16425+Hart+St,+Van+Nuys,+CA+91406&output=embed"
                   width="100%"
                   height="280"
                   style={{ border: 0 }}
@@ -330,10 +330,10 @@ export function ContactPage() {
                           Something went wrong sending your message. Please call
                           or text us at{" "}
                           <a
-                            href="tel:323-332-0585"
+                            href="tel:424-493-2761"
                             className="font-bold underline"
                           >
-                            323-332-0585
+                            424-493-2761
                           </a>{" "}
                           and we'll help you right away.
                         </div>

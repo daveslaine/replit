@@ -8,7 +8,7 @@ export function DirectionsPage() {
     <div className="w-full">
       <Seo
         title={"Directions to Accelerated Flight School | Van Nuys KVNY"}
-        description={"Directions to Accelerated Flight School at 7910 Balboa Blvd H7, Van Nuys Airport (KVNY). Gate access code provided on arrival. Call 323-332-0585."}
+        description={"Directions to Accelerated Flight School at 16425 Hart St, Van Nuys Airport (KVNY). Gate access code provided on arrival. Call 424-493-2761."}
       />
 
       <section className="bg-primary text-white pt-28 md:pt-32 pb-12">
@@ -20,7 +20,7 @@ export function DirectionsPage() {
             How to Find Our Office
           </h1>
           <p className="text-lg text-primary-foreground/85">
-            7910 Balboa Blvd H7, Van Nuys, CA 91406
+            16425 Hart St, Van Nuys, CA 91406
           </p>
         </div>
       </section>
@@ -39,10 +39,10 @@ export function DirectionsPage() {
                 give you the code immediately.
               </p>
               <a
-                href="tel:323-332-0585"
+                href="tel:424-493-2761"
                 className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-amber-900 underline underline-offset-2"
               >
-                <Phone className="w-4 h-4" /> 323-332-0585
+                <Phone className="w-4 h-4" /> 424-493-2761
               </a>
             </div>
           </div>
@@ -55,7 +55,7 @@ export function DirectionsPage() {
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm mb-10">
             <img
               src="/images/directions-entrance.webp"
-              alt="Entrance view at 7910 Balboa Blvd Van Nuys Airport — red gate on left near Foxtrot Hangars, flight school building on right"
+              alt="Entrance view at 16425 Hart St Van Nuys Airport — red gate on left near Foxtrot Hangars, flight school building on right"
               className="w-full object-cover"
             />
             <div className="bg-slate-50 border-t border-slate-200 px-5 py-3 text-xs text-slate-500 leading-relaxed">
@@ -72,7 +72,7 @@ export function DirectionsPage() {
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm mb-10">
             <iframe
               title="Accelerated Flight School location at Van Nuys Airport"
-              src="https://www.google.com/maps?q=7910+Balboa+Blvd+H7,+Van+Nuys,+CA+91406&output=embed"
+              src="https://www.google.com/maps?q=16425+Hart+St,+Van+Nuys,+CA+91406&output=embed"
               width="100%"
               height="320"
               style={{ border: 0 }}
@@ -91,7 +91,7 @@ export function DirectionsPage() {
             {[
               {
                 step: "1",
-                title: "Arrive at 7910 Balboa Blvd, Van Nuys, CA 91406",
+                title: "Arrive at 16425 Hart St, Van Nuys, CA 91406",
                 detail:
                   "Pull up to the address. You will see the airport complex. On the right side, there is a large hangar building that houses multiple flight schools — you can see it in the photo above with the red circle on the right.",
               },
@@ -99,7 +99,7 @@ export function DirectionsPage() {
                 step: "2",
                 title: "Call or text us for the gate code",
                 detail:
-                  "Before you enter, call or text 323-332-0585. We will give you the access code for the red gate immediately.",
+                  "Before you enter, call or text 424-493-2761. We will give you the access code for the red gate immediately.",
               },
               {
                 step: "3",
@@ -155,14 +155,14 @@ export function DirectionsPage() {
               <div>
                 <p className="font-bold text-primary mb-1">Full Address</p>
                 <p className="text-slate-700 text-sm">
-                  7910 Balboa Blvd H7
+                  16425 Hart St
                   <br />
                   Van Nuys, CA 91406
                   <br />
                   Van Nuys Airport (VNY / KVNY)
                 </p>
                 <a
-                  href="https://maps.google.com/?q=7910+Balboa+Blvd+H7+Van+Nuys+CA+91406"
+                  href="https://maps.google.com/?q=16425+Hart+St+Van+Nuys+CA+91406"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-3 inline-block"
@@ -184,10 +184,10 @@ export function DirectionsPage() {
             <p className="text-slate-500 text-sm mb-3">
               Still not sure? We're happy to talk you through it.
             </p>
-            <a href="tel:323-332-0585">
+            <a href="tel:424-493-2761">
               <Button className="gap-2 font-bold">
                 <Phone className="w-4 h-4" />
-                Call 323-332-0585
+                Call 424-493-2761
               </Button>
             </a>
           </div>

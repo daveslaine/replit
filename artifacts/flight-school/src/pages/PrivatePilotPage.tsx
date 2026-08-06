@@ -81,7 +81,7 @@ const privatePilotFaqs = [
   {
     question: "How do I schedule a Private Pilot consultation or first lesson?",
     answer:
-      "Call or text Accelerated Flight School at 323-332-0585. We will discuss your goals, schedule, previous experience, medical certificate, expected cost, instructor availability, aircraft availability, and the next available training date.",
+      "Call or text Accelerated Flight School at 424-493-2761. We will discuss your goals, schedule, previous experience, medical certificate, expected cost, instructor availability, aircraft availability, and the next available training date.",
   },
 ];
 
@@ -119,7 +119,7 @@ const privatePilotServiceSchema = {
     iataCode: "VNY",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "7910 Balboa Blvd H7",
+      streetAddress: "16425 Hart St",
       addressLocality: "Van Nuys",
       addressRegion: "CA",
       postalCode: "91406",
@@ -172,7 +172,7 @@ const privatePilotCourseSchema = {
       iataCode: "VNY",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "7910 Balboa Blvd H7",
+        streetAddress: "16425 Hart St",
         addressLocality: "Van Nuys",
         addressRegion: "CA",
         postalCode: "91406",
@@ -220,7 +220,7 @@ export function PrivatePilotPage() {
       <Seo
         title={"Private Pilot Training Van Nuys | Accelerated Flight School"}
         description={
-          "Private Pilot training at Van Nuys Airport (KVNY). FAA ACS-structured. ~$9,900–$14,500, below the SoCal average. No upfront payment. Call 323-332-0585."
+          "Private Pilot training at Van Nuys Airport (KVNY). FAA ACS-structured. ~$9,900–$14,500, below the SoCal average. No upfront payment. Call 424-493-2761."
         }
         canonical={PAGE_URL}
       />
@@ -243,8 +243,8 @@ export function PrivatePilotPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary text-white">
         <img
-          src="/images/aircraft-takeoff.jpg"
-          alt="Private Pilot flight training airplane departing Van Nuys Airport"
+          src="/images/cessna-skyhawk.webp"
+          alt="Cessna 172 Skyhawk in flight near Van Nuys Airport"
           className="absolute inset-0 h-full w-full object-cover opacity-25"
           width="1600"
           height="900"
@@ -285,7 +285,7 @@ export function PrivatePilotPage() {
 
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <a
-                href="tel:323-332-0585"
+                href="tel:424-493-2761"
                 className="block w-full min-w-0 sm:w-auto"
               >
                 <Button
@@ -294,12 +294,12 @@ export function PrivatePilotPage() {
                   className="h-auto min-h-14 w-full min-w-0 whitespace-normal break-words px-4 py-3 text-center text-base font-bold leading-snug sm:w-auto sm:px-6 sm:text-lg gap-2"
                 >
                   <Phone className="w-5 h-5" />
-                  Call 323-332-0585
+                  Call 424-493-2761
                 </Button>
               </a>
 
               <a
-                href="sms:3233320585"
+                href="sms:4244932761"
                 className="block w-full min-w-0 sm:w-auto"
               >
                 <Button
@@ -555,8 +555,8 @@ export function PrivatePilotPage() {
 
               <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <img
-                  src="/images/aircraft-front.jpg"
-                  alt="Private Pilot student cockpit training at Van Nuys Airport"
+                  src="/images/warrior-exterior.png"
+                  alt="Piper PA-28-161 Warrior II on a sunny ramp at Van Nuys Airport"
                   className="h-72 w-full object-cover md:h-[430px]"
                   width="1600"
                   height="900"
@@ -599,7 +599,7 @@ export function PrivatePilotPage() {
                   </div>
 
                   <a
-                    href="tel:323-332-0585"
+                    href="tel:424-493-2761"
                     className="block w-full min-w-0 xl:w-auto"
                   >
                     <Button
@@ -608,7 +608,7 @@ export function PrivatePilotPage() {
                       className="h-auto min-h-14 w-full min-w-0 whitespace-normal break-words bg-white px-4 py-3 text-center font-bold leading-snug text-primary border-white hover:bg-slate-100 xl:w-auto xl:px-7 gap-2"
                     >
                       <Phone className="w-5 h-5" />
-                      Call 323-332-0585
+                      Call 424-493-2761
                     </Button>
                   </a>
                 </div>
@@ -842,8 +842,8 @@ export function PrivatePilotPage() {
 
               <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <img
-                  src="/images/aircraft-side-1.jpg"
-                  alt="Training aircraft on the ramp for Private Pilot lessons at Van Nuys Airport"
+                  src="/images/cessna-skyhawk.webp"
+                  alt="Cessna 172 Skyhawk in flight for Private Pilot lessons at Van Nuys Airport"
                   className="h-72 w-full object-cover md:h-[430px]"
                   width="1600"
                   height="900"
@@ -1187,7 +1187,7 @@ export function PrivatePilotPage() {
 
                 <div className="mt-7 flex min-w-0 flex-col gap-3 sm:flex-row sm:flex-wrap">
                   <a
-                    href="tel:323-332-0585"
+                    href="tel:424-493-2761"
                     className="block w-full min-w-0 sm:w-auto"
                   >
                     <Button
@@ -1201,7 +1201,7 @@ export function PrivatePilotPage() {
                   </a>
 
                   <a
-                    href="sms:3233320585"
+                    href="sms:4244932761"
                     className="block w-full min-w-0 sm:w-auto"
                   >
                     <Button
@@ -1209,7 +1209,7 @@ export function PrivatePilotPage() {
                       variant="outline"
                       className="h-auto min-h-14 w-full min-w-0 whitespace-normal break-words border-white/30 px-4 py-3 text-center text-base font-bold leading-snug text-white hover:bg-white/10 sm:w-auto sm:px-6"
                     >
-                      Text 323-332-0585
+                      Text 424-493-2761
                     </Button>
                   </a>
                 </div>
@@ -1329,7 +1329,7 @@ export function PrivatePilotPage() {
                       question:
                         "How do I schedule a Private Pilot consultation or first lesson?",
                       answer:
-                        "Call or text Accelerated Flight School at 323-332-0585. We will discuss your goals, schedule, previous experience, medical certificate, expected cost, instructor availability, aircraft availability, and the next available training date.",
+                        "Call or text Accelerated Flight School at 424-493-2761. We will discuss your goals, schedule, previous experience, medical certificate, expected cost, instructor availability, aircraft availability, and the next available training date.",
                     },
                   ].map((faq, index) => (
                     <div
@@ -1387,7 +1387,7 @@ export function PrivatePilotPage() {
 
                 <div className="flex min-w-0 flex-col gap-4 sm:flex-row sm:flex-wrap">
                   <a
-                    href="tel:323-332-0585"
+                    href="tel:424-493-2761"
                     className="block w-full min-w-0 sm:w-auto"
                   >
                     <Button
@@ -1396,12 +1396,12 @@ export function PrivatePilotPage() {
                       className="h-auto min-h-14 w-full min-w-0 whitespace-normal break-words px-4 py-3 text-center text-base font-bold leading-snug sm:w-auto sm:px-6 sm:text-lg gap-2"
                     >
                       <Phone className="w-5 h-5" />
-                      Call 323-332-0585
+                      Call 424-493-2761
                     </Button>
                   </a>
 
                   <a
-                    href="sms:3233320585"
+                    href="sms:4244932761"
                     className="block w-full min-w-0 sm:w-auto"
                   >
                     <Button
@@ -1537,18 +1537,18 @@ export function PrivatePilotPage() {
                 </div>
 
                 <div className="space-y-3">
-                  <a href="tel:323-332-0585" className="block w-full">
+                  <a href="tel:424-493-2761" className="block w-full">
                     <Button
                       size="lg"
                       variant="secondary"
                       className="h-auto min-h-11 w-full min-w-0 whitespace-normal break-words px-3 py-2 text-center font-bold leading-snug gap-2"
                     >
                       <Phone className="w-4 h-4" />
-                      Call 323-332-0585
+                      Call 424-493-2761
                     </Button>
                   </a>
 
-                  <a href="sms:3233320585" className="block w-full">
+                  <a href="sms:4244932761" className="block w-full">
                     <Button
                       size="lg"
                       variant="outline"

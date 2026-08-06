@@ -89,7 +89,7 @@ const GROUP_META: { key: string; title: string; blurb: string }[] = [
     key: "aircraft",
     title: "Our Aircraft & Training",
     blurb:
-      "Train in our Piper PA-28 Cherokee Warrior II (N9172Y) — a stable, predictable trainer.",
+      "Train in our fleet of Cessna 172 Skyhawks and a Piper PA-28-161 Warrior II — stable, predictable trainers.",
   },
   {
     key: "more",
@@ -119,7 +119,7 @@ export function AreasServedPage() {
       <Seo
         title={"Flight Training Areas Served | Accelerated Flight School"}
         description={
-          "Serving student pilots across LA and Ventura counties from Van Nuys Airport (KVNY). Browse flight training by neighborhood and certificate. Call 323-332-0585."
+          "Serving student pilots across LA and Ventura counties from Van Nuys Airport (KVNY). Browse flight training by neighborhood and certificate. Call 424-493-2761."
         }
       />
 
@@ -141,13 +141,13 @@ export function AreasServedPage() {
             below.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-6"
               >
-                <Phone className="w-4 h-4" /> Call or Text 323-332-0585
+                <Phone className="w-4 h-4" /> Call or Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -155,7 +155,7 @@ export function AreasServedPage() {
                 size="lg"
                 className="font-bold gap-2 h-12 px-6 bg-white text-primary hover:bg-slate-100"
               >
-                <Plane className="w-4 h-4" /> Discovery Flight — $230
+                <Plane className="w-4 h-4" /> Discovery Flight — $199.99
               </Button>
             </Link>
           </div>
@@ -180,7 +180,7 @@ export function AreasServedPage() {
             figuring out where to begin, the directory below links every page on
             this site — {totalPages} in total — so you can go straight to the
             information that matters to you. Prefer to just talk it through?
-            Call or text <strong>323-332-0585</strong> and we will point you in
+            Call or text <strong>424-493-2761</strong> and we will point you in
             the right direction.
           </p>
           <div className="rounded-xl border border-primary/20 bg-primary/5 p-5">
@@ -232,26 +232,26 @@ export function AreasServedPage() {
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
             No matter which part of Los Angeles you are coming from, your
             training happens at Van Nuys Airport with structured, ACS-based
-            instruction. Call or text <strong>323-332-0585</strong> to get
+            instruction. Call or text <strong>424-493-2761</strong> to get
             started.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:3233320585">
+            <a href="tel:4244932761">
               <Button
                 size="lg"
                 variant="secondary"
                 className="font-bold gap-2 h-12 px-7"
               >
-                <Phone className="w-4 h-4" /> Call 323-332-0585
+                <Phone className="w-4 h-4" /> Call 424-493-2761
               </Button>
             </a>
-            <a href="sms:3233320585">
+            <a href="sms:4244932761">
               <Button
                 size="lg"
                 variant="outline"
                 className="font-bold gap-2 h-12 px-7 border-white text-white hover:bg-white/10"
               >
-                <MessageSquare className="w-4 h-4" /> Text 323-332-0585
+                <MessageSquare className="w-4 h-4" /> Text 424-493-2761
               </Button>
             </a>
             <Link href="/discovery-flight-van-nuys">
@@ -259,12 +259,12 @@ export function AreasServedPage() {
                 size="lg"
                 className="font-bold gap-2 h-12 px-7 bg-white text-primary hover:bg-slate-100"
               >
-                <Plane className="w-4 h-4" /> Book a Discovery Flight — $230
+                <Plane className="w-4 h-4" /> Book a Discovery Flight — $199.99
               </Button>
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 7910 Balboa Blvd H7 · Van Nuys Airport
+            Accelerated Flight School · 16425 Hart St · Van Nuys Airport
             (KVNY) · Van Nuys, CA 91406
           </p>
         </div>
