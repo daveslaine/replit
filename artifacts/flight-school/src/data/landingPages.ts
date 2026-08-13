@@ -2173,50 +2173,6 @@ export const landingPages: LandingPageConfig[] = [
     ],
   },
 
-  {
-    slug: "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",
-    metaTitle: "Flight School Cost in Los Angeles | Accelerated Flight School",
-    metaDescription:
-      "Flight school cost breakdown for Los Angeles — private pilot, instrument rating, commercial. Aircraft starting at $145/hr wet at Van Nuys Airport.",
-    h1: "Flight School Cost in Los Angeles at Van Nuys Airport (KVNY)",
-    subheadline:
-      "Full cost breakdown for every stage of flight training in Los Angeles — private pilot through commercial — at Accelerated Flight School, Van Nuys Airport KVNY.",
-    localIntro: [
-      "Understanding flight school costs in Los Angeles starts with one key fact: the largest variable is not the hourly rate — it is how many hours you need. The FAA minimums are 40 hours for private pilot, 50 cross-country PIC hours and 40 instrument hours for an instrument rating, and 250 total hours for a commercial certificate. Most students exceed the minimums. Structured, ACS-based instruction is the most reliable way to minimize your total hours.",
-      "At Accelerated Flight School, the rates are: starting at $145/hr aircraft (wet, fuel included), $35/hr CFII instruction, from $180/hr combined dual flight rate. Rough cost estimates by certificate: Private Pilot (65 hours average): $10,800–$13,500. Instrument Rating (50 additional dual hours): $9,000–$10,000. Commercial Pilot training (requires 250 hours total): variable based on your existing total time. CFI/CFII: additional dual hours to develop teaching skills and build to airline minimums.",
-      "There are no hidden fees, loan requirements, or mandatory package commitments at Accelerated Flight School. You pay per lesson. You can pause, continue, or accelerate your training at any time without penalty. The Discovery Flight is $199.99 and is the lowest-risk starting point — 1.5 hours in the left seat before any commitment.",
-    ],
-    nearbyAreas: [
-      "Los Angeles",
-      "Van Nuys",
-      "Sherman Oaks",
-      "Burbank",
-      "Glendale",
-      "Woodland Hills",
-    ],
-    faqs: [
-      {
-        q: "What is the total cost of flight training from zero to commercial pilot in LA?",
-        a: "A rough total at Accelerated Flight School rates: Private Pilot ($10,800–$13,500) + Instrument Rating ($9,000–$10,000) + Commercial time-building and training (variable, $15,000–$50,000+) + CFI training ($5,000–$8,000). The total path from zero to commercial CFI typically runs $45,000–$65,000 and takes 2–4 years.",
-      },
-      {
-        q: "Is the aircraft rental rate all-inclusive?",
-        a: "Yes. starting at $145/hr wet means fuel is included in the rental rate. No fuel surcharges, no tach vs. Hobbs billing confusion.",
-      },
-      {
-        q: "Are there financing options for flight training?",
-        a: "Accelerated Flight School does not require loans or offer in-house financing. We are a pay-as-you-fly school. External aviation lenders such as AOPA and Stratus Financial offer flight training loans independently.",
-      },
-      {
-        q: "What is the cheapest certificate to get first?",
-        a: "The Private Pilot Certificate is always first and is the foundation for all advanced ratings. You cannot pursue instrument, commercial, or CFI without it.",
-      },
-      {
-        q: "Does training at a busy airport like Van Nuys cost more?",
-        a: "The airspace complexity at KVNY adds educational value, not extra cost. There are no additional fees for training at a towered or high-activity airport. Your hourly rate is the same regardless of where you fly.",
-      },
-    ],
-  },
 
   {
     slug: "learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny",

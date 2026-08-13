@@ -213,23 +213,6 @@ export const landingUniqueTopics: Record<string, UniqueSection> = {
         "The flying itself begins simply: book a $199.99 Discovery Flight in a Cessna 172 Skyhawk or Piper Warrior II at Van Nuys, and if it confirms what you hoped, your instructor builds a lesson plan from there. From your first month onward you will be at 16425 Hart St in the San Fernando Valley, flying in real LA airspace. Call or text 424-493-2761 to take the first step.",
       ],
     },
-  "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
-    {
-      heading: "Concrete Ways to Reduce Your Total Training Bill",
-      paragraphs: [
-        "Because the largest cost variable is total hours, the most effective savings come from finishing in fewer of them — and that is something you can actively influence. Flying consistently, ideally two to three times a week, prevents the skill backslide that forces students to re-fly material and quietly inflates the bill.",
-        "Ground preparation is the cheapest hour in aviation. Studying the maneuvers, chair-flying procedures, and reviewing the next lesson at home means your paid flight time is spent performing rather than learning the basics for the first time. Free and low-cost online ground schools handle the knowledge-test side without adding much to the budget.",
-        "On the pricing side, choosing the more affordable aircraft in the fleet — which start at $145/hr wet — lowers your effective rate, and pay-as-you-fly means you never carry loan interest on top of training costs. Stack these habits and a typical private certificate can land meaningfully below a loosely-trained one. Call or text 424-493-2761 to plan the most cost-efficient path.",
-      ],
-    },
-  "learn-to-fly-los-angeles-accelerated-flight-school-van-nuys-airport-kvny": {
-    heading: "What Your First Month of Lessons Feels Like",
-    paragraphs: [
-      "Early flight training moves faster than most people expect. In your first few lessons you will handle the controls yourself almost immediately, learning the feel of pitch, bank, and power while your instructor guides you through climbs, descents, and turns over the San Fernando Valley.",
-      "Within the first month you typically start working the traffic pattern at Van Nuys — takeoffs, the rhythm of the pattern, and the landings that take the most repetition to refine. You will also begin talking on the radio early, which feels daunting at first and becomes second nature surprisingly quickly because KVNY keeps you practicing it every flight.",
-      "There is a real learning curve, and plateaus are normal; the structured, ACS-based syllabus is what carries you through them with a clear objective each time you fly. Lessons start at $180/hr dual in the fleet's Cessna 172 Skyhawks and Piper Warrior II, and the lowest-risk way to begin is a $199.99 Discovery Flight. Call or text 424-493-2761 to get started.",
-    ],
-  },
   "how-to-get-instrument-rating-in-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
     {
       heading: "Building Toward the Rating the Smart Way",
