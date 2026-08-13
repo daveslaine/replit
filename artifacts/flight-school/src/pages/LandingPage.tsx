@@ -109,7 +109,7 @@ export function LandingPage() {
     url: `${SITE_URL}/${slug}`,
     offers: {
       "@type": "Offer",
-      price: "190",
+      price: "199.99",
       priceCurrency: "USD",
       name: "Discovery Flight",
       description:
