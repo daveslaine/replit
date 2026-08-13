@@ -24,7 +24,7 @@ const fleet = [
       "/images/fleet/n523er-3.jpg",
     ],
     equipment: [
-      "Dual Garmin 6430 GPS",
+      "Dual Garmin 430 GPS",
       "NAV/COM",
       "Moving Maps",
       "GMA340",
@@ -97,7 +97,15 @@ const fleet = [
   },
 ];
 
-function FleetGallery({ imgs, name, year }: { imgs: string[]; name: string; year?: string }) {
+function FleetGallery({
+  imgs,
+  name,
+  year,
+}: {
+  imgs: string[];
+  name: string;
+  year?: string;
+}) {
   const [active, setActive] = useState(0);
   return (
     <div className="shrink-0 border-b border-slate-100">
@@ -122,10 +130,17 @@ function FleetGallery({ imgs, name, year }: { imgs: string[]; name: string; year
               onClick={() => setActive(i)}
               aria-label={`View photo ${i + 1} of ${name}`}
               className={`h-12 flex-1 rounded-md overflow-hidden border-2 transition-colors ${
-                i === active ? "border-secondary" : "border-transparent opacity-70 hover:opacity-100"
+                i === active
+                  ? "border-secondary"
+                  : "border-transparent opacity-70 hover:opacity-100"
               }`}
             >
-              <img src={src} alt="" className="w-full h-full object-cover" loading="lazy" />
+              <img
+                src={src}
+                alt=""
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </button>
           ))}
         </div>
@@ -144,7 +159,11 @@ const specsData = [
       { label: "Vr", value: "55 kts", name: "Rotation Speed" },
       { label: "Vx", value: "62 kts", name: "Best Angle of Climb" },
       { label: "Vy", value: "74 kts", name: "Best Rate of Climb" },
-      { label: "Vfe", value: "85 / 110 kts", name: "Max Flap Extended (Full / 10°)" },
+      {
+        label: "Vfe",
+        value: "85 / 110 kts",
+        name: "Max Flap Extended (Full / 10°)",
+      },
       { label: "Va", value: "90–105 kts", name: "Maneuvering Speed" },
       { label: "Vno", value: "129 kts", name: "Max Structural Cruise" },
       { label: "Vne", value: "163 kts", name: "Never-Exceed Speed" },
@@ -164,7 +183,11 @@ const specsData = [
       { label: "Vr", value: "55 kts", name: "Rotation Speed" },
       { label: "Vx", value: "60 kts", name: "Best Angle of Climb" },
       { label: "Vy", value: "76 kts", name: "Best Rate of Climb" },
-      { label: "Vfe", value: "85 / 110 kts", name: "Max Flap Extended (Full / 10°)" },
+      {
+        label: "Vfe",
+        value: "85 / 110 kts",
+        name: "Max Flap Extended (Full / 10°)",
+      },
       { label: "Va", value: "82–99 kts", name: "Maneuvering Speed" },
       { label: "Vno", value: "127 kts", name: "Max Structural Cruise" },
       { label: "Vne", value: "158 kts", name: "Never-Exceed Speed" },
@@ -224,19 +247,32 @@ export function OurAircraftPage() {
   return (
     <div className="w-full">
       <Seo
-        title={"Training Fleet | Van Nuys Airport KVNY | Accelerated Flight School"}
-        description={"Train in a fleet of Cessna 172 Skyhawks and a Piper Warrior II. Rates starting at $145/hr wet. Call 424-493-2761."}
+        title={
+          "Training Fleet | Van Nuys Airport KVNY | Accelerated Flight School"
+        }
+        description={
+          "Train in a fleet of Cessna 172 Skyhawks and a Piper Warrior II. Rates starting at $145/hr wet. Call 424-493-2761."
+        }
       />
 
       <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-ramp-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img
+            src="/images/hero-ramp-dusk.jpg"
+            className="w-full h-full object-cover object-center"
+            aria-hidden="true"
+            alt=""
+          />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Training Fleet</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Our Training Fleet
+          </h1>
           <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-3xl mx-auto">
-            Train in our well-maintained fleet of Cessna and Piper aircraft, equipped for both primary and advanced <AviationTerm term="IFR" /> training.
+            Train in our well-maintained fleet of Cessna and Piper aircraft,
+            equipped for both primary and advanced <AviationTerm term="IFR" />{" "}
+            training.
           </p>
         </div>
       </section>
@@ -250,21 +286,28 @@ export function OurAircraftPage() {
                 key={aircraft.id}
                 className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col hover-elevate transition-transform"
               >
-                <FleetGallery imgs={aircraft.imgs} name={aircraft.name} year={aircraft.year} />
+                <FleetGallery
+                  imgs={aircraft.imgs}
+                  name={aircraft.name}
+                  year={aircraft.year}
+                />
 
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-bold text-primary mb-4 flex items-center gap-2">
                     <Plane className="w-5 h-5 text-secondary shrink-0" />
                     {aircraft.name}
                   </h3>
-                  
+
                   <div className="flex-1">
                     <p className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3">
                       Avionics & Equipment
                     </p>
                     <ul className="space-y-2 mb-6">
                       {aircraft.equipment.map((item, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
+                        <li
+                          key={i}
+                          className="flex items-start gap-2 text-sm text-slate-600"
+                        >
                           <CheckCircle2 className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
                           <span>{item}</span>
                         </li>
@@ -275,15 +318,25 @@ export function OurAircraftPage() {
 
                 <div className="bg-slate-50 border-t border-slate-100 p-6 flex flex-col gap-3">
                   <div className="flex items-end justify-between">
-                    <p className="text-sm font-bold text-slate-500">Cash / Check</p>
+                    <p className="text-sm font-bold text-slate-500">
+                      Cash / Check
+                    </p>
                     <p className="text-2xl font-bold text-primary">
-                      ${aircraft.cash}<span className="text-sm font-normal text-slate-500">/hr</span>
+                      ${aircraft.cash}
+                      <span className="text-sm font-normal text-slate-500">
+                        /hr
+                      </span>
                     </p>
                   </div>
                   <div className="flex items-end justify-between">
-                    <p className="text-sm font-bold text-slate-500">Credit Card</p>
+                    <p className="text-sm font-bold text-slate-500">
+                      Credit Card
+                    </p>
                     <p className="text-lg font-bold text-slate-600">
-                      ${aircraft.credit}<span className="text-sm font-normal text-slate-400">/hr</span>
+                      ${aircraft.credit}
+                      <span className="text-sm font-normal text-slate-400">
+                        /hr
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -293,9 +346,13 @@ export function OurAircraftPage() {
 
           <div className="mt-12 bg-primary/5 rounded-2xl p-8 border border-primary/10 flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
             <div>
-              <h4 className="text-xl font-bold text-primary mb-2">Ready to fly?</h4>
+              <h4 className="text-xl font-bold text-primary mb-2">
+                Ready to fly?
+              </h4>
               <p className="text-slate-600">
-                Contact us to schedule an introductory flight in one of our aircraft. Rates start at $145/hr wet, plus our $35/hr instructor rate.
+                Contact us to schedule an introductory flight in one of our
+                aircraft. Rates start at $145/hr wet, plus our $35/hr instructor
+                rate.
               </p>
             </div>
             <a href="tel:424-493-2761" className="w-full md:w-auto shrink-0">
@@ -316,7 +373,8 @@ export function OurAircraftPage() {
               Performance & Specifications
             </h2>
             <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-              Reference standardized airspeed and performance figures for our fleet.
+              Reference standardized airspeed and performance figures for our
+              fleet.
             </p>
           </div>
 
@@ -386,7 +444,9 @@ export function OurAircraftPage() {
                         <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">
                           {p.label}
                         </p>
-                        <p className="text-lg font-bold text-primary">{p.value}</p>
+                        <p className="text-lg font-bold text-primary">
+                          {p.value}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -396,7 +456,10 @@ export function OurAircraftPage() {
                       Important Notice
                     </p>
                     <p className="text-amber-700 text-sm leading-relaxed">
-                      These figures are standard POH references for the aircraft type. Always refer to the specific POH carried in the individual aircraft for operational decisions, exact weight and balance data, and updated performance metrics.
+                      These figures are standard POH references for the aircraft
+                      type. Always refer to the specific POH carried in the
+                      individual aircraft for operational decisions, exact
+                      weight and balance data, and updated performance metrics.
                     </p>
                   </div>
                 </div>
@@ -541,21 +604,20 @@ export function OurAircraftPage() {
                 <p>
                   We provide scenario based training so that you as the student
                   learn efficiently, and also, learn to build confidence fast.
-                  Most training in other schools involves teaching you how to fly
-                  in your home airport, or to only understand how to go from the
-                  school approved point A to point B, but this is inadequate.
-                  Piloting is all about smooth and confident flying even in new
-                  situations or during pressure.
+                  Most training in other schools involves teaching you how to
+                  fly in your home airport, or to only understand how to go from
+                  the school approved point A to point B, but this is
+                  inadequate. Piloting is all about smooth and confident flying
+                  even in new situations or during pressure.
                 </p>
                 <p>
-                  When flying with our instructors, you will learn
-                  instinctively and intuitively how to fly to an airport you
-                  have never been to out of the blue, such as by diverting, how
-                  to descend and enter its pattern, or how to fly a difficult
-                  instrument approach in an airport you have not been to or are
-                  diverting to, or how to fly through{" "}
-                  <AviationTerm term="Class Bravo" /> airspace confidently and
-                  how to obtain the clearance to do so.
+                  When flying with our instructors, you will learn instinctively
+                  and intuitively how to fly to an airport you have never been
+                  to out of the blue, such as by diverting, how to descend and
+                  enter its pattern, or how to fly a difficult instrument
+                  approach in an airport you have not been to or are diverting
+                  to, or how to fly through <AviationTerm term="Class Bravo" />{" "}
+                  airspace confidently and how to obtain the clearance to do so.
                 </p>
               </div>
             </div>
