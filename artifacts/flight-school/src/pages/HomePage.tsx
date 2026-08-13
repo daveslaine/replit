@@ -745,6 +745,51 @@ export function HomePage() {
       <div className="container mx-auto px-4">
         <StudentPromise />
       </div>
+      {/* ── Areas We Serve ────────────────────────────────────── */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-3xl font-bold text-center mb-3">
+            Flight Training Near You
+          </h2>
+          <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Students train with us from across Los Angeles and the San Fernando
+            Valley — Van Nuys Airport (KVNY) is a short drive from these areas.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              ["Los Angeles", "los-angeles"],
+              ["Sherman Oaks", "sherman-oaks"],
+              ["Encino", "encino"],
+              ["Burbank", "burbank"],
+              ["Glendale", "glendale"],
+              ["Santa Monica", "santa-monica"],
+              ["Pasadena", "pasadena"],
+              ["Woodland Hills", "woodland-hills"],
+              ["Calabasas", "calabasas"],
+              ["Santa Clarita", "santa-clarita"],
+              ["Thousand Oaks", "thousand-oaks"],
+              ["Beverly Hills", "beverly-hills"],
+            ].map(([label, city]) => (
+              <Link
+                key={city}
+                href={`/flight-school-near-${city}-accelerated-flight-school-van-nuys-kvny`}
+                className="px-4 py-2 rounded-full border border-slate-200 bg-slate-50 text-sm font-medium text-slate-700 hover:border-primary hover:text-primary transition-colors"
+              >
+                Flight School Near {label}
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="/flight-school-locations-los-angeles"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+            >
+              See all areas we serve
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
       {/* ── CTA ───────────────────────────────────────────────── */}
       <section className="bg-primary text-white py-24">
         <div className="container mx-auto px-4 text-center max-w-4xl">

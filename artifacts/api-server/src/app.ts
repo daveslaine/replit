@@ -72,6 +72,8 @@ const LEGACY_REDIRECTS: Record<string, string> = {
     "/private-pilot-license-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
   "discovery-flight-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
     "/discovery-flight-los-angeles-accelerated-flight-school-van-nuys-kvny",
+  "flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-airport-kvny":
+    "/flight-school-cost-los-angeles-accelerated-flight-school-van-nuys-kvny",
 };
 
 app.use((req, res, next) => {

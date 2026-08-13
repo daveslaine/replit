@@ -17,7 +17,7 @@ const programs = [
   {
     name: "Discovery Flight",
     ours: "$199.99 flat",
-    socal: "$50 – $350+",
+    socal: "$250 – $350+",
     details:
       "1.5 hours total — preflight, full flight, debrief. You fly the aircraft.",
   },
@@ -137,7 +137,12 @@ export function LowCostPage() {
       {/* Hero */}
       <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-cockpit-dusk.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img
+            src="/images/hero-cockpit-dusk.jpg"
+            className="w-full h-full object-cover object-center"
+            aria-hidden="true"
+            alt=""
+          />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">

@@ -147,7 +147,12 @@ export function LandingPage() {
       {/* Hero */}
       <section className="relative bg-primary text-white overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img
+            src="/images/hero-airliner-gate.jpg"
+            className="w-full h-full object-cover object-center"
+            aria-hidden="true"
+            alt=""
+          />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl">
@@ -176,7 +181,7 @@ export function LandingPage() {
                 size="lg"
                 className="font-bold gap-2 h-12 px-6 bg-white text-primary hover:bg-slate-100"
               >
-                <Plane className="w-4 h-4" /> Discovery Flight — $190
+                <Plane className="w-4 h-4" /> Discovery Flight — $199.99
               </Button>
             </Link>
           </div>
@@ -478,7 +483,7 @@ export function LandingPage() {
           </h2>
           <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
             Call or text us directly at <strong>424-493-2761</strong> — or book
-            a Discovery Flight at Van Nuys Airport for $190 and experience
+            a Discovery Flight at Van Nuys Airport for $199.99 and experience
             flight training before committing to a full program.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -505,13 +510,13 @@ export function LandingPage() {
                 size="lg"
                 className="font-bold gap-2 h-12 px-7 bg-white text-primary hover:bg-slate-100"
               >
-                <Plane className="w-4 h-4" /> Book a Discovery Flight — $190
+                <Plane className="w-4 h-4" /> Book a Discovery Flight — $199.99
               </Button>
             </Link>
           </div>
           <p className="text-white/60 text-xs mt-6">
-            Accelerated Flight School · 16425 Hart St · Van Nuys Airport
-            (KVNY) · Van Nuys, CA 91406
+            Accelerated Flight School · 16425 Hart St · Van Nuys Airport (KVNY)
+            · Van Nuys, CA 91406
           </p>
         </div>
       </section>
