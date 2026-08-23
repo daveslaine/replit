@@ -30,8 +30,8 @@ const fleet = [
       "GMA340",
       "Garmin GTX327 Transponder",
     ],
-    cash: 170,
-    credit: 175,
+    cash: 175,
+    credit: 182,
   },
   {
     id: 2,
@@ -50,8 +50,8 @@ const fleet = [
       "KAP140 Autopilot",
       "Leather Seats",
     ],
-    cash: 170,
-    credit: 175,
+    cash: 175,
+    credit: 182,
   },
   {
     id: 3,
@@ -65,8 +65,8 @@ const fleet = [
       "Garmin GTX335 Transponder",
       "Garmin Audio Panel",
     ],
-    cash: 165,
-    credit: 170,
+    cash: 175,
+    credit: 182,
   },
   {
     id: 4,
@@ -83,8 +83,8 @@ const fleet = [
       "Moving Maps",
       "Garmin GTX330 Transponder",
     ],
-    cash: 160,
-    credit: 165,
+    cash: 170,
+    credit: 177,
   },
   {
     id: 5,
@@ -92,8 +92,8 @@ const fleet = [
     year: "1980",
     imgs: ["/images/fleet/n5298j-1.jpg", "/images/fleet/n5298j-2.jpg"],
     equipment: ["Dual NAV/COM", "GPS", "DME", "Transponder", "Intercom"],
-    cash: 145,
-    credit: 150,
+    cash: 155,
+    credit: 160,
   },
 ];
 
@@ -251,7 +251,7 @@ export function OurAircraftPage() {
           "Training Fleet | Van Nuys Airport KVNY | Accelerated Flight School"
         }
         description={
-          "Train in a fleet of Cessna 172 Skyhawks and a Piper Warrior II. Rates starting at $145/hr wet. Call 424-493-2761."
+          "Train in a fleet of Cessna 172 Skyhawks and a Piper Warrior II. Rates starting at $155/hr wet. Call 424-493-2761."
         }
       />
 
@@ -351,7 +351,7 @@ export function OurAircraftPage() {
               </h4>
               <p className="text-slate-600">
                 Contact us to schedule an introductory flight in one of our
-                aircraft. Rates start at $145/hr wet, plus our $35/hr instructor
+                aircraft. Rates start at $155/hr wet, plus our $35/hr instructor
                 rate.
               </p>
             </div>

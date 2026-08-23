@@ -435,8 +435,8 @@ export function AboutUsPage() {
                 </p>
                 <div className="grid grid-cols-2 gap-3 mt-4">
                   {[
-                    { label: "Wet Rental Rate", value: "From $145/hr" },
-                    { label: "Fleet Range", value: "$145-$175/hr" },
+                    { label: "Wet Rental Rate", value: "From $155/hr" },
+                    { label: "Fleet Range", value: "$155-$175/hr" },
                     { label: "Fuel", value: "Included (wet)" },
                     { label: "Airport", value: "KVNY" },
                   ].map((item) => (
@@ -525,12 +525,12 @@ export function AboutUsPage() {
               {[
                 {
                   program: "Private Pilot",
-                  ours: "As low as $8,100",
+                  ours: "As low as $8,325",
                   socal: "$15,000–$25,000+",
                 },
                 {
                   program: "Instrument Rating",
-                  ours: "~$8,500–$15,000",
+                  ours: "~$8,700–$15,400",
                   socal: "$16,000–$23,000",
                 },
                 {
