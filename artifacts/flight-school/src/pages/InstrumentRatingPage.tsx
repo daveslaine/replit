@@ -144,7 +144,7 @@ const serviceSchema = {
       priceCurrency: "USD",
     },
     description:
-      "Estimated Instrument Rating training cost of approximately $8,500 to $15,000 depending on starting experience, proficiency, training frequency, aircraft time, ground instruction, and legal use of approved training devices or safety-pilot practice.",
+      "Estimated Instrument Rating training cost of approximately $8,700 to $15,400 depending on starting experience, proficiency, training frequency, aircraft time, ground instruction, and legal use of approved training devices or safety-pilot practice.",
     seller: { "@id": `${SITE_URL}/#organization` },
   },
 };
@@ -449,7 +449,7 @@ export function InstrumentRatingPage() {
                 Instrument Rating Estimate
               </p>
               <p className="mb-2 text-4xl font-black text-white">
-                ~$8,500–$15,000
+                ~$8,700–$15,400
               </p>
               <div className="mb-5 rounded-xl border border-red-300/30 bg-white/10 p-4">
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-white/60">
@@ -500,7 +500,7 @@ export function InstrumentRatingPage() {
               <div className="space-y-3 border-t border-white/20 pt-5 text-sm">
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Aircraft wet rate</span>
-                  <strong>From $145/hr</strong>
+                  <strong>From $155/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">CFII instruction</span>
@@ -508,11 +508,11 @@ export function InstrumentRatingPage() {
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Combined dual rate</span>
-                  <strong>From $180/hr</strong>
+                  <strong>From $185/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Fleet range</span>
-                  <strong>$145–$175/hr</strong>
+                  <strong>$155–$175/hr</strong>
                 </div>
               </div>
 
@@ -1365,12 +1365,12 @@ export function InstrumentRatingPage() {
                 <h2 className="mb-5 text-2xl font-black">Costs to plan for</h2>
                 <div className="space-y-4 text-sm">
                   {[
-                    ["Estimated training range", "~$8,500–$15,000"],
+                    ["Estimated training range", "~$8,700–$15,400"],
                     ["Southern California average", "$15,000–$25,000"],
-                    ["Aircraft wet rate", "From $145/hr"],
+                    ["Aircraft wet rate", "From $155/hr"],
                     ["CFII instruction", "$35/hr"],
-                    ["Combined dual rate", "From $180/hr"],
-                    ["Fleet range", "$145–$175/hr"],
+                    ["Combined dual rate", "From $185/hr"],
+                    ["Fleet range", "$155–$175/hr"],
                     ["DPE fee", "Confirm current examiner quote"],
                     [
                       "FAA knowledge test",

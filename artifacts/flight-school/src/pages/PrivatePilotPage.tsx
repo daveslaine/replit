@@ -25,7 +25,7 @@ const privatePilotFaqs = [
   {
     question: "How much does a Private Pilot License cost at Van Nuys Airport?",
     answer:
-      "Private Pilot training starts as low as $8,100, assuming a minimum of 45 hours at $180/hr dual (aircraft + instructor); most students finish in 60–75 hours (~$10,800–$13,500). The final amount depends on total flight time, training frequency, individual proficiency, study habits, weather, and scheduling. FAA examiner fees, the written test, medical examination, headset, ForeFlight, and renter's insurance are separate.",
+      "Private Pilot training starts as low as $8,325, assuming a minimum of 45 hours at $185/hr dual (aircraft + instructor); most students finish in 60–75 hours (~$11,100–$13,875). The final amount depends on total flight time, training frequency, individual proficiency, study habits, weather, and scheduling. FAA examiner fees, the written test, medical examination, headset, ForeFlight, and renter's insurance are separate.",
   },
   {
     question: "What is your Private Pilot checkride pass rate?",
@@ -136,7 +136,7 @@ const privatePilotServiceSchema = {
       priceCurrency: "USD",
     },
     description:
-      "Private Pilot training starting as low as $8,100 (assumes minimum of 45 hours at $180/hr dual), with no large upfront payment and students paying as they fly.",
+      "Private Pilot training starting as low as $8,325 (assumes minimum of 45 hours at $185/hr dual), with no large upfront payment and students paying as they fly.",
     seller: { "@id": `${SITE_URL}/#organization` },
   },
 };
@@ -220,7 +220,7 @@ export function PrivatePilotPage() {
       <Seo
         title={"Private Pilot Training Van Nuys | Accelerated Flight School"}
         description={
-          "Private Pilot training at Van Nuys Airport (KVNY). FAA ACS-structured. As low as $8,100 (45 hrs at $180/hr dual), below the SoCal average. No upfront payment. Call 424-493-2761."
+          "Private Pilot training at Van Nuys Airport (KVNY). FAA ACS-structured. As low as $8,325 (45 hrs at $185/hr dual), below the SoCal average. No upfront payment. Call 424-493-2761."
         }
         canonical={PAGE_URL}
       />
@@ -1269,7 +1269,7 @@ export function PrivatePilotPage() {
                       question:
                         "How much does a Private Pilot License cost at Van Nuys Airport?",
                       answer:
-                        "Private Pilot training starts as low as $8,100, assuming a minimum of 45 hours at $180/hr dual (aircraft + instructor); most students finish in 60–75 hours (~$10,800–$13,500). The final amount depends on total flight time, training frequency, individual proficiency, study habits, weather, and scheduling. FAA examiner fees, the written test, medical examination, headset, ForeFlight, and renter's insurance are separate.",
+                        "Private Pilot training starts as low as $8,325, assuming a minimum of 45 hours at $185/hr dual (aircraft + instructor); most students finish in 60–75 hours (~$11,100–$13,875). The final amount depends on total flight time, training frequency, individual proficiency, study habits, weather, and scheduling. FAA examiner fees, the written test, medical examination, headset, ForeFlight, and renter's insurance are separate.",
                     },
                     {
                       question:
@@ -1436,11 +1436,11 @@ export function PrivatePilotPage() {
                     </p>
 
                     <p className="break-words text-2xl sm:text-3xl font-bold text-white">
-                      As low as $8,100
+                      As low as $8,325
                     </p>
 
                     <p className="text-xs text-white/60 mt-1">
-                      Assumes minimum of 45 hours at $180/hr Dual (Aircraft +
+                      Assumes minimum of 45 hours at $185/hr Dual (Aircraft +
                       Instructor)
                     </p>
                   </div>

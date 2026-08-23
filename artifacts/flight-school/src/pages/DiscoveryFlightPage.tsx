@@ -59,7 +59,7 @@ const trainingSteps = [
   },
   {
     step: "Private Pilot",
-    note: "As low as $8,100",
+    note: "As low as $8,325",
     href: "/private-pilot-van-nuys",
     highlight: false,
   },

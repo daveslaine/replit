@@ -18,7 +18,7 @@ export function DealsPage() {
       <Seo
         title={"Flight Training Deals & Coupons | Accelerated Flight School"}
         description={
-          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $10 off — $189.99. First 2 flights: aircraft from $145/hr + instructor $25/hr. Call 424-493-2761."
+          "Current deals at Accelerated Flight School in Van Nuys. Discovery flight $10 off — $189.99. First 2 flights: aircraft from $155/hr + instructor $25/hr. Call 424-493-2761."
         }
       />
 
@@ -128,7 +128,7 @@ export function DealsPage() {
                   </span>
                   <div className="text-right">
                     <span className="font-bold text-secondary text-lg">
-                      From $145/hr
+                      From $155/hr
                     </span>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export function DealsPage() {
                     Combined Dual (First 2 Flights)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    From $170/hr
+                    From $180/hr
                   </span>
                 </div>
               </div>
@@ -212,7 +212,7 @@ export function DealsPage() {
                     Aircraft Rental (<AviationTerm term="Wet rental" />)
                   </span>
                   <span className="font-bold text-secondary text-xl">
-                    From $145/hr
+                    From $155/hr
                   </span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-slate-100">
@@ -231,12 +231,12 @@ export function DealsPage() {
                     Combined Dual (Aircraft + Instructor)
                   </span>
                   <span className="font-bold text-primary text-xl">
-                    From $180/hr
+                    From $185/hr
                   </span>
                 </div>
                 <p className="text-xs text-slate-400 pt-1">
-                  Our fleet includes four Cessna 172 Skyhawks ($145–$175/hr) and
-                  a Piper PA-28-161 Warrior II ($165/hr).
+                  Our fleet includes four Cessna 172 Skyhawks ($155–$175/hr) and
+                  a Piper PA-28-161 Warrior II ($175/hr).
                 </p>
               </div>
             </div>

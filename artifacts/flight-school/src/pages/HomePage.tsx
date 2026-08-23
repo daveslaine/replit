@@ -98,7 +98,7 @@ export function HomePage() {
       <Seo
         title={"Flight Training Van Nuys Airport | Accelerated Flight School"}
         description={
-          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot as low as $8,100. Call or text 424-493-2761."
+          "Learn to fly at Van Nuys Airport with structured, transparent, and affordable flight training. Private Pilot as low as $8,325. Call or text 424-493-2761."
         }
       />
       {/* ── Hero ──────────────────────────────────────────────── */}
@@ -209,9 +209,9 @@ export function HomePage() {
           <div className="container mx-auto px-4 max-w-5xl pb-8">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 max-w-lg">
               {[
-                { label: "AIRCRAFT FROM", value: "$145/hr wet" },
+                { label: "AIRCRAFT FROM", value: "$155/hr wet" },
                 { label: "INSTRUCTOR", value: "$35/hr" },
-                { label: "COMBINED DUAL", value: "from $180/hr" },
+                { label: "COMBINED DUAL", value: "from $185/hr" },
               ].map((stat) => (
                 <div
                   key={stat.label}
@@ -356,9 +356,9 @@ export function HomePage() {
               <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
                 Accelerated Flight School estimate
               </p>
-              <p className="text-3xl font-bold text-white">As low as $8,100</p>
+              <p className="text-3xl font-bold text-white">As low as $8,325</p>
               <p className="text-xs text-slate-400 mt-1">
-                Private Pilot — assumes minimum of 45 hours at $180/hr Dual
+                Private Pilot — assumes minimum of 45 hours at $185/hr Dual
                 (Aircraft + Instructor)
               </p>
               <p className="text-sm font-bold text-green-400 mt-3 flex items-center gap-1.5">
@@ -669,7 +669,7 @@ export function HomePage() {
             </h2>
             <p className="text-slate-500 mb-6">
               We operate a fleet with multiple aircraft at different price
-              points — rates start at $145/hr wet.
+              points — rates start at $155/hr wet.
             </p>
           </div>
 
@@ -680,7 +680,7 @@ export function HomePage() {
                 Aircraft Rental
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
-                From $145
+                From $155
                 <span className="text-lg text-slate-400 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1">
@@ -697,7 +697,7 @@ export function HomePage() {
                 Aircraft + Instructor
               </p>
               <p className="text-5xl font-bold text-white mb-1">
-                From $180
+                From $185
                 <span className="text-xl font-normal opacity-70">/hr</span>
               </p>
               <p className="text-xs text-primary-foreground/60 mt-1">

@@ -220,12 +220,12 @@ const faqs: Faq[] = [
   {
     q: "How much does training cost?",
     plain:
-      "We're a pay-as-you-fly school with no large upfront payments. Aircraft rental starts at $145/hr wet, and a Discovery Flight is $199.99. See our pricing page for full details.",
+      "We're a pay-as-you-fly school with no large upfront payments. Aircraft rental starts at $155/hr wet, and a Discovery Flight is $199.99. See our pricing page for full details.",
     a: (
       <>
         We are a <strong>pay-as-you-fly</strong> school — no large prepaid
         blocks or training loans required. Aircraft rental across our fleet
-        starts at <strong>$145/hr wet</strong> (fuel included), and a Discovery
+        starts at <strong>$155/hr wet</strong> (fuel included), and a Discovery
         Flight is <strong>$199.99</strong>. You pay per lesson, keeping your
         investment proportional to your progress. See our pricing page for full
         details, and call us anytime with questions.

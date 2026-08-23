@@ -331,7 +331,7 @@ export function LandingPage() {
             {[
               {
                 label: "Aircraft Rental",
-                rate: "From $145/hr",
+                rate: "From $155/hr",
                 note: "Wet — fuel included",
               },
               {
@@ -341,7 +341,7 @@ export function LandingPage() {
               },
               {
                 label: "Dual Combined",
-                rate: "From $180/hr",
+                rate: "From $185/hr",
                 note: "Aircraft + instructor",
               },
               {

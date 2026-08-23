@@ -621,7 +621,7 @@ export function CommercialPilotPage() {
               <div className="space-y-3 border-t border-white/20 pt-5 text-sm">
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Aircraft wet rate</span>
-                  <strong>From $145/hr</strong>
+                  <strong>From $155/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Flight instruction</span>
@@ -629,11 +629,11 @@ export function CommercialPilotPage() {
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Combined dual rate</span>
-                  <strong>From $180/hr</strong>
+                  <strong>From $185/hr</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-white/70">Fleet range</span>
-                  <strong>$145–$175/hr</strong>
+                  <strong>$155–$175/hr</strong>
                 </div>
               </div>
 
@@ -1586,10 +1586,10 @@ export function CommercialPilotPage() {
                       "Already have Private or Instrument",
                       "Call for custom estimate",
                     ],
-                    ["Aircraft wet rate", "From $145/hr"],
+                    ["Aircraft wet rate", "From $155/hr"],
                     ["Flight instruction", "$35/hr"],
-                    ["Combined dual rate", "From $180/hr"],
-                    ["Fleet range", "$145–$175/hr"],
+                    ["Combined dual rate", "From $185/hr"],
+                    ["Fleet range", "$155–$175/hr"],
                     ["DPE checkride fee", "~$800–$1,000 each"],
                     ["FAA knowledge test", "~$200 each"],
                     ["Charts / EFB / subscriptions", "Depends on chosen tools"],
