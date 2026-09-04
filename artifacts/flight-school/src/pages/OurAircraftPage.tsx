@@ -299,7 +299,7 @@ export function OurAircraftPage() {
                   </h3>
 
                   <div className="flex-1">
-                    <p className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-3">
+                    <p className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-3">
                       Avionics & Equipment
                     </p>
                     <ul className="space-y-2 mb-6">
@@ -334,7 +334,7 @@ export function OurAircraftPage() {
                     </p>
                     <p className="text-lg font-bold text-slate-600">
                       ${aircraft.credit}
-                      <span className="text-sm font-normal text-slate-400">
+                      <span className="text-sm font-normal text-slate-600">
                         /hr
                       </span>
                     </p>
@@ -404,7 +404,7 @@ export function OurAircraftPage() {
                     V-Speeds — {activeData.name}
                   </h3>
                   <div className="border border-slate-100 rounded-xl overflow-hidden">
-                    <div className="flex items-center gap-4 px-5 py-3 bg-slate-50 border-b border-slate-100 text-xs font-bold uppercase tracking-widest text-slate-400">
+                    <div className="flex items-center gap-4 px-5 py-3 bg-slate-50 border-b border-slate-100 text-xs font-bold uppercase tracking-widest text-slate-600">
                       <span className="w-16 shrink-0">Code</span>
                       <span className="w-24 shrink-0">Value</span>
                       <span className="flex-1">Name</span>
@@ -441,7 +441,7 @@ export function OurAircraftPage() {
                         key={p.label}
                         className="bg-slate-50 rounded-xl border border-slate-100 p-5"
                       >
-                        <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">
+                        <p className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-1">
                           {p.label}
                         </p>
                         <p className="text-lg font-bold text-primary">
