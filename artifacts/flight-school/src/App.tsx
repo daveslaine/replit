@@ -1,68 +1,91 @@
-import React, { useEffect } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import {
   Switch,
   Route,
   Router as WouterRouter,
   useLocation,
-  Redirect,
 } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileCallBar } from "@/components/MobileCallBar";
-import { AdminRoot } from "@/pages/admin/AdminRoot";
 
 import { HomePage } from "@/pages/HomePage";
-import { CheapestPage } from "@/pages/CheapestPage";
-import { LowCostPage } from "@/pages/LowCostPage";
-import { PrivatePilotPage } from "@/pages/PrivatePilotPage";
-import { InstrumentRatingPage } from "@/pages/InstrumentRatingPage";
-import { CommercialPilotPage } from "@/pages/CommercialPilotPage";
-import { CfiTrainingPage } from "@/pages/CfiTrainingPage";
-import { AirlinePathPage } from "@/pages/AirlinePathPage";
-import { CommercialMultiEnginePage } from "@/pages/CommercialMultiEnginePage";
-import { OurAircraftPage } from "@/pages/OurAircraftPage";
-import { InstructorsPage } from "@/pages/InstructorsPage";
-import { PricingPage } from "@/pages/PricingPage";
-import { ContactPage } from "@/pages/ContactPage";
-import { ContactThankYouPage } from "@/pages/ContactThankYouPage";
-import { DiscoveryFlightPage } from "@/pages/DiscoveryFlightPage";
-import { DealsPage } from "@/pages/DealsPage";
-import { AboutUsPage } from "@/pages/AboutUsPage";
-import { DirectionsPage } from "@/pages/DirectionsPage";
-import { FaqPage } from "@/pages/FaqPage";
-import { LandingPage } from "@/pages/LandingPage";
-import { getLandingPage } from "@/data/landingPages";
-import { AirTourPage } from "@/pages/AirTourPage";
-import { getAirTourPage } from "@/data/airTourPages";
-import { AreasServedPage } from "@/pages/AreasServedPage";
-import { AirToursHubPage } from "@/pages/AirToursHubPage";
-import { redirects } from "@/data/redirects";
 import { SeoSchema } from "@/components/SeoSchema";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 
 const queryClient = new QueryClient();
 
-function LandingOrNotFound() {
-  const [location] = useLocation();
-  const slug = location.replace(/^\//, "");
-  const redirectTarget = redirects[slug];
-  if (redirectTarget) {
-    return <Redirect to={`/${redirectTarget}`} replace />;
-  }
-  if (getAirTourPage(slug)) {
-    return <AirTourPage />;
-  }
-  if (getLandingPage(slug)) {
-    return <LandingPage />;
-  }
-  return <NotFound />;
-}
+const AdminRoot = lazy(() =>
+  import("@/pages/admin/AdminRoot").then((module) => ({ default: module.AdminRoot })),
+);
+const CheapestPage = lazy(() =>
+  import("@/pages/CheapestPage").then((module) => ({ default: module.CheapestPage })),
+);
+const LowCostPage = lazy(() =>
+  import("@/pages/LowCostPage").then((module) => ({ default: module.LowCostPage })),
+);
+const PrivatePilotPage = lazy(() =>
+  import("@/pages/PrivatePilotPage").then((module) => ({ default: module.PrivatePilotPage })),
+);
+const InstrumentRatingPage = lazy(() =>
+  import("@/pages/InstrumentRatingPage").then((module) => ({ default: module.InstrumentRatingPage })),
+);
+const CommercialPilotPage = lazy(() =>
+  import("@/pages/CommercialPilotPage").then((module) => ({ default: module.CommercialPilotPage })),
+);
+const CfiTrainingPage = lazy(() =>
+  import("@/pages/CfiTrainingPage").then((module) => ({ default: module.CfiTrainingPage })),
+);
+const AirlinePathPage = lazy(() =>
+  import("@/pages/AirlinePathPage").then((module) => ({ default: module.AirlinePathPage })),
+);
+const CommercialMultiEnginePage = lazy(() =>
+  import("@/pages/CommercialMultiEnginePage").then((module) => ({ default: module.CommercialMultiEnginePage })),
+);
+const OurAircraftPage = lazy(() =>
+  import("@/pages/OurAircraftPage").then((module) => ({ default: module.OurAircraftPage })),
+);
+const InstructorsPage = lazy(() =>
+  import("@/pages/InstructorsPage").then((module) => ({ default: module.InstructorsPage })),
+);
+const PricingPage = lazy(() =>
+  import("@/pages/PricingPage").then((module) => ({ default: module.PricingPage })),
+);
+const ContactPage = lazy(() =>
+  import("@/pages/ContactPage").then((module) => ({ default: module.ContactPage })),
+);
+const ContactThankYouPage = lazy(() =>
+  import("@/pages/ContactThankYouPage").then((module) => ({ default: module.ContactThankYouPage })),
+);
+const DiscoveryFlightPage = lazy(() =>
+  import("@/pages/DiscoveryFlightPage").then((module) => ({ default: module.DiscoveryFlightPage })),
+);
+const DealsPage = lazy(() =>
+  import("@/pages/DealsPage").then((module) => ({ default: module.DealsPage })),
+);
+const AboutUsPage = lazy(() =>
+  import("@/pages/AboutUsPage").then((module) => ({ default: module.AboutUsPage })),
+);
+const DirectionsPage = lazy(() =>
+  import("@/pages/DirectionsPage").then((module) => ({ default: module.DirectionsPage })),
+);
+const FaqPage = lazy(() =>
+  import("@/pages/FaqPage").then((module) => ({ default: module.FaqPage })),
+);
+const AreasServedPage = lazy(() =>
+  import("@/pages/AreasServedPage").then((module) => ({ default: module.AreasServedPage })),
+);
+const OfficialIdentityPage = lazy(() =>
+  import("@/pages/OfficialIdentityPage").then((module) => ({ default: module.OfficialIdentityPage })),
+);
+const AirToursHubPage = lazy(() =>
+  import("@/pages/AirToursHubPage").then((module) => ({ default: module.AirToursHubPage })),
+);
+const LandingOrNotFound = lazy(() => import("@/pages/LandingOrNotFound"));
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -158,6 +181,10 @@ function PublicRoutes() {
           component={AreasServedPage}
         />
         <Route
+          path="/official-accelerated-flight-school-van-nuys"
+          component={OfficialIdentityPage}
+        />
+        <Route
           path="/los-angeles-air-tours-sightseeing-flights"
           component={AirToursHubPage}
         />
@@ -183,7 +210,9 @@ function AppRouter() {
     <>
       <AnalyticsTracker />
       <ScrollToTop />
-      <PublicRoutes />
+      <Suspense fallback={null}>
+        <PublicRoutes />
+      </Suspense>
     </>
   );
 }
