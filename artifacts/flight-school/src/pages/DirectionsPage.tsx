@@ -13,7 +13,7 @@ export function DirectionsPage() {
 
       <section className="relative bg-primary text-white pt-28 md:pt-32 pb-12 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img src="/images/hero-airliner-gate.webp" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-3xl text-center">
@@ -59,16 +59,15 @@ export function DirectionsPage() {
           <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm mb-10">
             <img
               src="/images/directions-entrance.webp"
-              alt="Entrance view at 16425 Hart St Van Nuys Airport — red gate on left near Foxtrot Hangars, flight school building on right"
+              alt="Parking lot entrance at 16425 Hart Street with the entrance circled in blue and the school hangar marked by a red arrow"
               className="w-full object-cover"
             />
             <div className="bg-slate-50 border-t border-slate-200 px-5 py-3 text-xs text-slate-500 leading-relaxed">
-              View from Balboa Blvd.{" "}
-              <strong className="text-slate-700">Left circle:</strong> Foxtrot
-              Hangars (Building F area) — the red arrow marks the gate entrance
-              you will use.{" "}
-              <strong className="text-slate-700">Right circle:</strong> The
-              hangar building on the right side houses multiple flight schools.
+              View from the parking lot of 16425 Hart Street facing north. The
+              entrance to our school is located in the blue circle shown above,
+              the hangar we are located in is shown with a red arrow, and the
+              gate-access code box is beside the gate within the circle. Please
+              call or text when you arrive for the code.
             </div>
           </div>
 
@@ -95,48 +94,21 @@ export function DirectionsPage() {
             {[
               {
                 step: "1",
-                title: "Arrive at 16425 Hart St, Van Nuys, CA 91406",
+                title: "Arrive at 16425 Hart St",
                 detail:
-                  "Pull up to the address. You will see the airport complex. On the right side, there is a large hangar building that houses multiple flight schools — you can see it in the photo above with the red circle on the right.",
+                  "Enter the parking lot. Immediately to your left, you will see the building marked 16425, as shown in the blue circle in the photo above.",
               },
               {
                 step: "2",
-                title: "Call or text us for the gate code",
+                title: "Park and walk to the circled entrance",
                 detail:
-                  "Before you enter, call or text 424-493-2761. We will give you the access code for the red gate immediately.",
+                  "Park in the lot and walk to the area circled in blue in the photo above. Call or text 424-493-2761 when you reach the gate, and we will provide the access code.",
               },
               {
                 step: "3",
-                title:
-                  "Enter the red gate (marked with the red arrow in the photo)",
+                title: "Enter the gate and turn left at the second hangar",
                 detail:
-                  "Use the code we provide to open the red gate on the left side as shown in the photo above. This gate is near the Foxtrot Hangars area (Building F), visible in the left circle. Enter the property.",
-              },
-              {
-                step: "4",
-                title: "Walk straight, then turn left at the first left",
-                detail:
-                  "After entering the gate, walk straight ahead. Take the first available left turn.",
-              },
-              {
-                step: "5",
-                title: "Keep walking until you see the H hangar building",
-                detail:
-                  "Continue walking until you see the hangar building marked H. This is a large structure that houses multiple individual hangars. You are looking for hangar H7.",
-              },
-              {
-                step: "6",
-                title:
-                  "Walk to the other side of the H hangar building, then turn left",
-                detail:
-                  "Go around to the other side of the H building, then turn left.",
-              },
-              {
-                step: "7",
-                title:
-                  "Follow signs for Accelerated Flight School / Accelerated Flight Academy",
-                detail:
-                  "Look for our signage. You have arrived at Accelerated Flight School — Hangar H7.",
+                  "Enter the code at the box beside the gate, walk through, and turn left at the second hangar shown with the red arrow in the image above, where you will see American Aviation.",
               },
             ].map((item) => (
               <li key={item.step} className="flex gap-4">
