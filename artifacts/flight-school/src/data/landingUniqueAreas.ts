@@ -47,7 +47,7 @@ export const landingUniqueAreas: Record<string, UniqueSection> = {
   "flight-school-near-hollywood-accelerated-flight-school-van-nuys-kvny": {
     heading: "From the Hollywood Side of the Hill to the Left Seat",
     paragraphs: [
-      "Getting to KVNY from Hollywood usually means a short climb over the hill on the 101 or 170 and then a quick exit at Balboa. It is roughly a 20-minute drive in normal conditions, which makes it realistic to schedule lessons around production calls, auditions, or an unpredictable work week.",
+      "Getting to KVNY from Hollywood usually means crossing the hill on the 101 or 170 and continuing toward the Van Nuys Airport area. Travel time changes substantially with Los Angeles traffic, so students often choose lesson windows that leave enough time for an unhurried preflight briefing.",
       "The payoff comes on your first flights, when the landmarks you know from below appear from a brand-new angle — the Hollywood Sign on Mount Lee, the Griffith Observatory, and the studio backlots spread across the basin. They are not just scenery; your instructor will use them as visual references while you practice clearing turns and basic airwork.",
       "Many Hollywood-area students begin with a Discovery Flight in a Cessna 172 Skyhawk or Piper Warrior II — $199.99 for one or $249.99 if you bring a friend. There is no scripted upsell afterward; you simply decide what comes next. Call or text 424-493-2761 to book a time.",
     ],
