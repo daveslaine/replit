@@ -200,6 +200,36 @@ export function AreasServedPage() {
         </div>
       </section>
 
+      <section className="py-14 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-primary mb-5">
+            One Los Angeles Aviation Training Home Base
+          </h2>
+          <div className="space-y-4 text-slate-700 leading-relaxed text-base md:text-lg">
+            <p>
+              The community pages in this directory help future pilots from the
+              San Fernando Valley, Westside, Los Angeles basin, Conejo Valley,
+              Ventura County and nearby communities find relevant training
+              information. Wherever a student starts, instruction takes place at
+              Accelerated Flight School&apos;s Van Nuys Airport (KVNY) home base,
+              where local general aviation activity provides useful context for
+              learning cockpit procedures, airport operations and communication.
+            </p>
+            <p>
+              Our flight school helps students plan around their own availability
+              with a discovery flight, certificate or rating path, and an
+              appropriate training cadence; we do not assume the same commute or
+              schedule works for every neighborhood. This flight school also
+              coordinates examiner planning early and targets checkrides within
+              1–2 weeks after training completion and readiness when DPE
+              schedules, weather, and eligibility permit. That target is not a
+              guarantee and does not place DPE availability under the school&apos;s
+              control.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Directory groups */}
       <section className="py-14 bg-slate-50">
         <div className="container mx-auto px-4 max-w-5xl space-y-12">
