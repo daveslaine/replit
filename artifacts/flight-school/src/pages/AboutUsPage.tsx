@@ -555,14 +555,14 @@ export function AboutUsPage() {
                     <p className="font-bold text-secondary text-base">
                       {row.ours}
                     </p>
-                    <p className="text-red-500 line-through text-xs">
+                    <p className="text-red-700 line-through text-xs">
                       {row.socal}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-xs text-slate-500 mt-3">
+            <p className="text-xs text-slate-600 mt-3">
               All estimates include flight training costs only.{" "}
               <Link
                 href="/van-nuys-accelerated-flight-school-pricing"
