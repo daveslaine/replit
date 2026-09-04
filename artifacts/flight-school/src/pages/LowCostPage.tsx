@@ -13,48 +13,30 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const programs = [
+const budgetStages = [
   {
-    name: "Discovery Flight",
-    ours: "$199.99 flat",
-    socal: "$250 – $350+",
+    name: "Start with one lesson",
+    amount: "Discovery Flight: $199.99",
     details:
-      "1.5 hours total — preflight, full flight, debrief. You fly the aircraft.",
+      "Use a single introductory lesson to meet the school, see the aircraft, and understand the training process before planning a certificate budget.",
   },
   {
-    name: "Private Pilot Certificate",
-    ours: "As low as $8,325",
-    socal: "$15,000 – $25,000+",
+    name: "Build a recurring lesson budget",
+    amount: "Dual instruction: from $185/hr",
     details:
-      "Assumes minimum of 45 hours at $185/hr Dual (Aircraft + Instructor). Most students finish in 60–75 hrs (~$11,100–$13,875).",
+      "Choose a lesson frequency you can sustain. Consistent training can reduce skill loss between flights, while pay-as-you-fly scheduling keeps spending tied to completed lessons.",
   },
   {
-    name: "Instrument Rating",
-    ours: "~$8,700 – $15,400",
-    socal: "$16,000 – $23,000",
+    name: "Track aircraft and instructor time",
+    amount: "Aircraft: from $155/hr wet",
     details:
-      "FAA min 50 hrs cross-country PIC. ACS-based IFR training reduces total hours needed.",
+      "Fuel is included in the published wet aircraft rate. Instructor time is $35 per hour, and the combined advertised dual rate starts at $185 per hour.",
   },
   {
-    name: "Commercial Pilot (from Private)",
-    ours: "~$18,000 – $28,000",
-    socal: "$30,000 – $50,000",
+    name: "Reserve for outside requirements",
+    amount: "Outside costs vary",
     details:
-      "Requires 250 total hours. Safety pilot strategy maximizes solo PIC hours affordably.",
-  },
-  {
-    name: "CFI / CFII",
-    ours: "~$3,000 – $6,000",
-    socal: "$5,000 – $11,000",
-    details:
-      "Become a flight instructor. Adds instrument instructor privileges with CFII add-on.",
-  },
-  {
-    name: "Zero to Commercial + CFI",
-    ours: "~$40,000 – $55,000",
-    socal: "$70,000 – $110,000+",
-    details:
-      "Full career pathway: PPL → IR → CPL → CFI. No financing needed. Pay as you fly.",
+      "FAA knowledge tests, medical certification, pilot equipment, and independent DPE fees should be planned separately from aircraft and instructor charges.",
   },
 ];
 
@@ -102,7 +84,7 @@ const qualityPoints = [
     icon: <CalendarClock className="w-5 h-5 text-secondary shrink-0" />,
     title: "Checkride scheduled early",
     detail:
-      "We book your DPE while you're still training so you test within 1–3 weeks of finishing — not months later. Waiting for a DPE opening means flying proficiency hours for no reason. That's money straight out of your pocket.",
+      "We coordinate examiner planning early and target a checkride within 1–2 weeks after training completion and readiness when DPE schedules, weather, and eligibility permit. This target is not a guarantee, but planning ahead can limit avoidable proficiency flying.",
   },
   {
     icon: <TrendingDown className="w-5 h-5 text-secondary shrink-0" />,
@@ -130,7 +112,7 @@ export function LowCostPage() {
       <Seo
         title={"Low-Cost Flight Training Van Nuys | Accelerated Flight School"}
         description={
-          "Low-cost flight training at Van Nuys Airport. Aircraft starting at $155/hr wet. Private Pilot as low as $8,325 (assumes minimum of 45 hours at $185/hr dual). Zero to Commercial + CFI ~$40,000–$55,000. Call 424-493-2761."
+          "Plan low-cost flight training in Van Nuys with transparent wet aircraft and instructor rates, staged budgeting, and pay-as-you-fly scheduling."
         }
       />
 
@@ -241,68 +223,155 @@ export function LowCostPage() {
         </div>
       </section>
 
-      {/* Program Comparison Table */}
+      {/* Low-cost planning */}
+      <section className="py-14 bg-white border-b border-slate-200">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
+              Affordable Flight Training
+            </p>
+            <h2 className="text-3xl font-bold text-primary">
+              Planning a Sustainable Low-Cost Flight Training Budget
+            </h2>
+            <p className="text-slate-600 mt-4 leading-relaxed">
+              A sustainable budget considers lesson frequency, combined
+              aircraft-and-instructor cost, preparation between flights, and the
+              amount a student can comfortably pay over time. Accelerated Flight
+              School combines transparent wet aircraft rates, a $35-per-hour
+              instructor rate, and pay-as-you-fly scheduling without a large
+              upfront package.
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Link href="/cheap-flight-school-los-angeles-accelerated-flight-school-van-nuys-kvny">
+                <span className="inline-flex rounded-full border border-primary/25 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors">
+                  Cheap Flight School Los Angeles Checklist
+                </span>
+              </Link>
+              <Link href="/van-nuys-accelerated-flight-school-pricing">
+                <span className="inline-flex rounded-full border border-primary/25 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary/5 transition-colors">
+                  Current Aircraft and Instructor Rates
+                </span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3 mb-10">
+            {[
+              {
+                title: "Compare the combined rate",
+                text: "An advertised aircraft price may exclude the instructor, fuel, membership dues, or surcharges. Compare the complete dual-training rate when building a sustainable budget.",
+              },
+              {
+                title: "Compare realistic total hours",
+                text: "A low hourly rate does not protect a budget when disorganized lessons add avoidable repetition. Consistent, ACS-based instruction gives each lesson a defined purpose.",
+              },
+              {
+                title: "Keep control of your money",
+                text: "Paying one flight at a time avoids large deposits and long financing commitments. You can track your progress and spending throughout training.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-xl border border-slate-200 bg-slate-50 p-6"
+              >
+                <h3 className="font-bold text-primary mb-2">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-slate-600">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-2xl border border-secondary/30 bg-secondary/5 p-6 md:p-8">
+            <h3 className="text-xl font-bold text-primary mb-3">
+              What Makes a Low-Cost Training Plan Sustainable?
+            </h3>
+            <div className="space-y-3 text-slate-700 leading-relaxed">
+              <p>
+                Your real training cost includes the aircraft, instructor, fuel,
+                required flight time, ground preparation, repeated lessons, and
+                any proficiency flying needed before a checkride.
+              </p>
+              <p>
+                A useful comparison asks how much you are likely to spend from
+                your first lesson through checkride readiness. Our rates and
+                program estimates are published so prospective students can
+                compare those costs before committing.
+              </p>
+              <p>
+                Low-cost flight training should mean efficient, transparent
+                planning at a fair price. It should never mean cutting safety,
+                skipping preparation, or promising that every student will
+                finish at the FAA minimum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Budget stages */}
       <section className="py-14 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-10">
             <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
-              All Programs
+              Pay-As-You-Fly Planning
             </p>
             <h2 className="text-3xl font-bold text-primary">
-              Total Cost Estimates — Us vs. SoCal Average
+              Build a Flight Training Budget in Stages
             </h2>
             <p className="text-slate-500 mt-2 text-sm max-w-2xl mx-auto">
-              Includes all flight hours, aircraft rental, and instructor time.
-              DPE checkride fees ($700–$1,200 per test) are paid directly to the
-              examiner and not included.
+              Separate recurring lesson costs from outside certification
+              expenses so one advertised number does not hide the full plan.
             </p>
           </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b-2 border-slate-200">
-                  <th className="text-left py-3 px-4 font-bold text-slate-700">
-                    Program
-                  </th>
-                  <th className="text-left py-3 px-4 font-bold text-green-700 bg-green-50 rounded-tl-lg">
-                    Our Estimate
-                  </th>
-                  <th className="text-left py-3 px-4 font-bold text-red-700 bg-red-50 rounded-tr-lg">
-                    SoCal Average
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100">
-                {programs.map((p, i) => (
-                  <tr
-                    key={p.name}
-                    className={i % 2 === 0 ? "bg-white" : "bg-slate-50/50"}
-                  >
-                    <td className="py-4 px-4">
-                      <p className="font-semibold text-primary">{p.name}</p>
-                      <p className="text-xs text-slate-400 mt-0.5">
-                        {p.details}
-                      </p>
-                    </td>
-                    <td className="py-4 px-4 bg-green-50/40">
-                      <p className="font-bold text-green-800 text-base">
-                        {p.ours}
-                      </p>
-                    </td>
-                    <td className="py-4 px-4 bg-red-50/40">
-                      <p className="font-bold text-red-700 text-base line-through decoration-red-400">
-                        {p.socal}
-                      </p>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {budgetStages.map((stage) => (
+              <article
+                key={stage.name}
+                className="rounded-xl border border-slate-200 bg-slate-50 p-5"
+              >
+                <h3 className="font-bold text-primary mb-1">{stage.name}</h3>
+                <p className="font-semibold text-green-800 mb-2">
+                  {stage.amount}
+                </p>
+                <p className="text-sm leading-relaxed text-slate-600">
+                  {stage.details}
+                </p>
+              </article>
+            ))}
           </div>
-          <p className="text-center text-slate-400 text-xs mt-4">
-            Individual results vary based on proficiency, weather, and
-            scheduling frequency.
+          <p className="text-center text-slate-600 text-xs mt-4">
+            Certificate and rating totals vary with prior experience,
+            proficiency, weather, aircraft choice, and training frequency.
           </p>
+        </div>
+      </section>
+
+      <section className="py-14 bg-white border-t border-slate-200">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-3xl font-bold text-primary mb-5">
+            A Low-Cost Plan Starts With the Full Cost
+          </h2>
+          <div className="space-y-4 text-slate-700 leading-relaxed">
+            <p>
+              “Affordable” and “low-cost” are useful search terms, but a
+              student-first comparison goes beyond the advertised aircraft rate.
+              Ask whether the rate is wet, what instructor time costs, how ACS
+              knowledge and practical-test preparation are handled, and how many
+              hours may be realistic for your experience and schedule.
+              Accelerated Flight School helps prospective pilots compare the
+              combined training picture before they begin.
+            </p>
+            <p>
+              This flight school builds efficiency through clear lesson goals,
+              preparation between flights and honest progress reviews—not by
+              promising FAA-minimum completion. We coordinate examiner planning
+              early and target checkrides within 1–2 weeks after training
+              completion and readiness when DPE schedules, weather, and
+              eligibility permit. Availability remains outside our control, so
+              the target is never a guarantee.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -352,7 +421,7 @@ export function LowCostPage() {
             If you fly 80 hours instead of 55 for your Private Pilot because
             lessons were disorganized, or you waited 4 months for a checkride
             slot and had to fly 15 proficiency hours to stay sharp — that is not
-            cheap training. That is expensive training with a low hourly sticker
+            poor training. That is expensive training with a low hourly sticker
             price.
           </p>
           <p className="text-primary-foreground/85 leading-relaxed mb-4">
