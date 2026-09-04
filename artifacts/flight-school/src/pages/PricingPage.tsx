@@ -29,7 +29,7 @@ export function PricingPage() {
 
       <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img src="/images/hero-airliner-gate.webp" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
@@ -79,7 +79,7 @@ export function PricingPage() {
                       From $155/hr
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400">
+                  <p className="text-xs text-slate-600">
                     A fleet of Cessna 172 Skyhawks and a Piper Warrior II at
                     different price points ($155–$175/hr).
                   </p>
@@ -103,7 +103,7 @@ export function PricingPage() {
                   <h3 className="font-bold text-lg text-primary mb-2">
                     Combined Dual Rates
                   </h3>
-                  <p className="text-xs text-slate-500 mb-3">
+                  <p className="text-xs text-slate-600 mb-3">
                     Aircraft + Instructor flying together
                   </p>
                   <div className="flex justify-between items-center mb-1">
@@ -144,7 +144,7 @@ export function PricingPage() {
                       As low as $8,325
                     </span>
                   </div>
-                  <p className="text-xs text-slate-400">
+                  <p className="text-xs text-slate-600">
                     Assumes minimum of 45 hours at $185/hr Dual (Aircraft +
                     Instructor)
                   </p>
