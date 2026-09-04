@@ -15,6 +15,7 @@
 // change the alias/legacy tables in one place, change them in the other.
 
 import http from "node:http";
+import zlib from "node:zlib";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -97,10 +98,33 @@ function cacheControlFor(filePath, pathname) {
   if (
     [".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif", ".svg", ".ico", ".woff2", ".woff", ".ttf"].includes(ext)
   ) {
-    return "public, max-age=86400";
+    return "public, max-age=2592000"; // 30 days
   }
   return "public, max-age=3600";
 }
+
+// Text-based types worth gzipping (images/fonts are already compressed).
+const COMPRESSIBLE = new Set([
+  ".html",
+  ".js",
+  ".mjs",
+  ".css",
+  ".json",
+  ".map",
+  ".svg",
+  ".xml",
+  ".txt",
+  ".webmanifest",
+]);
+
+// Security headers sent on every response.
+const SECURITY_HEADERS = {
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "SAMEORIGIN",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+};
 
 // Resolve a candidate path safely inside publicDir; return the absolute file
 // path if it exists and is a file, else null.
@@ -120,6 +144,28 @@ function resolveFile(candidate) {
   return null;
 }
 
+// Proper Accept-Encoding negotiation: gzip is used only when it appears with
+// a positive q-value (or via a wildcard not explicitly excluding it).
+function clientAcceptsGzip(header) {
+  if (!header) return false;
+  let wildcardQ = null;
+  for (const part of header.split(",")) {
+    const [rawName, ...params] = part.trim().split(";");
+    const name = rawName.trim().toLowerCase();
+    let q = 1;
+    for (const p of params) {
+      const [k, v] = p.trim().split("=");
+      if (k === "q" && v !== undefined) {
+        const parsed = Number(v);
+        if (!Number.isNaN(parsed)) q = parsed;
+      }
+    }
+    if (name === "gzip" || name === "x-gzip") return q > 0;
+    if (name === "*") wildcardQ = q;
+  }
+  return wildcardQ !== null && wildcardQ > 0;
+}
+
 function sendFile(req, res, filePath, statusCode, pathname) {
   const ext = path.extname(filePath).toLowerCase();
   const type = MIME[ext] || "application/octet-stream";
@@ -131,11 +177,19 @@ function sendFile(req, res, filePath, statusCode, pathname) {
     res.end("Internal Server Error");
     return;
   }
-  res.writeHead(statusCode, {
+  const headers = {
     "Content-Type": type,
-    "Content-Length": body.length,
     "Cache-Control": cacheControlFor(filePath, pathname),
-  });
+    ...SECURITY_HEADERS,
+  };
+  const acceptsGzip = clientAcceptsGzip(req.headers["accept-encoding"]);
+  if (acceptsGzip && COMPRESSIBLE.has(ext)) {
+    body = zlib.gzipSync(body);
+    headers["Content-Encoding"] = "gzip";
+    headers["Vary"] = "Accept-Encoding";
+  }
+  headers["Content-Length"] = body.length;
+  res.writeHead(statusCode, headers);
   if (req.method === "HEAD") {
     res.end();
     return;
@@ -144,7 +198,7 @@ function sendFile(req, res, filePath, statusCode, pathname) {
 }
 
 function redirect(res, location) {
-  res.writeHead(301, { Location: location });
+  res.writeHead(301, { Location: location, ...SECURITY_HEADERS });
   res.end();
 }
 
