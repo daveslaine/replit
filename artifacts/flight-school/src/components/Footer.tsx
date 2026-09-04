@@ -72,7 +72,7 @@ export function Footer() {
               <Link href="/" className="flex items-center gap-3">
                 <img
                   src="/images/logo.png"
-                  alt="Accelerated Flight School"
+                  alt=""
                   style={{
                     height: "44px",
                     width: "auto",
@@ -94,9 +94,12 @@ export function Footer() {
                   Van Nuys, CA 91406
                 </span>
               </div>
+              <p className="text-[10px] leading-tight text-primary-foreground/60">
+                Former address: 7910 Balboa Blvd H7, Van Nuys, CA 91406
+              </p>
               {/* Social Links */}
               <div className="pt-1">
-                <p className="text-primary-foreground/40 text-xs uppercase tracking-wider mb-2 font-bold">
+                <p className="text-primary-foreground/70 text-xs uppercase tracking-wider mb-2 font-bold">
                   Find Us Online
                 </p>
                 <div className="flex gap-2">
@@ -104,13 +107,17 @@ export function Footer() {
                     href="https://maps.app.goo.gl/xZWYCzZRoLzFBQ617"
                     label="Google Business Profile"
                   >
-                    <FcGoogle className="w-5 h-5" />
+                    <FcGoogle className="w-5 h-5" aria-hidden="true" />
                   </SocialLink>
                   <SocialLink
                     href="https://yelp.com/biz/accelerated-flight-school-van-nuys-2"
                     label="Yelp"
                   >
-                    <SiYelp className="w-5 h-5" style={{ color: "#d32323" }} />
+                    <SiYelp
+                      className="w-5 h-5"
+                      style={{ color: "#d32323" }}
+                      aria-hidden="true"
+                    />
                   </SocialLink>
                 </div>
               </div>
@@ -194,6 +201,14 @@ export function Footer() {
                     label: "Flight Instructors",
                   },
                   {
+                    href: "/flight-review-van-nuys-accelerated-flight-school-kvny",
+                    label: "Flight Review",
+                  },
+                  {
+                    href: "/instrument-proficiency-check-van-nuys-accelerated-flight-school-kvny",
+                    label: "Instrument Proficiency Check",
+                  },
+                  {
                     href: "/van-nuys-accelerated-flight-school-about",
                     label: "About Us",
                   },
@@ -201,6 +216,14 @@ export function Footer() {
                   {
                     href: "/van-nuys-accelerated-flight-school-contact",
                     label: "Contact Us",
+                  },
+                  {
+                    href: "/van-nuys-accelerated-flight-school-directions",
+                    label: "Directions & Gate Access",
+                  },
+                  {
+                    href: "/official-accelerated-flight-school-van-nuys",
+                    label: "Official Business Identity",
                   },
                   {
                     href: "/cheapest-flight-school-van-nuys-ca",
@@ -261,7 +284,7 @@ export function Footer() {
                     <br />
                     Van Nuys, CA 91406
                     <br />
-                    <span className="text-primary-foreground/40">
+                    <span className="text-primary-foreground/70">
                       (Van Nuys Airport – VNY)
                     </span>
                   </span>
@@ -270,7 +293,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/40 text-xs space-y-1">
+          <div className="mt-12 pt-8 border-t border-primary-foreground/10 text-center text-primary-foreground/70 text-xs space-y-1">
             <p>
               &copy; {new Date().getFullYear()} Accelerated Flight School. All
               rights reserved. Van Nuys Airport (KVNY), Van Nuys, California.
