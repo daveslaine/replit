@@ -111,6 +111,37 @@ export function AirToursHubPage() {
         </div>
       </section>
 
+      <section className="py-14 bg-slate-50 border-t border-slate-200">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl md:text-3xl font-black text-slate-800 mb-6">
+            Sightseeing That Begins With the Fundamentals of Flight
+          </h2>
+          <div className="space-y-5 text-slate-700 leading-relaxed text-base md:text-lg">
+            <p>
+              At Accelerated Flight School, a Los Angeles sightseeing idea becomes
+              an introduction to fixed-wing aviation. At Van Nuys Airport (KVNY),
+              you meet the aircraft and CFI, review practical preflight context,
+              and learn why weather, airport activity and air traffic control
+              influence every departure. The result is more than a view: it is a
+              chance to understand how a pilot prepares for it.
+            </p>
+            <p>
+              Your instructor remains responsible for the flight while inviting
+              appropriate pilot interaction, such as discussing checklists,
+              controls and basic handling. The destination guides are inspiration,
+              not promises of a particular route, duration, landmark visibility or
+              access; safety, weather and ATC requirements always come first.
+            </p>
+            <p>
+              Curious guests can use the discovery experience to explore training
+              with our flight school, from the first lesson through a possible
+              Private Pilot path. Ask after the flight about the next practical
+              step and whether a logged introduction fits your goals.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Tour directory */}
       <section className="py-14 bg-slate-50">
         <div className="container mx-auto px-4 max-w-5xl">
