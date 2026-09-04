@@ -15,7 +15,7 @@ export function CfiTrainingPage() {
 
       <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img src="/images/hero-airliner-gate.webp" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
@@ -92,22 +92,28 @@ export function CfiTrainingPage() {
               Checkride Scheduling Advantage
             </h3>
             <p className="text-slate-700 leading-relaxed mb-4">
-              The CFI checkride requires a specialized DPE who evaluates both your flying and your teaching ability — these examiners book up fast. We proactively line up your CFI examiner as you approach training completion so you are not stuck waiting after months of preparation. <strong>We will ensure you get a CFI DPE fast.</strong>
+              The CFI checkride requires a specialized DPE who evaluates both
+              flying and teaching ability. We coordinate examiner planning early
+              as readiness approaches.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
-                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
-                <p className="text-xs text-slate-500 mt-1">from training completion to checkride</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Checkride Timing Target</p>
+                <p className="text-3xl font-bold text-primary">1–2 weeks</p>
+                <p className="text-xs text-slate-500 mt-1">after training completion and readiness</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
-                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
-                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-1">Scheduling Conditions</p>
+                <p className="text-3xl font-bold text-slate-600">Independent DPEs</p>
+                <p className="text-xs text-slate-500 mt-1">weather and eligibility also apply</p>
               </div>
             </div>
             <p className="text-sm text-slate-600 mt-4 leading-relaxed">
-              CFI examiners in Southern California are rare and in high demand. Many candidates wait months after finishing their training before they can even schedule a checkride. Our DPE network keeps that gap short — you test while your knowledge is fresh and your teaching demonstrations are sharp.
+              Accelerated Flight School coordinates examiner planning early and
+              targets a checkride within 1–2 weeks after training completion and
+              readiness when independent DPE schedules, weather, and eligibility
+              permit. Timing is a target, not a guarantee; the school does not
+              control DPE calendars or outcomes.
             </p>
           </div>
 
