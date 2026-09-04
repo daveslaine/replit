@@ -4,4 +4,7 @@
 - [Flight school instructors](flight-school-instructors.md) — instructor cards are DB-driven via /api/instructors; editing seed won't update existing rows, use one-time seed_history backfill; roster now David T. + 3 AI-photo instructors, Reza removed.
 - [Flight school logo assets](flight-school-logo-assets.md) — "transparent" logo PNGs often ship opaque white bg (run bg-removal); header needs white-glow for blue-on-navy at top, none when scrolled.
 - [Flight school pricing model](flight-school-pricing-model.md) — 5-aircraft fleet (operator-provided), aircraft from $145/hr wet + $35/hr instructor = from $180 dual; Discovery $199.99/$249.99; phone 424-493-2761, 16425 Hart St; recompute derived math on rate change.
+- [A11y audit tooling](a11y-audit-tooling.md) — Lighthouse CLI hangs here; use nix-store Chromium + chrome-remote-interface + axe-core; site contrast palette rules included.
 - [Prod DB data not migrated on Publish](prod-db-data-seeding.md) — Publish migrates schema only, not table data; prod executeSql is read-only; use one-time concurrency-safe startup seed (advisory lock + seed_history flag) for defaults.
+- [Flight school blocking CSS](flight-school-blocking-css.md) — prerendered markup requires CSS linked directly in the HTML head; never make first-paint styling depend on deferred hydration JavaScript.
+- [Flight school DPE wording](flight-school-dpe-wording.md) — describe 1–2 weeks only as an early-planning target conditional on independent examiner schedules, weather, and eligibility.
