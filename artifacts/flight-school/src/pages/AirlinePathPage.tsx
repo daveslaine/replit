@@ -26,7 +26,7 @@ export function AirlinePathPage() {
 
       <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img src="/images/hero-airliner-gate.webp" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
@@ -58,7 +58,7 @@ export function AirlinePathPage() {
                   <div className={`hidden md:block absolute top-6 w-4 h-4 bg-white border-t border-r border-slate-200 rotate-45 ${index % 2 === 0 ? '-left-2 -rotate-135' : '-right-2'}`} />
                   <div className={`md:hidden absolute top-6 -left-2 w-4 h-4 bg-white border-b border-l border-slate-200 rotate-45`} />
 
-                  <div className="text-xs font-bold text-slate-400 mb-1 tracking-wider uppercase">Step {index + 1}</div>
+                  <div className="text-xs font-bold text-slate-600 mb-1 tracking-wider uppercase">Step {index + 1}</div>
                   {step.link ? (
                     <Link href={step.link}>
                       <h3 className="text-xl font-bold text-secondary mb-2 hover:underline cursor-pointer">{step.title}</h3>
