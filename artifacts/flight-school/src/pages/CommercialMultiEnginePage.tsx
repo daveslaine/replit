@@ -42,7 +42,7 @@ export function CommercialMultiEnginePage() {
                 <p className="text-4xl font-bold text-primary">$3,000 – $4,000</p>
               </div>
               <div className="sm:ml-8">
-                <p className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-1">SoCal Average</p>
+                <p className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-1">SoCal Average</p>
                 <p className="text-2xl font-bold text-red-500 line-through">$5,000 – $8,000</p>
               </div>
             </div>
@@ -196,20 +196,28 @@ export function CommercialMultiEnginePage() {
               Checkride Scheduling Advantage
             </h3>
             <p className="text-slate-700 leading-relaxed mb-4">
-              Multi-engine examiners in Southern California are specialized and limited. We proactively schedule your multi-engine checkride as you approach proficiency — so your practical test is lined up before training ends, not after a long wait. <strong>We will ensure you get a Commercial Multi-Engine DPE fast.</strong>
+              Multi-engine examiners are specialized, so we coordinate examiner
+              planning early as you approach proficiency.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="bg-white border border-primary/20 rounded-lg p-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Accelerated Flight School</p>
-                <p className="text-3xl font-bold text-primary">1–3 weeks</p>
-                <p className="text-xs text-slate-500 mt-1">from training completion to checkride</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-1">Checkride Timing Target</p>
+                <p className="text-3xl font-bold text-primary">1–2 weeks</p>
+                <p className="text-xs text-slate-500 mt-1">after training completion and readiness</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-4 text-center">
-                <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">SoCal Average (other schools)</p>
-                <p className="text-3xl font-bold text-slate-400">2–5 months</p>
-                <p className="text-xs text-slate-500 mt-1">waiting for an available examiner slot</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-1">Scheduling Conditions</p>
+                <p className="text-3xl font-bold text-slate-600">Independent DPEs</p>
+                <p className="text-xs text-slate-500 mt-1">weather and eligibility also apply</p>
               </div>
             </div>
+            <p className="text-sm text-slate-600 mt-4 leading-relaxed">
+              Accelerated Flight School coordinates examiner planning early and
+              targets a checkride within 1–2 weeks after training completion and
+              readiness when independent DPE schedules, weather, and eligibility
+              permit. Timing is a target, not a guarantee; the school does not
+              control DPE calendars or outcomes.
+            </p>
           </div>
 
           <div className="text-center">
