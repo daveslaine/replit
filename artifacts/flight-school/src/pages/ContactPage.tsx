@@ -91,7 +91,7 @@ export function ContactPage() {
 
       <section className="relative bg-primary text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="/images/hero-airliner-gate.jpg" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
+          <img src="/images/hero-airliner-gate.webp" className="w-full h-full object-cover object-center" aria-hidden="true" alt="" />
           <div className="absolute inset-0 bg-primary/80" />
         </div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center">
@@ -160,6 +160,10 @@ export function ContactPage() {
                         <br />
                         Van Nuys Airport (KVNY)
                       </p>
+                       <p className="mt-3 text-sm leading-relaxed text-slate-500">
+                         <strong className="font-medium text-slate-600">Former address:</strong>{" "}
+                         7910 Balboa Blvd H7, Van Nuys, CA 91406
+                       </p>
                     </div>
                   </div>
                 </div>
