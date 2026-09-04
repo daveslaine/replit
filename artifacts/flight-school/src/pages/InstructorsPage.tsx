@@ -1,93 +1,9 @@
 import React from "react";
 import { Seo } from "@/components/Seo";
-import { useQuery } from "@tanstack/react-query";
-import { Phone, DollarSign, CheckCircle2, Heart, UserCircle } from "lucide-react";
+import { Phone, DollarSign, CheckCircle2, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AviationTerm } from "@/components/AviationTerm";
-
-interface Instructor {
-  id: number;
-  name: string;
-  title: string;
-  phone: string | null;
-  bio: string | null;
-  teachingPhilosophy: string | null;
-  rateStandard: number;
-  rateBlock: number;
-  certifications: string[];
-  photoObjectPath: string | null;
-  photoPosition: string;
-}
-
-const STATIC_PHOTOS: Record<string, string> = {
-  "David T.": "/images/instructor-david.jpg",
-  "Robert H.": "/images/instructor-robert.jpg",
-  "Bella M.": "/images/instructor-bella.jpg",
-  "Jessica B.": "/images/instructor-jessica.jpg",
-};
-
-function InstructorCard({ inst }: { inst: Instructor }) {
-  const photoSrc = inst.photoObjectPath
-    ? `/api/storage${inst.photoObjectPath}`
-    : STATIC_PHOTOS[inst.name] ?? null;
-
-  return (
-    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
-      <div className="w-1/2 mx-auto mt-6 aspect-[3/4] overflow-hidden rounded-xl bg-slate-100">
-        {photoSrc ? (
-          <img
-            src={photoSrc}
-            alt={`${inst.name} - ${inst.title}`}
-            className="w-full h-full object-cover"
-            style={{ objectPosition: inst.photoPosition || "top" }}
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center text-slate-300">
-            <UserCircle className="w-24 h-24" />
-          </div>
-        )}
-      </div>
-      <div className="p-8 flex-1 flex flex-col">
-        <div className="mb-4">
-          <h2 className="text-2xl font-bold text-primary">{inst.name}</h2>
-          {inst.title && (
-            <p className="text-secondary font-medium">{inst.title}</p>
-          )}
-        </div>
-
-        {inst.certifications.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-6">
-            {inst.certifications.map((c) => (
-              <span key={c} className="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">
-                <AviationTerm term={c} />
-              </span>
-            ))}
-          </div>
-        )}
-
-        {inst.teachingPhilosophy && (
-          <div className="mt-auto pt-6 border-t border-slate-100">
-            <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">
-              Teaching Philosophy
-            </h3>
-            <p className="text-slate-600 text-sm leading-relaxed">"{inst.teachingPhilosophy}"</p>
-          </div>
-        )}
-
-        {inst.bio && (
-          <p className="text-slate-500 text-sm leading-relaxed mt-4">{inst.bio}</p>
-        )}
-      </div>
-    </div>
-  );
-}
 
 export function InstructorsPage() {
-  const { data: instructors, isLoading } = useQuery<Instructor[]>({
-    queryKey: ["instructors"],
-    queryFn: () => fetch("/api/instructors").then((r) => r.json()),
-  });
-
   return (
     <div className="w-full">
       <Seo
@@ -128,32 +44,6 @@ export function InstructorsPage() {
               <strong>Certified Flight Instructor – Instrument (CFII)</strong>.
             </p>
           </div>
-
-          {/* Instructor Cards from API */}
-          {isLoading ? (
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              {[0, 1].map((i) => (
-                <div key={i} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden animate-pulse">
-                  <div className="h-64 bg-slate-200" />
-                  <div className="p-8 space-y-4">
-                    <div className="h-6 bg-slate-200 rounded w-1/2" />
-                    <div className="h-4 bg-slate-200 rounded w-1/3" />
-                    <div className="h-4 bg-slate-200 rounded w-full" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className={`grid ${(instructors?.length ?? 0) === 1 ? "" : "md:grid-cols-2"} gap-8 mb-16`}>
-              {(instructors ?? []).map((inst) => (
-                <InstructorCard key={inst.id} inst={inst} />
-              ))}
-            </div>
-          )}
-
-          <p className="text-center text-slate-500 text-lg mb-16">
-            We have additional instructors on our team — their photos are coming soon.
-          </p>
 
           {/* Why We Charge Less */}
           <div className="bg-slate-900 text-white rounded-2xl p-8 md:p-10 mb-8">
