@@ -94,10 +94,11 @@ export function Header() {
           href="/"
           className="flex items-center gap-3 shrink-0"
           data-testid="link-home"
+          aria-label="Accelerated Flight School — Home"
         >
           <img
             src={transparent ? "/images/logo.png" : "/images/afs-logo-new.png"}
-            alt="Accelerated Flight School"
+            alt=""
             style={{
               height: "48px",
               width: "auto",
