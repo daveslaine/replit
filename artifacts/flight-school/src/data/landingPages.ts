@@ -239,7 +239,7 @@ export const landingPages: LandingPageConfig[] = [
       "Flight training near Hollywood at Van Nuys Airport. Discovery Flight $199.99 for 1.5 hrs. Part-time programs, flexible scheduling. Accelerated Flight School.",
     h1: "Flight School Near Hollywood",
     subheadline:
-      "Van Nuys Airport (KVNY) is a 20-minute drive from Hollywood — an accessible base for beginner Discovery Flights and full private pilot programs with Accelerated Flight School.",
+      "Hollywood-area students can reach Van Nuys Airport (KVNY) through the 101 and 170 corridors for Discovery Flights and full pilot training with Accelerated Flight School.",
     localIntro: [
       "Hollywood, West Hollywood, Studio City, Los Feliz, Universal City, and Silver Lake are all within easy reach of Van Nuys Airport via the 101/170 corridors. KVNY is one of the busiest general aviation airports in the country and an excellent training environment for new pilots.",
       "Many Hollywood-area students begin with a Discovery Flight — our 1.5-hour introductory lesson for $199.99. You will take the controls over the San Fernando Valley, experience real aircraft handling, and get an honest assessment of what earning a pilot certificate involves. No sales pressure, just a good flight.",
@@ -1139,9 +1139,9 @@ export const landingPages: LandingPageConfig[] = [
     subheadline:
       "Low hourly rates do not mean low-quality training — Accelerated Flight School at Van Nuys Airport proves that affordable pricing and structured instruction are not mutually exclusive.",
     localIntro: [
-      "When people search for a cheap flight school in Los Angeles, they sometimes assume they are trading price for quality. That is not always true — and it is often backwards. Some of the most expensive flight training in the LA area produces the worst outcomes: students who spend 100+ hours on a certificate that requires 40 at minimum, students who fail checkrides due to poor preparation, students who burn through money and give up.",
-      "Cheap training, by our definition, is training that wastes your money regardless of the hourly rate. Cheap training is an instructor who does not have clear lesson objectives. Cheap training is flying the same maneuvers over and over without progressing. Cheap training is a school that inflates your hours to increase revenue.",
-      "At Accelerated Flight School, the aircraft rate starts at $155/hr wet and the instructor rate is $35/hr — among the lower rates in the Los Angeles market. But the goal is not just to be cheap: the goal is to produce certificated pilots who are ready for checkrides and comfortable in the real airspace they will fly in. ACS-based instruction, honest expectations, and direct accountability make that possible at lower cost than many larger schools.",
+      "When people search for a cheap flight school in Los Angeles, they are usually looking for a manageable total cost without giving up safe aircraft, organized lessons, or a supportive instructor. The useful comparison is not simply the smallest aircraft-only number; it is the complete cost of dual instruction and the quality of the plan behind each hour.",
+      "Disorganized training can become expensive when lessons repeat without a clear objective or when long gaps require a student to rebuild proficiency. A student-first school explains the lesson goal, tracks progress, and gives an honest debrief so the next flight builds on demonstrated skills.",
+      "At Accelerated Flight School, the aircraft rate starts at $155/hr wet and the instructor rate is $35/hr. The goal is affordable, high-quality training with ACS-based instruction, honest expectations, direct accountability, and pay-as-you-fly scheduling at Van Nuys Airport.",
     ],
     nearbyAreas: [
       "Van Nuys",
