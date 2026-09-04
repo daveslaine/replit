@@ -82,11 +82,11 @@ export function DealsPage() {
                 <span className="text-xl font-normal text-slate-500">off</span>
               </p>
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-4">
-                <span className="text-xl text-slate-400 line-through">
+                <span className="text-xl text-slate-600 line-through">
                   $199.99
                 </span>
                 <span className="text-2xl font-bold text-secondary">$189.99</span>
-                <span className="text-sm font-normal text-slate-400">
+                <span className="text-sm font-normal text-slate-600">
                   Bring a passenger — $249.99 with 1 passenger
                 </span>
               </div>
@@ -234,7 +234,7 @@ export function DealsPage() {
                     From $185/hr
                   </span>
                 </div>
-                <p className="text-xs text-slate-400 pt-1">
+                <p className="text-xs text-slate-600 pt-1">
                   Our fleet includes four Cessna 172 Skyhawks ($155–$175/hr) and
                   a Piper PA-28-161 Warrior II ($175/hr).
                 </p>
