@@ -106,7 +106,7 @@ export function HomePage() {
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-airliner-gate.jpg"
+            src="/images/hero-airliner-gate.webp"
             alt="Southern California coastline seen from the wing of an Accelerated Flight School aircraft"
             className="w-full h-full object-cover object-center"
           />
@@ -184,7 +184,7 @@ export function HomePage() {
               >
                 <Button
                   size="lg"
-                  className="font-bold text-base h-12 px-7 bg-orange-500 hover:bg-orange-600 text-white gap-2"
+                  className="font-bold text-base h-12 px-7 bg-orange-700 hover:bg-orange-800 text-white gap-2"
                 >
                   <Tag className="w-4 h-4" />
                   Coupons
@@ -278,7 +278,9 @@ export function HomePage() {
                           className="inline-flex items-center gap-1 text-sm font-bold text-secondary hover:underline mt-1"
                           data-testid={`link-program-${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
                         >
-                          Learn More <ArrowRight className="w-3.5 h-3.5" />
+                          Learn More
+                          <span className="sr-only"> about {p.title}</span>{" "}
+                          <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
                       </div>
                     );
@@ -353,7 +355,7 @@ export function HomePage() {
             </div>
             <div className="h-px md:h-16 md:w-px bg-slate-700" />
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-secondary mb-2">
+              <p className="text-xs font-bold uppercase tracking-widest text-sky-400 mb-2">
                 Accelerated Flight School estimate
               </p>
               <p className="text-3xl font-bold text-white">As low as $8,325</p>
@@ -681,7 +683,7 @@ export function HomePage() {
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
                 From $155
-                <span className="text-lg text-slate-400 font-normal">/hr</span>
+                <span className="text-lg text-slate-600 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1">
                 <AviationTerm term="Wet rental" /> — fuel included
@@ -712,13 +714,13 @@ export function HomePage() {
               </p>
               <p className="text-4xl font-bold text-secondary mb-1">
                 $35
-                <span className="text-lg text-slate-400 font-normal">/hr</span>
+                <span className="text-lg text-slate-600 font-normal">/hr</span>
               </p>
               <p className="text-xs text-slate-500 mt-1"></p>
             </div>
           </div>
 
-          <p className="text-xs text-center text-slate-400 mb-2">
+          <p className="text-xs text-center text-slate-600 mb-2">
             <AviationTerm term="Wet rental" /> means fuel is included in the
             aircraft rate. <AviationTerm term="Dual instruction" /> means flying
             with an instructor onboard.
