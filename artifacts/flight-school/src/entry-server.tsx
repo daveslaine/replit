@@ -1,11 +1,13 @@
 import { renderToString } from "react-dom/server";
-import App from "./App";
+import AppServer from "./AppServer";
 
 export { redirects } from "./data/redirects";
 
 export function render(url: string) {
   const helmetContext: { helmet?: any } = {};
-  const appHtml = renderToString(<App ssrPath={url} helmetContext={helmetContext} />);
+  const appHtml = renderToString(
+    <AppServer ssrPath={url} helmetContext={helmetContext} />,
+  );
   const { helmet } = helmetContext;
   const head = helmet
     ? [
